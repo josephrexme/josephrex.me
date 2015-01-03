@@ -82,4 +82,4 @@ PRyyUkp/mzMT76yUhHAq2awoeN/GbFc=
 
  [1]: http://josephrex.me/things-you-can-do-with-mathml/ "Things you can do with MathML"
  [2]: mailto:joerex@ostrich-dev.com
- [3]: http://josephrex.me/joerex.asc "Get my PGP public key"
+ [3]: http://ostrich-dev.com/joerex.asc "Get my PGP public key"
