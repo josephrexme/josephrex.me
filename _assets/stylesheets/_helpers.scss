@@ -1,0 +1,67 @@
+/*! Helper classes */
+
+/*  Image replacement */
+
+.ir{
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+.fr{ float: right; }
+.fl{ float: left; }
+.pad10{ padding: 10px; }
+.pad20{ padding: 20px; }
+.topmag10{ margin-top: 10px; }
+.topmag20{ margin-top: 20px; }
+.background-cool-blue.background-cool-blue.background-cool-blue{ background: $background-cool-blue; }
+.color-white{ color: $white; }
+.middle-block{
+    display: block;
+    margin: 0 auto;
+}
+.inline-block{ display: inline-block; }
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus{
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.clearfix{
+    &:after, &:before{
+        content: " ";
+        display: table;
+    }
+    &:after{
+        clear: both;
+    }
+}
+.invisible{ visibility: hidden; }
+.ghost{ display: none; }
+.txtright{ text-align: right; }
+.txtleft{ text-align: left; }
+.txtcenter{ text-align: center; }

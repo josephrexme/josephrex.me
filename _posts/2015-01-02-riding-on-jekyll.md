@@ -8,7 +8,7 @@ categores:
 tags:
   - blogging
 ---
-<img src="http://images.ostrich-dev.com/jekyll-logo.png" alt="jekyll logo">
+<img class="head-image" src="http://images.ostrich-dev.com/jekyll-logo.png" alt="jekyll logo">
 
 It's a new year and I'm to begin with new things. I started josephrex.me blog in 2014 and it has revived my old blogging habits. I have been on Wordpress which is nice considering how I get comments plugged into my blog posts without any third-party integration, the awesome jetpack services, the performance plugins, and most of all the easy WYSIWYG editor where I write with ease. I had a feel of version 4.0.1 before leaving and they had added the distraction-free writing feature. All of this is good but it was too much in a way.
 

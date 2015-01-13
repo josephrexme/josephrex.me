@@ -1,0 +1,232 @@
+@import "compass/reset";
+@import "compass";
+@import "breakpoint";
+@import "mixins";
+@import "compass/typography/vertical_rhythm";
+//@import "grids";
+@import "variables";
+@import "fonts";
+@import "h5bp";
+* { @include box-sizing(border-box); }
+a{ text-decoration: none; color: inherit; }
+button, input{ font-family: $font-stack; }
+button, [type="submit"]{ cursor: pointer; }
+html{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-size: 62.5%;
+}
+body{
+	background: $color-primary;
+	margin: 0;
+	font-family: $font-stack;
+	font-size: 1.6em;
+}
+header{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	img{
+		width: inherit;
+		height: 250px;
+		@include breakpoint($breakpoint-tablet-landscape){
+			height: 400px;
+		}
+		@include breakpoint($breakpoint-laptop){
+			height: 450px;
+		}
+	}
+	h2{
+		color: $white;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		font-weight: 300;
+		font-size: 2.5rem;
+		z-index: 10;
+	}
+	&:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-image: linear-gradient(top, rgba($black, .8), rgba($black, .8));
+		@include breakpoint($breakpoint-tablet-landscape){
+			background-image: linear-gradient(top, rgba($black, 0) 30%, rgba($black, .9) 70%);
+		}
+		height: 100%;
+		width: 100%;
+	}
+}
+main{
+	background: $white;
+	padding: 20px;
+	time{
+		font-weight: 300;
+	}
+	article{
+		margin-top: 20px;
+		img{
+			max-width: 90%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	a{
+		color: $brand-color;
+		&:visited{
+			color: darken($brand-color, 4);
+		}
+	}
+}
+.container{
+	@include breakpoint($breakpoint-tablet-landscape){
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 100px;
+		box-shadow: 0 2px 10px darken($color-primary, 9);
+	}
+	@include breakpoint($breakpoint-laptop){
+		width: 60%;
+		>aside{
+			position: absolute;
+			right: 0;
+			top: 200px;
+			width: 20%;
+		}
+	}
+}
+nav{
+	padding: 0 10px 0 10px;
+	position: relative;
+	max-height: $nav-height;
+	>ul{
+		background: darken($color-primary, 3);
+		color: $white;
+		width: 100%;
+		position: absolute;
+		padding: 0 0 10px 0;
+		left: 0;
+		z-index: 1000;
+		top: $nav-height - 10px;
+		border-radius: 0 0 10px 10px;
+		display: none;
+		li{
+			>a{
+				display: block;
+				padding: 10px;
+				width: 100%;
+				height: 100%;
+				&:hover{
+					background: darken($color-primary, 6);
+				}
+			}
+		}
+	}
+	&.active>ul{ display: block; }
+	&.active svg{ background: darken($color-primary, 3); }
+	svg{
+		cursor: pointer;
+		height: 100%;
+	}
+	@include breakpoint($breakpoint-tablet-landscape){
+		svg{ display: none; }
+		max-height: $nav-height + 500px;
+		padding: 0;
+		position: absolute;
+		left: 0;
+		top: 100px;
+		width: 100px;
+		ul{
+			display: block;
+			border-radius: 0;
+			background: transparent;
+			position: relative;
+			padding: 0;
+			li{
+				border-bottom: solid thin darken($color-primary, 5);
+			}
+		}
+	}
+	@include breakpoint(1105px){
+		width: 10%;
+	}
+	@include breakpoint($breakpoint-laptop){
+		width: 20%;
+		top: 200px;
+	}
+}
+.caption{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	z-index: 999;
+	font-weight: 800;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px #eee,0 -1px 0 #ddd;
+	opacity: .3;
+	overflow: hidden;
+	@include breakpoint($breakpoint-tablet-landscape){
+		right: 0;
+		left: 0;
+		top: -50px;
+		margin: 0 auto;
+		width: 80vw;
+		text-align: center;
+		font-size: 100px;
+		transform: scale(1.2,1);
+	}
+}
+*:focus{ outline: 3px solid rgba(62, 184, 179, $reg_alpha); }
+::selection{ background: #999; color: white; }
+
+.container>aside{
+	text-align: center;
+	color: $white;
+	padding: 30px 10px;
+	.feed{
+		margin: 10px 0;
+		width: 80%;
+		height: 35px;
+		border-radius: 5px;
+		border: none;
+		padding: 0 10px;
+		& + button{
+			color: $white;
+			border: none;
+			background: lighten($color-primary, 9);
+			width: 80%;
+			height: 40px;
+			margin-top: 10px;
+			font-size: 1.5rem;
+			&:hover{
+				background: lighten($color-primary, 7);
+			}
+		}
+	}
+}
+footer{
+	text-align: center;
+	//background: darken($color-primary, 8);
+	padding: 20px 10px;
+	color: $white;
+}
+.social-icons{
+	margin: 40px 0;
+	li{
+		display: inline-block;
+		margin-right: 10px;
+		margin-top: 10px;
+		svg{
+			fill: $color-social-default;
+			&:hover{
+				fill: darken($color-social-default, 9);
+			}
+		}
+	}
+}
+
+@import "helpers", "print";

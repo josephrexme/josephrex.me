@@ -9,7 +9,7 @@ tags:
   - frameworks
   - laravel
 ---
-[<img class="aligncenter size-full wp-image-418" src="http://josephrex.me/wp-content/uploads/2014/12/LaravelModules__1417844148_41.206.11.5.jpg" alt="Laravel background" width="940" height="380" />][1]
+{% image LaravelModules__1417844148_41.206.11.5.jpg class="head-image" alt="Laravel background" %}
 
 These are some links you will find useful as a Laravel developer.
 
@@ -19,7 +19,7 @@ Laravel Forum: <http://laravel.io/forum>
 
 Forum archive: <http://forumsarchive.laravel.io>
 
-Laravel Jobs: [https://larajobs.com][2]
+Laravel Jobs: [https://larajobs.com][1]
 
 Laravel Podcast: <http://www.buzzsprout.com/11908>
 
@@ -47,5 +47,4 @@ Packagists (Composer package repository for general PHP): <http://packagists.or
 
 There&#8217;s a lot more that I probably do not know about. Notify me in the comments if there is anyone you think is missing from the list
 
- [1]: http://josephrex.me/wp-content/uploads/2014/12/LaravelModules__1417844148_41.206.11.5.jpg
- [2]: http://larajobs.com
+[1]: http://larajobs.com
