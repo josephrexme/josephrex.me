@@ -2,6 +2,7 @@
 title: A female hacker
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /a-female-hacker/
 categories:
   - Hacking

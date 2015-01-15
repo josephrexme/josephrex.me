@@ -2,6 +2,7 @@
 title: Moving from Indented Sass to Scss
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /moving-from-indented-sass-to-scss/
 categories:
   - web

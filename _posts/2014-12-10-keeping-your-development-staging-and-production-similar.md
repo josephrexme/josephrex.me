@@ -2,6 +2,7 @@
 title: Keeping your development, staging, and production similar
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /keeping-your-development-staging-and-production-similar/
 categories:
   - web

@@ -2,6 +2,7 @@
 title: Using source maps
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /using-source-maps/
 categories:
   - web

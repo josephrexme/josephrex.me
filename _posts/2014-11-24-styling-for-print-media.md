@@ -2,6 +2,7 @@
 title: Styling for print media
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /styling-for-print-media/
 categories:
   - web

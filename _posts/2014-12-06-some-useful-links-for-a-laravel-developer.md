@@ -2,6 +2,7 @@
 title: Some useful links for a Laravel developer
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /some-useful-links-for-a-laravel-developer/
 categories:
   - web

@@ -2,6 +2,7 @@
 title: Things that do not exist but exist in Ruby
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /things-that-do-not-exist-but-exist-in-ruby/
 categories:
   - programming

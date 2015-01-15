@@ -2,6 +2,7 @@
 title: Using Multiple tables for authentication in laravel
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /using-multiple-tables-for-authentication-in-laravel/
 categories:
   - web

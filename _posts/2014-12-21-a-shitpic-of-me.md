@@ -2,6 +2,7 @@
 title: A shitpic of me
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /a-shitpic-of-me/
 categories:
   - General

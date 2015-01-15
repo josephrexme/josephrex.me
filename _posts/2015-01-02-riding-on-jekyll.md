@@ -2,6 +2,7 @@
 title: Riding on jekyll
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /riding-on-jekyll/
 categores:
   - web

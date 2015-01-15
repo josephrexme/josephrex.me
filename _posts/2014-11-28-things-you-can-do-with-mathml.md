@@ -2,6 +2,7 @@
 title: Things you can do with MathML
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /things-you-can-do-with-mathml/
 categories:
   - web

@@ -2,6 +2,7 @@
 title: Symmetric Encryption in Python
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /symmetric-encryption-in-python/
 categories:
   - python

@@ -2,6 +2,7 @@
 title: Adding a break statement to laravel4 blade templating
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /adding-a-break-statement-to-laravel4-blade-templating/
 categories:
   - web

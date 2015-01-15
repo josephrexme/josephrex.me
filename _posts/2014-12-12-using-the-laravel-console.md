@@ -2,6 +2,7 @@
 title: Using the laravel console
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /using-the-laravel-console/
 categories:
   - web

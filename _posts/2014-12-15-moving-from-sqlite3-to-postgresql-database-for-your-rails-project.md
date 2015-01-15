@@ -2,6 +2,7 @@
 title: Moving from sqlite3 to postgresql database for your rails project
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /moving-from-sqlite3-to-postgresql-database-for-your-rails-project/
 categories:
   - web

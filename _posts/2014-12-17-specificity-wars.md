@@ -2,6 +2,7 @@
 title: Specificity wars
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /specificity-wars/
 categories:
   - web

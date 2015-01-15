@@ -2,6 +2,7 @@
 title: Using OpenDNS as your machine's default DNS
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /using-opendns-as-your-machines-default-dns/
 categories:
   - web

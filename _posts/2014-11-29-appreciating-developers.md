@@ -2,6 +2,7 @@
 title: Appreciating developers
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /appreciating-developers/
 categories:
   - opinions
