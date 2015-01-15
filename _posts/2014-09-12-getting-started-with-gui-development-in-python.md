@@ -2,6 +2,7 @@
 title: Getting started with GUI development in Python
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /getting-started-with-gui-development-in-python/
 categories:
   - programming
@@ -16,15 +17,15 @@ tags:
   - tkinter
   - wxpython
 ---
-[<img class="aligncenter size-full wp-image-253" src="http://josephrex.me/wp-content/uploads/2014/09/z_design.jpg" alt="z_design" width="580" height="353" />][1]
+{% image z_design.jpg class="head-image" alt="z_design" %}
 
 Most people that are fond of Windows operating system will always root for graphical desktop applications (GUI) over command line (CLI) programs. Since after DOS, windows operating systems have been known to use simple and user friendly GUI. This is one of the reasons why they have made a lot of customers around the world.
 
-Apple computers have also had wonderful GUI but their product prices still limits their products to those with more funds. There&#8217;s always an argument on Microsoft stealing the GUI concept from Apple but as much as I&#8217;m not a big Microsoft fan, I never agreed to that. Xerox started it, Apple found it, then Microsoft found it. You may say Microsoft stole from Apple what they had stolen from Xerox. I wouldn&#8217;t want to have the argument here. If you aren&#8217;t familiar with these stories, you should <a title="History of Graphical User Interface" href="https://en.wikipedia.org/wiki/History_of_the_graphical_user_interface" target="_blank">read the history</a>.
+Apple computers have also had wonderful GUI but their product prices still limits their products to those with more funds. There's always an argument on Microsoft stealing the GUI concept from Apple but as much as I'm not a big Microsoft fan, I never agreed to that. Xerox started it, Apple found it, then Microsoft found it. You may say Microsoft stole from Apple what they had stolen from Xerox. I wouldn't want to have the argument here. If you aren't familiar with these stories, you should <a title="History of Graphical User Interface" href="https://en.wikipedia.org/wiki/History_of_the_graphical_user_interface" target="_blank">read the history</a>.
 
-Most programmers I&#8217;ve seen from various languages usually start with CLI programs besides web developers. We are in a world where everyone wants a graphical interface for everything and then we choose to make programs that are CLI based. Since Microsoft is fully GUI oriented, its programming languages allow you easily build GUI programs. I once developed with Visual Basic 8 and Visual Basic.NET in Visual Studio 2008, 2011. It was very easy and interesting building what I needed on those platforms but I just totally got tired of being a Windows developer and I abandoned them ever since.
+Most programmers I've seen from various languages usually start with CLI programs besides web developers. We are in a world where everyone wants a graphical interface for everything and then we choose to make programs that are CLI based. Since Microsoft is fully GUI oriented, its programming languages allow you easily build GUI programs. I once developed with Visual Basic 8 and Visual Basic.NET in Visual Studio 2008, 2011. It was very easy and interesting building what I needed on those platforms but I just totally got tired of being a Windows developer and I abandoned them ever since.
 
-I chose the Python path now as I&#8217;m still interested in building GUI programs and I will work you through GUI development as I&#8217;ve had my adventure in it so far.
+I chose the Python path now as I'm still interested in building GUI programs and I will work you through GUI development as I've had my adventure in it so far.
 
 In Python, there are 4 modules you can use to build GUI programs and they are
 
@@ -33,11 +34,12 @@ In Python, there are 4 modules you can use to build GUI programs and they are
   * PyGTK
   * pyQT
 
-I started out with Tkinter since it shipped with my python installation while I was on a Windows operating system. This tutorial helped me <http://sebsauvage.net/python/gui/>. As soon as I got to do my first Tkinter program, I went ahead to do the wxpython program. At this point, I know what it felt like to build a GUI but I didn&#8217;t fully understand how to handle signals and slots. I only used samples from sites and my GUI programs didn&#8217;t have enough objects and enough actions in them.
+I started out with Tkinter since it shipped with my python installation while I was on a Windows operating system. This tutorial helped me <http://sebsauvage.net/python/gui/>. As soon as I got to do my first Tkinter program, I went ahead to do the wxpython program. At this point, I know what it felt like to build a GUI but I didn't fully understand how to handle signals and slots. I only used samples from sites and my GUI programs didn't have enough objects and enough actions in them.
 
 After some reading, I decided to go with pyQt. I never tried pyGTK till date so I have less to say about it. I wrote my first pyQt4 program this way:
 
-<pre class="lang:python decode:true "># Code Example: Display a window in PyQt4
+{% highlight python %}
+# Code Example: Display a window in PyQt4
 # Python 2.6 with PyQt 4
 import sys
 from PyQt4 import QtGui
@@ -56,11 +58,12 @@ if __name__ == "__main__":
     
     exit_code = app.exec_()
     sys.exit(exit_code)
-</pre>
+{% endhighlight %}
 
 The comments explain what each part of the code does. This is just a blank window frame with no objects in it. After this, I found this code for creating shapes within a canvas in a frame
 
-<pre class="lang:python decode:true"># Code Example: Display a window with a button, icon and canvas in PyQt4
+{% highlight python %}
+# Code Example: Display a window with a button, icon and canvas in PyQt4
 # Python 2.7 with PyQt 4
 # This example build on the last one by adding a button, changing the
 # window icon, and adding a canvas where we can draw some shapes.
@@ -161,81 +164,78 @@ if __name__ == "__main__":
     
     exit_code = app.exec_()
     sys.exit(exit_code)
-</pre>
+{% endhighlight %}
 
-The button object here was sending signals to change the shapes in the canvas. This was my first experience working with signals and slots. It&#8217;s like a simple jQuery where we have two objects in the DOM being selected.
+The button object here was sending signals to change the shapes in the canvas. This was my first experience working with signals and slots. It's like a simple jQuery where we have two objects in the DOM being selected.
 
-<pre class="lang:js decode:true ">$('#signal').click(function(){
+{% highlight javascript %}
+$('#signal').click(function(){
   $('.receiver').html('This is my slot');
 });
 // Pure JS
 document.getElementById('signal').onclick = function(){
  document.querySelectorAll('.receiver').innerHTML = 'This is my slot';
-}</pre>
+}
+{% endhighlight %}
 
-That&#8217;s my interpretation in jQuery of handling signals and slots as I have demonstrated them with their related class names.
+That's my interpretation in jQuery of handling signals and slots as I have demonstrated them with their related class names.
 
-Writing GUI code can take a lot of time and can be really stressful. This is one of the reasons why I enjoy Qt because it has QtDesigner. It reminds me of my days with Visual Basic as it has a simple environment for you to just pick GUI components and drop on your frame. It&#8217;s a good toolkit to build GUI programs in few minutes. Here&#8217;s my Qt designer
+Writing GUI code can take a lot of time and can be really stressful. This is one of the reasons why I enjoy Qt because it has QtDesigner. It reminds me of my days with Visual Basic as it has a simple environment for you to just pick GUI components and drop on your frame. It's a good toolkit to build GUI programs in few minutes. Here's my Qt designer
 
-[<img class="aligncenter size-large wp-image-258" src="http://josephrex.me/wp-content/uploads/2014/09/snapshot8-1024x575.png" alt="snapshot8" width="687" height="385" />][2]
+{% image snapshot8.png alt="snapshot8" %}
 
 I designed the UI for my KDE desktop to be dark because I love dark UI so it it may not be such a dark UI in your case. The panes on the left are objects/widgets you can drop on your frame. On the right, we have property editor, signal/slot editor where you can set signals for some slots while designing the UI from the designer. For some signals, I prefer to manually attach them to their slots by writing my python code.
 
-Qtdesigner produces user interface files in .ui extension. This ui files are in XML format. Here&#8217;s a short sample of its output
+Qtdesigner produces user interface files in .ui extension. This ui files are in XML format. Here's a short sample of its output
 
-<pre class="lang:xhtml decode:true ">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;ui version="4.0"&gt;
- &lt;author&gt;Joseph Rex&lt;/author&gt;
- &lt;class&gt;MainWindow&lt;/class&gt;
- &lt;widget class="QMainWindow" name="MainWindow"&gt;
-  &lt;property name="geometry"&gt;
-   &lt;rect&gt;
-    &lt;x&gt;0&lt;/x&gt;
-    &lt;y&gt;0&lt;/y&gt;
-    &lt;width&gt;749&lt;/width&gt;
-    &lt;height&gt;518&lt;/height&gt;
-   &lt;/rect&gt;
-  &lt;/property&gt;
- &lt;/widget&gt;
-&lt;/ui&gt;</pre>
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Joseph Rex</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>749</width>
+    <height>518</height>
+   </rect>
+  </property>
+ </widget>
+</ui>
+{% endhighlight %}
 
-We can work with these XML files directly to build our GUI but I wouldn&#8217;t recommend that. It&#8217;s best to turn this into a python code we can work with. Qtdesigner is built for C++ so C++ programmers can simply click Form > View Code to see the cpp code generated. For Python developers we use a UI compiler program (pyuic). I use pyuic4 so compiling a UI program is this way for me:
+We can work with these XML files directly to build our GUI but I wouldn't recommend that. It's best to turn this into a python code we can work with. Qtdesigner is built for C++ so C++ programmers can simply click Form > View Code to see the cpp code generated. For Python developers we use a UI compiler program (pyuic). I use pyuic4 so compiling a UI program is this way for me:
 
 > pyuic4 guiprogram.ui -o guiprogram.py
 
-You can&#8217;t just run this generated program to load up your GUI program. To use the generated code, <a href="http://pyqt.sourceforge.net/Docs/PyQt4/designer.html#using-the-generated-code" target="_blank">see the docs</a>
+You can't just run this generated program to load up your GUI program. To use the generated code, <a href="http://pyqt.sourceforge.net/Docs/PyQt4/designer.html#using-the-generated-code" target="_blank">see the docs</a>
 
-Now you&#8217;re up and running. To wrap this all up, let&#8217;s create a simple GUI with an input box (QTextEdit), a button (QPushButton), and a label (QLabel). This program will take contents of the input and display in the label field after the button is clicked.
+Now you're up and running. To wrap this all up, let's create a simple GUI with an input box (QTextEdit), a button (QPushButton), and a label (QLabel). This program will take contents of the input and display in the label field after the button is clicked.
 
 I started by creating a new Main Window from the QtDesigner templates
 
-[<img class="aligncenter size-full wp-image-260" src="http://josephrex.me/wp-content/uploads/2014/09/snapshot9.png" alt="snapshot9" width="539" height="461" />][3]
+{% image snapshot9.png alt="snapshot9" %}
 
 Next things will be to set the width, height, and geometry (location of the window by XY axis on screen). Also, we have to take note of the objectName because it is the way we call our objects in the program. This is done in the property edior
 
-<div id="attachment_261" style="width: 697px" class="wp-caption aligncenter">
-  <a href="http://josephrex.me/wp-content/uploads/2014/09/snapshot10.png"><img class="wp-image-261 size-large" src="http://josephrex.me/wp-content/uploads/2014/09/snapshot10-1024x487.png" alt="snapshot10" width="687" height="326" /></a>
-  
-  <p class="wp-caption-text">
-    click to zoom in
-  </p>
-</div>
+{% image snapshot10.png alt="snapshot10" %}
 
 You can see my objectName is MainWindow and I have chosen to use a window of size 400 x 280. I want it at the extreme top right so my geometry is (0,0) which stands for x-axis = 0, y-axis = 0.
 
 I could create my signal and slots right away from the designer like so:
 
-[<img class="aligncenter  wp-image-262" src="http://josephrex.me/wp-content/uploads/2014/09/snapshot11.png" alt="snapshot11" width="819" height="405" />][4]
+{% image snapshot11.png alt="snapshot11" %}
 
-&nbsp;
-
-As you can see the signal/slot editor has the names of each object. and the view for the signals/slot editor shows there&#8217;s a relationship between the display button and the label below. I will just delete this slot to handle this part with my code because I have less options from the designer. I saved my design as example.ui and I&#8217;m compiling to python code with:
+As you can see the signal/slot editor has the names of each object. and the view for the signals/slot editor shows there's a relationship between the display button and the label below. I will just delete this slot to handle this part with my code because I have less options from the designer. I saved my design as example.ui and I'm compiling to python code with:
 
 > pyuic4 example.ui -o ui_example.py
 
 Now I have this generated python code:
 
-<pre class="lang:python decode:true "># -*- coding: utf-8 -*-
+{% highlight python %}
+# -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'example.ui'
 #
@@ -283,11 +283,12 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton.setText(QtGui.QApplication.translate("MainWindow", "Display", None, QtGui.QApplication.UnicodeUTF8))
-</pre>
+{% endhighlight %}
 
-The name of the window object in the designer is &#8220;MainWindow&#8221; so the class name in the generated code is Ui_MainWindow based on that. Following the docs on using generated code, I imported this in my major program
+The name of the window object in the designer is "MainWindow" so the class name in the generated code is Ui_MainWindow based on that. Following the docs on using generated code, I imported this in my major program
 
-<pre class="lang:python decode:true ">import sys
+{% highlight python %}
+import sys
 from PyQt4 import QtGui, QtCore
 from ui_example import Ui_MainWindow
 
@@ -301,17 +302,19 @@ if __name__ == '__main__':
 	app = QtGui.QApplication(sys.argv)
 	window = Main()
 	window.show()
-	sys.exit(app.exec_())</pre>
+	sys.exit(app.exec_())
+{% endhighlight %}
 
-Now the signals. We have three objects on this frame. Let&#8217;s rehash them but this time with the names we&#8217;ve given them in the program.
+Now the signals. We have three objects on this frame. Let's rehash them but this time with the names we've given them in the program.
 
   * QTextEdit = textEdit
   * QPushButton = pushButton
   * QLabel = label
 
-You can see I&#8217;ve used default names to make things easier but you can make it different in your case. QPushButton sends a signal, QLabel receives it and picks the content of QTextEdit to display in itself as a slot. I&#8217;ll amend my code to perform my function
+You can see I've used default names to make things easier but you can make it different in your case. QPushButton sends a signal, QLabel receives it and picks the content of QTextEdit to display in itself as a slot. I'll amend my code to perform my function
 
-<pre class="lang:python decode:true ">import sys
+{% highlight python %}
+import sys
 from PyQt4 import QtGui, QtCore
 from ui_example import Ui_MainWindow
 
@@ -329,18 +332,13 @@ if __name__ == '__main__':
 	app = QtGui.QApplication(sys.argv)
 	window = Main()
 	window.show()
-	sys.exit(app.exec_())</pre>
+	sys.exit(app.exec_())
+{% endhighlight %}
 
-and voila! It works. See it in action after running &#8220;python example.py&#8221;
+and voila! It works. See it in action after running "python example.py"
 
-[<img class="aligncenter size-full wp-image-263" src="http://josephrex.me/wp-content/uploads/2014/09/snapshot12.png" alt="snapshot12" width="400" height="300" />][5]
+{% image snapshot12.png alt="snapshot12" %}
 
 ### Conclusion:
 
-Building GUI programs may be a challenge but as the world evolves, it is very necessary. You should also not directly use generated code from pyuic because you may want to make changes to the UI at any point. Each compilation with pyuic will make you lose your changes you&#8217;ve made on the generated code. I&#8217;ve chosen Qt as my best module for building GUI. You may choose something else that works for you but from what I hear, Tkinter has a lot of downsides so it&#8217;s not recommended.
-
- [1]: http://josephrex.me/wp-content/uploads/2014/09/z_design.jpg
- [2]: http://josephrex.me/wp-content/uploads/2014/09/snapshot8.png
- [3]: http://josephrex.me/wp-content/uploads/2014/09/snapshot9.png
- [4]: http://josephrex.me/wp-content/uploads/2014/09/snapshot11.png
- [5]: http://josephrex.me/wp-content/uploads/2014/09/snapshot12.png
+Building GUI programs may be a challenge but as the world evolves, it is very necessary. You should also not directly use generated code from pyuic because you may want to make changes to the UI at any point. Each compilation with pyuic will make you lose your changes you've made on the generated code. I've chosen Qt as my best module for building GUI. You may choose something else that works for you but from what I hear, Tkinter has a lot of downsides so it's not recommended.

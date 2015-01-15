@@ -11,7 +11,10 @@ tags:
   - internet
   - protest
 ---
-[<img class="aligncenter size-full wp-image-247" src="http://josephrex.me/wp-content/uploads/2014/09/tumblr_inline_nbcf2gqnSg1r1kl7d.jpg" alt="tumblr_inline_nbcf2gqnSg1r1kl7d" width="500" height="500" />][1]
+
+{% image internet-slowdown-2014.png class="head-image" alt="internet slowdown" %}
+
+{% image battle-for-net.jpg alt="battle for the net" %}
 
 If you woke up tomorrow, and your internet**<a href="https://www.battleforthenet.com/sept10th/#modal" target="_blank"> looked like this</a>**, what would you do?
 
@@ -24,6 +27,4 @@ On September 10th, just a few days before the FCC’s comment deadline, public i
 If you’ve got a website, blog or tumblr, get the code to join the #InternetSlowdown here:**<a href="https://battleforthenet.com/tools" target="_blank"> https://battleforthenet.com/sept10th</a>**
 
 Everyone else, here’s a quick list of things you can do to help spread the word about the slowdown:**<a href="http://tumblr.fightforthefuture.org/post/96020972118/be-a-part-of-the-great-internet-slowdown" target="_blank">http://tumblr.fightforthefuture.org/post/96020972118/be-a-part-of-the-great-internet-slowdown</a>**  
-Get creative! It&#8217;s September 10th. It&#8217;s happening this midnight
-
- [1]: http://josephrex.me/wp-content/uploads/2014/09/tumblr_inline_nbcf2gqnSg1r1kl7d.jpg
+Get creative! It's September 10th. It's happening this midnight

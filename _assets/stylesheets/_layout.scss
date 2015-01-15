@@ -80,6 +80,33 @@ main{
 			color: darken($brand-color, 4);
 		}
 	}
+	ul{
+		list-style-type: disc;
+		padding-left: 30px;
+	}
+	h2, h3, h4, h5, h6{
+		font-weight: 300;
+	}
+	h3{
+		font-size: 3rem;
+	}
+	h2{
+		font-size: 3.5rem;
+	}
+	h1{ font-size: 4 rem }
+	hr{
+		border: none;
+		margin-bottom: 3.5rem;
+		&:before{
+			display: block;
+			text-align: center;
+			content: '***';
+			font-size: 2rem;
+			letter-spacing: 0.5em;
+		}
+	}
+	strong{ font-weight: 800; }
+	table{ border: solid thin $black; }
 }
 .container{
 	@include breakpoint($breakpoint-tablet-landscape){
