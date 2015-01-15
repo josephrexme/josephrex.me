@@ -8,21 +8,22 @@ categories:
 tags:
   - bio
 ---
-I am Joseph Rex (bl4ckdu5t). I love to build things, break things, and fix them. I have a strong passion for usability. Since I read <a href="http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107" target="_blank">The design of everyday things</a> by <a href="https://twitter.com/jnd1er" target="_blank">Don Norman</a>, I really got a different view on usability. This has given me a strong drive to creating designs, software, and applications with good usability and user experience. I do various things for the web: I write HTML5, Sass, CSS3, JavaScript and I leverage frameworks like jQuery, compass. I am also a back-end developer and I create backbone for web applications using PHP, Ruby, and Python. I&#8217;m presently proficient with laravel4 and ruby-on-rails. I particular love python and I use it for a lot of self projects. I use PyQt4 (the python wrapper for Qt4) to build GUI desktop software in Python like <a href="http://bl4ckdu5t.github.io/registron" target="_blank">this</a>.
+{% image "//images.ostrich-dev.com/profile.jpg" class="avatar" %}
+I am Joseph Rex (bl4ckdu5t). I love to build things, break things, and fix them. I have a strong passion for usability. Since I read [The design of everyday things][4] by [Don Norman][6], I really got a different view on usability. This has given me a strong drive to creating designs, software, and applications with good usability and user experience. I do various things for the web: I write HTML5, Sass, CSS3, JavaScript and I leverage frameworks like jQuery, compass. I am also a back-end developer and I create backbone for web applications using PHP, Ruby, and Python. I'm presently proficient with laravel4 and ruby-on-rails. I particular love python and I use it for a lot of self projects. I use PyQt4 (the python wrapper for Qt4) to build GUI desktop software in Python like [this][7].
 
 I love math and designs. I use [mathML][1] and SVG. I sometimes take out time to design some amateur vector images.
 
-<a title="Ostrich-Dev" href="http://ostrich-dev.com" target="_blank">Ostrich-Dev</a> is my portfolio website, I have some front-end experiments on <a title="Codepen" href="http://codepen.io/bl4ckdu5t" target="_blank">codepen</a>, projects on <a title="Github" href="http://github.com/bl4ckdu5t" target="_blank">github</a>, and on <a href="http://bitbucket.org/bl4ckdu5t" target="_blank">bitbucket</a>. I sporadically smash my rants on <a href="http://twitter.com/joerex101" target="_blank">twitter</a>, a member of <a href="http://dc414.org" target="_blank">dc414</a>, and<a href="http://resources.infosecinstitute.com/author/joseph-rex/" target="_blank"> I write on security for Infosec Institute.</a>
+[Ostrich-Dev][5] is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], a member of [dc414][12], and I write on security for [Infosec Institute][13].
 
-Unarguably, I spend a lot of time with my computer but when I&#8217;m not on it, I play basketball or watch movies.
+Unarguably, I spend a lot of time with my computer but when I'm not on it, I play basketball or watch movies.
 
-I&#8217;m presently a freelancer and I&#8217;m available to take jobs. [Send me an email][2]
+I'm presently a freelancer and I'm available to take jobs. [Send me an email][2]
 
 My PGP key:
 
 Fingerprint: AADD 0E5A 9371 3A4B 7CAB  CA52 E743 A698 B93F 2D0E
 
-<pre class="lang:default decode:true">-----BEGIN PGP PUBLIC KEY BLOCK-----
+{% highlight text %}
 Version: GnuPG v1.4.12 (GNU/Linux)
 
 mQINBFReAocBEACuJqofFckwaricYGql1oe2i35nuksG+cdFqjbUPTLjhlMhjHy/
@@ -74,10 +75,20 @@ t/E6Dfo091e/+16oVzKkqnsflgyCmFmvS4a4qPmvlzdph995PnSNUO6sjF45nf7m
 PRyyUkp/mzMT76yUhHAq2awoeN/GbFc=
 =TJTm
 -----END PGP PUBLIC KEY BLOCK-----
-</pre>
+{% endhighlight %}
 
 [Download PGP key][3]
 
 [1]: http://josephrex.me/things-you-can-do-with-mathml/ "Things you can do with MathML"
 [2]: mailto:joerex@ostrich-dev.com
 [3]: http://ostrich-dev.com/joerex.asc "Get my PGP public key"
+[4]: http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107
+[5]: http://ostrich-dev.com
+[6]: https://twitter.com/jnd1er
+[7]: http://josephrex.me/registron
+[8]: http://codepen.io/bl4ckdu5t
+[9]: https://github.com/bl4ckdu5t
+[10]: http://bitbucket.org/bl4ckdu5t
+[11]: http://twitter.com/joerex101
+[12]: https://dc414.org/~bl4ckdu5t
+[13]: http://resources.infosecinstitute.com/author/joseph-rex/
