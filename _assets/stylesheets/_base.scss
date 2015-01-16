@@ -54,8 +54,10 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #090914;
-    color: #eee;
+    &:not(.line-pre){
+        background-color: #090914;
+        color: #ddd;
+    }
 }
 
 code {
