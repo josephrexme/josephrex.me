@@ -12,7 +12,7 @@ tags:
   - breakpoint
 ---
 {% image jekyll_assets.jpg class="head-image" alt="jekyll assets" %}
-I am a rails developer and I've always enjoyed all the experience with sprockets and the whole of the assets pipeline. On my quest for seeking a way to use compass properly with my jekyll blog, I came across [a blog][1] suggesting a hacky way of using compass with jekyll. The blog post had referenced this [gist][2] which referenced [another gist][3]. I followed this for a bit till I hit a stumbling block. The method was fine from the start. I had to use the following plugin:
+I've always enjoyed all the experience with sprockets and the whole of the assets pipeline including how it allows me use compass just by having it in my Gemfile. On my quest for seeking ways to use compass properly with my jekyll blog, I came across [a blog][1] suggesting a hacky way of using compass with jekyll. The blog post had referenced this [gist][2] which referenced [another gist][3]. I followed this for a bit till I hit a stumbling block. The method was fine from the start. I had to use the following plugin:
 
 {% gist parkr/2874934 %}
 
@@ -25,7 +25,7 @@ With further hacks, you can get it all to be fine with a single HTTP request on 
 Not long after, I found [jekyll-assets][4] which works so similar to the [rails asset pipeline][5]. As a rails developer, I know how good assets pipeline as been to me in my projects. Here are few things I particularly love about it:
 
 #### extra digest on assets
-app.css becomes something like `app-623b9d195371e35e001b7443cacf426c.css`. As we implement caching, we can bust caches just by modifying the contents of this files, thus changing the digest which gives a different file to be fetched for cache again. We don't need to do the app.css?v=1 kind of cache busting technique. This is just so comfortable and you don't even to bother about it as it handles it nicely for you
+app.css becomes something like `app-623b9d195371e35e001b7443cacf426c.css`. As we implement HTTP caching, we can bust caches just by modifying the contents of this files, thus changing the digest which gives a different file to be fetched for cache again. We don't need to do the app.css?v=1 kind of cache busting technique. This is just so comfortable and you don't even to bother about it as it handles it nicely for you
 
 #### assets tag extensions on liquid
 You have the following tags at your disposal to extend liquid tags and reference.
