@@ -1,7 +1,10 @@
 <aside>
 	<h4>Subscribe to my newsfeed</h4>
-	<input type="text" class="feed" placeholder="Email Address">
-	<button>Subscribe</button>
+	<form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=JosephRex', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+		<input type="text" class="feed" name="email" placeholder="Email Address">
+		<input type="hidden" value="JosephRex" name="uri"/><input type="hidden" name="loc" value="en_US"/>
+		<button>Subscribe</button>
+	</form>
 	<ul class="social-icons">
 		<li>
 			<a href="https://facebook.com/joerex101" class="facebook">
