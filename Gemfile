@@ -1,6 +1,7 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
+gem "jekyll-sitemap"
 gem "compass"
 gem "jekyll"
 gem "jekyll-assets"

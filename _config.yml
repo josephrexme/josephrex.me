@@ -28,3 +28,5 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - .gitignore
+gems:
+  - jekyll-sitemap
