@@ -1,12 +1,22 @@
-// jQuery 2.1.1
-//=require vendor/jquery
+// http://dustindiaz.com/smallest-domready-ever
+function ready(cb) {
+	/in/.test(document.readyState) // in = loadINg
+		? setTimeout(ready.bind(null, cb), 9)
+		: cb();
+}
+ready(function(){
+	// Handling Navigation
+	menuIcon = document.querySelectorAll('nav > svg');
+	Array.prototype.forEach.call( menuIcon, function(el) {
+	   el.addEventListener('click', function() {
 
-$(document).ready(function(){
-	// Menu Navigation
-	$('nav>svg').click(function(){
-		$(this).closest('nav').toggleClass('active');
+	     el.parentNode.classList.toggle('active');
+
+	  }, false);
+
 	});
-	// Moving head images to header position
-	var $header = $('.head-image');
-	$('.container>header').prepend($header);
+    // Moving Featured Image to header
+	var featuredImage = document.querySelector('.head-image');
+	var header = document.querySelectorAll('.container > header')[0];
+	header.appendChild(featuredImage);
 });
