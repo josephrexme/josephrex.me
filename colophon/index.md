@@ -5,7 +5,7 @@ layout: page
 permalink: /colophon/
 ---
 
-The design of this blog was solely done by Joseph Rex using front-end technologies including HTML5, CSS3, Sass, and JavaScript. I'm putting together a styleguide which will be linked from here soon. The site runs under a Jekyll platform and hosted by Github. If you will like a printed version of the blog posts, I've styled the print media to produce good print versions of the blog posts.
+The design of this blog was solely done by Joseph Rex using front-end technologies including HTML5, CSS3, Sass, and JavaScript. I'm putting together a styleguide which will be linked from here soon. The site runs under a Jekyll platform and hosted by Github. If you will like a printed version of the blog posts, I've styled the print media to produce good print versions.
 
 The inscribed name at the top "Joseph Rex" was inspired by [Dessy Chongarova][1]'s [blog][2].
 
