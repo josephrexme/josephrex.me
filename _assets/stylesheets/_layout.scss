@@ -20,7 +20,11 @@ body{
 	background: $color-primary;
 	margin: 0;
 	font-family: $font-stack;
-	font-size: 1.6em;
+	font-size: 1.6rem;
+}
+abbr[title]:hover:after, acronym[title]:hover:after{
+	content: " (" attr(title) ")";
+	text-shadow: 0 0 1em #dd3b2a;
 }
 header{
 	width: 100%;
@@ -239,7 +243,7 @@ footer{
 	text-align: center;
 	//background: darken($color-primary, 8);
 	padding: 20px 10px;
-	color: $white;
+	color: #ddd;
 }
 .social-icons{
 	margin: 40px 0;
@@ -259,8 +263,16 @@ footer{
 	width: $avatar-size;
 	height: $avatar-size;
 	border-radius: 50%;
-	border: solid 2px $white;
-	box-shadow: 0 2px 3px $black;
+	border: solid 3px $white;
+	box-shadow: 0 1px 1px #333;
 	margin-bottom: 10px;
+}
+[class~="page-title"]{
+	color: $white;
+	text-align: center;
+	font-size: 3rem;
+	padding: 20px 10px;
+	margin-bottom: 0;
+	background: url(../pattern.png) lighten($color-primary, 6);
 }
 @import "helpers", "print";

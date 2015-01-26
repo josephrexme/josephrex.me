@@ -1,12 +1,8 @@
 ---
 title: About Me
 author: Joseph Rex
-layout: post
+layout: page
 permalink: /about-me/
-categories:
-  - bio
-tags:
-  - bio
 ---
 {% image "//images.ostrich-dev.com/profile.jpg" class="avatar" %}
 I am Joseph Rex (bl4ckdu5t). I love to build things, break things, and fix 'em. I have a strong passion for usability. Since I read [The design of everyday things][4] by [Don Norman][6], I really got a different view on usability and I've since worked hard on creating human centered designs. This has influenced how I design software and applications with good user experience. I do various things for the web: I write HTML5, Sass, CSS3, JavaScript and I leverage frameworks like jQuery, compass. I am also a back-end developer and I create backbone for web applications using PHP, Ruby, and Python. I'm presently proficient with laravel4 and ruby-on-rails. I particular love python and I use it for a lot of self projects. I use PyQt4 (the python wrapper for Qt4) to build GUI desktop software in Python like [this][7].
