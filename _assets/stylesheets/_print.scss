@@ -40,7 +40,7 @@
 	h2, h3{ page-break-after: avoid; }
 
 	// Domain-Specific
-	.container>aside{
+	.container>aside, #disqus_thread{
 		display: none;
 	}
 }

@@ -17,6 +17,8 @@ ready(function(){
 	});
     // Moving Featured Image to header
 	var featuredImage = document.querySelector('.head-image');
-	var header = document.querySelectorAll('.container > header')[0];
-	header.appendChild(featuredImage);
+	if (featuredImage){
+		var header = document.querySelectorAll('.container > header')[0];
+		header.appendChild(featuredImage);
+	}
 });
