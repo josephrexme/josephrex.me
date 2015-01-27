@@ -124,7 +124,7 @@ main{
 		>aside{
 			position: absolute;
 			right: 0;
-			top: 200px;
+			top: 100px;
 			width: 20%;
 		}
 	}
@@ -274,5 +274,21 @@ footer{
 	padding: 20px 10px;
 	margin-bottom: 0;
 	background: url(../pattern.png) lighten($color-primary, 6);
+}
+#carbonads{
+	background: rgba($white, .2);
+	max-width: 150px;
+	border: solid thin #bbb;
+	padding: 10px;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.carbon-text{
+	display: block;
+	margin: 5px 0;
+}
+.carbon-poweredby{
+	color: #ddd;
 }
 @import "helpers", "print";
