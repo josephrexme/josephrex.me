@@ -10,7 +10,7 @@ tags:
   - nodejs
   - web
 ---
-I do a lot of back-end web development but front-end calls me a lot because of my passion for creativity. I&#8217;ve had to consider CSS files on various projects I&#8217;ve worked on. Some as front-end designer, some as back-end. On a project I&#8217;m working on, we&#8217;ve had various hands in the stylesheets and it has caused a lot of irrelevant rules in the CSS. Some global classes are not really been put to use and the CSS already contains over 6,500 lines of code already.
+I do a lot of back-end web development but front-end calls me a lot because of my passion for creativity. I've had to consider CSS files on various projects I've worked on. Some as front-end designer, some as back-end. On a project I'm working on, we've had various hands in the stylesheets and it has caused a lot of irrelevant rules in the CSS. Some global classes are not really been put to use and the CSS already contains over 6,500 lines of code already. Also, the fact that multiple frameworks are used on the present project, it lands us in a larger number of selectors.
 
 To clean up my unused rules I have picked on the following:
 

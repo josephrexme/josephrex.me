@@ -15,7 +15,7 @@ The design layout of the blog was inspired by [Aurélien SALOMON][7]'s future [W
 
 {% image future-wikipedia.png %}
 
-I use the Open Sans font provided by [Google fonts][3] and [Google Analytics][4] for monitoring the usage of the site.
+I use the Open Sans font provided by [Google fonts][3], [Google Analytics][4] and [Hotjar][9] for monitoring the site usage.
 
 I thought of creating this colophon after coming across [Richard Rutter][5]'s [colophon][6].
 
@@ -27,3 +27,4 @@ I thought of creating this colophon after coming across [Richard Rutter][5]'s [c
 [6]: http://clagnut.com/colophon
 [7]: https://www.behance.net/aureliensalomon
 [8]: https://www.behance.net/gallery/16113317/Wikipedia-concept
+[9]: http://www.hotjar.com/

@@ -2,6 +2,7 @@
 title: Oh Sass! How awesome is it gonna get
 author: Joseph Rex
 layout: post
+comments: true
 permalink: /sass-awesomeness/
 categories:
   - web
@@ -11,21 +12,24 @@ tags:
   - scss
   - web
 ---
-I started writing SASS not too long ago and it has been one of the best experiences I&#8217;ve had. Sass (Syntatically Awesome Stylesheet) is just as awesome as the name sounds.
+I started writing Sass not too long ago and it has been one of the best experiences I've had. Sass (Syntatically Awesome Stylesheet) is just as awesome as the name sounds.
 
-SASS is a CSS predecessor that gives smart designers a lot more flexibility with the styling. New features are being added to SASS and with contributions of the Google team, it&#8217;s getting even faster than you can imagine. This [talk by Chris Eppstein][1] reveals the work in progress.
+Sass is a CSS predecessor that gives smart designers a lot more flexibility with the styling. New features are being added to Sass and with contributions of the Google team, it's getting even faster than you can imagine. This [talk by Chris Eppstein][1] reveals the work in progress.
 
-Some of the common things that can be done with SASS are
+Some of the common things that can be done with Sass are
 
 #### VARIABLES
 
-<pre class="lang:sass decode:true" title="variables">$color: #ff0000;
+{% highlight css %}
+$color: #ff0000;
 .warning
-    color: $color</pre>
+    color: $color
+{% endhighlight %}
 
 #### MIXINS
 
-<pre class="lang:sass decode:true">=border-radius($radius)
+{% highlight css %}
+=border-radius($radius)
     -webkit-border-radius: $radius
     -moz-border-radius:    $radius
     -ms-border-radius:     $radius
@@ -33,13 +37,15 @@ Some of the common things that can be done with SASS are
     border-radius:         $radius
 
 .object
-     +border-radius(5px)</pre>
+     +border-radius(5px)
+{% endhighlight %}
 
-And that&#8217;s a sweet way to defeat repetition of vendor prefixes.
+And that's a sweet way to defeat repetition of vendor prefixes.
 
 #### Extend (Inheritance)
 
-<pre class="lang:sass decode:true" title="Sass inheritance">.message
+{% highlight css %}
+.message
         border: 1px solid #ccc
         padding: 10px
         color: #333
@@ -47,24 +53,26 @@ And that&#8217;s a sweet way to defeat repetition of vendor prefixes.
 .success
         @extend .message
         border-color: green
-</pre>
+{% endhighlight %}
 
-For most of the new features, SASS3 (SCSS) is used.
+For most of the new features, Sass3 (SCSS) is used.
 
 #### @each loop
 
-<pre class="lang:default decode:true">@each $alert in success, warning, error{
+{% highlight css %}
+@each $alert in success, warning, error{
   .#{$alert}-display {
     background-image: url('/images/#{$alert}.png');
   }
 }
-</pre>
+{% endhighlight %}
 
 Thanks to [Ben Frain][2], I learnt about maps from [his blog][3].
 
 You see how he had applied the @each loop in that article to handle a json encoded data by making use of maps this way
 
-<pre class="lang:sass decode:true" title="maps and @each loop">// Map
+{% highlight css %}
+// Map
 $colourList: (
     1  : (#000000, #000011), 
     2  : (#000011, #000022), 
@@ -86,11 +94,11 @@ $colourList: (
         }
     }
 }
-</pre>
+{% endhighlight %}
 
-There&#8217;s more to play with on SASS, @while loops, @for loops, @if statements, mathematical operations, and more. Head over to the <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="_blank">SASS documentation</a> to see more of them and join me in rocking this world of SASS.
+There's more to play with on Sass, @while loops, @for loops, @if statements, mathematical operations, and more. Head over to the <a href="http://sass-lang.com/documentation/file.Sass_REFERENCE.html" target="_blank">Sass documentation</a> to see more of them and join me in rocking this world of Sass.
 
-Thinking why you may need SASS if you can just write your CSS? Check out this <a href="http://css-tricks.com/video-screencasts/132-quick-useful-case-sass-math-mixins/" target="_blank">article with video</a> on some use cases by Chris Coyier
+Thinking why you may not need Sass if you can just write your CSS? Check out this <a href="http://css-tricks.com/video-screencasts/132-quick-useful-case-sass-math-mixins/" target="_blank">screencast</a> on some use cases by Chris Coyier
 
  [1]: https://www.youtube.com/watch?v=-ZJeOJGazgE
  [2]: http://benfrain.com/
