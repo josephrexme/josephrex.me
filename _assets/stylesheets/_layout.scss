@@ -291,4 +291,19 @@ footer{
 .carbon-poweredby{
 	color: #ddd;
 }
+.lost{
+	margin: 0 auto;
+	text-align: center;
+	> svg {
+		fill: $color-primary;
+		width: 150px;
+		height: 150px;
+	}
+	h4{
+		font-size: 4rem;
+	}
+	h5{
+		font-size: 2.5rem;
+	}
+}
 @import "helpers", "print";
