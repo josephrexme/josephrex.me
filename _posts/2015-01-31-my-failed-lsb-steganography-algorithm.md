@@ -191,7 +191,7 @@ The resulting output has had some major pixels tampered with
 
 {% image stegoOutput.png %}
 
-The distortion is from the middle to the bottom only because I splitted the image hex into two to leave the first half containing hex data untampered with. The other half whose LSB was modified now produces a malformed image output.
+The distortion is from the middle to the bottom only because I splitted the image hex into two to leave the first half containing EXIF data untampered with. The other half whose LSB was modified now produces a malformed image output.
 
 A steganography software is to modify the media file with no obvious changes but I have a modification with a way too obvious change. I've had to put this aside for a while to get on with other work. If you have any suggestions to this algorithm, I'll appreciate them
 
