@@ -22,6 +22,7 @@ body{
 	font-family: $font-stack;
 	font-size: 1.6rem;
 }
+iframe{ margin: 0 auto; }
 abbr[title]:hover:after, acronym[title]:hover:after{
 	content: " (" attr(title) ")";
 	text-shadow: 0 0 1em #dd3b2a;
