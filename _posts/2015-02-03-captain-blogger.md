@@ -47,7 +47,7 @@ To find more useful information on becoming a better blogger. Some of the great 
 * [Scott Hanselman's keep your blog from sucking][6]
 * [Achieve ultimate blog success by Jeff Atwood][7]
 
-John Sonmez is presently taking an email course on blogging which can be found on <http://devcareerboost.com/blog-course/> . I've been following it up with it and it has been of use to me. Make sure to check out his blog: <http://simpleprogrammer.com> as he also has various posts on how to become a better software developer.
+John Sonmez is presently taking an email course on blogging which can be found on <http://devcareerboost.com/blog-course/> . I've been following up with it and it has been of great use to me. Make sure to check out his blog: <http://simpleprogrammer.com> as he also has various posts on how to become a better software developer.
 
  
 [1]: http://www.brainyquote.com/quotes/authors/m/marla_gibbs.html
