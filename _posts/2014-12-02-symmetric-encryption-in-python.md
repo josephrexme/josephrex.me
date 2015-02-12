@@ -31,6 +31,7 @@ decrypted = cipher.decrypt(ctext)
 {% endhighlight %}
 
 Strange behaviour from MODE_CFB made me try MODE_CBC. Just the exact same way, I went ahead to just change to MODE_CBC
+<!--more-->
 
 {% highlight python %}
 from Crypto.Cipher import AES

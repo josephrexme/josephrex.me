@@ -30,3 +30,5 @@ exclude:
   - .gitignore
 gems:
   - jekyll-sitemap
+
+excerpt_separator: <!--more-->

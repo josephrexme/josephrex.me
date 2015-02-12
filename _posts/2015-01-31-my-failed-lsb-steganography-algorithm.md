@@ -7,8 +7,8 @@ permalink: /my-failed-lsb-steganography/
 ---
 
 {% image failed-stego.jpg class="head-image" alt="stego girl" %}
-
 Last month (December 2014), I started developing a new GUI steganography software after building a [simple steganography tool][1] for my [post at Infosec Institue][2]. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+<!--more-->
 
 Image exif data is stored in about the first 30 hex values of the image hexadecimal data. The number may not be accurate enough but the point remains exif data is stored at the top of the image at it should be kept untampered with to retain a proper and valid image format. The software appends data to the end of image files.
 

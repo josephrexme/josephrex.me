@@ -12,6 +12,7 @@ tags:
 ---
 {% image what-is-dns.png alt="dns" class="head-image" %}
 I was working on a rails app last week and at some point, it failed to fetch the google fonts I had used within it. After about 2 days, everything was fine again so I didn't have to worry about anything. Earlier today, I was developing a jekyll blog and the same thing happened. This time I really needed my fonts to be the way I wanted them from development. Chrome failed to fetch the woff2 google fonts displaying the following error.
+<!--more-->
 
 > Failed to load resource: net::ERR\_NAME\_NOT_RESOLVED
 

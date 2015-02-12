@@ -12,9 +12,8 @@ tags:
   - scss
 ---
 {% image lightsabers-clash.jpg alt="light sabers" class="head-image" %}
-
 When you look through the element styles of your browser web developer tools, you can see how CSS rules override themselves. What is prioritized is mostly based on the specificity level. It's a usual thing that styles below override the ones above, inline styles override external styles. These are the little things but it gets deeper when we use id selectors around our stylesheets. Ids have high specificity and there are uncalled for as we don't want unnecessary spikes in our specificity graph. This <a href="http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/" target="_blank">css-wizardry article</a> tells why IDs can be the demons of our stylesheets.
-
+<!--more-->
 I seldom use CSS frameworks, but I do know that bootstrap makes use of classes. If you are not taking advantage of many selectors available today, then you can just stick with the type (element) selectors and classes.
 
 I just sounded like IDs were evil. What's more evil is the <span style="color: #ff0000;">!important</span>. If you're a beginner or intermediary CSS coder, then there is a big chance you use the !important which is a maximum specificity level and it's why it usually overrules the other rules (predecessors and successors). Some designers/developers now find themselves in a quandary when told not to make use of !important they have gotten so used to. They ask questions like *Then what should I use?*, *What else can do the job?*.

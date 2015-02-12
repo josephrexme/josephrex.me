@@ -12,6 +12,7 @@ tags:
 As the web grows, different design trends come into existence. A larger number of organizations will focus more on keeping to this trends, having a nice website that is responsive, having something with cool Javascript effects.
 
 There's a lot more things that make your website suck and one I can say is your perspective about your website. It's not cool to everyone just because it seems cool to you and your colleagues. You should read <a href="http://www.webpagesthatsuck.com/biggest-mistakes-in-web-design-1995-2015.html" target="_blank">the biggest mistakes in web design</a>.
+<!--more-->
 
 UX is essential, you must consider it from the very start of your projects. From your browser level, you can run as much tests as you want. You can run audits, monitor your network waterfall, test for various viewports and media types. There are also services that help around the web like:
 

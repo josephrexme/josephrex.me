@@ -1,22 +1,40 @@
 ---
-layout: default
 ---
-
-<main>
-
-  <ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1"><meta name="author" content="Joseph Rex">
+  <meta name="keywords" content="security, code, programming, blog, penetration test, MKE developer, programming, software development, design, forensics, ruby-on-rails, python, laravel, rails">
+  <meta name="description" content="Joseph Rex's blog on exploring software and applications. Rants on Python, Rails, Laravel, pyQt, and more">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800,300' rel='stylesheet' type='text/css'>
+  <!--[if IE]>
+    {% stylesheet ie %}
+  <![endif]-->
+  {% stylesheet app %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="shortcut icon" href="{{ "/favicon.png" }}">
+  <link rel="pingback" href="https://webmention.io/josephrex.me/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/josephrex.me/webmention" />
+  <title>Joseph Rex's blog</title>
+</head>
+<body data-index>
+  {% image logo.png alt="JR" class="logo" %}
+  {% include navigation.html %}
+  <section data-section="header">
+    <h2>Joseph Rex</h2>
+    <p>The future is now</p>
+  </section>
+  <main>
     {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <h3>
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {{-- post.excerpt --}}
-      </li>
+        </h3>
+        {{ post.excerpt }}
     {% endfor %}
-  </ul>
-
-  <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</main>
+  </main>
+  {% include footer.html %}
+</body>
+</html>

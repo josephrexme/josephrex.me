@@ -15,6 +15,8 @@ The design layout of the blog was inspired by [Aurélien SALOMON][7]'s future [W
 
 {% image future-wikipedia.png %}
 
+The home page design concept from [The Peak squarespace template][10] and [Unicorn Institute][11].
+
 I use the Open Sans font provided by [Google fonts][3], [Google Analytics][4] and [Hotjar][9] for monitoring the site usage.
 
 I thought of creating this colophon after coming across [Richard Rutter][5]'s [colophon][6].
@@ -28,3 +30,5 @@ I thought of creating this colophon after coming across [Richard Rutter][5]'s [c
 [7]: https://www.behance.net/aureliensalomon
 [8]: https://www.behance.net/gallery/16113317/Wikipedia-concept
 [9]: http://www.hotjar.com/
+[10]: http://squarespace.com/templates/?q=peak%20restaurants
+[11]: http://unicorninstitute.com/

@@ -307,4 +307,104 @@ footer{
 		font-size: 2.5rem;
 	}
 }
+[data-index]{
+	background: #eee;
+	nav{
+		background: $color-primary;
+		@include breakpoint($breakpoint-tablet-landscape){
+			padding: 0 10px 0 10px;
+			position: fixed;
+			z-index: 150;
+			top: 0;
+			width: 100%;
+			max-height: $nav-height;
+			>ul{
+				background: darken($color-primary, 3);
+				color: $white;
+				width: 100%;
+				position: absolute;
+				padding: 0 0 10px 0;
+				left: 0;
+				z-index: 1000;
+				top: $nav-height - 10px;
+				border-radius: 0 0 10px 10px;
+				display: none;
+				li{
+					>a{
+						display: block;
+						padding: 10px;
+						width: 100%;
+						height: 100%;
+						&:hover{
+							background: darken($color-primary, 6);
+						}
+					}
+				}
+			}
+			&.active>ul{ display: block; }
+			&.active svg{ background: darken($color-primary, 3); }
+			svg{
+				display: block;
+				cursor: pointer;
+				height: 100%;
+			}
+		}
+	}
+	main{
+		padding: 6rem;
+		img,pre{
+			display: none;
+		}
+		@include breakpoint($breakpoint-tablet-landscape){
+			width: $breakpoint-tablet-landscape;
+			position: relative;
+			top: -100px;
+			margin: 0 auto;
+		}
+	}
+	footer{
+		color: #444;
+	}
+}
+[data-section~="header"]{
+	height: 30rem;
+	background: linear-gradient(rgba($color-primary, .8), rgba($color-primary, .8)), url('/header.png') no-repeat;
+	color: $white;
+	padding: 2rem;
+	text-align: center;
+	overflow: hidden;
+	@include breakpoint($breakpoint-tablet-landscape){
+		height: 40rem;
+	}
+	h2{
+		font-size: 3rem;
+		margin-top: 30%;
+		@include breakpoint($breakpoint-iphone-landscape){
+			margin-top: 10%;		
+		}
+		@include breakpoint($breakpoint-laptop){
+			font-size: 4rem;
+		}
+	}
+	p{
+		color: darken($color-primary, 9);
+		font-weight: 300;
+		font-size: 2rem;
+	}
+}
+.logo{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	right: 0;
+	z-index: 200;
+	margin: 0 auto;
+	width: 40px;
+	@include breakpoint($breakpoint-tablet-landscape){
+		top: 80px;
+	}
+	@include breakpoint($breakpoint-laptop){
+		width: 60px;
+	}
+}
 @import "helpers", "print";

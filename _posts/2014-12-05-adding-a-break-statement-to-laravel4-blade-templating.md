@@ -14,6 +14,7 @@ format: aside
 It's been quite long since I had to develop with laravel4 but in my active days, I leveraged blade templating in my views. View files have less logic but then we have to perform simple loop operations and conditional statements. Blade provides @if, @endif, @foreach, @endforeach. Well, I wasn't satisfied with that because I had a lot cases to break my loop. This was my solution
 
 If you have a helpers file that extends start/global.php you can add the following to extend blade
+<!--more-->
 
 {% highlight php %}
 <?php

@@ -8,10 +8,9 @@ categories:
   - General
 ---
 {% image shitpic.jpg class='head-image' %}
-
-<img src="http://images.ostrich-dev.com/profile.jpg" alt="bl4ckdu5t-avatar" width="230" />
-
+{% image "http://images.ostrich-dev.com/profile.jpg" alt="bl4ckdu5t-avatar" width="230" %}
 For a long time I've been known with the avatar face of me above, having a stamp of my IRC handle (bl4ckdu5t) at the top right. Recently, I found a picture of someone that had tried to steal my identity in some way or thought he was being a good protege by copying me which I don't appreciate. He had this version of my avatar
+<!--more-->
 
 {% image myclone.jpg alt="clone-of-me" width="230" %}
 

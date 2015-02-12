@@ -23,6 +23,7 @@ Forum archive: <http://forumsarchive.laravel.io>
 Laravel Jobs: [https://larajobs.com][1]
 
 Laravel Podcast: <http://www.buzzsprout.com/11908>
+<!--more-->
 
 Laravel Screencasts (Jeffrey Way): <https://laracasts.com>
 

@@ -6,8 +6,8 @@ comments: true
 permalink: /a-grid-framework-from-susy/
 ---
 {% image susy.png class="head-image" alt="Susy" %}
-
 [Susy][1] is a great grid framework and something I really love about it is the idea of grid on demand rather than having to use frameworks just as Chris Coyier quoted:
+<!--more-->
 
 > I like the idea of grids-on-demand, rather than a strict framework.
 

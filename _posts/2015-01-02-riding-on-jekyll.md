@@ -9,9 +9,9 @@ categores:
 tags:
   - blogging
 ---
-<img class="head-image" src="http://images.ostrich-dev.com/jekyll-logo.png" alt="jekyll logo">
-
+{% image "http://images.ostrich-dev.com/jekyll-logo.png" alt="jekyll logo" class="head-image" %}
 It's a new year and I'm to begin with new things. I started josephrex.me blog in 2014 and it has revived my old blogging habits. I have been on Wordpress which is nice considering how I get comments plugged into my blog posts without any third-party integration, the awesome jetpack services, the performance plugins, and most of all the easy WYSIWYG editor where I write with ease. I had a feel of version 4.0.1 before leaving and they had added the distraction-free writing feature. All of this is good but it was too much in a way.
+<!--more-->
 
 The need for one or two plugins to do their jobs required extra one or more CSS files to be included. At a point, I couldn't keep track of the assets being loaded. May not seem like something that matters much but it does in that it makes me stay balanced with pagespeed. Besides pagespeed, it is a good user experience to let my weblog load faster for the viewers.
 

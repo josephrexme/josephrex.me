@@ -13,6 +13,7 @@ tags:
 ---
 {% image jekyll_assets.jpg class="head-image" alt="jekyll assets" %}
 I've always enjoyed all the experience with sprockets and the whole of the assets pipeline including how it allows me use compass just by having it in my Gemfile. On my quest for seeking ways to use compass properly with my jekyll blog, I came across [a blog][1] suggesting a hacky way of using compass with jekyll. The blog post had referenced this [gist][2] which referenced [another gist][3]. I followed this for a bit till I hit a stumbling block. The method was fine from the start. I had to use the following plugin:
+<!--more-->
 
 {% gist parkr/2874934 %}
 
