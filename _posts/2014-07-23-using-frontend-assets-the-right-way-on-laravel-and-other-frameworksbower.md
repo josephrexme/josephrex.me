@@ -14,6 +14,7 @@ tags:
 Non laravel users are getting intimidated with the unending trend of Laravel discussions everywhere they go :)
 
 Laravel is an awesome back-end framework that has attracted a lot of PHP developers including the Professionals like Jeffrey Way who makes awesome videos on [Laracast][1] (Netflix for Developers).
+<!--more-->
 
 I do front-end and back-end development so I care about every bit of my current project and it's best performance.
 

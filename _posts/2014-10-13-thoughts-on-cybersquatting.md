@@ -23,6 +23,7 @@ I have never been a cyber-squatter and I don't plan on becoming one as I have be
 What is cyber squatting?
 
 Squatting in itself means occupying an abandoned area. It is also known as domain squatting. Wikipedia describes it this way:
+<!--more-->
 
 > **Cybersquatting** (also known as **domain squatting**), according to the United States federal law known as the [Anticybersquatting Consumer Protection Act][3], is registering, trafficking in, or using a [domain name][4] with [bad faith][5] intent to profit from the goodwill of a [trademark][6] belonging to someone else. The cybersquatter then offers to sell the domain to the person or company who owns a trademark contained within the name at an inflated price.
 

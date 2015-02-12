@@ -12,6 +12,7 @@ tags:
 ---
 {% image Chips.jpg class="head-image" alt="Chips" %}
 The common saying is "The walls have ears". This is a figurative expression that expresses that things we say can be heard by people around even while we think there's no one around (or information just leaks in one way or another). Technology in this generation has caused a lot of transformations and changed the way we see things.
+<!--more-->
 
 The more technologies, the more paranoia. How long can we stay secure. How sure are you that your 48 bit password secured machine doesn't send logs to the NSA? This is even out of the context.
 

@@ -13,6 +13,7 @@ tags:
   - web
 ---
 JavaScript is boss at what it does by helping us manipulate the DOM. jQuery has helped JS starters and also PROs that want to get work done in time. The .attr() function is meant to get the attributes of a selected node in the DOM. Starting with jQuery, I felt it was totally ok to use .attr() not just because it was the function I felt I wanted, but it sounded semantically ok with the task I want to achieve. Thinking of it in a simple way, "attr" looks like an abbreviation of "attribute" and what I want to do is access the contents of my HTML element attribute. Used it like this for a while and found out it didn't work as perfect as I expected till I discovered I shouldn't have been doing it this way. .attr() accesses defaultValue (initial value) of an element's attribute which means if I have a mark-up like this
+<!--more-->
 
 {% highlight html %}
 <input type="text" value="FooBar">

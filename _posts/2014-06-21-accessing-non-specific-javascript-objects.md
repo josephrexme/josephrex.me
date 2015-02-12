@@ -26,6 +26,7 @@ data.gender //returns male
 {% endhighlight %}
 
 While working with Laravel for my back-end programming on my current project, I had cases where I received JSON objects as validation messages. The json being received is something like
+<!--more-->
 
 {% highlight javascript %}
 {"message":"Validation Successful","id":"13"}

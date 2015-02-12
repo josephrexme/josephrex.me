@@ -13,6 +13,7 @@ tags:
 {% image perfectionist-image.jpg alt="perfectionist-image" class="head-image" %}
 
 I'm sick of hearing everyone call themselves perfectionists everywhere I go. Trust me, this is the most ridiculous thing you should call yourself from my view. I'd rather you use curse words on me than call me a perfectionist.
+<!--more-->
 
 ###Who is a perfectionist?
 

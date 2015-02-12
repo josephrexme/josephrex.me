@@ -20,6 +20,7 @@ I recently stumbled upon butterfly on <http://paradoxxxzero.github.io/2014/02/28
 [ajaxterm][2] and [anyterm][3]
 
 They are also good but development has stopped on them and I don't think they are better than butterfly. Ajaxterm was adapted from anyterm and there have been no new commits since 2011.
+<!--more-->
 
 Why should you use butterfly?
 

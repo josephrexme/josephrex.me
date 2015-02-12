@@ -16,6 +16,7 @@ tags:
 {% image Web-Developer.jpg class="head-image" alt="Web-Developer" %}
 
 I've seen different front-end developers start their projects. In most cases for intermediate designers, first steps are to write the basic HTML, download <a href="http://getbootstrap.com" target="_blank">bootstrap</a> or <a href="http://foundation.zurb.com/" target="_blank">foundation</a> framework for local use, download an icon-font set like <a href="http://fontawesome.io/" target="_blank">fontawesome</a>, and they start writing their mark-up to fit the styles defined by the framework.
+<!--more-->
 
 You speak of user experience? You've killed it even before starting your project at all. If you fall in that category I described above. Then you need a change henceforth if you are not allergic to advancements.
 

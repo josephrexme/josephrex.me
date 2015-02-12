@@ -14,6 +14,7 @@ tags:
   - web
 ---
 Project collaboration is one of the greatest things ever, especially in the open source community. Despite it's awesomeness, there are always challenges in collaborated projects. Some idealist programmers pick up the code and find it uncomfortable to mix with non coordinated contributions by a clumsy programmer. The [PSR][1] exists in the PHP community to bring about ideas that may make good programmers follow some good concepts. This way, you'll find a lot of similarity in the codes of various programmers that follow the PSR.
+<!--more-->
 
 Unfortunately, you don't get to be with the pros on all projects you hired on. However, there's a level of code untidiness you can tolerate as a programmer that is privy of the good practices and lives by them. This is the evil part of collaborated projects. Left to this, I don't want to ever collaborate on a project.
 

@@ -11,6 +11,7 @@ tags:
   - sass
 ---
 In a [recent article][1], I talked about my OS migration. Changing Operating System is not an easy thing to go through but I went through it anyway. After setting up all I needed, I wanted to resume to my projects ASAP. I downloaded Sass and Compass again and pulled my project from it's repository on an SVN. I tried `compass watch` and I got an error like:
+<!--more-->
 
 > No space left on device - Failed to watch "…": The user limit on the total number of inotify watches was reached or the kernel failed to allocate a needed resource. (Errno::ENOSPC)
 

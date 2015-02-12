@@ -33,6 +33,7 @@ $('form').on('submit',function(e){
 {% endhighlight %}
 
 and for those using older versions of jQuery, it should be something like this you have:
+<!--more-->
 
 {% highlight javascript %}
 $('form').on('submit',function(e){

@@ -19,6 +19,7 @@ tags:
 There comes a point when your program needs to be distributed to other users. You don't want to always have to give every intended user of your program a list of modules or libraries to be installed before they can use your software.
 
 I've found myself developing software with python a lot lately and usually, I like people to check them out. Most times, my target users are Windows OS users. I built my programs but packing them into binaries became the pain in the neck for me.
+<!--more-->
 
 Thanks to sherafff on the IRC. He got my first required binary done for me from his windows development machine. I'm no windows user and yet I have to be on the operating system for the target binary while I bundle it. This is no big deal! I have a windows VM.
 

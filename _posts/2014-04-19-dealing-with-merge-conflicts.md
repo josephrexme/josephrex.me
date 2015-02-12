@@ -11,6 +11,7 @@ tags:
   - meld
 ---
 Recently, I started using git and mercury for version control. I've never really used any other version control system before these two. For most of my recent projects, I've chosen to make more use of git. Git is a really awesome version control system as I've heard from a lot of Pros coming from other version control system like Subversion (SVN).
+<!--more-->
 
 I just saw this article by Tobias Günther on[ CSS-Tricks][1] and it was really detailed and interesting, explaining everything about merge conflicts and  how we fix them. Tobias works for[ Tower][2] where they built the git-tower. In the article he made demonstrations with <a href="http://www.kaleidoscopeapp.com/" target="_blank">Kaleidoscope</a> which is a diff / merge  client for Mac OS X.
 

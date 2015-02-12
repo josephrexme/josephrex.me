@@ -14,6 +14,7 @@ tags:
 Recently I chose to move from vanilla CSS to the syntactically awesome stylesheeets and this has been a great step in my life. It's like leaving a klingon which I've had as a girlfriend to date a human or vulcan :)
 
 <a href="http://sass-lang.com" target="_blank">Team-Sass</a> provided a style guide for SASS concerning how we can name our variables for colors. A basic variable naming should be as it is on <a href="http://sass-lang.com/styleguide/color/" target="_blank">http://sass-lang.com/styleguide/color/</a> where all the colors have their names as variables like so:
+<!--more-->
 
 {% highlight css %}
 $hopbush: #c69

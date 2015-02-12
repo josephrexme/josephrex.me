@@ -25,6 +25,7 @@ Below is an example of an HTML form written in blade template and laravel illumi
 {% endhighlight %}
 
 It says I have a file with the name values as file. To handle this upload, you can use the controller method used for handling the entire form and have the following inside it
+<!--more-->
 
 {% highlight php %}
 <?php

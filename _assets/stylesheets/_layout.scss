@@ -312,6 +312,7 @@ footer{
 	nav{
 		background: $color-primary;
 		@include breakpoint($breakpoint-tablet-landscape){
+			background: rgba($color-primary,.7);
 			padding: 0 10px 0 10px;
 			position: fixed;
 			z-index: 150;
@@ -351,15 +352,17 @@ footer{
 		}
 	}
 	main{
-		padding: 6rem;
 		img,pre{
 			display: none;
 		}
 		@include breakpoint($breakpoint-tablet-landscape){
 			width: $breakpoint-tablet-landscape;
+			padding: 6rem;
+			margin: 0 auto;
+		}
+		@include breakpoint($breakpoint-laptop){
 			position: relative;
 			top: -100px;
-			margin: 0 auto;
 		}
 	}
 	footer{

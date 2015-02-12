@@ -16,6 +16,7 @@ I'm a left-brained computer savvy. I love logic and math and because of this, I 
 {% image sass-tshirt-1.jpg alt="sass-tshirt-1" class="head-image" %}
 
 I've been writing Sass for 3 months now. I hope to give Stylus a try some time soon as I hear of it as another Super Hero Pre-processor. As of now, I don't have any interest in writing LESS. This article is not about what I like or what I don't like anyway.
+<!--more-->
 
 In my first month of writing Sass, I wrote all my Sass files and compiled with the Sass binary this way
 

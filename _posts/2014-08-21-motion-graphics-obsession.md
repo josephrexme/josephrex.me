@@ -18,6 +18,7 @@ I've gotten to do a lot of things besides writing codes. I once took a job as a 
 {% image wonu-vector.png alt="wonu-vector" %}
 
 I love good designs, graphics, and creativity. I've been an artist from my childhood and I haven't dropped it till date. I only happen to be more of a code artist these days.
+<!--more-->
 
 Motion graphics is way beyond my vector illustration up there. I once dived into it but I was too busy with other things to cling on to it. I did a few works (3 maybe) with After Effects.
 

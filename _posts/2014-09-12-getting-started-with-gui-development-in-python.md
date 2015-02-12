@@ -20,6 +20,7 @@ tags:
 {% image z_design.jpg class="head-image" alt="z_design" %}
 
 Most people that are fond of Windows operating system will always root for graphical desktop applications (GUI) over command line (CLI) programs. Since after DOS, windows operating systems have been known to use simple and user friendly GUI. This is one of the reasons why they have made a lot of customers around the world.
+<!--more-->
 
 Apple computers have also had wonderful GUI but their product prices still limits their products to those with more funds. There's always an argument on Microsoft stealing the GUI concept from Apple but as much as I'm not a big Microsoft fan, I never agreed to that. Xerox started it, Apple found it, then Microsoft found it. You may say Microsoft stole from Apple what they had stolen from Xerox. I wouldn't want to have the argument here. If you aren't familiar with these stories, you should <a title="History of Graphical User Interface" href="https://en.wikipedia.org/wiki/History_of_the_graphical_user_interface" target="_blank">read the history</a>.
 

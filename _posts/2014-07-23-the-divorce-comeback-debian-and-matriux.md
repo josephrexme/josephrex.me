@@ -16,6 +16,7 @@ tags:
 I've been a Debian user for some time. I started using Debian since squeeze was<a href="https://wiki.debian.org/DebianStable" target="_blank"> DebianStable</a> . Debian is a great OS and so many interesting operating systems have been built from its kernel.
 
 I used to be an Ubuntu user till I got fed up of Unity and I never tried Kubuntu, Xubuntu, or Gnome in Ubuntu. Switching to Debian wasn't a bad idea because I recently realized we are life partners.
+<!--more-->
 
 I've been occupied with tasks from freelance jobs and the start-up I work with. This has taken away my day and my night and made me a really weird being. Well, it's one of the things you get that makes you a "Forever Alone" guy. These things have made me stray from my actual passion which includes computer security and data Forensics.
 
