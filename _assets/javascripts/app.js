@@ -11,7 +11,7 @@ ready(function(){
 	   if ( e.target.webkitMatchesSelector('#js-wrap') ) {
 	   }
 	}, false);*/
-	/*addEvent(wrap, 'onscroll', function(){
+	/*addEvent(wrap, 'scroll', function(){
     	if (wrap.scrollTop > 5) {
 	    	addClass(wrap, 'fixed')
 		}else {
