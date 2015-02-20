@@ -19,9 +19,11 @@ ready(function(){
 		}
 		alert("hey");
 	});*/
-	wrap.on("scroll", function(e) {
-	  wrap.toggleClass('fixed', (wrap.scrollTop() > 10));
-	});
+	if(wrap){
+		wrap.addEventListener("scroll", function(e) {
+		  wrap.classList.toggle('fixed', (wrap.scrollTop > 10));
+		});
+	}
 	// Handling Navigation
 	menuIcon = document.querySelectorAll('nav > svg');
 	Array.prototype.forEach.call( menuIcon, function(el) {
@@ -36,7 +38,9 @@ ready(function(){
 	var featuredImage = document.querySelector('.head-image');
 	if (featuredImage){
 		var header = document.querySelectorAll('.container > header')[0];
-		header.appendChild(featuredImage);
+		if(header){
+			header.appendChild(featuredImage);
+		}
 	}
 });
 
