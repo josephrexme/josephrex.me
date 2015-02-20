@@ -5,6 +5,23 @@ function ready(cb) {
 		: cb();
 }
 ready(function(){
+	// Sticky logo on home page
+	var wrap = document.querySelector('#js-wrap');
+	/*document.addEventListener('click', function(e) {
+	   if ( e.target.webkitMatchesSelector('#js-wrap') ) {
+	   }
+	}, false);*/
+	/*addEvent(wrap, 'onscroll', function(){
+    	if (wrap.scrollTop > 5) {
+	    	addClass(wrap, 'fixed')
+		}else {
+			removeClass(wrap, 'fixed')
+		}
+		alert("hey");
+	});*/
+	wrap.on("scroll", function(e) {
+	  wrap.toggleClass('fixed', (wrap.scrollTop() > 10));
+	});
 	// Handling Navigation
 	menuIcon = document.querySelectorAll('nav > svg');
 	Array.prototype.forEach.call( menuIcon, function(el) {
@@ -22,3 +39,46 @@ ready(function(){
 		header.appendChild(featuredImage);
 	}
 });
+
+var hasClass = function (el, cl) {
+        var regex = new RegExp('(?:\\s|^)' + cl + '(?:\\s|$)');
+        return !!el.className.match(regex);
+    },
+
+addClass = function (el, cl) {
+    el.className += ' ' + cl;
+},
+
+removeClass = function (el, cl) {
+    var regex = new RegExp('(?:\\s|^)' + cl + '(?:\\s|$)');
+    el.className = el.className.replace(regex, ' ');
+},
+
+toggleClass = function (el, cl) {
+    hasClass(el, cl) ? removeClass(el, cl) : addClass(el, cl);
+
+};
+var addEvent = (function () {
+	var filter = function(el, type, fn) {
+		for ( var i = 0, len = el.length; i < len; i++ ) {
+			addEvent(el[i], type, fn);
+		}
+	};
+	if ( document.addEventListener ) {
+		return function (el, type, fn) {
+			if ( el && el.nodeName || el === window ) {
+				el.addEventListener(type, fn, false);
+			} else if (el && el.length) {
+				filter(el, type, fn);
+			}
+		};
+	}
+
+	return function (el, type, fn) {
+		if ( el && el.nodeName || el === window ) {
+			el.attachEvent('on' + type, function () { return fn.call(el, window.event); });
+		} else if ( el && el.length ) {
+			filter(el, type, fn);
+		}
+	};
+})();

@@ -409,5 +409,10 @@ footer{
 	@include breakpoint($breakpoint-laptop){
 		width: 60px;
 	}
+	&.fixed{
+		position: fixed;
+		top: 5px;
+		width: 30px;
+	}
 }
 @import "helpers", "print";
