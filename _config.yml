@@ -32,3 +32,4 @@ gems:
   - jekyll-sitemap
 
 excerpt_separator: <!--more-->
+paginate: 5
