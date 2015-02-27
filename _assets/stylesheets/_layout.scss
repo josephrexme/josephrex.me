@@ -327,9 +327,10 @@ footer{
 			width: 100%;
 			max-height: $nav-height;
 			>ul{
-				background: darken($color-primary, 3);
+				background: rgba(darken($color-primary, 30%),.5);
 				color: $white;
 				width: 100%;
+				height: 100vh;
 				position: absolute;
 				padding: 0 0 10px 0;
 				left: 0;
@@ -338,11 +339,12 @@ footer{
 				border-radius: 0 0 10px 10px;
 				display: none;
 				li{
+					border-bottom: none;
 					>a{
 						display: block;
-						padding: 10px;
-						width: 100%;
-						height: 100%;
+						background: darken($color-primary, 3);
+						padding: 20px;
+						width: 200px;
 						&:hover{
 							background: darken($color-primary, 6);
 						}
@@ -439,6 +441,54 @@ footer{
 		position: fixed;
 		top: 5px;
 		width: 30px;
+	}
+}
+.ellipsized{
+	display: block;
+	margin-bottom: 20px;
+	color: #888;
+	&:visited{
+		color: #888;
+	}
+	&:hover{
+		color: #555;
+	}
+}
+.pagination{
+	svg{
+		width: 80px;
+	}
+	a{
+		svg{
+			fill: #888;
+			&:hover{
+				fill: #aaa;
+			}
+		}
+	}
+	span{
+		svg{
+			fill: #ddd;
+		}
+	}
+	.next, .previous, .page_number{
+		position: absolute;
+		bottom: 5px;
+	}
+	.next{
+		right: 2px;
+	}
+	.previous{
+		left: 2px;
+	}
+	.page_number{
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: 800;
+		font-size: 5rem;
+		color: #ddd;
 	}
 }
 @import "helpers", "print";
