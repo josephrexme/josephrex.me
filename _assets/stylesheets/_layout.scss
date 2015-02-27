@@ -219,24 +219,24 @@ nav{
 	text-align: center;
 	color: $white;
 	padding: 30px 10px;
-	.feed{
-		margin: 10px 0;
-		width: 80%;
-		height: 35px;
-		border-radius: 5px;
+}
+.feed{
+	margin: 10px 0;
+	width: 80%;
+	height: 35px;
+	border-radius: 5px;
+	border: none;
+	padding: 0 10px;
+	& ~ button{
+		color: $white;
 		border: none;
-		padding: 0 10px;
-		& ~ button{
-			color: $white;
-			border: none;
-			background: lighten($color-primary, 9);
-			width: 80%;
-			height: 40px;
-			margin-top: 10px;
-			font-size: 1.5rem;
-			&:hover{
-				background: lighten($color-primary, 7);
-			}
+		background: lighten($color-primary, 9);
+		width: 80%;
+		height: 40px;
+		margin-top: 10px;
+		font-size: 1.5rem;
+		&:hover{
+			background: lighten($color-primary, 7);
 		}
 	}
 }
@@ -284,6 +284,13 @@ footer{
 	font-size: 1.2rem;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	@include breakpoint($breakpoint-laptop){
+		[data-index] & {
+			position: absolute;
+			top: 60px;
+			right: 10px;
+		}
+	}
 }
 .carbon-text{
 	display: block;
@@ -363,6 +370,25 @@ footer{
 		@include breakpoint($breakpoint-laptop){
 			position: relative;
 			top: -100px;
+			margin-bottom: -100px;
+		}
+	}
+	aside{
+		color: $white;
+		background: $color-primary;
+		text-align: center;
+		padding: 3rem;
+		@include breakpoint($breakpoint-tablet-landscape){
+			width: $breakpoint-tablet-landscape;
+			margin: 0 auto;
+		}
+	}
+	.feed{
+		@include breakpoint($breakpoint-tablet-landscape){
+			width: $breakpoint-tablet-landscape - 400px;
+			& ~ button{
+				width: $breakpoint-tablet-landscape - 400px;
+			}
 		}
 	}
 	footer{
