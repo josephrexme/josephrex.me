@@ -455,6 +455,7 @@ footer{
 	}
 }
 .pagination{
+	text-align: center;
 	svg{
 		width: 80px;
 	}
@@ -472,7 +473,10 @@ footer{
 		}
 	}
 	.next, .previous, .page_number{
-		position: absolute;
+		position: relative;
+		@include breakpoint($breakpoint-laptop){
+			position: absolute;
+		}
 		bottom: 5px;
 	}
 	.next{
@@ -485,9 +489,13 @@ footer{
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		text-align: center;
 		font-weight: 800;
-		font-size: 5rem;
+		font-size: 3rem;
+		bottom: 30px;
+		@include breakpoint($breakpoint-laptop){
+			font-size: 5rem;
+			bottom: 5px;
+		}
 		color: #ddd;
 		max-width: 180px;
 	}
