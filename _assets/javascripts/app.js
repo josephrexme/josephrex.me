@@ -34,14 +34,6 @@ ready(function(){
 	  }, false);
 
 	});
-    // Moving Featured Image to header
-	var featuredImage = document.querySelector('.head-image');
-	if (featuredImage){
-		var header = document.querySelectorAll('.container > header')[0];
-		if(header){
-			header.appendChild(featuredImage);
-		}
-	}
 });
 
 var hasClass = function (el, cl) {
