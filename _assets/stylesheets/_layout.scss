@@ -113,6 +113,24 @@ main{
 	}
 	strong{ font-weight: 800; }
 }
+table{
+	width: 100%;
+	margin: 20px 0;
+	thead{
+		border-bottom: solid thin #555;
+	}
+	tbody{
+		tr{
+			border-bottom: solid thin #aaa;
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+	th, td{
+		padding: 10px;
+	}
+}
 .container{
 	@include breakpoint($breakpoint-tablet-landscape){
 		width: 80%;
