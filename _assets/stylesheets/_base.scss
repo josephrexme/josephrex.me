@@ -33,6 +33,9 @@ blockquote {
     font-style: italic;
     padding: 20px;
     font-style: italic;
+    p{
+        margin: 0;
+    }
 
     > :last-child {
         margin-bottom: 0;
