@@ -68,13 +68,13 @@ If I'll need a circle then I'll just write
 
 <hr>
 
-Now let's try to understand what was going on up there. When we remember art from grade school, the first things we were made to understand making a line (the distance between points). Similar to how we do it on the basketball court when making shots training, we say
+Now let's try to understand what was going on up there. When we remember art from grade school, the first thing we were made to understand was making a line (the distance between points). Similar to how we do it on the basketball court when making shots training, we say
 
 > Let's go to school
 
 and then we begin shooting from a very close distance to the rim till we go further beyond the 3-points line, and then the center court.
 
-Ok enough of too many illustrations outside the topic. First thing you should know is understanding how a SVG line works and here you go
+Ok enough of illustrations outside the topic. First thing you should know is understanding how a SVG line works and here you go
 
 {% highlight html %}
 <svg>
