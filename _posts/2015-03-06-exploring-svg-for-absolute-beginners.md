@@ -178,6 +178,19 @@ To produce a curvy rectangle the *x*, *y*, *rx* and *ry* values should also be s
 	</svg>
 </figure>
 
+With a little transform, we could make a **kite**
+
+{% highlight html %}
+<svg>
+	<rect x="50" y="10" width="100" height="100" fill="tomato" transform="rotate(-45,100,100)" />
+</svg>
+{% endhighlight %}
+<figure>
+	<svg>
+		<rect x="50" y="10" width="100" height="100" fill="tomato" transform="rotate(-45,100,100)" />
+	</svg>
+</figure>
+
 SVG also allows search engines index text in its graphics. To write such texts, we use the `text` element.
 
 {% highlight html %}
