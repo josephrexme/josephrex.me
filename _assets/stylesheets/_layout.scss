@@ -365,11 +365,20 @@ footer{
 				top: $nav-height - 10px;
 				border-radius: 0 0 10px 10px;
 				display: none;
+				&::before{
+					content: '';
+					position: absolute;
+					left: 0;
+					width: 200px;
+					height: 100%;
+					background: darken($color-primary, 3);
+					z-index: -1;
+				}
 				li{
 					border-bottom: none;
 					>a{
 						display: block;
-						background: darken($color-primary, 3);
+						background: transparent;
 						padding: 20px;
 						width: 200px;
 						&:hover{
