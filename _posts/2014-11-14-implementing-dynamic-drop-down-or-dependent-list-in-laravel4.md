@@ -277,7 +277,7 @@ The JS part
 {% highlight javascript %}
 $(document).ready(function($){
    $('#cat').change(function(){
-     $.get($(this).data(url),
+     $.get($(this).data('url'),
      { option: $(this).val() },
        function(data) {
          var subcat = $('#subcat');
