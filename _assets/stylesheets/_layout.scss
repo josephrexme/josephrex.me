@@ -1,7 +1,5 @@
 @import "breakpoint";
 @import "mixins";
-@import "compass/typography/vertical_rhythm";
-//@import "grids";
 @import "variables";
 @import "fonts";
 @import "h5bp";
@@ -468,7 +466,7 @@ footer{
 	top: 5px;
 	left: 0;
 	right: 0;
-	z-index: 200;
+	z-index: 100;
 	margin: 0 auto;
 	width: 40px;
 	@include breakpoint($breakpoint-tablet-landscape){
@@ -480,6 +478,7 @@ footer{
 	&.fixed{
 		position: fixed;
 		top: 5px;
+		z-index: 200;
 		width: 30px;
 	}
 }
