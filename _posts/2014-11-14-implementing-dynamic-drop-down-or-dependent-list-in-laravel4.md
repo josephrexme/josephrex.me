@@ -274,7 +274,7 @@ Route::get('api/dropdown', function(){
 
 The JS part
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 $(document).ready(function($){
    $('#cat').change(function(){
      $.get($(this).data('url'),
