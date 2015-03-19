@@ -13,7 +13,7 @@ I love math and vector graphics. I use [mathML][1] and [SVG][15]. I sometimes 
 
 Unarguably, I spend a lot of time with my computer but when I'm not on it, I play basketball or watch movies.
 
-For more about me, see my [about.me profile][16]
+For more about me, see my [about.me profile][16]. About the image I use all over the internet, it was designed by [Funkwood][17] on [Deviantart][18].
 
 I'm presently a freelancer and I'm available to take jobs. [Send me an email][2]
 
@@ -93,3 +93,5 @@ PRyyUkp/mzMT76yUhHAq2awoeN/GbFc=
 [14]: http://bl4ckdu5t.deviantart.com
 [15]: http://josephrex.me/exploring-svg-for-absolute-beginners/ "Exploring SVG for beginners"
 [16]: http://about.me/joerex101
+[17]: http://funkwood.deviantart.com/
+[18]: http://funkwood.deviantart.com/art/Computer-hacker-172206222
