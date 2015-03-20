@@ -313,6 +313,7 @@ footer{
 	font-size: 1.2rem;
 	margin: 0 auto;
 	margin-bottom: 20px;
+	overflow: hidden;
 	@include breakpoint($breakpoint-laptop){
 		[data-index] & {
 			position: absolute;
