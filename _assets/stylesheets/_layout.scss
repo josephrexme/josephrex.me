@@ -111,7 +111,7 @@ main{
 			letter-spacing: 0.5em;
 		}
 	}
-	strong{ font-weight: 800; }
+	strong{ font-weight: bold; }
 }
 figure{
 	border: solid thin #ddd;
@@ -530,7 +530,7 @@ footer{
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		font-weight: 800;
+		font-weight: bold;
 		font-size: 3rem;
 		bottom: 30px;
 		@include breakpoint($breakpoint-laptop){
