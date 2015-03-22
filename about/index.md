@@ -5,11 +5,12 @@ layout: page
 permalink: /about-me/
 ---
 {% image "//images.ostrich-dev.com/profile.jpg" class="avatar" %}
-I am Joseph Rex (bl4ckdu5t). I love to build things, break things, and fix 'em. I have a strong passion for usability. Since I read [The design of everyday things][4] by [Don Norman][6], I really got a different view on usability and I've since worked hard on creating human centered designs. This has influenced how I design software and applications with good user experience. I do various things for the web: I write HTML5, Sass, CSS3, JavaScript and I leverage frameworks like jQuery, compass. I am also a back-end developer and I create backbone for web applications using PHP, Ruby, and Python. I'm presently proficient with laravel4 and ruby-on-rails. I particular love python and I use it for a lot of self projects. I use PyQt4 (the python wrapper for Qt4) to build GUI desktop software in Python like [this][7].
+
+I am <span itemprop="name">Joseph Rex</span> (<span itemprop="nickname">bl4ckdu5t</span>). I love to build things, break things, and fix 'em. I have a strong passion for usability. Since I read [The design of everyday things][4] by [Don Norman][6], I really got a different view on usability and I've since worked hard on creating human centered designs. This has influenced how I design software and applications with good user experience. I do various things for the web: I write HTML5, Sass, CSS3, JavaScript and I leverage frameworks like jQuery, compass. I am also a back-end developer and I create backbone for web applications using PHP, Ruby, and Python. I'm presently proficient with laravel4 and <span itemprop="title">ruby-on-rails</span>. I particular love python and I use it for a lot of self projects. I use PyQt4 (the python wrapper for Qt4) to build GUI desktop software in Python like [this][7].
 
 I love math and vector graphics. I use [mathML][1] and [SVG][15]. I sometimes take out time to design some [amateur vector images][14].
 
-[Ostrich-Dev][5] is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], a member of [dc414][12], and I write on security for [Infosec Institute][13].
+<span itemprop="url">[Ostrich-Dev][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], a member of [dc414][12], and I write on security for [Infosec Institute][13].
 
 Unarguably, I spend a lot of time with my computer but when I'm not on it, I play basketball or watch movies.
 
