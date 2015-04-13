@@ -35,7 +35,7 @@ In Python, there are 4 modules you can use to build GUI programs and they are
   * PyGTK
   * pyQT
 
-I started out with Tkinter since it shipped with my python installation while I was on a Windows operating system. This tutorial helped me <http://sebsauvage.net/python/gui/>. As soon as I got to do my first Tkinter program, I went ahead to do the wxpython program. At this point, I know what it felt like to build a GUI but I didn't fully understand how to handle signals and slots. I only used samples from sites and my GUI programs didn't have enough objects and enough actions in them.
+I started out with Tkinter since it shipped with my python installation while I was on a Windows operating system. This tutorial helped me <http://sebsauvage.net/python/gui/>. As soon as I got to do my first Tkinter program, I went ahead to do the wxpython program. At this point, I knew what it felt like to build a GUI but I didn't fully understand how to handle signals and slots. I only used samples from sites and my GUI programs didn't have enough objects and enough actions in them.
 
 After some reading, I decided to go with pyQt. I never tried pyGTK till date so I have less to say about it. I wrote my first pyQt4 program this way:
 
