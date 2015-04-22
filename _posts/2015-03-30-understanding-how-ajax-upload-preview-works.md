@@ -5,10 +5,10 @@ layout: post
 comments: true
 permalink: /understanding-how-ajax-upload-preview-works/
 ---
-{% image 'ajaxuploadprev.png' alt="Ajax upload preview" class="head-image" %}
 
 From a very early stage of my development, I've been fascinated by ajax upload previews and [dropzone][1] upload areas. For a long time I guess I was too scared to try any of them but after some time, I started using some jQuery plugins that did the job fine. I could have been contended with that and just have that in my every project but every project aren't the same. I may use a bunch of plugins on a static website but on web applications where I'm so conscious about performance I prefer taking my time to write code that will help me do away with plugins or gems where I can.
 <!--more-->
+{% image 'ajaxuploadprev.png' alt="Ajax upload preview" class="head-image" %}
 
 There are some of these that are really important and one will only be re-inventing the wheel by trying to re-write them but a upload preview is just too small to be considered as re-inventing the wheel. On a recent rails project where I was using the twitter-style page edit, I needed such file upload and by gathering ideas I came up with the way to go about it.
 

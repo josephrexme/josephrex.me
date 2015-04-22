@@ -9,9 +9,9 @@ categories:
 tags:
   - jekyll
 ---
-{% image syntax-highlight.png class="head-image" %}
 Syntax highlighting is one of the great benefits we get from text editors we use in writing code. Besides making the code more readable, it makes me spot errors in my code without a linter. Training on Front-end development has been part of my profession for 2 years and I keep hammering on the fact that my students should make use of a good text editor. This has been a great thing as I find some students with mark-up like this:
 <!--more-->
+{% image syntax-highlight.png class="head-image" %}
 
 {% highlight html %}
 <img src="foo.jpg" alt="foo"

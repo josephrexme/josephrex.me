@@ -5,12 +5,12 @@ layout: post
 comments: true
 permalink: /exploring-svg-for-absolute-beginners/
 ---
-{% image low-poly-background.jpg alt="Poly Graphics" class="head-image" %}
 
 SVG is one of the cool stuff of these HTML5 days and if you aren't already fiddling with them already, either by using ready SVG icons or writing your own SVG, then you are missing out on a lot.
 It's mostly known for its ability to scale across various pixel densities without pixelating. Regular raster images will do fine on 70ppi and some densities slightly higher but we're in the future now and things are getting different. With displays of nearly up to 360ppi, raster will pixelate. Also, SVG survives zooming to any length and it retains its initial quality.
 
 <!--more-->
+{% image low-poly-background.jpg alt="Poly Graphics" class="head-image" %}
 
 That's definitely a good point but what really got me using SVG was my hunger for less HTTP requests. Besides head images of posts, I'm almost not using any images on this blog. At some point I thought data-uri's were the good thing but in no time I realized they aren't what you should just use with a sole aim of achieving reduced HTTP requests. There are cases where data-uri can come to play but I'll still do without it where I can. Just for test, I ran my 764k header image on the home page through a data-uri converter and this was the outcome
 
