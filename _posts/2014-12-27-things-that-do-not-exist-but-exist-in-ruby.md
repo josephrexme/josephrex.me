@@ -11,9 +11,9 @@ tags:
   - missing
   - ruby
 ---
-{% image rubydev.png class="head-image" alt="ruby code" %}
 I've written object oriented programs in PHP and Python and one of the major things known about Object oriented programming is the existence of constructors and maybe destructors. We curse PHP for not being complete yet its OOP consist of this. In Python when building GUI programs, I call slots and signals from different methods that all share something in common which is specified in the \_\_init\_\_ method (our constructor). Python didn't have to call it _constructor like PHP does but it exists anyway.
 <!--more-->
+{% image rubydev.png class="head-image" alt="ruby code" %}
 
 I've been working with rails lately and I've had to write ruby which I totally enjoy. However, there are some things in Ruby that exist just as patches not like a core feature provided by the language. I will only be talking about two things but I'll update this article in the future when I find more.
 
