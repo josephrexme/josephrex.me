@@ -24,6 +24,9 @@ css_compressor:	sass
 js_compressor: 	uglifier
 cache: 		true
 exclude:
+  - Gruntfile.js
+  - package.json
+  - node_modules
   - Gemfile
   - Gemfile.lock
   - Rakefile
@@ -31,5 +34,6 @@ exclude:
 gems:
   - jekyll-sitemap
 
+timezone: America/Chicago
 excerpt_separator: <!--more-->
 paginate: 5
