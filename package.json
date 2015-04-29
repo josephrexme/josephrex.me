@@ -1,0 +1,33 @@
+{
+  "name": "Joseph-Rex-Blog",
+  "version": "1.0.0",
+  "description": "Joseph's blog on everything",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bl4ckdu5t/bl4ckdu5t.github.io.git"
+  },
+  "keywords": [
+    "python",
+    "rails",
+    "software",
+    "joseph",
+    "rex",
+    "joseph-rex",
+    "security",
+    "app"
+  ],
+  "author": "Joseph Rex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bl4ckdu5t/bl4ckdu5t.github.io/issues"
+  },
+  "homepage": "https://github.com/bl4ckdu5t/bl4ckdu5t.github.io",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-perfbudget": "^0.1.6"
+  }
+}
