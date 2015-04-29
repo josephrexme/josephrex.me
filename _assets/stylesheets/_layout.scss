@@ -438,7 +438,8 @@ footer{
 }
 [data-section~="header"]{
 	height: 30rem;
-	background: linear-gradient(rgba($color-primary, .8), rgba($color-primary, .8)), url('/header.png') no-repeat;
+	background: linear-gradient(rgba($color-primary, .8), rgba($color-primary, .8)),
+	url(http://res.cloudinary.com/ostrich-dev/image/upload/v1430286562/header_jvzpi4.png) no-repeat;
 	color: $white;
 	padding: 2rem;
 	text-align: center;
