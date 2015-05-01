@@ -13,7 +13,11 @@ module.exports = function(grunt) {
             loadTime: '5000',
             render: '4000',
             requests: '25',
-            SpeedIndex: '3600'
+            SpeedIndex: '3600',
+            requestsDoc: '20',
+            bytesIn: '900000',
+            bytesInDoc: '850000',
+            fullyLoaded: '7000'
           }
         }
       }

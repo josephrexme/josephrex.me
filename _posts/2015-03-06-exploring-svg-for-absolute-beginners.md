@@ -7,7 +7,7 @@ permalink: /exploring-svg-for-absolute-beginners/
 ---
 
 SVG is one of the cool stuff of these HTML5 days and if you aren't already fiddling with them already, either by using ready SVG icons or writing your own SVG, then you are missing out on a lot.
-It's mostly known for its ability to scale across various pixel densities without pixelating. Regular raster images will do fine on 70ppi and some densities slightly higher but we're in the future now and things are getting different. With displays of nearly up to 360ppi, raster will pixelate. Also, SVG survives zooming to any length and it retains its initial quality.
+It's mostly known for its ability to scale across various pixel densities without pixelating. Regular raster images will do fine on 70 pixel per inch (ppi) and some densities slightly higher but we're in the future now and things are getting different. With displays of nearly up to 360ppi, raster will pixelate. Also, SVG survives zooming to any length and it retains its initial quality.
 
 <!--more-->
 {% image low-poly-background.jpg alt="Poly Graphics" class="head-image" %}
