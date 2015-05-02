@@ -5,6 +5,9 @@ function ready(cb) {
 		: cb();
 }
 ready(function(){
+	// Date for copyright
+	var presentDate = new Date(), showDate = document.querySelector('.this_year');
+	showDate.innerHTML = presentDate.getFullYear();
 	// Scroll to top
   var topBtn = document.querySelector('.scrollup');
   if(topBtn){
