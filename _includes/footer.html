@@ -32,7 +32,7 @@
     } );
     return ss;
   }
-  if(window.location.pathname == '/'){
+  if(window.location.pathname == '/' || /\/page\d\//.test(window.location.pathname)){
     loadCSS('{% asset_path app.css %}');
   }
 </script>
