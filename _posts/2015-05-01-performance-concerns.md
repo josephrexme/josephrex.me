@@ -32,9 +32,9 @@ With all of these in place, I would have achieved a great Rule based metric but 
 All of those things are less important as budgets. So what's with performance budget?
 
 ### Performance Budget
-There are various articles on the web on performance and a few on performance budgets but my picks are [Tim Kadlec's][8] and [Daniel Mall's][7]. Before diving much into this, I'll like to emphasize how important it is to consider performance before a project starts. I've not been privileged to work in large software development teams but on this blog I knew I had to do without jQuery from the first day I started its development just to cut off some load on requests or request size (whichever way you think of it). Most websites on the internet use jQuery and as [Hugo Giraudel][9] requoted [Lea Verou][10] in this [tweet][11]
+There are various articles on the web on performance and a few on performance budgets but my picks are [Tim Kadlec's][8] and [Daniel Mall's][7]. Before diving much into this, I'll like to emphasize how important it is to consider performance before a project starts. I've not been privileged to work in large software development teams but on this blog I knew I had to do without jQuery from the first day I started its development just to cut off some load on requests or request size (whichever way you think of it). Most websites on the internet use jQuery and as [Lea Verou][10] quoted in this [tweet][11]
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">&quot;Avoiding jQuery entirely can feel like you’re some sort of digital vegan.&quot;&#10;&#10;Best quote ever from <a href="https://twitter.com/LeaVerou">@LeaVerou</a>: <a href="http://t.co/QPHsv9xLmD">http://t.co/QPHsv9xLmD</a>.</p>&mdash; Hugo Giraudel (@HugoGiraudel) <a href="https://twitter.com/HugoGiraudel/status/590074553906421760">April 20, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Sometimes not using jQuery makes me feel like some sort of digital vegan, in a number of ways.</p>&mdash; Lea Verou (@LeaVerou) <a href="https://twitter.com/LeaVerou/status/588504217410609152">April 16, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I got away with it anyway and I'm that vagan who keeps off some restaurants because they don't have my options in the digital world. For whatever it is the real vagans benefit healthwise, I am benefiting in my own way on performance.
@@ -55,7 +55,7 @@ While I'm concerned on improving my speed index and every other performance metr
 [8]: http://www.timkadlec.com/2014/11/performance-budget-metrics/
 [9]: https://twitter.com/HugoGiraudel
 [10]: https://twitter.com/LeaVerou
-[11]: https://twitter.com/HugoGiraudel/status/590074553906421760
+[11]: https://twitter.com/leaverou/status/588504217410609152
 [12]: http://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/
 [13]: http://w3c.github.io/webcomponents/spec/imports/#link-type-import
 [14]: https://twitter.com/tkadlec
