@@ -5,6 +5,18 @@ function ready(cb) {
 		: cb();
 }
 ready(function(){
+	// Progressive Reading Bar
+	var bar = document.querySelector('.scroll-progress');
+	if(bar){
+		document.addEventListener("scroll", function(e){
+		  var dw = document.body.scrollWidth,
+		      dh = document.body.scrollHeight,
+		      wh = window.innerHeight,
+		      pos = document.body.scrollTop,
+		      bw = ((pos / (dh - wh)) * 100);
+		  bar.style.width = bw+'%';
+		});
+	}
 	// Date for copyright
 	var presentDate = new Date(), showDate = document.querySelector('.this_year');
 	showDate.innerHTML = presentDate.getFullYear();

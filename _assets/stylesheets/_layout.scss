@@ -219,6 +219,14 @@ nav{
 		top: 200px;
 	}
 }
+.scroll-progress{
+	background: $white;
+	height: 5px;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 0 3px $black;
+}
 .caption{
 	margin: 0;
 	position: absolute;
