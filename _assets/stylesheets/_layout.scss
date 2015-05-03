@@ -224,7 +224,7 @@ nav{
 	height: 5px;
 	position: fixed;
 	top: 0;
-	z-index: 1000;
+	z-index: 1100;
 	box-shadow: 0 0 3px $black;
 }
 .caption{
@@ -453,6 +453,11 @@ footer{
 		font-weight: 300;
 		font-size: 2rem;
 	}
+}
+[data-email]::after{
+	content: 'joerex[at]ostrich-dev[dot]com';
+	display: block;
+	margin-top: 10px;
 }
 .logo{
 	position: absolute;
