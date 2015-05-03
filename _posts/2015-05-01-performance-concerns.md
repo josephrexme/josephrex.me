@@ -12,7 +12,7 @@ In the last month, the only attention I've given this blog while being occupied 
 <!--more-->
 {% image 'speedcurve-performance.png' alt="Performance image" class="head-image" %}
 
-The first byte time is not as fast as I want it to be and that is because of my server control limits. I run this blog on [Github pages][3] and which limits me from doing server configurations to set Expires header and Max age. The max age on all jekyll blogs hosted on Github is 10 minutes (600 seconds) and Google recommends about 2 weeks Max age.
+The first byte time is not as fast as I want it to be and that is because of my server control limits. I run this blog on [Github pages][3] which limits me from doing server configurations to set Expires header and Max age. The max age on all jekyll blogs hosted on Github is 10 minutes (600 seconds) and Google recommends about 2 weeks Max age.
 
 Using [Google pagespeed insights][4], the only thing that keeps this blog from a 100% score is the **Leverage browser caching** issue which is caused by my little max age for all assets.
 
