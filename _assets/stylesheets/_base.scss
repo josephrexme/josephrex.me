@@ -25,16 +25,16 @@ figcaption {
  */
 blockquote {
     color: #000;
-    background-color: #ddd;
+    background-color: #eee;
     border-left: 4px solid #aaa;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
     letter-spacing: -1px;
+    font-size: 1.8rem;
     font-style: italic;
     padding: 20px;
-    font-style: italic;
     p{
         margin: 0;
+        word-wrap: break-word;
     }
 
     > :last-child {
@@ -79,9 +79,6 @@ pre {
         padding-right: 0;
         padding-left: 0;
     }
-}
-.lineno.lineno.lineno{
-    background-color: #0A090E;
 }
 
 

@@ -44,13 +44,13 @@ While I was contemplating to leave PHP earlier before now, I had seen [Anthony F
 
 When I think of it now, It's easy to get help on whatever you need if you have an internet connection. On the Freenode IRC, I went ahead to count the present number of users at this time `12/08/2014` which is the date of this article, and then I checked the users on the following channels:
 
-> ##php  <span style="color: red;">639 users</span> (including bots),
+> \#\#php  <span style="color: red;">639 users</span> (including bots),
 > 
-> #ruby <span style="color: red;">885 users</span> (including bots)
+> \#ruby <span style="color: red;">885 users</span> (including bots)
 > 
-> #node.js <span style="color: red;">1299 users</span> (including bots)
+> \#node.js <span style="color: red;">1299 users</span> (including bots)
 > 
-> #python <span style="color: red;">1469 users</span>  (including bots)
+> \#python <span style="color: red;">1469 users</span>  (including bots)
 
 Doesn't seem like PHP has much help anymore. The need for PHP developers by organizations has plummeted.
 
