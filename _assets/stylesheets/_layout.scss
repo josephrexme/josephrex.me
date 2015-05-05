@@ -543,8 +543,9 @@ footer{
 	right: 10px;
 	background: lighten($color-primary, 5%);
 	cursor: pointer;
-	width: 32px;
-	height: 32px;
+	width: 50px;
+	height: 50px;
+	padding: 8px;
 	border-radius: 50%;
 	box-shadow: 1px 1px 1px #333;
 	display: none;
