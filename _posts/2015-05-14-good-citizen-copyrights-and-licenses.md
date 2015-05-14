@@ -6,7 +6,7 @@ comments: true
 permalink: /good-citizen-copyrights-and-licenses/
 ---
 
-A lot of us follow most legal laws to be remain good citizens and mostly stay out of trouble. The best people are those who follow these laws because they feel it's the right thing to do, and not just because they may get arrested for doing otherwise.
+A lot of us follow most legal laws to remain good citizens and mostly to stay out of trouble. The best people are those who follow these laws because they feel it's the right thing to do, and not just because they may get arrested for doing otherwise.
 In the Software development industry, there are licenses and copyright laws. These laws are ignored by many and I used to be one.
 <!--more-->
 
