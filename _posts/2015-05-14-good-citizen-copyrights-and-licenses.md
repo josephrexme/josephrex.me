@@ -42,7 +42,7 @@ to
 config.assets.js_compressor = Uglifier.new(output: { comments: :none })
 {% endhighlight %}
 
-At this point, I'm including jquery2 with sprockets and it [sizzlejs][3] with it.
+At this point, I'm including jquery2 with sprockets and [sizzlejs][3] with it.
 
 {% highlight javascript %}
 //= require jquery2
