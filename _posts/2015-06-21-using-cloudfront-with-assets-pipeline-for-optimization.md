@@ -10,7 +10,7 @@ Performance is an essential thing in every application that should be considered
 <!--more-->
 {% image 'rails-cloudfront.png' alt="Rails plus cloudfront" class="head-image" %}
 
-I've come across websites serving assets with S3 and I only see it as a technology misuse. S3 is meant for storing files and I had initially used it just for storing user uploads in applications. Serving static assets from S3 wouldn't make requests any faster than it will if you weren't using a different subdomain for static assets.
+I've come across websites serving assets with S3 and I only see it as a technology misuse. S3 is meant for storing files and I had initially only used it just for storing user uploads in applications. Serving static assets from S3 wouldn't make requests any faster than they will be if you weren't using a different subdomain for static assets.
 
 ### What makes cloudfront different from S3
 
@@ -18,13 +18,13 @@ Cloudfront fetches file from a origin like a S3 bucket where files are stored an
 
 ### Setting up Cloudfront
 
-Just as **buckets** are to S3, **distributions** are to cloudfront. Each distribution has an origin which could be the S3 bucket as I prefer but it could also be some other assets server of yours. If you don't already have a distribution, set up a new one and configure to suit your needs. Most of the default configurations are ok but you can make minor changes like setting a custom domain rather than using the subdomains with random characters provided by cloudfront. You should have a subdomain like this:
+Just as **buckets** are to S3, **distributions** are to cloudfront. Each distribution has an origin which could be the S3 bucket as I prefer but it could also be some other assets server of yours. If you don't already have a distribution, set up a new one and configure it to suit your needs. Most of the default configurations are ok but you can make minor changes like setting a custom domain rather than using the subdomains with random characters provided by cloudfront. You should have a subdomain like this:
 
 {% highlight text %}
 http://whatever.cloudfront.net
 {% endhighlight %}
 
-Create an `assets` folder in your S3 bucket if you've chose S3 bucket as origin then go to your `config/environments/production.rb` and add this line:
+Create an `assets` folder in your S3 bucket if you've chosen S3 bucket as origin then go to your `config/environments/production.rb` and add this line:
 
 {% highlight ruby %}
 config.action_controller.asset_host = "http://whatever.cloudfront.net"
@@ -46,7 +46,7 @@ There's a big chance you already have that in your production config and you wil
 http://whatever.cloudfront.net/assets/logo-4c7b3d.png
 {% endhighlight %}
 
-If you're dropping files directly in your assets folder of the origin S3 bucket, you may encounter problems with the web page finding the desired files. This is because the files in your bucket are without a hash suffix.
+If you're dropping files directly in your assets folder of the origin S3 bucket, you may encounter problems with the web page not finding the desired files. This is because the files in your bucket are without a hash suffix.
 
 The solution to this is to precompile your assets in the production environment before pushing changes to server and then uploading contents of ```public/assets``` into your assets folder on S3 Bucket.
 
@@ -54,4 +54,4 @@ The solution to this is to precompile your assets in the production environment 
 RAILS_ENV=production bundle exec rake:assets precompile
 {% endhighlight %}
 
-Following these steps carefully will get you up and running with CDNS plus assets cache that can be easily invalidated on file changes.
+Following these steps carefully will get you up and running with CDNs plus assets cache that can be easily invalidated on file changes. Iterating this process of precompilation and uploading to S3 may be painful if you have to do it manually always. I suggest you write a custom script, maybe a Grunt plugin that makes the task a lot easier for you.
