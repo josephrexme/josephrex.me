@@ -32,7 +32,7 @@ From my story, obviously it all just didn't come once and the fact that I had ti
 
 A [seemingly interesting][4] article I found tackles the use of the word full-stack but the author made an interesting point by saying some of the so-called full-stack developers just have an ability to learn new things which is an entirely different thing. He further mentioned that such people know what is required on various layers to achieve given tasks even if they do not understand the whole of those layers. If I'm to go through the tests as he had mentioned in the article, I will have some branches where I'll almost be hitting 100 and some others at 70.
 
-I use Photoshop and I google my way through it most times but I get stuff done anyway. That makes me less of a designer on that end but I'm still full-stack in many other ways. If I'll get a 25on Photoshop, 75 on JavaScript, 80 on Ruby, and 95 on CSS I think that is reasonable enough.
+I use Photoshop and I google my way through it most times but I get stuff done anyway. That makes me less of a designer on that end but I'm still full-stack in many other ways. If I'll get a 25 on Photoshop, 75 on JavaScript, 80 on Ruby, and 95 on CSS I think that is reasonable enough.
 
 ### The risk of hiring full stack
 I've made it sound cool to be a full stack developer from the start but if I was a recruiter I will hire more specialists than full-stack developers and for that reason I pose to recruiters like I'm a specialist. My reason for this is because I've been in a position where I had to work closely with HR to see how the sharp-mouthed so-called full-stack developers failed at little tests where the specialists knew their thing and did it right.
