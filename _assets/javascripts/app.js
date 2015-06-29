@@ -43,18 +43,20 @@ ready(function(){
 			wrap.classList.toggle( "fixed", document.body.scrollTop > fixPoint );
 		});
 	}
-	
 	// Handling Navigation
 	menuIcon = document.querySelectorAll('nav > svg');
 	Array.prototype.forEach.call( menuIcon, function(el) {
 	   el.addEventListener('click', function() {
-
 	     el.parentNode.classList.toggle('active');
-
 	  }, false);
-
 	});
 });
+// Make it better http://jsfiddle.net/yunya12n/
+(function(){
+	document.querySelector('nav > ul').onclick = function(){
+		this.parentNode.classList.toggle('active');
+	}
+})();
 function scrollTo(element, to, duration) {
   var start = element.scrollTop,
       change = to - start,
