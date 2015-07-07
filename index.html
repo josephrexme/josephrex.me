@@ -1,7 +1,7 @@
 ---
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,11 @@
   <meta name="author" content="Joseph Rex">
   <meta name="keywords" content="security, code, programming, blog, penetration test, MKE developer, programming, software development, design, forensics, ruby-on-rails, python, laravel, rails">
   <meta name="description" content="Joseph Rex's blog on exploring software and applications. Rants on Python, Rails, Laravel, pyQt, and more">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://josephrex.me">
+  <meta property="og:title" content="Joseph Rex's blog on software, applications, usability and security">
+  <meta property="og:image" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:description" content="Exploring Software and Applications with Joseph Rex">
   <!--[if IE]>
     {% stylesheet ie %}
   <![endif]-->

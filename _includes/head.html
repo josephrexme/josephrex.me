@@ -6,6 +6,11 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="Joseph Rex">
   <meta name="keywords" content="security, code, programming, blog, penetration test, MKE developer, programming, software development, design, forensics, ruby-on-rails, python, laravel, rails">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:title" content="Joseph Rex's blog on software, applications, usability and security">
+  <meta property="og:image" content="{{ "/favicon.png" }}">
+  <meta property="og:description" content="Exploring Software and Applications with Joseph Rex">
   {% stylesheet app %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
