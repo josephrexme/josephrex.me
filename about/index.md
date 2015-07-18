@@ -4,13 +4,13 @@ author: Joseph Rex
 layout: page
 permalink: /about-me/
 ---
-{% image "//images.ostrich-dev.com/profile.jpg" class="avatar" %}
+{% image "//images.strich.io/profile.jpg" class="avatar" %}
 
 I am <span itemprop="name">Joseph Rex</span> (<span itemprop="nickname">bl4ckdu5t</span>). I love to build things, break things, and fix 'em. I have a strong passion for usability. Since I read [The design of everyday things][4] by [Don Norman][6], I really got a different view on usability and I've since worked hard on creating human centered designs. This has influenced how I design software and applications with good user experience. I write front-end code leveraging frameworks like jQuery and AngularJS and I do back-end development using PHP, Ruby, and Python. I've built most applications using Laravel and <span itemprop="title">Ruby-on-Rails</span> and I believe in Test-Driven development. I particular love python for self projects. I use PyQt4 (the python wrapper for Qt4) to build GUI desktop software in Python like [this][7].
 
 I love math and vector graphics. I use [mathML][1] and [SVG][15] and I sometimes take out time to design some [amateur graphics][14].
 
-<span itemprop="url">[Ostrich-Dev][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], I'm a member of [dc414][12], and I write on security for [Infosec Institute][13].
+<span itemprop="url">[StrichIO][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], I'm a member of [dc414][12], and I write on security for [Infosec Institute][13].
 
 Unarguably, I spend a lot of time with my computer but when I'm not on it, I play basketball or watch movies.
 
@@ -82,7 +82,7 @@ PRyyUkp/mzMT76yUhHAq2awoeN/GbFc=
 [2]: mailto:joerex@ostrich-dev.com
 [3]: http://ostrich-dev.com/joerex.asc "Get my PGP public key"
 [4]: http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107
-[5]: http://ostrich-dev.com
+[5]: http://strich.io
 [6]: https://twitter.com/jnd1er
 [7]: http://josephrex.me/registron
 [8]: http://codepen.io/bl4ckdu5t

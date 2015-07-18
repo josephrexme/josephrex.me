@@ -10,10 +10,26 @@
   <meta name="keywords" content="security, code, programming, blog, penetration test, MKE developer, programming, software development, design, forensics, ruby-on-rails, python, laravel, rails">
   <meta name="description" content="Joseph Rex's blog on exploring software and applications. Rants on Python, Rails, Laravel, pyQt, and more">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://josephrex.me">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:title" content="Joseph Rex's blog on software, applications, usability and security">
-  <meta property="og:image" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:image" content="{{ "/favicon.png" }}">
   <meta property="og:description" content="Exploring Software and Applications with Joseph Rex">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@joerex101">
+  <meta name="twitter:domain" content="josephrex.me">
+  <meta name="twitter:creator" content="@joerex101">
+  <meta name="twitter:title" content="Exploring Software and Applications with Joseph Rex">
+  <meta name="twitter:img:src" content="/favicon.png">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//stats.g.doubleclick.net">
+  <link rel="dns-prefetch" href="//res.cloudinary.com">
+  <link rel="dns-prefetch" href="//static.hotjar.com">
+  <link rel="dns-prefetch" href="//insights.hotjar.com">
+  <link rel="dns-prefetch" href="//launchbit.com">
+  <link rel="dns-prefetch" href="//cdn.carbonads.com">
+  <link rel="dns-prefetch" href="//srv.carbonads.net">
+  <link rel="dns-prefetch" href="//adn.fusionads.net">
+  <link rel="prerender" href="http://josephrex.me/about-me">
   <!--[if IE]>
     {% stylesheet ie %}
   <![endif]-->
