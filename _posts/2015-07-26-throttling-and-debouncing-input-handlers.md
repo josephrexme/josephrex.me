@@ -7,6 +7,7 @@ permalink: /throttling-and-debouncing-input-handers/
 ---
 
 2 years ago when JavaScript sounded a lot impossible to me and yet I had to perform a tasks in it for a project I was working on, I requested help on the *#jQuery* IRC channel and someone mentioned:
+<!--more-->
 
 > You may wanna debounce inputs on that one. I use this plugin for that <http://benalman.com/projects/jquery-throttle-debounce-plugin/>
 
