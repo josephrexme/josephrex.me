@@ -12,11 +12,11 @@ permalink: /throttling-and-debouncing-input-handers/
 > You may wanna debounce inputs on that one. I use this plugin for that <http://benalman.com/projects/jquery-throttle-debounce-plugin/>
 
 
-I didn't understand what he was saying but I couldn't express how much I was confused so I decided to play the *I get it* character. While I found the solution to what I really needed as a JavaScript script kiddie, of course I didn't understand what the solution was doing neither could I explain how it worked but I used it anyway. I had since bookmarked that link telling myself **This will be useful some day**. That day has come and I've used it on couple of projects. I'll go through what it does.
+I didn't understand what he was saying but I couldn't express how much I was confused so I decided to play the *I get it* character. While I found the solution to what I really needed as a JavaScript script kiddie, of course I didn't understand what the solution was doing and I could not explain how it worked either but I used it anyway. I had since bookmarked that link telling myself **This will be useful some day**. That day has come and I've used it on a couple of projects. I'll go through what it does.
 
 A common example here is scroll events which [Paul Lewis][1] explained properly and more clearly than I can in a [Rendering Performance article][2] he wrote at Google. He wrote about scroll events and touch events and mentioned how these input handlers are scheduled to run after `requestAnimationFrame` callbacks.
 
-[Chris Coyier][3] also recently wrote about [the difference between throttling and debouncing][4] which he metioned he had been confused about them just as I stayed confused about them for long. I'll rehash how he explained the difference.
+[Chris Coyier][3] also recently wrote about [the difference between throttling and debouncing][4] where he metioned that he had been confused about them the same way I've stayed confused about them for long. I'll rehash how he explained the difference.
 
 **Throttling:** It enforces a maximum number of times a function can be called over a time. It says you can't call this function more than once in X duration.
 
