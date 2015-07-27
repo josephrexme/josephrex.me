@@ -79,8 +79,7 @@ PRyyUkp/mzMT76yUhHAq2awoeN/GbFc=
 [Download PGP key][3]
 
 [1]: http://josephrex.me/things-you-can-do-with-mathml/ "Things you can do with MathML"
-[2]: mailto:joerex@ostrich-dev.com
-[3]: http://ostrich-dev.com/joerex.asc "Get my PGP public key"
+[3]: http://strich.io/joerex.asc "Get my PGP public key"
 [4]: http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107
 [5]: http://strich.io
 [6]: https://twitter.com/jnd1er
