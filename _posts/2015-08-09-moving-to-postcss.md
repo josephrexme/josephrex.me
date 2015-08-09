@@ -21,7 +21,7 @@ I think there is a huge benefit jumping ship to PostCSS right now and maybe it's
 
 To use PostCSS, you have to integrate it to your build process to have it post-processing CSS files after they are saved. The two popular task runners that come to mind are [Grunt][4] and [Gulp][5] but there [are][6] [many][7] [more][8] [these][9] [days][10]. I always used Grunt but my new project is about trying new things besides I have heard of how Gulp smacks Grunt with code over configuration. If you're already using Gulp in your workflow it'll be very easy to get started but if you aren't I'll go through every detail.
 
-[Install gulp][5] and set up your gulp file like I have mine below:
+[Install gulp][5] and set up your gulpfile like I have mine below:
 
 {% highlight javascript %}
 var gulp = require('gulp'),
@@ -101,15 +101,15 @@ gulp.task('default', ['css', 'browser-sync', 'scripts', 'watch']);
 You probably were using a task runner like this to use libsass for compiling your written Sass into CSS. Or you were using `compass watch` with the nice CSS3 features of compass and vendor prefix mixins. To emulate the watch feature in compass I have used the **watch** task and to make it even better I'm using **browser-sync** for live reload (no one wants to deal with reloading browsers anymore).
 
 ### I'm not convinced. Why should I leave Sass?
-If you like holy wars you'll try to start throwing points on why PostCSS can't do what CSS does and your points will be use of mixins, partials, variables, compass plugins, Sass nested statements, loops,
+If you like holy wars you'll try to start throwing points on why PostCSS can't do what CSS does and your points will include the use of mixins, partials, variables, compass plugins, Sass nested statements, loops,
 
 About compass plugins, there's way more plugins available for use with gulp and they are what will be used to fill in for those expected Sassy features.
 
 <hr>
 
-**Variables:** On the [PostCSS readme][11] you are given an option to use [cssnext][12] or [PreCSS][13]. PreCSS is a pack of plugins that makes you write sassy code with all the Sass features you left. While I can reason that you need some time to adopt to the new PostCSS you may want to do this but on deeper thoughts it's just like you never left Sass. CSSnext on the other hand encourages you to write [future friendly][17] CSS. The [CSS4 specs allows us declare variables in CSS][14] and you don't need to be afraid of whether this feature is supported yet or not as it will be post-processed into browser-compatible CSS. More features like custom properties are made possible with cssnext. If you still like to have it the good o'l way then you can use the [postcss-simple-vars][15] plugin to define variables just like you did in Sass.
+**Variables:** On the [PostCSS readme][11] you are given an option to use [cssnext][12] or [PreCSS][13]. PreCSS is a pack of plugins that makes you write sassy code with all the Sass features you left. While I can reason that you need some time to adopt to the new PostCSS you may want to do this but on deeper thoughts it's just like you never left Sass. CSSnext on the other hand encourages you to write [future friendly][17] CSS. The [CSS4 specs allows us declare variables in CSS][14] and you don't need to be afraid of whether this feature is supported yet or not as it will be post-processed into browser-compatible CSS. More features like custom properties are made possible with cssnext. If you still like to have it the good ol' way then you can use the [postcss-simple-vars][15] plugin to define variables just like you did in Sass. With this and other plugins that will be discussed you'll get the possible benefits of PreCSS while using cssnext.
 
-**Partials:** If you were thinking of having underscore prefixed mixins, that's a ruby thing and we had to do that because Sass was born out of Ruby. The `@import` statement can be used to import files but it doesn't suppport [globbing imports][18]. To make this feature available the [postcss-import][16] plugin is needed and FYI it should be called before the other postcss dependent plugins (e.g postcss-simple-vars, postcss-mixins). Here's what my app.css look like as I import other modules into it
+**Partials:** If you were thinking of having underscore prefixed mixins, that's a ruby thing and we had to do that because Sass was born out of Ruby. The `@import` statement can be used to import files but it doesn't suppport [globbing imports][18]. To make the *@import* available the [postcss-import][16] plugin is needed and FYI it should be called before the other postcss dependent plugins (e.g postcss-simple-vars, postcss-mixins). Here's what my app.css look like as I import other modules into it
 
 {% highlight css %}
 @import "partials/variables.css";
@@ -121,7 +121,7 @@ About compass plugins, there's way more plugins available for use with gulp and 
 @import "partials/helpers.css";
 {% endhighlight %}
 
-I like to separate variables, mixins, html5 boilerplate CSS, and others as shown above. The downside to this is that there's no syntax coloring for the variables and mixins as they aren't regular CSS. The Sass and Scss have syntax colouring on editors like Sublime Text and Atom when necessary packages are installed.
+I like to separate variables, mixins, html5 boilerplate CSS, and others as shown above. The downside to this is that there's no syntax coloring for the variables and mixins as they aren't regular CSS. The Sass and Scss formats have syntax coloring on editors like Sublime Text and Atom when necessary packages are installed.
 
 **Mixins:** The mixin syntax with postcss is different from what you've been used to with Sass. It uses [postcss-mixins][19] and it's syntax is also pretty clear and easy:
 
