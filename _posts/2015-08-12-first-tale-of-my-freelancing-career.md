@@ -27,5 +27,5 @@ Besides toptal being a reputable company to be associated with, I love that they
 [2]: http://oocss.org
 [3]: http://smacss.com
 [4]: http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
-[5]: http://www.toptal.com
+[5]: http://www.toptal.com/web
 [6]: http://www.toptal.com/blog
