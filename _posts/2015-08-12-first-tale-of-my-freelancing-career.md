@@ -19,7 +19,7 @@ There's way too many amazing things about Ruby and the ruby-on-rails framework. 
 
 I considered everything I've gathered from using all the mentioned technologies and thought for a second *What can I call myself?* . Well, I'm a polyglot programmer or if I'll use the buzzword, I'm a full stack developer. I needed more freelance jobs and I sought out to find more when I saw a tweet that led me to [Toptal][5].
 
-Toptal has the best freelancers you can find and if I really need to get hired then I have to be with toptal. The chances are really slim as it is often said that the screening process is tough (so tough that only 3% applicants make it). I'm hoping I'll get a rails engineer/full stack position. I will have my first interview today and I really hope it turns out fine.
+Toptal has the best freelancers you can find and if I really need to get hired by the top companies then I have to be with toptal. The chances are really slim as it is often said that the screening process is tough (so tough that only 3% applicants make it). I'm hoping I'll get a rails engineer/full stack position. I will have my first interview today and I really hope it turns out fine.
 
 Besides toptal being a reputable company to be associated with, I love that they make developers write [blog posts][6]. I love writing and I think one way we can spread discoveries and get back from our community is by blogging. The blog posts have educative comments that are both useful to the blog writer and to the other readers.
 
