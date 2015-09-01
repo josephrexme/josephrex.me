@@ -55,7 +55,7 @@ ready(function(){
 });
 {% endhighlight %}
 
-Notice how I used that tiny ready function, that's for those concerned about how they'll load it on documentReady like the jQuery `$(document).ready()`. Also I had set my offset to 70% because that just works well for me. You can choose to go 100% like a lot of the jQuery implementations do. You can pick up one of the [animations for animate.css][11] and add their classes in place of the ones I used in the code above.
+Notice how I used that tiny ready function? That's for those concerned about how they'll load it on documentReady like the jQuery `$(document).ready()`. Also I had set my offset to 70% because that just works well for me. You can choose to go 100% like a lot of the jQuery implementations do. You can pick up one of the [animations for animate.css][11] and add their classes in place of the ones I used in the code above.
 
 Your HTML should look similar to this:
 
