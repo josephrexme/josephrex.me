@@ -12,9 +12,21 @@ ready(function(){
 		  var dw = document.body.scrollWidth,
 		      dh = document.body.scrollHeight,
 		      wh = window.innerHeight,
-		      pos = document.body.scrollTop,
-		      bw = ((pos / (dh - wh)) * 100);
-		  bar.style.width = bw+'%';
+		      pos = document.documentElement.scrollTop;
+		  var dq = document.getElementById('disqus_thread');
+		  if(dq){
+		  	var dqh = dq.offsetHeight;
+		  	var bw = ((pos / ((dh - dqh - 90) - wh))* 100);
+		  }else{
+		    var bw = ((pos / (dh - 90 - wh)) * 100);
+		  }
+      bar.style.width = bw+'%';
+      var tnqs = document.querySelector('.thanks');
+      if(bw > 98){
+        tnqs.style.display = 'block';
+      }else{
+        tnqs.style.display = 'none';
+      }
 		});
 	}
 	// Date for copyright
@@ -24,7 +36,7 @@ ready(function(){
   var topBtn = document.querySelector('.scrollup');
   if(topBtn){
 	  document.addEventListener("scroll", function(e){
-	    if(document.body.scrollTop > 100){
+	    if(document.documentElement.scrollTop > 100){
 	        topBtn.style.display = 'block';
 	    }else{
 	      topBtn.style.display = 'none';
@@ -40,7 +52,7 @@ ready(function(){
 	if(wrap && window.innerWidth >= 1024){
 		document.addEventListener("scroll", function(e) {
 			fixPoint = parseInt( getComputedStyle(wrap).getPropertyValue('top') );
-			wrap.classList.toggle( "fixed", document.body.scrollTop > fixPoint );
+			wrap.classList.toggle( "fixed", document.documentElement.scrollTop > fixPoint );
 		});
 	}
 	// Handling Navigation
