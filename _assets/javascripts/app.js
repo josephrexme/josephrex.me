@@ -7,18 +7,19 @@ function ready(cb) {
 ready(function(){
 	// Progressive Reading Bar
 	var bar = document.querySelector('.scroll-progress');
+  var rootElement = typeof InstallTrigger !== 'undefined' ? document.documentElement : document.body;
 	if(bar){
 		document.addEventListener("scroll", function(e){
 		  var dw = document.body.scrollWidth,
 		      dh = document.body.scrollHeight,
 		      wh = window.innerHeight,
-		      pos = document.documentElement.scrollTop;
-		  var dq = document.getElementById('disqus_thread');
+		      pos = (rootElement).scrollTop,
+		      dq = document.getElementById('disqus_thread');
 		  if(dq){
 		  	var dqh = dq.offsetHeight;
-		  	var bw = ((pos / ((dh - dqh - 90) - wh))* 100);
+		  	var bw = ((pos / ((dh - dqh) - wh))* 100);
 		  }else{
-		    var bw = ((pos / (dh - 90 - wh)) * 100);
+		    var bw = ((pos / (dh - wh)) * 100);
 		  }
       bar.style.width = bw+'%';
       var tnqs = document.querySelector('.thanks');
@@ -36,14 +37,14 @@ ready(function(){
   var topBtn = document.querySelector('.scrollup');
   if(topBtn){
 	  document.addEventListener("scroll", function(e){
-	    if(document.documentElement.scrollTop > 100){
+	    if((rootElement).scrollTop > 100){
 	        topBtn.style.display = 'block';
 	    }else{
 	      topBtn.style.display = 'none';
 	    }
 	  });
 		document.querySelector('.scrollup').onclick = function () {
-	    scrollTo(document.body, 0, 1250);   
+	    scrollTo(rootElement, 0, 1250);   
 		}
 	}
 
@@ -52,7 +53,7 @@ ready(function(){
 	if(wrap && window.innerWidth >= 1024){
 		document.addEventListener("scroll", function(e) {
 			fixPoint = parseInt( getComputedStyle(wrap).getPropertyValue('top') );
-			wrap.classList.toggle( "fixed", document.documentElement.scrollTop > fixPoint );
+			wrap.classList.toggle( "fixed", (rootElement).scrollTop > fixPoint );
 		});
 	}
 	// Handling Navigation
