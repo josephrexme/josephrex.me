@@ -16,7 +16,7 @@ Unarguably, I spend a lot of time with my computer but when I'm not on it, I pla
 
 There's more [about me][16]. The image I use all over the internet was originally designed by [Funkwood][17] on [Deviantart][18].
 
-I'm presently a freelancer and I'm available to take jobs. <span data-email>Send me an email -</span>
+Interested in a chat <span data-email>Send me an email -</span>
 
 My PGP key:
 

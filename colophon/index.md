@@ -19,7 +19,6 @@ The home page design concept from [The Peak squarespace template][10] and [Unico
 
 I use the Open Sans font provided by [Google fonts][3], [Google Analytics][4] and [Hotjar][9] for monitoring the site usage.
 
-I thought of creating this colophon after coming across [Richard Rutter][5]'s [colophon][6].
 
 [1]: http://twitter.com/des_cho
 [2]: http://chongarova.com/
