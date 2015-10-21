@@ -51,7 +51,6 @@ ready(function(){
 	  }, false);
 	});
 });
-// Make it better http://jsfiddle.net/yunya12n/
 (function(){
 	document.querySelector('nav > ul').onclick = function(){
 		this.parentNode.classList.toggle('active');
