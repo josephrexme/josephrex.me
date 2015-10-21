@@ -1,7 +1,7 @@
 ---
 # Site settings
 title: Joseph Rex
-email: joerex@ostrich-dev.com
+email: joseph at strichio
 description: > # this means to ignore newlines until "baseurl:"
   Exploring Software and Applications
 baseurl: "" # the subpath of your site, e.g. /blog/

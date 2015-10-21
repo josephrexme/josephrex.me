@@ -555,6 +555,17 @@ footer{
 		vertical-align: middle;
 	}
 }
+.thanks{
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(darken($white, 5%), .9);
+	color: darken($white, 70%);
+	box-shadow: 0 2px 3px $black;
+	padding: 10px;
+	text-align: center;
+}
 abbr[title]:hover:after, acronym[title]:hover:after{
 	content: " (" attr(title) ")";
 	text-shadow: 0 0 1em #dd3b2a;
