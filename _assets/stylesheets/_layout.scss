@@ -46,6 +46,11 @@ header{
 		}
 	}
 	h2{
+		text-align: center;
+		color: $white;
+		font-weight: 300;
+	}
+	&.imaged h2{
 		color: $white;
 		position: absolute;
 		bottom: 20px;
@@ -56,7 +61,7 @@ header{
 		font-size: 2.5rem;
 		z-index: 10;
 	}
-	&:before{
+	&.imaged:before{
 		content: '';
 		position: absolute;
 		left: 0;
