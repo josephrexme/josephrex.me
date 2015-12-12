@@ -5,7 +5,7 @@ layout: post
 comments: true
 permalink: /what-its-not-about-the-money-really-means/
 ---
-Have you found yourself telling someone is not about the money? I guess that's something common with anyone passionate about what they do. Some years back I'd do anything I could do to get my hands on code even if all I'd get for it is a [cheap gift][1].
+Have you found yourself telling someone it's not about the money? I guess that's something common with anyone passionate about what they do. Some years back I'd do anything I could do to get my hands on code even if all I'd get for it is a [cheap gift][1].
 <!--more-->
 Like so many people I was just interested in ways I could get better at what I do. But soon I realized I was making a big mistake. Why? you may ask. There's bills, rents, and food that needs to be taken care of and all of these have to be considered in the decisions we make. Sometimes our need for money/rewards may be beyond the mentioned.
 
