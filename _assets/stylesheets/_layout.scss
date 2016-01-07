@@ -398,14 +398,12 @@ footer{
 			display: none;
 		}
 		@include breakpoint($breakpoint-tablet-landscape){
-			width: $breakpoint-tablet-landscape;
-			padding: 6rem;
-			margin: 0 auto;
-		}
-		@include breakpoint($breakpoint-laptop){
 			position: relative;
 			top: -100px;
+			width: $breakpoint-tablet-landscape;
+			margin: 0 auto;
 			margin-bottom: -100px;
+			padding: 6rem;
 		}
 	}
 	aside{
