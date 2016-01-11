@@ -20,6 +20,8 @@ If you need a backbone for your design and want to save time, [grid systems][5] 
 
 Server-side frameworks make the work easier with little or no reasons to tweak them, JavaScript frameworks may include the needed number of assets resulting in more HTTP requests or will result in a bloated JS file when compressing all JavaScript files but they serve a good purpose in the end and are always worth the performance loss but CSS Frameworks are never worth it on production apps. [Industry experts think so too][7]
 
+> **Update:** Selectors for elements added at runtime can be ignored in uncss as mentioned [in the docs][9]
+
 [1]: http://uxdiogenes.com/blog/on-being-a-designer-and-a-developer-not-quite-unicorn-rare
 [2]: https://en.wikipedia.org/wiki/Reinventing_the_wheel
 [3]: https://blog.codinghorror.com/dont-reinvent-the-wheel-unless-you-plan-on-learning-more-about-wheels/
@@ -28,3 +30,4 @@ Server-side frameworks make the work easier with little or no reasons to tweak t
 [6]: http://bit.ly/uncss
 [7]: https://psdtowp.net/best-responsive-css-frameworks.html#jeremy-keith
 [8]: https://en.wikipedia.org/wiki/Learned_helplessness
+[9]: https://github.com/giakki/uncss#within-nodejs
