@@ -32,7 +32,7 @@ $('form').on('submit',function(e){
 });
 {% endhighlight %}
 
-and for those using older versions of jQuery, it should be something like this you have:
+and for those using older versions of jQuery or haven't realized the essence of promises, it should be something like this you have:
 <!--more-->
 
 {% highlight javascript %}
@@ -60,7 +60,7 @@ According to [the standards by mozilla][3] support has been added for XHR Level
 If you have the following HTML
 
 {% highlight html %}
-<form action="">
+<form action="" id="compform">
 <input type="text" name="title">
 <input type="file" name="file">
 </form>
