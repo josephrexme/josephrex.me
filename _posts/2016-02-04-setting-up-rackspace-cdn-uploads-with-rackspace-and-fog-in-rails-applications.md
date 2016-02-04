@@ -92,7 +92,10 @@ you should have your environment variables defined somewhere. [Figaro][4] is a g
 
 In my config I'm using a Rackspace server to handle file uploads and CDN delivery. You can do the same with Amazon S3 and Cloudfront CDN.
 
-If you're uploading files within the same table of your form object then that's all it takes but I'll go further by explaining how to handle this for using a separate database to handle uploads. This becomes useful when you have multiple models making the same kind of uploads. To keep a DRY code you'd only want to do this once. For my example I'd use a uploads model to handle uploads for cars. Since we aren't uploading to our cars table the migration would be somewhat like this (without the attachment type):
+If you're uploading files within the same table of your form object then that's all it takes but I'll go further by explaining how to handle this for using a separate database to handle uploads.
+
+### Using a separate model for uploads
+This becomes useful when you have multiple models making the same kind of uploads. To keep a DRY code you'd only want to do this once. For my example I'd use a uploads model to handle uploads for cars. Since we aren't uploading to our cars table the migration would be somewhat like this (without the attachment type):
 
 {% highlight ruby %}
 class CreateCars < ActiveRecord::Migration
