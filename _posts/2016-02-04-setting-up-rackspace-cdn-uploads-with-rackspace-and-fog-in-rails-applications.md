@@ -6,9 +6,9 @@ author: Joseph Rex
 permalink: /setting-up-uploads-with-paperclip-and-fog-in-rails-applications/
 ---
 Paperclip is a great gem and one of the most used gem for handling file attachment in rails applications. [Carrierwave][6] is another good choice. This article describes how to use it with the fog gem (a gem that helps you connect with almost any cloud service).
-<!--more-->
 This article will use a Car model to handle scenarios of car image uploads.
 Start by adding the necessary gems to your Gemfile
+<!--more-->
 
 {% highlight text %}
 gem 'fog', '~> 1.37'
@@ -156,7 +156,7 @@ end
 
 and you can create a file upload field in the view with this:
 
-{% highlight ruby %}
+{% highlight erb %}
 <%= form_for(@car, url: {action: 'create'}, html: { multipart: true }) do |f| %>
   <% f.text_field :name %>
   <%= f.fields_for :uploads do |upload_field| %>
