@@ -34,7 +34,7 @@ Fingerprint: 4BD9 803E 47C5 6B16 715E  A5CF 9D8B 87BB E761 4F18
 [9]: https://github.com/bl4ckdu5t
 [10]: http://bitbucket.org/bl4ckdu5t
 [11]: http://twitter.com/joerex101
-[12]: https://dc414.org/~silverdust
+[12]: https://dc414.org/~silverdust/
 [13]: http://resources.infosecinstitute.com/author/joseph-rex/
 [14]: http://bl4ckdu5t.deviantart.com
 [15]: http://josephrex.me/exploring-svg-for-absolute-beginners/ "Exploring SVG for beginners"
