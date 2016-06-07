@@ -310,3 +310,7 @@ and whew! The HTML
 {% endhighlight %}
 
 I made some modifications to Mak's code and I believe it works better this way. Also, the Eloquent method are adjusted to fit the Laravel4.2 documentation.
+
+> If you use Laravel5. Use the files in this [gist][1]
+
+[1]:https://gist.github.com/bl4ckdu5t/6b6d3d4e1a753c62f5c2741941791ad9
