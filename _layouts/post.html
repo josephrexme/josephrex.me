@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<header>
-<h2>{{ page.title }}</h2>
+<header class="header">
+  <h1 class="post__title">{{ page.title }}</h1>
+  <time class="post__date">{{ page.date | date: "%B %-d, %Y" }}</time>
 </header>
 <main>
-  <time>{{ page.date | date: "%b %-d, %Y" }}</time>
-  <article class="post-content">
+  <article class="post__article">
     {{ content }}
     <!-- Comments Section -->
     {% if page.comments %}
@@ -16,11 +16,11 @@ layout: default
         var disqus_shortname = 'josephrexme'; // required: replace example with your forum shortname
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+        // (function() {
+        //     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        //     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        // })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     {% endif %}

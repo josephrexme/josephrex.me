@@ -1,13 +1,11 @@
 .header{
-  padding: 50px 10px;
+  padding: 80px 10px;
   text-align: center;
   &__title{
     margin-bottom: 20px;
-    transition: opacity 3s ease;
-    transition-delay: 0.5s;
-    opacity: 1;
   }
   &__description{
     color: rgba($white, .6);
+    font-size: 2rem;
   }
 }

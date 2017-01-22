@@ -43,10 +43,12 @@
       padding: 0;
       background: none;
       color: #444;
-      font-weight: lighter;
       &__content{
         padding: 20px 40px;
         background: $white;
+        h3 a:hover{
+          text-decoration: none;
+        }
       }
     }
   }

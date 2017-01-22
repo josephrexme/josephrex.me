@@ -2,16 +2,18 @@
 <html prefix="og: http://ogp.me/ns#" lang="en">
   {% include head.html %}
   <body>
-    <div class="scrollup">
-      Scroll Up
+    <div class="post">
+      <div class="wrap">
+        <!-- <div class="scrollup"> -->
+        <!--   Scroll Up -->
+        <!-- </div> -->
+        <!-- <div class="scroll&#45;progress"></div> -->
+        <!-- <div class="thanks">Thanks for reading</div> -->
+        <section class="container">
+          {{ content }}
+        </section>
+      </div>
     </div>
-    <div class="scroll-progress"></div>
-    <div class="thanks">Thanks for reading</div>
-    {% include header.html %}
-    {% include navigation.html %}
-    <section class="container">
-      {{ content }}
-    </section>
     {% include footer.html %}
   </body>
 </html>
