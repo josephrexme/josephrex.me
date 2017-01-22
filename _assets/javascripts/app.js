@@ -44,7 +44,7 @@ ready(function(){
 	    }
 	  });
 		document.querySelector('.scrollup').onclick = function () {
-	    scrollTo(rootElement, 0, 1250);   
+	    scrollTo(rootElement, 0, 1250);
 		}
 	}
 
@@ -56,26 +56,14 @@ ready(function(){
 			wrap.classList.toggle( "fixed", (rootElement).scrollTop > fixPoint );
 		});
 	}
-	// Handling Navigation
-	menuIcon = document.querySelectorAll('nav > svg');
-	Array.prototype.forEach.call( menuIcon, function(el) {
-	   el.addEventListener('click', function() {
-	     el.parentNode.classList.toggle('active');
-	  }, false);
-	});
 });
-(function(){
-	document.querySelector('nav > ul').onclick = function(){
-		this.parentNode.classList.toggle('active');
-	}
-})();
 function scrollTo(element, to, duration) {
   var start = element.scrollTop,
       change = to - start,
       currentTime = 0,
       increment = 20;
-      
-  var animateScroll = function(){        
+
+  var animateScroll = function(){
       currentTime += increment;
       var val = Math.easeInOutQuad(currentTime, start, change, duration);
       element.scrollTop = val;

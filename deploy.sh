@@ -2,5 +2,5 @@
 
 git add .
 git commit -am "$1"
-git push origin source
+git push origin source --tags
 

@@ -1,4 +1,12 @@
 .header{
-  padding: 10px;
-  background: $white;
+  padding: 50px 10px;
+  text-align: center;
+  &__title{
+    transition: opacity 3s ease;
+    transition-delay: 0.5s;
+    opacity: 1;
+  }
+  &__description{
+    color: rgba($white, .6);
+  }
 }

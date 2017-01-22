@@ -3,10 +3,10 @@
 title: Joseph Rex
 email: joseph at strichio
 description: > # this means to ignore newlines until "baseurl:"
-  Exploring Software and Applications
+  Design, Code, Fitness and Food
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://josephrex.me" # the base hostname & protocol for your site
-twitter_username: joerex101
+twitter_username: josephrexme
 github_username:  bl4ckdu5t
 
 # Build settings
@@ -36,4 +36,4 @@ gems:
 
 timezone: America/Chicago
 excerpt_separator: <!--more-->
-paginate: 5
+paginate: 8
