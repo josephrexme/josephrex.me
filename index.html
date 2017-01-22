@@ -43,11 +43,15 @@
     <main class="list list--gapped">
       {% for post in paginator.posts %}
         <div class="list__item">
-          <h3>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h3>
-          {{ post.excerpt }}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="ellipsized">Continue...</a>
+          <div class="list__item__content">
+            <h3>
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h3>
+            {{ post.excerpt }}
+          </div>
+          <footer class="list__footer clearfix">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="u-fr ellipsized">Read More</a>
+          </footer>
         </div>
       {% endfor %}
       <!-- Pagination links -->

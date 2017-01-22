@@ -17,13 +17,13 @@
  */
 .button{
   display: inline-block;
-  padding: .7rem 1.2rem;
+  padding: .6rem 1.2rem;
   background: #888;
   color: $white;
   border: solid thin rgba($black, .1);
   border-radius: $inputs-border-radius;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   cursor: pointer;
   text-decoration: none;
@@ -69,8 +69,7 @@
     background: transparent;
     color: inherit;
     &:hover{
-      padding: .6rem 1.1rem;
-      border: solid .2rem currentColor;
+      background: rgba($white, .2);
     }
     &.button--lg:hover{
       padding: 1.1rem 2.9rem;

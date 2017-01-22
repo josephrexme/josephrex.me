@@ -124,3 +124,6 @@ DEPENDENCIES
   respond-to
   sass
   uglifier
+
+BUNDLED WITH
+   1.13.6
