@@ -1,0 +1,85 @@
+/**
+ * Table:
+ * `.table` - Tables layouts
+ *
+ *   @example
+ *   <div class="u-fullwidth [ table table--bordered table--themeone ]">
+ *     <div class="table__row">
+ *      <div class="table__column table__heading"><p>Heading 1</p></div>
+ *      <div class="table__column table__heading"><p>Heading 2</p></div>
+ *      <div class="table__column table__heading"><p>Heading 3</p></div>
+ *     </div>
+ *     <div class="table__row">
+ *      <div class="table__column"><p>Column 1</p></div>
+ *      <div class="table__column"><p>Column 2</p></div>
+ *      <div class="table__column"><p>Column 3</p></div>
+ *     </div>
+ *   </div>
+ */
+.table{
+  display: table;
+  table-layout: fixed;
+  margin: 10px 0;
+  overflow: hidden;
+  &--bordered{
+    @include breakpoint($breakpoint-tablet-portrait){
+      border: solid thin #ccc;
+    }
+  }
+  &--has-checkbox{
+    .table__row > .table__column:first-child{
+      display: none;
+      @include breakpoint($breakpoint-tablet-portrait){
+        display: table-cell;
+        width: 30px;
+      }
+    }
+  }
+  &--themeone{
+    @include breakpoint($breakpoint-tablet-portrait){
+      .table__row:nth-child(odd){
+        background: #eee;
+      }
+    }
+  }
+  &__heading{
+    background: #eee;
+    font-weight: bolder;
+  }
+  &__row{
+    .table--bordered &{
+      border: solid thin #ccc;
+      margin-bottom: 10px;
+    }
+    @include breakpoint($breakpoint-tablet-portrait){
+      display: table-row;
+      .table--bordered &{
+        border: 0;
+        margin: 0;
+      }
+    }
+  }
+  &__column{
+    @include ellipsis-line(100%);
+    &:not(:last-of-type){
+      border-bottom: solid thin #ccc;
+    }
+    @include breakpoint($breakpoint-tablet-portrait){
+      &.table__column{
+        display: table-cell;
+        border: 0;
+      }
+    }
+  }
+  &__avatar{
+    margin-right: 10px;
+  }
+  &__thumb{
+    width: 80px;
+    height: 50px;
+  }
+  p{
+    margin: 0;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,198 @@
+/**
+ * Hamburger:
+ * `.c-hamburger` - Hamburger menu for smaller viewports
+ * on responsive designs.
+ * (https://github.com/callmenick/Animating-Hamburger-Icons)
+ *
+ *   @example
+ *   <button class="c-hamburger c-hamburger--htx">
+ *     <span>toggle menu</span>
+ *   </button>
+ */
+$button-width: 36px;
+$button-height: 36px;
+$bar-thickness: 2px;
+$button-pad: 4px;
+$button-bar-space: 6px;
+$button-transition-duration: 0.3s;
+$hamburger-color: currentColor;
+$visibility-limit: $breakpoint-tablet-portrait;
+.c{
+  &-hamburger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 10;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: $button-width;
+    height: $button-height;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background $button-transition-duration;
+    @include breakpoint($visibility-limit){
+      display: none;
+    }
+    &:focus{
+      outline: none;
+    }
+    span{
+      display: block;
+      position: absolute;
+      top: ($button-height / 2) - ($bar-thickness / 2);
+      left: $button-pad;
+      right: $button-pad;
+      height: $bar-thickness;
+      background: $hamburger-color;
+      &::before, &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: $bar-thickness;
+        background-color: $hamburger-color;
+      }
+      &::before{
+        top: -$bar-thickness - $button-bar-space;
+      }
+      &::after{
+        bottom: -$bar-thickness - $button-bar-space;
+      }
+    }
+    /*-
+     * Style 1
+     *
+     * Rotating hamburger icon (rot), that simply rotates 90
+     * degrees when activated.
+     */
+    &--rot{
+      background: transparent;
+      span{
+        transition: transform $button-transition-duration;
+      }
+      .openNav &{
+        span{
+          transform: rotate(90deg);
+        }
+      }
+    }
+    /*-
+     * Style 2
+     *
+     * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+     * down to center and transform into an "x".
+     */
+    &--htx{
+      background: transparent;
+      span{
+        transition: background 0s $button-transition-duration;
+        &::before, &::after{
+          transition-duration: $button-transition-duration, $button-transition-duration;
+          transition-delay: $button-transition-duration, 0s;
+        }
+        &::before{
+          transition-property: top, transform;
+        }
+        &::after{
+          transition-property: bottom, transform;
+        }
+      }
+      .openNav &{
+        span{
+          background: none;
+          &::before{
+            top: 0;
+            transform: rotate(45deg);
+          }
+          &::after{
+            bottom: 0;
+            transform: rotate(-45deg);
+          }
+          &::before, &::after{
+            transition-delay: 0s, $button-transition-duration;
+          }
+        }
+      }
+    }
+    /*-
+     * Style 3
+     * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
+     * arrow. Usually indicates an off canvas menu sliding in from left that
+     * will be close on re-click of the icon.
+     */
+    &--htla{
+      background: transparent;
+      span{
+        transition: transform $button-transition-duration;
+        &::before{
+          transform-origin: top right;
+          transition: transform $button-transition-duration, width $button-transition-duration, top $button-transition-duration;
+        }
+        &::after{
+          transform-origin: bottom right;
+          transition: transform $button-transition-duration, width $button-transition-duration, bottom $button-transition-duration;
+        }
+      }
+      .openNav &{
+        span{
+          transform: rotate(180deg);
+          &::before, &::after{
+            width: 50%;
+          }
+          &::before{
+            top: 0;
+            transform: translateX($button-width/2 - $button-pad + $bar-thickness) translateY($bar-thickness/2) rotate(45deg);
+          }
+          &::after{
+            bottom: 0;
+            transform: translateX($button-width/2 - $button-pad + $bar-thickness) translateY(-$bar-thickness/2) rotate(-45deg);
+          }
+        }
+      }
+    }
+    /*-
+     * Style 4
+     * Hamburger to right-arrow (htra). Hamburger menu transforms to a
+     * right-pointing arrow. Usually indicates an off canvas menu sliding in from
+     * right that will be close on re-click of the icon.
+     */
+    &--htra{
+      background: transparent;
+      span{
+        transition: transform $button-transition-duration;
+        &::before{
+          transform-origin: top left;
+          transition: transform $button-transition-duration, width $button-transition-duration, top $button-transition-duration;
+        }
+        &::after{
+          transform-origin: bottom left;
+          transition: transform $button-transition-duration, width $button-transition-duration, bottom $button-transition-duration;
+        }
+      }
+      .openNav &{
+        span{
+          transform: rotate(180deg);
+          &::before, &::after{
+            width: 50%;
+          }
+          &::before{
+            top: 0;
+            transform: translateX(-$bar-thickness) translateY($bar-thickness/2) rotate(-45deg);
+          }
+          &::after{
+            bottom: 0;
+            transform: translateX(-$bar-thickness) translateY(-$bar-thickness/2) rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
 	a{
 		text-decoration: underline;
 		&:visited{ text-decoration: underline; }
-		&[href]:after{ content: " (" attr(href) ")"; }
+		// &[href]:after{ content: " (" attr(href) ")"; }
 	}
 	abbr[title]:after{
     	content: " (" attr(title) ")";
@@ -39,8 +39,34 @@
 	}
 	h2, h3{ page-break-after: avoid; }
 
-	// Domain-Specific
-	.container>aside, #disqus_thread{
-		display: none;
-	}
+	/* Site specific */
+  .header, .footer, .button, .print-button{ display: none; }
+  .resume{
+    line-height: 1.3;
+    .icon-logo{
+      display: block;
+      position: absolute;
+      right: 20px;
+      fill: #ccc;
+    }
+    .prompt{
+      display: none;
+    }
+    &__info{
+      .col-25{ display: none; }
+      a{ display: none; }
+    }
+    &__field{
+      margin-top: 20px;
+    }
+    .tag{
+      margin-right: -20px;
+      &::after{
+        content: ',';
+      }
+      &:last-of-type::after{
+        content: '.';
+      }
+    }
+  }
 }

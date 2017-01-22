@@ -1,0 +1,45 @@
+/**
+ * Pagination:
+ * `.paginate` - Pagination can be used with lists that should paginate
+ *
+ *   @example
+ *   <ul class="paginate" role="menubar" aria-label="pagination">
+ *     <li aria-disabled="true" class="is-disabled is-pagination-disabled"><a href="#">Previous</a></li>
+ *     <li><a href="#">1</a></li>
+ *     <li><a href="#">2</a></li>
+ *     <li class="is-pagination-current"><a href="#">3</a></li>
+ *     <li><a href="#">4</a></li>
+ *     <li><a href="#">5</a></li>
+ *     <li><a href="#">Next</a></li>
+ *   </ul>
+ */
+$border-color: darken($white, 15%);
+.paginate{
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+  overflow: hidden;
+  li{
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+  }
+  a, span{
+    display: block;
+    padding: 10px 20px;
+    background: $white;
+    border: solid thin rgba($black, .1);
+    border-radius: 5px;
+    color: #888;
+    &:hover{
+      text-decoration: none;
+    }
+    &:not(.is-pagination-disabled):not(.is-pagination-current){
+      &:hover{
+        background: darken($white, 3%);
+      }
+    }
+  }
+}

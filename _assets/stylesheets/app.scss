@@ -1,24 +1,32 @@
-@charset "utf-8";
+/*!
+  Joseph Rex Blog 2.0 Stylesheet
+  @author Joseph Rex <bl4ckdu5t>
+  @since 01-21-2017
+*/
+// Base Configuration
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+@import 'base/normalize';
+@import 'base/h5bp';
+@import 'base/typography';
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5px;
+// Components
+@import 'components/buttons';
+@import 'components/grid';
+@import 'components/hamburger';
+@import 'components/lists';
+@import 'components/images';
+@import 'components/pagination';
+@import 'components/dividers';
 
-$spacing-unit:     30px;
+// Layout Styles
+@import 'layout/base';
+@import 'layout/sections';
+@import 'layout/page';
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-@import "base", "layout", "syntax-highlighting", "helpers", "print", "extends";
+// Specificity Delayed modules
+@import 'layout/print';
+@import 'base/overrides';
+@import 'base/states';
+@import 'base/utility';

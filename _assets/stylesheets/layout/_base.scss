@@ -1,0 +1,70 @@
+/*--------------------------------*\
+  Global Rules/Namespace
+\*--------------------------------*/
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: $font--primary;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background: $bg-color;
+  color: $text-color;
+}
+blockquote{
+  position: relative;
+  padding: 30px 20px 10px;
+  width: 90%;
+  max-width: 500px;
+  font-weight: 500;
+  &::before, &::after{
+    position: absolute;
+    font-size: 5rem;
+    color: #777;
+  }
+  &::before{
+    content: '“';
+    top: 10px;
+    left: 0;
+  }
+  &::after{
+    content: '”';
+    top: 30px;
+    right: 0;
+  }
+}
+cite{
+  display: block;
+  font-weight: 300;
+  &::before{
+    content: '— ';
+  }
+}
+a{
+  color: $color-links;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+input{
+  font-family: inherit;
+}
+em{
+  font-weight: 400;
+}
+.wrap{
+  width: 100%;
+  max-width: $site-width;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.icon{
+  fill: currentColor;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+}

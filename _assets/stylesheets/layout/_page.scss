@@ -1,0 +1,17 @@
+.page{
+  padding: 40px 20px 20px;
+  background: darken($white, 5%);
+  &--featured{
+   background: linear-gradient(to bottom, darken($color-brand-2, 5%) 0%,darken($color-brand-2, 5%) 40%,$color-brand-1 40%,$color-brand-1 100%);
+  }
+  &__content{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: $white;
+    border: solid thin rgba($black, .1);
+    border-radius: 5px;
+    h4, h6{
+      font-weight: 300;
+    }
+  }
+}

@@ -7,8 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Joseph Rex">
-  <meta name="keywords" content="security, code, programming, blog, penetration test, MKE developer, programming, software development, design, forensics, ruby-on-rails, python, laravel, rails">
-  <meta name="description" content="Joseph Rex's blog on exploring software and applications. Rants on Python, Rails, Laravel, pyQt, and more">
+  <meta name="description" content="Joseph Rex's blog on exploring software and his life">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta property="og:title" content="Joseph Rex's blog on software, applications, usability and security">
@@ -22,11 +21,6 @@
   <meta name="twitter:img:src" content="/favicon.png">
   <link rel="dns-prefetch" href="//www.google-analytics.com">
   <link rel="dns-prefetch" href="//stats.g.doubleclick.net">
-  <link rel="dns-prefetch" href="//res.cloudinary.com">
-  <link rel="dns-prefetch" href="//launchbit.com">
-  <link rel="dns-prefetch" href="//cdn.carbonads.com">
-  <link rel="dns-prefetch" href="//srv.carbonads.net">
-  <link rel="dns-prefetch" href="//adn.fusionads.net">
   <link rel="prerender" href="http://josephrex.me/about-me">
   <!--[if IE]>
     {% stylesheet ie %}
@@ -36,58 +30,46 @@
   <link rel="shortcut icon" type="image/png" href="http://res.cloudinary.com/strich/image/upload/v1437944865/logo_xpfee9.png" />
   <link rel="pingback" href="https://webmention.io/josephrex.me/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/josephrex.me/webmention" />
+  {% stylesheet app %}
   <title>Joseph Rex's blog - Exploring Software and Applications</title>
-<style>
-@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;src:local("Open Sans Light"),local("OpenSans-Light"),url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format("woff2")}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local("Open Sans"),local("OpenSans"),url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format("woff2")}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;src:local("Open Sans Extrabold"),local("OpenSans-Extrabold"),url(http://fonts.gstatic.com/s/opensans/v10/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format("woff2")}html{color:#222}html{font-size:1em;line-height:1.4}::-moz-selection,::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}a{text-decoration:none;color:inherit}html{-webkit-font-smoothing:antialiased;text-rendering:optimizelegibility;font-size:62.5%}body{background:#274359;margin:0;font-family:"Open Sans", sans-serif;font-size:1.6rem}ul{margin:0;padding:0}main{background:#fff;padding:20px}main a{color:#2a7ae2}main h3{font-weight:300}main h3{font-size:3rem}nav{padding:0 10px 0 10px;position:relative;max-height:50px}nav>ul{background:#223b4e;color:#fff;width:100%;position:absolute;padding:0 0 10px 0;left:0;z-index:1000;top:40px;border-radius:0 0 10px 10px;display:none}nav>ul li>a{display:block;padding:10px;width:100%;height:100%}nav svg{cursor:pointer;height:100%}@media (min-width: 1024px){nav{max-height:550px;padding:0;position:absolute;left:0;top:100px;width:100px}nav svg{display:none}nav ul{display:block;border-radius:0;background:transparent;position:relative;padding:0}nav ul li{border-bottom:solid thin #1f3647}}@media (min-width: 1105px){nav{width:10%}}@media (min-width: 1170px){nav{width:20%;top:200px}}::selection{background:#999;color:white}#carbonads{background:rgba(255,255,255,0.2);max-width:150px;border:solid thin #bbb;padding:10px;font-size:1.2rem;margin:0 auto;margin-bottom:20px;overflow:hidden}@media (min-width: 1170px){[data-index] #carbonads{position:absolute;top:60px;right:10px}}.carbon-text{display:block;margin:10px 0}.carbon-poweredby{color:#ddd}[data-index]{background:#eee}[data-index] nav{background:#274359}@media (min-width: 1024px){[data-index] nav{background:rgba(39,67,89,0.7);padding:0 10px 0 10px;position:fixed;z-index:150;top:0;width:100%;max-height:50px}[data-index] nav>ul{background:rgba(0,0,0,0.5);color:#fff;width:100%;height:100vh;position:absolute;padding:0 0 10px 0;left:0;z-index:1000;top:40px;border-radius:0 0 10px 10px;display:none}[data-index] nav>ul::before{content:'';position:absolute;left:0;width:200px;height:100%;background:#223b4e;z-index:-1}[data-index] nav>ul li{border-bottom:none}[data-index] nav>ul li>a{display:block;background:transparent;padding:20px;width:200px}[data-index] nav svg{display:block;cursor:pointer;height:100%}}@media (min-width: 1024px){[data-index] main{width:1024px;padding:6rem;margin:0 auto}}@media (min-width: 1170px){[data-index] main{position:relative;top:-100px;margin-bottom:-100px}}[data-section~="header"]{height:30rem;background:linear-gradient(rgba(39,67,89,0.8), rgba(39,67,89,0.8)),url(http://res.cloudinary.com/strich/image/upload/v1430286562/header_jvzpi4.png) no-repeat;color:#fff;padding:2rem;text-align:center;overflow:hidden}@media (min-width: 1024px){[data-section~="header"]{height:40rem}}[data-section~="header"] h2{font-size:3rem;font-weight:400;text-transform:uppercase;margin-top:30%}@media (min-width: 568px){[data-section~="header"] h2{margin-top:10%}}@media (min-width: 1170px){[data-section~="header"] h2{font-size:4rem}}[data-section~="header"] p{color:#192b39;font-weight:300;font-size:2rem}.logo{position:absolute;top:5px;left:0;right:0;z-index:100;margin:0 auto;width:40px}@media (min-width: 1024px){.logo{top:80px}}@media (min-width: 1170px){.logo{width:60px}}.ellipsized{display:block;margin-bottom:20px;color:#888}.pagination svg{width:80px}.pagination a svg{fill:#888}.pagination span svg{fill:#ddd}.pagination .next,.pagination .previous{position:relative;bottom:5px}@media (min-width: 1170px){.pagination .next,.pagination .previous{position:absolute}}.pagination .next{right:2px}.pagination .previous{left:2px}h2,h3,p,ul{margin-bottom:15px}
-</style>
 </head>
-<body data-index>
-<img src="data:image/png;base64,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" alt="Joseph Rex" onerror="this.src=http://res.cloudinary.com/strich/image/upload/v1430290397/logo_ayfthh.png" class="logo" id="js-wrap">
-  {% include navigation.html %}
-  <section data-section="header">
-    <h2>Joseph Rex</h2>
-    <p>The future is now</p>
-  </section>
-  <main>
-    {% for post in paginator.posts %}
-        <h3>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
-        {{ post.excerpt }}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="ellipsized">Continue...</a>
-    {% endfor %}
-    <!-- Pagination links -->
-    <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">
-          <svg id="icon-chevron-left" viewBox="0 0 1024 1024">
-            <path d="M657.707 316.373l-60.373-60.373-256 256 256 256 60.373-60.373-195.627-195.627z"></path>
-          </svg>
-        </a>
-      {% else %}
-        <span class="previous">
-          <svg id="icon-chevron-left" viewBox="0 0 1024 1024">
-            <path d="M657.707 316.373l-60.373-60.373-256 256 256 256 60.373-60.373-195.627-195.627z"></path>
-          </svg>
-        </span>
-      {% endif %}
-      <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">
-           <svg id="icon-chevron-right" viewBox="0 0 1024 1024">
-            <path d="M426.667 256l-60.373 60.373 195.627 195.627-195.627 195.627 60.373 60.373 256-256z"></path>
-          </svg>
-        </a>
-      {% else %}
-        <span class="next ">
-          <svg id="icon-chevron-right" viewBox="0 0 1024 1024">
-            <path d="M426.667 256l-60.373 60.373 195.627 195.627-195.627 195.627 60.373 60.373 256-256z"></path>
-          </svg>
-        </span>
-      {% endif %}
-    </div>
-  </main>
-  {% include sidebar.html %}
-  {% include footer.html %}
+<body>
+  <div class="wrap">
+    <header>
+      <h2>Joseph Rex</h2>
+    </header>
+    <main>
+      {% for post in paginator.posts %}
+          <h3>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+          {{ post.excerpt }}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="ellipsized">Continue...</a>
+      {% endfor %}
+      <!-- Pagination links -->
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">
+            Previous
+          </a>
+        {% else %}
+          <span class="previous">
+            Previous
+          </span>
+        {% endif %}
+        <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">
+            Next
+          </a>
+        {% else %}
+          <span class="next ">
+            Next
+          </span>
+        {% endif %}
+      </div>
+    </main>
+    {% include footer.html %}
+  </div>
 </body>
 </html>

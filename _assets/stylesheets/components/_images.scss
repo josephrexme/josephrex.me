@@ -1,0 +1,28 @@
+.image{
+  object-fit: cover;
+  &--wide{
+    width: 100%;
+  }
+  &--rounded{
+    border-radius: 50%;
+  }
+  &--curvy{
+    border-radius: 4px;
+  }
+  &--thumbnail{
+    width: 50px;
+    height: 50px;
+  }
+  &--medium{
+    width: 90px;
+    height: 90px;
+  }
+  &--large{
+    width: 130px;
+    height: 130px;
+  }
+  &--large-x{
+    width: 180px;
+    height: 180px;
+  }
+}
