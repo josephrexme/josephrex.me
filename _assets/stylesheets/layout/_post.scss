@@ -1,5 +1,11 @@
 .post{
-  padding: 20px 0 100px;
   background: $white;
   color: #444;
+  .wrap{
+    padding: 20px 0 100px;
+  }
+  &__footer{
+    height: 200px;
+    background: darken($white, 3%);
+  }
 }
