@@ -12,7 +12,7 @@ body{
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.6;
-  background-color: #2c4f73;
+  background-color: $color-brand-1;
   background: $bg-color;
   color: $text-color;
 }
@@ -73,4 +73,12 @@ em{
 }
 .logo{
   width: 80px;
+}
+.scroll-progress{
+  background: $color-brand-2;
+  height: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 1100;
+  box-shadow: 0 0 3px rgba($black, .5);
 }

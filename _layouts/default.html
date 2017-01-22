@@ -2,21 +2,24 @@
 <html prefix="og: http://ogp.me/ns#" lang="en">
   {% include head.html %}
   <body>
-    <div class="post">
-      <div class="wrap">
-        <!-- <div class="scrollup"> -->
-        <!--   Scroll Up -->
-        <!-- </div> -->
-        <!-- <div class="scroll&#45;progress"></div> -->
-        <!-- <div class="thanks">Thanks for reading</div> -->
-        <section class="container">
-          {{ content }}
-        </section>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <div class="post">
+          <div class="scroll-progress"></div>
+          <div class="wrap">
+            <!-- <div class="scrollup"> -->
+            <!--   Scroll Up -->
+            <!-- </div> -->
+            <section class="container">
+              {{ content }}
+            </section>
+          </div>
+          <footer class="post__footer">
+            <div class="wrap"></div>
+          </footer>
+        </div>
+        {% include footer.html %}
       </div>
-      <footer class="post__footer">
-        <div class="wrap"></div>
-      </footer>
     </div>
-    {% include footer.html %}
   </body>
 </html>

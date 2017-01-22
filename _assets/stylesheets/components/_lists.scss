@@ -61,11 +61,11 @@
     height: 48px;
     background: rgba($white, .3);
     .ellipsized{
-      background: rgba(#90136f, .4);
+      background: rgba($color-brand-4, .4);
       color: $white;
       padding: 10px 20px;
       &:hover{
-        background: rgba(#90136f, 1);
+        background: rgba($color-brand-4, 1);
         text-decoration: none;
       }
     }

@@ -1,3 +1,11 @@
+//
+// Sprockets Includes
+//
+//= require vendor/jquery/dist/jquery
+//= require vendor/barba.min
+//
+//
+
 // http://dustindiaz.com/smallest-domready-ever
 function ready(cb) {
 	/in/.test(document.readyState) // in = loadINg
@@ -5,34 +13,35 @@ function ready(cb) {
 		: cb();
 }
 ready(function(){
-	// Progressive Reading Bar
-	var bar = document.querySelector('.scroll-progress');
-  var rootElement = typeof InstallTrigger !== 'undefined' ? document.documentElement : document.body;
-	if(bar){
-		document.addEventListener("scroll", function(e){
-		  var dw = document.body.scrollWidth,
-		      dh = document.body.scrollHeight,
-		      wh = window.innerHeight,
-		      pos = (rootElement).scrollTop,
-		      dq = document.getElementById('disqus_thread');
-		  if(dq){
-		  	var dqh = dq.offsetHeight;
-		  	var bw = ((pos / ((dh - dqh) - wh))* 100);
-		  }else{
-		    var bw = ((pos / (dh - wh)) * 100);
-		  }
-      bar.style.width = bw+'%';
-      var tnqs = document.querySelector('.thanks');
-      if(bw > 98){
-        tnqs.style.display = 'block';
-      }else{
-        tnqs.style.display = 'none';
-      }
-		});
-	}
-	// Date for copyright
-	var presentDate = new Date(), showDate = document.querySelector('.this_year');
-	showDate.innerHTML = presentDate.getFullYear();
+  // Page transitions
+  Barba.Pjax.start();
+  var pageTransition = Barba.BaseTransition.extend({
+    start: function() {
+      Promise.all([this.newContainerLoading, this.exit()])
+      .then(this.reveal.bind(this))
+    },
+    exit: function() {
+      return $(this.oldContainer).animate({ opacity: 0 }).promise();
+    },
+    reveal: function() {
+      var _this = this;
+      var newPage = $(this.newContainer);
+      document.body.scrollTop = 0;
+      $(this.oldContainer).hide();
+      newPage.css({ visibility: 'visible', opacity: 0 });
+      newPage.animate({ opacity: 1 }, 600, function() {
+        _this.done();
+      });
+    }
+  });
+  Barba.Pjax.getTransition = function() {
+    return pageTransition;
+  };
+});
+
+
+// Barba Pjax Page Load Listener
+Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
 	// Scroll to top
   var topBtn = document.querySelector('.scrollup');
   if(topBtn){
@@ -47,16 +56,25 @@ ready(function(){
 	    scrollTo(rootElement, 0, 1250);
 		}
 	}
-
-	// Sticky logo on home page
-	var wrap = document.getElementById("js-wrap");
-	if(wrap && window.innerWidth >= 1024){
-		document.addEventListener("scroll", function(e) {
-			fixPoint = parseInt( getComputedStyle(wrap).getPropertyValue('top') );
-			wrap.classList.toggle( "fixed", (rootElement).scrollTop > fixPoint );
+	// Progressive Reading Bar
+	var bar = document.querySelector('.scroll-progress');
+  var rootElement = typeof InstallTrigger !== 'undefined' ? document.documentElement : document.body;
+	if(bar){
+		document.addEventListener("scroll", function(e){
+		  var dw = document.body.scrollWidth,
+		      dh = document.body.scrollHeight,
+		      wh = window.innerHeight,
+		      pos = (rootElement).scrollTop,
+          bw = ((pos / (dh - wh)) * 100);
+      bar.style.width = bw+'%';
 		});
 	}
+	// Date for copyright
+	var presentDate = new Date(), showDate = document.querySelector('.this_year');
+	showDate.innerHTML = presentDate.getFullYear();
 });
+
+
 function scrollTo(element, to, duration) {
   var start = element.scrollTop,
       change = to - start,

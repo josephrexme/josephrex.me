@@ -77,14 +77,14 @@ $grid-responsive-lg-break: 1023px !default; // smaller than landscape tablet
 
 
 // App Specific
-$site-width: 900px !default;
-$color-brand-1: #093c48;
-$color-brand-2: #559ea7;
-$color-brand-3: #f0d7c4;
-$color-brand-4: #1a081d;
-$bg-color: linear-gradient(45deg, #b30950 15%, #192740 85%);
-$text-color: #fff;
-$color-links: #b30950;
+$site-width: 800px !default;
+$color-brand-1: #2c4f73;
+$color-brand-2: #b30950;
+$color-brand-3: #192740;
+$color-brand-4: #90136f;
+$bg-color: linear-gradient(45deg, $color-brand-2 15%, $color-brand-3 85%);
+$text-color: $white;
+$color-links: $color-brand-2;
 $inputs-border-radius: 4px;
 $font--primary: 'Source Sans Pro', sans-serif !default;
 $font--secondary: 'Roboto', sans-serif !default;

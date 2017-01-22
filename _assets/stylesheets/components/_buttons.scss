@@ -70,6 +70,7 @@
     color: inherit;
     &:hover{
       background: rgba($white, .2);
+      color: rgba($white, .5);
     }
     &.button--lg:hover{
       padding: 1.1rem 2.9rem;
