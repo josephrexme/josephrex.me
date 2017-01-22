@@ -41,7 +41,7 @@ ready(function(){
 
 
 // Barba Pjax Page Load Listener
-Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+Barba.Dispatcher.on('transitionCompleted', function() {
 	// Scroll to top
   var topBtn = document.querySelector('.scrollup');
   if(topBtn){
@@ -58,7 +58,8 @@ Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container
 	}
 	// Progressive Reading Bar
 	var bar = document.querySelector('.scroll-progress');
-  var rootElement = typeof InstallTrigger !== 'undefined' ? document.documentElement : document.body;
+  var rootElement = typeof InstallTrigger !== 'undefined' ? document.documentElement :
+  document.body;
 	if(bar){
 		document.addEventListener("scroll", function(e){
 		  var dw = document.body.scrollWidth,
@@ -70,7 +71,7 @@ Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container
 		});
 	}
 	// Date for copyright
-	var presentDate = new Date(), showDate = document.querySelector('.this_year');
+	var presentDate = new Date(), showDate = document.querySelector('.thisYear');
 	showDate.innerHTML = presentDate.getFullYear();
 });
 

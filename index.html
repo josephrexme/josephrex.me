@@ -56,28 +56,32 @@
               </footer>
             </div>
           {% endfor %}
-          <!-- Pagination links -->
-          <div class="pagination">
-            {% if paginator.previous_page %}
-              <a href="{{ paginator.previous_page_path }}" class="previous">
-                Previous
-              </a>
-            {% else %}
-              <span class="previous">
-                Previous
-              </span>
-            {% endif %}
-            <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-            {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path }}" class="next">
-                Next
-              </a>
-            {% else %}
-              <span class="next ">
-                Next
-              </span>
-            {% endif %}
+
+          <div class="u-txtcenter">
+            <!-- Pagination links -->
+            <div class="paginate" aria-label="pagination">
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="paginate__previous">
+                  &lsaquo;
+                </a>
+              {% else %}
+                <span class="paginate__previous" aria-disabled="true">
+                  &lsaquo;
+                </span>
+              {% endif %}
+              <span class="paginate__current"><sup>{{ paginator.page }}</sup>&frasl;<sub>{{ paginator.total_pages }}</sub></span>
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="paginate__next">
+                  &rsaquo;
+                </a>
+              {% else %}
+                <span class="paginate__next" aria-disabled="true">
+                  &rsaquo;
+                </span>
+              {% endif %}
+            </div>
           </div>
+
         </main>
         {% include footer.html %}
       </div>

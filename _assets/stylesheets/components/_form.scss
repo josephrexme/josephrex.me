@@ -8,10 +8,10 @@
     border: solid thin currentColor;
     border-radius: $inputs-border-radius;
     background: transparent;
-    &::-webkit-input-placeholder, &::placeholder, &::-moz-placeholder{
-      font-style: normal;
-      font-weight: 300;
-      color: rgba($white, .3);
-    }
+  }
+  ::-webkit-input-placeholder, ::placeholder, ::-moz-placeholder{
+    font-style: normal;
+    font-weight: 300;
+    color: rgba($white, .3);
   }
 }

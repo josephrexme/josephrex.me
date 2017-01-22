@@ -18,29 +18,22 @@ body{
 }
 blockquote{
   position: relative;
-  padding: 30px 20px 10px;
-  width: 90%;
-  max-width: 500px;
-  font-weight: 500;
-  &::before, &::after{
-    position: absolute;
-    font-size: 5rem;
-    color: #777;
-  }
+  padding: 20px 40px;
+  padding-left: 50px;
+  background: darken($white, 2%);
+  border-left: solid 2px rgba($black, .7);
+  font-weight: 300;
   &::before{
     content: '“';
-    top: 10px;
-    left: 0;
-  }
-  &::after{
-    content: '”';
-    top: 30px;
-    right: 0;
+    position: absolute;
+    top: -5px;
+    left: 16px;
+    font-size: 8rem;
+    color: #777;
   }
 }
 cite{
   display: block;
-  font-weight: 300;
   &::before{
     content: '— ';
   }
