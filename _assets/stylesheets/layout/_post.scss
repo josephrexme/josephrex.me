@@ -4,6 +4,16 @@
   .wrap{
     padding: 20px 0 100px;
   }
+  &__title{
+    &::after{
+      content: '';
+      display: block;
+      width: 150px;
+      height: 2px;
+      margin: 20px auto 30px;
+      background: linear-gradient(90deg, $color-brand-2, $color-brand-3, $color-brand-4);
+    }
+  }
   &__article{
     padding: 0 20px;
   }
