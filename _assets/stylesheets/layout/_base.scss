@@ -51,6 +51,38 @@ input{
 em{
   font-weight: 400;
 }
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: 1.2rem;
+}
+dfn, abbr, acronym{
+  border-bottom: dashed thin $color-brand-4;
+}
+
+code {
+  padding: 1px 5px;
+  border-radius: $inputs-border-radius;
+  background-color: darken($white, 6%);
+}
+
+pre {
+  padding: 8px 12px;
+  overflow: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+  }
+  &:not(.line-pre){
+    background-color: #2f2f2f;
+    color: #ddd;
+  }
+}
 .wrap{
   width: 100%;
   max-width: $site-width;

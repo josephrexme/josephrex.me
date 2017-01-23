@@ -46,6 +46,9 @@
       &__content{
         padding: 20px 40px;
         background: $white;
+        img, pre{
+          display: none;
+        }
         h3 a:hover{
           text-decoration: none;
         }
