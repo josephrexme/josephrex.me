@@ -4,6 +4,9 @@
   .wrap{
     padding: 20px 0 100px;
   }
+  &__article{
+    padding: 0 20px;
+  }
   &__footer{
     height: 200px;
     background: darken($white, 3%);

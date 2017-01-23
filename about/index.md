@@ -1,10 +1,9 @@
 ---
 title: About Me
 author: Joseph Rex
-layout: page
+layout: post
 permalink: /about-me/
 ---
-{% image "//images.strich.io/profile.jpg" class="avatar" %}
 
 I am <span itemprop="name">Joseph Rex</span> (<span itemprop="nickname">bl4ckdu5t</span>). I love to build things, break things, and fix 'em. I have a strong passion for usability. Since I read [The design of everyday things][4] by [Don Norman][6], I got a different view on usability and I've since worked hard on creating human centered designs. This has influenced how I design software and applications with good user experience. I am fullstack developer with a focus on Ruby and JavaScript. I've built most applications using Sinatra and <span itemprop="title">Ruby-on-Rails</span>. I preach and practice TDD, now taking a leap into BDD. I play with python and clojure for mini projects in my free time. I've built desktop GUI software  like [this][7] with PyQt(the python wrapper for Qt4). I'm considering [electron](http://electron.atom.io/) for future GUI projects.
 
