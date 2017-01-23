@@ -1,6 +1,11 @@
 .header{
   padding: 80px 10px;
   text-align: center;
+  &__title, &__description{
+    transition: opacity 3s ease;
+    transition-delay: 0.25s;
+    opacity: 0;
+  }
   &__title{
     margin-bottom: 20px;
   }

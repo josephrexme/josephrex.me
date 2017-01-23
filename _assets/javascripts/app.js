@@ -3,6 +3,7 @@
 //
 //= require vendor/jquery/dist/jquery
 //= require vendor/barba.min
+//= require vendor/jquery.scrollex.min
 //
 //
 
@@ -42,6 +43,14 @@ ready(function(){
 
 // Barba Pjax Page Load Listener
 Barba.Dispatcher.on('transitionCompleted', function() {
+  // Animate Header contents
+  $('.header__title').scrollex({
+    initialize: function() {
+      $(this).css('opacity', 1);
+      $('.header__description').css('opacity', 1);
+      $('.logo').css({'transform': 'scale(1)', 'opacity': '1'});
+    },
+  });
 	// Scroll to top
   var topBtn = document.querySelector('.scrollup');
   if(topBtn){
