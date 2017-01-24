@@ -79,12 +79,31 @@ Barba.Dispatcher.on('transitionCompleted', function() {
       bar.style.width = bw+'%';
     });
   }
+  // Show/Hide Disqus comments
+  var commentTrigger = document.querySelector('.js-toggleComments');
+  var threadContainer = document.getElementById('disqus_thread');
+  if(commentTrigger){
+    commentTrigger.addEventListener('click', function() {
+      var threadVisibility = threadContainer.style.display;
+      threadContainer.style.display = threadVisibility == 'none' ? 'block' : 'none';
+      disqusComments();
+    });
+  }
   // Date for copyright
   var presentDate = new Date(), showDate = document.querySelector('.thisYear');
   showDate.innerHTML = presentDate.getFullYear();
 });
 
 
+// Disqus Init
+function disqusComments() {
+  var disqus_shortname = 'josephrexme';
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}
+
+// Scroll animation
 function scrollTo(element, to, duration) {
   var start = element.scrollTop,
       change = to - start,
