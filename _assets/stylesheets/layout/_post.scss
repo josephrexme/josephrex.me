@@ -17,8 +17,21 @@
   &__article{
     padding: 0 20px;
   }
+  &__actions{
+    margin-top: 50px;
+    text-align: right;
+    .icon{
+      width: 2rem;
+      height: 2rem;
+      vertical-align: text-top;
+    }
+    span{
+      cursor: pointer;
+    }
+  }
   &__footer{
     height: 200px;
+    padding: 20px 10px;
     background: darken($white, 3%);
   }
 }

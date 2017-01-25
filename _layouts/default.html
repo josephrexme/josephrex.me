@@ -15,7 +15,20 @@
             </section>
           </div>
           <footer class="post__footer">
-            <div class="wrap"></div>
+            <div class="wrap row">
+              <div class="col">
+                {% if page.next %}
+                <h5>Previous article</h5>
+                <a href="{{ page.next.permalink }}">{{ page.next.title }}</a>
+                {% endif %}
+              </div>
+              <div class="col u-txtright">
+                {% if page.previous %}
+                <h5>Next article</h5>
+                <a href="{{ page.previous.permalink }}">{{ page.previous.title }}</a>
+                {% endif %}
+              </div>
+            </div>
           </footer>
         </div>
         {% include footer.html %}
