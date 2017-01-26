@@ -2,4 +2,7 @@
   padding: 50px 20px;
   text-align: center;
   color: rgba($white, .4);
+  &__heading{
+    color: rgba($white, .8);
+  }
 }

@@ -51,20 +51,12 @@ Barba.Dispatcher.on('transitionCompleted', function() {
       $('.logo').css({'transform': 'scale(1)', 'opacity': '1'});
     },
   });
-  // Scroll to top
-  var topBtn = document.querySelector('.scrollup');
-  if(topBtn){
-    document.addEventListener("scroll", function(e){
-      if((rootElement).scrollTop > 100){
-          topBtn.style.display = 'block';
-      }else{
-        topBtn.style.display = 'none';
-      }
-    });
-    document.querySelector('.scrollup').onclick = function () {
-      scrollTo(rootElement, 0, 1250);
-    }
-  }
+  // Share Post dropdown
+  var shareBtn = document.getElementById('shareDropdown');
+  document.addEventListener('click', function(e){
+    var dropDown = document.querySelector('.post__sharelinks');
+    dropDown.style.display = dropDown.style.display == 'block' ? 'none' : 'block';
+  });
   // Progressive Reading Bar
   var bar = document.querySelector('.scroll-progress');
   var rootElement = typeof InstallTrigger !== 'undefined' ? document.documentElement :
@@ -102,32 +94,3 @@ function disqusComments() {
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }
-
-// Scroll animation
-function scrollTo(element, to, duration) {
-  var start = element.scrollTop,
-      change = to - start,
-      currentTime = 0,
-      increment = 20;
-
-  var animateScroll = function(){
-      currentTime += increment;
-      var val = Math.easeInOutQuad(currentTime, start, change, duration);
-      element.scrollTop = val;
-      if(currentTime < duration) {
-          setTimeout(animateScroll, increment);
-      }
-  };
-  animateScroll();
-}
-
-//t = current time
-//b = start value
-//c = change in value
-//d = duration
-Math.easeInOutQuad = function (t, b, c, d) {
-  t /= d/2;
-  if (t < 1) return c/2*t*t + b;
-  t--;
-  return -c/2 * (t*(t-2) - 1) + b;
-};

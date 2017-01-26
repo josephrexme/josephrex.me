@@ -25,8 +25,28 @@
       height: 2rem;
       vertical-align: text-top;
     }
-    span{
+    &__action{
+      display: inline-block;
+      position: relative;
       cursor: pointer;
+    }
+  }
+  &__sharelinks{
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    width: 120px;
+    padding: 0 10px;
+    background: $white;
+    box-shadow: 0 0 1px rgba($black, .4);
+    text-align: left;
+    span{
+      display: block;
+      padding: 5px;
+      font-size: 1.4rem;
+      &:not(:last-of-type){
+        border-bottom: solid thin #ddd;
+      }
     }
   }
   &__footer{
