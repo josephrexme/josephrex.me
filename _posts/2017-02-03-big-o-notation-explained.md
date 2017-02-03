@@ -108,7 +108,7 @@ const getHex = (color) => {
 };
 {% endhighlight %}
 
-but note here that the operation remains linear and the only difference is the brevity and neatness that comes with having it written as a Hashmap.
+but note here that the operation remains a constant and the only difference is the brevity and neatness that comes with having it written as a Hashmap.
 
 **O(n)** Simple loops are good examples of linear complexity. A loop is passed an input (n) to execute n number of times.
 
