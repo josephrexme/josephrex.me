@@ -10,6 +10,7 @@ Here's a list of books I've read and will be reading:
 - RiceTea - Julien McArdle
 - CSS Secrets - Lea Verou
 - [Why's poignant guide to Ruby][1]
+- [Practical Object Oriented Design Ruby (POODR)][2]
 - Rails 4 in action - Ryan Biggs et al
 - Ghost in the wires - Kevin Mitnick
 - Art of Intrustion - Kevin Mitnick
@@ -23,6 +24,7 @@ Here's a list of books I've read and will be reading:
 - Embodiment of Grace - Grace Festus
 
 [1]:http://mislav.uniqpath.com/poignant-guide/
+[2]:http://www.poodr.com
 [10]:https://www.amazon.com/gp/product/0134076427/
 [11]:https://www.amazon.com/gp/product/032157351X/
 [12]:http://algs4.cs.princeton.edu/home/
