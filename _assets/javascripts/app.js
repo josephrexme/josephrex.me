@@ -53,10 +53,12 @@ Barba.Dispatcher.on('transitionCompleted', function() {
   });
   // Share Post dropdown
   var shareBtn = document.getElementById('shareDropdown');
-  document.addEventListener('click', function(e){
-    var dropDown = document.querySelector('.post__sharelinks');
-    dropDown.style.display = dropDown.style.display == 'block' ? 'none' : 'block';
-  });
+  if(shareBtn){
+    shareBtn.addEventListener('click', function(e){
+      var dropDown = document.querySelector('.post__sharelinks');
+      dropDown.style.display = dropDown.style.display == 'block' ? 'none' : 'block';
+    });
+  }
   // Progressive Reading Bar
   var bar = document.querySelector('.scroll-progress');
   var rootElement = typeof InstallTrigger !== 'undefined' ? document.documentElement :

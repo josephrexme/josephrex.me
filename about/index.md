@@ -1,21 +1,21 @@
 ---
 title: About Me
 author: Joseph Rex
-layout: post
+layout: page
 permalink: /about-me/
 ---
 
-I am <span itemprop="name">Joseph Rex</span> (<span itemprop="nickname">bl4ckdu5t</span>). I love to build things, break things, and fix 'em. I have a strong passion for usability. Since I read [The design of everyday things][4] by [Don Norman][6], I got a different view on usability and I've since worked hard on creating human centered designs. This has influenced how I design software and applications with good user experience. I am fullstack developer with a focus on Ruby and JavaScript. I've built most applications using Sinatra and <span itemprop="title">Ruby-on-Rails</span>. I preach and practice TDD, now taking a leap into BDD. I play with python and clojure for mini projects in my free time. I've built desktop GUI software  like [this][7] with PyQt(the python wrapper for Qt4). I'm considering [electron](http://electron.atom.io/) for future GUI projects.
+I am <span itemprop="name">Joseph Rex</span> (<span itemprop="nickname">silverdust</span>). I write software for a living and design for fun. I fit the description of what they call a "full-stack developer" but I mostly just work with Ruby and JavaScript. Python and Clojure for experiments. I love designing interfaces so I'm pretty badass with Sass/CSS. I've built desktop GUI software  like [this][7] with PyQt (the python wrapper for Qt4 C++) and I'm considering [electron](http://electron.atom.io/) for future GUI projects. I've also reviewed a [GUI book][19] for [packt pub][20].
 
 I love math and vector graphics. I use [mathML][1] and [SVG][15] and I sometimes take out time to design [amateur graphics][14].
 
 <span itemprop="url">[StrichIO][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], [gitlab](https://gitlab.com/bl4ckdu5t), and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], I'm a member of [dc414][12], and I write on security for [Infosec Institute][13].
 
-Unarguably, I spend a lot of time with my computer but when I'm not on it, I play basketball or watch movies.
+When I take off my nerd helmet I workout, play basketball, and sing.
 
 There's more [about me][16]. The image I use all over the internet was originally designed by [Funkwood][17] on [Deviantart][18].
 
-Interested in a chat? <span data-email>Send me an email -</span> <br>or say hi to me (<code>silverdust</code>) on Freenode
+Interested in a chat? <span data-email>Send me an email - {{ site.email }}</span> <br>or say hi to me (<code>silverdust</code>) on Freenode
 
 My PGP key:
 
@@ -40,3 +40,5 @@ Fingerprint: 4BD9 803E 47C5 6B16 715E  A5CF 9D8B 87BB E761 4F18
 [16]: http://about.me/joerex101
 [17]: http://funkwood.deviantart.com/
 [18]: http://funkwood.deviantart.com/art/Computer-hacker-172206222
+[19]:https://www.amazon.com/Python-Programming-Cookbook-Burkhard-Meier/dp/1785283758
+[20]:https://www.packtpub.com

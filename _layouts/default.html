@@ -1,35 +1,12 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
   {% include head.html %}
   <body>
     <div id="barba-wrapper">
       <div class="barba-container">
         <div class="post">
           <div class="scroll-progress"></div>
-          <div class="wrap">
-            <!-- <div class="scrollup"> -->
-            <!--   Scroll Up -->
-            <!-- </div> -->
-            <section class="container">
-              {{ content }}
-            </section>
-          </div>
-          <footer class="post__footer">
-            <div class="wrap row">
-              <div class="col">
-                {% if page.next %}
-                <h5>Previous article</h5>
-                <a href="{{ page.next.permalink }}">{{ page.next.title }}</a>
-                {% endif %}
-              </div>
-              <div class="col u-txtright">
-                {% if page.previous %}
-                <h5>Next article</h5>
-                <a href="{{ page.previous.permalink }}">{{ page.previous.title }}</a>
-                {% endif %}
-              </div>
-            </div>
-          </footer>
+          {{ content }}
         </div>
         {% include footer.html %}
       </div>

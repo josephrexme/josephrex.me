@@ -1,9 +1,9 @@
 ---
 # Site settings
-title: Joseph Rex
+title: Joseph Rex's blog - Exploring Software, Food recipes, and Design
 email: joseph at strichio
 description: > # this means to ignore newlines until "baseurl:"
-  Design, Code, Fitness and Food
+  Ramblings on design, code, fitness and food by Joseph Rex
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://josephrex.me" # the base hostname & protocol for your site
 twitter_username: josephrexme

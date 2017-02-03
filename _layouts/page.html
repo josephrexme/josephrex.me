@@ -1,11 +1,19 @@
 ---
 layout: default
 ---
-<h2 class="page-title">{{ page.title }}</h2>
-<main>
-  <article class="post-content">
-  	<div itemscope itemtype="http://data-vocabulary.org/Person"> 
-    	{{ content }}
-  	</div>
-  </article>
-</main>
+<div class="wrap">
+  <section class="container">
+    {% include navigation.html %}
+    <header class="header">
+      <h1 class="post__title">{{ page.title }}</h1>
+      <time class="post__date">{{ page.date | date: "%B %-d, %Y" }}</time>
+    </header>
+    <main>
+      <article class="post__article">
+        <div itemscope itemtype="http://data-vocabulary.org/Person">
+          {{ content }}
+        </div>
+      </article>
+    </main>
+  </section>
+</div>

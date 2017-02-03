@@ -1,9 +1,10 @@
 {
   "name": "Joseph-Rex-Blog",
-  "version": "2.0",
+  "version": "2.0.1",
   "description": "Joseph's blog on everything",
   "main": "index.html",
   "scripts": {
+    "start": "be jekyll serve --drafts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
