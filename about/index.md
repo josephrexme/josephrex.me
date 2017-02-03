@@ -9,7 +9,7 @@ I am <span itemprop="name">Joseph Rex</span> (<span itemprop="nickname">silverd
 
 I love math and vector graphics. I use [mathML][1] and [SVG][15] and I sometimes take out time to design [amateur graphics][14].
 
-<span itemprop="url">[StrichIO][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], [gitlab](https://gitlab.com/bl4ckdu5t), and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], I'm a member of [dc414][12], and I write on security for [Infosec Institute][13].
+<span itemprop="url">[StrichIO][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], [gitlab][6], and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], I'm a member of [dc414][12], and I write on security for [Infosec Institute][13].
 
 When I take off my nerd helmet I workout, play basketball, and sing.
 
@@ -27,12 +27,12 @@ Fingerprint: 4BD9 803E 47C5 6B16 715E  A5CF 9D8B 87BB E761 4F18
 [3]: http://strich.io/joerex.asc "Get my PGP public key"
 [4]: http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107
 [5]: http://strich.io
-[6]: https://twitter.com/jnd1er
+[6]: https://gitlab.com/silverdust
 [7]: http://josephrex.me/registron
 [8]: http://codepen.io/bl4ckdu5t
 [9]: https://github.com/bl4ckdu5t
 [10]: http://bitbucket.org/bl4ckdu5t
-[11]: http://twitter.com/joerex101
+[11]: http://twitter.com/josephrexme
 [12]: https://dc414.org/~silverdust/
 [13]: http://resources.infosecinstitute.com/author/joseph-rex/
 [14]: http://bl4ckdu5t.deviantart.com

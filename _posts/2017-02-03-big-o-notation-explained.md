@@ -150,7 +150,7 @@ As the first block is O(1) and the second O(n) we get **O(1) + O(n)** which sums
 **O(n<sup>2</sup>)** unlike the linear complexity, takes twice the time to compute with a given input (n). We see this in nested loops. For a given O(n):
 
 {% highlight javascript %}
-for(var i = 0; i < 10; i++){
+for(let i = 0; i < 10; i++){
   console.log(i);
 }
 {% endhighlight %}
@@ -158,8 +158,8 @@ for(var i = 0; i < 10; i++){
 when an inner loop is provided, for every loop of x there's y number of loops.
 
 {% highlight javascript %}
-for(var x = 1; x <= 3; x++){
-  for(var y = 1; y <= 2; y++){
+for(let x = 1; x <= 3; x++){
+  for(let y = 1; y <= 2; y++){
     console.log(x,y);
   }
 }
@@ -179,7 +179,7 @@ a.sort(function (a, b) {
 });
 
 const binarySearch = (arr, i) => {
-  var mid = Math.floor(arr.length / 2);
+  const mid = Math.floor(arr.length / 2);
   console.log(arr[mid], i);
 
   if (arr[mid] === i) {
