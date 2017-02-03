@@ -115,7 +115,7 @@ but note here that the operation remains a constant and the only difference is t
 Looking at a simple FizzBuzz solution where n = 100:
 
 {% highlight javascript %}
-for(var i = 0; i <= 100; i++){
+for(let i = 0; i <= 100; i++){
   let f = i % 3 == 0, b = i % 5 == 0;
   console.log(f ? b ? 'FizzBuzz' : 'Fizz' : b ? 'Buzz' : i);
 }
