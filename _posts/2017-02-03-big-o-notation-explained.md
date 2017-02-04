@@ -99,7 +99,7 @@ I could rewrite the getHex() function in an uglier code structure using massive 
 
 {% highlight javascript %}
 const getHex = (color) => {
-  var hex;
+  let hex;
   if(color == 'blue'){
     hex = '#00f';
   }else if(color == 'red'){
@@ -133,7 +133,7 @@ In a function with condition blocks of different statement complexity, the total
 {% highlight javascript %}
 function getHex(color){
   const colors = [['blue', '#00f'], ['red', '#f00'], ['green', '#0f0']];
-  var hex;
+  let hex;
   if(color == 'turquoise'){
     hex = '#00e5ee';
   }else{
