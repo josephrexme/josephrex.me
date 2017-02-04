@@ -62,7 +62,9 @@ No matter what input (n) is passed to the getCube function it performs one simpl
 const getPowerofThree = (n) => 3 ** n
 {% endhighlight %}
 
-For the first example, we will always have `n * n * n` however with the second it could grow to `n ** 1000`, `n * n * n * n * n ...... * n(1000th)` which would consume more computational time and memory.
+For the first example, we will always have `n * n * n` but with the second it could be `n * n * n * n * n ...... * n(1000th)` which would consume more computational time.
+
+Note however that the both functions `getCube()` and `getPowerofThree()` are of constant time complexity. They simply describe the operational difference of both orders O(n<sup>c</sup>) and O(c<sup>n</sup>).
 
 We study complexity of a function to understand efficiency and scalability of a piece of code. Some important resources that can be influenced by the efficiency of an algorithm are:
 
@@ -115,9 +117,11 @@ but note here that the operation remains a constant and the only difference is t
 Looking at a simple FizzBuzz solution where n = 100:
 
 {% highlight javascript %}
-for(let i = 0; i <= 100; i++){
-  let f = i % 3 == 0, b = i % 5 == 0;
-  console.log(f ? b ? 'FizzBuzz' : 'Fizz' : b ? 'Buzz' : i);
+const fizzBuzz = (n) => {
+  for(let i = 0; i <= n; i++){
+    let f = i % 3 == 0, b = i % 5 == 0;
+    console.log(f ? b ? 'FizzBuzz' : 'Fizz' : b ? 'Buzz' : i);
+  }
 }
 {% endhighlight %}
 
@@ -150,17 +154,21 @@ As the first block is O(1) and the second O(n) we get **O(1) + O(n)** which sums
 **O(n<sup>2</sup>)** unlike the linear complexity, takes twice the time to compute with a given input (n). We see this in nested loops. For a given O(n):
 
 {% highlight javascript %}
-for(let i = 0; i < 10; i++){
-  console.log(i);
+const loop = (n) => {
+  for(let i = 0; i < n; i++){
+    console.log(i);
+  }
 }
 {% endhighlight %}
 
 when an inner loop is provided, for every loop of x there's y number of loops.
 
 {% highlight javascript %}
-for(let x = 1; x <= 3; x++){
-  for(let y = 1; y <= 2; y++){
-    console.log(x,y);
+const loop = (n) => {
+  for(let x = 1; x <= n; x++){
+    for(let y = 1; y <= (n - 1); y++){
+      console.log(x,y);
+    }
   }
 }
 {% endhighlight %}
