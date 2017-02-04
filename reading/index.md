@@ -22,6 +22,10 @@ Here's a list of books I've read and will be reading:
 - [Computer Science - An Interdisciplinary approach][10] - Robert Sedgewick, Kevin Wayne
 - [Algorithms][11] [4th Edition][12] - Robert Sedgewick, Kevin Wayne
 - Embodiment of Grace - Grace Festus
+- Pride and Prejudice - Jane Austen
+- Treasure Island - Robert Louis Stevenson
+- Aesop's Fables
+- Personal Kanban - Jim Benson
 
 [1]:http://mislav.uniqpath.com/poignant-guide/
 [2]:http://www.poodr.com
