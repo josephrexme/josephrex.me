@@ -219,6 +219,7 @@ Here are some useful resources to learn more on algorithms and complexity theory
 - [Quantum Computing in Complexity Theory and Theory of Computation][3]
 - [The Big O - What is it good for?][4]
 - [Introduction to Algorithms][5]
+- [Big O Cheatsheet][7]
 
 [1]:https://en.wikipedia.org/wiki/Big_O_notation
 [2]:https://en.wikipedia.org/wiki/Big_ball_of_mud
@@ -226,3 +227,4 @@ Here are some useful resources to learn more on algorithms and complexity theory
 [4]:http://www.perlmonks.org/?node_id=573138
 [5]:https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_1?ie=UTF8&qid=1486056079&sr=8-1&keywords=introduction+to+algorithms
 [6]:http://stackoverflow.com/questions/22697936/binary-search-in-javascript
+[7]:http://bigocheatsheet.com/
