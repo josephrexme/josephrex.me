@@ -14,8 +14,36 @@ layout: default
         <div class="post__actions">
           <div class="post__actions__action" id="shareDropdown">
             <div class="post__sharelinks" style="display: none">
-              <span>Facebook</span>
-              <span>Twitter</span>
+              <a id="shareBtn" href=".">Facebook</a>
+              <a href="https://twitter.com/share" onclick="window.open(this.href, 'mywin',
+                'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" data-show-count="false">Twitter</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						<script>
+							window.fbAsyncInit = function() {
+								FB.init({
+									appId      : '1365337256872373',
+									xfbml      : true,
+									version    : 'v2.8'
+								});
+								FB.AppEvents.logPageView();
+							};
+
+							(function(d, s, id){
+								 var js, fjs = d.getElementsByTagName(s)[0];
+								 if (d.getElementById(id)) {return;}
+								 js = d.createElement(s); js.id = id;
+								 js.src = "//connect.facebook.net/en_US/sdk.js";
+								 fjs.parentNode.insertBefore(js, fjs);
+							 }(document, 'script', 'facebook-jssdk'));
+						</script>
+             <script>
+							document.getElementById('shareBtn').onclick = function() {
+								FB.ui({
+									method: 'share',
+									display: 'popup',
+									href: 'https://developers.facebook.com/docs/',
+								}, function(response){});
+							}
+							</script>
             </div>
             <svg version="1.1" class="icon" viewBox="0 0 333.324 333.324">
               <path d="M125.255,59.513l33.907-33.907v149.451c0,4.143,3.358,7.5,7.5,7.5s7.5-3.357,7.5-7.5V25.606l33.907,33.907c1.464,1.464,3.384,2.196,5.303,2.196s3.839-0.732,5.303-2.196c2.929-2.93,2.929-7.678,0-10.607l-46.71-46.71c-2.929-2.928-7.678-2.928-10.606,0l-46.71,46.71c-2.929,2.93-2.929,7.678,0,10.607C117.577,62.441,122.326,62.441,125.255,59.513z"/>
