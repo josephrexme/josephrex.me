@@ -40,7 +40,7 @@ layout: default
 								FB.ui({
 									method: 'share',
 									display: 'popup',
-									href: 'https://developers.facebook.com/docs/',
+                  href: '{{ page.url | prepend: site.url }}',
 								}, function(response){});
 							}
 							</script>
