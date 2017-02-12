@@ -11,10 +11,10 @@ tags:
   - gui
   - pyqt
   - python
-  - qt4
-  - software development
 ---
-{% image glossy-gui.jpg class="head-image" alt="Glossy GUI" %}
+<figure>
+{% image glossy-gui.jpg class="image image--wide" alt="Glossy GUI" %}
+</figure>
 
 I've planned writing on this for long but I've just been so busy. When I started building GUI programs with Qt designer, this was a big challenge for me for a while but somehow I figured it out on my own.
 
@@ -25,15 +25,21 @@ Well I said I figured it out on my own but yet I got the little internet aid. I 
 
 After failing to create a resource file several times, I decided to try out the "Add new resource file button"
 
-{% image apprc.png alt="apprc" %}
+<figure>
+{% image apprc.png alt="apprc" class="image" %}
+</figure>
 
 From this point you can open an existing qrc file or create a new one.
 
-{% image apprc1.png alt="apprc1" %}
+<figure>
+{% image apprc1.png alt="apprc1" class="image" %}
+</figure>
 
 Now we can add images as needed to the file
 
-{% image apprc2.png alt="apprc2" %}
+<figure>
+{% image apprc2.png alt="apprc2" class="image" %}
+</figure>
 
 Now that's it. When saved, this creates our app.qrc in the following format:
 

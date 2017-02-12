@@ -6,15 +6,17 @@ permalink: /internet-freedom-2014/
 categories:
   - Internet
 tags:
-  - fight
-  - freedom
+  - activism
   - internet
-  - protest
 ---
 
-{% image internet-slowdown-2014.png class="head-image" alt="internet slowdown" %}
+<figure>
+{% image internet-slowdown-2014.png class="image" alt="internet slowdown" %}
+</figure>
 
+<figure>
 {% image battle-for-net.jpg alt="battle for the net" %}
+</figure>
 
 If you woke up tomorrow, and your internet**<a href="https://www.battleforthenet.com/sept10th/#modal" target="_blank"> looked like this</a>**, what would you do?
 

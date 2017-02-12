@@ -9,7 +9,6 @@ categories:
 tags:
   - css
   - sass
-  - scss
   - web
 ---
 I started writing Sass not too long ago and it has been one of the best experiences I've had. Sass (Syntatically Awesome Stylesheet) is just as awesome as the name sounds.

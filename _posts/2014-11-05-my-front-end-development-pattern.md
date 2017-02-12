@@ -7,13 +7,13 @@ permalink: /my-front-end-development-pattern/
 categories:
   - web
 tags:
-  - design
-  - emmet
+  - frontend
   - frameworks
-  - html5
   - web
 ---
-{% image Web-Developer.jpg class="head-image" alt="Web-Developer" %}
+<figure>
+{% image Web-Developer.jpg class="image" alt="Web-Developer" %}
+</figure>
 
 I've seen different front-end developers start their projects. In most cases for intermediate designers, first steps are to write the basic HTML, download <a href="http://getbootstrap.com" target="_blank">bootstrap</a> or <a href="http://foundation.zurb.com/" target="_blank">foundation</a> framework for local use, download an icon-font set like <a href="http://fontawesome.io/" target="_blank">fontawesome</a>, and they start writing their mark-up to fit the styles defined by the framework.
 <!--more-->

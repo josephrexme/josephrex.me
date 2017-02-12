@@ -5,18 +5,17 @@ layout: post
 comments: true
 permalink: /thoughts-on-cybersquatting/
 categories:
-  - Hacking
   - Internet
-  - security
 tags:
-  - cybercrime
-  - hacking
   - internet
-  - security
 ---
+<figure>
 {% image Cybersquatting.jpg alt="Cybersquatting" %}
+</figure>
 
+<figure>
 {% image cybersquatter.png alt="cybersquatter" %}
+</figure>
 
 I have never been a cyber-squatter and I don't plan on becoming one as I have better dreams and goals to achieve. I'm way to busy for that. Although, I know it does fetch a lot of money if lucky but still I don't see it as a right thing to do.
 

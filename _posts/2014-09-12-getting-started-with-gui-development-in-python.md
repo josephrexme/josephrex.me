@@ -5,19 +5,14 @@ layout: post
 comments: true
 permalink: /getting-started-with-gui-development-in-python/
 categories:
-  - programming
   - python
 tags:
   - gui
-  - pygtk
-  - pyqt
   - python
-  - qt
-  - qtdesigner
-  - tkinter
-  - wxpython
 ---
-{% image z_design.jpg class="head-image" alt="z_design" %}
+<figure>
+{% image z_design.jpg class="image" alt="z_design" %}
+</figure>
 
 Most people that are fond of Windows operating system will always root for graphical desktop applications (GUI) over command line (CLI) programs. Since after DOS, windows operating systems have been known to use simple and user friendly GUI. This is one of the reasons why they have made a lot of customers around the world.
 <!--more-->
@@ -51,12 +46,12 @@ class MainFrame(QtGui.QMainWindow):
         self.resize(1024, 768) # size
         self.setMinimumSize(800, 600) # minimum size
         self.move(0, 0) # position window frame at top left
-        
+
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     frame = MainFrame()
     frame.show()
-    
+
     exit_code = app.exec_()
     sys.exit(exit_code)
 {% endhighlight %}
@@ -91,15 +86,15 @@ class MainFrame(QtGui.QMainWindow):
         # Now set up the shapes that we draw on each button click
         # get the button back from the layout
         button = layout.itemAt(0).widget()
-    
+
         # Create objects used for drawing
         sol_pen =  QtGui.QPen(QtGui.QColor("black"))
-        
+
         dot_pen =  QtGui.QPen(QtGui.QColor("black"))
         dot_pen.setStyle(QtCore.Qt.DotLine)
         dash_pen = QtGui.QPen(QtGui.QColor("black"))
         dash_pen.setStyle(QtCore.Qt.DashLine)
-        
+
         r_brush = QtGui.QBrush(QtGui.QColor("red"))
         g_brush = QtGui.QBrush(QtGui.QColor("green"))
         b_brush = QtGui.QBrush(QtGui.QColor("blue"))
@@ -127,7 +122,7 @@ class MainFrame(QtGui.QMainWindow):
                                 'args':(triangle, dash_pen, b_brush)})
         # Set up self.draw_next_item to fire when button is clicked.
         self.connect(button, QtCore.SIGNAL("clicked()"), self.draw_next_item)
-       
+
     def add_button(self, layout):
         """Create a button and then add it to the layout."""
         button = QtGui.QPushButton("Draw Circle")
@@ -156,13 +151,13 @@ class MainFrame(QtGui.QMainWindow):
             # no more left, disable button
             button.setText("No more shapes!")
             button.setDisabled(True)
-            
-        
+
+
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     frame = MainFrame()
     frame.show()
-    
+
     exit_code = app.exec_()
     sys.exit(exit_code)
 {% endhighlight %}
@@ -183,7 +178,9 @@ That's my interpretation in jQuery of handling signals and slots as I have demon
 
 Writing GUI code can take a lot of time and can be really stressful. This is one of the reasons why I enjoy Qt because it has QtDesigner. It reminds me of my days with Visual Basic as it has a simple environment for you to just pick GUI components and drop on your frame. It's a good toolkit to build GUI programs in few minutes. Here's my Qt designer
 
-{% image snapshot8.png alt="snapshot8" %}
+<figure>
+{% image snapshot8.png alt="snapshot8" class="image" %}
+</figure>
 
 I designed the UI for my KDE desktop to be dark because I love dark UI so it it may not be such a dark UI in your case. The panes on the left are objects/widgets you can drop on your frame. On the right, we have property editor, signal/slot editor where you can set signals for some slots while designing the UI from the designer. For some signals, I prefer to manually attach them to their slots by writing my python code.
 
@@ -217,17 +214,23 @@ Now you're up and running. To wrap this all up, let's create a simple GUI with a
 
 I started by creating a new Main Window from the QtDesigner templates
 
-{% image snapshot9.png alt="snapshot9" %}
+<figure>
+{% image snapshot9.png alt="snapshot9" class="image" %}
+</figure>
 
 Next things will be to set the width, height, and geometry (location of the window by XY axis on screen). Also, we have to take note of the objectName because it is the way we call our objects in the program. This is done in the property edior
 
-{% image snapshot10.png alt="snapshot10" %}
+<figure>
+{% image snapshot10.png alt="snapshot10" class="image" %}
+</figure>
 
 You can see my objectName is MainWindow and I have chosen to use a window of size 400 x 280. I want it at the extreme top right so my geometry is (0,0) which stands for x-axis = 0, y-axis = 0.
 
 I could create my signal and slots right away from the designer like so:
 
-{% image snapshot11.png alt="snapshot11" %}
+<figure>
+{% image snapshot11.png alt="snapshot11" class="image" %}
+</figure>
 
 As you can see the signal/slot editor has the names of each object. and the view for the signals/slot editor shows there's a relationship between the display button and the label below. I will just delete this slot to handle this part with my code because I have less options from the designer. I saved my design as example.ui and I'm compiling to python code with:
 
@@ -338,7 +341,9 @@ if __name__ == '__main__':
 
 and voila! It works. See it in action after running "python example.py"
 
+<figure>
 {% image snapshot12.png alt="snapshot12" %}
+</figure>
 
 ### Conclusion:
 

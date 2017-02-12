@@ -9,9 +9,10 @@ categories:
 tags:
   - css
   - performance
-  - scss
 ---
-{% image lightsabers-clash.jpg alt="light sabers" class="head-image" %}
+<figure>
+{% image lightsabers-clash.jpg alt="light sabers" class="image" %}
+</figure>
 When you look through the element styles of your browser web developer tools, you can see how CSS rules override themselves. What is prioritized is mostly based on the specificity level. It's a usual thing that styles below override the ones above, inline styles override external styles. These are the little things but it gets deeper when we use id selectors around our stylesheets. Ids have high specificity and there are uncalled for as we don't want unnecessary spikes in our specificity graph. This <a href="http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/" target="_blank">css-wizardry article</a> tells why IDs can be the demons of our stylesheets.
 <!--more-->
 I seldom use CSS frameworks, but I do know that bootstrap makes use of classes. If you are not taking advantage of many selectors available today, then you can just stick with the type (element) selectors and classes.
@@ -103,7 +104,9 @@ The reason for this as mentioned by Harry is for our specificity graph to be upw
 
 I used the <a href="http://jonassebastianohlsson.com/specificity-graph/" target="_blank">online specificity graph tool</a> to analyze that pen and here's what it gave:
 
+<figure>
 {% image specifity-graph.png alt="specifity-graph" %}
+</figure>
 
 This graph is great and it has worked fine in giving me a graph of bigger projects. There's a downside to it though. It doesn't include rules with a !important value in them. I have my codepen demo giving me the selector with !important as the most specific but then the graph has its highest specificity at the end of the stylesheet to be the 30 chained class selector. The other rise in the middle is the id selector.
 
@@ -111,4 +114,4 @@ This graph is great and it has worked fine in giving me a graph of bigger projec
 
 ### Conclusion
 
-Avoid ID selectors, avoid !important, start with selectors like *, html, and other element selectors that aren't too specific, then move on to class selectors. If there is a need for class chaining or !important in your helpers, they should be at the bottom. If there is no need for them, the helpers partial of your project should still be at the bottom if you want it overruling other styles by precedence.
+Avoid ID selectors, avoid !important, start with selectors like `*`, `html`, and other element selectors that aren't too specific, then move on to class selectors. If there is a need for class chaining or !important in your helpers, they should be at the bottom. If there is no need for them, the helpers partial of your project should still be at the bottom if you want it overruling other styles by precedence.

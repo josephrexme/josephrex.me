@@ -9,7 +9,6 @@ categories:
 tags:
   - css
   - sass
-  - scss
 ---
 Recently I chose to move from vanilla CSS to the syntactically awesome stylesheeets and this has been a great step in my life. It's like leaving a klingon which I've had as a girlfriend to date a human or vulcan :)
 

@@ -7,10 +7,12 @@ comments: true
 categories:
   - Research
 tags:
-  - MIT
   - research
 ---
-{% image Chips.jpg class="head-image" alt="Chips" %}
+<figure>
+  {% image Chips.jpg class="image image--wide" alt="Chips" %}
+  <figcaption>A shot of doritos and cheetos</figcaption>
+</figure>
 The common saying is "The walls have ears". This is a figurative expression that expresses that things we say can be heard by people around even while we think there's no one around (or information just leaks in one way or another). Technology in this generation has caused a lot of transformations and changed the way we see things.
 <!--more-->
 

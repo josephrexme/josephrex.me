@@ -7,11 +7,8 @@ permalink: /sending-files-over-ajax-requests-with-jquery/
 categories:
   - web
 tags:
-  - ajax
   - javascript
   - jquery
-  - PHP
-  - XHR
 ---
 If you've been writing [jQuery,][1] you're probably fond of writing your code this way when submitting forms with ajax
 

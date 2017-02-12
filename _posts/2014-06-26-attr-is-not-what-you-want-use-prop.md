@@ -7,7 +7,6 @@ permalink: /attr-is-not-what-you-want-use-prop/
 categories:
   - web
 tags:
-  - DOM
   - javascript
   - jquery
   - web

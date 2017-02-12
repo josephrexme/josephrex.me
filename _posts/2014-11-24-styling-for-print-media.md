@@ -9,9 +9,10 @@ categories:
 tags:
   - css
   - frontend
-  - print
 ---
-{% image wallpaper-106773.jpg class="head-image" alt="wallpaper-106773" %}
+<figure>
+{% image wallpaper-106773.jpg class="image" alt="wallpaper-106773" %}
+</figure>
 The @media is mostly known these days for its use with responsive design in a conditional structure. However, it has been for a very long time. It has been used to separate visual CSS from paged CSS. The different media consists screen, print, projector, audio (formerly aural).
 
 I needed to do a print design in one of my recent projects and I knew I could just make a stylesheet link with a media="print". I've also been privy that I can use  @media print{} to wrap it but that wasn't all it took. I never really knew there was more to it but I took the search to see how it's been done by the leaders of the industry. Not too long after, I stumbled upon the following alistapart article by Eric Meyer from 2002.
@@ -75,7 +76,9 @@ They also avoided page breaks inside certain elements. This really set the pace 
 
 At a point I had to inspect element and know where a padding was coming from. Meanwhile, all I had was my chrome print preview. Not too long after, I discovered the emulation feature in my chromium.
 
-{% image Selection_005.png alt="Selection_005" %}
+<figure>
+{% image Selection_005.png alt="Selection_005" class="image" %}
+</figure>
 
 Once the CSS media is checked, and the print is selected from the combo box, the web page renders the print version. Sometimes it's still not exactly as the chrome print preview but it's really close. This helps for major debugs when trying to remove style rules made by the all media stylesheet.
 

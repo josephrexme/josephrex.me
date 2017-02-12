@@ -7,14 +7,12 @@ permalink: /butterfly-and-fish/
 categories:
   - Unix
 tags:
-  - butterfly
-  - fish
-  - linux
-  - mac
   - shell
   - unix
 ---
-{% image butterfly_1.gif class="head-image" alt="butterfly_1" %}
+<figure>
+  {% image butterfly_1.gif class="image" alt="butterfly_1" %}
+</figure>
 I recently stumbled upon butterfly on <http://paradoxxxzero.github.io/2014/02/28/butterfly.html> and it is a really awesome web browser shell execution program written in python. It's not like it's the first of it's kind. There are others like:
 
 [ajaxterm][2] and [anyterm][3]

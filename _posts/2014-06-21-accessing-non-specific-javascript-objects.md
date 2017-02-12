@@ -8,9 +8,6 @@ categories:
   - web
 tags:
   - javascript
-  - jquery
-  - json
-  - oop
 ---
 If you are a regular JavaScript programmer, then you know that when you see an object like this
 

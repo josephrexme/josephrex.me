@@ -9,16 +9,19 @@ categories:
 tags:
   - animations
   - graphics
-  - vfx
 ---
-{% image cgi-scene.jpg alt="Computer Generated Image" class="head-image" %}
+<figure>
+{% image cgi-scene.jpg alt="Computer Generated Image" class="image" %}
+</figure>
 
 I've gotten to do a lot of things besides writing codes. I once took a job as a graphic designer and then I made vector graphics for ads. Here's one of what I did in my free.
 
-{% image wonu-vector.png alt="wonu-vector" %}
-
 I love good designs, graphics, and creativity. I've been an artist from my childhood and I haven't dropped it till date. I only happen to be more of a code artist these days.
 <!--more-->
+
+<figure>
+{% image wonu-vector.png alt="wonu-vector" class="image" %}
+</figure>
 
 Motion graphics is way beyond my vector illustration up there. I once dived into it but I was too busy with other things to cling on to it. I did a few works (3 maybe) with After Effects.
 

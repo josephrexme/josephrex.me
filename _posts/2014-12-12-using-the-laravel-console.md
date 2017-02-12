@@ -7,7 +7,6 @@ permalink: /using-the-laravel-console/
 categories:
   - web
 tags:
-  - console
   - laravel
 ---
 {% image laravel-console.png class="head-image" alt="laravel console" %}

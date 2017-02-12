@@ -12,7 +12,10 @@ tags:
   - laravel
   - sql
 ---
-{% image drop-down-menu.jpg class="head-image" alt="drop-down-menu" %}
+<figure>
+{% image drop-down-menu.jpg class="image image--wide" alt="drop-down-menu" %}
+</figure>
+
 When I used procedural PHP for most of my projects, I found myself needing what I referred to as a dependent list. These days I hear it being referred to as dynamic drop down more often. After looking around, a friend gave this solution to me.
 
 All examples here will rely on the DDL database schema here:

@@ -7,7 +7,7 @@ permalink: /im-an-x-programmer/
 categories:
   - opinions
 tags:
-  - programming
+  - opinions
 ---
 All things programming is a part of hackery to me. I love to hack stuffs and that's what has pulled me into the planet of development and engineering. From my observation, some people miss the point on what programming is about.
 

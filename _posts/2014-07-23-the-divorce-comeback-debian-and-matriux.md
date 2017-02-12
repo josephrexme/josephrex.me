@@ -7,10 +7,7 @@ permalink: /the-divorce-comeback-debian-and-matriux/
 categories:
   - Unix
 tags:
-  - gnome
-  - kde
   - linux
-  - security
   - unix
 ---
 I've been a Debian user for some time. I started using Debian since squeeze was<a href="https://wiki.debian.org/DebianStable" target="_blank"> DebianStable</a> . Debian is a great OS and so many interesting operating systems have been built from its kernel.

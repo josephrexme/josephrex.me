@@ -7,11 +7,9 @@ permalink: /using-beanstalkd-and-supervisor-to-handle-queues-in-laravel4/
 categories:
   - web
 tags:
-  - beanstalkd
   - laravel
   - PHP
   - queues
-  - supervisor
 ---
 {% image security_lights.jpg class="head-image" alt="security lights" %}
 When performing some tasks that take time with your web application, you usually don't want to keep your users waiting for a better user experience.

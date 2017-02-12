@@ -9,7 +9,6 @@ categories:
 tags:
   - frontend
   - sass
-  - scss
 ---
 {% image mappings.png class="head-image" alt="source maps" %}
 

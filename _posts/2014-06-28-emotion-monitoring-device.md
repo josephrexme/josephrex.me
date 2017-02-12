@@ -7,8 +7,7 @@ permalink: /emotion-monitoring-device/
 categories:
   - Research
 tags:
-  - future
-  - hardware
+  - futuristic
   - research
 ---
 

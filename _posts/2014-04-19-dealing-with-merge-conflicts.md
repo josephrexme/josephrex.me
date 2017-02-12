@@ -8,7 +8,6 @@ categories:
   - git
 tags:
   - git
-  - meld
 ---
 Recently, I started using git and mercury for version control. I've never really used any other version control system before these two. For most of my recent projects, I've chosen to make more use of git. Git is a really awesome version control system as I've heard from a lot of Pros coming from other version control system like Subversion (SVN).
 <!--more-->
@@ -17,7 +16,9 @@ I just saw this article by Tobias Günther on[ CSS-Tricks][1] and it was really 
 
 As a Linux user, I thought of how I could make use of a merge tool like that to save me the stress of manually cleaning up merges, then I saw this [comment][3] by [Richard Ayotte][4] which made made me check out <a href="http://meldmerge.org" target="_blank">meld merge</a>. He also talked about <a href="https://wiki.gnome.org/Apps/Gitg/" target="_blank">Gitg</a> which I didn't try out.
 
-{% image meld-merge.png class="head-image" alt="Meld on my Debian Linux" %}
+<figure>
+{% image meld-merge.png class="image" alt="Meld on my Debian Linux" %}
+</figure>
 
 It's barely a day since I've been using it and it has helped me come a long way on my current project. I'll just gather up all the diff / merge tools I'm aware of for various OS below.
 

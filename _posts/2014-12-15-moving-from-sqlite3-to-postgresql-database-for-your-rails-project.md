@@ -7,11 +7,9 @@ permalink: /moving-from-sqlite3-to-postgresql-database-for-your-rails-project/
 categories:
   - web
 tags:
-  - database
-  - heroku
+  - databases
   - postgresql
   - rails
-  - sqlite
 ---
 Rails uses sqlite3 by default on development. If you are not careful enough, you may get so comfortable with sqlite which I did. After a while, there will be a need to push the application to production and at this point, you wouldn't want sqlite on your web server. I'm using heroku for my app and they stated <a href="https://devcenter.heroku.com/articles/sqlite3" target="_blank">some good reasons not to use sqlite</a>. On heroku, you wouldn't be able to push your application to production if sqlite3 remains in your Gemfile.
 <!--more-->

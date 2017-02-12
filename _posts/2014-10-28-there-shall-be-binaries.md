@@ -8,13 +8,12 @@ categories:
   - python
 tags:
   - gui
-  - pyinstaller
   - pyqt
   - python
-  - qt4
-  - upx
 ---
-{% image pyuic-binaries.png alt="pyuic binary" class="head-image" %}
+<figure>
+{% image pyuic-binaries.png alt="pyuic binary" class="image image--wide" %}
+</figure>
 
 There comes a point when your program needs to be distributed to other users. You don't want to always have to give every intended user of your program a list of modules or libraries to be installed before they can use your software.
 

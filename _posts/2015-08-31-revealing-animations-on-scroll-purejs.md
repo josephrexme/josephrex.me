@@ -4,6 +4,7 @@ author: Joseph Rex
 layout: post
 comments: true
 permalink: /revealing-animations-on-scroll-with-purejs/
+tags: animations
 ---
 This is one of the posts I hesitate to write about because I feel there's too many blog authors that have already written on it. The concept of lazy loading is majorly for performance reasons and it is welcomed on various aspects of technology. However its use in this case is majorly for aesthetics purpose as it doesn't improve performance in any way. I decided to write this after seeing that many solutions to this are written in jQuery.
 <!--more-->

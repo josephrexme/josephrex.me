@@ -7,7 +7,6 @@ permalink: /using-frontend-assets-the-right-way-on-laravel-and-other-frameworksb
 categories:
   - web
 tags:
-  - bootstrap
   - frontend
   - laravel
 ---

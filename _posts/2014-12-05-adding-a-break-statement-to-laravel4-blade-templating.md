@@ -7,8 +7,8 @@ permalink: /adding-a-break-statement-to-laravel4-blade-templating/
 categories:
   - web
 tags:
-  - blade
   - laravel
+  - PHP
 format: aside
 ---
 It's been quite long since I had to develop with laravel4 but in my active days, I leveraged blade templating in my views. View files have less logic but then we have to perform simple loop operations and conditional statements. Blade provides @if, @endif, @foreach, @endforeach. Well, I wasn't satisfied with that because I had a lot cases to break my loop. This was my solution

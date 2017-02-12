@@ -7,10 +7,11 @@ comments: true
 categories:
   - programming
 tags:
-  - information
   - regex
 ---
-{% image national_regular_expression_day_xkcd_shirt.gif class="head-image" alt="regular expressions day" %}
+<figure>
+{% image national_regular_expression_day_xkcd_shirt.gif class="image" alt="regular expressions day" %}
+</figure>
 
 I care about information and I believe everything we do wraps around trying to find information, protecting it, and making use of it. There is Google, DuckDuckGo, and other search engines, there is grep for Unix-like system users, there are search panes on applications and websites. Sometimes these media of information gathering may not be good/aggressive enough to find the exact outputs you expect especially when looking through files. This is why we learn how to do our searching and pattern matching **like a boss**.
 <!--more-->
@@ -20,7 +21,9 @@ Regex (Regular expression) is a way to specify your search with deeper intensity
 
 To save myself from a lot of explaining, I have this XKCD image to help with a little illustration
 
-{% image regular_expressions.png alt="regular_expressions" %}
+<figure>
+{% image regular_expressions.png alt="regular_expressions" class="image" %}
+</figure>
 
 That PERL hero saved the day with his super powers (knowledge of regex).
 
@@ -47,14 +50,18 @@ My examples are probably not the best you will get to see and I can't mention al
 
 ### Using the tokens to find matches
 
-{% image regular-expression-introduction.png alt="regular-expression-introduction" %}
+<figure>
+{% image regular-expression-introduction.png alt="regular-expression-introduction" class="image" %}
+</figure>
 
 #### Summary:
 
 Regular expressions are very necessary and I think every institution should consider it a as compulsory course for every computer science student and departments that do a lot of computing.  
 If you will like to see a graphical illustration of what happens while you use regular expressions, try out [regexper][2]. It produces neat graphical illustration of what roles the patterns play like in the image below
 
-{% image regexper.jpg alt="regexper" %}
+<figure>
+{% image regexper.jpg alt="regexper" class="image" %}
+</figure>
 
 [Regexr][3] also does something similar to what regex101 provides. It's your call to pick what's best for you.
 
