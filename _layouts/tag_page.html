@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="wrap">
+  <section class="container">
+    {% include navigation.html %}
+    <h2>Tag: {{ page.tag }}</h2>
+    <main>
+      <ul>
+      {% for post in page.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})</li>
+      {% endfor %}
+      </ul>
+
+      <h2>All Tags</h2>
+      <div class="tags" id="tag-cloud">
+        {{ site | tag_cloud }}
+      </div>
+    </main>
+  </section>
+</div>

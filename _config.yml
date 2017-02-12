@@ -24,7 +24,7 @@ css_compressor:	sass
 js_compressor: 	uglifier
 cache: 		true
 exclude:
-  - Gruntfile.js
+  - gulpfile.js
   - package.json
   - node_modules
   - Gemfile
@@ -37,3 +37,8 @@ gems:
 timezone: America/Chicago
 excerpt_separator: <!--more-->
 paginate: 8
+incremental: true # Incremental regeneration
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty

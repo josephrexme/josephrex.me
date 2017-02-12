@@ -27,10 +27,14 @@ Here's a list of books I've read and will be reading:
 - Aesop's Fables
 - Personal Kanban - Jim Benson
 - [So Good They Can't Ignore You][3] - Cal Newport
+- [Soft Skills][4] - John Sonmez
+- [You don't know JS][5] - Kyle Simpsons
 
 [1]:http://mislav.uniqpath.com/poignant-guide/
 [2]:http://www.poodr.com
 [3]:https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124
+[4]:https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397
+[5]:https://github.com/getify/You-Dont-Know-JS
 [10]:https://www.amazon.com/gp/product/0134076427/
 [11]:https://www.amazon.com/gp/product/032157351X/
 [12]:http://algs4.cs.princeton.edu/home/

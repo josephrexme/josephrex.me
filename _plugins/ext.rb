@@ -1,11 +1,12 @@
-require "compass"
+require 'compass'
 
-require "sass"
-require "uglifier"
+require 'sass'
+require 'uglifier'
 
-require "jekyll-assets"
-require "jekyll-assets/compass"
-require "respond-to"
+require 'jekyll-assets'
+require 'jekyll-assets/compass'
+require 'jekyll/tagging'
+require 'respond-to'
 
-require "breakpoint"
+require 'breakpoint'
 
