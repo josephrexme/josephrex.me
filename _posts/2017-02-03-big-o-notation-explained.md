@@ -67,7 +67,7 @@ For the first example, we will always have `n * n * n` but with the second it co
 
 Note however that the both functions `getCube()` and `getPowerofThree()` are of constant time complexity. They simply describe the operational difference of both orders O(n<sup>c</sup>) and O(c<sup>n</sup>).
 
-We study complexity of a function to understand efficiency and scalability of a piece of code. Some important resources that can be influenced by the efficiency of an algorithm are:
+We study [space][10]-[time][9] complexity of a function to understand [efficiency][8] and scalability of a piece of code. Some important resources that can be influenced by the efficiency of an algorithm are:
 
 - CPU/Time consumption
 - Memory consumption
@@ -75,9 +75,14 @@ We study complexity of a function to understand efficiency and scalability of a 
 - Disk usage
 - Network usage
 
+With space (Memory consumption) and Time (CPU time to run/execute) being often the most critical. However the best algorithms really depends on what measure of efficiency is really important to the implementation.
+
 If you are on macOS you'd notice that the activity monitor basically watches for these things in programs.
 
-{% image activity-monitor-macos.png alt="activity monitor macOS" %}
+<figure>
+{% image activity-monitor-macos.png alt="activity monitor macOS" class="image image--wide" %}
+<figcaption>A macOS activity monitor</figcaption>
+</figure>
 
 ### Examples of the listed common notations
 **O(1)** as the slowest growing function can be found in simple cases like checking conditions.
@@ -213,7 +218,7 @@ binarySearch(a, 100);
 
 <hr>
 
-We may begin to write more efficient software with slower growing functions but this wouldn't always cover every part of performance of a software. For performance, you also need to consider the hardware resources the program is being run against e.g processing capability, also compiler/interpreter speed. With more performance needs multithreading becomes significantly needed and that's where languages with immutable data and static types shine.
+We may begin to write more efficient software with slower growing functions but this wouldn't always cover every part of performance of a software. For a complete performance check, you also need to consider the hardware resources the program is being run against e.g processing capability, also compiler/interpreter speed. With more performance needs, multithreading becomes significantly needed and that's where languages with immutable data and static types shine.
 
 Here are some useful resources to learn more on algorithms and complexity theory:
 
@@ -229,3 +234,6 @@ Here are some useful resources to learn more on algorithms and complexity theory
 [5]:https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_1?ie=UTF8&qid=1486056079&sr=8-1&keywords=introduction+to+algorithms
 [6]:http://stackoverflow.com/questions/22697936/binary-search-in-javascript
 [7]:http://bigocheatsheet.com/
+[8]:https://en.wikipedia.org/wiki/Algorithmic_efficiency 'Algorithm Efficiency'
+[9]:https://en.wikipedia.org/wiki/Time_complexity
+[10]:https://en.wikipedia.org/wiki/DSPACE
