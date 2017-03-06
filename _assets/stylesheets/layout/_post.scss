@@ -33,13 +33,27 @@
   }
   &__sharelinks{
     position: absolute;
-    bottom: -70px;
+    top: -80px;
     right: 0;
     width: 120px;
     padding: 0 10px;
     background: $white;
-    box-shadow: 0 0 1px rgba($black, .4);
+    box-shadow: 0 0 2px rgba($black, .2);
     text-align: left;
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      right: 20px;
+      width: 15px;
+      height: 15px;
+      border-radius: 2px;
+      border-right: solid thin rgba($black, .1);
+      border-bottom: solid thin rgba($black, .1);
+      background: white;
+      transform: rotate(45deg);
+    }
     span, a{
       display: block;
       padding: 5px;

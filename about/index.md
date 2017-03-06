@@ -23,9 +23,8 @@ Fingerprint: 4BD9 803E 47C5 6B16 715E  A5CF 9D8B 87BB E761 4F18
 
 [Download PGP key][3]
 
-[1]: http://josephrex.me/things-you-can-do-with-mathml/ "Things you can do with MathML"
+[1]: /tag/mathml/ "Things you can do with MathML"
 [3]: http://strich.io/joerex.asc "Get my PGP public key"
-[4]: http://www.amazon.com/Design-Everyday-Things-Donald-Norman/dp/0465067107
 [5]: http://strich.io
 [6]: https://gitlab.com/silverdust
 [7]: http://josephrex.me/registron
@@ -33,7 +32,7 @@ Fingerprint: 4BD9 803E 47C5 6B16 715E  A5CF 9D8B 87BB E761 4F18
 [9]: https://github.com/bl4ckdu5t
 [10]: http://bitbucket.org/bl4ckdu5t
 [11]: http://twitter.com/josephrexme
-[12]: https://dc414.org/~silverdust/
+[12]: https://dc414.org/
 [13]: http://resources.infosecinstitute.com/author/joseph-rex/
 [14]: http://bl4ckdu5t.deviantart.com
 [15]: http://josephrex.me/exploring-svg-for-absolute-beginners/ "Exploring SVG for beginners"

@@ -21,12 +21,123 @@ I use Chromium as my major browser and I need to see all of my works of any sort
 
 I've been able to view mathML on those few websites that do not do these from my Chromium but whenever I hit one of the presumptuous websites, I just have to move over to iceweasel even if it's not so convenient.
 
-Here are some play-arounds with mathML <span style="color: #ff0000;">(if you don't see any unique math shapes, your browser doesn't support mathML. Try Firefox)</span>:
+Here are some play-arounds with mathML:
 
-<p data-height="268" data-theme-id="0" data-slug-hash="qEOogO" data-default-tab="result" data-user="bl4ckdu5t" class='codepen'>See the Pen <a href='http://codepen.io/bl4ckdu5t/pen/qEOogO/'>A mathML fiddle</a> by Joseph Rex (<a href='http://codepen.io/bl4ckdu5t'>@bl4ckdu5t</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mtext>Matrix: </mtext>
+  <mspace width="10px" />
+  <mrow>
+    <mo>(</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mn>2</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>4</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>8</mn>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>)</mo>
+    <mspace width="30px" />
+    <!-- A new table -->
+    <mo>{</mo>
+    <mtable>
+      <mtr>
+        <mtd>
+          <mn>4</mn>
+        </mtd>
+        <mtd>
+          <mn>8</mn>
+        </mtd>
+        <mtd>
+          <mn>16</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>8</mn>
+        </mtd>
+        <mtd>
+          <mn>16</mn>
+        </mtd>
+        <mtd>
+          <mn>32</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>16</mn>
+        </mtd>
+        <mtd>
+          <mn>32</mn>
+        </mtd>
+        <mtd>
+          <mn>64</mn>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>}</mo>
+  </mrow>
+</math>
+<br>
+<math>
+  <mtext>More:</mtext>
+  <mspace width="20px" />
+  <mrow mathcolor="#00f">
+    <mi mathvariant="bold">&pi;</mi>
+    <msup>
+      <mi>r</mi>
+      <mn>2</mn>
+    </msup>
+  </mrow>
+  <mspace width="20px" />
+  <mrow mathcolor="#f00">
+    <mmultiscripts>
+        <mi>X</mi>
+        <none />
+        <mi>c</mi>
+        <mprescripts />
+        <mi>b</mi>
+        <none />
+    </mmultiscripts>
+</mrow>
+</math>
+<br>
+<math>
+  <mrow>
+    <mfrac>
+      <mrow>
+        <mi>x</mi>
+        <mo>+</mo>
+        <msup>
+          <mi>y</mi>
+          <mn>3</mn>
+        </msup>
+      </mrow>
+      <mrow>
+        <mi>2</mi>
+      </mrow>
+    </mfrac>
+    <mspace width="20px" />
+    <mo>&sum;</mo>
+    <mo>,</mo>
+    <mo>&int;</mo>
+    <mspace width="20px" />
+    <mo stretchy="false">(</mo>
+    <mn>2</mn>
+    <mo>,</mo>
+    <mn>3</mn>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</math>
 
 For more on mathML, check out the <a href="https://developer.mozilla.org/en-US/docs/Web/MathML" target="_blank">MDN docs</a>
 
@@ -34,11 +145,11 @@ For more on mathML, check out the <a href="https://developer.mozilla.org/en-US/d
   <h4>
     Update - 14/12/2014
   </h4>
-  
+
   <p>
     When I said some sites assume that you can't use mathML and prevent usage on non-gecko browsers, I've majorly had <a href="http://fred-wang.github.io/MozSummitMathML/index.html" target="_blank">this Fred Wang's presentation</a> in mind. I got an email from Fred making me understand why that was necessary. Here it is:
   </p>
-  
+
   <blockquote>
     <p>
       MathJax has many issues with CSS, Javascript, Unicode fonts, RTL writing etc so I doubt your chrome extension can make <a href="http://fred-wang.github.io/MozSummitMathML/index.html" target="_blank">http://fred-wang.github.io/MozSummitMathML/index.html</a> work as expected. This page was designed for demo presentation at the Mozilla summit so this verification is done on purpose to prevent people from opening it into a browser with poor HTML5 support. For normal pages (not MathML demos), I use <a class="moz-txt-link-freetext" href="https://github.com/fred-wang/mathml-warning.js" target="_blank">https://github.com/fred-wang/mathml-warning.js</a> on my Website so that should not be a problem.
