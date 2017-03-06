@@ -30,6 +30,14 @@
 	overflow: hidden;
 	white-space: nowrap;
 }
+
+// Links on the prompt component
+@mixin prompt-link($prompt-color){
+  a{
+    color: darken($prompt-color, 20%);
+  }
+}
+
 // GrayScale Filter
 @mixin grayscale($level){
 	-webkit-filter: grayscale($level);
