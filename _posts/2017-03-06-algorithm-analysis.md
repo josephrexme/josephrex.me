@@ -19,8 +19,6 @@ So far we've chosen footslogging with gallons over hitchhiking. We think it's a 
 
 With that understanding, when giving an array of length **n**, when **n = 5** and our array items are **23, 34, 13, 44, 18**, we are to write an algorithm to find a number in the list of array items. By performing a linear search, we will have our best case if 23 is the number to be searched as it is the first item on the array.
 
-<div class="prompt prompt--warning">If you don't see math notations reload this page</div>
-
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <semantics>
     <mrow>

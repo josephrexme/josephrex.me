@@ -43,6 +43,8 @@ ready(function(){
 
 // Barba Pjax Page Load Listener
 Barba.Dispatcher.on('transitionCompleted', function() {
+  // TypeSet MathJax
+  MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
   // Animate Header contents
   $('.header__title').scrollex({
     initialize: function() {
