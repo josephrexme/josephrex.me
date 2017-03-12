@@ -215,6 +215,7 @@ binarySearch(a, 100);
 {% endhighlight %}
 
 [Binary Search Example Source][6]
+[Visual binary search operation][11]
 
 <hr>
 
@@ -237,3 +238,4 @@ Here are some useful resources to learn more on algorithms and complexity theory
 [8]:https://en.wikipedia.org/wiki/Algorithmic_efficiency 'Algorithm Efficiency'
 [9]:https://en.wikipedia.org/wiki/Time_complexity
 [10]:https://en.wikipedia.org/wiki/DSPACE
+[11]:https://illustrated-algorithms-ommzftrylh.now.sh
