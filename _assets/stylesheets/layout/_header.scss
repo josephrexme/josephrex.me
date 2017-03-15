@@ -1,16 +1,20 @@
 .header{
   padding: 80px 10px;
   text-align: center;
-  &__title, &__description{
-    transition: opacity 3s ease;
-    transition-delay: 0.25s;
+  .logo, &__title, &__description{
     opacity: 0;
+    animation: fade-in-slow 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  }
+  .logo{
+    animation-delay: .3s;
   }
   &__title{
     margin-bottom: 20px;
+    animation-delay: .6s;
   }
   &__description{
     color: rgba($white, .6);
     font-size: 2rem;
+    animation-delay: .9s;
   }
 }

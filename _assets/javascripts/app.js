@@ -3,7 +3,6 @@
 //
 //= require vendor/jquery/dist/jquery
 //= require vendor/barba.min
-//= require vendor/jquery.scrollex.min
 //
 //
 
@@ -45,14 +44,6 @@ ready(function(){
 Barba.Dispatcher.on('transitionCompleted', function() {
   // TypeSet MathJax
   MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-  // Animate Header contents
-  $('.header__title').scrollex({
-    initialize: function() {
-      $(this).css('opacity', 1);
-      $('.header__description').css('opacity', 1);
-      $('.logo').css({'transform': 'scale(1)', 'opacity': '1'});
-    },
-  });
   // Share Post dropdown
   var shareBtn = document.getElementById('shareDropdown');
   if(shareBtn){

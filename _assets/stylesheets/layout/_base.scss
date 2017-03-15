@@ -109,9 +109,6 @@ pre {
 }
 .logo{
   width: 80px;
-  transform: scale(.2);
-  opacity: 0;
-  transition: transform opacity 1s ease-in .3s;
 }
 .scroll-progress{
   background: $color-brand-2;
