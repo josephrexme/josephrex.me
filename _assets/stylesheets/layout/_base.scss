@@ -3,6 +3,9 @@
 \*--------------------------------*/
 *{
   box-sizing: border-box;
+  &:focus{
+    outline-color: $color-brand-2;
+  }
 }
 html{
   font-size: 62.5%;

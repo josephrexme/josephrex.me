@@ -1,19 +1,16 @@
 // Default divider
 hr{
-  margin: 5rem 0;
+  margin: 5rem auto;
   padding: 0;
   border: 0;
-  border-top: double medium #333;
   color: #333;
   text-align: center;
   &::after{
-    content: '龍龙';
+    content: '✯ ✯ ✯';
     display: inline-block;
     position: relative;
-    top: -2rem;
+    top: -1rem;
     font-size: 2rem;
-    padding: 0 1rem;
-    background: $white;
   }
 }
 // Use on HRs
