@@ -48,6 +48,27 @@ a{
     text-decoration: underline;
   }
 }
+p a, article a{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    border-bottom: solid 2px currentColor;
+    transform: scaleX(.9);
+    opacity: .25;
+    transition: .2s;
+  }
+  &:hover{
+    &::before{
+      transform: scaleX(.98);
+      opacity: .75;
+    }
+  }
+}
 input{
   font-family: inherit;
 }
