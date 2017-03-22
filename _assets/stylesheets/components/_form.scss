@@ -9,7 +9,7 @@
     border-radius: $inputs-border-radius;
     background: transparent;
   }
-  ::-webkit-input-placeholder, ::placeholder, ::-moz-placeholder{
+  ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder{
     font-style: normal;
     font-weight: 300;
     color: rgba($white, .3);
