@@ -9,9 +9,24 @@
     border-radius: $inputs-border-radius;
     background: transparent;
   }
-  ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder{
-    font-style: normal;
-    font-weight: 300;
-    color: rgba($white, .3);
-  }
+}
+::-webkit-input-placeholder{
+  font-style: normal;
+  font-weight: 300;
+  color: rgba($white, .3);
+}
+::placeholder{
+  font-style: normal;
+  font-weight: 300;
+  color: rgba($white, .3);
+}
+::-moz-placeholder{
+  font-style: normal;
+  font-weight: 300;
+  color: rgba($white, .3);
+}
+:-ms-input-placeholder{
+  font-style: normal;
+  font-weight: 300;
+  color: rgba($white, .3);
 }
