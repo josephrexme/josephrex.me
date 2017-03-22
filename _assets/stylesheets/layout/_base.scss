@@ -48,7 +48,7 @@ a{
     text-decoration: underline;
   }
 }
-p a, article a{
+p a, ul a, .list__item__content a{
   position: relative;
   &::before{
     content: '';
