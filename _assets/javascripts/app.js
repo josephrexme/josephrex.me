@@ -1,8 +1,8 @@
 //
 // Sprockets Includes
 //
-//= require vendor/jquery/dist/jquery
 //= require vendor/barba.min
+//= require vendor/web-animations.min
 //
 //
 
@@ -21,17 +21,22 @@ ready(function(){
       .then(this.reveal.bind(this))
     },
     exit: function() {
-      return $(this.oldContainer).animate({ opacity: 0 }).promise();
+      var _this = this;
+      return new Promise(function(resolve, reject){
+        resolve(_this.oldContainer.animate({ opacity: [0.5, 0] }, 400));
+      });
     },
     reveal: function() {
       var _this = this;
-      var newPage = $(this.newContainer);
+      var newPage = this.newContainer;
       document.body.scrollTop = 0;
-      $(this.oldContainer).hide();
-      newPage.css({ visibility: 'visible', opacity: 0 });
-      newPage.animate({ opacity: 1 }, 300, function() {
+      this.oldContainer.style.display = 'none';
+      newPage.style.visibility = 'visible';
+      newPage.styleopacity = 0;
+      var fadeIn = newPage.animate({ opacity: [0.5, 1] }, 400);
+      fadeIn.onfinish = function(e){
         _this.done();
-      });
+      }
     }
   });
   Barba.Pjax.getTransition = function() {
