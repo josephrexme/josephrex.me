@@ -31,8 +31,6 @@ ready(function(){
       var newPage = this.newContainer;
       document.body.scrollTop = 0;
       this.oldContainer.style.display = 'none';
-      newPage.style.visibility = 'visible';
-      newPage.styleopacity = 0;
       var fadeIn = newPage.animate({ opacity: [0.5, 1] }, 400);
       fadeIn.onfinish = function(e){
         _this.done();

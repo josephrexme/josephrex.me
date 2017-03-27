@@ -13,9 +13,6 @@
   &-inline-block{ display: inline-block; }
   &-invisible{ visibility: hidden; }
   &-ghost{ display: none; }
-  &-bold{ font-weight: bold; }
-  &-butmag10{ margin-bottom: 10px; }
-  &-italic{ font-style: italic; }
   &-ir{
     background-color: transparent;
     border: 0;
@@ -38,8 +35,6 @@
   &-txtright{ text-align: right }
   &-fr{ float: right }
   &-fl{ float: left }
-  &-space10{ display: inline-block; width: 10px;}
-  &-blank_height10{ display: block; height: 10px; }
   &-visuallyhidden{
     border: 0;
     clip: rect(0 0 0 0);
@@ -63,18 +58,6 @@
   }
   &-nopad.u-nopad{
     padding: 0;
-  }
-  &-topmag10{
-    margin-top: 10px;
-  }
-  &-vtop{
-    vertical-align: top;
-  }
-  &-red{
-    color: red;
-  }
-  &-clickable{
-    cursor: pointer;
   }
 }
 /* Extra hack utilities */

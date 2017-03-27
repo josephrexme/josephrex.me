@@ -8,24 +8,3 @@
   where possible. Consider class
   chaining before considering it.
 \*---------------------------------*/
-.is{
-  &-disabled{
-    cursor: not-allowed;
-  }
-  &-pagination-current.is-pagination-current.is-pagination-current{
-    background: $color-brand-2;
-    color: $white;
-    &:hover{
-      background: darken($color-brand-2, 5%);
-    }
-  }
-  &-pagination-disabled.is-pagination-disabled{
-    background: darken($color-brand-1, 2%);
-  }
-  &-settings__nav-active{
-    background: darken($color-brand-1, 5%);
-    border-bottom: solid medium darken($color-brand-4, 20%);
-  }
-}
-.has{
-}
