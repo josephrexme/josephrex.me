@@ -12,7 +12,7 @@ html{
 }
 body{
   font-family: $font--primary;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 300;
   line-height: 1.6;
   background-color: $color-brand-1;
@@ -21,18 +21,17 @@ body{
 }
 blockquote{
   position: relative;
-  padding: 20px 40px;
-  padding-left: 50px;
+  padding: 10px 40px;
   background: darken($white, 2%);
-  border-left: solid 2px rgba($black, .7);
+  border-left: solid 2px rgba($color-brand-2, .7);
   font-weight: 300;
   &::before{
     content: '“';
     position: absolute;
-    top: -5px;
+    top: -15px;
     left: 16px;
     font-size: 8rem;
-    color: #777;
+    color: $color-brand-2;
   }
 }
 cite{
@@ -48,7 +47,7 @@ a{
     text-decoration: underline;
   }
 }
-p a, ul a, .list__item__content a{
+p a, ul:not(.social) a, .list__item__content a{
   position: relative;
   &::before{
     content: '';

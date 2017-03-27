@@ -2,7 +2,8 @@
   margin: 20px 0 40px;
   * { outline: none; }
   &__input{
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 40px;
     padding: 5px 10px;
     border: solid thin currentColor;

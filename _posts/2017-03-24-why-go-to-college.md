@@ -35,7 +35,7 @@ Purpose is a person's sense of resolve or determination according to the Apple d
 
 Now you may think if you have passion you have a purpose but I urge you to see this video
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/uwIBFgxUYk8" frameborder="0" allowfullscreen></iframe>
+<div class="video"><iframe width="854" height="480" src="https://www.youtube.com/embed/uwIBFgxUYk8" frameborder="0" allowfullscreen></iframe></div>
 
 At [a point in the video][4] purpose is defined as whatever you're trying to accomplish with an understanding of why it's important and a tenacity to never give up on it. And passion is what you like, what feels good, what you find that you want to do but not necessarily need to do. Passion is considered to be dangerous because it is admiration when you really need aspiration.
 
@@ -56,22 +56,22 @@ Harry Robert also digressed to address this on [his AMA issue][9]
 
 > This calls to mind a slightly different opinion I hold about so many people working on the web these days being from a traditional CompSci background, with none of the knowledge of the nuance or the history of the Web as a platform. The sheer number of developers who’re badass programmers but with no idea about HTML/CSS/progressive enhancement is kinda worrying.
 
-Universities offer 4 things:
+Universities offer 4 things (NICK):
 
-- Isolation
 - Network
-- Knowledge
+- Isolation
 - Closure
-
-**Isolation:** For people who get to leave their homes to go study in college, you'd find it is a great chance to meet the inner you, spend more time with yourself and realize things about yourself that you've not paid close attention to. You may have friends in college but you probably get your moments of isolation more frequently than you will in a family home.
+- Knowledge
 
 **Network:** This is the most important reason for college in my opinion. You could meet the world's best professors and I don't mean their lectures I mean just having the privilege to know them in person, you could have the smartest minds as classmates. The value of some friends may not reflect in the moment but you'd know they are worth more than treasure. You could also meet influential people. All these without being part of any student groups. If you join such groups it's more network and if you're studying in a new city you could also build a network through communities outside school.
 
-**Knowledge:** Knowledge acquisition is the objective of most people going to college. They focus so much on having the best lecturers to impact this knowledge into them and often get dissappointed if the lecturers are anything short of perfection. There'd be complaints about accents of lecturers from different cultures, complaints about charisma of the ones who speak the way we expect and even if you manage to keep good grades you never get the sense of satisfaction. You feel you were robbed off what you paid for. If these describe you in any way you should know that knowledge is everything in the ecosystem of college. Learning that a janitor can be so happy and cheerful even with critical health issues, learning the different cultures and opinions of different people you meet, learning what it takes to struggle to retain good grades. That is all knowledge. If you have the best professors and you get what you perceive as wonderful lectures, consider it to be an added privilege because not everyone gets that. If you carry on this mindset you wouldn't be dissapointed when you get otherwise. Like I said earlier, knowledge is everywhere and you don't have to wait for a lecturer to spoonfeed it to you. It's called higher education.
+**Isolation:** For people who get to leave their homes to go study in college, you'd find it is a great chance to meet the inner you, spend more time with yourself and realize things about yourself that you've not paid close attention to. You may have friends in college but you probably get your moments of isolation more frequently than you will in a family home.
 
 **Closure:** It's sad that a large percentage of people seeking college education only go after this. Degree is what gives you closure. It's what makes you an option over other options in the sight of employers who fail to see beyond degrees and you can't disregard it because that organization might be the place you find your professional happiness.
 
-If you seek any of those things listed then you should give college a try. If you already work and you only want to go to college to prove to employers or clients that you are a better person when you can't prove that without a degree. Think again because college wouldn't teach you Redux or Functional Reactive Programming and you could learn about algorithms from the MIT open courseware for free. College isn't for everyone as Eric insinuated but you should consider it if it even slightly aligns with your purpose in life. You should also start making other micro-adjustments that project you towards your goals.
+**Knowledge:** Knowledge acquisition is the objective of most people going to college. They focus so much on having the best lecturers to impact this knowledge into them and often get dissappointed if the lecturers are anything short of perfection. There'd be complaints about accents of lecturers from different cultures, complaints about charisma of the ones who speak the way we expect and even if you manage to keep good grades you never get the sense of satisfaction. You feel you were robbed off what you paid for. If these describe you in any way you should know that knowledge is everything in the ecosystem of college. Learning that a janitor can be so happy and cheerful even with critical health issues, learning the different cultures and opinions of different people you meet, learning what it takes to struggle to retain good grades. That is all knowledge. If you have the best professors and you get what you perceive as wonderful lectures, consider it to be an added privilege because not everyone gets that. If you carry on this mindset you wouldn't be dissapointed when you get otherwise. Like I said earlier, knowledge is everywhere and you don't have to wait for a lecturer to spoonfeed it to you. It's called higher education.
+
+If you seek any of those things listed then you should give college a try. If you're working already and you consider going to college to prove to employers or clients that you are a better person/staff/consultant without being able to prove that without a degree, think again because college wouldn't teach you whatever it takes to excel at your area of specialization because as Lea said those skills required for your current job are transient which makes them ineligible for a university curriculum. You could learn about algorithms from the MIT open courseware for free and you could learn anything you need without college if you are disciplined. College students learn by a curriculum which would bring knowledge needed but not sought at them unlike a self-learned person who goes after what is needed to be known to achieve certain objectives. This puts college students at a bit of an edge over self-learned persons unless you can be really disciplined and make exhaustive research when learning on your own. College isn't for everyone as Eric insinuated but you should consider it if it even slightly aligns with your purpose in life. You should also start making other micro-adjustments that project you towards your goals either way because in the end it's the talent you've been able to build as an individual that makes up your value.
 
 [1]:https://www.quora.com/Why-is-programming-so-easy
 [2]:http://thedailywtf.com/articles/programming-is-hard
