@@ -28,8 +28,8 @@ blockquote{
   &::before{
     content: '“';
     position: absolute;
-    top: -15px;
-    left: 16px;
+    top: -20px;
+    left: 10px;
     font-size: 8rem;
     color: $color-brand-2;
   }
