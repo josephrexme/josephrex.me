@@ -92,7 +92,7 @@ class Chat{
 
 In this example you can see methods referencing methods and the instance variables for the current user and the recipient. The most cohesive method here is the `sendMessage()` as it makes use of `this.currentUser`, `this.recipient` and also an instance method `this.addEmoji()`. The least are the `getOnlineStatus` and `addEmoji()` which aren't interacting directly with other properties. As a matter of fact does could become static methods instead of being instance method. There's a [eslint rule][4] to make sure such methods are made static.
 
-Uncle bob suggested using instance variables but wasn't explicit enough about why so I'd try to explain why. In a language that supports private methods, we may make such instance variables even private as they have nothing to do outside of the class. In JavaScript or any language without private methods, this values are of no use outside of the class so it's better to keep them as instance variables to add an extra layer of instantiation to their access.
+Uncle bob suggested using instance variables but wasn't explicit enough about why so I'd try to explain why. In a language that supports private methods, we may make such instance variables even private as they have nothing to do outside of the class. In JavaScript or any language without private methods, this values are of no use outside of the class so it's better to keep them as instance variables to add an extra layer of construction before invocation.
 
 Cohesion can reduce the complexity of a module, increase usability, and system maintanability. It is of 8 major types. I'll only list them because [Wikipedia has done a good job at explaining them][5].
 
@@ -109,7 +109,7 @@ Coupling measures the degree of module interdependency as cohesion does for func
 
 In previous examples, a chat module was used in building a chat application. Modules could really be anything beyond the scope of a class but to maintain simplicity we'd keep a class to a module. The chat module could use some lower coupling. Notice how we call an alien `Socket` class within the `updateChatThread()`?
 
-We could improve this by making the user of the API to add the Socket class themselves when the Chat class gets instantiated.
+We could improve this by making the user of the API to add the Socket class themselves when the Chat class gets constructed.
 
 {% highlight javascript %}
 updateChatThread(...params){
