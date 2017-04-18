@@ -116,7 +116,7 @@ Coupling measures the degree of module interdependency as cohesion does for func
 
 In previous examples, a chat module was used in building a chat application. Modules could really be anything beyond the scope of a class but to maintain simplicity we'd keep a class to a module. The chat module could use some lower coupling. Notice how we call an alien `Socket` class within the `updateChatThread()`?
 
-We could improve this by making the user of the API to add the Socket class themselves when the Chat class gets constructed.
+We could improve this by making the user of the API to add the Socket class themselves when the Chat class gets constructed. Hence a [dependency injection][8].
 
 {% highlight javascript %}
 updateChatThread(...params){
@@ -125,7 +125,7 @@ updateChatThread(...params){
 }
 {% endhighlight %}
 
-Because the `sendMessage()` method invokes `updateChatThread()`, it still needs the socket but we are trying to avoid depending on the Socket module in our Chat module so we could once again make it a param.
+Because the `sendMessage()` method invokes `updateChatThread()`, it still needs the socket but we are trying to avoid depending on the Socket module directly in our Chat module so we could once again apply dependency injection.
 
 {% highlight javascript %}
 sendMessage(...params) {
@@ -172,3 +172,4 @@ Why speak with Socket who is a stranger? what is retrieveWithNew? I don't even k
 [5]:https://en.wikipedia.org/wiki/Cohesion_(computer_science)#Types_of_cohesion
 [6]:https://en.wikipedia.org/wiki/Connascence_(computer_science)
 [7]:https://en.wikipedia.org/wiki/Law_of_Demeter
+[8]:https://en.wikipedia.org/wiki/Dependency_injection
