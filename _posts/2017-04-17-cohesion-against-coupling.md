@@ -150,9 +150,18 @@ Balance is a big factor in software and everything in life. You'd notice by redu
 
 An example of data coupling is how we changed the use of a supposed `Socket` module to a parameter entry in the Chat module. The major reason why tightly coupled software is discouraged is that it increases [connascence][6] of system implementations i.e a change in one may lead to a ripple effect to have to change another. If the `Socket` module gets directly called in `Chat` module then the API for socket changes to use a `retrieve()` method instead of `retrieveWithNew()` we'd have to update the chat module too respectively. But now we have it such that our chat module is almost independent of changes from other modules.
 
+Abiding by the [law of demeter (LoD)][7] could have prevented that method change on the depenedent Socket module. The law says:
+
+- Each unit should have only limited knowledge about other units: only units "closely" related to the current unit
+- Each unit should only talk to its friends; don't talk to strangers.
+- Only talk to your immediate friends
+
+Why speak with Socket who is a stranger? what is retrieveWithNew? I don't even know Socket enough to know it has a child named that. Socket is not my friend
+
 [1]:https://en.wikipedia.org/wiki/Structured_analysis
 [2]:https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
 [3]:https://babeljs.io/docs/plugins/transform-class-properties/
 [4]:http://eslint.org/docs/rules/class-methods-use-this
 [5]:https://en.wikipedia.org/wiki/Cohesion_(computer_science)#Types_of_cohesion
 [6]:https://en.wikipedia.org/wiki/Connascence_(computer_science)
+[7]:https://en.wikipedia.org/wiki/Law_of_Demeter
