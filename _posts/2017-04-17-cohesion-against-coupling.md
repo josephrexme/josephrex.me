@@ -112,6 +112,8 @@ Cohesion can reduce the complexity of a module, increase usability, and system m
 - Function cohesion (best)
 - Perfect cohesion (atomic)
 
+<hr>
+
 Coupling measures the degree of module interdependency as cohesion does for function interdependency within a module. A software is considered properly designed when it has loose coupling. Loose coupling goes with high cohesion and vice versa.
 
 In previous examples, a chat module was used in building a chat application. Modules could really be anything beyond the scope of a class but to maintain simplicity we'd keep a class to a module. The chat module could use some lower coupling. Notice how we call an alien `Socket` class within the `updateChatThread()`?
