@@ -70,7 +70,7 @@
     ,"headline": "{{ page.title }}",
     "image": {
       "@type": "ImageObject",
-      "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text={{ page.title }}",
+      "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text={{ page.title | replace: ' ','+' }}",
       "width": 800,
       "height": 500
     }
