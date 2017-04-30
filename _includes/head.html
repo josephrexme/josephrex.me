@@ -38,7 +38,7 @@
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
-    "@type": "{% if page.title %}Article{% else %}Website{% endif %}",
+    "@type": "{% if page.title and page.date %}Article{% else %}Website{% endif %}",
     "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
     "publisher": {
       "@type": "Organization",
@@ -68,14 +68,16 @@
     }
     {% if page.title %}
     ,"headline": "{{ page.title }}",
-    "datePublished": "{{ page.date }}",
-    "dateModified": "{{ page.date }}",
     "image": {
       "@type": "ImageObject",
       "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text={{ page.title }}",
       "width": 800,
       "height": 500
     }
+    {% endif %}
+    {% if page.title and page.date %}
+    ,"datePublished": "{{ page.date }}",
+    "dateModified": "{{ page.date }}"
     {% endif %}
   }
   </script>
