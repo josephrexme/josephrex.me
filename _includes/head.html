@@ -35,4 +35,48 @@
   <link rel="shortcut icon" type="image/png" href="http://res.cloudinary.com/strich/image/upload/v1437944865/logo_xpfee9.png" />
   <link rel="pingback" href="https://webmention.io/josephrex.me/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/josephrex.me/webmention" />
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "{% if page.title %}Article{% else %}Website{% endif %}",
+    "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Joseph Rex Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://res.cloudinary.com/strich/image/upload/v1493550549/jr-long-logo_fszgeu.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Joseph Rex",
+      "url": "https://josephrex.me/about-me"
+    },
+    "sameAs": [
+      "https://twitter.com/josephrexme",
+      "https://www.linkedin.com/in/josephrexme",
+      "https://behance.net/josephrexme",
+      "https://codepen.io/bl4ckdu5t",
+      "https://github.com/bl4ckdu5t"
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+    }
+    {% if page.title %}
+    ,"headline": "{{ page.title }}",
+    "datePublished": "{{ page.date }}",
+    "dateModified": "{{ page.date }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text={{ page.title }}",
+      "width": 800,
+      "height": 500
+    }
+    {% endif %}
+  }
+  </script>
 </head>

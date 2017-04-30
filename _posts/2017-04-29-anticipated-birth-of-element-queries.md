@@ -6,7 +6,7 @@ permalink: /anticipated-birth-of-element-queries/
 comments: true
 tags: frontend css gui
 ---
-There have been so many talks on constraint-based layouts or container/element queries lately and that's because without them responsive styling with [media queries will remain an unpleasant hack][1].
+There have been [so many][8] [talks][16] [on][17] [constraint-based][18] [layouts][19] [or][20] [container/element][21] [queries][22] [lately][23] and that's because without them responsive styling with [media queries will remain an unpleasant hack][1].
 <!--more-->
 
 What does any of all that mean? Constraints based layouts puts child layouts or components to the scope of their parents such that changes made are relative to the parent/container size.
@@ -177,6 +177,21 @@ Here's eqcss addressing the problem above. As of the time of testing it only beh
 
 <iframe width="100%" height="300" src="//jsfiddle.net/bl4ckdu5t/6wuzuer5/embedded/result,css,html/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
+and a demonstation of it when resized:
+
+<div style='position:relative;padding-bottom:36%'><iframe src='https://gfycat.com/ifr/FirstCheerfulFrenchbulldog' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+
+<hr>
+
+### Resources
+- [Brad Frost's list of element/container queries post and tools][24]
+- [EQCSS demos][25]
+- [2014 state of element queries][18]
+- [Element queries][17]
+- [Alistapart - Container queries once more unto the breach][8]
+- [Ausi's css container queries][16]
+- [On container queries - Ethan Marcotte][19]
+
 [1]: http://ianstormtaylor.com/media-queries-are-a-hack/
 [2]: http://css-discuss.incutio.com/wiki/Fluid_Design
 [3]: https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/
@@ -193,3 +208,12 @@ Here's eqcss addressing the problem above. As of the time of testing it only beh
 [14]: https://josephrex.me/big-o-notation-explained/
 [15]: https://twitter.com/ausi
 [16]: https://au.si/css-container-queries
+[17]: http://www.xanthir.com/b4PR0
+[18]: http://www.xanthir.com/b4VG0
+[19]: https://ethanmarcotte.com/wrote/on-container-queries/
+[20]: https://ethanmarcotte.com/wrote/a-bit-more-on-container-queries/
+[21]: https://www.smashingmagazine.com/2013/06/media-queries-are-not-the-answer-element-query-polyfill/
+[22]: http://codepen.io/tomhodgins/post/what-the-heck-are-element-queries-container-queries
+[23]: http://hugogiraudel.com/2014/04/22/why-element-queries-matter/
+[24]: https://bradfrost.github.io/this-is-responsive/resources.html#element-queries
+[25]: https://github.com/eqcss/eqcss#documentation--tutorials
