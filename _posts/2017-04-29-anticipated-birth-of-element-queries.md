@@ -89,7 +89,7 @@ This means if I have a section greater than or equal to 100px make the body back
 More recently, [EQCSS (Element Queries CSS)][7] was born as a great speculative polyfill for element queries by [Tom Hodgins][11] and [Maxime Euzière][13]. It puts the at-rule into consideration for scoping elements like it is used with media queries and proposes the best syntax yet.
 
 {% highlight scss %}
-@element 'section'{
+@element section{
   body{
     background: lime;
   }
@@ -119,7 +119,7 @@ the eqcss snippet would change the background color provided there is one or mor
 which element queries offer as:
 
 {% highlight scss %}
-@element '.mod' and (min-width: 100px){
+@element .mod and (min-width: 100px){
   body{
     background: lime;
   }
@@ -131,7 +131,7 @@ an element could be its own constraint which would help achieve better pluggable
 What happens when there is more than one element being used as constraint? Eqcss allows you to target current scope only with meta selectors
 
 {% highlight scss %}
-@element 'input' and (min-width: 100px){
+@element input and (min-width: 100px){
   $this:focus{
     border: solid thin crimson;
   }

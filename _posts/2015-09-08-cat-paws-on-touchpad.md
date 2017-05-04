@@ -7,7 +7,7 @@ permalink: /cat-paws-on-touchpad/
 ---
 One thing that really drives me to becoming a better developer is my curiosity to know how stuff works. I had some moments of tranquility to [think literally about nothing][1] which is something I do very often and it led me to thinking of a possibility which I will discuss here. Before I do, have you ever had your cat or dog hit some keys on your computer or put their paws on your touchpad? That's what the idea here is about.
 <!--more-->
-{% image 'pawtouchpad.jpg' alt="Paw on touchpad" class="head-image" %}
+{% image 'pawtouchpad.jpg' alt="Paw on touchpad" class="head-image figure--fullwidth" %}
 Think of this scenario with me:
 
 > You write a resignation letter to your boss because you really are planning to quit your job but you can't afford to quit yet. Your resignation letter is so well constructed that you relish going through because it makes you feel like a good writer. You get what what I mean? :D. Suddenly your cat jumps over the table and hits the touchpad at a point where your cursor is right on the send button.
