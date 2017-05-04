@@ -77,7 +77,6 @@ Barba.Dispatcher.on('transitionCompleted', function() {
   var commentTrigger = document.querySelector('.js-toggleComments');
   if(commentTrigger){
     commentTrigger.addEventListener('click', function() {
-      console.log(threadContainer);
       var threadVisibility = threadContainer.style.display;
       threadContainer.style.display = threadVisibility == 'none' ? 'block' : 'none';
       disqusComments();
@@ -106,7 +105,7 @@ function disqusComments() {
         crossOnTrigger.classList.remove('comments__trigger--animated');
         crossOnTrigger.classList.add('comments__trigger--xclose');
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      },2000);
+      },3000);
     }else{
       crossOnTrigger.classList.add('comments__trigger--xclose');
     }
