@@ -6,6 +6,8 @@
 //
 //
 
+var threadContainer = document.getElementById('disqus_thread');
+var crossOnTrigger = document.querySelector('.comments__trigger__plus');
 // http://dustindiaz.com/smallest-domready-ever
 function ready(cb) {
   /in/.test(document.readyState) // in = loadINg
@@ -64,16 +66,18 @@ Barba.Dispatcher.on('transitionCompleted', function() {
       var dw = document.body.scrollWidth,
           dh = document.body.scrollHeight,
           wh = window.innerHeight,
+          disqusHeight = threadContainer.clientHeight,
+          bottomContentHeight = 700;
           pos = (rootElement).scrollTop,
-          bw = ((pos / (dh - wh)) * 100);
+          bw = ((pos / ((dh - (bottomContentHeight + disqusHeight)) - wh)) * 100);
       bar.style.width = bw+'%';
     });
   }
   // Show/Hide Disqus comments
   var commentTrigger = document.querySelector('.js-toggleComments');
-  var threadContainer = document.getElementById('disqus_thread');
   if(commentTrigger){
     commentTrigger.addEventListener('click', function() {
+      console.log(threadContainer);
       var threadVisibility = threadContainer.style.display;
       threadContainer.style.display = threadVisibility == 'none' ? 'block' : 'none';
       disqusComments();
@@ -90,5 +94,21 @@ function disqusComments() {
   var disqus_shortname = 'josephrexme';
   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  if(typeof(DISQUS) === 'undefined'){
+    crossOnTrigger.classList.add('comments__trigger--animated');
+  }
+  if(crossOnTrigger.classList.contains('comments__trigger--xclose')){
+    crossOnTrigger.classList.remove('comments__trigger--xclose');
+    crossOnTrigger.classList.remove('comments__trigger--animated');
+  }else{
+    if(typeof(DISQUS) === 'undefined'){
+      setTimeout(function() {
+        crossOnTrigger.classList.remove('comments__trigger--animated');
+        crossOnTrigger.classList.add('comments__trigger--xclose');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      },2000);
+    }else{
+      crossOnTrigger.classList.add('comments__trigger--xclose');
+    }
+  }
 }

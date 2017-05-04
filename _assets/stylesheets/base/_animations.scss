@@ -8,3 +8,11 @@
     transform: none;
   }
 }
+@keyframes cross-rotate{
+  0%{
+    transform: rotate(45deg);
+  }
+  100%{
+    transform: rotate(135deg);
+  }
+}
