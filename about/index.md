@@ -5,15 +5,11 @@ layout: page
 permalink: /about-me/
 ---
 
-I am <span itemprop="name">Joseph Rex</span> (<span itemprop="nickname">silverdust</span>). I write software for a living and design for fun. I fit the description of what they call a "full-stack developer" but I mostly just work with Ruby and JavaScript. Python and Clojure for experiments. I love designing interfaces so I'm pretty badass with Sass/CSS. I've built desktop GUI software  like [this][7] with PyQt (the python wrapper for Qt4 C++) and I'm considering [electron](http://electron.atom.io/) for future GUI projects. I've also reviewed a [GUI book][19] for [packt pub][20].
+I am <span itemprop="name">Joseph Rex</span> (<span itemprop="nickname">silverdust</span>). I write software, articles, and I design. I work with Ruby and JavaScript. Recently been exploring animations/motion graphics especially on the web and a little outside the web. I've always loved building interfaces so [I have old projects with interfaces that aren't web based][7] and I reviewed a [GUI book][19] for [packt pub][20].
 
-I love math and vector graphics. I use [mathML][1] and [SVG][15] and I sometimes take out time to design [amateur graphics][14].
+<span itemprop="url">[strich.io][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], my designs are on [behance][9], and my OSS contributions on [github][10]. I sporadically smash my rants on [twitter][11], I'm a member of [dc414][12], and I used to write on security for [Infosec Institute][13].
 
-<span itemprop="url">[StrichIO][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], projects on [github][9], [gitlab][6], and on [bitbucket][10]. I sporadically smash my rants on [twitter][11], I'm a member of [dc414][12], and I write on security for [Infosec Institute][13].
-
-When I take off my nerd helmet I workout, play basketball, and sing.
-
-There's more [about me][16]. The image I use all over the internet was originally designed by [Funkwood][17] on [Deviantart][18].
+I also play basketball and root for the bucks.
 
 Interested in a chat? <span data-email>Send me an email - {{ site.email }}</span> <br>or say hi to me (<code>silverdust</code>) on Freenode
 
@@ -23,21 +19,14 @@ Fingerprint: 4BD9 803E 47C5 6B16 715E  A5CF 9D8B 87BB E761 4F18
 
 [Download PGP key][3]
 
-[1]: /tag/mathml/ "Things you can do with MathML"
-[3]: http://strich.io/joerex.asc "Get my PGP public key"
+[3]: https://cdn.rawgit.com/bl4ckdu5t/bl4ckdu5t.github.io/source/_assets/joerex.asc "Get my PGP public key"
 [5]: http://strich.io
-[6]: https://gitlab.com/silverdust
 [7]: http://josephrex.me/registron
 [8]: http://codepen.io/bl4ckdu5t
-[9]: https://github.com/bl4ckdu5t
-[10]: http://bitbucket.org/bl4ckdu5t
+[9]: http://behance.net/josephrexme
+[10]: https://github.com/bl4ckdu5t
 [11]: http://twitter.com/josephrexme
 [12]: https://dc414.org/
 [13]: http://resources.infosecinstitute.com/author/joseph-rex/
-[14]: http://bl4ckdu5t.deviantart.com
-[15]: http://josephrex.me/exploring-svg-for-absolute-beginners/ "Exploring SVG for beginners"
-[16]: http://about.me/joerex101
-[17]: http://funkwood.deviantart.com/
-[18]: http://funkwood.deviantart.com/art/Computer-hacker-172206222
 [19]:https://www.amazon.com/Python-Programming-Cookbook-Burkhard-Meier/dp/1785283758
 [20]:https://www.packtpub.com

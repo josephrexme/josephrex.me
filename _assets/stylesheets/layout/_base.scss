@@ -72,8 +72,9 @@ input{
   font-family: inherit;
 }
 
-dfn, abbr, acronym{
-  border-bottom: dashed thin $color-brand-4;
+dfn, abbr{
+  border-bottom: dotted 2px $color-brand-4;
+  text-decoration: none;
 }
 b, strong{
   font-weight: 400;
