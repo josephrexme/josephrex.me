@@ -6,8 +6,6 @@
 //
 //
 
-var threadContainer = document.getElementById('disqus_thread');
-var crossOnTrigger = document.querySelector('.comments__trigger__plus');
 // http://dustindiaz.com/smallest-domready-ever
 function ready(cb) {
   /in/.test(document.readyState) // in = loadINg
@@ -47,6 +45,7 @@ ready(function(){
 
 // Barba Pjax Page Load Listener
 Barba.Dispatcher.on('transitionCompleted', function() {
+  var threadContainer = document.getElementById('disqus_thread');
   // TypeSet MathJax
   MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
   // Share Post dropdown
@@ -91,6 +90,7 @@ Barba.Dispatcher.on('transitionCompleted', function() {
 // Disqus Init
 function disqusComments() {
   var disqus_shortname = 'josephrexme';
+  var crossOnTrigger = document.querySelector('.comments__trigger__plus');
   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
   if(typeof(DISQUS) === 'undefined'){
