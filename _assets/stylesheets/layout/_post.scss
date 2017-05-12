@@ -41,6 +41,9 @@
     background: $white;
     box-shadow: 0 0 2px rgba($black, .2);
     text-align: left;
+    transform: translateY(20px) scale(0);
+    transform-origin: bottom;
+    transition: transform .5s ease-in-out;
     &::after{
       content: '';
       display: block;

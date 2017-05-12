@@ -53,7 +53,8 @@ Barba.Dispatcher.on('transitionCompleted', function() {
   if(shareBtn){
     shareBtn.addEventListener('click', function(e){
       var dropDown = document.querySelector('.post__sharelinks');
-      dropDown.style.display = dropDown.style.display == 'block' ? 'none' : 'block';
+      var openedSharedClass = 'is-opened-sharelinks';
+      dropDown.classList.toggle(openedSharedClass);
     });
   }
   // Progressive Reading Bar
@@ -105,7 +106,7 @@ function disqusComments() {
         crossOnTrigger.classList.remove('comments__trigger--animated');
         crossOnTrigger.classList.add('comments__trigger--xclose');
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      },3000);
+      },5000);
     }else{
       crossOnTrigger.classList.add('comments__trigger--xclose');
     }
