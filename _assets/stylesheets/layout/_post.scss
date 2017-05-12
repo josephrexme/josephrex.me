@@ -39,7 +39,9 @@
     width: 120px;
     padding: 0 10px;
     background: $white;
-    box-shadow: 0 0 2px rgba($black, .2);
+    border: solid thin #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba($black, .05);
     text-align: left;
     transform: translateY(20px) scale(0);
     transform-origin: bottom;
