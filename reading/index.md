@@ -25,6 +25,7 @@ Here's a list of books I've read and will be reading:
 - Pride and Prejudice - Jane Austen
 - Treasure Island - Robert Louis Stevenson
 - Aesop's Fables
+- [Growing Gills - How to find creative focus when you're drowning in your daily life][13]
 - Personal Kanban - Jim Benson
 - [So Good They Can't Ignore You][3] - Cal Newport
 - [Soft Skills][4] - John Sonmez
@@ -42,3 +43,4 @@ Here's a list of books I've read and will be reading:
 [10]:https://www.amazon.com/gp/product/0134076427/
 [11]:https://www.amazon.com/gp/product/032157351X/
 [12]:http://algs4.cs.princeton.edu/home/
+[13]:https://www.amazon.com/dp/B07284HSHQ/
