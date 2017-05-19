@@ -173,7 +173,7 @@ How does EQCSS handle this? As said earlier, EQCSS does not use container querie
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QfM_JwSDdjo" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Here's eqcss addressing the problem above. As of the time of testing it only behaves weird in Chrome Canary (Chrome 60)
+Here's eqcss addressing the problem above. As of the time of testing it only behaves weird in Chrome Canary (Chrome 60) and that's not surprising as we see [with the growth of Chrome things get weird like it did with will-change][26].
 
 <iframe width="100%" height="300" src="//jsfiddle.net/bl4ckdu5t/6wuzuer5/embedded/result,css,html/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
@@ -217,3 +217,4 @@ and a demonstation of it when resized:
 [23]: http://hugogiraudel.com/2014/04/22/why-element-queries-matter/
 [24]: https://bradfrost.github.io/this-is-responsive/resources.html#element-queries
 [25]: https://github.com/eqcss/eqcss#documentation--tutorials
+[26]: https://greensock.com/will-change
