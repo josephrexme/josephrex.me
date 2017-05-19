@@ -76,6 +76,11 @@ Barba.Dispatcher.on('transitionCompleted', function() {
   // Show/Hide Disqus comments
   var commentTrigger = document.querySelector('.js-toggleComments');
   if(commentTrigger){
+    var disqus_config = function() {
+      this.page.url = document.querySelector('[rel="canonical"]').href;
+      this.page.identifier = document.querySelector('[property="og:title"]').content
+        .replace(' ', '-');
+    };
     commentTrigger.addEventListener('click', function() {
       var threadVisibility = threadContainer.style.display;
       threadContainer.style.display = threadVisibility == 'none' ? 'block' : 'none';
