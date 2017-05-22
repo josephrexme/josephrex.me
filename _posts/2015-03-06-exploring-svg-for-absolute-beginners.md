@@ -4,6 +4,7 @@ author: Joseph Rex
 layout: post
 comments: true
 permalink: /exploring-svg-for-absolute-beginners/
+tags: svg
 ---
 
 SVG is one of the cool stuff of these HTML5 days and if you aren't already fiddling with them already, either by using ready SVG icons or writing your own SVG, then you are missing out on a lot.
