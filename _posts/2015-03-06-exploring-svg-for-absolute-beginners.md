@@ -218,3 +218,7 @@ And right there, I introduced something seemingly new which was the use of CSS o
 {% endhighlight %}
 
 You can also create Polygons and more complex shapes with SVG. The *polygon* element is really an interesting one to explore. For other complex shapes, we need to use `path` element to draw their co-ordinates. This will be done in the next article of my SVG series. If SVG is incapable of handling the kind of pixel based image you want, then you may also give HTML5 canvas a try.
+
+The [SVG pocket guide][1] is very handy when learning SVG:
+
+[1]: http://svgpocketguide.com/book
