@@ -23,7 +23,12 @@ ready(function(){
     exit: function() {
       var _this = this;
       return new Promise(function(resolve, reject){
-        resolve(_this.oldContainer.animate({ opacity: [0.5, 0] }, 400));
+        resolve(
+          _this.oldContainer.animate(
+            { opacity: [0.5, 0], transform: ['scale(0.8)', 'scale(0)'] },
+            { duration: 400, easing: 'ease-out' }
+          )
+        );
       });
     },
     reveal: function() {
@@ -31,10 +36,11 @@ ready(function(){
       var newPage = this.newContainer;
       document.body.scrollTop = 0;
       this.oldContainer.style.display = 'none';
-      var fadeIn = newPage.animate({ opacity: [0.5, 1] }, 400);
-      fadeIn.onfinish = function(e){
-        _this.done();
-      }
+      newPage.firstElementChild.animate(
+        { transform: ['scale(0.3) rotate(45deg)', 'scale(0.5) rotate(135deg)', 'scale(1) rotate(360deg)'] },
+        { duration: 600, easing: 'ease-in-out' }
+      );
+      _this.done();
     }
   });
   Barba.Pjax.getTransition = function() {
@@ -66,8 +72,8 @@ Barba.Dispatcher.on('transitionCompleted', function() {
       var dw = document.body.scrollWidth,
           dh = document.body.scrollHeight,
           wh = window.innerHeight,
-          disqusHeight = threadContainer.clientHeight,
-          bottomContentHeight = 700;
+          disqusHeight = threadContainer ? threadContainer.clientHeight : 0, // For pages without disqus
+          bottomContentHeight = threadContainer ? 700 : 370;
           pos = (rootElement).scrollTop,
           bw = ((pos / ((dh - (bottomContentHeight + disqusHeight)) - wh)) * 100);
       bar.style.width = bw+'%';
