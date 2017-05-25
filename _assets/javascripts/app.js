@@ -25,8 +25,8 @@ ready(function(){
       return new Promise(function(resolve, reject){
         resolve(
           _this.oldContainer.animate(
-            { opacity: [0.5, 0], transform: ['scale(1)', 'scale(.4)'] },
-            { duration: 400, easing: 'ease-out' }
+            { opacity: [0.5, 0], transform: ['scale(.8)', 'scale(.4)'] },
+            { duration: 800, easing: 'ease-out' }
           )
         );
       });
@@ -38,7 +38,7 @@ ready(function(){
       this.oldContainer.style.display = 'none';
       newPage.firstElementChild.animate(
         { opacity: [0.5, 1], transform: ['scale(1.2)', 'scale(1)'] },
-        { duration: 600, easing: 'ease-in-out' }
+        { duration: 1000, easing: 'ease-in-out' }
       );
       _this.done();
     }
