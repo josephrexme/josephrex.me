@@ -25,7 +25,7 @@ ready(function(){
       return new Promise(function(resolve, reject){
         resolve(
           _this.oldContainer.animate(
-            { opacity: [0.5, 0], transform: ['scale(0.8)', 'scale(0)'] },
+            { opacity: [0.5, 0], transform: ['scale(1)', 'scale(.4)'] },
             { duration: 400, easing: 'ease-out' }
           )
         );
@@ -37,7 +37,7 @@ ready(function(){
       document.body.scrollTop = 0;
       this.oldContainer.style.display = 'none';
       newPage.firstElementChild.animate(
-        { transform: ['scale(0.3) rotate(45deg)', 'scale(0.5) rotate(135deg)', 'scale(1) rotate(360deg)'] },
+        { opacity: [0.5, 1], transform: ['scale(1.2)', 'scale(1)'] },
         { duration: 600, easing: 'ease-in-out' }
       );
       _this.done();

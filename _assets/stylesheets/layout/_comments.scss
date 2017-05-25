@@ -18,6 +18,7 @@
       height: 30px;
       border-right: solid thin black;
       transition: .5s linear;
+      transform: translateZ(0);
       &::after{
         content: '';
         display: block;
@@ -31,7 +32,7 @@
       animation: cross-rotate 1s infinite;
     }
     &--xclose{
-      transform: rotate(45deg);
+      transform: rotate(45deg) translateZ(0);
       transition: .5s linear;
     }
   }
