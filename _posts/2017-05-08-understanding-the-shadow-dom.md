@@ -10,7 +10,9 @@ For the decades programming have existed there have been abstractions over abstr
 which to many appear only as simplification of process and better <abbr title="Developer Experience">DX</abbr>. Yes that is the ultimate goal but it gets there by taking some tunnels.
 <!--more-->
 
-{% image https://res.cloudinary.com/strich/image/upload/v1494252872/shadow-dom_owxzlx.jpg class="image figure--fullwidth" alt="Shadow DOM banner" %}
+<figure class="figure--fullwidth">
+{% image https://res.cloudinary.com/strich/image/upload/v1494252872/shadow-dom_owxzlx.jpg class="image" alt="Shadow DOM banner" %}
+</figure>
 
 [Modularity is confirmed an attribute of well written programs][1] and one of the goals for
 modularity is encapsulation. This is what the shadow DOM offers.
@@ -59,8 +61,9 @@ shadow.innerHTML = '<span>This should appear!</span><style>span{ color: red}</st
 
 If you work with React, this is the `ReactDOM.render()` of shadow DOM.
 
-<figure>
-  {% image http://res.cloudinary.com/strich/image/upload/v1494275896/screenshot-shadow-dom_ay4top.png alt="Shadow DOM insertion" class="image figure--fullwidth" %}
+<figure class="figure--fullwidth">
+  {% image http://res.cloudinary.com/strich/image/upload/v1494275896/screenshot-shadow-dom_ay4top.png alt="Shadow DOM insertion" class="image" %}
+  <figcaption>Shadow DOM on chrome 60</figcaption>
 </figure>
 
 As shown in the figure above, the shadow root can take its own style that applies to that particular component only. Not messing with the rest of the DOM. Best part is the shadow node also doesn't take the styles of whatever parent elements it has since it is an external and detached DOM from the regular DOM. To make it take its parent styles you'd have to explicitly tell it to:
