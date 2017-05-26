@@ -18,7 +18,7 @@ But what happens with Sass now? Does it stay exactly the same till its only rele
 
 To solve maintainance problem in CSS we've seen OOCSS, RSCSS, SMACSS, and BEM. With BEM being the most adopted, we opt-in to create namespaced classes like *Block__element*. But as [Mark Dalgleish][8] had [said][1], this should be a baked-in feature like it now is with those CSS-in-JS tools but we have to opt-in to use it in non-SPA apps using Sass and can't leverage the benefits of CSS-in-JS.
 
-To solve this, Sass doesn't really need to wait for CSS. The module system can be built to include namespacing but as [Chris Eppstein][9] [nentioned][10], it was delayed because of the switch from Ruby. Before getting aware of this, I'd raised [an issue][11] on creating a namespacing syntax for Sass. It was initially thought of as:
+To solve this, Sass doesn't really need to wait for CSS. The module system can be built to include namespacing but as [Chris Eppstein][9] [mentioned][10], it was delayed because of the switch from Ruby. Before getting aware of this, I'd raised [an issue][12] on creating a namespacing syntax for Sass. It was initially thought of as:
 
 {% highlight scss %}
 @import 'partial_file', 'my-namespace'
@@ -153,3 +153,4 @@ compiling to the following CSS `.button__primary{ background: skyblue }`. But th
 [9]:https://twitter.com/chriseppstein
 [10]:https://hashnode.com/ama/with-sass-team-cj0j8hjmy0005f5533xzd86xs#cj0jwc58p00313n53ujyilglw
 [11]:https://www.dartlang.org/
+[12]:https://github.com/sass/sass/issues/2285
