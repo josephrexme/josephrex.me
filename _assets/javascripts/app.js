@@ -25,8 +25,12 @@ ready(function(){
       return new Promise(function(resolve, reject){
         resolve(
           _this.oldContainer.animate(
-            { opacity: [0.5, 0], transform: ['scale(.8)', 'scale(.4)'] },
-            { duration: 800, easing: 'ease-out' }
+            {
+              opacity: [0.5, 0],
+              transform: ['scale(.9)', 'scale(.7)'],
+              transformOrigin: ['top center', 'top center']
+            },
+            { duration: 1000, easing: 'ease-out' }
           )
         );
       });
@@ -37,7 +41,11 @@ ready(function(){
       document.body.scrollTop = 0;
       this.oldContainer.style.display = 'none';
       newPage.firstElementChild.animate(
-        { opacity: [0.5, 1], transform: ['scale(1.2)', 'scale(1)'] },
+        {
+          opacity: [0.5, 1],
+          transform: ['scale(1.1)', 'scale(1)'],
+          transformOrigin: ['bottom center', 'bottom center']
+        },
         { duration: 1000, easing: 'ease-in-out' }
       );
       _this.done();
