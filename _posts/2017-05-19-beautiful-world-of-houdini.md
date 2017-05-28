@@ -41,7 +41,7 @@ and if you hate deriving rgb() values of hex colors when you want to add translu
 
 With these and more in the [current spec][9] it's obvious that houdini is worth looking forward to and passing on ideas to.
 
-In the next article I'll write about my thoughts on namespacing in CSS and how we may achieve it in preprocessors if accepted and in CSS if we get importable modules, nesting in the language, and houdini.
+In the [next article][10] I write about my thoughts on namespacing in CSS and how we may achieve it in preprocessors if accepted, and in CSS if we get importable modules, nesting, and houdini.
 
 [1]: https://babeljs.io
 [2]: https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/#so-why-dont-we-just-write-more-css-polyfills
@@ -52,3 +52,4 @@ In the next article I'll write about my thoughts on namespacing in CSS and how w
 [7]: https://github.com/bkardell/Hitch/wiki/FAQ
 [8]: https://github.com/GlitterOrg/pipeline
 [9]: https://github.com/w3c/css-houdini-drafts/wiki/specs
+[10]: https://josephrex.me/enter-sass-namespacing/
