@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <description>Ramblings on design, code, fitness and food by Joseph Rex
+</description>
+    <link>https://josephrex.me/</link>
+    <atom:link href="https://josephrex.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 04 Jun 2017 18:23:06 -0500</pubDate>
+    <lastBuildDate>Sun, 04 Jun 2017 18:23:06 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>CRIC: Confidence Reflex Intuition Consistency</title>
+        <description>&lt;p&gt;I went into the basketball court to play last week after a long time. That was maybe 2 years ago and the last time before that some other 2 years. There were a few times I’d gone and just made some hoops while a playing team is on a timeout but this time I really played and it was for just 10 minutes.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;That 10 minutes made me learn more about myself. In my software development journey I’ve had to try new technologies (tools, frameworks, libraries) and I’ve recently been suffering from &lt;a href=&quot;https://en.wikipedia.org/wiki/Neophobia&quot;&gt;neophobia&lt;/a&gt; (Fear of trying new things) but I try anyway. I vehemently defeat the inertia to not do things and when beaten once it becomes a little easier with a lesser mental barrier.&lt;/p&gt;
+
+&lt;p&gt;The neophobia is caused by lack of &lt;strong&gt;confidence&lt;/strong&gt; and that was exactly what I saw in myself on the basketball court. I got the ball just once from a pass and I was quite choked. I could have tried to drive-in like I would have some years ago but I just stood for a while then I looked at the rim and thought I could make a hoop and  reconsidered that I’d only just gotten in the game and may piss the other guys off if I missed my shot. Eventually I passed and it was my biggest action in the game.&lt;/p&gt;
+
+&lt;p&gt;I saw a team mate in need for a screen and I only realized I should have gone for a screen after the ball was stolen by the opponent even though he didn’t ask. My game &lt;strong&gt;reflexes&lt;/strong&gt; weren’t with me and I lacked the &lt;strong&gt;intuition&lt;/strong&gt; to do the right things. It was the mental culprit for me not making a shot and not giving that screen.&lt;/p&gt;
+
+&lt;p&gt;A concerned lad couldn’t help but notice how bad I’d gotten since the last time he saw me play and asked “Have you been &lt;a href=&quot;http://www.imdb.com/title/tt2041488/&quot;&gt;thunderstrucked&lt;/a&gt;?” which I replied to saying I’m yet to find who switched my talents but I knew to myself that I’d only let my talent slip away by not being &lt;strong&gt;consistent&lt;/strong&gt;. I was a good player even though not the best. I could still use some coaching and more training back then but I always stood out in games I played. I’ve become a ghost now.&lt;/p&gt;
+
+&lt;p&gt;I got back home to compensate for the basketball failure by getting a few projects done on my computer. I’d realized that the reason for my neophobia is lack of CRIC (Confidence, Reflex, Intuition, and Consistency) &lt;em&gt;pronounced creek&lt;/em&gt;. This isn’t an easy thing to gain in any field especially software development where &lt;a href=&quot;https://medium.com/the-year-of-the-looking-glass/the-imposter-syndrome-9e23e2326d88&quot;&gt;imposter syndrome&lt;/a&gt; thrives, but with some will-power I got the CRIC.&lt;/p&gt;
+
+&lt;p&gt;I sought to demo some libraries I found interesting and it’s been easy trying different things on them. Now’s time for me to go get the CRIC in basketball games too.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 04 Jun 2017 00:00:00 -0500</pubDate>
+        <link>https://josephrex.me/cric/</link>
+        <guid isPermaLink="true">https://josephrex.me/cric/</guid>
+        
+        <category>opinions</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Enter Sass namespacing</title>
+        <description>&lt;p&gt;Sass has always been to me that one preprocessor that makes others not worth learning. I think stylus is quite okay but I’ve never used Less and I don’t even know if it is spelled LESS or Less but we’re not here to talk about less we are here to talk about more (pun intended). More features to the amazing Sass.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;Maintaining CSS has been at large scale has been an issue that’s been brought up many times. Companies with well engineered programs unfortunately still have a hard time keeping a properly maintained CSS managed by multiple members in a team. Thanks to React and all the goodness that has come with it like CSS-in-JS, we’ve been able to thwart this problem to a great extent by &lt;a href=&quot;https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660&quot;&gt;scoping styles with JavaScript&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before &lt;a href=&quot;https://facebook.github.io/react/docs/jsx-in-depth.html&quot;&gt;JSX&lt;/a&gt;, &lt;a href=&quot;https://github.com/css-modules/css-modules&quot;&gt;CSS Modules&lt;/a&gt;, &lt;a href=&quot;https://github.com/styled-components/styled-components&quot;&gt;Styled Components&lt;/a&gt;, &lt;a href=&quot;https://github.com/paypal/glamorous&quot;&gt;Glamorous&lt;/a&gt; became the new buzzwords in webdev, we had Sass helping with most of our styling needs. This is in no way saying Sass is mutually exclusive of all of those tools. &lt;a href=&quot;https://hashnode.com/ama/with-sass-team-cj0j8hjmy0005f5533xzd86xs#cj0krco1k000m1553mvthzqoi&quot;&gt;You could use Sass with CSS Modules if you want to&lt;/a&gt;. But Sass has been there and is still there. Most of the new approaches to CSS provide a baked in way to maintain CSS, avoid scoping conflicts, reduce specificity and do &lt;a href=&quot;https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660&quot;&gt;even more&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But what happens with Sass now? Does it stay exactly the same till its only relevance is creation of compact &lt;a href=&quot;https://codepen.io&quot;&gt;pens&lt;/a&gt; like HTML preprocessors are mostly used? Will it be the end of Sass in production. The Sass project development is not as fast-paced as it once was. A lot of decisions have to be made for new features especially because the growth of Sass relies on that of CSS.&lt;/p&gt;
+
+&lt;p&gt;To solve maintainance problem in CSS we’ve seen OOCSS, RSCSS, SMACSS, and BEM. With BEM being the most adopted, we opt-in to create namespaced classes like &lt;em&gt;Block__element&lt;/em&gt;. But as &lt;a href=&quot;https://twitter.com/markdalgleish&quot;&gt;Mark Dalgleish&lt;/a&gt; had &lt;a href=&quot;https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660&quot;&gt;said&lt;/a&gt;, this should be a baked-in feature like it now is with those CSS-in-JS tools but we have to opt-in to use it in non-SPA apps using Sass and can’t leverage the benefits of CSS-in-JS.&lt;/p&gt;
+
+&lt;p&gt;To solve this, Sass doesn’t really need to wait for CSS. The module system can be built to include namespacing but as &lt;a href=&quot;https://twitter.com/chriseppstein&quot;&gt;Chris Eppstein&lt;/a&gt; &lt;a href=&quot;https://hashnode.com/ama/with-sass-team-cj0j8hjmy0005f5533xzd86xs#cj0jwc58p00313n53ujyilglw&quot;&gt;mentioned&lt;/a&gt;, it was delayed because of the switch from Ruby. Before getting aware of this, I’d raised &lt;a href=&quot;https://github.com/sass/sass/issues/2285&quot;&gt;an issue&lt;/a&gt; on creating a namespacing syntax for Sass. It was initially thought of as:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;partial_file&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;my-namespace&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;with this as an alternative option to specify the namespace from the module/partial:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@namespace&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;my-namespace&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;which would yield a CSS class as &lt;code&gt;.my-namespace__foo&lt;/code&gt;. Then I soon realized the &lt;code&gt;@namespace&lt;/code&gt; at-syntax was already being used in CSS which led to a change from that to this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@module&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;my-namespace&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As seen in the issue, this was closed without much consideration and before I could get into explaining myself. It could have been nice to at least be told the module system targeted for Sass 4 addresses namespacing.&lt;/p&gt;
+
+&lt;p&gt;This is not new as it’s exactly what CSS-modules does. So the idea of concatenating classes to a namespace shouldn’t hurt. I never really tried to use id(s) with CSS modules to know if it also namespace those but id(s) aren’t so entertained in CSS anyway so a namespace system could ignore them completely leaving all the ids in a specified module just as they were written.&lt;/p&gt;
+
+&lt;p&gt;This module syntax is meant to just act like the ampersand (&lt;code&gt;&amp;amp;&lt;/code&gt;) concatenation. making it possible to just add pseudo selectors, pseudo elements, attribute selectors/combinators, and any form of complex selector to it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@module&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;my-namespace&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ni&quot;&gt;darkgreen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;::after&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;^=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;The&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;bolder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:first-letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;rem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The biggest concern with this scoping for &lt;code&gt;@extend&lt;/code&gt; and when you think of it, it is no concern at all. Or I could be missing something and be totally wrong but the way I think of this is that &lt;code&gt;@extend&lt;/code&gt; only works in the same file/module/partial and if that’s the case, extend operation is performed across the classes before the concatenation happens so if&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@module&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;my-namespace&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nc&quot;&gt;.foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ni&quot;&gt;tomato&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;@extend&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;we get the resulting CSS:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.my-namespace__foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.my--namespace__bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tomato&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.my-namespace__bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;But Chris mentioned that the module system to be expected in Sass version 4 is heavily inspired by &lt;a href=&quot;https://www.dartlang.org/&quot;&gt;dart&lt;/a&gt;’s module system and its initial design phase is complete which means all of this may never actually come true. From Chris’ statement from the &lt;a href=&quot;https://hashnode.com/ama/with-sass-team-cj0j8hjmy0005f5533xzd86xs#cj0jwc58p00313n53ujyilglw&quot;&gt;Sass team AMA&lt;/a&gt; I derived that modules would act somewhat like mixins when imported. So here’s what dart syntax looks like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;package:angular2/angular2.dart&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;hero.dart&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Component&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;selector:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;hero-detail&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;template:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;    &amp;lt;div *ngIf=&amp;quot;hero != null&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;      &amp;lt;h2&amp;gt; details!&amp;lt;/h2&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;      &amp;lt;div&amp;gt;&amp;lt;label&amp;gt;id: &amp;lt;/label&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;      &amp;lt;div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;        &amp;lt;label&amp;gt;name: &amp;lt;/label&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;        &amp;lt;input [(ngModel)]=&amp;quot;hero.name&amp;quot; placeholder=&amp;quot;name&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;      &amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;s1&quot;&gt;    &amp;lt;/div&amp;gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;directives:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;COMMON_DIRECTIVES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HeroDetailComponent&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;Hero&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hero&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With a library prefixed with &lt;code&gt;package:&lt;/code&gt; in the import statement and for a local module within the file system the prefix is not required. That’s like we already have in SCSS now except we don’t have to specify extension.&lt;/p&gt;
+
+&lt;p&gt;It also have the following syntax for importing modules:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-dart&quot; data-lang=&quot;dart&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// import entire module with a namespace prefix&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;first.dart&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myModule&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// import only foo from module&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;first.dart&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;show&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// import everything except foo&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;first.dart&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;hide&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is definitely great and better than the earlier suggested &lt;code&gt;import &#39;file&#39; &#39;myNamespace&#39;&lt;/code&gt; but how does it get used when imported? Since they are meant to work like mixins my thought is they should be in the following format instead of an automatic concatenation:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nt&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;components&amp;#39;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;show&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.primary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ni&quot;&gt;skyblue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;compiling to the following CSS &lt;code&gt;.button__primary{ background: skyblue }&lt;/code&gt;. But these are all speculations and not even standard ones at that so I’m glad this is being worked on for version 4 and I look forward to it because now is the time Sass really needs to join the league of making CSS more maintainable.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 25 May 2017 00:00:00 -0500</pubDate>
+        <link>https://josephrex.me/enter-sass-namespacing/</link>
+        <guid isPermaLink="true">https://josephrex.me/enter-sass-namespacing/</guid>
+        
+        <category>frontend</category>
+        
+        <category>sass</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Beautiful world of houdini</title>
+        <description>&lt;p&gt;Besides the beautiful name, houdini would be a great addition to web technologies when eventually implemented by browsers. Before going into what it is exactly, you can think of it as the &lt;a href=&quot;https://babeljs.io&quot;&gt;babel&lt;/a&gt; of CSS. Each time I come across the name Houdini, I imagine Agent Phil Coulson saying &lt;em&gt;“tahiti, it’s a magical place”&lt;/em&gt;.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;figure--fullwidth&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/strich/image/upload/v1494943349/Houdini_tndspt.jpg&quot; alt=&quot;Houdini poster by Joseph Rex&quot; class=&quot;image&quot; /&gt;
+&lt;figcaption&gt;Houdini, It&#39;s a beautiful place. You should go there sometime&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The objective of the CSS houdini is to create an extendable CSS where everyone can add new custo features without a hassle to the language. &lt;a href=&quot;https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/#so-why-dont-we-just-write-more-css-polyfills&quot;&gt;Phillip Walton explains why CSS can’t be extended with polyfills like we do with JS today&lt;/a&gt;. The goal of the Houdini task force is to provide more access to the rendering pipeline on clients (Browsers, Webviews) because of the current limited access.&lt;/p&gt;
+
+&lt;p&gt;In a &lt;a href=&quot;https://josephrex.me/anticipated-birth-of-element-queries/&quot;&gt;recent article I talked about container queries&lt;/a&gt; and how &lt;a href=&quot;http://elementqueries.com&quot;&gt;eqcss&lt;/a&gt; is a great solution for them. But the problem is if things already accepted into the spec take forever to be implemented, how long would it take for something that’s yet to be accepted. One of the authors of eqcss started writing a &lt;a href=&quot;https://tomhodgins.github.io/element-queries-spec/element-queries.html&quot;&gt;proposal&lt;/a&gt; for it already but it’s not close to being accepted yet. Before this there’s been &lt;a href=&quot;http://gridstylesheets.org/&quot;&gt;GSS&lt;/a&gt; which may never have a future without houdini.&lt;/p&gt;
+
+&lt;p&gt;For some other possible houdini extensions in the wild there’s &lt;a href=&quot;https://github.com/bkardell/Hitch/wiki/FAQ&quot;&gt;hitch&lt;/a&gt; that lets you create your own custom selectors, &lt;a href=&quot;https://github.com/GlitterOrg/pipeline&quot;&gt;glitter&lt;/a&gt; which goes a step further from CSS custom properties (or CSS variables) to let you define operations on properties. Some of these things are already achievable with preprocessors but here’s how glitter may handle style extension:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.pod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* #00f */&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;--color-filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;inverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* Produces #f00 red */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.bay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ni&quot;&gt;papayawhip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;--color-filter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;darken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;and if you hate deriving rgb() values of hex colors when you want to add translucency with an alpha channel you can simply do that like Sass already does:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.pod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ni&quot;&gt;midnightblue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With these and more in the &lt;a href=&quot;https://github.com/w3c/css-houdini-drafts/wiki/specs&quot;&gt;current spec&lt;/a&gt; it’s obvious that houdini is worth looking forward to and passing on ideas to.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;https://josephrex.me/enter-sass-namespacing/&quot;&gt;next article&lt;/a&gt; I write about my thoughts on namespacing in CSS and how we may achieve it in preprocessors if accepted, and in CSS if we get importable modules, nesting, and houdini.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 19 May 2017 00:00:00 -0500</pubDate>
+        <link>https://josephrex.me/beautiful-world-of-houdini/</link>
+        <guid isPermaLink="true">https://josephrex.me/beautiful-world-of-houdini/</guid>
+        
+        <category>frontend</category>
+        
+        <category>css</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Understanding the shadow dom</title>
+        <description>&lt;p&gt;For the decades programming have existed there have been abstractions over abstractions
+which to many appear only as simplification of process and better &lt;abbr title=&quot;Developer Experience&quot;&gt;DX&lt;/abbr&gt;. Yes that is the ultimate goal but it gets there by taking some tunnels.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;figure--fullwidth&quot;&gt;
+&lt;img src=&quot;https://res.cloudinary.com/strich/image/upload/v1494252872/shadow-dom_owxzlx.jpg&quot; class=&quot;image&quot; alt=&quot;Shadow DOM banner&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://josephrex.me/cohesion-against-coupling/&quot;&gt;Modularity is confirmed an attribute of well written programs&lt;/a&gt; and one of the goals for
+modularity is encapsulation. This is what the shadow DOM offers.&lt;/p&gt;
+
+&lt;p&gt;If you’ve been developing long enough you’ve probably heard this &lt;a href=&quot;https://www.w3.org/wiki/JavaScript_best_practices#Avoid_globals&quot;&gt;so many&lt;/a&gt; &lt;a href=&quot;http://lucybain.com/blog/2014/js-dont-touch-global-scope/&quot;&gt;times&lt;/a&gt; &lt;a href=&quot;https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/&quot;&gt;by now&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Do not mess with the global scope&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Although it may seem totally unrelated but shadow dom addresses the scope issue as well. It’s just different in that we aren’t talking about global variables with literals. So this isn’t about scoping &lt;code&gt;this&lt;/code&gt;, &lt;code&gt;self&lt;/code&gt; or &lt;code&gt;global&lt;/code&gt; or whatever you way you call &lt;a href=&quot;http://2ality.com/2016/09/global.html&quot;&gt;global scope&lt;/a&gt; in JavaScript.&lt;/p&gt;
+
+&lt;p&gt;A lot of us believe the &lt;a href=&quot;https://medium.com/seek-developers/the-end-of-global-css-90d2a4a06284&quot;&gt;problem with CSS is that all its classes (and ids if you use those in CSS) are global&lt;/a&gt;. And to solve this we’ve tried things like OOCSS, BEM, &lt;a href=&quot;http://rscss.io&quot;&gt;rscss&lt;/a&gt; and all of such solutions that require human effort to maintain a namespace out of the global scope. The problem with this so far is inexperienced devs would join larger codebases and mess it all up.&lt;/p&gt;
+
+&lt;p&gt;If you happen to be using Sass nesting without a style lint to prompt for errors it wouldn’t be long before you have this in your codebase:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;--myModifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.i-like-messy-code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-myNewModifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;__elementB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;765px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;.foo.bar.baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;danger!!!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;_element_of_element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;red&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I couldn’t control myself so I made that a little worse than it should look but the point is human are prone to errors and there are times single underscores would be used, single hyphens would be used when trying to follow something like BEM.&lt;/p&gt;
+
+&lt;p&gt;Well &lt;a href=&quot;https://www.youtube.com/watch?v=z6ODMDtG6-I&quot;&gt;good news everyone&lt;/a&gt;, CSS-modules solves this problem and even though it may also be abused it seem like a better option over sprinkling global styles everywhere. The problem with CSS-modules is what if you aren’t building a React or Vue app? Or anything that complex at all? There should be a way to handle this in the web platform.&lt;/p&gt;
+
+&lt;p&gt;The shadow DOM tackles this problem exactly and more. It offers a way to encapsulate components as part of &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Web_Components&quot;&gt;web components&lt;/a&gt;. Here’s an example&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;.root&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;shadow&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attachShadow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;open&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;lt;span&amp;gt;This should appear!&amp;lt;/span&amp;gt;&amp;lt;style&amp;gt;span{ color: red}&amp;lt;/style&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you work with React, this is the &lt;code&gt;ReactDOM.render()&lt;/code&gt; of shadow DOM.&lt;/p&gt;
+
+&lt;figure class=&quot;figure--fullwidth&quot;&gt;
+  &lt;img src=&quot;http://res.cloudinary.com/strich/image/upload/v1494275896/screenshot-shadow-dom_ay4top.png&quot; alt=&quot;Shadow DOM insertion&quot; class=&quot;image&quot; /&gt;
+  &lt;figcaption&gt;Shadow DOM on chrome 60&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As shown in the figure above, the shadow root can take its own style that applies to that particular component only. Not messing with the rest of the DOM. Best part is the shadow node also doesn’t take the styles of whatever parent elements it has since it is an external and detached DOM from the regular DOM. To make it take its parent styles you’d have to explicitly tell it to:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;shadow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;applyAuthorStyles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’ve ever looked through the DOM when using 3rd party libraries like modals, datepickers, and whatever cool stuff you use on your websites, you’d notice some massive additions into the DOM by them. These library authors are very much aware of the CSS cascading problems so they try to increase specificity of whatever they add. In most situations, direct inline elements are added but imagine there’s a library author that decides to add classes and pass a &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; tag with the DOM insertions. The library has a class &lt;code&gt;.pod{ color: red !important }&lt;/code&gt; and in your code you’ve been trying a &lt;code&gt;.pod{ color: papayawhip }&lt;/code&gt; that doesn’t seem to be working. This is the kind of clash that happens when you have everyone peeing in the DOM. ShadowDOM gives every library author their own bathroom.&lt;/p&gt;
+
+&lt;p&gt;Also, like the virtual dom in React, you can make traversals in the shadow dom and make only few direct data passing into the DOM improving performance over directly messing with the DOM.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 08 May 2017 00:00:00 -0500</pubDate>
+        <link>https://josephrex.me/understanding-the-shadow-dom/</link>
+        <guid isPermaLink="true">https://josephrex.me/understanding-the-shadow-dom/</guid>
+        
+        <category>frontend</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Anticipated birth of element queries</title>
+        <description>&lt;p&gt;There have been &lt;a href=&quot;https://alistapart.com/article/container-queries-once-more-unto-the-breach&quot;&gt;so many&lt;/a&gt; &lt;a href=&quot;https://au.si/css-container-queries&quot;&gt;talks&lt;/a&gt; &lt;a href=&quot;http://www.xanthir.com/b4PR0&quot;&gt;on&lt;/a&gt; &lt;a href=&quot;http://www.xanthir.com/b4VG0&quot;&gt;constraint-based&lt;/a&gt; &lt;a href=&quot;https://ethanmarcotte.com/wrote/on-container-queries/&quot;&gt;layouts&lt;/a&gt; &lt;a href=&quot;https://ethanmarcotte.com/wrote/a-bit-more-on-container-queries/&quot;&gt;or&lt;/a&gt; &lt;a href=&quot;https://www.smashingmagazine.com/2013/06/media-queries-are-not-the-answer-element-query-polyfill/&quot;&gt;container/element&lt;/a&gt; &lt;a href=&quot;http://codepen.io/tomhodgins/post/what-the-heck-are-element-queries-container-queries&quot;&gt;queries&lt;/a&gt; &lt;a href=&quot;http://hugogiraudel.com/2014/04/22/why-element-queries-matter/&quot;&gt;lately&lt;/a&gt; and that’s because without them responsive styling with &lt;a href=&quot;http://ianstormtaylor.com/media-queries-are-a-hack/&quot;&gt;media queries will remain an unpleasant hack&lt;/a&gt;.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;What does any of all that mean? Constraints based layouts puts child layouts or components to the scope of their parents such that changes made are relative to the parent/container size.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/container-qs-1-c9d50db13c076e091fa80854950caa78.png&quot; alt=&quot;Container and child fluidity constraint&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;What may come to your thought at first is &lt;strong&gt;just use a percentage value to achieve a size constrained to parent&lt;/strong&gt;. By doing that we’d be making a &lt;a href=&quot;http://css-discuss.incutio.com/wiki/Fluid_Design&quot;&gt;fluid design&lt;/a&gt; and we had that before responsive design with media queries yet we needed more responsiveness beyond fluidity.&lt;/p&gt;
+
+&lt;p&gt;Media queries allow you make certain styles based on the size of the viewport &lt;code&gt;(min-width: 720px)&lt;/code&gt; means target viewports that are 720 or wider. Consider having that constraint to be in the scope of an element instead.&lt;/p&gt;
+
+&lt;p&gt;What is an element scope? Like &lt;a href=&quot;https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/&quot;&gt;scopes in JavaScript&lt;/a&gt;, &lt;a href=&quot;https://css-tricks.com/saving-the-day-with-scoped-css/&quot;&gt;scoped styles&lt;/a&gt; were implemented to limit a set of rules to an element and its children without the need for a class or any selector. But after a while they were removed from chrome and most of the other browser vendors never attempted to implement them. With its syntax,&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;section&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;style &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;scoped&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tomato&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Time to play a game&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;I left my game pads at the zoo.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/section&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;every scoped style only applies to elements within the container element that has the style but this wasn’t really solving any problem that can’t already be handled with existing selectors. Container queries are to behave somewhat like this but with a combination of the media query behavior.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/container-qs-2-51d130964a3bde189b1e0f73e3c2e618.png&quot; alt=&quot;Container scope with condition based descendant&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Up until now I’ve used container queries and element queries like they mean the exact same thing. To clarify I’ll try to explain them better. If given a syntax like in the figure above:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nt&quot;&gt;section&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;@container&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ni&quot;&gt;tomato&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;our constraint will always have to contain the depending elements (i.e a parent element) which would leave us with half the solution of what we need constraint based layout. There is so much that can be done with this which we will get into later but as of now this just shows that a container query isn’t the solution to constraint based layouts for the web, elements queries are.&lt;/p&gt;
+
+&lt;p&gt;Another syntax that have been &lt;a href=&quot;https://alistapart.com/article/container-queries-once-more-unto-the-breach&quot;&gt;proposed by the &lt;abbr title=&quot;Responsive Issues Community Group&quot;&gt;RICG&lt;/abbr&gt;&lt;/a&gt; for container queries is as below:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nt&quot;&gt;section&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:media&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ni&quot;&gt;tomato&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We could Sass that up with some nesting:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nt&quot;&gt;section&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:media&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ni&quot;&gt;tomato&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;as it shows, container queries would only ever be able to affect their descendants. Element queries on the other hand should affect just about anything. If we weren’t targeting descendants only, that same syntax could look this way:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nt&quot;&gt;section&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:media&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This means if I have a section greater than or equal to 100px make the body background lime. body doesn’t have to be a child or descendant to section to be affected by its scope. It goes beyond container scoping as a great way to address element queries however the syntax could be very misleading. Anyone with normal experience in CSS would expect &lt;code&gt;section&lt;/code&gt; to have a &lt;code&gt;body&lt;/code&gt; descendant. How do we solve the syntax problem and achieve this right?&lt;/p&gt;
+
+&lt;h3 id=&quot;solutions-to-constraint-based-layouts&quot;&gt;Solutions to constraint based layouts&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Cassowary_(software)&quot;&gt;Cassowary&lt;/a&gt; constraint satisfaction algorithm, a known layout solution used in Apple development was used as an early implementation of CCSS (Constrained Cascading Style Sheet) after which more solutions like &lt;a href=&quot;http://web-design-weekly.com/2015/01/21/gss-layout-reimagined/&quot;&gt;GSS (Grid Style Sheets)&lt;/a&gt; have tried to adapt the concept behind it.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;https://www.smashingmagazine.com/wp-content/uploads/2016/07/eqcss-logo-opt.png&quot; class=&quot;image image--wide&quot; alt=&quot;EQCSS Logo&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;More recently, &lt;a href=&quot;http://elementqueries.com&quot;&gt;EQCSS (Element Queries CSS)&lt;/a&gt; was born as a great speculative polyfill for element queries by &lt;a href=&quot;https://twitter.com/innovati&quot;&gt;Tom Hodgins&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/MaximeEuziere&quot;&gt;Maxime Euzière&lt;/a&gt;. It puts the at-rule into consideration for scoping elements like it is used with media queries and proposes the best syntax yet.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@element&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;section&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Like media queries before being used for RWD (Responsive Web Design), we could target any media without specifying any dimensions&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;screen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;the eqcss snippet would change the background color provided there is one or more &lt;code&gt;section&lt;/code&gt; element in the &lt;a href=&quot;https://www.w3.org/TR/cssom-1/&quot;&gt;CSSOM&lt;/a&gt;. Then with media queries we get responsive design with conditions:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;720px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;which element queries offer as:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@element&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.mod&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;lime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;an element could be its own constraint which would help achieve better pluggable &lt;a href=&quot;http://atomicdesign.bradfrost.com&quot;&gt;atomic design&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What happens when there is more than one element being used as constraint? Eqcss allows you to target current scope only with meta selectors&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;k&quot;&gt;@element&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;focus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;thin&lt;/span&gt; &lt;span class=&quot;ni&quot;&gt;crimson&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This would only apply a border to the input that is focused and no other input. There are more meta selectors including with &lt;a href=&quot;http://elementqueries.com/#meta-selectors&quot;&gt;demos here&lt;/a&gt;. They include &lt;code&gt;$parent&lt;/code&gt;, &lt;code&gt;$next&lt;/code&gt;, &lt;code&gt;$prev&lt;/code&gt;, and &lt;code&gt;$root&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;EQCSS allows more conditions for the scoped element including &lt;code&gt;min-aspect-ratio&lt;/code&gt;, &lt;code&gt;orientation&lt;/code&gt;, &lt;code&gt;min-scroll-y&lt;/code&gt;, &lt;code&gt;min-lines&lt;/code&gt;, &lt;code&gt;min-characters&lt;/code&gt;, &lt;code&gt;min-children&lt;/code&gt;, and more.&lt;/p&gt;
+
+&lt;h3 id=&quot;container-queries-and-cyclic-dependency-problem&quot;&gt;Container queries and cyclic dependency problem&lt;/h3&gt;
+&lt;p&gt;People have raised possible issues with container queries to be circularity of dependent containers or recursion. Basing an element on the container of a container of a container may lead to a O(N&lt;sup&gt;2&lt;/sup&gt;) &lt;a href=&quot;https://josephrex.me/big-o-notation-explained/&quot;&gt;complexity&lt;/a&gt;. Here’s what the recursion looks like from an &lt;a href=&quot;https://au.si/css-container-queries&quot;&gt;example&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/ausi&quot;&gt;Martin Auswöger&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/container-qs-3-1e2b0853c284968f117fd2cef9f77ca9.png&quot; alt=&quot;Cyclic dependency of container query&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:media&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;150px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nc&quot;&gt;.child&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ausi recommended that the fix to this would be to use a syntax like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.child&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:container&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;150px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;leaving the browser to make a decision of a reliable container after traversing the DOM to find ancestors. The container would then be the nearest ancestor with a fixed width or the document width when no ancestors are found.&lt;/p&gt;
+
+&lt;p&gt;How does EQCSS handle this? As said earlier, EQCSS does not use container queries but element queries hence there’s no such thing as scoping child elements within their parents. It simply picks an element and gives it a condition to be met. What this means is, when the problem above is addressed with eqcss, the child element would just always base on its on min-width since  the scoped element relies on it. It does cause a few self-referencing issue but CSS already has self referencing issues. This video explains:&lt;/p&gt;
+
+&lt;div class=&quot;video&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/QfM_JwSDdjo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here’s eqcss addressing the problem above. As of the time of testing it only behaves weird in Chrome Canary (Chrome 60) and that’s not surprising as we see &lt;a href=&quot;https://greensock.com/will-change&quot;&gt;with the growth of Chrome things get weird like it did with will-change&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/bl4ckdu5t/6wuzuer5/embedded/result,css,html/dark/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;and a demonstation of it when resized:&lt;/p&gt;
+
+&lt;div style=&quot;position:relative;padding-bottom:36%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/FirstCheerfulFrenchbulldog&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bradfrost.github.io/this-is-responsive/resources.html#element-queries&quot;&gt;Brad Frost’s list of element/container queries post and tools&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eqcss/eqcss#documentation--tutorials&quot;&gt;EQCSS demos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.xanthir.com/b4VG0&quot;&gt;2014 state of element queries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.xanthir.com/b4PR0&quot;&gt;Element queries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://alistapart.com/article/container-queries-once-more-unto-the-breach&quot;&gt;Alistapart - Container queries once more unto the breach&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://au.si/css-container-queries&quot;&gt;Ausi’s css container queries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ethanmarcotte.com/wrote/on-container-queries/&quot;&gt;On container queries - Ethan Marcotte&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 29 Apr 2017 00:00:00 -0500</pubDate>
+        <link>https://josephrex.me/anticipated-birth-of-element-queries/</link>
+        <guid isPermaLink="true">https://josephrex.me/anticipated-birth-of-element-queries/</guid>
+        
+        <category>frontend</category>
+        
+        <category>css</category>
+        
+        <category>gui</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Cohesion against coupling</title>
+        <description>&lt;p&gt;Coupling and Cohesion are two major principles for structured design in software. It’s commonly heard that high cohesion and low/loose coupling leads to good software design. Cohesion is an act of sticking together. In physics cohesion gets contrasted against adhesion as the sticking together of particles of the same substance where adhesion happens with dissimilar substances. With this in mind we know that any 2 things can be put together and we could assume a cohesive code.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;Cohesion in software is a measure of function relationship within a module. Cohesion is brought up in the &lt;abbr title=&quot;Object Oriented Programming&quot;&gt;OOP&lt;/abbr&gt; paradigm than any other paradigm because of the methods that make up a class which is usually what makes up a module. An object-oriented code is considered cohesive if its methods are closely related to each other with little or no dependency from external modules. I said earlier that cohesion and coupling make up structured design and structured design with structured analysis are used to analyze business requirements since they were invented by Larry Constantine. According to Wikipedia:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In software engineering, structured analysis (SA) and structured design (SD) are methods for analyzing business requirements and developing specifications for converting practices into computer programs, hardware configurations, and related manual procedures.
+- &lt;a href=&quot;https://en.wikipedia.org/wiki/Structured_analysis&quot;&gt;Structured analysis&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To meet business needs, developers create business specific tests for &lt;abbr title=&quot;Behavior Driven Development&quot;&gt;BDD&lt;/abbr&gt; which would then define the related methods per class with each following the &lt;abbr title=&quot;Single Responsiblity Principle&quot;&gt;SRP&lt;/abbr&gt;. It’s known that a method needs to have a single responsibilty if you follow SRP already hence you could have the following class:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Chat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;connectSocket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;printLog&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;kickBanUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;spamIPverification&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;While all these may be performing a single responsibility they are not related in any way. This is like adhesion in physics as described earlier where the class would be an adhesive substances that merges all sort of unrelated particles. This is also an example of low cohesion. It is about the relationship of responsibilities. Here’s a cohesive version of the Chat class example:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Chat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;pullChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;getOnlineStatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;addEmoji&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;sanitizeInputs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;updateChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The method names explain what the methods here are doing and you can think of how they are related to each other in order to make the chat work. If you fire up a chat, you want to be able to see past messages and the &lt;code&gt;pullChatThread()&lt;/code&gt; method helps with that after which you may want to know the online status of the user. The &lt;code&gt;pullChatThread()&lt;/code&gt; method might be calling that method within itself to let you know if the user is active to have a conversation with. You decide to send a message which invokes the &lt;code&gt;sendMessage()&lt;/code&gt; method that sanitize your inputs with &lt;code&gt;sanitizeInput()&lt;/code&gt; and could also call the &lt;code&gt;addEmoji()&lt;/code&gt; method if you are using an emoji. Finally the method sends this message to a socket server with you as the sender and your sanitized input. The socket server replies with your message and any message from the other party which you can then use &lt;code&gt;updateChatThread()&lt;/code&gt; to update the chat thread. This is basically how most chat applications work. And all that happen in very little time.&lt;/p&gt;
+
+&lt;p&gt;In Chapter 10 of Uncle Bob’s &lt;a href=&quot;https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882&quot;&gt;clean code&lt;/a&gt;, he says by introducing instance variables to be shared between methods of a class we make those methods cohesive to the class.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Classes should have a small number of instance variables. Each of the methods of a class should manipulate one or more of those variables. In general the more variables a method manipulates the more cohesive that method is to its class. A class in which each variable is used by each method is maximally cohesive.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now I’ll introduce some instance variables to our chat class. In JavaScript you could add instance variables within the constructor as:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Chat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentUser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;authenticated&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;or you could use the stage-2 proposed ES syntax of instance variables with &lt;a href=&quot;https://babeljs.io/docs/plugins/transform-class-properties/&quot;&gt;babel class properties plugin&lt;/a&gt; which I’d prefer to use:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Chat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;currentUser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;authenticated&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Conversation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;pullChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Conversation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;between&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getOnlineStatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;getOnlineStatus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;entity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;entity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;active&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newMessage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sanitizeInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pullChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;updateChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEmoji&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;addEmoji&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// ... Some magic happens here. It&amp;#39;s Tahiti&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;sanitizeInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/all evil things/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;all that glimmers&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;updateChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;socketUpdate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;retrieveWithNew&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;socketUpdate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In this example you can see methods referencing methods and the instance variables for the current user and the recipient. The most cohesive method here is the &lt;code&gt;sendMessage()&lt;/code&gt; as it makes use of &lt;code&gt;this.currentUser&lt;/code&gt;, &lt;code&gt;this.recipient&lt;/code&gt; and also the instance methods &lt;code&gt;this.addEmoji()&lt;/code&gt; and &lt;code&gt;this.sanitizeInput()&lt;/code&gt;. The least are the &lt;code&gt;getOnlineStatus()&lt;/code&gt;, &lt;code&gt;sanitizeInput()&lt;/code&gt; and &lt;code&gt;addEmoji()&lt;/code&gt; which aren’t referencing any other method directly. As a matter of fact those could become static methods instead of being instance method. There’s a &lt;a href=&quot;http://eslint.org/docs/rules/class-methods-use-this&quot;&gt;eslint rule&lt;/a&gt; to make sure such methods are made static.&lt;/p&gt;
+
+&lt;p&gt;Uncle bob suggested using instance variables but wasn’t explicit enough about why so I’d try to explain. In a language that supports private methods, we may make such instance variables even private as they have nothing to do outside of the class. In JavaScript or any language without private methods, this values are of no use outside of the class so it’s better to keep them as instance variables to add an extra layer of construction before invocation.&lt;/p&gt;
+
+&lt;p&gt;Cohesion can reduce the complexity of a module, increase usability, and system maintanability. It is of 8 major types. I’ll only list them because &lt;a href=&quot;https://en.wikipedia.org/wiki/Cohesion_(computer_science)#Types_of_cohesion&quot;&gt;Wikipedia has done a good job at explaining them&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Coincidental cohesion (worst)&lt;/li&gt;
+  &lt;li&gt;Logical cohesion&lt;/li&gt;
+  &lt;li&gt;Temporal cohesion&lt;/li&gt;
+  &lt;li&gt;Procedural cohesion&lt;/li&gt;
+  &lt;li&gt;Communcation/informational cohesion&lt;/li&gt;
+  &lt;li&gt;Sequential cohesion&lt;/li&gt;
+  &lt;li&gt;Function cohesion (best)&lt;/li&gt;
+  &lt;li&gt;Perfect cohesion (atomic)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Coupling measures the degree of module interdependency as cohesion does for function interdependency within a module. A software is considered properly designed when it has loose coupling. Loose coupling goes with high cohesion and vice versa.&lt;/p&gt;
+
+&lt;p&gt;In previous examples, a chat module was used in building a chat application. Modules could really be anything beyond the scope of a class but to maintain simplicity we’d keep a class to a module. The chat module could use some lower coupling. Notice how we call an alien &lt;code&gt;Socket&lt;/code&gt; class within the &lt;code&gt;updateChatThread()&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;We could improve this by making the user of the API to add the Socket class themselves when the Chat class gets constructed. Hence a &lt;a href=&quot;https://en.wikipedia.org/wiki/Dependency_injection&quot;&gt;dependency injection&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;updateChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sender&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Because the &lt;code&gt;sendMessage()&lt;/code&gt; method invokes &lt;code&gt;updateChatThread()&lt;/code&gt;, it still needs the socket but we are trying to avoid depending on the Socket module directly in our Chat module so we could once again apply dependency injection.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newMessage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sanitizeInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inputText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pullChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;updateChatThread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEmoji&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;currentUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;recipient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If &lt;code&gt;sendMessage()&lt;/code&gt; gets called on instance its parameters would be like:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;myChatInstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sendMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;hello :)&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;retrieveWithNew&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;We could further reduce the coupling of this by finding ways to take out the dependency of the Conversation class but I could also see reasons to keep that. It’s great to write optimal code, reduce coupling and increase cohesion but we shouldn’t put all the focus on this that we end up making our software inconvenient to maintain.&lt;/p&gt;
+
+&lt;p&gt;Balance is a big factor in software engineering and everything in life. You’d notice by reducing coupling we add more cohesion. The &lt;code&gt;sendMessage()&lt;/code&gt; method had always used the &lt;code&gt;updateChatThread()&lt;/code&gt; but now &lt;code&gt;updateChatThread()&lt;/code&gt; also depends on it for the socket call. Like cohesion, coupling can also be broken down in types:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Content coupling (high)&lt;/li&gt;
+  &lt;li&gt;Common coupling&lt;/li&gt;
+  &lt;li&gt;External coupling&lt;/li&gt;
+  &lt;li&gt;Control coupling&lt;/li&gt;
+  &lt;li&gt;Stamp coupling&lt;/li&gt;
+  &lt;li&gt;Data coupling&lt;/li&gt;
+  &lt;li&gt;Message coupling (low)&lt;/li&gt;
+  &lt;li&gt;No coupling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An example of data coupling is how we changed the use of a supposed &lt;code&gt;Socket&lt;/code&gt; module to a parameter entry in the Chat module. The major reason why tightly coupled software is discouraged is that it increases &lt;a href=&quot;https://en.wikipedia.org/wiki/Connascence_(computer_science)&quot;&gt;connascence&lt;/a&gt; of system implementations i.e a change in one may lead to a ripple effect to have to change another. If the &lt;code&gt;Socket&lt;/code&gt; module gets directly called in &lt;code&gt;Chat&lt;/code&gt; module then the API for socket changes to use a &lt;code&gt;retrieve()&lt;/code&gt; method instead of &lt;code&gt;retrieveWithNew()&lt;/code&gt; we’d have to update the chat module too respectively. But now we have it such that our chat module is almost independent of changes from other modules.&lt;/p&gt;
+
+&lt;p&gt;Abiding by the &lt;a href=&quot;https://en.wikipedia.org/wiki/Law_of_Demeter&quot;&gt;law of demeter (LoD)&lt;/a&gt; would prevent the method change on the dependent Socket module. The law says:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Each unit should have only limited knowledge about other units: only units “closely” related to the current unit&lt;/li&gt;
+  &lt;li&gt;Each unit should only talk to its friends; don’t talk to strangers.&lt;/li&gt;
+  &lt;li&gt;Only talk to your immediate friends&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Why speak with Socket who is a stranger? what is retrieveWithNew? I don’t even know Socket enough to know it has a child named that. Socket is not my friend!&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 17 Apr 2017 00:00:00 -0500</pubDate>
+        <link>https://josephrex.me/cohesion-against-coupling/</link>
+        <guid isPermaLink="true">https://josephrex.me/cohesion-against-coupling/</guid>
+        
+        <category>software</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Why go to college</title>
+        <description>&lt;p&gt;We are in an era where knowledge has become so accessible that we question the need for higher education which was once known as the touchstone for professional excellence. Having so much data at our fingertips and knowing how to apply them is a great advantage of living in this century.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;However with all that much data defying gravity around us some of us fail to utilize it. Some put wrong interpretation to it. I think misinterpreting things has become the wonted thing in many aspects of life now. Different interpretations of one religion by its followers leading to problems that make the world perceive them as either unstable or stereotype them as bad due to the ones with a wrong perception. The same goes for sexual orientation, work ethics, and this has begot the inevitable bigotry that has become what we hear of or experience daily.&lt;/p&gt;
+
+&lt;p&gt;Everyone in life is constantly learning but there’s a measure of how much we learn as individuals which become a metric to how much we can achieve. Programming being a simple skill to pick up falsely leads people to &lt;a href=&quot;https://www.quora.com/Why-is-programming-so-easy&quot;&gt;believing mastery of software engineering is just as easy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Simple != Easy&lt;br /&gt;&lt;br /&gt;Simplicity and ease are uncorrelated, or maybe even negatively correlated.&lt;/p&gt;&amp;mdash; Computer Science (@CompSciFact) &lt;a href=&quot;https://twitter.com/CompSciFact/status/840031018165948417&quot;&gt;March 10, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;If you work as a software engineer soon you’d realize &lt;a href=&quot;http://thedailywtf.com/articles/programming-is-hard&quot;&gt;programming is hard&lt;/a&gt; and you may either decide to doggedly be at your best with it and pick up all it takes remain relevant or you could just put up a smokescreen to mask your slackness. While trying to find a place you fit in, you get faced with interviews that are worthily intense or just totally off-putting and the only way you feel you can fill the knowledge gap is by going back to college if you’ve never had a college degree or didn’t study computer science. Even if you aren’t applying to positions yet, you could have a passion for computers or whatever your interests are that makes you believe it’s worth going to college for.&lt;/p&gt;
+
+&lt;p&gt;At this point where you have to make a decision between losing money for education and saving your money for cheaper knowledge sources, you come across articles that &lt;a href=&quot;https://medium.com/javascript-scene/want-to-code-a-university-degree-might-be-a-huge-waste-of-time-81e1817a2ef0#.98sjxivhh&quot;&gt;paint universities as a waste of time&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Forget university programs. Unless it’s from Stanford or MIT, your degree will mean a lot less than having some apps to show off. In fact, most university programs struggle to keep up with changing technology. A degree will buy you a few thousand dollars more for the first 1–3 years. After that it makes exactly zero difference. Unless you like flushing time and money down the toilet…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Some good points were made in that article but firing so much shots at university programs? It looks like the article is addressed at newbie coders with no experience in programming whatsoever. I’ll start by addressing that spending on college isn’t splurging if you have a &lt;strong&gt;purpose&lt;/strong&gt; and you know how to stick to it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I’d beeline to what purpose means to clarify that point&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-purpose&quot;&gt;What is purpose?&lt;/h3&gt;
+&lt;p&gt;Purpose is a person’s sense of resolve or determination according to the Apple dictionary but Merriam-Webster define it as&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The action for which a person or thing is specially fitted or used or for which a thing exists&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now you may think if you have passion you have a purpose but I urge you to see this video&lt;/p&gt;
+
+&lt;div class=&quot;video&quot;&gt;&lt;iframe width=&quot;854&quot; height=&quot;480&quot; src=&quot;https://www.youtube.com/embed/uwIBFgxUYk8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;At &lt;a href=&quot;https://youtu.be/uwIBFgxUYk8?t=530&quot;&gt;a point in the video&lt;/a&gt; purpose is defined as whatever you’re trying to accomplish with an understanding of why it’s important and a tenacity to never give up on it. And passion is what you like, what feels good, what you find that you want to do but not necessarily need to do. Passion is considered to be dangerous because it is admiration when you really need aspiration.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Back to &lt;a href=&quot;https://twitter.com/_ericelliott&quot;&gt;Eric Elliot&lt;/a&gt;’s article, &lt;a href=&quot;https://medium.com/@leaverou/youre-completely-missing-the-point-of-higher-education-274570eb5a02#.a26hn4yck&quot;&gt;Lea Verou replied&lt;/a&gt; saying:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;University teaches you how to think, not 2016’s trendiest frameworks or programming languages. Those are transient skills&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I couldn’t agree more with &lt;a href=&quot;https://twitter.com/leaverou&quot;&gt;Lea&lt;/a&gt;. I agree with her on a lot of things with a &lt;a href=&quot;http://pensieve.verou.me/post/40603145637/on-last-name-politics&quot;&gt;few exceptions&lt;/a&gt;. But I believe since she was just dropping a comment she couldn’t elaborate enough and that’s what I’ll try to help with here.&lt;/p&gt;
+
+&lt;h3 id=&quot;im-not-convinced-what-does-college-really-have-to-offer&quot;&gt;I’m not convinced. What does college really have to offer?&lt;/h3&gt;
+&lt;p&gt;So many people who eventually go to college go with high expectations and graduate thinking they’ve acquired the right to fit in anywhere or get any job without any extra efforts.&lt;/p&gt;
+
+&lt;p&gt;There’s the case I heard of from a friend’s organization where they had to let go of the 3 masters degree holders they had because they weren’t fitting into the company culture and were never submissive to learning. They thought their degree was everything&lt;/p&gt;
+
+&lt;p&gt;Harry Robert also digressed to address this on &lt;a href=&quot;https://github.com/csswizardry/ama/issues/24&quot;&gt;his AMA issue&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This calls to mind a slightly different opinion I hold about so many people working on the web these days being from a traditional CompSci background, with none of the knowledge of the nuance or the history of the Web as a platform. The sheer number of developers who’re badass programmers but with no idea about HTML/CSS/progressive enhancement is kinda worrying.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Universities offer 4 things (NICK):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Network&lt;/li&gt;
+  &lt;li&gt;Isolation&lt;/li&gt;
+  &lt;li&gt;Closure&lt;/li&gt;
+  &lt;li&gt;Knowledge&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Network:&lt;/strong&gt; This is the most important reason for college in my opinion. You could meet the world’s best professors and I don’t mean their lectures I mean just having the privilege to know them in person, you could have the smartest minds as classmates. The value of some friends may not reflect in the moment but you’d know they are worth more than treasure. You could also meet influential people. All these without being part of any student groups. If you join such groups it’s more network and if you’re studying in a new city you could also build a network through communities outside school.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Isolation:&lt;/strong&gt; For people who get to leave their homes to go study in college, you’d find it is a great chance to meet the inner you, spend more time with yourself and realize things about yourself that you’ve not paid close attention to. You may have friends in college but you probably get your moments of isolation more frequently than you will in a family home.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Closure:&lt;/strong&gt; It’s sad that a large percentage of people seeking college education only go after this. Degree is what gives you closure. It’s what makes you an option over other options in the sight of employers who fail to see beyond degrees and you can’t disregard it because that organization might be the place you find your professional happiness.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Knowledge:&lt;/strong&gt; Knowledge acquisition is the objective of most people going to college. They focus so much on having the best lecturers to impact this knowledge into them and often get dissappointed if the lecturers are anything short of perfection. There’d be complaints about accents of lecturers from different cultures, complaints about charisma of the ones who speak the way we expect and even if you manage to keep good grades you never get the sense of satisfaction. You feel you were robbed off what you paid for. If these describe you in any way you should know that knowledge is everything in the ecosystem of college. Learning that a janitor can be so happy and cheerful even with critical health issues, learning the different cultures and opinions of different people you meet, learning what it takes to struggle to retain good grades. That is all knowledge. If you have the best professors and you get what you perceive as wonderful lectures, consider it to be an added privilege because not everyone gets that. If you carry on this mindset you wouldn’t be dissapointed when you get otherwise. Like I said earlier, knowledge is everywhere and you don’t have to wait for a lecturer to spoonfeed it to you. It’s called higher education.&lt;/p&gt;
+
+&lt;p&gt;If you seek any of those things listed then you should give college a try. If you’re working already and you consider going to college to prove to employers or clients that you are a better person/staff/consultant without being able to prove that without a degree, think again because college wouldn’t teach you whatever it takes to excel at your area of specialization because as Lea said those skills required for your current job are transient which makes them ineligible for a university curriculum. You could learn about algorithms from the MIT open courseware for free and you could learn anything you need without college if you are disciplined. College students learn by a curriculum which would bring knowledge needed but not sought at them unlike a self-learned person who goes after what is needed to be known to achieve certain objectives. This puts college students at a bit of an edge over self-learned persons unless you can be really disciplined and make exhaustive research when learning on your own. College isn’t for everyone as Eric insinuated but you should consider it if it even slightly aligns with your purpose in life. You should also start making other micro-adjustments that project you towards your goals either way because in the end it’s the talent you’ve been able to build as an individual that makes up your value.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 24 Mar 2017 00:00:00 -0500</pubDate>
+        <link>https://josephrex.me/why-go-to-college/</link>
+        <guid isPermaLink="true">https://josephrex.me/why-go-to-college/</guid>
+        
+        <category>opinions</category>
+        
+        <category>academic</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Frontend asset management in rails applications</title>
+        <description>&lt;p&gt;In rails planet it’s easy to assume that asset management is at its best with the assets pipeline it provides which includes sprockets for simple requires. Sprockets is great but could be better with a properly structured application.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bundler.io&quot;&gt;Bundler&lt;/a&gt; makes it easy to install and manage ruby gems and with its most used source/registry being &lt;a href=&quot;https://rubygems.org&quot;&gt;rubygems.org&lt;/a&gt;; a platform that homes a lot of ruby libraries you can be sure to find almost any ruby library you need or publish one that doesn’t already exist.&lt;/p&gt;
+
+&lt;p&gt;If you’re picking up rails for the first time you’d find it easy to add just about anything you need to your Gemfile and bundle it up but the problem with this is many frontend libraries aren’t made for just ruby developers so they are kept on frontend targeted registries like npm or bower. Because of npm’s nested dependency tree which only works well in node environments, bower becomes the best source for frontend assets. &lt;a href=&quot;http://stackoverflow.com/a/18652918/2649933&quot;&gt;Check difference between npm and bower&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At this point you’d think you could just add bower as a source in your Gemfile and name whatever library you want from its registry but that wouldn’t work because bower wasn’t made to work with bundler. To solve this problem &lt;a href=&quot;https://rails-assets.org&quot;&gt;rails-assets&lt;/a&gt; was created. From version 1.8.4 of &lt;a href=&quot;http://bundler.io&quot;&gt;bundler&lt;/a&gt; you can include multiple sources to your Gemfile and wrap them in a block. rails assets builds upon this by proxying between bundler and bower to provide bower assets through the Gemfile. If all you need is a little app with no further maintainance (they always grow into a maintainance hell), this is all you need.&lt;/p&gt;
+
+&lt;p&gt;For a properly maintained project, you consider seperation of concern; something rails as a framework does a fair amount of itself. When you install ruby libraries through bundler you usually don’t want to modify them or anything. You are fine with having them install freshly on your development machine and the rest of your team’s as well as on the production machine. This is not always the same with a frontend library. Sometimes there are little tweaks you want to make to the library to behave better with your application and modifying just what you have in your locally installed shims directory wouldn’t keep the change for the rest of the team on in production. Also, your Gemfile can grow really quick with frontend assets and you don’t want that if you want easier debugging in your app.&lt;/p&gt;
+
+&lt;p&gt;To solve this, you use bower directly and save yourself the extra layer rails-assets offers.&lt;/p&gt;
+
+&lt;h3 id=&quot;configuring-rails-for-bower-sprocket-requires&quot;&gt;Configuring rails for bower sprocket requires&lt;/h3&gt;
+&lt;p&gt;First you specify where bower should install its components. By default it installs them in the&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bower_components&lt;/code&gt; directory within the root of your project but rails already make it possible to make a sprocket require of assets in &lt;code&gt;vendor/assets/javascripts&lt;/code&gt; and &lt;code&gt;vendor/assets/stylesheets&lt;/code&gt;. You may or may not be using these already but it’s easier to think of the vendor directory as where vendor scripts/libraries go hence we’d tell bower to store components in there by creating a &lt;code&gt;.bowerrc&lt;/code&gt; file in the root folder and adding this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;quot;directory&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vendor/assets/components&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In my opinion, bower also has the best cli search of all registries so if you’re not sure of a library name you can run a search to see what it’s called by the most legitimate maintainer &lt;code&gt;bower search bootstrap&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once found &lt;code&gt;bower install bootstrap&lt;/code&gt; and your component would be stored at &lt;code&gt;vendor/assets/components/bootstrap&lt;/code&gt;. Because of bower’s flat dependency and also for the reason I mentioned earlier on easily debugging and making changes to frontend assets, you don’t gitignore your bower components (this is just my opinion. If you have better reasons to gitignore it then do that). For rails to find these newly installed components and make them available as sprocket requires modify your application.rb located at &lt;code&gt;config/application.rb&lt;/code&gt; with this assets path modification:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;YourApp&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Application&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rails&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Application&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;assets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paths&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Rails&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;vendor&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;assets&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;components&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can go into your stylesheets manifest file (application.css) and do this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;c&quot;&gt;/*&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt; * Applicaiton.css&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt; *= require bootstrap/dist/css/bootstrap&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt; *&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt; */&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;for Javascript it’d be&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Application.js&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//= require bootstrap/dist/js/bootstrap&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The final names here do not need their extensions .css and .js like every other sprocket require is always smart to determine the filetype by the parent filetype. To derive the path given to sprockets you simply have to look at the path from inside &lt;code&gt;vendor/assets/components&lt;/code&gt; and your component name till its required asset file name.&lt;/p&gt;
+
+&lt;p&gt;If you’ve chosen to ignore your bower components directory earlier you should make sure you have a bower.json file to save your installed component names. This can be generated with &lt;code&gt;bower init&lt;/code&gt; and add &lt;code&gt;--save&lt;/code&gt; to your installs e.g &lt;code&gt;bower install --save bootstrap&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This way you can look at all the frontend assets easily in the bower.json file and they’d look like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;quot;dependencies&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;quot;bootstrap&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;^3.3.7&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;quot;lodash&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;^4.17.3&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;quot;Snap.svg&amp;quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;snap.svg#^0.4.1&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;leaving your Gemfile free of frontend mess. This is espcially useful if you work with frontend developers that you would rather not have messing with things that affect/influence the backend process.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 17 Mar 2017 00:00:00 -0500</pubDate>
+        <link>https://josephrex.me/frontend-asset-management-in-rails-applications/</link>
+        <guid isPermaLink="true">https://josephrex.me/frontend-asset-management-in-rails-applications/</guid>
+        
+        <category>rails</category>
+        
+        <category>frontend</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Algorithm Analysis: Best, Worst and Average Case</title>
+        <description>&lt;p&gt;Algorithms are a sequence of decisions we make to solve a problem. Like every decision in life we can make great decisions and really terrible decisions. But it doesn’t end there. Good decisions vary, they can come easy and can take a lot harder process to reach an expected outcome.
+&lt;!--more--&gt;
+There are 3 categories of efficiency an algorithm can fall under when analyzing its usage of resources. They are best case, worst case, and average case.&lt;/p&gt;
+
+&lt;p&gt;To give you a mind picture, my friend Jesse and I decided to go on a road trip. We were to travel 300 miles and Jesse assured me we had enough gas for each gas station stops through the journey. Jesse made a good calculation but ignored the possibility of errors which led to an unexpected outcome when we had traveled 160 miles and found that the next gas station wasn’t functional. This was really unfortunate because the next gas station was 80 miles away and we were about to hit the E. We got it to 220 miles through our journey and the car stopped. We wanted to hitchhike through the rest of the journey but after waiting for 2 hours with no passerby we had to decide on walking down to the next gas station with some gallons we had in the car.&lt;/p&gt;
+
+&lt;p&gt;2 miles after the next gas station, there’s another station, and another one 1 mile after that. That’s a good reason to believe going to fetch some gas would be a better decision than waiting for hours for a chance to hitchhike. But another condition we were constrained by was that our car runs on diesel and while there’s always petrol in all gas stations, they don’t always have diesel.&lt;/p&gt;
+
+&lt;p&gt;So far we’ve chosen footslogging with gallons over hitchhiking. We think it’s a good decision but we have another case here. If the gas station 20 miles away has diesel, that’d be the &lt;strong&gt;best case&lt;/strong&gt;, if we have to try the first and second second gas stations to find that only the third has diesel or none of them have diesel, it would be the &lt;strong&gt;worst case&lt;/strong&gt;. If the second gas station has diesel and the first didn’t then we don’t have to try the third. That’s an &lt;strong&gt;average case&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;With that understanding, when giving an array of length &lt;strong&gt;n&lt;/strong&gt;, when &lt;strong&gt;n = 5&lt;/strong&gt; and our array items are &lt;strong&gt;23, 34, 13, 44, 18&lt;/strong&gt;, we are to write an algorithm to find a number in the list of array items. By performing a linear search, we will have our best case if 23 is the number to be searched as it is the first item on the array.&lt;/p&gt;
+
+&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mi&gt;k&lt;/mi&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mn&gt;23&lt;/mn&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;
+&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;msub&gt;
+        &lt;mi&gt;C&lt;/mi&gt;
+        &lt;mi&gt;best&lt;/mi&gt;
+      &lt;/msub&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If we then have to search for 18 or any other number like 58 which doesn’t exist in the list, it’d be a worst case efficiency.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mi&gt;k&lt;/mi&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mn&gt;18&lt;/mn&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;msub&gt;
+        &lt;mi&gt;C&lt;/mi&gt;
+        &lt;mi&gt;worst&lt;/mi&gt;
+      &lt;/msub&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;For every possibility of worst case either the item is found in the last position or not found at all we go through the &lt;strong&gt;n&lt;/strong&gt; number of elements.&lt;/p&gt;
+
+&lt;p&gt;34, 13, and 44 are the average cases of the search. To find any of those items at a position &lt;strong&gt;i&lt;/strong&gt; of the array, we derive the probability of success and failure. Given that:&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mtext&gt;Probability of Successful Search&lt;/mtext&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mi&gt;p&lt;/mi&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mtext&gt;where,&lt;/mtext&gt;
+      &lt;mspace width=&quot;20px&quot;&gt;&lt;/mspace&gt;
+      &lt;mn&gt;0&lt;/mn&gt;
+      &lt;mo&gt;&amp;le;&lt;/mo&gt;
+      &lt;mi&gt;p&lt;/mi&gt;
+      &lt;mo&gt;&amp;le;&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mtext&gt;Probability of Unsucessful Search&lt;/mtext&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+      &lt;mo&gt;-&lt;/mo&gt;
+      &lt;mi&gt;p&lt;/mi&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The probability to find an item that is neither the first nor last item of the array at a position &lt;strong&gt;i&lt;/strong&gt; in the array then becomes:&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mi&gt;p&lt;/mi&gt;
+      &lt;mo&gt;/&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;and the probability of reoccurence of the item in position &lt;strong&gt;i&lt;/strong&gt; would be:&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;msub&gt;
+        &lt;mi&gt;C&lt;/mi&gt;
+        &lt;mi&gt;average&lt;/mi&gt;
+      &lt;/msub&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mrow&gt;
+        &lt;mo&gt;[&lt;/mo&gt;
+          &lt;mrow&gt;
+            &lt;mn&gt;1&lt;/mn&gt;
+            &lt;mo&gt;x&lt;/mo&gt;
+            &lt;mfrac&gt;
+              &lt;mi&gt;p&lt;/mi&gt;
+              &lt;mi&gt;n&lt;/mi&gt;
+            &lt;/mfrac&gt;
+            &lt;mo&gt;+&lt;/mo&gt;
+            &lt;mn&gt;2&lt;/mn&gt;
+            &lt;mo&gt;x&lt;/mo&gt;
+            &lt;mfrac&gt;
+              &lt;mi&gt;p&lt;/mi&gt;
+              &lt;mi&gt;n&lt;/mi&gt;
+            &lt;/mfrac&gt;
+            &lt;mo&gt;+&lt;/mo&gt;
+            &lt;mi&gt;&amp;hellip;&lt;/mi&gt;
+            &lt;mo&gt;+&lt;/mo&gt;
+            &lt;mi&gt;i&lt;/mi&gt;
+            &lt;mo&gt;x&lt;/mo&gt;
+            &lt;mfrac&gt;
+              &lt;mi&gt;p&lt;/mi&gt;
+              &lt;mi&gt;n&lt;/mi&gt;
+            &lt;/mfrac&gt;
+            &lt;mo&gt;+&lt;/mo&gt;
+            &lt;mi&gt;&amp;hellip;&lt;/mi&gt;
+            &lt;mo&gt;+&lt;/mo&gt;
+            &lt;mi&gt;n&lt;/mi&gt;
+            &lt;mo&gt;x&lt;/mo&gt;
+            &lt;mfrac&gt;
+              &lt;mi&gt;p&lt;/mi&gt;
+              &lt;mi&gt;n&lt;/mi&gt;
+            &lt;/mfrac&gt;
+          &lt;/mrow&gt;
+        &lt;mo&gt;]&lt;/mo&gt;
+        &lt;mo&gt;+&lt;/mo&gt;
+        &lt;mi&gt;n&lt;/mi&gt;
+        &lt;mo&gt;(&lt;/mo&gt;
+        &lt;mi&gt;1&lt;/mi&gt;
+        &lt;mo&gt;-&lt;/mo&gt;
+        &lt;mi&gt;p&lt;/mi&gt;
+        &lt;mo&gt;)&lt;/mo&gt;
+      &lt;/mrow&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;with &lt;strong&gt;1 - p&lt;/strong&gt; added as probability of unsuccesful search.&lt;/p&gt;
+
+&lt;p&gt;Simplifying the above equation we get:&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mfrac&gt;
+        &lt;mi&gt;p&lt;/mi&gt;
+        &lt;mi&gt;n&lt;/mi&gt;
+      &lt;/mfrac&gt;
+      &lt;mo&gt;[&lt;/mo&gt;
+        &lt;mi&gt;1&lt;/mi&gt;
+        &lt;mo&gt;+&lt;/mo&gt;
+        &lt;mi&gt;2&lt;/mi&gt;
+        &lt;mo&gt;+&lt;/mo&gt;
+        &lt;mi&gt;&amp;hellip;&lt;/mi&gt;
+        &lt;mo&gt;+&lt;/mo&gt;
+        &lt;mi&gt;i&lt;/mi&gt;
+        &lt;mo&gt;+&lt;/mo&gt;
+        &lt;mi&gt;&amp;hellip;&lt;/mi&gt;
+        &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;]&lt;/mo&gt;
+      &lt;mo&gt;+&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+      &lt;mo&gt;-&lt;/mo&gt;
+      &lt;mi&gt;p&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;and substituting the series with &lt;math display=&quot;inline&quot;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/mfrac&gt;&lt;/math&gt;, we have:&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mfrac&gt;
+        &lt;mi&gt;p&lt;/mi&gt;
+        &lt;mi&gt;n&lt;/mi&gt;
+      &lt;/mfrac&gt;
+      &lt;mo&gt;[&lt;/mo&gt;
+      &lt;mfrac&gt;
+        &lt;mrow&gt;
+          &lt;mi&gt;n&lt;/mi&gt;
+          &lt;mo&gt;(&lt;/mo&gt;
+          &lt;mi&gt;n&lt;/mi&gt;
+          &lt;mo&gt;+&lt;/mo&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+          &lt;mo&gt;)&lt;/mo&gt;
+        &lt;/mrow&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+      &lt;/mfrac&gt;
+      &lt;mo&gt;]&lt;/mo&gt;
+      &lt;mo&gt;+&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+      &lt;mo&gt;-&lt;/mo&gt;
+      &lt;mi&gt;p&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mspace linebreak=&quot;newline&quot;&gt;&lt;/mspace&gt;
+      &lt;mfrac&gt;
+        &lt;mrow&gt;
+          &lt;mi&gt;p&lt;/mi&gt;
+          &lt;mo&gt;(&lt;/mo&gt;
+          &lt;mi&gt;n&lt;/mi&gt;
+          &lt;mo&gt;+&lt;/mo&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+          &lt;mo&gt;)&lt;/mo&gt;
+        &lt;/mrow&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+      &lt;/mfrac&gt;
+      &lt;mo&gt;+&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+      &lt;mo&gt;-&lt;/mo&gt;
+      &lt;mi&gt;p&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;we have a simplified addition of successful search and unsuccessful search for an average case. The probability &lt;em&gt;(p)&lt;/em&gt; of a successful search (certainty) is &lt;strong&gt;1&lt;/strong&gt; and unsuccessful search (impossibility) is &lt;strong&gt;0&lt;/strong&gt;. To start with the successful search we substitute p for 1.&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mtext&gt;Successful Search&lt;/mtext&gt;
+      &lt;mo&gt;&amp;rarr;&lt;/mo&gt;
+      &lt;mfrac&gt;
+        &lt;mrow&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+          &lt;mo&gt;(&lt;/mo&gt;
+          &lt;mi&gt;n&lt;/mi&gt;
+          &lt;mo&gt;+&lt;/mo&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+          &lt;mo&gt;)&lt;/mo&gt;
+        &lt;/mrow&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+      &lt;/mfrac&gt;
+      &lt;mo&gt;+&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+      &lt;mo&gt;-&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mspace linebreak=&quot;newline&quot;&gt;&lt;/mspace&gt;
+      &lt;msub&gt;
+        &lt;mi&gt;C&lt;/mi&gt;
+        &lt;mi&gt;average&lt;/mi&gt;
+      &lt;/msub&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mfrac&gt;
+        &lt;mrow&gt;
+          &lt;mo&gt;(&lt;/mo&gt;
+          &lt;mi&gt;n&lt;/mi&gt;
+          &lt;mo&gt;+&lt;/mo&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+          &lt;mo&gt;)&lt;/mo&gt;
+        &lt;/mrow&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+      &lt;/mfrac&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;For unsuccessful search, p is substituted for 0:&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;mtext&gt;Unsuccessful Search&lt;/mtext&gt;
+      &lt;mo&gt;&amp;rarr;&lt;/mo&gt;
+      &lt;mfrac&gt;
+        &lt;mrow&gt;
+          &lt;mn&gt;0&lt;/mn&gt;
+          &lt;mo&gt;(&lt;/mo&gt;
+          &lt;mi&gt;n&lt;/mi&gt;
+          &lt;mo&gt;+&lt;/mo&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+          &lt;mo&gt;)&lt;/mo&gt;
+        &lt;/mrow&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+      &lt;/mfrac&gt;
+      &lt;mo&gt;+&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mn&gt;1&lt;/mn&gt;
+      &lt;mo&gt;-&lt;/mo&gt;
+      &lt;mn&gt;0&lt;/mn&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mspace linebreak=&quot;newline&quot;&gt;&lt;/mspace&gt;
+      &lt;msub&gt;
+        &lt;mi&gt;C&lt;/mi&gt;
+        &lt;mi&gt;average&lt;/mi&gt;
+      &lt;/msub&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;and the unsuccessful search of average case has led right back to being the same as worst case.&lt;/p&gt;
+
+&lt;math&gt;
+  &lt;semantics&gt;
+    &lt;mrow&gt;
+      &lt;msub&gt;
+        &lt;mi&gt;C&lt;/mi&gt;
+        &lt;mi&gt;unsuccessful average&lt;/mi&gt;
+      &lt;/msub&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+      &lt;mo&gt;=&lt;/mo&gt;
+      &lt;msub&gt;
+        &lt;mi&gt;C&lt;/mi&gt;
+        &lt;mi&gt;worst&lt;/mi&gt;
+      &lt;/msub&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;n&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+    &lt;/mrow&gt;
+  &lt;/semantics&gt;
+&lt;/math&gt;
+
+&lt;p&gt;The best case from the examples is the optimum solution to the problems while every other solutions are feasible. Feasible solutions are the set of input values that satisfy all the constraints of an algorithm. Hence, going to the first and second gas stations before finding diesel at the third still makes the first and second feasible solutions while the third becomes the optimum solution.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Mar 2017 00:00:00 -0600</pubDate>
+        <link>https://josephrex.me/algorithm-analysis/</link>
+        <guid isPermaLink="true">https://josephrex.me/algorithm-analysis/</guid>
+        
+        <category>algorithms</category>
+        
+        <category>mathML</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Thoughts on Semantic Styling vs Visual Styling</title>
+        <description>&lt;p&gt;After reading this &lt;a href=&quot;http://cssmojo.com/opinions_of_leaders_considered_harmful/&quot;&gt;rebuttal&lt;/a&gt; to Jeffrey Zeldman’s &lt;a href=&quot;http://www.zeldman.com/2017/01/03/kiss-my-classname/&quot;&gt;Kiss my classname&lt;/a&gt; what came up on my mind is I think everyone’s doing this wrong. This is the main problem with the industry. Impatience to accept and learn why opinions that differ from yours could be relevant.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;I’d agree with &lt;a href=&quot;https://twitter.com/g16n/status/793046513215737856&quot;&gt;Thierry Koblentz&lt;/a&gt; for the most part as he doesn’t totally dismiss what others consider the right way. However, I think referencing &lt;a href=&quot;https://twitter.com/LeaVerou/status/686651368736698370&quot;&gt;Lea Verou’s tweet&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/SaraSoueidan/status/602443556884721664&quot;&gt;Sara Soueidan’s&lt;/a&gt; as a thing leaders should not do is wrong. From skimming through Atomic CSS, it does look terrible and those tweets are their opinions. It might have some advantages that they aren’t aware of. They probably could have given it a try and not found it to be solving any problems for them. Seriously, look at this&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Fl(start) W(1/2) Bgc(#0280ae.5) H(90px)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Fl(start) W(1/2) Bgc(#0280ae) H(90px)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;D(tb) W(100%)&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;presentation&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;D(tbc) Bgc(#0280ae) H(90px)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;D(tbc) Bgc(#0280ae.5) H(90px)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IbBox W(50%) Bgc(#0280ae.5) H(90px)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!--&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;--&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;IbBox W(50%) Bgc(#0280ae) H(90px)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;D(f)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Flxg(1) Bgc(#0280ae) H(90px)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Flxg(1) Bgc(#0280ae.5) H(90px)&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Doesn’t it look like &lt;a href=&quot;https://www.stilldrinking.org/programming-sucks&quot;&gt;trimming Satan’s pubic hair&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;Semantic styling does have its good usecases but it doesn’t mean visual styling should be ditched. While I’d agree that the &lt;a href=&quot;https://twitter.com/g16n/status/793046513215737856&quot;&gt; C in CSS doesn’t mean Component&lt;/a&gt;, I find using a component based &lt;abbr title=&quot;Seperation of Concerns&quot;&gt;SoC&lt;/abbr&gt; to be great as most of our web apps structure are components anyway ( &lt;em&gt;filters&lt;/em&gt;, &lt;em&gt;buttons&lt;/em&gt;, &lt;em&gt;accordions&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;With separation of components, the styles stay reusable and maintanable. While components help at a large scale, not everything can fit in a component. CSS wasn’t built to be OOP and that’s what most component structure look like especially if you’re following a pattern like &lt;a href=&quot;https://bem.info&quot;&gt;BEM&lt;/a&gt; or &lt;a href=&quot;http://rscss.io&quot;&gt;rscss&lt;/a&gt;. These component misfits are called utilities and they should have a place too.&lt;/p&gt;
+
+&lt;p&gt;A utility classes file can be managed with a documentation to avoid repetition and they may get visual in most cases. I use the &lt;code&gt;u-&lt;/code&gt; namespace with them and here’s an example &lt;code&gt;u-txtcenter&lt;/code&gt;, &lt;code&gt;u-fr&lt;/code&gt;. Which are my utility classes for text-align center and float right like many other CSS frameworks have them. They can be really helpful &lt;a href=&quot;https://benfrain.com/fun-css-naming-convention-explained/&quot;&gt;yet so dangerous&lt;/a&gt;. But there’s room for them in our stylesheets when used properly. I believe documentation as Zeldman said does help reduce the trouble of dealing with terrible stylesheets and it can be especially useful with utility classes. They shouldn’t be so much but if they grow, it’d prevent different developers from adding already used utility classes.&lt;/p&gt;
+
+&lt;p&gt;In the end we have both visual and semantic styles.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 10 Feb 2017 00:00:00 -0600</pubDate>
+        <link>https://josephrex.me/thoughts-on-semantic-styling-vs-visual-styling/</link>
+        <guid isPermaLink="true">https://josephrex.me/thoughts-on-semantic-styling-vs-visual-styling/</guid>
+        
+        <category>css</category>
+        
+        <category>opinions</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

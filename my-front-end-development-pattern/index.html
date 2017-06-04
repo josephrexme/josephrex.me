@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Front-end development pattern</title>
+  <meta name="description" content="I’ve seen different front-end developers start their projects. In most cases for intermediate designers, first steps are to write the basic HTML, download bo...">
+  <meta name="author" content="Joseph Rex">
+  <meta property="site_name" content="josephrexme">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://josephrex.me/my-front-end-development-pattern/">
+  <meta property="og:title" content="My Front-end development pattern">
+  <meta property="og:image" content="/favicon.png">
+  <meta property="og:description" content="I’ve seen different front-end developers start their projects. In most cases for intermediate designers, first steps are to write the basic HTML, download bo...">
+  <meta name="twitter:url" content="https://josephrex.me/my-front-end-development-pattern/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@josephrexme">
+  <meta name="twitter:creator" content="@josephrexme">
+  <meta name="twitter:title" content="My Front-end development pattern">
+  <meta name="twitter:img:src" content="/favicon.png">
+  
+  <meta name="twitter:label1" content="Author">
+  <meta name="twitter:data1" content="Joseph Rex">
+  <meta name="twitter:label2" content="Published On">
+  <meta name="twitter:data2" content="November 5, 2014">
+  
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//stats.g.doubleclick.net">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400">
+  <!--[if IE]>
+    <link rel="stylesheet" href="/assets/ie-6a05c7c956c34f317f0e63f8e1013aa3.css">
+  <![endif]-->
+  <link rel="stylesheet" href="/assets/app-e81d22a43d071153b1933b8033a1a91d.css">
+  <link rel="canonical" href="https://josephrex.me/my-front-end-development-pattern/">
+  <link rel="alternate" type="application/atom+xml" title="Joseph Rex's blog - Exploring Software, Food recipes, and Design" href="https://josephrex.me/feed.xml" />
+  <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/strich/image/upload/v1437944865/logo_xpfee9.png" />
+  <link rel="pingback" href="https://webmention.io/josephrex.me/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/josephrex.me/webmention" />
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "description": "I’ve seen different front-end developers start their projects. In most cases for intermediate designers, first steps are to write the basic HTML, download bo...",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Joseph Rex Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://res.cloudinary.com/strich/image/upload/v1493550549/jr-long-logo_fszgeu.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Joseph Rex",
+      "url": "https://josephrex.me/about-me"
+    },
+    "sameAs": [
+      "https://twitter.com/josephrexme",
+      "https://www.linkedin.com/in/josephrexme",
+      "https://behance.net/josephrexme",
+      "https://codepen.io/bl4ckdu5t",
+      "https://github.com/bl4ckdu5t"
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://josephrex.me/my-front-end-development-pattern/"
+    }
+    
+    ,"headline": "My Front-end development pattern",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text=My+Front-end+development+pattern",
+      "width": 800,
+      "height": 500
+    }
+    
+    
+    ,"datePublished": "2014-11-05 00:00:00 -0600",
+    "dateModified": "2014-11-05 00:00:00 -0600"
+    
+  }
+  </script>
+</head>
+
+  <body>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <div class="post">
+          <div class="scroll-progress"></div>
+          <div class="wrap">
+  <section class="container">
+    <nav class="nav row">
+  <div class="col col-10">
+    <a href="/"><img src="/logo.png" class="nav__logo" alt="Joseph Rex"></a>
+  </div>
+  <div class="col">
+    <div class="nav__menu u-fr">
+      <a href="/about-me" class="u-inherit-color">About Me</a>
+      <a href="/reading-list" class="u-inherit-color">Reading List</a>
+    </div>
+  </div>
+</nav>
+
+    <header class="header">
+      <h1 class="post__title">My Front-end development pattern</h1>
+      <time class="post__date">November 5, 2014</time>
+    </header>
+    <main>
+      <article class="post__article">
+        <figure>
+<img src="/assets/Web-Developer-718543e5a585987ecf34e7e8320af3e8.jpg" class="image" alt="Web-Developer" />
+</figure>
+
+<p>I’ve seen different front-end developers start their projects. In most cases for intermediate designers, first steps are to write the basic HTML, download <a href="http://getbootstrap.com" target="_blank">bootstrap</a> or <a href="http://foundation.zurb.com/" target="_blank">foundation</a> framework for local use, download an icon-font set like <a href="http://fontawesome.io/" target="_blank">fontawesome</a>, and they start writing their mark-up to fit the styles defined by the framework.
+<!--more--></p>
+
+<p>You speak of user experience? You’ve killed it even before starting your project at all. If you fall in that category I described above. Then you need a change henceforth if you are not allergic to advancements.</p>
+
+<p>I think those frameworks are good but <a href="http://marketblog.envato.com/guest/thought-css-frameworks/" target="_blank">it shouldn’t be your steps for every single project you do</a>. That’s just lame! I also understand you find some of these things easier and faster to use but to be a good developer, you need to come out of your comfort zone.</p>
+
+<p>I’m probably not doing it the best way it may be done but I have a conviction that I’m doing it right.</p>
+
+<p>Sometimes I wait for inspirations for a whole week before I begin a front-end design. Thanks to sites like</p>
+
+<ul>
+  <li><a href="http://culttt.com/design" target="_blank">http://culttt.com/design</a></li>
+  <li><a href="http://httpster.net/" target="_blank">http://httpster.net/</a></li>
+  <li><a href="http://designspiration.net/" target="_blank">http://designspiration.net/</a></li>
+  <li><a href="http://niice.co/" target="_blank">http://niice.co/</a></li>
+</ul>
+
+<p>They really help me defeat the process of seeking inspiration for so long. When I have an idea of what I want already, I just sketch it out on a paper and keep in my diary  throughout that design.</p>
+
+<p>After this, I wear my developer suits :D and open sublime text editor, starting with a code as little as this</p>
+
+<blockquote>
+  <p>html:5</p>
+</blockquote>
+
+<p>Little but powerful. With <a href="http://emmet.io/" target="_blank">Emmet</a>, that produces the following HTML5 document for me:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<p>really cool right! Emmet helps a long way more. You should <a href="http://emmet.io/" target="_blank">check it out</a>.</p>
+
+<p>One thing emmet does in that start HTML:5 document I don’t like is the upper case UTF-8 in the meta tag. Not like there’s anything wrong with this but it’s just one of the things that makes me feel uncomfortable. I prefer it in lower case.</p>
+
+<p>I add my viewport meta tag</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>I download <a href="http://modernizr.com/">modernizr</a> or just pick a local copy I already have and add it to my vendor sub folder inside my js folder. At this point I have a file structure in this form</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">├── styles/
+    │   └── vendor/
+    │   └── style.css
+    ├── fonts/
+    ├── images/
+    ├── _js/
+    │   ├── vendor/
+    │   └── script.js
+    │   └── plugins.js
+    └── index.html</code></pre></div>
+
+<p>The separate JS files get concatenated in the end to avoid multiple HTTP requests.</p>
+
+<p>The<a href="http://html5boilerplate.com/" target="_blank"> HTML5 boilerplate</a> is not so spoken of like it was at 2011 but it’s still very much useful. I start up my project by including it and it’s awesome the way I have a prepared 404.html page, I include <a href="http://modernizr.com/" target="_blank">modernizr</a> in the head. I add up Google CDN jQuery with a local fallback, and a favicon.png file to my root directory. My HTML structure then becomes:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#39;//fonts.googleapis.com/css?family=Open+Sans:400,800,300&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;styles/style.css&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;shortcut icon&quot;</span> <span class="na">href=</span><span class="s">&quot;favicon.png&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/vendor/modernizr.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="c">&lt;!--[if lt IE 7]&gt;</span>
+<span class="c">  &lt;p class=&quot;browsehappy&quot;&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. </span>
+<span class="c">  Please &lt;a href=&quot;http://browsehappy.com/&quot;&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt; </span>
+<span class="c">  &lt;![endif]--&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+      <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">b</span><span class="p">,</span><span class="nx">o</span><span class="p">,</span><span class="nx">i</span><span class="p">,</span><span class="nx">l</span><span class="p">,</span><span class="nx">e</span><span class="p">,</span><span class="nx">r</span><span class="p">){</span><span class="nx">b</span><span class="p">.</span><span class="nx">GoogleAnalyticsObject</span><span class="o">=</span><span class="nx">l</span><span class="p">;</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">]</span><span class="o">||</span><span class="p">(</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">]</span><span class="o">=</span>
+      <span class="kd">function</span><span class="p">(){(</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">].</span><span class="nx">q</span><span class="o">=</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">].</span><span class="nx">q</span><span class="o">||</span><span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)});</span><span class="nx">b</span><span class="p">[</span><span class="nx">l</span><span class="p">].</span><span class="nx">l</span><span class="o">=+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">;</span>
+      <span class="nx">e</span><span class="o">=</span><span class="nx">o</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span><span class="nx">r</span><span class="o">=</span><span class="nx">o</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="nx">i</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+      <span class="nx">e</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s1">&#39;//www.google-analytics.com/analytics.js&#39;</span><span class="p">;</span>
+      <span class="nx">r</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="nx">r</span><span class="p">)}(</span><span class="nb">window</span><span class="p">,</span><span class="nb">document</span><span class="p">,</span><span class="s1">&#39;script&#39;</span><span class="p">,</span><span class="s1">&#39;ga&#39;</span><span class="p">));</span>
+      <span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;create&#39;</span><span class="p">,</span><span class="s1">&#39;UA-XXXXX-X&#39;</span><span class="p">);</span><span class="nx">ga</span><span class="p">(</span><span class="s1">&#39;send&#39;</span><span class="p">,</span><span class="s1">&#39;pageview&#39;</span><span class="p">);</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script&gt;</span><span class="nb">window</span><span class="p">.</span><span class="nx">jQuery</span> <span class="o">||</span> <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;script src=&quot;js/vendor/jquery-2.1.1.min.js&quot;&gt;&lt;\/script&gt;&#39;</span><span class="p">)</span><span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/script.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<p>I added a google font to that because most times I do the google fonts since I can’t afford other webfonts. I also converted boilerplate’s stylesheet to a partial (_h5bp.sass) and imported it in my styles.sass file.</p>
+
+<p>Now the HTML is set up. The JS is fine as well. My main.js is where I write my javascript and plugins.js by HTML5 boilerplate has a nice fallback for browsers without console and also gives me space to initialize my third-party plugins.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Avoid `console` errors in browsers that lack a console.</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">method</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">noop</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{};</span>
+    <span class="kd">var</span> <span class="nx">methods</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;assert&#39;</span><span class="p">,</span> <span class="s1">&#39;clear&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="s1">&#39;debug&#39;</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">,</span> <span class="s1">&#39;dirxml&#39;</span><span class="p">,</span> <span class="s1">&#39;error&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;exception&#39;</span><span class="p">,</span> <span class="s1">&#39;group&#39;</span><span class="p">,</span> <span class="s1">&#39;groupCollapsed&#39;</span><span class="p">,</span> <span class="s1">&#39;groupEnd&#39;</span><span class="p">,</span> <span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="s1">&#39;log&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;markTimeline&#39;</span><span class="p">,</span> <span class="s1">&#39;profile&#39;</span><span class="p">,</span> <span class="s1">&#39;profileEnd&#39;</span><span class="p">,</span> <span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="s1">&#39;timeEnd&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;timeStamp&#39;</span><span class="p">,</span> <span class="s1">&#39;trace&#39;</span><span class="p">,</span> <span class="s1">&#39;warn&#39;</span>
+    <span class="p">];</span>
+    <span class="kd">var</span> <span class="nx">length</span> <span class="o">=</span> <span class="nx">methods</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">console</span> <span class="o">=</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">console</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">console</span> <span class="o">||</span> <span class="p">{});</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="nx">length</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">method</span> <span class="o">=</span> <span class="nx">methods</span><span class="p">[</span><span class="nx">length</span><span class="p">];</span>
+
+        <span class="c1">// Only stub undefined methods.</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">console</span><span class="p">[</span><span class="nx">method</span><span class="p">])</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">[</span><span class="nx">method</span><span class="p">]</span> <span class="o">=</span> <span class="nx">noop</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}());</span>
+
+<span class="c1">// Place any jQuery/helper plugins in here.</span>
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.flexslider&#39;</span><span class="p">).</span><span class="nx">flexslider</span><span class="p">({</span>
+        <span class="nx">animation</span><span class="o">:</span> <span class="s2">&quot;fade&quot;</span><span class="p">,</span>
+        <span class="nx">controlNav</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">});</span>
+<span class="p">})</span></code></pre></div>
+
+<p>I just gave an example of flexslider being used in my project to show usage of plugins.</p>
+
+<p>I’ll say my whole javascript is fine but <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">pagespeed</a> really matters to me and this makes me take minification very seriously. I minify my js with <a href="http://gruntjs.com" target="_blank">grunt</a> <a href="https://www.npmjs.org/package/grunt-contrib-uglify" target="_blank">uglify</a> after installing it with <a href="https://npmjs.org/" target="_blank">npm</a>.</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">npm install grunt-contrib-uglify --save-dev</code></pre></div>
+
+<p>After this step, all that needs to be done is to register the task in Gruntfile.js</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="c1">// Project configuration.</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+    <span class="nx">pkg</span><span class="o">:</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="s1">&#39;package.json&#39;</span><span class="p">),</span>
+    <span class="nx">uglify</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">banner</span><span class="o">:</span> <span class="s1">&#39;/*! &lt;%= pkg.name %&gt; &lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt; */\n&#39;</span>
+      <span class="p">},</span>
+      <span class="nx">build</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;js/main.js&#39;</span><span class="p">,</span>
+        <span class="nx">dest</span><span class="o">:</span> <span class="s1">&#39;js/main.min.js&#39;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+
+  <span class="c1">// Load the plugin that provides the &quot;uglify&quot; task.</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">&#39;grunt-contrib-uglify&#39;</span><span class="p">);</span>
+
+  <span class="c1">// Default task(s).</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;uglify&#39;</span><span class="p">]);</span>
+
+<span class="p">};</span></code></pre></div>
+
+<p>I had created a package.json file from the start of the project with <code>npm init</code>. Now everything seems fine with JS. I’ll just have to change main.js to main.min.js at the end of my design.</p>
+
+<h3 id="the-css"><strong>The CSS</strong></h3>
+
+<p>I write Sass (indented). For those that agree with my steps from the beginning and got here to say :</p>
+
+<blockquote>
+  <p>B.S! He uses indented Sass</p>
+</blockquote>
+
+<p>I feel comfortable with indented sass maybe because I’m a python developer and I live by indenting :P. I’ve been thinking I’ll change to Scss format soon enough. I really <a title="Sass and Compass: My Best Friends" href="http://josephrex.me/sass-and-compass-my-best-friends/" target="_blank">leverage Sass by using compass</a>. Consider all you want just getting done so easily.</p>
+
+<p>First, I make use of <a href="http://compass-style.org/reference/compass/" target="_blank">compass extensions</a>, they help and provide me with a lot of useful mixins in addition with the ones I created myself. Here are some of mine</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">=</span><span class="nt">three-d</span><span class="o">($</span><span class="nt">shadowcolor</span><span class="o">)</span>
+	<span class="nt">position</span><span class="o">:</span> <span class="nt">relative</span>
+	<span class="nt">box-shadow</span><span class="o">:</span> <span class="nt">1px</span> <span class="nt">1px</span> <span class="o">$</span><span class="nt">shadowcolor</span><span class="o">,</span> <span class="nt">2px</span> <span class="nt">2px</span> <span class="o">$</span><span class="nt">shadowcolor</span><span class="o">,</span> <span class="nt">3px</span> <span class="nt">3px</span> <span class="o">$</span><span class="nt">shadowcolor</span>
+	<span class="nt">transition</span><span class="o">:</span> <span class="nt">all</span> <span class="nt">0</span><span class="nc">.1s</span> <span class="nt">ease-in</span>
+	<span class="o">&amp;</span><span class="nd">:active</span>
+		<span class="nt">box-shadow</span><span class="o">:</span> <span class="nt">none</span>
+		<span class="nt">top</span><span class="o">:</span> <span class="nt">3px</span>
+		<span class="nt">left</span><span class="o">:</span> <span class="nt">3px</span>
+
+<span class="o">=</span><span class="nt">font-face</span><span class="o">($</span><span class="nt">family</span><span class="o">,</span> <span class="o">$</span><span class="nt">path</span><span class="o">,</span> <span class="o">$</span><span class="nt">svg</span><span class="o">,</span> <span class="o">$</span><span class="nt">weight</span><span class="o">:</span> <span class="nt">normal</span><span class="o">,</span> <span class="o">$</span><span class="nt">style</span><span class="o">:</span> <span class="nt">normal</span><span class="o">)</span>
+	<span class="k">@font-face</span>
+		<span class="nt">font-family</span><span class="o">:</span> <span class="o">$</span><span class="nt">family</span>
+		<span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;#{$path}.eot&#39;</span><span class="o">)</span>
+		<span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;#{$path}.eot?#iefix&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;embedded-opentype&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;#{$path}.woff&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;woff&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;#{$path}.ttf&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;truetype&#39;</span><span class="o">),</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;#{$path}.svg##{$svg}&#39;</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">&#39;svg&#39;</span><span class="o">)</span>
+		<span class="nt">font-weight</span><span class="o">:</span> <span class="o">$</span><span class="nt">weight</span>
+		<span class="nt">font-style</span><span class="o">:</span> <span class="o">$</span><span class="nt">style</span>
+
+<span class="o">//</span> <span class="nt">Makes</span> <span class="nt">Ellipsis</span> <span class="nt">on</span> <span class="nt">Single</span> <span class="nt">Line</span>
+<span class="o">=</span><span class="nt">ellipsis-line</span><span class="o">($</span><span class="nt">width</span><span class="o">)</span>
+	<span class="nt">width</span><span class="o">:</span> <span class="o">$</span><span class="nt">width</span>
+	<span class="nt">text-overflow</span><span class="o">:</span> <span class="nt">ellipsis</span>
+	<span class="nt">overflow</span><span class="o">:</span> <span class="nt">hidden</span>
+	<span class="nt">white-space</span><span class="o">:</span> <span class="nt">nowrap</span>
+
+<span class="o">//</span> <span class="nt">GrayScale</span> <span class="nt">Filter</span>
+<span class="o">=</span><span class="nt">grayscale</span><span class="o">($</span><span class="nt">level</span><span class="o">)</span>
+	<span class="nt">-webkit-filter</span><span class="o">:</span> <span class="nt">grayscale</span><span class="o">($</span><span class="nt">level</span><span class="o">)</span>
+	<span class="nt">filter</span><span class="o">:</span> <span class="nt">grayscale</span><span class="o">($</span><span class="nt">level</span><span class="o">)</span>
+
+<span class="o">=</span><span class="nt">socle</span><span class="o">()</span>
+	<span class="nt">position</span><span class="o">:</span> <span class="nt">relative</span>
+	<span class="nt">z-index</span><span class="o">:</span> <span class="nt">2</span>
+	<span class="o">&amp;</span><span class="nd">:after</span>
+		<span class="nt">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span>
+		<span class="nt">z-index</span><span class="o">:</span> <span class="nt">-1</span>
+		<span class="nt">position</span><span class="o">:</span> <span class="nt">absolute</span>
+		<span class="nt">border-radius</span><span class="o">:</span> <span class="nt">6px</span>
+		<span class="nt">box-shadow</span><span class="o">:</span> <span class="nt">inset</span> <span class="nt">0</span> <span class="nt">1px</span> <span class="nt">0</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="nc">.1</span><span class="o">),</span> <span class="nt">inset</span> <span class="nt">0</span> <span class="nt">-1px</span> <span class="nt">0</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">0</span><span class="nc">.7</span><span class="o">)</span>
+		<span class="nt">top</span><span class="o">:</span> <span class="nt">-6px</span>
+		<span class="nt">bottom</span><span class="o">:</span> <span class="nt">-6px</span>
+		<span class="nt">right</span><span class="o">:</span> <span class="nt">-6px</span>
+		<span class="nt">left</span><span class="o">:</span> <span class="nt">-6px</span>
+		<span class="nt">background</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="nc">.1</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span>
+<span class="o">//</span> <span class="nt">Gradients</span>
+<span class="o">=</span><span class="nt">gradient-dark-linear</span>
+	<span class="nt">background-image</span><span class="o">:</span> <span class="nt">-webkit-linear-gradient</span><span class="o">(</span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nc">.25</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span>
+	<span class="nt">background-image</span><span class="o">:</span> <span class="nt">-o-linear-gradient</span><span class="o">(</span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nc">.25</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span>
+	<span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nc">.25</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span>
+<span class="o">=</span><span class="nt">gradient-light-linear</span>
+	<span class="nt">background-image</span><span class="o">:</span> <span class="nt">-webkit-linear-gradient</span><span class="o">(</span><span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nc">.5</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span>
+	<span class="nt">background-image</span><span class="o">:</span> <span class="nt">-o-linear-gradient</span><span class="o">(</span><span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nc">.5</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span>
+	<span class="nt">background-image</span><span class="o">:</span> <span class="nt">linear-gradient</span><span class="o">(</span><span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nc">.5</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span>
+<span class="o">=</span><span class="nt">gradient-dark-radial</span>
+	<span class="nt">background-image</span><span class="o">:</span> <span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">center</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">circle</span> <span class="nt">farthest-corner</span><span class="o">,</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="nc">.15</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span>
+<span class="o">=</span><span class="nt">gradient-light-radial</span>
+	<span class="nt">background-image</span><span class="o">:</span> <span class="nt">radial-gradient</span><span class="o">(</span><span class="nt">center</span> <span class="nt">0</span><span class="o">,</span> <span class="nt">circle</span> <span class="nt">farthest-corner</span><span class="o">,</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">0</span><span class="nc">.4</span><span class="o">),</span> <span class="nt">rgba</span><span class="o">(</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">255</span><span class="o">,</span><span class="nt">0</span><span class="o">))</span></code></pre></div>
+
+<p><a href="https://twitter.com/HugoGiraudel" target="_blank">Hugo Giraudel </a>gave <a href="http://www.sitepoint.com/sass-mixins-kickstart-project/" target="_blank">some kick-start mixins here</a>. I also use <a href="http://breakpoint-sass.com/" target="_blank">breakpoints</a> for my responsive styling.</p>
+
+<pre class="lang:default decode:true ">sudo gem install breakpoint</pre>
+
+<p>with it you can write media queries like this</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.fancy</span>
+   <span class="nt">width</span><span class="o">:</span> <span class="nt">500px</span>
+   <span class="o">+</span><span class="nt">breakpoint</span><span class="o">(</span><span class="nt">max-width</span> <span class="nt">1200px</span><span class="o">)</span>
+        <span class="nt">width</span><span class="o">:</span> <span class="nt">200px</span></code></pre></div>
+
+<p>which is an equivalent of the following CSS</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.fancy</span><span class="p">{</span>
+   <span class="k">width</span><span class="o">:</span> <span class="m">500px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">1200px</span><span class="o">)</span><span class="p">{</span>
+   <span class="nc">.fancy</span><span class="p">{</span>
+      <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+
+<p>The force is with me on this one.</p>
+
+<p>When there is need for grids, I call for <a href="http://susydocs.oddbird.net/en/latest/install/" target="_blank">susy</a>. Susy is way better than bootstrap grids in that I don’t have to load some unnecessary classes I don’t need. I call for grids just when I need them this way</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.container</span>
+   <span class="o">+</span><span class="nt">container</span><span class="o">(</span><span class="nt">100</span><span class="o">%)</span>
+   <span class="o">&gt;</span><span class="nt">div</span>
+      <span class="o">+</span><span class="nt">span</span><span class="o">(</span><span class="nt">25</span><span class="o">%)</span></code></pre></div>
+
+<p>with a mark-up of this sort</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>That’s just 4 grids but we can go 12 just like bootstrap too. I like the idea that we can just call grids on demand rather than loading excess mark-up as with bootstrap.</p>
+
+<p>Finally, I will like my websites to have browser compatibility when using properties by some vendor browsers. <a href="http://css-tricks.com/autoprefixer/" target="_blank">Autoprefixer</a> comes to my rescue at this point. I just need to add it to require it in my config.rb with my breakpoints and susy. But I also have to do some things to make it work after CSS file is generated, since it is a post processor.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;compass/import-once/activate&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;autoprefixer-rails&#39;</span>
+<span class="n">on_stylesheet_saved</span> <span class="k">do</span> <span class="o">|</span><span class="n">file</span><span class="o">|</span>
+  <span class="n">css</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+  <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">io</span><span class="o">|</span>
+    <span class="n">io</span> <span class="o">&lt;</span> <span class="no">AutoprefixerRails</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">css</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+<span class="nb">require</span> <span class="s1">&#39;breakpoint&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;susy&#39;</span>
+
+<span class="n">http_path</span> <span class="o">=</span> <span class="s2">&quot;/&quot;</span>
+<span class="n">css_dir</span> <span class="o">=</span> <span class="s2">&quot;stylesheets&quot;</span>
+<span class="n">sass_dir</span> <span class="o">=</span> <span class="s2">&quot;sass&quot;</span>
+<span class="n">images_dir</span> <span class="o">=</span> <span class="s2">&quot;images&quot;</span>
+<span class="n">javascripts_dir</span> <span class="o">=</span> <span class="s2">&quot;js&quot;</span>
+
+<span class="n">output_style</span> <span class="o">=</span> <span class="ss">:compressed</span></code></pre></div>
+
+<p>I also set output_style to compressed in my config.rb to get a resulting minified CSS. Finally, I  had put a snippet of <a href="http://google.com/analytics" target="_blank">google analytics</a> at the bottom to help me monitor and maintain the website.</p>
+
+<p>Now I’m all set. I don’t have to do all this every time I start a new project as I’ve made a default directory where I have it all set up. In cases where I have to use bootstrap, I also have a default-bootstrap directory where bootstrap is included in my config.rb.</p>
+
+<p>These are good practices and I really do hope it helps anyone that stumbles upon them.</p>
+
+<div class="update">
+  <h4>
+    Update
+  </h4>
+  
+  <p>
+    12/13/2014 - I use Scss now. See <a title="Moving from Indented Sass to Scss" href="http://josephrex.me/moving-from-indented-sass-to-scss/">this post</a>
+  </p>
+</div>
+
+
+        <div class="post__actions row row-no-padding">
+          <div class="col">
+            <div class="tags tags--page">
+            <a href="/tag/frontend/" rel="tag">frontend</a>, <a href="/tag/frameworks/" rel="tag">frameworks</a>, <a href="/tag/web/" rel="tag">web</a>
+            </div>
+          </div>
+          <div class="col u-txtright">
+            <div class="post__actions__action" id="shareDropdown">
+              <div class="post__sharelinks">
+                <a title="Share on Facebook" aria-label="Share on Facebook" href="https://facebook.com/sharer/sharer.php?u=https://josephrex.me/my-front-end-development-pattern/" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Facebook</a>
+                <a title="Share on Twitter" aria-label="Share on Twitter" href="https://twitter.com/intent/tweet/?text=My Front-end development pattern&url=https://josephrex.me/my-front-end-development-pattern/&via=josephrexme" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" data-show-count="false">Twitter</a>
+              </div>
+              <svg version="1.1" class="icon" viewBox="0 0 333.324 333.324">
+                <path d="M125.255,59.513l33.907-33.907v149.451c0,4.143,3.358,7.5,7.5,7.5s7.5-3.357,7.5-7.5V25.606l33.907,33.907c1.464,1.464,3.384,2.196,5.303,2.196s3.839-0.732,5.303-2.196c2.929-2.93,2.929-7.678,0-10.607l-46.71-46.71c-2.929-2.928-7.678-2.928-10.606,0l-46.71,46.71c-2.929,2.93-2.929,7.678,0,10.607C117.577,62.441,122.326,62.441,125.255,59.513z"/>
+                <path d="M263.328,87.557h-61.645c-4.142,0-7.5,3.357-7.5,7.5s3.358,7.5,7.5,7.5h54.145v215.767H77.495V102.557h54.145c4.142,0,7.5-3.357,7.5-7.5s-3.358-7.5-7.5-7.5H69.995c-4.142,0-7.5,3.357-7.5,7.5v230.767c0,4.143,3.358,7.5,7.5,7.5h193.333c4.142,0,7.5-3.357,7.5-7.5V95.057C270.828,90.915,267.47,87.557,263.328,87.557z"/>
+              </svg>
+              Share
+            </div>
+          </div>
+        </div>
+        <!-- Comments Section -->
+        
+        <div class="comments">
+          <div class="comments__trigger js-toggleComments">
+            <span class="comments__trigger__plus"></span>
+            <p>Toggle Comments</p>
+          </div>
+          <div id="disqus_thread" style="display:none"></div>
+        </div>
+        
+      </article>
+    </main>
+  </section>
+</div>
+<footer class="post__footer">
+  <div class="wrap row">
+    <div class="col">
+      
+      <h5>Newer Post</h5>
+      <a href="/implementing-dynamic-drop-down-or-dependent-list-in-laravel4/">Implementing dynamic drop down / dependent list in laravel4</a>
+      
+    </div>
+    <div class="col u-txtright">
+      
+      <h5>Older Post</h5>
+      <a href="/there-shall-be-binaries/">There shall be binaries</a>
+      
+    </div>
+  </div>
+</footer>
+
+        </div>
+        <footer class="footer">
+  <h4 class="footer__heading">Subscribe to my newsfeed</h4>
+  <!-- For MailChimp -->
+  <div id="mc_embed_signup">
+    <form action="//josephrex.us10.list-manage.com/subscribe/post?u=727d4403f160030f0e6c6c818&amp;id=9dade596c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form" target="_blank" novalidate>
+      <label for="EMAIL" class="u-visuallyhidden">Email address</label>
+      <input type="text" class="feed form__input" name="EMAIL" id="EMAIL" placeholder="Email Address">
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_727d4403f160030f0e6c6c818_9dade596c2" tabindex="-1" value=""></div>
+      <button class="button button--transparent">Subscribe</button>
+    </form>
+  </div>
+  <ul class="social">
+    <li>
+      <a href="https://facebook.com/josephrexme" class="facebook" rel="me">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16v-12h-4v-4h4v-3c0-2.761 2.239-5 5-5h5v4h-5c-0.552 0-1 0.448-1 1v3h5.5l-1 4h-4.5v11.496c6.901-1.776 12-8.041 12-15.496 0-8.837-7.163-16-16-16z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/josephrexme" class="twitter" rel="me">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM23.952 11.921c0.008 0.176 0.012 0.353 0.012 0.531 0 5.422-4.127 11.675-11.675 11.675-2.317 0-4.474-0.679-6.29-1.844 0.321 0.038 0.648 0.058 0.979 0.058 1.922 0 3.692-0.656 5.096-1.757-1.796-0.033-3.311-1.219-3.833-2.849 0.251 0.048 0.508 0.074 0.772 0.074 0.374 0 0.737-0.050 1.081-0.144-1.877-0.377-3.291-2.035-3.291-4.023 0-0.017 0-0.034 0-0.052 0.553 0.307 1.186 0.492 1.858 0.513-1.101-0.736-1.825-1.992-1.825-3.415 0-0.752 0.202-1.457 0.556-2.063 2.024 2.482 5.047 4.116 8.457 4.287-0.070-0.3-0.106-0.614-0.106-0.935 0-2.266 1.837-4.103 4.103-4.103 1.18 0 2.247 0.498 2.995 1.296 0.935-0.184 1.813-0.525 2.606-0.996-0.306 0.958-0.957 1.762-1.804 2.27 0.83-0.099 1.621-0.32 2.357-0.646-0.55 0.823-1.245 1.545-2.047 2.124z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/bl4ckdu5t/" class="github" rel="me">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+        <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="http://codepen.io/bl4ckdu5t/" class="codepen" rel="me">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+        <path d="M29.555 11.501l-14-9.333c-0.336-0.224-0.774-0.224-1.109 0l-14 9.333c-0.278 0.185-0.445 0.498-0.445 0.832v9.333c0 0.334 0.167 0.647 0.445 0.832l14 9.333c0.168 0.112 0.361 0.168 0.555 0.168s0.387-0.056 0.555-0.168l14-9.333c0.278-0.185 0.445-0.498 0.445-0.832v-9.333c0-0.334-0.167-0.647-0.445-0.832zM15 20.465l-5.197-3.465 5.197-3.465 5.197 3.465-5.197 3.465zM16 11.798v-6.93l11.197 7.465-5.197 3.465-6-4zM14 11.798l-6 4-5.197-3.465 11.197-7.465v6.93zM6.197 17l-4.197 2.798v-5.596l4.197 2.798zM8 18.202l6 4v6.93l-11.197-7.465 5.197-3.465zM16 22.202l6-4 5.197 3.465-11.197 7.465v-6.93zM23.803 17l4.197-2.798v5.596l-4.197-2.798z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://behance.net/josephrexme">
+        <svg id="icon-behance" class="icon" viewBox="0 0 20 20">
+          <path d="M8.072 9.301c0 0 1.892-0.147 1.892-2.459 0-2.315-1.548-3.441-3.51-3.441h-6.454v12.926h6.454c0 0 3.941 0.129 3.941-3.816-0.001-0.001 0.171-3.21-2.323-3.21zM2.844 5.697h3.61c0 0 0.878 0 0.878 1.344 0 1.346-0.516 1.541-1.102 1.541h-3.386v-2.885zM6.271 14.029h-3.427v-3.455h3.61c0 0 1.308-0.018 1.308 1.775 0 1.512-0.977 1.669-1.491 1.68zM15.649 6.688c-4.771 0-4.767 4.967-4.767 4.967s-0.326 4.941 4.767 4.941c0 0 4.243 0.254 4.243-3.437h-2.182c0 0 0.072 1.391-1.988 1.391 0 0-2.184 0.152-2.184-2.25h6.423c0.001-0.001 0.709-5.612-4.312-5.612zM17.59 10.574h-4.074c0 0 0.266-1.992 2.182-1.992s1.892 1.992 1.892 1.992zM18.097 4.16h-5.117v1.594h5.117v-1.594z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="http://stackoverflow.com/users/2649933/bl4ckdu5t?tab=profile" class="stackoverflow" rel="me">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+        <path d="M32 20v12h-32v-12h4v8h24v-8zM6 22h20v4h-20zM6.473 17.671l0.866-3.905 19.526 4.328-0.866 3.905zM8.739 9.642l1.69-3.625 18.126 8.452-1.69 3.625zM30.991 11.296l-2.435 3.173-15.867-12.175 1.761-2.294h1.82z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.pinterest.com/josephrexme" class="pinterest" rel="me">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+        <path d="M16 0c-8.837 0-16 7.163-16 16 0 6.778 4.217 12.568 10.169 14.899-0.14-1.266-0.266-3.208 0.055-4.59 0.291-1.249 1.876-7.953 1.876-7.953s-0.479-0.958-0.479-2.375c0-2.225 1.29-3.886 2.895-3.886 1.365 0 2.024 1.025 2.024 2.254 0 1.373-0.874 3.425-1.325 5.327-0.377 1.593 0.799 2.892 2.369 2.892 2.844 0 5.030-2.999 5.030-7.327 0-3.831-2.753-6.509-6.683-6.509-4.552 0-7.225 3.415-7.225 6.943 0 1.375 0.53 2.85 1.191 3.651 0.131 0.158 0.15 0.297 0.111 0.459-0.121 0.506-0.391 1.593-0.444 1.815-0.070 0.293-0.232 0.355-0.535 0.214-1.998-0.93-3.248-3.852-3.248-6.198 0-5.047 3.667-9.682 10.572-9.682 5.55 0 9.864 3.955 9.864 9.241 0 5.514-3.477 9.952-8.302 9.952-1.621 0-3.145-0.842-3.667-1.837 0 0-0.802 3.055-0.997 3.803-0.361 1.39-1.337 3.132-1.989 4.195 1.497 0.463 3.088 0.713 4.738 0.713 8.836-0 16-7.163 16-16s-7.163-16-16-16z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com/josephrexme" class="instagram" rel="me">
+        <svg class="icon" viewBox="0 0 27 32">
+          <path class="path1" d="M18.286 16q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.679q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 4.75q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/josephrexme" class="linkedin" rel="me">
+        <svg id="icon-linkedin" viewBox="0 0 1024 1024" class="icon">
+          <path class="path1" d="M852 0h-680c-94.6 0-172 77.4-172 172v680c0 94.6 77.4 172 172 172h680c94.6 0 172-77.4 172-172v-680c0-94.6-77.4-172-172-172zM384 832h-128v-448h128v448zM320 320c-35.346 0-64-28.654-64-64s28.654-64 64-64 64 28.654 64 64-28.654 64-64 64zM832 832h-128v-256c0-35.346-28.654-64-64-64s-64 28.654-64 64v256h-128v-448h128v79.472c26.398-36.264 66.752-79.472 112-79.472 79.53 0 144 71.634 144 160v288z"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="/feed.xml" class="rss" rel="me">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+        <path d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path>
+        </svg>
+      </a>
+    </li>
+  </ul>
+  <p>&copy; <span class="thisYear"></span> Joseph Rex</p>
+</footer>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_CHTML"></script>
+<script async>
+  // Google Analytics
+  if(navigator.userAgent.indexOf('Speed Insights') === -1){
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56161232-2', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+<script src="/assets/app-9ad6f684fd08e9c58b3614eb3bef015a.js"></script>
+
+      </div>
+    </div>
+  </body>
+</html>
