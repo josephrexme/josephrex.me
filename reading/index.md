@@ -11,6 +11,7 @@ Here's a list of books I've read and will be reading:
 - CSS Secrets - Lea Verou
 - [Why's poignant guide to Ruby][1]
 - [Practical Object Oriented Design Ruby (POODR)][2]
+- [99 bottles of OOP][14]
 - Rails 4 in action - Ryan Biggs et al
 - Ghost in the wires - Kevin Mitnick
 - Art of Intrustion - Kevin Mitnick
@@ -44,3 +45,4 @@ Here's a list of books I've read and will be reading:
 [11]:https://www.amazon.com/gp/product/032157351X/
 [12]:http://algs4.cs.princeton.edu/home/
 [13]:https://www.amazon.com/dp/B07284HSHQ/
+[14]:https://www.sandimetz.com/99bottles
