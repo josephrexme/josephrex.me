@@ -1,0 +1,33 @@
+.form{
+  margin: 20px 0 40px;
+  * { outline: none; }
+  &__input{
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    padding: 5px 10px;
+    border: solid thin currentColor;
+    border-radius: $inputs-border-radius;
+    background: transparent;
+  }
+}
+::-webkit-input-placeholder{
+  font-style: normal;
+  font-weight: 300;
+  color: rgba($white, .3);
+}
+::placeholder{
+  font-style: normal;
+  font-weight: 300;
+  color: rgba($white, .3);
+}
+::-moz-placeholder{
+  font-style: normal;
+  font-weight: 300;
+  color: rgba($white, .3);
+}
+:-ms-input-placeholder{
+  font-style: normal;
+  font-weight: 300;
+  color: rgba($white, .3);
+}

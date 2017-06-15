@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/categories/blogging/</link>
+    <description>Recent content in Blogging on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/categories/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Changing pygments syntax color for jekyll blogs</title>
+      <link>https://josephrex.me/changing-pygments-syntax-color-for-jekyll-blogs/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/changing-pygments-syntax-color-for-jekyll-blogs/</guid>
+      <description>&lt;p&gt;Syntax highlighting is one of the great benefits we get from text editors we use in writing code. Besides making the code more readable, it makes me spot errors in my code without a linter. Training on Front-end development has been part of my profession for 2 years and I keep hammering on the fact that my students should make use of a good text editor. This has been a great thing as I find some students with mark-up like this:
+
+{% image syntax-highlight.png class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Jekyll Assets</title>
+      <link>https://josephrex.me/using-jekyll-assets/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-jekyll-assets/</guid>
+      <description>&lt;figure&gt;
+{% image jekyll_assets.jpg class=&#34;image&#34; alt=&#34;jekyll assets&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve always enjoyed all the experience with sprockets and the whole of the assets pipeline including how it allows me use compass just by having it in my Gemfile. On my quest for seeking ways to use compass properly with my jekyll blog, I came across &lt;a href=&#34;http://davidpots.com/blog/jekyll-github-pages-compass/&#34;&gt;a blog&lt;/a&gt; suggesting a hacky way of using compass with jekyll. The blog post had referenced this &lt;a href=&#34;https://gist.github.com/davidpots/5853188&#34;&gt;gist&lt;/a&gt; which referenced &lt;a href=&#34;https://gist.github.com/parkr/2874934&#34;&gt;another gist&lt;/a&gt;. I followed this for a bit till I hit a stumbling block. The method was fine from the start. I had to use the following plugin:
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

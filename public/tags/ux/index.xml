@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ux on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/ux/</link>
+    <description>Recent content in Ux on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prioritizing Critical (Above the fold) CSS to optimize page load speed</title>
+      <link>https://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/</link>
+      <pubDate>Wed, 10 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/</guid>
+      <description>&lt;figure&gt;
+{% image above-fold.jpg class=&#34;image image--wide&#34; alt=&#34;above the fold&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I made &lt;a href=&#34;http://slides.com/bl4ckdu5t/critical-css&#34; target=&#34;_blank&#34;&gt;a slide&lt;/a&gt; on this about a month back and I&amp;rsquo;ve since intended to write about it here.&lt;/p&gt;
+
+&lt;p&gt;Every developer that cares about user experience will always want to fix everything that makes a user think of not coming back to their website after first visit. I&amp;rsquo;ve found myself in such situations where I begin to think that whoever did this thing must have invested a lot of time making something that technically feels like nothing. We don&amp;rsquo;t want our applications to be thought of this way.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

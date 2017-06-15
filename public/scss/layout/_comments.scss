@@ -1,0 +1,39 @@
+.comments{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px 10px;
+  border-top: solid thin rgba($black, .1);
+  text-align: center;
+  &__trigger{
+    width: 120px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    cursor: pointer;
+    p{
+      margin: 1px 0;
+    }
+    &__plus{
+      display: inline-block;
+      width: 0;
+      height: 30px;
+      border-right: solid thin black;
+      transition: .5s linear;
+      transform: translateZ(0);
+      &::after{
+        content: '';
+        display: block;
+        width: 30px;
+        border-top: solid thin black;
+        margin-top: 15px;
+        margin-left: -15px;
+      }
+    }
+    &--animated{
+      animation: cross-rotate 1s infinite;
+    }
+    &--xclose{
+      transform: rotate(45deg) translateZ(0);
+      transition: .5s linear;
+    }
+  }
+}

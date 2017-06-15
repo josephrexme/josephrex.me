@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encryption on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/encryption/</link>
+    <description>Recent content in Encryption on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Symmetric Encryption in Python</title>
+      <link>https://josephrex.me/symmetric-encryption-in-python/</link>
+      <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/symmetric-encryption-in-python/</guid>
+      <description>&lt;p&gt;{% image encryption-1.jpeg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;encryption&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;In the middle of a project I&amp;rsquo;m presently working on, I needed to make use of a Symmetric encryption based on the workflow of my software. A key is required by users to encrypt data and the same key will be needed to decrypt data. My first thoughts were on PyCrypto so I went ahead doing this&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color: #fec418&#34;&gt;Crypto.Cipher&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;AES&lt;/span&gt;
+&lt;span style=&#34;color: #5bc4bf&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color: #fec418&#34;&gt;Crypto&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;Random&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;The quick brown fox jumped over the dog&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;iv&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;Random&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;new()&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;read(AES&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;block_size)&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;cipher&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;AES&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;new(key,&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;AES&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;MODE_CFB,&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;iv)&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;ctext&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;iv&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;cipher&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;encrypt(text)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This was totally fine but when I tried decrypting the ctext data, I got something entirely different from what my input was.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;decrypted&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;cipher&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;decrypt(ctext)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Strange behaviour from MODE_CFB made me try MODE_CBC. Just the exact same way, I went ahead to just change to MODE_CBC
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authentication on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/authentication/</link>
+    <description>Recent content in Authentication on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/authentication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Multiple tables for authentication in laravel</title>
+      <link>https://josephrex.me/using-multiple-tables-for-authentication-in-laravel/</link>
+      <pubDate>Sat, 13 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-multiple-tables-for-authentication-in-laravel/</guid>
+      <description>&lt;p&gt;Laravel provides a good authentication handler with the Auth class. To authenticate a user attempting to log in, we use the attempt method like so:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #776e71&#34;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span style=&#34;color: #815ba4&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;Auth&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;attempt&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #815ba4&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;email&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ef6155&#34;&gt;$email&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ef6155&#34;&gt;$password&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;)))&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #815ba4&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #06b6ef&#34;&gt;Redirect&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;intended&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;dashboard&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #776e71&#34;&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That&amp;rsquo;s just as it is &lt;a href=&#34;http://laravel.com/docs/4.2/security#authenticating-users&#34; target=&#34;_blank&#34;&gt;in the docs&lt;/a&gt;. But this checks against the users table which is fine because most apps have a users table for authentication. I&amp;rsquo;ve never had a need to build something requiring more tables for authentication but I had someone requesting for a solution to this and I was really interested in getting this to work.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

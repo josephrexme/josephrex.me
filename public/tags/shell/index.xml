@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/shell/</link>
+    <description>Recent content in Shell on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Butterfly and Fish</title>
+      <link>https://josephrex.me/butterfly-and-fish/</link>
+      <pubDate>Fri, 25 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/butterfly-and-fish/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;
+  {% image butterfly_1.gif class=&amp;ldquo;image&amp;rdquo; alt=&amp;ldquo;butterfly_1&amp;rdquo; %}
+&lt;/figure&gt;
+I recently stumbled upon butterfly on &lt;a href=&#34;http://paradoxxxzero.github.io/2014/02/28/butterfly.html&#34;&gt;http://paradoxxxzero.github.io/2014/02/28/butterfly.html&lt;/a&gt; and it is a really awesome web browser shell execution program written in python. It&amp;rsquo;s not like it&amp;rsquo;s the first of it&amp;rsquo;s kind. There are others like:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/antonylesuisse/qweb/tree/master/ajaxterm&#34;&gt;ajaxterm&lt;/a&gt; and &lt;a href=&#34;http://anyterm.org/&#34;&gt;anyterm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;They are also good but development has stopped on them and I don&amp;rsquo;t think they are better than butterfly. Ajaxterm was adapted from anyterm and there have been no new commits since 2011.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

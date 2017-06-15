@@ -1,0 +1,34 @@
+# Site settings
+baseurl: https://josephrex.me/
+themesDir: ./themes/
+languageCode: en-us
+metaDataFormat: yaml
+title: Joseph Rex's blog - Exploring Software, Food recipes, and Design
+theme: windener
+# Enter your tracking code to enable Google Analytics
+googleAnalytics: UA-56161232-2
+# Disable comments by leaving disqusShortname empty
+disqusShortname: josephrexme
+disablePathToLower: true
+pygmentsstyle: paraiso-dark
+
+params:
+  name: Joseph Rex
+  description: Ramblings on design, code, fitness and food by Joseph Rex
+  bio: Design, Code, Fitness and Food
+  email: joseph\*\*at\*\*strichio
+  enableRSS: true
+  themeBuilder: true
+  favicon: favicon.png # A file located in the static directory
+
+social:
+  facebook: https://facebook.com/josephrexme
+  twitter : https://twitter.com/josephrexme
+  github  : https://github.com/josephrexme
+  codepen: https://codepen.io/josephrexme
+  dribbble : https://dribbble.com/josephrexme
+  behance: https://behance.net/josephrexme
+  stackoverflow: http://stackoverflow.com/users/2649933/joseph-rex?tab=profile
+  pinterest: https://pinterest.com/josephrexme
+  instagram: https://instagram.com/josephrexme
+  linkedin: https://www.linkedin.com/josephrexme

@@ -1,0 +1,23 @@
+.social{
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+  li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  a{
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border: solid thin rgba($white, .4);
+    border-radius: 50%;
+    color: rgba($white, .6);
+    transition: .15s background ease-in-out;
+    &:hover{
+      background: rgba($white, .2);
+    }
+  }
+}

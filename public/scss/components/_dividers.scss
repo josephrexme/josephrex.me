@@ -1,0 +1,88 @@
+// Default divider
+hr{
+  margin: 5rem auto;
+  padding: 0;
+  border: 0;
+  color: #333;
+  text-align: center;
+  &::after{
+    content: '✯ ✯ ✯';
+    display: inline-block;
+    position: relative;
+    top: -1rem;
+    font-size: 2rem;
+  }
+}
+// Use on HRs
+.divider{
+  border: 0;
+  // Gradient Full Page
+  &--one{
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
+  // Gradient Fades
+  &--two{
+    height: 1px;
+    background-image: linear-gradient(to right, rgba($black, 0), rgba($black, .75), rgba($black, 0));
+  }
+  // Dashed
+  &--three{
+    border-bottom: dashed thin #ccc;
+    background: #999;
+  }
+  // Drop Shadow
+  &--four{
+    height: 12px;
+    box-shadow: inset 0 12px 12px -12px rgba($black, .5);
+  }
+  // Cloud
+  &--five{
+    height: 0;
+    box-shadow: 0 0 10px 1px $black;
+    &::after{
+      content: '\00a0';
+    }
+  }
+  // Slim
+  &--six{
+    height: 0;
+    border-top: solid thin rgba($black, .1);
+    border-bottom: solid thin rgba($white, .3);
+  }
+  // Snake flair edges
+  &--seven{
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    &::before{
+      content: '';
+      display: block;
+      height: 30px;
+      margin-top: -31px;
+      border-style: solid;
+      border-color: black;
+      border-width: 0 0 1px 0;
+      border-radius: 20px;
+    }
+  }
+  // Double line + Glyph
+  &--eight{
+    padding: 0;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    &::after{
+      content: '§';
+      display: inline-block;
+      position: relative;
+      top: -0.7em;
+      font-size: 1.5em;
+      padding: 0 .25em;
+      background: $white;
+    }
+  }
+}

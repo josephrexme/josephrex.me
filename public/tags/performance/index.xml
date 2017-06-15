@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performance on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/performance/</link>
+    <description>Recent content in Performance on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Specificity wars</title>
+      <link>https://josephrex.me/specificity-wars/</link>
+      <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/specificity-wars/</guid>
+      <description>&lt;figure&gt;
+{% image lightsabers-clash.jpg alt=&#34;light sabers&#34; class=&#34;image&#34; %}
+&lt;/figure&gt;
+When you look through the element styles of your browser web developer tools, you can see how CSS rules override themselves. What is prioritized is mostly based on the specificity level. It&#39;s a usual thing that styles below override the ones above, inline styles override external styles. These are the little things but it gets deeper when we use id selectors around our stylesheets. Ids have high specificity and there are uncalled for as we don&#39;t want unnecessary spikes in our specificity graph. This &lt;a href=&#34;http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/&#34; target=&#34;_blank&#34;&gt;css-wizardry article&lt;/a&gt; tells why IDs can be the demons of our stylesheets.</description>
+    </item>
+    
+    <item>
+      <title>There&#39;s a mistake in your website</title>
+      <link>https://josephrex.me/theres-a-mistake-in-your-website/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/theres-a-mistake-in-your-website/</guid>
+      <description>&lt;p&gt;As the web grows, different design trends come into existence. A larger number of organizations will focus more on keeping to this trends, having a nice website that is responsive, having something with cool Javascript effects.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a lot more things that make your website suck and one I can say is your perspective about your website. It&amp;rsquo;s not cool to everyone just because it seems cool to you and your colleagues. You should read &lt;a href=&#34;http://www.webpagesthatsuck.com/biggest-mistakes-in-web-design-1995-2015.html&#34; target=&#34;_blank&#34;&gt;the biggest mistakes in web design&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prioritizing Critical (Above the fold) CSS to optimize page load speed</title>
+      <link>https://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/</link>
+      <pubDate>Wed, 10 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/</guid>
+      <description>&lt;figure&gt;
+{% image above-fold.jpg class=&#34;image image--wide&#34; alt=&#34;above the fold&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I made &lt;a href=&#34;http://slides.com/bl4ckdu5t/critical-css&#34; target=&#34;_blank&#34;&gt;a slide&lt;/a&gt; on this about a month back and I&amp;rsquo;ve since intended to write about it here.&lt;/p&gt;
+
+&lt;p&gt;Every developer that cares about user experience will always want to fix everything that makes a user think of not coming back to their website after first visit. I&amp;rsquo;ve found myself in such situations where I begin to think that whoever did this thing must have invested a lot of time making something that technically feels like nothing. We don&amp;rsquo;t want our applications to be thought of this way.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

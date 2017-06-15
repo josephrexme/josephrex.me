@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/math/</link>
+    <description>Recent content in Math on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Nov 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things you can do with MathML</title>
+      <link>https://josephrex.me/things-you-can-do-with-mathml/</link>
+      <pubDate>Fri, 28 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/things-you-can-do-with-mathml/</guid>
+      <description>&lt;p&gt;{% image mathematical-equations-152650.jpg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;math equations&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;For a while, I&amp;rsquo;ve been enjoying the awesomeness of mathML. I&amp;rsquo;ve not had specific use cases but just playing around with it gives me fun. Sometimes I idly just write equations that should be on a paper in my local web pages.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a lot you can learn about MathML by looking through the MDN spec. I&amp;rsquo;ll just drop in the little parts I&amp;rsquo;ve played. This has been for so many years and it still available but it is only supported by gecko browsers (Mozilla Firefox, Iceweasel, some others) .
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

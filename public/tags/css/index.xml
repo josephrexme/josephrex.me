@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/css/</link>
+    <description>Recent content in Css on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beautiful world of houdini</title>
+      <link>https://josephrex.me/beautiful-world-of-houdini/</link>
+      <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/beautiful-world-of-houdini/</guid>
+      <description>&lt;p&gt;Besides the beautiful name, houdini would be a great addition to web technologies when eventually implemented by browsers. Before going into what it is exactly, you can think of it as the &lt;a href=&#34;https://babeljs.io&#34;&gt;babel&lt;/a&gt; of CSS. Each time I come across the name Houdini, I imagine Agent Phil Coulson saying &lt;em&gt;&amp;ldquo;tahiti, it&amp;rsquo;s a magical place&amp;rdquo;&lt;/em&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Anticipated birth of element queries</title>
+      <link>https://josephrex.me/anticipated-birth-of-element-queries/</link>
+      <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/anticipated-birth-of-element-queries/</guid>
+      <description>&lt;p&gt;There have been &lt;a href=&#34;https://alistapart.com/article/container-queries-once-more-unto-the-breach&#34;&gt;so many&lt;/a&gt; &lt;a href=&#34;https://au.si/css-container-queries&#34;&gt;talks&lt;/a&gt; &lt;a href=&#34;http://www.xanthir.com/b4PR0&#34;&gt;on&lt;/a&gt; &lt;a href=&#34;http://www.xanthir.com/b4VG0&#34;&gt;constraint-based&lt;/a&gt; &lt;a href=&#34;https://ethanmarcotte.com/wrote/on-container-queries/&#34;&gt;layouts&lt;/a&gt; &lt;a href=&#34;https://ethanmarcotte.com/wrote/a-bit-more-on-container-queries/&#34;&gt;or&lt;/a&gt; &lt;a href=&#34;https://www.smashingmagazine.com/2013/06/media-queries-are-not-the-answer-element-query-polyfill/&#34;&gt;container/element&lt;/a&gt; &lt;a href=&#34;http://codepen.io/tomhodgins/post/what-the-heck-are-element-queries-container-queries&#34;&gt;queries&lt;/a&gt; &lt;a href=&#34;http://hugogiraudel.com/2014/04/22/why-element-queries-matter/&#34;&gt;lately&lt;/a&gt; and that&amp;rsquo;s because without them responsive styling with &lt;a href=&#34;http://ianstormtaylor.com/media-queries-are-a-hack/&#34;&gt;media queries will remain an unpleasant hack&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on Semantic Styling vs Visual Styling</title>
+      <link>https://josephrex.me/thoughts-on-semantic-styling-vs-visual-styling/</link>
+      <pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/thoughts-on-semantic-styling-vs-visual-styling/</guid>
+      <description>&lt;p&gt;After reading this &lt;a href=&#34;http://cssmojo.com/opinions_of_leaders_considered_harmful/&#34;&gt;rebuttal&lt;/a&gt; to Jeffrey Zeldman&amp;rsquo;s &lt;a href=&#34;http://www.zeldman.com/2017/01/03/kiss-my-classname/&#34;&gt;Kiss my classname&lt;/a&gt; what came up on my mind is I think everyone&amp;rsquo;s doing this wrong. This is the main problem with the industry. Impatience to accept and learn why opinions that differ from yours could be relevant.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What happens when using CSS frameworks</title>
+      <link>https://josephrex.me/what-happens-when-using-css-frameworks/</link>
+      <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/what-happens-when-using-css-frameworks/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve always been an anti-css-frameworks person for no reason till I finally got a good reason recently. I just knew I preferred writing my own CSS even though I&amp;rsquo;m seen as a back-end developer and a lot of people think &lt;a href=&#34;http://uxdiogenes.com/blog/on-being-a-designer-and-a-developer-not-quite-unicorn-rare&#34;&gt;design and development should be mutually exclusive&lt;/a&gt;. I love design and development and I wouldn&amp;rsquo;t allow &lt;a href=&#34;https://en.wikipedia.org/wiki/Learned_helplessness&#34;&gt;learned helplessness&lt;/a&gt; or people&amp;rsquo;s opinions to keep me from exploring either of them to my satisfaction.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Specificity wars</title>
+      <link>https://josephrex.me/specificity-wars/</link>
+      <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/specificity-wars/</guid>
+      <description>&lt;figure&gt;
+{% image lightsabers-clash.jpg alt=&#34;light sabers&#34; class=&#34;image&#34; %}
+&lt;/figure&gt;
+When you look through the element styles of your browser web developer tools, you can see how CSS rules override themselves. What is prioritized is mostly based on the specificity level. It&#39;s a usual thing that styles below override the ones above, inline styles override external styles. These are the little things but it gets deeper when we use id selectors around our stylesheets. Ids have high specificity and there are uncalled for as we don&#39;t want unnecessary spikes in our specificity graph. This &lt;a href=&#34;http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/&#34; target=&#34;_blank&#34;&gt;css-wizardry article&lt;/a&gt; tells why IDs can be the demons of our stylesheets.</description>
+    </item>
+    
+    <item>
+      <title>Styling for print media</title>
+      <link>https://josephrex.me/styling-for-print-media/</link>
+      <pubDate>Mon, 24 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/styling-for-print-media/</guid>
+      <description>&lt;figure&gt;
+{% image wallpaper-106773.jpg class=&#34;image&#34; alt=&#34;wallpaper-106773&#34; %}
+&lt;/figure&gt;
+The @media is mostly known these days for its use with responsive design in a conditional structure. However, it has been for a very long time. It has been used to separate visual CSS from paged CSS. The different media consists screen, print, projector, audio (formerly aural).
+
+I needed to do a print design in one of my recent projects and I knew I could just make a stylesheet link with a media=&#34;print&#34;. I&#39;ve also been privy that I can use  @media print{} to wrap it but that wasn&#39;t all it took. I never really knew there was more to it but I took the search to see how it&#39;s been done by the leaders of the industry. Not too long after, I stumbled upon the following alistapart article by Eric Meyer from 2002.</description>
+    </item>
+    
+    <item>
+      <title>Prioritizing Critical (Above the fold) CSS to optimize page load speed</title>
+      <link>https://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/</link>
+      <pubDate>Wed, 10 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/</guid>
+      <description>&lt;figure&gt;
+{% image above-fold.jpg class=&#34;image image--wide&#34; alt=&#34;above the fold&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I made &lt;a href=&#34;http://slides.com/bl4ckdu5t/critical-css&#34; target=&#34;_blank&#34;&gt;a slide&lt;/a&gt; on this about a month back and I&amp;rsquo;ve since intended to write about it here.&lt;/p&gt;
+
+&lt;p&gt;Every developer that cares about user experience will always want to fix everything that makes a user think of not coming back to their website after first visit. I&amp;rsquo;ve found myself in such situations where I begin to think that whoever did this thing must have invested a lot of time making something that technically feels like nothing. We don&amp;rsquo;t want our applications to be thought of this way.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>It doesn&#39;t have to be important</title>
+      <link>https://josephrex.me/it-doesnt-have-to-be-important/</link>
+      <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/it-doesnt-have-to-be-important/</guid>
+      <description>&lt;p&gt;{% image name_not_important.jpg  alt=&amp;ldquo;name not important&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}
+Thanks to collaborated projects, I&amp;rsquo;ve come across crappy CSS in my life. I talked about it in a [previous article][1].&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not impeccable and I wouldn&amp;rsquo;t be dissing someone else&amp;rsquo; because of their faults. However, one point I failed to mention about what I experienced from a co-designer on the project I mentioned in that article was the use of too many nested selectors.&lt;/p&gt;
+
+&lt;p&gt;Nested selectors increase specificity and they should be avoided when they can. In an instance where you have
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Collaborated Projects are good and bad</title>
+      <link>https://josephrex.me/collaborated-projects-are-good-and-bad/</link>
+      <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/collaborated-projects-are-good-and-bad/</guid>
+      <description>&lt;p&gt;Project collaboration is one of the greatest things ever, especially in the open source community. Despite it&amp;rsquo;s awesomeness, there are always challenges in collaborated projects. Some idealist programmers pick up the code and find it uncomfortable to mix with non coordinated contributions by a clumsy programmer. The &lt;a href=&#34;http://www.php-fig.org/psr/&#34;&gt;PSR&lt;/a&gt; exists in the PHP community to bring about ideas that may make good programmers follow some good concepts. This way, you&amp;rsquo;ll find a lot of similarity in the codes of various programmers that follow the PSR.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sass and Compass: My Best Friends</title>
+      <link>https://josephrex.me/sass-and-compass-my-best-friends/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/sass-and-compass-my-best-friends/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a left-brained computer savvy. I love logic and math and because of this, I may be attracted to Sass not just because it&amp;rsquo;s awesome but also because it gives me a chance to keep my brain busy with logic. I think this picture speaks my state of mind right now&lt;/p&gt;
+
+&lt;p&gt;{% image sass-tshirt-1.jpg alt=&amp;ldquo;sass-tshirt-1&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been writing Sass for 3 months now. I hope to give Stylus a try some time soon as I hear of it as another Super Hero Pre-processor. As of now, I don&amp;rsquo;t have any interest in writing LESS. This article is not about what I like or what I don&amp;rsquo;t like anyway.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Leveraging SASS for your front-end designs</title>
+      <link>https://josephrex.me/leveraging-sass-for-your-front-end-designs/</link>
+      <pubDate>Wed, 18 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/leveraging-sass-for-your-front-end-designs/</guid>
+      <description>&lt;p&gt;Recently I chose to move from vanilla CSS to the syntactically awesome stylesheeets and this has been a great step in my life. It&amp;rsquo;s like leaving a klingon which I&amp;rsquo;ve had as a girlfriend to date a human or vulcan :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sass-lang.com&#34; target=&#34;_blank&#34;&gt;Team-Sass&lt;/a&gt; provided a style guide for SASS concerning how we can name our variables for colors. A basic variable naming should be as it is on &lt;a href=&#34;http://sass-lang.com/styleguide/color/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://sass-lang.com/styleguide/color/&#34;&gt;http://sass-lang.com/styleguide/color/&lt;/a&gt;&lt;/a&gt; where all the colors have their names as variables like so:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Future of CSS: Content Pseudo Selector</title>
+      <link>https://josephrex.me/content-pseudo-selector/</link>
+      <pubDate>Wed, 14 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/content-pseudo-selector/</guid>
+      <description>&lt;p&gt;Before I started making use of CSS3 to create beautiful websites, I had crappy ways of getting some things done which I think some other designers also did. Since the introduction of &lt;a href=&#34;http://www.w3.org/TR/css3-selectors/&#34;&gt;CSS3 pseudo selectors&lt;/a&gt;, my life got  better. They helped me achieve decent mark-up.&lt;/p&gt;
+
+&lt;p&gt;Lately, I thought of making my life a lot easier by doing something even more awesome. I don&amp;rsquo;t know if it exists already or in the works, but I&amp;rsquo;ll go into details on how I came about it and I think it will be really cool.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS Sanitation</title>
+      <link>https://josephrex.me/css-sanitation/</link>
+      <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/css-sanitation/</guid>
+      <description>&lt;p&gt;I do a lot of back-end web development but front-end calls me a lot because of my passion for creativity. I&amp;rsquo;ve had to consider CSS files on various projects I&amp;rsquo;ve worked on. Some as front-end designer, some as back-end. On a project I&amp;rsquo;m working on, we&amp;rsquo;ve had various hands in the stylesheets and it has caused a lot of irrelevant rules in the CSS. Some global classes are not really been put to use and the CSS already contains over 6,500 lines of code already. Also, the fact that multiple frameworks are used on the present project, it lands us in a larger number of selectors.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Oh Sass! How awesome is it gonna get</title>
+      <link>https://josephrex.me/sass-awesomeness/</link>
+      <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/sass-awesomeness/</guid>
+      <description>&lt;p&gt;I started writing Sass not too long ago and it has been one of the best experiences I&amp;rsquo;ve had. Sass (Syntatically Awesome Stylesheet) is just as awesome as the name sounds.&lt;/p&gt;
+
+&lt;p&gt;Sass is a CSS predecessor that gives smart designers a lot more flexibility with the styling. New features are being added to Sass and with contributions of the Google team, it&amp;rsquo;s getting even faster than you can imagine. This &lt;a href=&#34;https://www.youtube.com/watch?v=-ZJeOJGazgE&#34;&gt;talk by Chris Eppstein&lt;/a&gt; reveals the work in progress.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

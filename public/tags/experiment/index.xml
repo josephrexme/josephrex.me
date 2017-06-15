@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experiment on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/experiment/</link>
+    <description>Recent content in Experiment on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/experiment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cat paws on toucpad</title>
+      <link>https://josephrex.me/cat-paws-on-touchpad/</link>
+      <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/cat-paws-on-touchpad/</guid>
+      <description>&lt;p&gt;One thing that really drives me to becoming a better developer is my curiosity to know how stuff works. I had some moments of tranquility to &lt;a href=&#34;http://9gag.com/gag/a8j627Z?ref=fbp&#34;&gt;think literally about nothing&lt;/a&gt; which is something I do very often and it led me to thinking of a possibility which I will discuss here. Before I do, have you ever had your cat or dog hit some keys on your computer or put their paws on your touchpad? That&amp;rsquo;s what the idea here is about.
+
+{% image &amp;lsquo;pawtouchpad.jpg&amp;rsquo; alt=&amp;ldquo;Paw on touchpad&amp;rdquo; class=&amp;ldquo;head-image figure&amp;ndash;fullwidth&amp;rdquo; %}
+Think of this scenario with me:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My failed LSB steganography algorithm</title>
+      <link>https://josephrex.me/my-failed-lsb-steganography/</link>
+      <pubDate>Sat, 31 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/my-failed-lsb-steganography/</guid>
+      <description>&lt;p&gt;Last month (December 2014), I started developing a new GUI steganography software after building a &lt;a href=&#34;https://github.com/bl4ckdu5t/stegman&#34;&gt;simple steganography tool&lt;/a&gt; for my &lt;a href=&#34;http://resources.infosecinstitute.com/steganalysis-x-ray-vision-hidden-data/&#34;&gt;post at Infosec Institue&lt;/a&gt;. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+
+{% image failed-stego.jpg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;stego girl&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

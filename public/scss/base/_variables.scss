@@ -1,0 +1,92 @@
+// Defaults
+$black: #000 !default;
+$white: #fff !default;
+$red: #f00 !default;
+$myblue: #36a !default;
+$reg_alpha: .2 !default;
+$tinted_alpha: .8 !default;
+//  Color Variables
+$color-hopbush: #c69;
+$color-bouquet: #b37399;
+$color-venus: #998099;
+$color-patina: #699;
+$color-nebula: #d2e1dd;
+$color-wine: #B21F1F;
+$color-dawn-pink: #f2ece4;
+$color-wafer: #e1d7d2;
+$color-skyblue: #9BC1F5;
+$color-iron: #dadbdf;
+$color-orange: #eba11e;
+$color-blue-link: #557FA8;
+$color-wine-fade: #c66;
+$color-orange-1: #FAB782;
+$color-light-green: #76E0A2;
+$color-regent-grey: #808c99;
+$color-pale-sky: #6b717f;
+$color-midnight-blue: #036;
+$color-light-green: #98cbad;
+$color-blood: #7E0E0E;
+$color-rebeccapurple: #663399;
+$color-cool-blue: #1bbae1;
+// Component colors
+$color-warning: #F0AD4E !default;
+$color-danger: #D9534F !default;
+$color-info: #5BC0DE !default;
+$color-success: #5CB85C !default;
+$color-primary: #337AB7 !default;
+/* Social Media Colors */
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #aad450;
+$tumblr: #32506d;
+$instagram: #517fa4;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+
+// Breakpoint Variables
+$breakpoint-tablet-portrait: 768px !default;
+$breakpoint-tablet-landscape: 1024px !default;
+$breakpoint-tablet-mini-portrait: 600px !default;
+$breakpoint-tablet-mini-landscape: 800px !default;
+$breakpoint-iphone-portrait: 320px !default;
+$breakpoint-android-landscape: 480px !default;
+$breakpoint-iphone-landscape: 568px !default;
+$breakpoint-laptop: 1170px !default;
+$breakpoint-tablet-wide: 1075px !default;
+
+// Grids
+// -------------------------------
+
+$grid-padding-width: 10px !default;
+$grid-responsive-sm-break: 567px !default;  // smaller than landscape phone
+$grid-responsive-md-break: 767px !default;  // smaller than portrait tablet
+$grid-responsive-lg-break: 1023px !default; // smaller than landscape tablet
+
+
+// App Specific
+$site-width: 800px !default;
+$color-brand-1: #2c4f73;
+$color-brand-2: #b30950;
+$color-brand-3: #192740;
+$color-brand-4: #90136f;
+$bg-color: linear-gradient(45deg, $color-brand-2 15%, $color-brand-3 85%);
+$text-color: $white;
+$color-links: $color-brand-2;
+$inputs-border-radius: 4px;
+$font--primary: 'Source Sans Pro', sans-serif !default;
+$font--secondary: 'Merriweather Sans', sans-serif !default;
+$action-buttons: $color-brand-2;
+

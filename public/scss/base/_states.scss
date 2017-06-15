@@ -1,0 +1,15 @@
+/*---------------------------------*\
+  State Rules (is- and has- namespace)
+  - Rule
+  State based class need higher
+  specifity to override the
+  default states. !important is
+  allowed but should be avoided
+  where possible. Consider class
+  chaining before considering it.
+\*---------------------------------*/
+.is{
+  &-opened-sharelinks.is-opened-sharelinks{
+    transform: translateY(0) scaleY(1);
+  }
+}

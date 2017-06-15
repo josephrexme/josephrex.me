@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gui on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/gui/</link>
+    <description>Recent content in Gui on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/gui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Anticipated birth of element queries</title>
+      <link>https://josephrex.me/anticipated-birth-of-element-queries/</link>
+      <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/anticipated-birth-of-element-queries/</guid>
+      <description>&lt;p&gt;There have been &lt;a href=&#34;https://alistapart.com/article/container-queries-once-more-unto-the-breach&#34;&gt;so many&lt;/a&gt; &lt;a href=&#34;https://au.si/css-container-queries&#34;&gt;talks&lt;/a&gt; &lt;a href=&#34;http://www.xanthir.com/b4PR0&#34;&gt;on&lt;/a&gt; &lt;a href=&#34;http://www.xanthir.com/b4VG0&#34;&gt;constraint-based&lt;/a&gt; &lt;a href=&#34;https://ethanmarcotte.com/wrote/on-container-queries/&#34;&gt;layouts&lt;/a&gt; &lt;a href=&#34;https://ethanmarcotte.com/wrote/a-bit-more-on-container-queries/&#34;&gt;or&lt;/a&gt; &lt;a href=&#34;https://www.smashingmagazine.com/2013/06/media-queries-are-not-the-answer-element-query-polyfill/&#34;&gt;container/element&lt;/a&gt; &lt;a href=&#34;http://codepen.io/tomhodgins/post/what-the-heck-are-element-queries-container-queries&#34;&gt;queries&lt;/a&gt; &lt;a href=&#34;http://hugogiraudel.com/2014/04/22/why-element-queries-matter/&#34;&gt;lately&lt;/a&gt; and that&amp;rsquo;s because without them responsive styling with &lt;a href=&#34;http://ianstormtaylor.com/media-queries-are-a-hack/&#34;&gt;media queries will remain an unpleasant hack&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>There shall be binaries</title>
+      <link>https://josephrex.me/there-shall-be-binaries/</link>
+      <pubDate>Tue, 28 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/there-shall-be-binaries/</guid>
+      <description>&lt;figure&gt;
+{% image pyuic-binaries.png alt=&#34;pyuic binary&#34; class=&#34;image image--wide&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;There comes a point when your program needs to be distributed to other users. You don&amp;rsquo;t want to always have to give every intended user of your program a list of modules or libraries to be installed before they can use your software.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve found myself developing software with python a lot lately and usually, I like people to check them out. Most times, my target users are Windows OS users. I built my programs but packing them into binaries became the pain in the neck for me.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Adding Resource files to your Qt designer project and using pyrcc with python</title>
+      <link>https://josephrex.me/adding-resource-files-to-your-qt-designer-project-and-using-pyrcc-with-python/</link>
+      <pubDate>Mon, 13 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/adding-resource-files-to-your-qt-designer-project-and-using-pyrcc-with-python/</guid>
+      <description>&lt;figure&gt;
+{% image glossy-gui.jpg class=&#34;image image--wide&#34; alt=&#34;Glossy GUI&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve planned writing on this for long but I&amp;rsquo;ve just been so busy. When I started building GUI programs with Qt designer, this was a big challenge for me for a while but somehow I figured it out on my own.&lt;/p&gt;
+
+&lt;p&gt;When creating a GUI project in Qt designer, you need images on some parts of your interface. Qt designer allows you add images that have been included in your resource files. My first pain was &amp;ldquo;How the heck do I add images to this resource file and where the heck is it?&amp;rdquo;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting started with GUI development in Python</title>
+      <link>https://josephrex.me/getting-started-with-gui-development-in-python/</link>
+      <pubDate>Fri, 12 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/getting-started-with-gui-development-in-python/</guid>
+      <description>&lt;figure&gt;
+{% image z_design.jpg class=&#34;image&#34; alt=&#34;z_design&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;Most people that are fond of Windows operating system will always root for graphical desktop applications (GUI) over command line (CLI) programs. Since after DOS, windows operating systems have been known to use simple and user friendly GUI. This is one of the reasons why they have made a lot of customers around the world.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

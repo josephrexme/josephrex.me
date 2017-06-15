@@ -1,0 +1,131 @@
+/*--------------------------------*\
+  Global Rules/Namespace
+\*--------------------------------*/
+*{
+  box-sizing: border-box;
+  &:focus{
+    outline-color: $color-brand-2;
+  }
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: $font--primary;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: $color-brand-1;
+  background: $bg-color;
+  color: $text-color;
+}
+blockquote{
+  position: relative;
+  padding: 10px 40px;
+  background: darken($white, 2%);
+  border-left: solid 2px rgba($color-brand-2, .7);
+  font-weight: 300;
+  &::before{
+    content: '“';
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 8rem;
+    color: $color-brand-2;
+  }
+}
+cite{
+  display: block;
+  &::before{
+    content: '— ';
+  }
+}
+a{
+  color: $color-links;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+p a, ul:not(.social) a, .list__item__content a{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    border-bottom: solid 2px currentColor;
+    transform: scaleX(.9);
+    opacity: .25;
+    transition: .2s;
+  }
+  &:hover{
+    &::before{
+      transform: scaleX(.98);
+      opacity: .75;
+    }
+  }
+}
+input{
+  font-family: inherit;
+}
+
+dfn, abbr{
+  border-bottom: dotted 2px $color-brand-4;
+  text-decoration: none;
+}
+b, strong{
+  font-weight: 400;
+}
+
+code {
+  padding: 1px 5px;
+  border-radius: $inputs-border-radius;
+  background-color: darken($white, 6%);
+}
+
+pre {
+  padding: 0 12px;
+  overflow: auto;
+  font-size: 1.6rem;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  &:not(.line-pre){
+    background: linear-gradient(#2f2f2f 50%, darken(#2f2f2f, 5%) 0);
+    background-size: 100% 60px;
+    border-radius: $inputs-border-radius;
+    line-height: 30px;
+    color: #ddd;
+  }
+}
+.wrap{
+  width: 100%;
+  max-width: $site-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.icon{
+  fill: currentColor;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+}
+.logo{
+  width: 80px;
+}
+.scroll-progress{
+  background: $color-brand-2;
+  height: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 1100;
+  box-shadow: 0 0 3px rgba($black, .5);
+}

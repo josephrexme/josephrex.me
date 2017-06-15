@@ -1,0 +1,55 @@
+/**
+ * Pagination:
+ * `.paginate` - Pagination can be used with lists that should paginate
+ *
+ *   @example
+ *   <ul class="paginate" role="menubar" aria-label="pagination">
+ *     <li aria-disabled="true" class="is-disabled is-pagination-disabled"><a href="#">Previous</a></li>
+ *     <li><a href="#">1</a></li>
+ *     <li><a href="#">2</a></li>
+ *     <li class="is-pagination-current"><a href="#">3</a></li>
+ *     <li><a href="#">4</a></li>
+ *     <li><a href="#">5</a></li>
+ *     <li><a href="#">Next</a></li>
+ *   </ul>
+ */
+$border-color: darken($white, 15%);
+.paginate{
+  display: inline-block;
+  margin: 20px 0;
+  &__previous, &__next, &__current{
+    display: inline-block;
+    margin-right: 20px;
+    color: #888;
+    border-radius: 50%;
+    text-align: center;
+  }
+  &__previous, &__next{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 4rem;
+    line-height: .85;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__current{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    font-size: 2.5rem;
+    background: $white;
+  }
+  span.paginate__previous, span.paginate__next{
+    background: rgba($white, .2);
+    color: rgba($black, .2);
+  }
+  a.paginate__previous, a.paginate__next{
+    background: rgba($white, .6);
+    color: rgba($black, .4);
+    &:hover{
+      background: rgba($white, .8);
+    }
+  }
+}

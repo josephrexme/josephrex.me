@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regex on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/regex/</link>
+    <description>Recent content in Regex on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Aug 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Regex: A required skillset for developers and power users</title>
+      <link>https://josephrex.me/regex-a-required-skillset-for-developers-and-power-users/</link>
+      <pubDate>Wed, 27 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/regex-a-required-skillset-for-developers-and-power-users/</guid>
+      <description>&lt;figure&gt;
+{% image national_regular_expression_day_xkcd_shirt.gif class=&#34;image&#34; alt=&#34;regular expressions day&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I care about information and I believe everything we do wraps around trying to find information, protecting it, and making use of it. There is Google, DuckDuckGo, and other search engines, there is grep for Unix-like system users, there are search panes on applications and websites. Sometimes these media of information gathering may not be good/aggressive enough to find the exact outputs you expect especially when looking through files. This is why we learn how to do our searching and pattern matching &lt;strong&gt;like a boss&lt;/strong&gt;.
+
+&lt;hr&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

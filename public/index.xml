@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/</link>
+    <description>Recent content in Home on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CRIC: Confidence Reflex Intuition Consistency</title>
+      <link>https://josephrex.me/cric/</link>
+      <pubDate>Sun, 04 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/cric/</guid>
+      <description>&lt;p&gt;I went into the basketball court to play last week after a long time. That was maybe 2 years ago and the last time before that some other 2 years. There were a few times I&amp;rsquo;d gone and just made some hoops while a playing team is on a timeout but this time I really played and it was for just 10 minutes.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enter Sass namespacing</title>
+      <link>https://josephrex.me/enter-sass-namespacing/</link>
+      <pubDate>Thu, 25 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/enter-sass-namespacing/</guid>
+      <description>&lt;p&gt;Sass has always been to me that one preprocessor that makes others not worth learning. I think stylus is quite okay but I&amp;rsquo;ve never used Less and I don&amp;rsquo;t even know if it is spelled LESS or Less but we&amp;rsquo;re not here to talk about less we are here to talk about more (pun intended). More features to the amazing Sass.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beautiful world of houdini</title>
+      <link>https://josephrex.me/beautiful-world-of-houdini/</link>
+      <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/beautiful-world-of-houdini/</guid>
+      <description>&lt;p&gt;Besides the beautiful name, houdini would be a great addition to web technologies when eventually implemented by browsers. Before going into what it is exactly, you can think of it as the &lt;a href=&#34;https://babeljs.io&#34;&gt;babel&lt;/a&gt; of CSS. Each time I come across the name Houdini, I imagine Agent Phil Coulson saying &lt;em&gt;&amp;ldquo;tahiti, it&amp;rsquo;s a magical place&amp;rdquo;&lt;/em&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Understanding the shadow dom</title>
+      <link>https://josephrex.me/understanding-the-shadow-dom/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/understanding-the-shadow-dom/</guid>
+      <description>&lt;p&gt;For the decades programming have existed there have been abstractions over abstractions
+which to many appear only as simplification of process and better &lt;abbr title=&#34;Developer Experience&#34;&gt;DX&lt;/abbr&gt;. Yes that is the ultimate goal but it gets there by taking some tunnels.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Anticipated birth of element queries</title>
+      <link>https://josephrex.me/anticipated-birth-of-element-queries/</link>
+      <pubDate>Sat, 29 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/anticipated-birth-of-element-queries/</guid>
+      <description>&lt;p&gt;There have been &lt;a href=&#34;https://alistapart.com/article/container-queries-once-more-unto-the-breach&#34;&gt;so many&lt;/a&gt; &lt;a href=&#34;https://au.si/css-container-queries&#34;&gt;talks&lt;/a&gt; &lt;a href=&#34;http://www.xanthir.com/b4PR0&#34;&gt;on&lt;/a&gt; &lt;a href=&#34;http://www.xanthir.com/b4VG0&#34;&gt;constraint-based&lt;/a&gt; &lt;a href=&#34;https://ethanmarcotte.com/wrote/on-container-queries/&#34;&gt;layouts&lt;/a&gt; &lt;a href=&#34;https://ethanmarcotte.com/wrote/a-bit-more-on-container-queries/&#34;&gt;or&lt;/a&gt; &lt;a href=&#34;https://www.smashingmagazine.com/2013/06/media-queries-are-not-the-answer-element-query-polyfill/&#34;&gt;container/element&lt;/a&gt; &lt;a href=&#34;http://codepen.io/tomhodgins/post/what-the-heck-are-element-queries-container-queries&#34;&gt;queries&lt;/a&gt; &lt;a href=&#34;http://hugogiraudel.com/2014/04/22/why-element-queries-matter/&#34;&gt;lately&lt;/a&gt; and that&amp;rsquo;s because without them responsive styling with &lt;a href=&#34;http://ianstormtaylor.com/media-queries-are-a-hack/&#34;&gt;media queries will remain an unpleasant hack&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cohesion against coupling</title>
+      <link>https://josephrex.me/cohesion-against-coupling/</link>
+      <pubDate>Mon, 17 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/cohesion-against-coupling/</guid>
+      <description>&lt;p&gt;Coupling and Cohesion are two major principles for structured design in software. It&amp;rsquo;s commonly heard that high cohesion and low/loose coupling leads to good software design. Cohesion is an act of sticking together. In physics cohesion gets contrasted against adhesion as the sticking together of particles of the same substance where adhesion happens with dissimilar substances. With this in mind we know that any 2 things can be put together and we could assume a cohesive code.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why go to college</title>
+      <link>https://josephrex.me/why-go-to-college/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/why-go-to-college/</guid>
+      <description>&lt;p&gt;We are in an era where knowledge has become so accessible that we question the need for higher education which was once known as the touchstone for professional excellence. Having so much data at our fingertips and knowing how to apply them is a great advantage of living in this century.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Frontend asset management in rails applications</title>
+      <link>https://josephrex.me/frontend-asset-management-in-rails-applications/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/frontend-asset-management-in-rails-applications/</guid>
+      <description>&lt;p&gt;In rails planet it&amp;rsquo;s easy to assume that asset management is at its best with the assets pipeline it provides which includes sprockets for simple requires. Sprockets is great but could be better with a properly structured application.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Algorithm Analysis: Best, Worst and Average Case</title>
+      <link>https://josephrex.me/algorithm-analysis/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/algorithm-analysis/</guid>
+      <description>&lt;p&gt;Algorithms are a sequence of decisions we make to solve a problem. Like every decision in life we can make great decisions and really terrible decisions. But it doesn&amp;rsquo;t end there. Good decisions vary, they can come easy and can take a lot harder process to reach an expected outcome.
+
+There are 3 categories of efficiency an algorithm can fall under when analyzing its usage of resources. They are best case, worst case, and average case.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on Semantic Styling vs Visual Styling</title>
+      <link>https://josephrex.me/thoughts-on-semantic-styling-vs-visual-styling/</link>
+      <pubDate>Fri, 10 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/thoughts-on-semantic-styling-vs-visual-styling/</guid>
+      <description>&lt;p&gt;After reading this &lt;a href=&#34;http://cssmojo.com/opinions_of_leaders_considered_harmful/&#34;&gt;rebuttal&lt;/a&gt; to Jeffrey Zeldman&amp;rsquo;s &lt;a href=&#34;http://www.zeldman.com/2017/01/03/kiss-my-classname/&#34;&gt;Kiss my classname&lt;/a&gt; what came up on my mind is I think everyone&amp;rsquo;s doing this wrong. This is the main problem with the industry. Impatience to accept and learn why opinions that differ from yours could be relevant.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Big O notation explained</title>
+      <link>https://josephrex.me/big-o-notation-explained/</link>
+      <pubDate>Fri, 03 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/big-o-notation-explained/</guid>
+      <description>&lt;p&gt;The big O notation (also asymptotic notation) helps determine how a function may decline or scale with a larger set of inputs (n). According to &lt;a href=&#34;https://en.wikipedia.org/wiki/Big_O_notation&#34;&gt;Wikipedia&lt;/a&gt;,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity
+&lt;cite&gt;Wikipedia&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up uploads with paperclip and fog in rails applications</title>
+      <link>https://josephrex.me/setting-up-uploads-with-paperclip-and-fog-in-rails-applications/</link>
+      <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/setting-up-uploads-with-paperclip-and-fog-in-rails-applications/</guid>
+      <description>&lt;p&gt;Paperclip is a great gem and one of the most used gem for handling file attachment in rails applications. &lt;a href=&#34;https://github.com/carrierwaveuploader/carrierwave&#34;&gt;Carrierwave&lt;/a&gt; is another good choice. This article describes how to use it with the fog gem (a gem that helps you connect with almost any cloud service).
+This article will use a Car model to handle scenarios of car image uploads.
+Start by adding the necessary gems to your Gemfile
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using version managers and virtual environments</title>
+      <link>https://josephrex.me/Using-version-managers-and-virtual-environments/</link>
+      <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/Using-version-managers-and-virtual-environments/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a new year and 2015 was a blast for me. I successfully ticked every item on my list for 2015 and I had even more that I hadn&amp;rsquo;t expected from the start of the year.
+In July, I got an email from &lt;a href=&#34;http://packtpub.com&#34;&gt;PacktPub&lt;/a&gt; about reviewing a book on building GUIs with Python. The opportunity was influenced by &lt;a href=&#34;http://josephrex.me/getting-started-with-gui-development-in-python/&#34;&gt;the article I&amp;rsquo;d written&lt;/a&gt; on the subject and I&amp;rsquo;m glad I did. The book was completed and published in December and I got really excited to see that I&amp;rsquo;m a part of something that&amp;rsquo;ll impact the lives of people around the world. It is available on &lt;a href=&#34;http://www.amazon.com/gp/product/1785283758?keywords=python%20gui%20programming%20cookbook&amp;amp;qid=1451209838&amp;amp;ref_=sr_1_1&amp;amp;s=books&amp;amp;sr=1-1&#34;&gt;Amazon&lt;/a&gt; and &lt;a href=&#34;https://www.packtpub.com/application-development/python-gui-programming-cookbook&#34;&gt;PacktPub&lt;/a&gt; and I urge you to grab a copy as there&amp;rsquo;s so much to learn from it.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What happens when using CSS frameworks</title>
+      <link>https://josephrex.me/what-happens-when-using-css-frameworks/</link>
+      <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/what-happens-when-using-css-frameworks/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve always been an anti-css-frameworks person for no reason till I finally got a good reason recently. I just knew I preferred writing my own CSS even though I&amp;rsquo;m seen as a back-end developer and a lot of people think &lt;a href=&#34;http://uxdiogenes.com/blog/on-being-a-designer-and-a-developer-not-quite-unicorn-rare&#34;&gt;design and development should be mutually exclusive&lt;/a&gt;. I love design and development and I wouldn&amp;rsquo;t allow &lt;a href=&#34;https://en.wikipedia.org/wiki/Learned_helplessness&#34;&gt;learned helplessness&lt;/a&gt; or people&amp;rsquo;s opinions to keep me from exploring either of them to my satisfaction.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Quality against speed in development</title>
+      <link>https://josephrex.me/quality-against-speed-in-development/</link>
+      <pubDate>Mon, 21 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/quality-against-speed-in-development/</guid>
+      <description>&lt;p&gt;It is common for humans to expect things to arrive almost as soon as they find the need for them. It starts from kids wanting their parents to get them their favorite toy from a toy store. A parent that tells the child we&amp;rsquo;ll have to come back next year for this toy will make the child unhappy at that moment.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What &#34;It&#39;s not about the money&#34; really means</title>
+      <link>https://josephrex.me/what-its-not-about-the-money-really-means/</link>
+      <pubDate>Sat, 12 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/what-its-not-about-the-money-really-means/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Migrating database password algorithm gracefully</title>
+      <link>https://josephrex.me/migrating-database-password-algorithm-gracefully/</link>
+      <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/migrating-database-password-algorithm-gracefully/</guid>
+      <description>&lt;p&gt;If you are a developer that keeps up with the community and best practices you will often find bits of your code and process that needs improvement for security, scalibility, performance or whatsoever. Sometimes it&amp;rsquo;s not code you wrote but code that had been used in a company you find yourself. The situation here is to change the application&amp;rsquo;s users database encyption from that salted MD5 or SHA1 hash or even a non-salted integrity based hash to a hash that uses multiple rounds like bcrypt.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cat paws on toucpad</title>
+      <link>https://josephrex.me/cat-paws-on-touchpad/</link>
+      <pubDate>Tue, 08 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/cat-paws-on-touchpad/</guid>
+      <description>&lt;p&gt;One thing that really drives me to becoming a better developer is my curiosity to know how stuff works. I had some moments of tranquility to &lt;a href=&#34;http://9gag.com/gag/a8j627Z?ref=fbp&#34;&gt;think literally about nothing&lt;/a&gt; which is something I do very often and it led me to thinking of a possibility which I will discuss here. Before I do, have you ever had your cat or dog hit some keys on your computer or put their paws on your touchpad? That&amp;rsquo;s what the idea here is about.
+
+{% image &amp;lsquo;pawtouchpad.jpg&amp;rsquo; alt=&amp;ldquo;Paw on touchpad&amp;rdquo; class=&amp;ldquo;head-image figure&amp;ndash;fullwidth&amp;rdquo; %}
+Think of this scenario with me:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Revealing animations on scroll with pureJS</title>
+      <link>https://josephrex.me/revealing-animations-on-scroll-with-purejs/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/revealing-animations-on-scroll-with-purejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>First tale of my career as a freelancer</title>
+      <link>https://josephrex.me/first-tale-of-my-career-freelancing/</link>
+      <pubDate>Wed, 12 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/first-tale-of-my-career-freelancing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Moving to PostCSS</title>
+      <link>https://josephrex.me/moving-to-postcss/</link>
+      <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/moving-to-postcss/</guid>
+      <description>&lt;p&gt;At some point as a developer you&amp;rsquo;ve thought of leveling up by leaving spaghetti CSS to write in preprocessors. There are 3 popular CSS preprocessors LESS, Sass, Stylus, and there may be others I&amp;rsquo;ve never heard of. What makes CSS hard is its lack of logic. These preprocessors made our workflow easier by introducing logic to us like iterating things that regular CSS coders will spend ours rewriting, use of partials, use of mixins and variables.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Security threats introduced by IOT</title>
+      <link>https://josephrex.me/security-threats-introduced-by-iot/</link>
+      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/security-threats-introduced-by-iot/</guid>
+      <description>&lt;p&gt;The emerging Internet of Things (IoT) raises security concerns. That&amp;rsquo;s a quote from the introduction of a &lt;a href=&#34;http://pro.techtarget.com/Global/FileLib/targeted_downloads/ISM_InsideEdition_final.pdf&#34;&gt;paper&lt;/a&gt; I recently got from &lt;a href=&#34;http://techtarget.com&#34;&gt;Techtarget&lt;/a&gt;. In no doubt will the future go closer to implementing internet of things widely as it is not widely used enough in the present day. Having everything connected to the internet has a lot of great benefits that have introduced insecurity. The techtarget complete introduction is:
+
+{% image &amp;lsquo;&lt;a href=&#34;http://res.cloudinary.com/strich/image/upload/v1438157583/IoT_m71jhm.jpg&#39;&#34;&gt;http://res.cloudinary.com/strich/image/upload/v1438157583/IoT_m71jhm.jpg&#39;&lt;/a&gt; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Throttling and debouncing input handlers</title>
+      <link>https://josephrex.me/throttling-and-debouncing-input-handers/</link>
+      <pubDate>Sun, 26 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/throttling-and-debouncing-input-handers/</guid>
+      <description>&lt;p&gt;2 years ago when JavaScript sounded a lot impossible to me and yet I had to perform a tasks in it for a project I was working on, I requested help on the &lt;em&gt;#jQuery&lt;/em&gt; IRC channel and someone mentioned:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>You damn Analytics</title>
+      <link>https://josephrex.me/you-damn-analytics/</link>
+      <pubDate>Sun, 28 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/you-damn-analytics/</guid>
+      <description>&lt;p&gt;Just recently I have been paying a lot more attention to my Google Analytics on this blog although I&amp;rsquo;m always on New Relic for web apps I run. These analytics platforms do a great job breaking down the way our applications/websites/blogs are performing and that&amp;rsquo;s really helpful.
+
+{% image &amp;lsquo;damn-analytics.jpg&amp;rsquo; alt=&amp;ldquo;damn analytics&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Specialist or Full Stack generalist</title>
+      <link>https://josephrex.me/full-stack-or-generalist/</link>
+      <pubDate>Fri, 26 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/full-stack-or-generalist/</guid>
+      <description>&lt;p&gt;As a full stack developer I&amp;rsquo;ve had critiques about how I can&amp;rsquo;t be good enough at one thing if I do a lot of things. I totally agree to this and I&amp;rsquo;m not claiming to be a master of everything I do. Some will rather describe it as:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Rails assets pipeline with Cloudfront CDN</title>
+      <link>https://josephrex.me/rails-assets-pipeline-with-cloudfront-cdn/</link>
+      <pubDate>Sun, 21 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/rails-assets-pipeline-with-cloudfront-cdn/</guid>
+      <description>&lt;p&gt;Performance is an essential thing in every application that should be considered not only from the front-end but also the back-end. CDNs have been a great way to serve and deliver assets on web pages in this advent of HTTP1. It may not be the same with HTTP2.0 but at this, majority of the web is on HTTP1 and it will be that way for years to come. Cloudfront is an Amazon web service that delivers content from nearby locations and it works greatly when combined with the powers of the rails assets pipeline.
+
+{% image &amp;lsquo;rails-cloudfront.png&amp;rsquo; alt=&amp;ldquo;Rails plus cloudfront&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Good Citizen: Copyrights and Licenses</title>
+      <link>https://josephrex.me/good-citizen-copyrights-and-licenses/</link>
+      <pubDate>Thu, 14 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/good-citizen-copyrights-and-licenses/</guid>
+      <description>&lt;p&gt;A lot of us follow most legal laws to remain good citizens and mostly to stay out of trouble. The best people are those who follow these laws because they feel it&amp;rsquo;s the right thing to do, and not just because they may get arrested for doing otherwise.
+In the Software development industry, there are licenses and copyright laws. These laws are ignored by many and I used to be one.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Performance Concerns</title>
+      <link>https://josephrex.me/performance-concerns/</link>
+      <pubDate>Fri, 01 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/performance-concerns/</guid>
+      <description>&lt;p&gt;Performance is a very essential thing for every UX researcher or specialist. Great enough, performance is more &lt;a href=&#34;http://perf.rocks&#34;&gt;evangelized&lt;/a&gt; these recent years than ever before in the history of the web. Thanks to the &lt;a href=&#34;http://perf.rocks/people/&#34;&gt;major performance heroes&lt;/a&gt; spreading the word.&lt;/p&gt;
+
+&lt;p&gt;In the last month, the only attention I&amp;rsquo;ve given this blog while being occupied with other freelance projects was to optimize its performance. I went from 73 to 95 on its Google speed score, and I also got a way better result with first byte time, number of HTTP requests, speed index, and time to visually complete rendering.
+
+{% image &amp;lsquo;speedcurve-performance.png&amp;rsquo; alt=&amp;ldquo;Performance image&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Understanding how ajax upload preview works</title>
+      <link>https://josephrex.me/understanding-how-ajax-upload-preview-works/</link>
+      <pubDate>Mon, 30 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/understanding-how-ajax-upload-preview-works/</guid>
+      <description>&lt;p&gt;From a very early stage of my development, I&amp;rsquo;ve been fascinated by ajax upload previews and &lt;a href=&#34;http://www.dropzonejs.com/&#34;&gt;dropzone&lt;/a&gt; upload areas. For a long time I guess I was too scared to try any of them but after some time, I started using some jQuery plugins that did the job fine. I could have been contended with that and just have that in my every project but every project aren&amp;rsquo;t the same. I may use a bunch of plugins on a static website but on web applications where I&amp;rsquo;m so conscious about performance I prefer taking my time to write code that will help me do away with plugins or gems where I can.
+
+{% image &amp;lsquo;ajaxuploadprev.png&amp;rsquo; alt=&amp;ldquo;Ajax upload preview&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sticky: Scroll to fix content</title>
+      <link>https://josephrex.me/scroll-to-fix-content/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/scroll-to-fix-content/</guid>
+      <description>&lt;p&gt;Late last year, &lt;a href=&#34;https://twitter.com/chriscoyier&#34;&gt;Chris Coyier&lt;/a&gt; addressed this on &lt;a href=&#34;https://css-tricks.com/scroll-fix-content/&#34;&gt;CSS-Tricks&lt;/a&gt; with illustrating images including GIF. In his solution to the problem, he had used &lt;a href=&#34;http://css-tricks.com/magic-numbers-in-css/&#34;&gt;magic numbers&lt;/a&gt; which he confirmed made his soluton not re-usable. He also wrote it in jQuery which may be nice considering that a lot of people use jQuery as it works on legacy browsers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Exploring SVG for absolute beginners</title>
+      <link>https://josephrex.me/exploring-svg-for-absolute-beginners/</link>
+      <pubDate>Fri, 06 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/exploring-svg-for-absolute-beginners/</guid>
+      <description>&lt;p&gt;SVG is one of the cool stuff of these HTML5 days and if you aren&amp;rsquo;t already fiddling with them already, either by using ready SVG icons or writing your own SVG, then you are missing out on a lot.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Relative and Absolute Thinkers</title>
+      <link>https://josephrex.me/relative-and-absolute-thinkers/</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/relative-and-absolute-thinkers/</guid>
+      <description>&lt;p&gt;The way we think plays a great impact on how we live our lives and relate with people around us. This article may seem like it&amp;rsquo;s going down the path of one of the internet articles on temperament. Temperament is involved whenever or wherever there is a talk on human thinking as it has to do with individual personalities based on Wikipedia. However, I promise this article is not totally going down that path. I&amp;rsquo;ve come across different types of temperament from different sources. I mostly think of this 5 as the major genuine temperament types&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A grid framework from Susy Part 1</title>
+      <link>https://josephrex.me/a-grid-framework-from-susy/</link>
+      <pubDate>Fri, 06 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/a-grid-framework-from-susy/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://susy.oddbird.net/&#34;&gt;Susy&lt;/a&gt; is a great grid framework and something I really love about it is the idea of grid on demand rather than having to use frameworks just as Chris Coyier quoted:
+
+{% image susy.png class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;Susy&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Captain Blogger</title>
+      <link>https://josephrex.me/captain-blogger/</link>
+      <pubDate>Tue, 03 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/captain-blogger/</guid>
+      <description>&lt;p&gt;Someone once told me to have a purpose for everything I do. I believe that even out of our subconscious, everything we do as humans is for a purpose. &lt;a href=&#34;http://www.brainyquote.com/quotes/authors/m/marla_gibbs.html&#34;&gt;Marla Gibbs&lt;/a&gt; quotes that:
+
+{% image kirk2.jpg alt=&amp;ldquo;Captain Kirk&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My failed LSB steganography algorithm</title>
+      <link>https://josephrex.me/my-failed-lsb-steganography/</link>
+      <pubDate>Sat, 31 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/my-failed-lsb-steganography/</guid>
+      <description>&lt;p&gt;Last month (December 2014), I started developing a new GUI steganography software after building a &lt;a href=&#34;https://github.com/bl4ckdu5t/stegman&#34;&gt;simple steganography tool&lt;/a&gt; for my &lt;a href=&#34;http://resources.infosecinstitute.com/steganalysis-x-ray-vision-hidden-data/&#34;&gt;post at Infosec Institue&lt;/a&gt;. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+
+{% image failed-stego.jpg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;stego girl&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Changing pygments syntax color for jekyll blogs</title>
+      <link>https://josephrex.me/changing-pygments-syntax-color-for-jekyll-blogs/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/changing-pygments-syntax-color-for-jekyll-blogs/</guid>
+      <description>&lt;p&gt;Syntax highlighting is one of the great benefits we get from text editors we use in writing code. Besides making the code more readable, it makes me spot errors in my code without a linter. Training on Front-end development has been part of my profession for 2 years and I keep hammering on the fact that my students should make use of a good text editor. This has been a great thing as I find some students with mark-up like this:
+
+{% image syntax-highlight.png class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Jekyll Assets</title>
+      <link>https://josephrex.me/using-jekyll-assets/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-jekyll-assets/</guid>
+      <description>&lt;figure&gt;
+{% image jekyll_assets.jpg class=&#34;image&#34; alt=&#34;jekyll assets&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve always enjoyed all the experience with sprockets and the whole of the assets pipeline including how it allows me use compass just by having it in my Gemfile. On my quest for seeking ways to use compass properly with my jekyll blog, I came across &lt;a href=&#34;http://davidpots.com/blog/jekyll-github-pages-compass/&#34;&gt;a blog&lt;/a&gt; suggesting a hacky way of using compass with jekyll. The blog post had referenced this &lt;a href=&#34;https://gist.github.com/davidpots/5853188&#34;&gt;gist&lt;/a&gt; which referenced &lt;a href=&#34;https://gist.github.com/parkr/2874934&#34;&gt;another gist&lt;/a&gt;. I followed this for a bit till I hit a stumbling block. The method was fine from the start. I had to use the following plugin:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Riding on jekyll</title>
+      <link>https://josephrex.me/riding-on-jekyll/</link>
+      <pubDate>Fri, 02 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/riding-on-jekyll/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s a new year and I&amp;rsquo;m to begin with new things. I started josephrex.me blog in 2014 and it has revived my old blogging habits. I have been on Wordpress which is nice considering how I get comments plugged into my blog posts without any third-party integration, the awesome jetpack services, the performance plugins, and most of all the easy WYSIWYG editor where I write with ease. I had a feel of version 4.0.1 before leaving and they had added the distraction-free writing feature. All of this is good but it was too much in a way.
+
+{% image &amp;ldquo;&lt;a href=&#34;http://images.ostrich-dev.com/jekyll-logo.png&amp;quot;&#34;&gt;http://images.ostrich-dev.com/jekyll-logo.png&amp;quot;&lt;/a&gt; alt=&amp;ldquo;jekyll logo&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A shitpic of me</title>
+      <link>https://josephrex.me/a-shitpic-of-me/</link>
+      <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/a-shitpic-of-me/</guid>
+      <description>&lt;p&gt;{% image shitpic.jpg class=&amp;lsquo;head-image&amp;rsquo; %}
+{% image &amp;ldquo;&lt;a href=&#34;http://images.ostrich-dev.com/profile.jpg&amp;quot;&#34;&gt;http://images.ostrich-dev.com/profile.jpg&amp;quot;&lt;/a&gt; alt=&amp;ldquo;bl4ckdu5t-avatar&amp;rdquo; width=&amp;ldquo;230&amp;rdquo; %}
+For a long time I&amp;rsquo;ve been known with the avatar face of me above, having a stamp of my IRC handle (bl4ckdu5t) at the top right. Recently, I found a picture of someone that had tried to steal my identity in some way or thought he was being a good protege by copying me which I don&amp;rsquo;t appreciate. He had this version of my avatar
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Specificity wars</title>
+      <link>https://josephrex.me/specificity-wars/</link>
+      <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/specificity-wars/</guid>
+      <description>&lt;figure&gt;
+{% image lightsabers-clash.jpg alt=&#34;light sabers&#34; class=&#34;image&#34; %}
+&lt;/figure&gt;
+When you look through the element styles of your browser web developer tools, you can see how CSS rules override themselves. What is prioritized is mostly based on the specificity level. It&#39;s a usual thing that styles below override the ones above, inline styles override external styles. These are the little things but it gets deeper when we use id selectors around our stylesheets. Ids have high specificity and there are uncalled for as we don&#39;t want unnecessary spikes in our specificity graph. This &lt;a href=&#34;http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/&#34; target=&#34;_blank&#34;&gt;css-wizardry article&lt;/a&gt; tells why IDs can be the demons of our stylesheets.</description>
+    </item>
+    
+    <item>
+      <title>Moving from sqlite3 to postgresql database for your rails project</title>
+      <link>https://josephrex.me/moving-from-sqlite3-to-postgresql-database-for-your-rails-project/</link>
+      <pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/moving-from-sqlite3-to-postgresql-database-for-your-rails-project/</guid>
+      <description>&lt;p&gt;Rails uses sqlite3 by default on development. If you are not careful enough, you may get so comfortable with sqlite which I did. After a while, there will be a need to push the application to production and at this point, you wouldn&amp;rsquo;t want sqlite on your web server. I&amp;rsquo;m using heroku for my app and they stated &lt;a href=&#34;https://devcenter.heroku.com/articles/sqlite3&#34; target=&#34;_blank&#34;&gt;some good reasons not to use sqlite&lt;/a&gt;. On heroku, you wouldn&amp;rsquo;t be able to push your application to production if sqlite3 remains in your Gemfile.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using OpenDNS as your machine&#39;s default DNS</title>
+      <link>https://josephrex.me/using-opendns-as-your-machines-default-dns/</link>
+      <pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-opendns-as-your-machines-default-dns/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;
+{% image what-is-dns.png alt=&amp;ldquo;dns&amp;rdquo; class=&amp;ldquo;image&amp;rdquo; %}
+&lt;/figure&gt;
+I was working on a rails app last week and at some point, it failed to fetch the google fonts I had used within it. After about 2 days, everything was fine again so I didn&amp;rsquo;t have to worry about anything. Earlier today, I was developing a jekyll blog and the same thing happened. This time I really needed my fonts to be the way I wanted them from development. Chrome failed to fetch the woff2 google fonts displaying the following error.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Multiple tables for authentication in laravel</title>
+      <link>https://josephrex.me/using-multiple-tables-for-authentication-in-laravel/</link>
+      <pubDate>Sat, 13 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-multiple-tables-for-authentication-in-laravel/</guid>
+      <description>&lt;p&gt;Laravel provides a good authentication handler with the Auth class. To authenticate a user attempting to log in, we use the attempt method like so:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #776e71&#34;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span style=&#34;color: #815ba4&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;Auth&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;attempt&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #815ba4&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;email&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ef6155&#34;&gt;$email&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ef6155&#34;&gt;$password&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;)))&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #815ba4&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #06b6ef&#34;&gt;Redirect&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;intended&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;dashboard&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #776e71&#34;&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That&amp;rsquo;s just as it is &lt;a href=&#34;http://laravel.com/docs/4.2/security#authenticating-users&#34; target=&#34;_blank&#34;&gt;in the docs&lt;/a&gt;. But this checks against the users table which is fine because most apps have a users table for authentication. I&amp;rsquo;ve never had a need to build something requiring more tables for authentication but I had someone requesting for a solution to this and I was really interested in getting this to work.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Moving from Indented Sass to Scss</title>
+      <link>https://josephrex.me/moving-from-indented-sass-to-scss/</link>
+      <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/moving-from-indented-sass-to-scss/</guid>
+      <description>&lt;p&gt;As soon as I knew about pre-processors, I wanted to test them so bad then I stumbled upon &lt;a href=&#34;http://sass-lang.com&#34; target=&#34;_blank&#34;&gt;Sass website&lt;/a&gt;. Syntactically awesome they said? I totally love anything with awesome attached to it because I feel I&amp;rsquo;m awesome (especially around opposite genders :D).&lt;/p&gt;
+
+&lt;p&gt;I program in python and even though strict indentations may be a pain, that pain has become my honey. I fell in love with the indented Sass &lt;a href=&#34;http://sassnotsass.com/&#34; target=&#34;_blank&#34;&gt;(not SASS)&lt;/a&gt;. I love checking out &lt;a href=&#34;https://twitter.com/thebabydino&#34; target=&#34;_blank&#34;&gt;Ana Tudor &lt;/a&gt;and &lt;a href=&#34;https://twitter.com/HugoGiraudel&#34; target=&#34;_blank&#34;&gt;Hugo Giraudel&amp;rsquo;&lt;/a&gt;s works. A lot more awesome people like &lt;a href=&#34;http://twitter.com/codingdesigner&#34; target=&#34;_blank&#34;&gt;Mason Wendell&lt;/a&gt; who created &lt;a href=&#34;http://github.com/Team-Sass/breakpoint&#34; target=&#34;_blank&#34;&gt;breakpoint &lt;/a&gt;(a compass extension I can not do without). All these great people in the community have once used the indented Sass but now, they all write SCSS.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using the laravel console</title>
+      <link>https://josephrex.me/using-the-laravel-console/</link>
+      <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-the-laravel-console/</guid>
+      <description>&lt;p&gt;{% image laravel-console.png class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;laravel console&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;I have always loved consoles. I can&amp;rsquo;t do without them as they make life easy for me in so many ways. I talked about &lt;a href=&#34;http://josephrex.me/butterfly-and-fish/&#34; title=&#34;Butterfly and Fish&#34;&gt;fish and butterfly in an old blog post &lt;/a&gt;as I use them often. I also use the awesome &lt;a href=&#34;http://phpsh.org/&#34; target=&#34;_blank&#34;&gt;phpsh&lt;/a&gt; because it is the best way for me to test php code on the go.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Keeping your development, staging, and production similar</title>
+      <link>https://josephrex.me/keeping-your-development-staging-and-production-similar/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/keeping-your-development-staging-and-production-similar/</guid>
+      <description>{% image dev-prod-parity.jpg class=&amp;ldquo;head-image&amp;rdquo; %} In this 12factor.net series, a major point for development process is discussed. Being a rails developer, you will likely start your development on the default sqlite database and you may get tempted to just use sqlite for your production as well. I use sqlite mostly for software and applications that are meant to run internally (i.e intranet) for organizations and I don&amp;#8217;t think they should be used for regular web apps as they are stored to the disk and they consume data.</description>
+    </item>
+    
+    <item>
+      <title>There&#39;s a mistake in your website</title>
+      <link>https://josephrex.me/theres-a-mistake-in-your-website/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/theres-a-mistake-in-your-website/</guid>
+      <description>&lt;p&gt;As the web grows, different design trends come into existence. A larger number of organizations will focus more on keeping to this trends, having a nice website that is responsive, having something with cool Javascript effects.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a lot more things that make your website suck and one I can say is your perspective about your website. It&amp;rsquo;s not cool to everyone just because it seems cool to you and your colleagues. You should read &lt;a href=&#34;http://www.webpagesthatsuck.com/biggest-mistakes-in-web-design-1995-2015.html&#34; target=&#34;_blank&#34;&gt;the biggest mistakes in web design&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Some useful links for a Laravel developer</title>
+      <link>https://josephrex.me/some-useful-links-for-a-laravel-developer/</link>
+      <pubDate>Sat, 06 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/some-useful-links-for-a-laravel-developer/</guid>
+      <description>&lt;p&gt;{% image LaravelModules__1417844148_41.206.11.5.jpg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;Laravel background&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;These are some links you will find useful as a Laravel developer.&lt;/p&gt;
+
+&lt;p&gt;Laravel Pastebin: &lt;a href=&#34;http://laravel.io/bin&#34;&gt;http://laravel.io/bin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Laravel Forum: &lt;a href=&#34;http://laravel.io/forum&#34;&gt;http://laravel.io/forum&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Forum archive: &lt;a href=&#34;http://forumsarchive.laravel.io&#34;&gt;http://forumsarchive.laravel.io&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Laravel Jobs: &lt;a href=&#34;http://larajobs.com&#34;&gt;https://larajobs.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Laravel Podcast: &lt;a href=&#34;http://www.buzzsprout.com/11908&#34;&gt;http://www.buzzsprout.com/11908&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Adding a break statement to laravel4 blade templating</title>
+      <link>https://josephrex.me/adding-a-break-statement-to-laravel4-blade-templating/</link>
+      <pubDate>Fri, 05 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/adding-a-break-statement-to-laravel4-blade-templating/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been quite long since I had to develop with laravel4 but in my active days, I leveraged blade templating in my views. View files have less logic but then we have to perform simple loop operations and conditional statements. Blade provides @if, @endif, @foreach, @endforeach. Well, I wasn&amp;rsquo;t satisfied with that because I had a lot cases to break my loop. This was my solution&lt;/p&gt;
+
+&lt;p&gt;If you have a helpers file that extends start/global.php you can add the following to extend blade
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A female hacker</title>
+      <link>https://josephrex.me/a-female-hacker/</link>
+      <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/a-female-hacker/</guid>
+      <description>Men and Boys get so cocky sometimes that they are the only gender that have had the privilege to mess around computers from their young age. In this article, Crystal Beasley disproves that by sharing her nerd story.
+http://skinnywhitegirl.com/blog/my-nerd-story/1101/
+Plot twist: Paul Graham who was mentioned to have said women haven&amp;rsquo;t been hacking for long didn&amp;rsquo;t actually say that. Hear what he had to say:
+http://paulgraham.com/wids.html</description>
+    </item>
+    
+    <item>
+      <title>Using source maps</title>
+      <link>https://josephrex.me/using-source-maps/</link>
+      <pubDate>Wed, 03 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-source-maps/</guid>
+      <description>&lt;p&gt;{% image mappings.png class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;source maps&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;The web browser inspector plays a good role when debugging CSS. However, with the widespread of pre-processors now, we are faced with a challenge of debugging our CSS. Using a pre-processor like Sass, when you have your output style to be expanded or nested, this may not be much of a problem as you will almost get accurate debugging lines except if those lines had been separated by variables and mixins within your pre-processor stylesheet. In my case, I use the compressed (minified) output and I believe a lot of other developers do this to boost their pagespeed. This way, the whole of your compiled CSS stylesheet is on a single line and if you will try to debug for a line number, you will always find rule on line 1.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Symmetric Encryption in Python</title>
+      <link>https://josephrex.me/symmetric-encryption-in-python/</link>
+      <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/symmetric-encryption-in-python/</guid>
+      <description>&lt;p&gt;{% image encryption-1.jpeg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;encryption&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;In the middle of a project I&amp;rsquo;m presently working on, I needed to make use of a Symmetric encryption based on the workflow of my software. A key is required by users to encrypt data and the same key will be needed to decrypt data. My first thoughts were on PyCrypto so I went ahead doing this&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color: #fec418&#34;&gt;Crypto.Cipher&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;AES&lt;/span&gt;
+&lt;span style=&#34;color: #5bc4bf&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color: #fec418&#34;&gt;Crypto&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;Random&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;The quick brown fox jumped over the dog&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;iv&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;Random&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;new()&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;read(AES&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;block_size)&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;cipher&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;AES&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;new(key,&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;AES&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;MODE_CFB,&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;iv)&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;ctext&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;iv&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;cipher&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;encrypt(text)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This was totally fine but when I tried decrypting the ctext data, I got something entirely different from what my input was.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;decrypted&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;cipher&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;decrypt(ctext)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Strange behaviour from MODE_CFB made me try MODE_CBC. Just the exact same way, I went ahead to just change to MODE_CBC
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Appreciating developers</title>
+      <link>https://josephrex.me/appreciating-developers/</link>
+      <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/appreciating-developers/</guid>
+      <description>{% image appreciating-girl.jpg class=&#34;image image--wide&#34; alt=&#34;appreciating girl&#34; %}  We are all humans and appreciations are rewards that gladdens anyone. Some developers live a totally normal life. Especially those that have grown to build a family and have to keep them with love. On the other hand, there are a lot more melancholic developers that only find peace by dealing with complex logic. If a developer contributes to your project, start-up, firm, it shouldn&amp;rsquo;t matter if they are still contributing or not.</description>
+    </item>
+    
+    <item>
+      <title>Things you can do with MathML</title>
+      <link>https://josephrex.me/things-you-can-do-with-mathml/</link>
+      <pubDate>Fri, 28 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/things-you-can-do-with-mathml/</guid>
+      <description>&lt;p&gt;{% image mathematical-equations-152650.jpg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;math equations&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;For a while, I&amp;rsquo;ve been enjoying the awesomeness of mathML. I&amp;rsquo;ve not had specific use cases but just playing around with it gives me fun. Sometimes I idly just write equations that should be on a paper in my local web pages.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a lot you can learn about MathML by looking through the MDN spec. I&amp;rsquo;ll just drop in the little parts I&amp;rsquo;ve played. This has been for so many years and it still available but it is only supported by gecko browsers (Mozilla Firefox, Iceweasel, some others) .
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Styling for print media</title>
+      <link>https://josephrex.me/styling-for-print-media/</link>
+      <pubDate>Mon, 24 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/styling-for-print-media/</guid>
+      <description>&lt;figure&gt;
+{% image wallpaper-106773.jpg class=&#34;image&#34; alt=&#34;wallpaper-106773&#34; %}
+&lt;/figure&gt;
+The @media is mostly known these days for its use with responsive design in a conditional structure. However, it has been for a very long time. It has been used to separate visual CSS from paged CSS. The different media consists screen, print, projector, audio (formerly aural).
+
+I needed to do a print design in one of my recent projects and I knew I could just make a stylesheet link with a media=&#34;print&#34;. I&#39;ve also been privy that I can use  @media print{} to wrap it but that wasn&#39;t all it took. I never really knew there was more to it but I took the search to see how it&#39;s been done by the leaders of the industry. Not too long after, I stumbled upon the following alistapart article by Eric Meyer from 2002.</description>
+    </item>
+    
+    <item>
+      <title>Implementing dynamic drop down / dependent list in laravel4</title>
+      <link>https://josephrex.me/implementing-dynamic-drop-down-or-dependent-list-in-laravel4/</link>
+      <pubDate>Fri, 14 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/implementing-dynamic-drop-down-or-dependent-list-in-laravel4/</guid>
+      <description>&lt;figure&gt;
+{% image drop-down-menu.jpg class=&#34;image image--wide&#34; alt=&#34;drop-down-menu&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;When I used procedural PHP for most of my projects, I found myself needing what I referred to as a dependent list. These days I hear it being referred to as dynamic drop down more often. After looking around, a friend gave this solution to me.&lt;/p&gt;
+
+&lt;p&gt;All examples here will rely on the DDL database schema here:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Front-end development pattern</title>
+      <link>https://josephrex.me/my-front-end-development-pattern/</link>
+      <pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/my-front-end-development-pattern/</guid>
+      <description>&lt;figure&gt;
+{% image Web-Developer.jpg class=&#34;image&#34; alt=&#34;Web-Developer&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve seen different front-end developers start their projects. In most cases for intermediate designers, first steps are to write the basic HTML, download &lt;a href=&#34;http://getbootstrap.com&#34; target=&#34;_blank&#34;&gt;bootstrap&lt;/a&gt; or &lt;a href=&#34;http://foundation.zurb.com/&#34; target=&#34;_blank&#34;&gt;foundation&lt;/a&gt; framework for local use, download an icon-font set like &lt;a href=&#34;http://fontawesome.io/&#34; target=&#34;_blank&#34;&gt;fontawesome&lt;/a&gt;, and they start writing their mark-up to fit the styles defined by the framework.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>There shall be binaries</title>
+      <link>https://josephrex.me/there-shall-be-binaries/</link>
+      <pubDate>Tue, 28 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/there-shall-be-binaries/</guid>
+      <description>&lt;figure&gt;
+{% image pyuic-binaries.png alt=&#34;pyuic binary&#34; class=&#34;image image--wide&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;There comes a point when your program needs to be distributed to other users. You don&amp;rsquo;t want to always have to give every intended user of your program a list of modules or libraries to be installed before they can use your software.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve found myself developing software with python a lot lately and usually, I like people to check them out. Most times, my target users are Windows OS users. I built my programs but packing them into binaries became the pain in the neck for me.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Adding Resource files to your Qt designer project and using pyrcc with python</title>
+      <link>https://josephrex.me/adding-resource-files-to-your-qt-designer-project-and-using-pyrcc-with-python/</link>
+      <pubDate>Mon, 13 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/adding-resource-files-to-your-qt-designer-project-and-using-pyrcc-with-python/</guid>
+      <description>&lt;figure&gt;
+{% image glossy-gui.jpg class=&#34;image image--wide&#34; alt=&#34;Glossy GUI&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve planned writing on this for long but I&amp;rsquo;ve just been so busy. When I started building GUI programs with Qt designer, this was a big challenge for me for a while but somehow I figured it out on my own.&lt;/p&gt;
+
+&lt;p&gt;When creating a GUI project in Qt designer, you need images on some parts of your interface. Qt designer allows you add images that have been included in your resource files. My first pain was &amp;ldquo;How the heck do I add images to this resource file and where the heck is it?&amp;rdquo;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on cybersquatting</title>
+      <link>https://josephrex.me/thoughts-on-cybersquatting/</link>
+      <pubDate>Mon, 13 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/thoughts-on-cybersquatting/</guid>
+      <description>&lt;figure&gt;
+{% image Cybersquatting.jpg alt=&#34;Cybersquatting&#34; %}
+&lt;/figure&gt;
+
+&lt;figure&gt;
+{% image cybersquatter.png alt=&#34;cybersquatter&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I have never been a cyber-squatter and I don&amp;rsquo;t plan on becoming one as I have better dreams and goals to achieve. I&amp;rsquo;m way to busy for that. Although, I know it does fetch a lot of money if lucky but still I don&amp;rsquo;t see it as a right thing to do.&lt;/p&gt;
+
+&lt;p&gt;What is cyber squatting?&lt;/p&gt;
+
+&lt;p&gt;Squatting in itself means occupying an abandoned area. It is also known as domain squatting. Wikipedia describes it this way:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Getting started with GUI development in Python</title>
+      <link>https://josephrex.me/getting-started-with-gui-development-in-python/</link>
+      <pubDate>Fri, 12 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/getting-started-with-gui-development-in-python/</guid>
+      <description>&lt;figure&gt;
+{% image z_design.jpg class=&#34;image&#34; alt=&#34;z_design&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;Most people that are fond of Windows operating system will always root for graphical desktop applications (GUI) over command line (CLI) programs. Since after DOS, windows operating systems have been known to use simple and user friendly GUI. This is one of the reasons why they have made a lot of customers around the world.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Internet Freedom September 10th 2014</title>
+      <link>https://josephrex.me/internet-freedom-2014/</link>
+      <pubDate>Wed, 10 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/internet-freedom-2014/</guid>
+      <description>&lt;figure&gt;
+{% image internet-slowdown-2014.png class=&#34;image&#34; alt=&#34;internet slowdown&#34; %}
+&lt;/figure&gt;
+
+&lt;figure&gt;
+{% image battle-for-net.jpg alt=&#34;battle for the net&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;If you woke up tomorrow, and your internet&lt;strong&gt;&lt;a href=&#34;https://www.battleforthenet.com/sept10th/#modal&#34; target=&#34;_blank&#34;&gt; looked like this&lt;/a&gt;&lt;/strong&gt;, what would you do?&lt;/p&gt;
+
+&lt;p&gt;Imagine all your favorite websites taking forever to load, while you get annoying notifications from your ISP suggesting you switch to one of their approved “Fast Lane” sites.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prioritizing Critical (Above the fold) CSS to optimize page load speed</title>
+      <link>https://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/</link>
+      <pubDate>Wed, 10 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/</guid>
+      <description>&lt;figure&gt;
+{% image above-fold.jpg class=&#34;image image--wide&#34; alt=&#34;above the fold&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I made &lt;a href=&#34;http://slides.com/bl4ckdu5t/critical-css&#34; target=&#34;_blank&#34;&gt;a slide&lt;/a&gt; on this about a month back and I&amp;rsquo;ve since intended to write about it here.&lt;/p&gt;
+
+&lt;p&gt;Every developer that cares about user experience will always want to fix everything that makes a user think of not coming back to their website after first visit. I&amp;rsquo;ve found myself in such situations where I begin to think that whoever did this thing must have invested a lot of time making something that technically feels like nothing. We don&amp;rsquo;t want our applications to be thought of this way.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Regex: A required skillset for developers and power users</title>
+      <link>https://josephrex.me/regex-a-required-skillset-for-developers-and-power-users/</link>
+      <pubDate>Wed, 27 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/regex-a-required-skillset-for-developers-and-power-users/</guid>
+      <description>&lt;figure&gt;
+{% image national_regular_expression_day_xkcd_shirt.gif class=&#34;image&#34; alt=&#34;regular expressions day&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I care about information and I believe everything we do wraps around trying to find information, protecting it, and making use of it. There is Google, DuckDuckGo, and other search engines, there is grep for Unix-like system users, there are search panes on applications and websites. Sometimes these media of information gathering may not be good/aggressive enough to find the exact outputs you expect especially when looking through files. This is why we learn how to do our searching and pattern matching &lt;strong&gt;like a boss&lt;/strong&gt;.
+
+&lt;hr&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Motion Graphics Obsession</title>
+      <link>https://josephrex.me/motion-graphics-obsession/</link>
+      <pubDate>Thu, 21 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/motion-graphics-obsession/</guid>
+      <description>&lt;figure&gt;
+{% image cgi-scene.jpg alt=&#34;Computer Generated Image&#34; class=&#34;image&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve gotten to do a lot of things besides writing codes. I once took a job as a graphic designer and then I made vector graphics for ads. Here&amp;rsquo;s one of what I did in my free.&lt;/p&gt;
+
+&lt;p&gt;I love good designs, graphics, and creativity. I&amp;rsquo;ve been an artist from my childhood and I haven&amp;rsquo;t dropped it till date. I only happen to be more of a code artist these days.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Good son, bad father: I&#39;m leaving PHP but I love Laravel</title>
+      <link>https://josephrex.me/good-son-bad-father-im-leaving-php-but-i-love-laravel/</link>
+      <pubDate>Tue, 12 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/good-son-bad-father-im-leaving-php-but-i-love-laravel/</guid>
+      <description>&lt;p&gt;{% image dad-and-son.png alt=&amp;ldquo;Dad and Son&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;PHP has a really shallow learning curve. It&amp;rsquo;s easy for a 8 year old to pick it up and start messing around with it. This is good and I love it about Python as well. However, PHP has been known to have a lot of flaws, one of the major reasons being because it was not built as a functional programming language but rather, just a Hypertext pre-processor. It was meant to just automate the behaviour of HTML. Around 2005, OOP was introduced to PHP and it made PHP developers feel among the big boys of the web.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The chips have ears</title>
+      <link>https://josephrex.me/the-chips-have-ears/</link>
+      <pubDate>Fri, 08 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/the-chips-have-ears/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;
+  {% image Chips.jpg class=&amp;ldquo;image image&amp;ndash;wide&amp;rdquo; alt=&amp;ldquo;Chips&amp;rdquo; %}
+  &lt;figcaption&gt;A shot of doritos and cheetos&lt;/figcaption&gt;
+&lt;/figure&gt;
+The common saying is &amp;ldquo;The walls have ears&amp;rdquo;. This is a figurative expression that expresses that things we say can be heard by people around even while we think there&amp;rsquo;s no one around (or information just leaks in one way or another). Technology in this generation has caused a lot of transformations and changed the way we see things.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m not a perfectionist</title>
+      <link>https://josephrex.me/im-not-a-perfectionist/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/im-not-a-perfectionist/</guid>
+      <description>&lt;p&gt;{% image perfectionist-image.jpg alt=&amp;ldquo;perfectionist-image&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m sick of hearing everyone call themselves perfectionists everywhere I go. Trust me, this is the most ridiculous thing you should call yourself from my view. I&amp;rsquo;d rather you use curse words on me than call me a perfectionist.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>It doesn&#39;t have to be important</title>
+      <link>https://josephrex.me/it-doesnt-have-to-be-important/</link>
+      <pubDate>Thu, 31 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/it-doesnt-have-to-be-important/</guid>
+      <description>&lt;p&gt;{% image name_not_important.jpg  alt=&amp;ldquo;name not important&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}
+Thanks to collaborated projects, I&amp;rsquo;ve come across crappy CSS in my life. I talked about it in a [previous article][1].&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not impeccable and I wouldn&amp;rsquo;t be dissing someone else&amp;rsquo; because of their faults. However, one point I failed to mention about what I experienced from a co-designer on the project I mentioned in that article was the use of too many nested selectors.&lt;/p&gt;
+
+&lt;p&gt;Nested selectors increase specificity and they should be avoided when they can. In an instance where you have
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Beanstalkd and Supervisor to handle queues in Laravel4</title>
+      <link>https://josephrex.me/using-beanstalkd-and-supervisor-to-handle-queues-in-laravel4/</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-beanstalkd-and-supervisor-to-handle-queues-in-laravel4/</guid>
+      <description>&lt;p&gt;{% image security_lights.jpg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;security lights&amp;rdquo; %}
+When performing some tasks that take time with your web application, you usually don&amp;rsquo;t want to keep your users waiting for a better user experience.&lt;/p&gt;
+
+&lt;p&gt;Taking email sending for an example, it takes about a minute to two for an email to be sent with your web app. Do you really want to keep your non geeky application users staring at a screen for that long, just watching an ajax image loader spin, or just waiting to get a response that the task has been completed. No, I don&amp;rsquo;t think so.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Collaborated Projects are good and bad</title>
+      <link>https://josephrex.me/collaborated-projects-are-good-and-bad/</link>
+      <pubDate>Thu, 24 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/collaborated-projects-are-good-and-bad/</guid>
+      <description>&lt;p&gt;Project collaboration is one of the greatest things ever, especially in the open source community. Despite it&amp;rsquo;s awesomeness, there are always challenges in collaborated projects. Some idealist programmers pick up the code and find it uncomfortable to mix with non coordinated contributions by a clumsy programmer. The &lt;a href=&#34;http://www.php-fig.org/psr/&#34;&gt;PSR&lt;/a&gt; exists in the PHP community to bring about ideas that may make good programmers follow some good concepts. This way, you&amp;rsquo;ll find a lot of similarity in the codes of various programmers that follow the PSR.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m an &#39;X&#39; programmer</title>
+      <link>https://josephrex.me/im-an-x-programmer/</link>
+      <pubDate>Wed, 23 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/im-an-x-programmer/</guid>
+      <description>&lt;p&gt;All things programming is a part of hackery to me. I love to hack stuffs and that&amp;rsquo;s what has pulled me into the planet of development and engineering. From my observation, some people miss the point on what programming is about.&lt;/p&gt;
+
+&lt;p&gt;Some see it as a tag to their beings like &amp;ldquo;Jake the Java Programmer&amp;rdquo;. What&amp;rsquo;s that? It doesn&amp;rsquo;t look reasonable to me. Not because I&amp;rsquo;m not a Java programmer but because it just isn&amp;rsquo;t right.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The divorce comeback: Debian and Matriux</title>
+      <link>https://josephrex.me/the-divorce-comeback-debian-and-matriux/</link>
+      <pubDate>Wed, 23 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/the-divorce-comeback-debian-and-matriux/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been a Debian user for some time. I started using Debian since squeeze was&lt;a href=&#34;https://wiki.debian.org/DebianStable&#34; target=&#34;_blank&#34;&gt; DebianStable&lt;/a&gt; . Debian is a great OS and so many interesting operating systems have been built from its kernel.&lt;/p&gt;
+
+&lt;p&gt;I used to be an Ubuntu user till I got fed up of Unity and I never tried Kubuntu, Xubuntu, or Gnome in Ubuntu. Switching to Debian wasn&amp;rsquo;t a bad idea because I recently realized we are life partners.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Frontend assets the right way on Laravel and other Frameworks:Bower</title>
+      <link>https://josephrex.me/using-frontend-assets-the-right-way-on-laravel-and-other-frameworksbower/</link>
+      <pubDate>Wed, 23 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-frontend-assets-the-right-way-on-laravel-and-other-frameworksbower/</guid>
+      <description>&lt;p&gt;Non laravel users are getting intimidated with the unending trend of Laravel discussions everywhere they go :)&lt;/p&gt;
+
+&lt;p&gt;Laravel is an awesome back-end framework that has attracted a lot of PHP developers including the Professionals like Jeffrey Way who makes awesome videos on &lt;a href=&#34;https://www.debian.org/News/2014/20140424&#34;&gt;Laracast&lt;/a&gt; (Netflix for Developers).
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s wrong with Compass? Failed to watch due to inotify limit</title>
+      <link>https://josephrex.me/whats-wrong-with-compass-failed-to-watch-due-to-inotify-limit/</link>
+      <pubDate>Wed, 23 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/whats-wrong-with-compass-failed-to-watch-due-to-inotify-limit/</guid>
+      <description>&lt;p&gt;In a [recent article][1], I talked about my OS migration. Changing Operating System is not an easy thing to go through but I went through it anyway. After setting up all I needed, I wanted to resume to my projects ASAP. I downloaded Sass and Compass again and pulled my project from it&amp;rsquo;s repository on an SVN. I tried &lt;code&gt;compass watch&lt;/code&gt; and I got an error like:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sass and Compass: My Best Friends</title>
+      <link>https://josephrex.me/sass-and-compass-my-best-friends/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/sass-and-compass-my-best-friends/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a left-brained computer savvy. I love logic and math and because of this, I may be attracted to Sass not just because it&amp;rsquo;s awesome but also because it gives me a chance to keep my brain busy with logic. I think this picture speaks my state of mind right now&lt;/p&gt;
+
+&lt;p&gt;{% image sass-tshirt-1.jpg alt=&amp;ldquo;sass-tshirt-1&amp;rdquo; class=&amp;ldquo;head-image&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been writing Sass for 3 months now. I hope to give Stylus a try some time soon as I hear of it as another Super Hero Pre-processor. As of now, I don&amp;rsquo;t have any interest in writing LESS. This article is not about what I like or what I don&amp;rsquo;t like anyway.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emotion Monitoring Device</title>
+      <link>https://josephrex.me/emotion-monitoring-device/</link>
+      <pubDate>Sat, 28 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/emotion-monitoring-device/</guid>
+      <description>{% image emotion-monitor.png class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;emotion monitor&amp;rdquo; %}
+Everyone that comes around me notices that I always emphasize on building stuff for the future. I&amp;rsquo;ve worked with start-ups and I&amp;rsquo;m working with one. I love the fact that involving in most of the projects I&amp;rsquo;ve contributed to has built my development skills. What I&amp;rsquo;m not satisfied with is that we keep iterating development of pre-existing solutions. I believe programming and hackery is about providing solutions that do not exist to problems that are pending.</description>
+    </item>
+    
+    <item>
+      <title>.attr() is not what you want, use .prop()</title>
+      <link>https://josephrex.me/attr-is-not-what-you-want-use-prop/</link>
+      <pubDate>Thu, 26 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/attr-is-not-what-you-want-use-prop/</guid>
+      <description>&lt;p&gt;JavaScript is boss at what it does by helping us manipulate the DOM. jQuery has helped JS starters and also PROs that want to get work done in time. The .attr() function is meant to get the attributes of a selected node in the DOM. Starting with jQuery, I felt it was totally ok to use .attr() not just because it was the function I felt I wanted, but it sounded semantically ok with the task I want to achieve. Thinking of it in a simple way, &amp;ldquo;attr&amp;rdquo; looks like an abbreviation of &amp;ldquo;attribute&amp;rdquo; and what I want to do is access the contents of my HTML element attribute. Used it like this for a while and found out it didn&amp;rsquo;t work as perfect as I expected till I discovered I shouldn&amp;rsquo;t have been doing it this way. .attr() accesses defaultValue (initial value) of an element&amp;rsquo;s attribute which means if I have a mark-up like this
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Accessing non-specific javascript object properties</title>
+      <link>https://josephrex.me/accessing-non-specific-javascript-objects/</link>
+      <pubDate>Sat, 21 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/accessing-non-specific-javascript-objects/</guid>
+      <description>&lt;p&gt;If you are a regular JavaScript programmer, then you know that when you see an object like this&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #815ba4&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color: #06b6ef&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;John Doe&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #06b6ef&#34;&gt;gender&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;male&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The best way to access the values of the object data will be to have it this way&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #776e71&#34;&gt;//returns John Doe&lt;/span&gt;
+&lt;span style=&#34;color: #06b6ef&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;gender&lt;/span&gt; &lt;span style=&#34;color: #776e71&#34;&gt;//returns male&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;While working with Laravel for my back-end programming on my current project, I had cases where I received JSON objects as validation messages. The json being received is something like
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Creating a helper file for your Laravel 4 application</title>
+      <link>https://josephrex.me/creating-a-helper-file-for-your-laravel-4-application/</link>
+      <pubDate>Thu, 19 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/creating-a-helper-file-for-your-laravel-4-application/</guid>
+      <description>&lt;p&gt;At some point we will like to define our own unique functions even with all the awesome packages and inbuilt functions of laravel. Coming from a framework like codeigniter, you may expect to find a helpers directory in laravel but there&amp;rsquo;s no such thing. To create your Laravel helper, you can open the &lt;code&gt;app/start/global.php&lt;/code&gt; file and add any new functions you want at the bottom.&lt;br /&gt;
+Doing this however will mess up your global.php code. The best approach to this from my perspective will be to require a separate file from the bottom of that file and add all your functions to the new file. In my case, I decided to create a helpers.php file in my app directory and then include this line
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Uploading files in Laravel 4</title>
+      <link>https://josephrex.me/uploading-files-in-laravel-4/</link>
+      <pubDate>Thu, 19 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/uploading-files-in-laravel-4/</guid>
+      <description>&lt;p&gt;Below is an example of an HTML form written in blade template and laravel illuminate form builder&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;{% raw %}
+{{ Form::open([&amp;#39;action&amp;#39; =&amp;gt; &amp;#39;method@controller&amp;#39;,&amp;#39;file&amp;#39; =&amp;gt; &amp;#39;true&amp;#39;]) }}
+{{ Form::input(&amp;#39;text&amp;#39;,&amp;#39;name&amp;#39;) }}
+{{ Form::input(&amp;#39;file&amp;#39;,&amp;#39;file&amp;#39;) }}
+{{ Form::submit(&amp;#39;Enter&amp;#39;) }}
+
+{{ Form::close() }}
+{% endraw %}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It says I have a file with the name values as file. To handle this upload, you can use the controller method used for handling the entire form and have the following inside it
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Leveraging SASS for your front-end designs</title>
+      <link>https://josephrex.me/leveraging-sass-for-your-front-end-designs/</link>
+      <pubDate>Wed, 18 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/leveraging-sass-for-your-front-end-designs/</guid>
+      <description>&lt;p&gt;Recently I chose to move from vanilla CSS to the syntactically awesome stylesheeets and this has been a great step in my life. It&amp;rsquo;s like leaving a klingon which I&amp;rsquo;ve had as a girlfriend to date a human or vulcan :)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sass-lang.com&#34; target=&#34;_blank&#34;&gt;Team-Sass&lt;/a&gt; provided a style guide for SASS concerning how we can name our variables for colors. A basic variable naming should be as it is on &lt;a href=&#34;http://sass-lang.com/styleguide/color/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://sass-lang.com/styleguide/color/&#34;&gt;http://sass-lang.com/styleguide/color/&lt;/a&gt;&lt;/a&gt; where all the colors have their names as variables like so:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sending files over Ajax requests with jQuery</title>
+      <link>https://josephrex.me/sending-files-over-ajax-requests-with-jquery/</link>
+      <pubDate>Wed, 18 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/sending-files-over-ajax-requests-with-jquery/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve been writing &lt;a href=&#34;http://jquery.com&#34;&gt;jQuery,&lt;/a&gt; you&amp;rsquo;re probably fond of writing your code this way when submitting forms with ajax&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;form&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;on&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;submit&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #815ba4&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;){&lt;/span&gt;
+  &lt;span style=&#34;color: #06b6ef&#34;&gt;e&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;preventDefault&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;();&lt;/span&gt;
+  &lt;span style=&#34;color: #815ba4&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color: #06b6ef&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #06b6ef&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #815ba4&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;serialize&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;();&lt;/span&gt;
+  &lt;span style=&#34;color: #06b6ef&#34;&gt;$&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;ajax&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;({&lt;/span&gt;
+    &lt;span style=&#34;color: #06b6ef&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;quot;POST&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color: #06b6ef&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color: #06b6ef&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #06b6ef&#34;&gt;yourUrl&lt;/span&gt;
+  &lt;span style=&#34;color: #e7e9db&#34;&gt;}).&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;done&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #815ba4&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;response&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;){&lt;/span&gt;
+    &lt;span style=&#34;color: #06b6ef&#34;&gt;console&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;response&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;);&lt;/span&gt;
+  &lt;span style=&#34;color: #e7e9db&#34;&gt;}).&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;fail&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #815ba4&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(){&lt;/span&gt;
+    &lt;span style=&#34;color: #06b6ef&#34;&gt;console&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;log&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;quot;It failed&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;);&lt;/span&gt;
+    &lt;span style=&#34;color: #e7e9db&#34;&gt;});&lt;/span&gt;
+
+&lt;span style=&#34;color: #e7e9db&#34;&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and for those using older versions of jQuery or haven&amp;rsquo;t realized the essence of promises, it should be something like this you have:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Future of CSS: Content Pseudo Selector</title>
+      <link>https://josephrex.me/content-pseudo-selector/</link>
+      <pubDate>Wed, 14 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/content-pseudo-selector/</guid>
+      <description>&lt;p&gt;Before I started making use of CSS3 to create beautiful websites, I had crappy ways of getting some things done which I think some other designers also did. Since the introduction of &lt;a href=&#34;http://www.w3.org/TR/css3-selectors/&#34;&gt;CSS3 pseudo selectors&lt;/a&gt;, my life got  better. They helped me achieve decent mark-up.&lt;/p&gt;
+
+&lt;p&gt;Lately, I thought of making my life a lot easier by doing something even more awesome. I don&amp;rsquo;t know if it exists already or in the works, but I&amp;rsquo;ll go into details on how I came about it and I think it will be really cool.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS Sanitation</title>
+      <link>https://josephrex.me/css-sanitation/</link>
+      <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/css-sanitation/</guid>
+      <description>&lt;p&gt;I do a lot of back-end web development but front-end calls me a lot because of my passion for creativity. I&amp;rsquo;ve had to consider CSS files on various projects I&amp;rsquo;ve worked on. Some as front-end designer, some as back-end. On a project I&amp;rsquo;m working on, we&amp;rsquo;ve had various hands in the stylesheets and it has caused a lot of irrelevant rules in the CSS. Some global classes are not really been put to use and the CSS already contains over 6,500 lines of code already. Also, the fact that multiple frameworks are used on the present project, it lands us in a larger number of selectors.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Oh Sass! How awesome is it gonna get</title>
+      <link>https://josephrex.me/sass-awesomeness/</link>
+      <pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/sass-awesomeness/</guid>
+      <description>&lt;p&gt;I started writing Sass not too long ago and it has been one of the best experiences I&amp;rsquo;ve had. Sass (Syntatically Awesome Stylesheet) is just as awesome as the name sounds.&lt;/p&gt;
+
+&lt;p&gt;Sass is a CSS predecessor that gives smart designers a lot more flexibility with the styling. New features are being added to Sass and with contributions of the Google team, it&amp;rsquo;s getting even faster than you can imagine. This &lt;a href=&#34;https://www.youtube.com/watch?v=-ZJeOJGazgE&#34;&gt;talk by Chris Eppstein&lt;/a&gt; reveals the work in progress.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Butterfly and Fish</title>
+      <link>https://josephrex.me/butterfly-and-fish/</link>
+      <pubDate>Fri, 25 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/butterfly-and-fish/</guid>
+      <description>&lt;p&gt;&lt;figure&gt;
+  {% image butterfly_1.gif class=&amp;ldquo;image&amp;rdquo; alt=&amp;ldquo;butterfly_1&amp;rdquo; %}
+&lt;/figure&gt;
+I recently stumbled upon butterfly on &lt;a href=&#34;http://paradoxxxzero.github.io/2014/02/28/butterfly.html&#34;&gt;http://paradoxxxzero.github.io/2014/02/28/butterfly.html&lt;/a&gt; and it is a really awesome web browser shell execution program written in python. It&amp;rsquo;s not like it&amp;rsquo;s the first of it&amp;rsquo;s kind. There are others like:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/antonylesuisse/qweb/tree/master/ajaxterm&#34;&gt;ajaxterm&lt;/a&gt; and &lt;a href=&#34;http://anyterm.org/&#34;&gt;anyterm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;They are also good but development has stopped on them and I don&amp;rsquo;t think they are better than butterfly. Ajaxterm was adapted from anyterm and there have been no new commits since 2011.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dealing with merge conflicts</title>
+      <link>https://josephrex.me/dealing-with-merge-conflicts/</link>
+      <pubDate>Sat, 19 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/dealing-with-merge-conflicts/</guid>
+      <description>&lt;p&gt;Recently, I started using git and mercury for version control. I&amp;rsquo;ve never really used any other version control system before these two. For most of my recent projects, I&amp;rsquo;ve chosen to make more use of git. Git is a really awesome version control system as I&amp;rsquo;ve heard from a lot of Pros coming from other version control system like Subversion (SVN).
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://josephrex.me/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/about-me/</guid>
+      <description>I am Joseph Rex (silverdust). I write software, articles, and I design. I work with Ruby and JavaScript. Recently been exploring animations/motion graphics especially on the web and a little outside the web. I&amp;rsquo;ve always loved building interfaces so I have old projects with interfaces that aren&amp;rsquo;t web based and I reviewed a GUI book for packt pub.
+strich.io is my portfolio website, I have some front-end experiments on codepen, my designs are on behance, and my OSS contributions on github.</description>
+    </item>
+    
+    <item>
+      <title>Reading List</title>
+      <link>https://josephrex.me/reading-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/reading-list/</guid>
+      <description>Here&amp;rsquo;s a list of books I&amp;rsquo;ve read and will be reading:
+ The Design of Everyday Things - Don Norman RiceTea - Julien McArdle CSS Secrets - Lea Verou Why&amp;rsquo;s poignant guide to Ruby Practical Object Oriented Design Ruby (POODR) 99 bottles of OOP Rails 4 in action - Ryan Biggs et al Ghost in the wires - Kevin Mitnick Art of Intrustion - Kevin Mitnick Art of Deception - Kevin Mitnick Clean Code - Robert C.</description>
+    </item>
+    
+  </channel>
+</rss>

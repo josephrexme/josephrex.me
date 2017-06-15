@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Futuristic on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/futuristic/</link>
+    <description>Recent content in Futuristic on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Jun 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/futuristic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emotion Monitoring Device</title>
+      <link>https://josephrex.me/emotion-monitoring-device/</link>
+      <pubDate>Sat, 28 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/emotion-monitoring-device/</guid>
+      <description>{% image emotion-monitor.png class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;emotion monitor&amp;rdquo; %}
+Everyone that comes around me notices that I always emphasize on building stuff for the future. I&amp;rsquo;ve worked with start-ups and I&amp;rsquo;m working with one. I love the fact that involving in most of the projects I&amp;rsquo;ve contributed to has built my development skills. What I&amp;rsquo;m not satisfied with is that we keep iterating development of pre-existing solutions. I believe programming and hackery is about providing solutions that do not exist to problems that are pending.</description>
+    </item>
+    
+  </channel>
+</rss>

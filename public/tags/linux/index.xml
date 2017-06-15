@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/linux/</link>
+    <description>Recent content in Linux on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The divorce comeback: Debian and Matriux</title>
+      <link>https://josephrex.me/the-divorce-comeback-debian-and-matriux/</link>
+      <pubDate>Wed, 23 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/the-divorce-comeback-debian-and-matriux/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been a Debian user for some time. I started using Debian since squeeze was&lt;a href=&#34;https://wiki.debian.org/DebianStable&#34; target=&#34;_blank&#34;&gt; DebianStable&lt;/a&gt; . Debian is a great OS and so many interesting operating systems have been built from its kernel.&lt;/p&gt;
+
+&lt;p&gt;I used to be an Ubuntu user till I got fed up of Unity and I never tried Kubuntu, Xubuntu, or Gnome in Ubuntu. Switching to Debian wasn&amp;rsquo;t a bad idea because I recently realized we are life partners.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns#">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Joseph Rex">
+  <meta name="description" content="Ramblings on design, code, fitness and food by Joseph Rex">
+  
+  <title>My failed LSB steganography algorithm</title>
+  
+  <link rel="shortcut icon" href="https://josephrex.me/favicon.png">
+  
+  <link rel="stylesheet" href="https://josephrex.me/css/highlight.css">
+  <link rel="stylesheet" href="https://josephrex.me/css/app.css">
+  
+  <link rel="alternate" type="application/rss+xml" title="Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design" href="https://josephrex.me/index.xml" />
+  
+
+  <meta property="og:title" content="My failed LSB steganography algorithm" />
+<meta property="og:description" content="Last month (December 2014), I started developing a new GUI steganography software after building a simple steganography tool for my post at Infosec Institue. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+
+{% image failed-stego.jpg class=&ldquo;head-image&rdquo; alt=&ldquo;stego girl&rdquo; %}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://josephrex.me/my-failed-lsb-steganography/" />
+
+
+
+<meta property="article:published_time" content="2015-01-31T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-01-31T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+<meta itemprop="name" content="My failed LSB steganography algorithm">
+<meta itemprop="description" content="Last month (December 2014), I started developing a new GUI steganography software after building a simple steganography tool for my post at Infosec Institue. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+
+{% image failed-stego.jpg class=&ldquo;head-image&rdquo; alt=&ldquo;stego girl&rdquo; %}">
+
+
+<meta itemprop="dateModified" content="2015-01-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1364">
+
+
+
+<meta itemprop="keywords" content="blogging,web,academic,activism,algorithms,animation,authentication,collaboration,compass,concepts,cryptography,css,databases,dns,encryption,ethics,experiment,frameworks,frontend,futuristic,git,graphics,gui,hacking,internet,javascript,jekyll,jquery,laravel,linux,math,mathml,nodejs,opinions,performance,php,postgresql,pyqt,python,queues,rails,regex,research,sass,security,shell,software,sql,steganography,svg,unix,ux,web," />
+
+  
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="My failed LSB steganography algorithm"/>
+<meta name="twitter:title" content="My failed LSB steganography algorithm"/>
+<meta name="twitter:description" content="Last month (December 2014), I started developing a new GUI steganography software after building a simple steganography tool for my post at Infosec Institue. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+
+{% image failed-stego.jpg class=&ldquo;head-image&rdquo; alt=&ldquo;stego girl&rdquo; %}"/>
+<meta name="twitter:site" content="@https://twitter.com/josephrexme"/>
+
+</head>
+
+  <body>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        
+<div class="post">
+  <div class="wrap">
+    <section class="container">
+      <nav class="nav row">
+  <div class="col col-10">
+    <a href="/"><img src="/logo.png" class="nav__logo" alt="Joseph Rex"></a>
+  </div>
+  <div class="col">
+    <div class="nav__menu u-fr">
+      <a href="/about-me" class="u-inherit-color">About Me</a>
+      <a href="/reading-list" class="u-inherit-color">Reading List</a>
+    </div>
+  </div>
+</nav>
+
+
+      <header class="header">
+        <h1 class="post__title">My failed LSB steganography algorithm</h1>
+        <time class="post__date">January 31, 2015</time>
+        &middot; <span>7 minutes read</span>
+      </header>
+      <main>
+        <article class="post__article">
+          <p>Last month (December 2014), I started developing a new GUI steganography software after building a <a href="https://github.com/bl4ckdu5t/stegman">simple steganography tool</a> for my <a href="http://resources.infosecinstitute.com/steganalysis-x-ray-vision-hidden-data/">post at Infosec Institue</a>. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+
+{% image failed-stego.jpg class=&ldquo;head-image&rdquo; alt=&ldquo;stego girl&rdquo; %}</p>
+
+<p>Image exif data is stored in about the first 30 hex values of the image hexadecimal data. The number may not be accurate enough but the point remains exif data is stored at the top of the image at it should be kept untampered with to retain a proper and valid image format. The software appends data to the end of image files.</p>
+
+<p>From my analysis as done on the infosec <a href="http://resources.infosecinstitute.com/steganalysis-x-ray-vision-hidden-data/">article</a>, most JPEG file formats have a hexadecimal tail of <code>0xFFD9</code> and PNG images have <code>0x426082</code>. I couldn&rsquo;t play around with GIF or BMP as there was inconsistency with the hexadecimal structure of most of them I had examined. The tool had a little function to grab hexadecimal values with the <a href="https://docs.python.org/2/library/binascii.html">binascii</a> module:</p>
+
+<div class="highlight" style="background: #2f1e2e"><pre style="line-height: 125%"><span></span><span style="color: #5bc4bf">import</span> <span style="color: #fec418">sys</span><span style="color: #5bc4bf">,</span> <span style="color: #fec418">re</span><span style="color: #5bc4bf">,</span> <span style="color: #fec418">binascii</span><span style="color: #5bc4bf">,</span> <span style="color: #fec418">string</span>
+<span style="color: #815ba4">def</span> <span style="color: #06b6ef">gethex</span><span style="color: #e7e9db">(image):</span>
+	<span style="color: #e7e9db">f</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">open(image,</span> <span style="color: #48b685">&#39;rb&#39;</span><span style="color: #e7e9db">)</span>
+	<span style="color: #e7e9db">data</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">f</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">read()</span>
+	<span style="color: #e7e9db">f</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">close()</span>
+	<span style="color: #e7e9db">hexcode</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">binascii</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">hexlify(data)</span>
+	<span style="color: #815ba4">return</span> <span style="color: #e7e9db">hexcode</span>
+</pre></div>
+
+
+<p>Every steganography tool performs two main functions which are <strong>embed</strong> and <strong>extract</strong>. Before file is embeded, it checks to see if there is any extra data after the usual JPEG or PNG tail hex values</p>
+
+<div class="highlight" style="background: #2f1e2e"><pre style="line-height: 125%"><span></span><span style="color: #815ba4">def</span> <span style="color: #06b6ef">extradatacheck</span><span style="color: #e7e9db">(data,</span> <span style="color: #e7e9db">type):</span>
+	<span style="color: #815ba4">if</span> <span style="color: #e7e9db">type</span> <span style="color: #5bc4bf">==</span> <span style="color: #48b685">&#39;png&#39;</span><span style="color: #e7e9db">:</span>
+		<span style="color: #e7e9db">pattern</span> <span style="color: #5bc4bf">=</span> <span style="color: #48b685">r&#39;(?&lt;=426082)(.*)&#39;</span>
+	<span style="color: #815ba4">elif</span> <span style="color: #e7e9db">type</span> <span style="color: #5bc4bf">==</span> <span style="color: #48b685">&#39;jpg&#39;</span><span style="color: #e7e9db">:</span>
+		<span style="color: #e7e9db">pattern</span> <span style="color: #5bc4bf">==</span> <span style="color: #48b685">r&#39;(?&lt;=FFD9)(.*)&#39;</span>
+	<span style="color: #e7e9db">match</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">re</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">search(pattern,</span> <span style="color: #e7e9db">data)</span>
+	<span style="color: #815ba4">if</span> <span style="color: #e7e9db">match:</span>
+		<span style="color: #815ba4">return</span> <span style="color: #e7e9db">match</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">group(</span><span style="color: #f99b15">0</span><span style="color: #e7e9db">)</span>
+	<span style="color: #815ba4">else</span><span style="color: #e7e9db">:</span>
+		<span style="color: #e7e9db">false</span>
+</pre></div>
+
+
+<p>The embed function</p>
+
+<div class="highlight" style="background: #2f1e2e"><pre style="line-height: 125%"><span></span><span style="color: #815ba4">def</span> <span style="color: #06b6ef">embed</span><span style="color: #e7e9db">(embedFile,</span> <span style="color: #e7e9db">coverFile,</span> <span style="color: #e7e9db">stegFile):</span>
+	<span style="color: #e7e9db">filetype</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">coverFile[</span><span style="color: #5bc4bf">-</span><span style="color: #f99b15">3</span><span style="color: #e7e9db">:]</span>
+	<span style="color: #e7e9db">stegtype</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">stegFile[</span><span style="color: #5bc4bf">-</span><span style="color: #f99b15">3</span><span style="color: #e7e9db">:]</span>
+	<span style="color: #815ba4">if</span> <span style="color: #e7e9db">filetype</span> <span style="color: #5bc4bf">!=</span> <span style="color: #48b685">&#39;png&#39;</span> <span style="color: #5bc4bf">and</span> <span style="color: #e7e9db">filetype</span> <span style="color: #5bc4bf">!=</span> <span style="color: #48b685">&#39;jpg&#39;</span><span style="color: #e7e9db">:</span>
+		<span style="color: #815ba4">print</span> <span style="color: #48b685">&#39;Invalid format&#39;</span>
+	<span style="color: #815ba4">elif</span> <span style="color: #e7e9db">filetype</span> <span style="color: #5bc4bf">!=</span> <span style="color: #e7e9db">stegtype:</span>
+		<span style="color: #815ba4">print</span> <span style="color: #48b685">&#39;Output file has to be in the same format as cover image (</span><span style="color: #f99b15">%s</span><span style="color: #48b685">)&#39;</span> <span style="color: #5bc4bf">%</span> <span style="color: #e7e9db">string</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">swapcase(filetype)</span>
+	<span style="color: #815ba4">else</span><span style="color: #e7e9db">:</span>
+		<span style="color: #e7e9db">data</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">open(embedFile,</span> <span style="color: #48b685">&#39;r&#39;</span><span style="color: #e7e9db">)</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">read()</span>
+		<span style="color: #e7e9db">info</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">gethex(coverFile)</span>
+		<span style="color: #815ba4">if</span> <span style="color: #e7e9db">extradatacheck(info,</span> <span style="color: #e7e9db">filetype):</span>
+			<span style="color: #815ba4">print</span> <span style="color: #48b685">&#39;File already contains embedded data&#39;</span>
+		<span style="color: #815ba4">else</span><span style="color: #e7e9db">:</span>
+			<span style="color: #e7e9db">info</span> <span style="color: #5bc4bf">+=</span> <span style="color: #e7e9db">data</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">encode(</span><span style="color: #48b685">&#39;hex&#39;</span><span style="color: #e7e9db">)</span>
+			<span style="color: #e7e9db">f</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">open(stegFile,</span> <span style="color: #48b685">&#39;w&#39;</span><span style="color: #e7e9db">)</span>
+			<span style="color: #e7e9db">f</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">write(binascii</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">unhexlify(info))</span>
+			<span style="color: #e7e9db">f</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">close()</span>
+			<span style="color: #815ba4">print</span> <span style="color: #48b685">&#39;Storing data to&#39;</span><span style="color: #e7e9db">,</span> <span style="color: #e7e9db">stegFile</span>
+</pre></div>
+
+
+<p>The function ends up converting the manipulated hex back to ASCII and writes to the new output file. The extract function performs the same check for appended data after regular tails and converts found data to ASCII if found</p>
+
+<div class="highlight" style="background: #2f1e2e"><pre style="line-height: 125%"><span></span><span style="color: #815ba4">def</span> <span style="color: #06b6ef">extract</span><span style="color: #e7e9db">(stegFile,</span> <span style="color: #e7e9db">outFile):</span>
+	<span style="color: #e7e9db">filetype</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">stegFile[</span><span style="color: #5bc4bf">-</span><span style="color: #f99b15">3</span><span style="color: #e7e9db">:]</span>
+	<span style="color: #e7e9db">data</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">gethex(stegFile)</span>
+	<span style="color: #815ba4">if</span> <span style="color: #e7e9db">extradatacheck(data,</span> <span style="color: #e7e9db">filetype):</span>
+		<span style="color: #e7e9db">store</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">open(outFile,</span> <span style="color: #48b685">&#39;w&#39;</span><span style="color: #e7e9db">)</span>
+		<span style="color: #e7e9db">store</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">write(</span> <span style="color: #e7e9db">binascii</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">unhexlify(extradatacheck(data,</span> <span style="color: #e7e9db">filetype))</span> <span style="color: #e7e9db">)</span>
+		<span style="color: #e7e9db">store</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">close()</span>
+		<span style="color: #815ba4">print</span> <span style="color: #48b685">&#39;Extracted data stored to&#39;</span><span style="color: #e7e9db">,</span> <span style="color: #e7e9db">outFile</span>
+	<span style="color: #815ba4">else</span><span style="color: #e7e9db">:</span>
+		<span style="color: #815ba4">print</span> <span style="color: #48b685">&#39;File has no embedded data in it&#39;</span>
+</pre></div>
+
+
+<p>The program achieved its objective which is the Steganography process but the sophistication level was 10%. Not good enough I thought. Oh! It wasn&rsquo;t just me, <a href="https://twitter.com/Daniel_Lerch">Daniel Lerch</a> thought the same too</p>
+
+<p><blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/joerex101">@joerex101</a> Sorry but I&#39;m looking for something more sophisticated :)</p>&mdash; Daniel Lerch (@Daniel_Lerch) <a href="https://twitter.com/Daniel_Lerch/status/542777726491324416">December 10, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<hr>
+
+<p>I explored <a href="http://www.twitter.com/oni_49">Oni49</a>&rsquo;s <a href="https://github.com/oni49/stegoBlue">stegoBlue</a> and created a <a href="https://github.com/bl4ckdu5t/stegoBlue">fork</a> to understand how it worked and see how I could derive a new implementation from it. Took a while but I later found how he used the <a href="http://www.pythonware.com/products/pil/">PIL (Python Imaging Library)</a> to list image data in RGB tuples. StegoBlue is a manipulation of the blue pixels in a pixel list.</p>
+
+<div class="highlight" style="background: #2f1e2e"><pre style="line-height: 125%"><span></span><span style="color: #5bc4bf">from</span> <span style="color: #fec418">PIL</span> <span style="color: #5bc4bf">import</span> <span style="color: #e7e9db">Image</span>
+<span style="color: #e7e9db">img</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">Image</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">open(</span><span style="color: #48b685">&#39;cool.bmp&#39;</span><span style="color: #e7e9db">)</span>
+<span style="color: #e7e9db">pixelList</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">list(img</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">getdata())</span>
+</pre></div>
+
+
+<p>The image data in RGB tuples were so much in the list but I managed to grab a few from the bottom to show what the data looked like.</p>
+
+<div class="highlight" style="background: #2f1e2e"><pre style="line-height: 125%"><span></span><span style="color: #e7e9db">[(</span><span style="color: #f99b15">14</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">14</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">11</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">14</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">14</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">20</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">14</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">20</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">21</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">21</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">22</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">21</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">20</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">13</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">20</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">23</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">23</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">20</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">24</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">23</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">22</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">26</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">25</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">23</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">26</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">24</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">25</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">23</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">26</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">26</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">30</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">26</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">30</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">26</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">27</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">29</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">33</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">33</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">33</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">33</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">31</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">32</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">31</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">31</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">31</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">28</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">30</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">27</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">31</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">30</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">26</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">27</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">26</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">27</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">23</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">29</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">24</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">30</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">28</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">20</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">31</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">19</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">30</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">26</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">19</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">31</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">27</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">19</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">30</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">26</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">24</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">21</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">14</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">14</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">17</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">20</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">21</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">21</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">23</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">19</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">21</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">18</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">19</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">20</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">20</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">17</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">18</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">15</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">14</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">14</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">14</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">13</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">13</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">11</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">11</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">11</span><span style="color: #e7e9db">),</span> <span style="color: #e7e9db">(</span><span style="color: #f99b15">12</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">12</span><span style="color: #e7e9db">,</span> <span style="color: #f99b15">12</span><span style="color: #e7e9db">)]</span>
+</pre></div>
+
+
+<p>That&rsquo;s just about 5% of the whole data from a 5M BMP image. I was digging his approach even though it breaks sometimes. I tried with JPGs and PNGs and it passed with some of the files that were tested.</p>
+
+<p>###My New Algorithm
+<div class="highlight" style="background: #2f1e2e"><pre style="line-height: 125%"><span></span><span style="color: #776e71">#!/usr/bin/env python</span>
+<span style="color: #5bc4bf">import</span> <span style="color: #fec418">binascii</span><span style="color: #5bc4bf">,</span> <span style="color: #fec418">os</span><span style="color: #5bc4bf">,</span> <span style="color: #fec418">base64</span><span style="color: #5bc4bf">,</span> <span style="color: #fec418">gnupg</span><span style="color: #5bc4bf">,</span> <span style="color: #fec418">hashlib</span>
+<span style="color: #5bc4bf">from</span> <span style="color: #fec418">Crypto.Cipher</span> <span style="color: #5bc4bf">import</span> <span style="color: #e7e9db">AES</span>
+<span style="color: #5bc4bf">from</span> <span style="color: #fec418">Crypto</span> <span style="color: #5bc4bf">import</span> <span style="color: #e7e9db">Random</span>
+
+<span style="color: #815ba4">def</span> <span style="color: #06b6ef">embed</span><span style="color: #e7e9db">(file,</span> <span style="color: #e7e9db">text,</span> <span style="color: #e7e9db">key,</span> <span style="color: #e7e9db">output</span> <span style="color: #5bc4bf">=</span> <span style="color: #48b685">&#39;output.jpg&#39;</span><span style="color: #e7e9db">):</span>
+	<span style="color: #776e71">#==== Using GPG  ====</span>
+	<span style="color: #e7e9db">gpg</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">gnupg</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">GPG()</span>
+	<span style="color: #e7e9db">cipher</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">gpg</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">encrypt(text,</span> <span style="color: #e7e9db">recipients</span><span style="color: #5bc4bf">=</span><span style="color: #e7e9db">None,</span> <span style="color: #e7e9db">symmetric</span><span style="color: #5bc4bf">=</span><span style="color: #48b685">&#39;AES256&#39;</span><span style="color: #e7e9db">,</span> <span style="color: #e7e9db">passphrase</span><span style="color: #5bc4bf">=</span><span style="color: #e7e9db">key,</span> <span style="color: #e7e9db">armor</span><span style="color: #5bc4bf">=</span><span style="color: #e7e9db">True)</span>
+	<span style="color: #e7e9db">ctext</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">hashlib</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">md5(</span> <span style="color: #e7e9db">str(cipher)</span> <span style="color: #e7e9db">)</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">hexdigest()</span>
+	<span style="color: #776e71">#==== Using AES ====</span>
+	<span style="color: #776e71">#iv = Random.new().read(AES.block_size)</span>
+	<span style="color: #776e71">#cipher = AES.new(key, AES.MODE_CFB, iv)</span>
+	<span style="color: #776e71">#ctext = hashlib.md5( iv + cipher.encrypt(text) ).hexdigest()</span>
+
+	<span style="color: #e7e9db">ctexthex</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">binascii</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">hexlify(</span> <span style="color: #e7e9db">ctext</span> <span style="color: #e7e9db">)</span>
+	<span style="color: #e7e9db">ctextbin</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">bin(</span> <span style="color: #e7e9db">int(ctexthex,</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">)</span> <span style="color: #e7e9db">)[</span><span style="color: #f99b15">2</span><span style="color: #e7e9db">:]</span>
+	<span style="color: #815ba4">print</span> <span style="color: #e7e9db">len(ctextbin)</span>
+	<span style="color: #815ba4">try</span><span style="color: #e7e9db">:</span>
+		<span style="color: #e7e9db">f</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">open(file,</span> <span style="color: #48b685">&#39;r&#39;</span><span style="color: #e7e9db">)</span>
+		<span style="color: #e7e9db">filebin</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">f</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">read()</span>
+		<span style="color: #e7e9db">hexdata</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">binascii</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">hexlify(filebin)</span>
+		<span style="color: #776e71"># tuples of each byte in hex</span>
+		<span style="color: #e7e9db">bytesTuple</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">zip(hexdata[::</span><span style="color: #f99b15">2</span><span style="color: #e7e9db">],</span> <span style="color: #e7e9db">hexdata[</span><span style="color: #f99b15">1</span><span style="color: #e7e9db">::</span><span style="color: #f99b15">2</span><span style="color: #e7e9db">])</span>
+		<span style="color: #776e71"># list of every byte in hexadecimal</span>
+		<span style="color: #e7e9db">bytes</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">[</span><span style="color: #48b685">&#39;&#39;</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">join(tuple)</span> <span style="color: #815ba4">for</span> <span style="color: #e7e9db">tuple</span> <span style="color: #5bc4bf">in</span> <span style="color: #e7e9db">bytesTuple]</span>
+		<span style="color: #776e71"># split bytes into two keeping first segment untouched to avoid metadata tampering</span>
+		<span style="color: #e7e9db">byteDivisor</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">len(bytes)</span> <span style="color: #5bc4bf">/</span> <span style="color: #f99b15">2</span>
+		<span style="color: #e7e9db">byteSegment1,</span> <span style="color: #e7e9db">byteSegment2</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">bytes[:byteDivisor],</span> <span style="color: #e7e9db">bytes[byteDivisor:]</span>
+		<span style="color: #815ba4">print</span> <span style="color: #48b685">&#39;Segment 2 length: &#39;</span><span style="color: #5bc4bf">+</span> <span style="color: #e7e9db">str(len(byteSegment2))</span>
+		<span style="color: #815ba4">for</span> <span style="color: #e7e9db">i</span> <span style="color: #5bc4bf">in</span> <span style="color: #e7e9db">range(</span> <span style="color: #e7e9db">len(ctextbin)</span> <span style="color: #e7e9db">):</span>
+			<span style="color: #776e71"># modifying the LSB</span>
+			<span style="color: #e7e9db">binary</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">bin(int(</span> <span style="color: #e7e9db">byteSegment2[i],</span> <span style="color: #f99b15">16</span><span style="color: #e7e9db">)</span> <span style="color: #e7e9db">)[:</span><span style="color: #5bc4bf">-</span><span style="color: #f99b15">1</span><span style="color: #e7e9db">]</span> <span style="color: #5bc4bf">+</span> <span style="color: #e7e9db">ctextbin[i]</span>
+			<span style="color: #e7e9db">hexback</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">hex(int(binary,</span> <span style="color: #f99b15">2</span><span style="color: #e7e9db">))[</span><span style="color: #f99b15">2</span><span style="color: #e7e9db">:]</span> <span style="color: #815ba4">if</span> <span style="color: #e7e9db">len(hex(int(binary,</span> <span style="color: #f99b15">2</span><span style="color: #e7e9db">))[</span><span style="color: #f99b15">2</span><span style="color: #e7e9db">:])</span> <span style="color: #5bc4bf">==</span> <span style="color: #f99b15">2</span> <span style="color: #815ba4">else</span> <span style="color: #48b685">&#39;0&#39;</span> <span style="color: #5bc4bf">+</span> <span style="color: #e7e9db">hex(int(binary,</span> <span style="color: #f99b15">2</span><span style="color: #e7e9db">))[</span><span style="color: #f99b15">2</span><span style="color: #e7e9db">:]</span>
+			<span style="color: #e7e9db">byteSegment2[i]</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">hexback</span>
+		<span style="color: #776e71"># rejoin both byte segments</span>
+		<span style="color: #e7e9db">bytes</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">byteSegment1</span> <span style="color: #5bc4bf">+</span> <span style="color: #e7e9db">byteSegment2</span>
+		<span style="color: #776e71"># converting bytes list back to string</span>
+		<span style="color: #e7e9db">mergehex</span> <span style="color: #5bc4bf">=</span> <span style="color: #48b685">&#39;&#39;</span>
+		<span style="color: #815ba4">for</span> <span style="color: #e7e9db">byte</span> <span style="color: #5bc4bf">in</span> <span style="color: #e7e9db">bytes:</span>
+			<span style="color: #e7e9db">mergehex</span> <span style="color: #5bc4bf">+=</span> <span style="color: #e7e9db">byte</span>
+		<span style="color: #e7e9db">rawbin</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">binascii</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">unhexlify(mergehex)</span>
+		<span style="color: #e7e9db">outdata</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">open(output,</span> <span style="color: #48b685">&#39;w&#39;</span><span style="color: #e7e9db">)</span>
+		<span style="color: #e7e9db">outdata</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">write(rawbin)</span>
+	<span style="color: #815ba4">except</span> <span style="color: #ef6155">IOError</span><span style="color: #e7e9db">:</span>
+		<span style="color: #815ba4">print</span> <span style="color: #48b685">&quot;Failed to locate file&quot;</span>
+
+<span style="color: #815ba4">def</span> <span style="color: #06b6ef">extract</span><span style="color: #e7e9db">(file,</span> <span style="color: #e7e9db">key,</span> <span style="color: #e7e9db">output</span> <span style="color: #5bc4bf">=</span> <span style="color: #48b685">&#39;output.txt&#39;</span><span style="color: #e7e9db">):</span>
+	<span style="color: #815ba4">try</span><span style="color: #e7e9db">:</span>
+		<span style="color: #e7e9db">f</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">open(file,</span> <span style="color: #48b685">&#39;r&#39;</span><span style="color: #e7e9db">)</span>
+		<span style="color: #e7e9db">filebin</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">f</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">read()</span>
+		<span style="color: #e7e9db">hexdata</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">binascii</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">hexlify(filebin)</span>
+		<span style="color: #e7e9db">bytesTuple</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">zip(hexdata[::</span><span style="color: #f99b15">2</span><span style="color: #e7e9db">],</span> <span style="color: #e7e9db">hexdata[</span><span style="color: #f99b15">1</span><span style="color: #e7e9db">::</span><span style="color: #f99b15">2</span><span style="color: #e7e9db">])</span>
+		<span style="color: #e7e9db">bytes</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">[</span><span style="color: #48b685">&#39;&#39;</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">join(tuple)</span> <span style="color: #815ba4">for</span> <span style="color: #e7e9db">tuple</span> <span style="color: #5bc4bf">in</span> <span style="color: #e7e9db">bytesTuple]</span>
+		<span style="color: #e7e9db">byteDivisor</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">len(bytes)</span> <span style="color: #5bc4bf">/</span> <span style="color: #f99b15">2</span>
+		<span style="color: #e7e9db">byteSegment1,</span> <span style="color: #e7e9db">byteSegment2</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">bytes[:byteDivisor],</span> <span style="color: #e7e9db">bytes[byteDivisor:]</span>
+		<span style="color: #e7e9db">dataBytes</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">byteSegment2[:</span><span style="color: #f99b15">32</span><span style="color: #e7e9db">]</span> <span style="color: #776e71"># md5 data occupied 32 chars</span>
+		<span style="color: #e7e9db">mergehex</span> <span style="color: #5bc4bf">=</span> <span style="color: #48b685">&#39;&#39;</span>
+		<span style="color: #815ba4">for</span> <span style="color: #e7e9db">byte</span> <span style="color: #5bc4bf">in</span> <span style="color: #e7e9db">dataBytes:</span>
+			<span style="color: #e7e9db">mergehex</span> <span style="color: #5bc4bf">+=</span> <span style="color: #e7e9db">byte</span>
+		<span style="color: #e7e9db">f</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">open(output,</span> <span style="color: #48b685">&#39;w&#39;</span><span style="color: #e7e9db">)</span>
+		<span style="color: #e7e9db">f</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">write(</span> <span style="color: #e7e9db">binascii</span><span style="color: #5bc4bf">.</span><span style="color: #e7e9db">unhexlify(mergehex)</span> <span style="color: #e7e9db">)</span>
+	<span style="color: #815ba4">except</span> <span style="color: #ef6155">IOError</span><span style="color: #e7e9db">:</span>
+		<span style="color: #815ba4">print</span> <span style="color: #48b685">&#39;Failed to locate file&#39;</span>
+	
+
+<span style="color: #e7e9db">filename</span> <span style="color: #5bc4bf">=</span> <span style="color: #e7e9db">raw_input(</span><span style="color: #48b685">&quot;Enter the name of the file:&quot;</span><span style="color: #e7e9db">)</span>
+<span style="color: #e7e9db">embed(filename,</span> <span style="color: #48b685">&#39;some awesome stuff&#39;</span><span style="color: #e7e9db">,</span> <span style="color: #48b685">&#39;abcdefghijklmnop&#39;</span><span style="color: #e7e9db">,</span> <span style="color: #48b685">&#39;output.png&#39;</span><span style="color: #e7e9db">)</span>
+<span style="color: #776e71">#extract(filename, &#39;abcdefghijklmnop&#39;)</span>
+</pre></div>
+</p>
+
+<p>What the heck is going on here? I know that&rsquo;s like bunch of crap but it seemed like a nice idea to me. Let me explain:</p>
+
+<p>I built a GUI already with PyQt4 with hopes that the logic will work just as I&rsquo;d thought it would. On completion of a functionless nice GUI, I thought it will be nice to create a separate module to handle the logic of the software implementation.</p>
+
+<p>When I wrote about [symmetric encryption in python][9], I mentioned how I had used AES from the Crypto module to try achieving a symmetric encryption. I might have not been at my best with that module but it didn&rsquo;t seem to work fine enough for me. I had resorted to the GPG module which stored the characters</p>
+
+<p><div class="highlight" style="background: #2f1e2e"><pre style="line-height: 125%"><span></span>some awesome stuff
+</pre></div>
+</p>
+
+<p>with the cover image file as this</p>
+
+<p>{% image stegoBlackhat.png %}</p>
+
+<p>The resulting output has had some major pixels tampered with</p>
+
+<p>{% image stegoOutput.png %}</p>
+
+<p>The distortion is from the middle to the bottom only because I splitted the image hex into two to leave the first half containing EXIF data untampered with. The other half whose LSB was modified now produces a malformed image output.</p>
+
+<p>A steganography software is to modify the media file with no obvious changes but I have a modification with a way too obvious change. I&rsquo;ve had to put this aside for a while to get on with other work. If you have any suggestions to this algorithm, I&rsquo;ll appreciate them</p>
+
+<p>[9]: {% post_url 2014-12-02-symmetric-encryption-in-python %}</p>
+          <div class="post__actions row row-no-padding">
+            <div class="col">
+              <div class="tags tags--page">
+                
+                  
+                    
+                      <a href="https://josephrex.me/tags/experiment">experiment</a>
+                    
+                      <a href="https://josephrex.me/tags/steganography">steganography</a>
+                    
+                      <a href="https://josephrex.me/tags/cryptography">cryptography</a>
+                    
+                      <a href="https://josephrex.me/tags/security">security</a>
+                    
+                  
+                
+              </div>
+            </div>
+            <div class="col u-txtright">
+              <div class="post__actions__action" id="shareDropdown">
+                <div class="post__sharelinks">
+                  <a title="Share on Facebook" aria-label="Share on Facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fjosephrex.me%2fmy-failed-lsb-steganography%2f" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Facebook</a>
+                  <a title="Share on Twitter" aria-label="Share on Twitter" href="https://twitter.com/intent/tweet/?text=My%20failed%20LSB%20steganography%20algorithm&url=https%3a%2f%2fjosephrex.me%2fmy-failed-lsb-steganography%2f&via=josephrexme" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" data-show-count="false">Twitter</a>
+                </div>
+                <svg version="1.1" class="icon" viewBox="0 0 333.324 333.324">
+                  <path d="M125.255,59.513l33.907-33.907v149.451c0,4.143,3.358,7.5,7.5,7.5s7.5-3.357,7.5-7.5V25.606l33.907,33.907c1.464,1.464,3.384,2.196,5.303,2.196s3.839-0.732,5.303-2.196c2.929-2.93,2.929-7.678,0-10.607l-46.71-46.71c-2.929-2.928-7.678-2.928-10.606,0l-46.71,46.71c-2.929,2.93-2.929,7.678,0,10.607C117.577,62.441,122.326,62.441,125.255,59.513z"/>
+                  <path d="M263.328,87.557h-61.645c-4.142,0-7.5,3.357-7.5,7.5s3.358,7.5,7.5,7.5h54.145v215.767H77.495V102.557h54.145c4.142,0,7.5-3.357,7.5-7.5s-3.358-7.5-7.5-7.5H69.995c-4.142,0-7.5,3.357-7.5,7.5v230.767c0,4.143,3.358,7.5,7.5,7.5h193.333c4.142,0,7.5-3.357,7.5-7.5V95.057C270.828,90.915,267.47,87.557,263.328,87.557z"/>
+                </svg>
+                Share
+              </div>
+            </div>
+          </div>
+          
+          <div class="comments">
+            <div class="comments__triggre js-toggleComments">
+              <span class="comments__trigger__plus"></span>
+              <p>Toggle Comments</p>
+            </div>
+            <div id="disqus_thread" style="display: none"></div>
+          </div>
+          
+        </article>
+      </main>
+    </section>
+  </div>
+  <footer class="post__footer">
+    <div class="wrap row">
+      <div class="col">
+        
+          <h5>Newer Post</h5>
+          <a href="https://josephrex.me/captain-blogger/">Captain Blogger</a>
+        
+      </div>
+      <div class="col u-txtright">
+        
+          <h5>Older Post</h5>
+          <a href="https://josephrex.me/changing-pygments-syntax-color-for-jekyll-blogs/">Changing pygments syntax color for jekyll blogs</a>
+        
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+
+        <footer class="footer">
+  <h4 class="footer__heading">Subscribe to my newsfeed</h4>
+  
+  <div id="mc_embed_signup">
+    <form action="//josephrex.us10.list-manage.com/subscribe/post?u=727d4403f160030f0e6c6c818&amp;id=9dade596c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form" target="_blank" novalidate>
+      <label for="EMAIL" class="u-visuallyhidden">Email address</label>
+      <input type="text" class="feed form__input" name="EMAIL" id="EMAIL" placeholder="Email Address">
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_727d4403f160030f0e6c6c818_9dade596c2" tabindex="-1" value=""></div>
+      <button class="button button--transparent">Subscribe</button>
+    </form>
+  </div>
+  
+    <ul class="social">
+  
+  <li>
+    <a href="https://facebook.com/josephrexme" class="facebook" rel="me">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16v-12h-4v-4h4v-3c0-2.761 2.239-5 5-5h5v4h-5c-0.552 0-1 0.448-1 1v3h5.5l-1 4h-4.5v11.496c6.901-1.776 12-8.041 12-15.496 0-8.837-7.163-16-16-16z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://twitter.com/josephrexme" class="twitter" rel="me">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+      <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM23.952 11.921c0.008 0.176 0.012 0.353 0.012 0.531 0 5.422-4.127 11.675-11.675 11.675-2.317 0-4.474-0.679-6.29-1.844 0.321 0.038 0.648 0.058 0.979 0.058 1.922 0 3.692-0.656 5.096-1.757-1.796-0.033-3.311-1.219-3.833-2.849 0.251 0.048 0.508 0.074 0.772 0.074 0.374 0 0.737-0.050 1.081-0.144-1.877-0.377-3.291-2.035-3.291-4.023 0-0.017 0-0.034 0-0.052 0.553 0.307 1.186 0.492 1.858 0.513-1.101-0.736-1.825-1.992-1.825-3.415 0-0.752 0.202-1.457 0.556-2.063 2.024 2.482 5.047 4.116 8.457 4.287-0.070-0.3-0.106-0.614-0.106-0.935 0-2.266 1.837-4.103 4.103-4.103 1.18 0 2.247 0.498 2.995 1.296 0.935-0.184 1.813-0.525 2.606-0.996-0.306 0.958-0.957 1.762-1.804 2.27 0.83-0.099 1.621-0.32 2.357-0.646-0.55 0.823-1.245 1.545-2.047 2.124z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://github.com/josephrexme" class="github" rel="me">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+      <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://codepen.io/josephrexme" class="codepen" rel="me">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+      <path d="M29.555 11.501l-14-9.333c-0.336-0.224-0.774-0.224-1.109 0l-14 9.333c-0.278 0.185-0.445 0.498-0.445 0.832v9.333c0 0.334 0.167 0.647 0.445 0.832l14 9.333c0.168 0.112 0.361 0.168 0.555 0.168s0.387-0.056 0.555-0.168l14-9.333c0.278-0.185 0.445-0.498 0.445-0.832v-9.333c0-0.334-0.167-0.647-0.445-0.832zM15 20.465l-5.197-3.465 5.197-3.465 5.197 3.465-5.197 3.465zM16 11.798v-6.93l11.197 7.465-5.197 3.465-6-4zM14 11.798l-6 4-5.197-3.465 11.197-7.465v6.93zM6.197 17l-4.197 2.798v-5.596l4.197 2.798zM8 18.202l6 4v6.93l-11.197-7.465 5.197-3.465zM16 22.202l6-4 5.197 3.465-11.197 7.465v-6.93zM23.803 17l4.197-2.798v5.596l-4.197-2.798z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://behance.net/josephrexme">
+      <svg id="icon-behance" class="icon" viewBox="0 0 20 20">
+        <path d="M8.072 9.301c0 0 1.892-0.147 1.892-2.459 0-2.315-1.548-3.441-3.51-3.441h-6.454v12.926h6.454c0 0 3.941 0.129 3.941-3.816-0.001-0.001 0.171-3.21-2.323-3.21zM2.844 5.697h3.61c0 0 0.878 0 0.878 1.344 0 1.346-0.516 1.541-1.102 1.541h-3.386v-2.885zM6.271 14.029h-3.427v-3.455h3.61c0 0 1.308-0.018 1.308 1.775 0 1.512-0.977 1.669-1.491 1.68zM15.649 6.688c-4.771 0-4.767 4.967-4.767 4.967s-0.326 4.941 4.767 4.941c0 0 4.243 0.254 4.243-3.437h-2.182c0 0 0.072 1.391-1.988 1.391 0 0-2.184 0.152-2.184-2.25h6.423c0.001-0.001 0.709-5.612-4.312-5.612zM17.59 10.574h-4.074c0 0 0.266-1.992 2.182-1.992s1.892 1.992 1.892 1.992zM18.097 4.16h-5.117v1.594h5.117v-1.594z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="http://stackoverflow.com/users/2649933/joseph-rex?tab=profile" class="stackoverflow" rel="me">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+      <path d="M32 20v12h-32v-12h4v8h24v-8zM6 22h20v4h-20zM6.473 17.671l0.866-3.905 19.526 4.328-0.866 3.905zM8.739 9.642l1.69-3.625 18.126 8.452-1.69 3.625zM30.991 11.296l-2.435 3.173-15.867-12.175 1.761-2.294h1.82z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://pinterest.com/josephrexme" class="pinterest" rel="me">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+      <path d="M16 0c-8.837 0-16 7.163-16 16 0 6.778 4.217 12.568 10.169 14.899-0.14-1.266-0.266-3.208 0.055-4.59 0.291-1.249 1.876-7.953 1.876-7.953s-0.479-0.958-0.479-2.375c0-2.225 1.29-3.886 2.895-3.886 1.365 0 2.024 1.025 2.024 2.254 0 1.373-0.874 3.425-1.325 5.327-0.377 1.593 0.799 2.892 2.369 2.892 2.844 0 5.030-2.999 5.030-7.327 0-3.831-2.753-6.509-6.683-6.509-4.552 0-7.225 3.415-7.225 6.943 0 1.375 0.53 2.85 1.191 3.651 0.131 0.158 0.15 0.297 0.111 0.459-0.121 0.506-0.391 1.593-0.444 1.815-0.070 0.293-0.232 0.355-0.535 0.214-1.998-0.93-3.248-3.852-3.248-6.198 0-5.047 3.667-9.682 10.572-9.682 5.55 0 9.864 3.955 9.864 9.241 0 5.514-3.477 9.952-8.302 9.952-1.621 0-3.145-0.842-3.667-1.837 0 0-0.802 3.055-0.997 3.803-0.361 1.39-1.337 3.132-1.989 4.195 1.497 0.463 3.088 0.713 4.738 0.713 8.836-0 16-7.163 16-16s-7.163-16-16-16z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://instagram.com/josephrexme" class="instagram" rel="me">
+      <svg class="icon" viewBox="0 0 27 32">
+        <path class="path1" d="M18.286 16q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.679q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 4.75q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://www.linkedin.com/josephrexme" class="linkedin" rel="me">
+      <svg id="icon-linkedin" viewBox="0 0 1024 1024" class="icon">
+        <path class="path1" d="M852 0h-680c-94.6 0-172 77.4-172 172v680c0 94.6 77.4 172 172 172h680c94.6 0 172-77.4 172-172v-680c0-94.6-77.4-172-172-172zM384 832h-128v-448h128v448zM320 320c-35.346 0-64-28.654-64-64s28.654-64 64-64 64 28.654 64 64-28.654 64-64 64zM832 832h-128v-256c0-35.346-28.654-64-64-64s-64 28.654-64 64v256h-128v-448h128v79.472c26.398-36.264 66.752-79.472 112-79.472 79.53 0 144 71.634 144 160v288z"></path>
+      </svg>
+    </a>
+  </li>
+  
+  <li>
+    <a href="/feed.xml" class="rss" rel="me">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 32 32">
+      <path d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+  
+  <p class="small">
+    
+      © 2017 Joseph Rex
+    
+  </p>
+</footer>
+
+      </div>
+    </div>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_CHTML"></script>
+<script async>
+  
+  if(navigator.userAgent.indexOf('Speed Insights') === -1){
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56161232-2', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+<script src="https://josephrex.me/js/vendor/barba.min.js"></script>
+<script src="https://josephrex.me/js/vendor/web-animations.min.js"></script>
+<script src="https://josephrex.me/js/app.js"></script>
+<script src="https://josephrex.me/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>

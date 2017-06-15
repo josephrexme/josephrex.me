@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Svg on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/svg/</link>
+    <description>Recent content in Svg on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Mar 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/svg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring SVG for absolute beginners</title>
+      <link>https://josephrex.me/exploring-svg-for-absolute-beginners/</link>
+      <pubDate>Fri, 06 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/exploring-svg-for-absolute-beginners/</guid>
+      <description>&lt;p&gt;SVG is one of the cool stuff of these HTML5 days and if you aren&amp;rsquo;t already fiddling with them already, either by using ready SVG icons or writing your own SVG, then you are missing out on a lot.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

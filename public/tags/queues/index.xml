@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Queues on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/queues/</link>
+    <description>Recent content in Queues on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/queues/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Beanstalkd and Supervisor to handle queues in Laravel4</title>
+      <link>https://josephrex.me/using-beanstalkd-and-supervisor-to-handle-queues-in-laravel4/</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-beanstalkd-and-supervisor-to-handle-queues-in-laravel4/</guid>
+      <description>&lt;p&gt;{% image security_lights.jpg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;security lights&amp;rdquo; %}
+When performing some tasks that take time with your web application, you usually don&amp;rsquo;t want to keep your users waiting for a better user experience.&lt;/p&gt;
+
+&lt;p&gt;Taking email sending for an example, it takes about a minute to two for an email to be sent with your web app. Do you really want to keep your non geeky application users staring at a screen for that long, just watching an ajax image loader spin, or just waiting to get a response that the task has been completed. No, I don&amp;rsquo;t think so.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

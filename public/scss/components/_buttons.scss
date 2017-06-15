@@ -1,0 +1,147 @@
+/**
+ * Buttons:
+ * `.button` - Button classes
+ *
+ *   @example
+ *   <button class="button button--transparent">Transparent buttons</button>
+ *   <button class="button button--green">Green buttons</button>
+ *   <button class="button button--red">Red buttons</button>
+ *   <button class="button button--yellow">Yellow buttons</button>
+ *   <button class="button button--blue">Blue buttons</button>
+ *   <button class="button button--skyblue">Sky blue buttons</button>
+ *   <p style="margin: 10px 0">
+ *   <button class="button button--blue button--gradiented">Gradiented buttons</button>
+ *   <button class="button button--plain">Plain button</button>
+ *   <a class="button button--transparent button--has-icon"><span class="button__icon">😎</span> Button with icon</a>
+ *   </p>
+ */
+.button{
+  display: inline-block;
+  padding: .6rem 1.2rem;
+  background: #888;
+  color: $white;
+  border: solid thin rgba($black, .1);
+  border-radius: $inputs-border-radius;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 300ms box-shadow ease-in-out;
+  letter-spacing: .5px;
+  &:not(.button--plain):not(.button--transparent):hover{
+    color: $white;
+  }
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+  // Sizes
+  /**
+   * Button Sizes:
+   * Button in different sizes
+   *
+   *   @example
+   *   <p><button class="button button-sm">Small Button</button></p>
+   *   <p><button class="button">Regular Button</button></p>
+   *   <p><button class="button button-lg">Large Button</button></p>
+   *   <p><button class="button button-block">Block Button</button></p>
+   *
+   */
+  &--sm{
+    padding: .5rem 1rem;
+  }
+  &--md{
+    padding: 1rem 2rem;
+  }
+  &--lg{
+    padding: 1.2rem 3rem;
+  }
+  &--block{
+    display: block;
+    width: 100%;
+  }
+  // Shapes
+  &--transparent{
+    border: solid thin currentColor;
+    background: transparent;
+    color: inherit;
+    &:hover{
+      background: rgba($white, .2);
+      color: rgba($white, .5);
+    }
+    &.button--lg:hover{
+      padding: 1.1rem 2.9rem;
+    }
+  }
+  &--plain{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: .4rem 1.4rem;
+    background: #ddd;
+    color: #888;
+    box-shadow: none;
+    text-shadow: none;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    @include button-hover(#ddd);
+    &:hover{
+      box-shadow: none;
+    }
+  }
+  &--gradiented{
+    background: #58a linear-gradient(hsla(0,0%, 100%,.2),transparent);
+  }
+  &--rounded{
+    border-radius: 25px;
+  }
+  // Colors
+  &--green{
+    background-color: $color-success;
+    @include button-hover($color-success);
+  }
+  &--red{
+    background-color: $color-danger;
+    @include button-hover($color-danger);
+  }
+  &--yellow{
+    background-color: $color-warning;
+    @include button-hover($color-warning);
+  }
+  &--blue{
+    background-color: $color-primary;
+    @include button-hover($color-primary);
+  }
+  &--skyblue{
+    background-color: $color-info;
+    @include button-hover($color-info);
+  }
+  &--cta.button--cta.button--cta{
+    background-color: $action-buttons;
+    @include button-hover($action-buttons);
+  }
+  &--green, &--red, &--yellow, &--blue, &--skyblue, &-cta{
+    color: $white;
+  }
+  &--has-icon{
+    position: relative;
+    padding-left: 40px;
+  }
+  &__icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    padding: 6px 5px;
+    background: $color-brand-3;
+    color: $white;
+    text-align: center;
+  }
+  .icon{
+    vertical-align: bottom;
+  }
+}

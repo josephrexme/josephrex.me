@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/security/</link>
+    <description>Recent content in Security on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My failed LSB steganography algorithm</title>
+      <link>https://josephrex.me/my-failed-lsb-steganography/</link>
+      <pubDate>Sat, 31 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/my-failed-lsb-steganography/</guid>
+      <description>&lt;p&gt;Last month (December 2014), I started developing a new GUI steganography software after building a &lt;a href=&#34;https://github.com/bl4ckdu5t/stegman&#34;&gt;simple steganography tool&lt;/a&gt; for my &lt;a href=&#34;http://resources.infosecinstitute.com/steganalysis-x-ray-vision-hidden-data/&#34;&gt;post at Infosec Institue&lt;/a&gt;. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+
+{% image failed-stego.jpg class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;stego girl&amp;rdquo; %}&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+figcaption{
+  padding: 10px;
+  font-size: 1.2rem;
+}
+figure{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+}
+.image{
+  &--wide{
+    width: 100%;
+  }
+  &--rounded{
+    border-radius: 50%;
+  }
+  &--curvy{
+    border-radius: 4px;
+  }
+  &--thumbnail{
+    width: 50px;
+    height: 50px;
+  }
+  &--medium{
+    width: 90px;
+    height: 90px;
+  }
+  &--large{
+    width: 130px;
+    height: 130px;
+  }
+  &--large-x{
+    width: 180px;
+    height: 180px;
+  }
+}
+.video{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.figure--fullwidth{
+  margin-bottom: 20px;
+  > .image, > .video{
+    position: relative;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    max-width: 100vw;
+    margin-top: 20px;
+    margin-right: -400px;
+  }
+}

@@ -1,0 +1,52 @@
+/**
+ * Prompt:
+ * `.prompt` - Prompts are alerts.
+ *
+ *   @example
+ *   <div class="prompt prompt--success">
+ *    This is a prompt
+ *   </div>
+ *   <div class="prompt prompt--warning">
+ *    This is a prompt
+ *   </div>
+ *   <div class="prompt prompt--danger">
+ *    This is a prompt
+ *   </div>
+ *   <div style="width: 100%; max-width: 400px; padding: 10px 0; border: solid thin #999">
+ *     <div class="prompt prompt--warning prompt--compact">
+ *       This is a compact prompt in a container
+ *     </div>
+ *   </div>
+ */
+.prompt{
+  padding: 10px;
+  border: solid thin hsla(0, 0%, 0%, .05);
+  box-shadow: 0 4px 2px rgba($black, .1);
+  text-shadow: 0 0 2px rgba($black, .2);
+  color: $white;
+  &:empty{
+    display: none;
+  }
+
+  // Colors
+  &--warning{
+    background-color: $color-warning;
+    @include prompt-link($color-warning);
+  }
+  &--danger{
+    background-color: $color-danger;
+    @include prompt-link($color-danger);
+  }
+  &--success{
+    background-color: $color-success;
+    @include prompt-link($color-success);
+  }
+
+  // Sizes
+  &--compact{
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    text-align: center;
+  }
+}

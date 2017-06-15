@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/sql/</link>
+    <description>Recent content in Sql on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Nov 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Implementing dynamic drop down / dependent list in laravel4</title>
+      <link>https://josephrex.me/implementing-dynamic-drop-down-or-dependent-list-in-laravel4/</link>
+      <pubDate>Fri, 14 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/implementing-dynamic-drop-down-or-dependent-list-in-laravel4/</guid>
+      <description>&lt;figure&gt;
+{% image drop-down-menu.jpg class=&#34;image image--wide&#34; alt=&#34;drop-down-menu&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;When I used procedural PHP for most of my projects, I found myself needing what I referred to as a dependent list. These days I hear it being referred to as dynamic drop down more often. After looking around, a friend gave this solution to me.&lt;/p&gt;
+
+&lt;p&gt;All examples here will rely on the DDL database schema here:
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

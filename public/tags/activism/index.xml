@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activism on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/activism/</link>
+    <description>Recent content in Activism on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/activism/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Internet Freedom September 10th 2014</title>
+      <link>https://josephrex.me/internet-freedom-2014/</link>
+      <pubDate>Wed, 10 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/internet-freedom-2014/</guid>
+      <description>&lt;figure&gt;
+{% image internet-slowdown-2014.png class=&#34;image&#34; alt=&#34;internet slowdown&#34; %}
+&lt;/figure&gt;
+
+&lt;figure&gt;
+{% image battle-for-net.jpg alt=&#34;battle for the net&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;If you woke up tomorrow, and your internet&lt;strong&gt;&lt;a href=&#34;https://www.battleforthenet.com/sept10th/#modal&#34; target=&#34;_blank&#34;&gt; looked like this&lt;/a&gt;&lt;/strong&gt;, what would you do?&lt;/p&gt;
+
+&lt;p&gt;Imagine all your favorite websites taking forever to load, while you get annoying notifications from your ISP suggesting you switch to one of their approved “Fast Lane” sites.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

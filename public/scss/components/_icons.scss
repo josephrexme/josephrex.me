@@ -1,0 +1,13 @@
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  &-2x{
+    width: 2rem;
+    height: 2rem;
+  }
+}

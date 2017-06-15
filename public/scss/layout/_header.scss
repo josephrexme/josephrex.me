@@ -1,0 +1,20 @@
+.header{
+  padding: 80px 10px;
+  text-align: center;
+  .logo, &__title, &__description{
+    opacity: 0;
+    animation: fade-in-slow .5s ease-in forwards;
+  }
+  .logo{
+    animation-delay: .1s;
+  }
+  &__title{
+    margin-bottom: 20px;
+    animation-delay: .18s;
+  }
+  &__description{
+    color: rgba($white, .6);
+    font-size: 2rem;
+    animation-delay: .25s;
+  }
+}

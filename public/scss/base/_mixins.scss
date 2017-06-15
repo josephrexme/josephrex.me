@@ -1,0 +1,386 @@
+// Mixins
+
+@mixin three-d($shadowcolor){
+	position: relative;
+	box-shadow: 1px 1px $shadowcolor, 2px 2px $shadowcolor, 3px 3px $shadowcolor;
+	transition: all 0.1s ease-in;
+	&:active{
+		box-shadow: none;
+		top: 3px;
+		left: 3px;
+	}
+}
+
+@mixin font-face($family, $path, $svg, $weight: normal, $style: normal){
+	@font-face{
+		font-family: $family;
+		src: url('#{$path}.eot');
+		src: url('#{$path}.eot?#iefix') format('embedded-opentype'),
+			 url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'),
+			 url('#{$path}.svg##{$svg}') format('svg');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+// Makes Ellipsis on Single Line
+@mixin ellipsis-line($width){
+	width: $width;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+// Links on the prompt component
+@mixin prompt-link($prompt-color){
+  a{
+    color: darken($prompt-color, 20%);
+  }
+}
+
+// GrayScale Filter
+@mixin grayscale($level){
+	-webkit-filter: grayscale($level);
+	filter: grayscale($level);
+}
+
+@mixin clearfixable(){
+  &:after, &:before{
+    content: " ";
+    display: table;
+  }
+  &:after{
+    clear: both;
+  }
+}
+
+@mixin socle(){
+	position: relative;
+	z-index: 2;
+	&:after{
+		content: "";
+		z-index: -1;
+		position: absolute;
+		border-radius: 6px;
+		box-shadow: inset 0 1px 0 rgba(0,0,0,0.1), inset 0 -1px 0 rgba(255,255,255,0.7);
+		top: -6px;
+		bottom: -6px;
+		right: -6px;
+		left: -6px;
+		background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0));
+	}
+}
+// Gradients
+@mixin gradient-dark-linear{
+	background-image: -webkit-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
+	background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
+}
+@mixin gradient-light-linear{
+	background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+	background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+}
+@mixin gradient-dark-radial{
+	background-image: radial-gradient(center 0, circle farthest-corner, rgba(0,0,0,0.15), rgba(0,0,0,0));
+}
+@mixin gradient-light-radial{
+	background-image: radial-gradient(center 0, circle farthest-corner, rgba(255,255,255,0.4), rgba(255,255,255,0));
+}
+@mixin print($map) {
+  @each $property, $value in $map {
+    #{$property}: $value
+  }
+}
+@mixin prefix($property, $value, $prefixes) {
+	@each $prefix in $prefixes {
+		#{$prefix}-#{$property}:$value;
+	}
+	#{$property}:$value;
+}
+@mixin stitches($color){
+   padding: 20px;
+   margin: 10px;
+   background: $color;
+   color: #fff;
+   font-size: 21px;
+   font-weight: normal;
+   line-height: 1.3em;
+   border: 2px dashed #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px $color, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: -1px -1px #aa3030;
+}
+@mixin ir($image, $width, $height){
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  @if function-exists(image-url){
+    background: image-url($image);
+  } @else {
+    background: url($image);
+  }
+  width: $width;
+  height: $height;
+}
+@mixin breakpoint($value){
+	@media only screen and (min-width: $value){
+		@content;
+	}
+}
+// Magic parallax mixins
+@mixin parallax-init($perspective: null, $element: null, $parallax-ios: null) {
+
+  $perspective: if($perspective != null, $perspective, toolkit-get('parallax perspective'));
+  $element: if($element != null, $element, toolkit-get('parallax element'));
+  $parallax-ios: if($parallax-ios != null, $parallax-ios, toolkit-get('parallax ios'));
+
+  @if $element == 'body' {
+    @at-root {
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      body {
+        @include parallax-init-core($perspective, $parallax-ios);
+      }
+    }
+  }
+  @else {
+    @if $element == this {
+      @include parallax-init-core($perspective, $parallax-ios);
+    }
+    @else {
+      @at-root #{$element} {
+        @include parallax-init-core($perspective, $parallax-ios);
+      }
+    }
+  }
+}
+
+@mixin parallax-init-core($perspective: null, $parallax-ios: null) {
+  $perspective: if($perspective != null, $perspective, toolkit-get('parallax perspective'));
+  $parallax-ios: if($parallax-ios != null, $parallax-ios, toolkit-get('parallax ios'));
+
+  overflow: auto;
+  @if mixin-exists(perspective) {
+    @include perspective($perspective * 1px);
+  }
+  @else {
+    -webkit-perspective: $perspective * 1px;
+    perspective: $perspective * 1px;
+  }
+  // Allows for smooth scrolling but disables parallax effects.
+  @if $parallax-ios == false {
+    -webkit-overflow-scrolling: touch;
+  }
+  // Make sure 3D perspective is preserved
+  &, & * {
+    @if mixin-exists(transform-style) {
+      @include transform-style(preserve-3d);
+    }
+    @else {
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+  }
+}
+
+@mixin parallax($distance: null, $perspective: null) {
+
+  $distance: if($distance != null, $distance, toolkit-get('parallax distance'));
+  $perspective: if($perspective != null, $perspective, toolkit-get('parallax perspective'));
+
+  $transform: translateZ($distance * $perspective * 1px) scale(abs($distance - 1));
+
+  @if mixin-exists(transform) {
+    @include transform($transform);
+  }
+  @else {
+    -webkit-transform: $transform;
+    transform: $transform;
+  }
+
+  z-index: $distance * 100;
+}
+
+@mixin tinted-bg($overlay-color, $alpha-level, $image, $size: normal){
+  @if function-exists(image-url){
+    background: linear-gradient(rgba($overlay-color, $alpha-level), rgba($overlay-color, $alpha-level)), image-url($image);
+  } @else {
+    background: linear-gradient(rgba($overlay-color, $alpha-level), rgba($overlay-color, $alpha-level)), url($image);
+  }
+  background-size: $size;
+}
+
+// Flexbox Mixins
+// --------------------------------------------------
+// http://philipwalton.github.io/solved-by-flexbox/
+// https://github.com/philipwalton/solved-by-flexbox
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin display-inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin flex-direction($value: row) {
+  @if $value == row-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+  } @else if $value == column {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+  } @else if $value == column-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+  } @else {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+  }
+  -webkit-flex-direction: $value;
+  -moz-flex-direction: $value;
+  -ms-flex-direction: $value;
+  flex-direction: $value;
+}
+
+@mixin flex-wrap($value: nowrap) {
+  // No Webkit Box fallback.
+  -webkit-flex-wrap: $value;
+  -moz-flex-wrap: $value;
+  @if $value == nowrap {
+      -ms-flex-wrap: none;
+  } @else {
+      -ms-flex-wrap: $value;
+  }
+  flex-wrap: $value;
+}
+
+@mixin flex($fg: 1, $fs: null, $fb: null) {
+  -webkit-box-flex: $fg;
+  -webkit-flex: $fg $fs $fb;
+  -moz-box-flex: $fg;
+  -moz-flex: $fg $fs $fb;
+  -ms-flex: $fg $fs $fb;
+  flex: $fg $fs $fb;
+}
+
+@mixin flex-flow($values: (row nowrap)) {
+  // No Webkit Box fallback.
+  -webkit-flex-flow: $values;
+  -moz-flex-flow: $values;
+  -ms-flex-flow: $values;
+  flex-flow: $values;
+}
+
+@mixin align-items($value: stretch) {
+  @if $value == flex-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+  } @else if $value == flex-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+  } @else {
+    -webkit-box-align: $value;
+    -ms-flex-align: $value;
+  }
+  -webkit-align-items: $value;
+  -moz-align-items: $value;
+  align-items: $value;
+}
+
+@mixin align-self($value: auto) {
+  -webkit-align-self: $value;
+  -moz-align-self: $value;
+  @if $value == flex-start {
+    -ms-flex-item-align: start;
+  } @else if $value == flex-end {
+    -ms-flex-item-align: end;
+  } @else {
+    -ms-flex-item-align: $value;
+  }
+  align-self: $value;
+}
+
+@mixin align-content($value: stretch) {
+  -webkit-align-content: $value;
+  -moz-align-content: $value;
+  @if $value == flex-start {
+    -ms-flex-line-pack: start;
+  } @else if $value == flex-end {
+    -ms-flex-line-pack: end;
+  } @else {
+    -ms-flex-line-pack: $value;
+  }
+  align-content: $value;
+}
+
+@mixin justify-content($value: stretch) {
+  @if $value == flex-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+  } @else if $value == flex-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+  } @else if $value == space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+  } @else {
+    -webkit-box-pack: $value;
+    -ms-flex-pack: $value;
+  }
+  -webkit-justify-content: $value;
+  -moz-justify-content: $value;
+  justify-content: $value;
+}
+
+@mixin flex-order($n) {
+  -webkit-order: $n;
+  -ms-flex-order: $n;
+  order: $n;
+  -webkit-box-ordinal-group: $n;
+}
+
+@mixin responsive-grid-break($selector, $max-width) {
+  @media (max-width: $max-width) {
+    #{$selector} {
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      .col, .col-10, .col-20, .col-25, .col-33, .col-34, .col-50, .col-66, .col-67, .col-75, .col-80, .col-90 {
+        @include flex(1);
+        margin-bottom: ($grid-padding-width * 3) / 2;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@mixin button-hover($bgcolor){
+  &:hover{
+    background: darken($bgcolor, 5%);
+  }
+}
+

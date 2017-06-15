@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithms on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/tags/algorithms/</link>
+    <description>Recent content in Algorithms on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Algorithm Analysis: Best, Worst and Average Case</title>
+      <link>https://josephrex.me/algorithm-analysis/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/algorithm-analysis/</guid>
+      <description>&lt;p&gt;Algorithms are a sequence of decisions we make to solve a problem. Like every decision in life we can make great decisions and really terrible decisions. But it doesn&amp;rsquo;t end there. Good decisions vary, they can come easy and can take a lot harder process to reach an expected outcome.
+
+There are 3 categories of efficiency an algorithm can fall under when analyzing its usage of resources. They are best case, worst case, and average case.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Big O notation explained</title>
+      <link>https://josephrex.me/big-o-notation-explained/</link>
+      <pubDate>Fri, 03 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/big-o-notation-explained/</guid>
+      <description>&lt;p&gt;The big O notation (also asymptotic notation) helps determine how a function may decline or scale with a larger set of inputs (n). According to &lt;a href=&#34;https://en.wikipedia.org/wiki/Big_O_notation&#34;&gt;Wikipedia&lt;/a&gt;,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;It is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity
+&lt;cite&gt;Wikipedia&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

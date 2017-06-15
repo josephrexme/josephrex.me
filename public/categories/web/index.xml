@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</title>
+    <link>https://josephrex.me/categories/web/</link>
+    <description>Recent content in Web on Joseph Rex&#39;s blog - Exploring Software, Food recipes, and Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://josephrex.me/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Specificity wars</title>
+      <link>https://josephrex.me/specificity-wars/</link>
+      <pubDate>Wed, 17 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/specificity-wars/</guid>
+      <description>&lt;figure&gt;
+{% image lightsabers-clash.jpg alt=&#34;light sabers&#34; class=&#34;image&#34; %}
+&lt;/figure&gt;
+When you look through the element styles of your browser web developer tools, you can see how CSS rules override themselves. What is prioritized is mostly based on the specificity level. It&#39;s a usual thing that styles below override the ones above, inline styles override external styles. These are the little things but it gets deeper when we use id selectors around our stylesheets. Ids have high specificity and there are uncalled for as we don&#39;t want unnecessary spikes in our specificity graph. This &lt;a href=&#34;http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/&#34; target=&#34;_blank&#34;&gt;css-wizardry article&lt;/a&gt; tells why IDs can be the demons of our stylesheets.</description>
+    </item>
+    
+    <item>
+      <title>Moving from sqlite3 to postgresql database for your rails project</title>
+      <link>https://josephrex.me/moving-from-sqlite3-to-postgresql-database-for-your-rails-project/</link>
+      <pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/moving-from-sqlite3-to-postgresql-database-for-your-rails-project/</guid>
+      <description>&lt;p&gt;Rails uses sqlite3 by default on development. If you are not careful enough, you may get so comfortable with sqlite which I did. After a while, there will be a need to push the application to production and at this point, you wouldn&amp;rsquo;t want sqlite on your web server. I&amp;rsquo;m using heroku for my app and they stated &lt;a href=&#34;https://devcenter.heroku.com/articles/sqlite3&#34; target=&#34;_blank&#34;&gt;some good reasons not to use sqlite&lt;/a&gt;. On heroku, you wouldn&amp;rsquo;t be able to push your application to production if sqlite3 remains in your Gemfile.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Multiple tables for authentication in laravel</title>
+      <link>https://josephrex.me/using-multiple-tables-for-authentication-in-laravel/</link>
+      <pubDate>Sat, 13 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-multiple-tables-for-authentication-in-laravel/</guid>
+      <description>&lt;p&gt;Laravel provides a good authentication handler with the Auth class. To authenticate a user attempting to log in, we use the attempt method like so:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #2f1e2e&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #776e71&#34;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span style=&#34;color: #815ba4&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;Auth&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;attempt&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #815ba4&#34;&gt;array&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;email&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ef6155&#34;&gt;$email&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #5bc4bf&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ef6155&#34;&gt;$password&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;)))&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #815ba4&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #06b6ef&#34;&gt;Redirect&lt;/span&gt;&lt;span style=&#34;color: #5bc4bf&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #06b6ef&#34;&gt;intended&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #48b685&#34;&gt;&amp;#39;dashboard&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e7e9db&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color: #e7e9db&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #776e71&#34;&gt;?&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That&amp;rsquo;s just as it is &lt;a href=&#34;http://laravel.com/docs/4.2/security#authenticating-users&#34; target=&#34;_blank&#34;&gt;in the docs&lt;/a&gt;. But this checks against the users table which is fine because most apps have a users table for authentication. I&amp;rsquo;ve never had a need to build something requiring more tables for authentication but I had someone requesting for a solution to this and I was really interested in getting this to work.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Moving from Indented Sass to Scss</title>
+      <link>https://josephrex.me/moving-from-indented-sass-to-scss/</link>
+      <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/moving-from-indented-sass-to-scss/</guid>
+      <description>&lt;p&gt;As soon as I knew about pre-processors, I wanted to test them so bad then I stumbled upon &lt;a href=&#34;http://sass-lang.com&#34; target=&#34;_blank&#34;&gt;Sass website&lt;/a&gt;. Syntactically awesome they said? I totally love anything with awesome attached to it because I feel I&amp;rsquo;m awesome (especially around opposite genders :D).&lt;/p&gt;
+
+&lt;p&gt;I program in python and even though strict indentations may be a pain, that pain has become my honey. I fell in love with the indented Sass &lt;a href=&#34;http://sassnotsass.com/&#34; target=&#34;_blank&#34;&gt;(not SASS)&lt;/a&gt;. I love checking out &lt;a href=&#34;https://twitter.com/thebabydino&#34; target=&#34;_blank&#34;&gt;Ana Tudor &lt;/a&gt;and &lt;a href=&#34;https://twitter.com/HugoGiraudel&#34; target=&#34;_blank&#34;&gt;Hugo Giraudel&amp;rsquo;&lt;/a&gt;s works. A lot more awesome people like &lt;a href=&#34;http://twitter.com/codingdesigner&#34; target=&#34;_blank&#34;&gt;Mason Wendell&lt;/a&gt; who created &lt;a href=&#34;http://github.com/Team-Sass/breakpoint&#34; target=&#34;_blank&#34;&gt;breakpoint &lt;/a&gt;(a compass extension I can not do without). All these great people in the community have once used the indented Sass but now, they all write SCSS.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using the laravel console</title>
+      <link>https://josephrex.me/using-the-laravel-console/</link>
+      <pubDate>Fri, 12 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/using-the-laravel-console/</guid>
+      <description>&lt;p&gt;{% image laravel-console.png class=&amp;ldquo;head-image&amp;rdquo; alt=&amp;ldquo;laravel console&amp;rdquo; %}&lt;/p&gt;
+
+&lt;p&gt;I have always loved consoles. I can&amp;rsquo;t do without them as they make life easy for me in so many ways. I talked about &lt;a href=&#34;http://josephrex.me/butterfly-and-fish/&#34; title=&#34;Butterfly and Fish&#34;&gt;fish and butterfly in an old blog post &lt;/a&gt;as I use them often. I also use the awesome &lt;a href=&#34;http://phpsh.org/&#34; target=&#34;_blank&#34;&gt;phpsh&lt;/a&gt; because it is the best way for me to test php code on the go.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Keeping your development, staging, and production similar</title>
+      <link>https://josephrex.me/keeping-your-development-staging-and-production-similar/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/keeping-your-development-staging-and-production-similar/</guid>
+      <description>{% image dev-prod-parity.jpg class=&amp;ldquo;head-image&amp;rdquo; %} In this 12factor.net series, a major point for development process is discussed. Being a rails developer, you will likely start your development on the default sqlite database and you may get tempted to just use sqlite for your production as well. I use sqlite mostly for software and applications that are meant to run internally (i.e intranet) for organizations and I don&amp;#8217;t think they should be used for regular web apps as they are stored to the disk and they consume data.</description>
+    </item>
+    
+    <item>
+      <title>There&#39;s a mistake in your website</title>
+      <link>https://josephrex.me/theres-a-mistake-in-your-website/</link>
+      <pubDate>Mon, 08 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/theres-a-mistake-in-your-website/</guid>
+      <description>&lt;p&gt;As the web grows, different design trends come into existence. A larger number of organizations will focus more on keeping to this trends, having a nice website that is responsive, having something with cool Javascript effects.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a lot more things that make your website suck and one I can say is your perspective about your website. It&amp;rsquo;s not cool to everyone just because it seems cool to you and your colleagues. You should read &lt;a href=&#34;http://www.webpagesthatsuck.com/biggest-mistakes-in-web-design-1995-2015.html&#34; target=&#34;_blank&#34;&gt;the biggest mistakes in web design&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Front-end development pattern</title>
+      <link>https://josephrex.me/my-front-end-development-pattern/</link>
+      <pubDate>Wed, 05 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://josephrex.me/my-front-end-development-pattern/</guid>
+      <description>&lt;figure&gt;
+{% image Web-Developer.jpg class=&#34;image&#34; alt=&#34;Web-Developer&#34; %}
+&lt;/figure&gt;
+
+&lt;p&gt;I&amp;rsquo;ve seen different front-end developers start their projects. In most cases for intermediate designers, first steps are to write the basic HTML, download &lt;a href=&#34;http://getbootstrap.com&#34; target=&#34;_blank&#34;&gt;bootstrap&lt;/a&gt; or &lt;a href=&#34;http://foundation.zurb.com/&#34; target=&#34;_blank&#34;&gt;foundation&lt;/a&gt; framework for local use, download an icon-font set like &lt;a href=&#34;http://fontawesome.io/&#34; target=&#34;_blank&#34;&gt;fontawesome&lt;/a&gt;, and they start writing their mark-up to fit the styles defined by the framework.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

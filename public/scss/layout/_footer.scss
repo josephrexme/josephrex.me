@@ -1,0 +1,29 @@
+.footer{
+  padding: 50px 20px;
+  text-align: center;
+  color: rgba($white, .4);
+  font-size: 1.8rem;
+  transition: .5s color ease-in-out;
+  &:hover{
+    color: rgba($white, .6);
+  }
+  :focus{
+    outline-color: #cabcc1;
+    outline-width: 3px;
+  }
+  input, button{
+    margin-bottom: .5rem;
+    &:focus{
+      color: rgba($white, .8);
+    }
+  }
+  button{
+    width: 90%;
+    @include breakpoint($breakpoint-iphone-portrait){
+      width: auto;
+    }
+  }
+  &__heading{
+    color: rgba($white, .8);
+  }
+}
