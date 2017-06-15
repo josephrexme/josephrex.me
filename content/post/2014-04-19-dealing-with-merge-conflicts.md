@@ -15,10 +15,6 @@ I just saw this article by Tobias Günther on[ CSS-Tricks][1] and it was really 
 
 As a Linux user, I thought of how I could make use of a merge tool like that to save me the stress of manually cleaning up merges, then I saw this [comment][3] by [Richard Ayotte][4] which made made me check out <a href="http://meldmerge.org" target="_blank">meld merge</a>. He also talked about <a href="https://wiki.gnome.org/Apps/Gitg/" target="_blank">Gitg</a> which I didn't try out.
 
-<figure>
-{% image meld-merge.png class="image" alt="Meld on my Debian Linux" %}
-</figure>
-
 It's barely a day since I've been using it and it has helped me come a long way on my current project. I'll just gather up all the diff / merge tools I'm aware of for various OS below.
 
   * <a href="http://meldmerge.org" target="_blank">Meldmerge</a>  (Linux &#8211; *stable*, Windows and OS &#8211; *unstable*)
