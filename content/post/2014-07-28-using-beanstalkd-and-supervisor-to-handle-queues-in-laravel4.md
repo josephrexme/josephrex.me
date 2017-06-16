@@ -10,7 +10,6 @@ tags:
   - queues
 ---
 
-{% image security_lights.jpg class="head-image" alt="security lights" %}
 When performing some tasks that take time with your web application, you usually don't want to keep your users waiting for a better user experience.
 
 Taking email sending for an example, it takes about a minute to two for an email to be sent with your web app. Do you really want to keep your non geeky application users staring at a screen for that long, just watching an ajax image loader spin, or just waiting to get a response that the task has been completed. No, I don't think so.

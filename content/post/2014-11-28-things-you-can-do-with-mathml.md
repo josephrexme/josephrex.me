@@ -9,8 +9,6 @@ tags:
   - mathML
 ---
 
-{% image mathematical-equations-152650.jpg class="head-image" alt="math equations" %}
-
 For a while, I've been enjoying the awesomeness of mathML. I've not had specific use cases but just playing around with it gives me fun. Sometimes I idly just write equations that should be on a paper in my local web pages.
 
 There's a lot you can learn about MathML by looking through the MDN spec. I'll just drop in the little parts I've played. This has been for so many years and it still available but it is only supported by gecko browsers (Mozilla Firefox, Iceweasel, some others) .

@@ -9,8 +9,6 @@ tags:
   - sass
 ---
 
-{% image mappings.png class="head-image" alt="source maps" %}
-
 The web browser inspector plays a good role when debugging CSS. However, with the widespread of pre-processors now, we are faced with a challenge of debugging our CSS. Using a pre-processor like Sass, when you have your output style to be expanded or nested, this may not be much of a problem as you will almost get accurate debugging lines except if those lines had been separated by variables and mixins within your pre-processor stylesheet. In my case, I use the compressed (minified) output and I believe a lot of other developers do this to boost their pagespeed. This way, the whole of your compiled CSS stylesheet is on a single line and if you will try to debug for a line number, you will always find rule on line 1.
 <!--more-->
 

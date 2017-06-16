@@ -10,10 +10,6 @@ tags:
   - python
 ---
 
-<figure>
-{% image pyuic-binaries.png alt="pyuic binary" class="image image--wide" %}
-</figure>
-
 There comes a point when your program needs to be distributed to other users. You don't want to always have to give every intended user of your program a list of modules or libraries to be installed before they can use your software.
 
 I've found myself developing software with python a lot lately and usually, I like people to check them out. Most times, my target users are Windows OS users. I built my programs but packing them into binaries became the pain in the neck for me.

@@ -9,7 +9,6 @@ tags:
   - web
 ---
 
-{% image name_not_important.jpg  alt="name not important" class="head-image" %}
 Thanks to collaborated projects, I've come across crappy CSS in my life. I talked about it in a [previous article][1].
 
 I'm not impeccable and I wouldn't be dissing someone else' because of their faults. However, one point I failed to mention about what I experienced from a co-designer on the project I mentioned in that article was the use of too many nested selectors.

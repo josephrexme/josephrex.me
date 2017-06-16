@@ -10,8 +10,6 @@ tags:
   - python
 ---
 
-{% image encryption-1.jpeg class="head-image" alt="encryption" %}
-
 In the middle of a project I'm presently working on, I needed to make use of a Symmetric encryption based on the workflow of my software. A key is required by users to encrypt data and the same key will be needed to decrypt data. My first thoughts were on PyCrypto so I went ahead doing this
 
 {{< highlight python >}}

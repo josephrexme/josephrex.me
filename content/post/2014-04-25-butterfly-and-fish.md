@@ -9,9 +9,6 @@ tags:
   - unix
 ---
 
-<figure>
-  {% image butterfly_1.gif class="image" alt="butterfly_1" %}
-</figure>
 I recently stumbled upon butterfly on <http://paradoxxxzero.github.io/2014/02/28/butterfly.html> and it is a really awesome web browser shell execution program written in python. It's not like it's the first of it's kind. There are others like:
 
 [ajaxterm][2] and [anyterm][3]
@@ -52,8 +49,6 @@ butterfly.server.py --shell=/usr/bin/fish
 ```
 
 #### What's Fish?
-
-{% image fish-shell.png alt="Fish Shell" %}
 
 [Fish][1] is a user-friendly shell  with awesome features. I've been using it for a while now and it's even a lot more awesome inside butterfly.
 

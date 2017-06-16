@@ -11,8 +11,6 @@ tags:
   - web
 ---
 
-{% image dad-and-son.png alt="Dad and Son" class="head-image" %}
-
 PHP has a really shallow learning curve. It's easy for a 8 year old to pick it up and start messing around with it. This is good and I love it about Python as well. However, PHP has been known to have a lot of flaws, one of the major reasons being because it was not built as a functional programming language but rather, just a Hypertext pre-processor. It was meant to just automate the behaviour of HTML. Around 2005, OOP was introduced to PHP and it made PHP developers feel among the big boys of the web.
 <!--more-->
 
