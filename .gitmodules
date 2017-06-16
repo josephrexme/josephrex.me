@@ -1,12 +1,4 @@
-[submodule "public"]
-  path = public
-  url = https://github.com/josephrexme/josephrexme.github.io
-  branch = master
 [submodule "themes/windener"]
 	path = themes/windener
 	url = https://github.com/josephrexme/windener
-	branch = master
-[submodule "themes/nofancy"]
-	path = themes/nofancy
-	url = https://github.com/gizak/nofancy
 	branch = master
