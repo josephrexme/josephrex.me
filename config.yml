@@ -4,7 +4,7 @@ themesDir: ./themes/
 languageCode: en-us
 metaDataFormat: yaml
 title: Joseph Rex's blog - Exploring Software, Food recipes, and Design
-theme: windener
+theme: nofancy
 # Enter your tracking code to enable Google Analytics
 googleAnalytics: UA-56161232-2
 # Disable comments by leaving disqusShortname empty
