@@ -11,12 +11,14 @@ googleAnalytics: UA-56161232-2
 disqusShortname: josephrexme
 disablePathToLower: true
 pygmentsstyle: paraiso-dark
+rssuri: feed.xml
 
 params:
   name: Joseph Rex
   description: Ramblings on design, code, fitness and food by Joseph Rex
   bio: Design, Code, Fitness and Food
   email: joseph\*\*at\*\*strichio
+  profile: https://josephrex.me/about-me
   enableRSS: true
   themeBuilder: true
   favicon: favicon.png # A file located in the static directory
