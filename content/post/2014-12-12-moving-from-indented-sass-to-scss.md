@@ -19,8 +19,6 @@ SCSS is also Sass. If that's confusing see this <a href="http://www.sitepoint.co
 
 One great advantage of SCSS is that it is so similar to CSS and a CSS document passes as a SCSS document but it doesn't always work vice-versa. This makes it easy for people that are new to pre-processors to easily deal with it.If it's so easy, why did I choose the indented style? I wouldn't make excuses that SCSS hadn't been in existence when I started writing pre-processors because they were and I wasn't so early to the party. I only felt indented CSS will be cool. Without braces and semi-colon, my code was shorter, sweeter, and more pleasing to my eye even though regular CSS guys couldn't figure out what was going on whenever I was styling my websites. You can see the line differences in the header image above
 
-{% image sass2scss.png alt="sass to scss" class="head-image" %}
-
 The image shows my text editor while I was switching from Sass to SCSS but it didn't just happen as easy as it appears there. First I had to change all the files with .sass extension to .scss in my current project and I had that done with this little python script
 
 {{< highlight python >}}

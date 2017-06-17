@@ -11,7 +11,7 @@ tags:
 I'm sick of hearing everyone call themselves perfectionists everywhere I go. Trust me, this is the most ridiculous thing you should call yourself from my view. I'd rather you use curse words on me than call me a perfectionist.
 <!--more-->
 
-###Who is a perfectionist?
+### Who is a perfectionist?
 
 By using the google dictionary, I found this:
 
@@ -33,6 +33,6 @@ I know what I am but I haven't had a chance to look up a name that describes me,
 
 For everything I do, I try to be the best at it. In my unadulterated words, I try not to suck at whatever I do.
 
-###Conclusion
+### Conclusion
 
 Being a perfectionist only makes you forever a dream chaser. Sit back and watch other guys progress as they do little things while you stay idle and seek perfection. Perfectionists never get contended with what they have, they are mentally imprisoned.

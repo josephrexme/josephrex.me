@@ -2,7 +2,7 @@
 author: Joseph Rex
 comments: true
 date: 2014-06-18T00:00:00Z
-title: Leveraging SASS for your front-end designs
+title: Leveraging Sass for your front-end designs
 url: /leveraging-sass-for-your-front-end-designs/
 tags:
   - css

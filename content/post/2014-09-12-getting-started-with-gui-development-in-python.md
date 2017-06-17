@@ -9,8 +9,8 @@ tags:
   - python
 ---
 
-<figure>
-{% image z_design.jpg class="image" alt="z_design" %}
+<figure class="figure--fullwidth">
+<img src="https://res.cloudinary.com/strich/image/upload/v1497718095/z_design_kkn1lu.jpg" class="image" alt="Graphical interface">
 </figure>
 
 Most people that are fond of Windows operating system will always root for graphical desktop applications (GUI) over command line (CLI) programs. Since after DOS, windows operating systems have been known to use simple and user friendly GUI. This is one of the reasons why they have made a lot of customers around the world.
@@ -177,8 +177,8 @@ That's my interpretation in jQuery of handling signals and slots as I have demon
 
 Writing GUI code can take a lot of time and can be really stressful. This is one of the reasons why I enjoy Qt because it has QtDesigner. It reminds me of my days with Visual Basic as it has a simple environment for you to just pick GUI components and drop on your frame. It's a good toolkit to build GUI programs in few minutes. Here's my Qt designer
 
-<figure>
-{% image snapshot8.png alt="snapshot8" class="image" %}
+<figure class="figure--fullwidth">
+<img src="https://res.cloudinary.com/strich/image/upload/v1497718070/snapshot8_guqbu6.png" class="image" alt="Snapshot 8">
 </figure>
 
 I designed the UI for my KDE desktop to be dark because I love dark UI so it it may not be such a dark UI in your case. The panes on the left are objects/widgets you can drop on your frame. On the right, we have property editor, signal/slot editor where you can set signals for some slots while designing the UI from the designer. For some signals, I prefer to manually attach them to their slots by writing my python code.
@@ -214,13 +214,13 @@ Now you're up and running. To wrap this all up, let's create a simple GUI with a
 I started by creating a new Main Window from the QtDesigner templates
 
 <figure>
-{% image snapshot9.png alt="snapshot9" class="image" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1497718069/snapshot9_itwj5j.png" alt="Snapshot 9" class="image">
 </figure>
 
 Next things will be to set the width, height, and geometry (location of the window by XY axis on screen). Also, we have to take note of the objectName because it is the way we call our objects in the program. This is done in the property edior
 
 <figure>
-{% image snapshot10.png alt="snapshot10" class="image" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1497718072/snapshot10_rtxwwg.png" alt="Snapshot 10" class="image">
 </figure>
 
 You can see my objectName is MainWindow and I have chosen to use a window of size 400 x 280. I want it at the extreme top right so my geometry is (0,0) which stands for x-axis = 0, y-axis = 0.
@@ -228,7 +228,7 @@ You can see my objectName is MainWindow and I have chosen to use a window of siz
 I could create my signal and slots right away from the designer like so:
 
 <figure>
-{% image snapshot11.png alt="snapshot11" class="image" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1497718067/snapshot11_ci2vyo.png" alt="Snapshot 11" class="image">
 </figure>
 
 As you can see the signal/slot editor has the names of each object. and the view for the signals/slot editor shows there's a relationship between the display button and the label below. I will just delete this slot to handle this part with my code because I have less options from the designer. I saved my design as example.ui and I'm compiling to python code with:
@@ -341,7 +341,7 @@ if __name__ == '__main__':
 and voila! It works. See it in action after running "python example.py"
 
 <figure>
-{% image snapshot12.png alt="snapshot12" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1497718065/snapshot12_thdp76.png" alt="Snapshot 12" class="image">
 </figure>
 
 ### Conclusion:

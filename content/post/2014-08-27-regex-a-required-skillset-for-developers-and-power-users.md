@@ -14,10 +14,6 @@ I care about information and I believe everything we do wraps around trying to f
 
 Regex (Regular expression) is a way to specify your search with deeper intensity. It is somewhat like wildcards. But, this is beyond very generic wildcards we use in simple instances. You may refer to this as wildcards on steroids.
 
-To save myself from a lot of explaining, I have this XKCD image to help with a little illustration
-
-That PERL hero saved the day with his super powers (knowledge of regex).
-
 Paint an instance where you have to find every occurrence of gray and grey in a large pile of text. Running (gray\|grey) through a regular expressions parser will find all the expected results which are "gray" and "grey". The pattern used to find them simply means I want to find every occurrence of gray or grey.
 
 Being aware of how the \| (pipe) can be used as an OR operator, I can write a better pattern this way gr(a\|e)y and it will find the same results as the earlier used pattern.
