@@ -73,7 +73,7 @@ $(document).ready(function() {
 			$('#loader').slideUp(200, function() {
 				$(this).remove();
 			});
-		});	
+		});
     });
 });
 {{< / highlight >}}
@@ -81,7 +81,7 @@ $(document).ready(function() {
 From the jQuery code above we try to send the present value of the category to a different PHP file that takes in GET parameters. It gets all the subcategories of the selected category and echo them to that page making it return those listed values to jQuery as sub categories
 
 {{< highlight php >}}
-<?php 
+<?php
 mysql_connect('localhost', 'root', '');
 mysql_select_db('dependent_list');
 $parent_cat = $_GET['parent_cat'];
@@ -171,7 +171,7 @@ $(document).ready(function() {
 	$("#parent_cat").change(function() {
 		$.get('loadsubcat/' + $(this).val(), function(data) {
 			$("#sub_cat").html(data);
-		});	
+		});
     });
 
 });
@@ -226,7 +226,7 @@ And with this we can get it to work like it did with the static HTML example abo
 In this method, I will simplify <a href="https://twitter.com/msurguy" target="_blank">Maksim Surguy's</a> solution from this <a href="https://gist.github.com/msurguy/5138788" target="_blank">github gist</a>. Mak used two tables (makers and models) to describe car makers and models. Rather than twisting the flow, I'll keep to my categories and subcategories tables.
 
 > Categories == Makers
-> 
+>
 > Subcategories == Models
 
 In order to use Eloquent with this. We will extend eloquent with a models for each of them.
@@ -240,7 +240,7 @@ class Category extends Eloquent {
       return $this->hasMany('Subcategory');
    }
 }
- 
+
 ?>
 {{< / highlight >}}
 
@@ -253,7 +253,7 @@ class Subcategory extends Eloquent {
       return $this->belongsTo('Category');
    }
 }
- 
+
 ?>
 {{< / highlight >}}
 
@@ -272,7 +272,7 @@ Route::get('api/dropdown', function(){
 
 The JS part
 
-{{< highlight javascript linenos >}}
+{{< highlight javascript >}}
 $(document).ready(function($){
    $('#cat').change(function(){
      $.get($(this).data('url'),
