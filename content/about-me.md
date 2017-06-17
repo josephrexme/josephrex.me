@@ -20,7 +20,7 @@ Fingerprint: 4BD9 803E 47C5 6B16 715E  A5CF 9D8B 87BB E761 4F18
 [Download PGP key][3]
 
 [1]: http://www.nba.com/bucks/
-[3]: https://cdn.rawgit.com/bl4ckdu5t/bl4ckdu5t.github.io/source/_assets/joerex.asc "Get my PGP public key"
+[3]: /joerex.asc "Get my PGP public key"
 [5]: http://strich.io
 [7]: http://josephrex.me/registron
 [8]: http://codepen.io/bl4ckdu5t
