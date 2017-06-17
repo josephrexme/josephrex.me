@@ -1,9 +1,8 @@
 ---
 author: Joseph Rex
-date: 2017-06-16T06:29:06-05:00
+date: 2017-06-16T22:47:37-05:00
 title: Boosting user experience through prediction
 url: /boosting-user-experience-through-prediction/
-draft: true
 tags:
   - UX
   - performance
