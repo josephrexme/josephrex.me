@@ -11,9 +11,6 @@ tags:
   - performance
 ---
 
-<figure>
-{% image lightsabers-clash.jpg alt="light sabers" class="image" %}
-</figure>
 When you look through the element styles of your browser web developer tools, you can see how CSS rules override themselves. What is prioritized is mostly based on the specificity level. It's a usual thing that styles below override the ones above, inline styles override external styles. These are the little things but it gets deeper when we use id selectors around our stylesheets. Ids have high specificity and there are uncalled for as we don't want unnecessary spikes in our specificity graph. This <a href="http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/" target="_blank">css-wizardry article</a> tells why IDs can be the demons of our stylesheets.
 <!--more-->
 I seldom use CSS frameworks, but I do know that bootstrap makes use of classes. If you are not taking advantage of many selectors available today, then you can just stick with the type (element) selectors and classes.
@@ -36,15 +33,12 @@ I made this pen to create a specificity war.
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
-
 If you look through the stylesheet of the pen you will see I had a 30 chains class selector, an id selector, and a class selector with !important. Well, I know, !important overrules our chained class naming but when we are on a specificity fight with normal class and id selectors, the class chaining will be king. So for no reason should we still use the !important over class chaining except we already have it used in the rules we are overruling. Then the order of precedence will be our win point.
 
 <a href="http://twitter.com/csswizardry" target="_blank">Harry Roberts</a> described <a href="http://csswizardry.com/2014/10/the-specificity-graph/" target="_blank">how the specificity graph of your project should be</a>. He spoke of our helper classes that usually tend to carry !important. As much as I avoid the !important, I have it occurring once or twice in my helper classes. Before I ever put specificity to consideration, I've always imported my helpers at the bottom of the stylesheet. You can see that of a jekyll project I just worked on here:
 
 {{< highlight css >}}
 @charset "utf-8";
-
-
 
 // Our variables
 $base-font-family: 	Helvetica, Arial, sans-serif;
@@ -106,7 +100,7 @@ The reason for this as mentioned by Harry is for our specificity graph to be upw
 I used the <a href="http://jonassebastianohlsson.com/specificity-graph/" target="_blank">online specificity graph tool</a> to analyze that pen and here's what it gave:
 
 <figure>
-{% image specifity-graph.png alt="specifity-graph" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1497701559/specifity-graph_avdcml.png" class="image" alt="specifity-graph">
 </figure>
 
 This graph is great and it has worked fine in giving me a graph of bigger projects. There's a downside to it though. It doesn't include rules with a !important value in them. I have my codepen demo giving me the selector with !important as the most specific but then the graph has its highest specificity at the end of the stylesheet to be the 30 chained class selector. The other rise in the middle is the id selector.

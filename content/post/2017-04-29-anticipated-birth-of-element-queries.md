@@ -16,7 +16,7 @@ There have been [so many][8] [talks][16] [on][17] [constraint-based][18] [layout
 What does any of all that mean? Constraints based layouts puts child layouts or components to the scope of their parents such that changes made are relative to the parent/container size.
 
 <figure>
-{% image container-qs-1.png alt="Container and child fluidity constraint" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1497692305/container-qs-1_grttug.png" alt="Container and child fluidity constraint">
 </figure>
 
 What may come to your thought at first is **just use a percentage value to achieve a size constrained to parent**. By doing that we'd be making a [fluid design][2] and we had that before responsive design with media queries yet we needed more responsiveness beyond fluidity.
@@ -38,7 +38,7 @@ What is an element scope? Like [scopes in JavaScript][3], [scoped styles][4] wer
 every scoped style only applies to elements within the container element that has the style but this wasn't really solving any problem that can't already be handled with existing selectors. Container queries are to behave somewhat like this but with a combination of the media query behavior.
 
 <figure>
-{% image container-qs-2.png alt="Container scope with condition based descendant" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1497697668/container-qs-2_fsipar.png" alt="Container scope with condition based descendant">
 </figure>
 
 Up until now I've used container queries and element queries like they mean the exact same thing. To clarify I'll try to explain them better. If given a syntax like in the figure above:
@@ -87,7 +87,7 @@ This means if I have a section greater than or equal to 100px make the body back
 [Cassowary][5] constraint satisfaction algorithm, a known layout solution used in Apple development was used as an early implementation of CCSS (Constrained Cascading Style Sheet) after which more solutions like [GSS (Grid Style Sheets)][6] have tried to adapt the concept behind it.
 
 <figure>
-{% image https://www.smashingmagazine.com/wp-content/uploads/2016/07/eqcss-logo-opt.png class="image image--wide" alt="EQCSS Logo" %}
+<img src="https://www.smashingmagazine.com/wp-content/uploads/2016/07/eqcss-logo-opt.png" class="image image--wide" alt="EQCSS Logo">
 </figure>
 
 More recently, [EQCSS (Element Queries CSS)][7] was born as a great speculative polyfill for element queries by [Tom Hodgins][11] and [Maxime Euzière][13]. It puts the at-rule into consideration for scoping elements like it is used with media queries and proposes the best syntax yet.
@@ -150,7 +150,7 @@ EQCSS allows more conditions for the scoped element including `min-aspect-ratio`
 People have raised possible issues with container queries to be circularity of dependent containers or recursion. Basing an element on the container of a container of a container may lead to a O(N<sup>2</sup>) [complexity][14]. Here's what the recursion looks like from an [example][16] by [Martin Auswöger][15]
 
 <figure>
-{% image container-qs-3.png alt="Cyclic dependency of container query" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1497697683/container-qs-3_rldb7o.png" alt="Cyclic dependency of container query">
 </figure>
 
 {{< highlight scss >}}

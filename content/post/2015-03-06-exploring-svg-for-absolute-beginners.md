@@ -15,8 +15,6 @@ It's mostly known for its ability to scale across various pixel densities withou
 
 That's definitely a good point but what really got me using SVG was my hunger for less HTTP requests. Besides head images of posts, I'm almost not using any images on this blog. At some point I thought data-uri's were the good thing but in no time I realized they aren't what you should just use with a sole aim of achieving reduced HTTP requests. There are cases where data-uri can come to play but I'll still do without it where I can. Just for test, I ran my 764k header image on the home page through a data-uri converter and this was the outcome
 
-{% image image2datauri.png alt="Image to data-uri" %}
-
 As seen from the image, the 764k file had become 1.3M. This may save me from making an extra 764k request for an image but then it'll cost me to download a larger HTML file. I wouldn't sell my soul for a penny :D. SVG to rescue!!
 
 For readers who hate long posts, I'll explain and discuss ways to use SVG early enough and keep the goodies (writing and understanding) for later.
@@ -88,9 +86,7 @@ Ok enough of illustrations outside the topic. First thing you should know is und
 	</svg>
 </figure>
 
-You can inspect the demos on the art board to confirm their live operation. All I can think of with this is a quadratic graph. I don't mean to scare you off if you're not mathematically inclined because this is so easy to figure out. The x and y represent X and Y axis in a graph. This is what I meant when I said quadratic graph
-
-{% image quadratic-graph.png alt="Quadratic Graph" %}
+You can inspect the demos on the art board to confirm their live operation. All I can think of with this is a quadratic graph. I don't mean to scare you off if you're not mathematically inclined because this is so easy to figure out. The x and y represent X and Y axis in a graph.
 
 X represents the horizontal flow while Y represents the vertical flow like the image above. X1 is the horizontal starting point, X2 is the horizontal end point, Y1 is the vertical starting point, and Y2 is the vertical end point. Makes sense right? Stroke is just the color of the line as you may have guessed, and stroke-width is how thick the line should be.
 

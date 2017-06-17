@@ -13,7 +13,9 @@ tags:
 
 Last month (December 2014), I started developing a new GUI steganography software after building a [simple steganography tool][1] for my [post at Infosec Institue][2]. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
 <!--more-->
-{% image failed-stego.jpg class="head-image" alt="stego girl" %}
+<figure class="figure--fullwidth">
+<img src="https://res.cloudinary.com/strich/image/upload/v1497699088/failed-stego_ljqwy6.jpg" class="image" alt="stego girl">
+</figure>
 
 Image exif data is stored in about the first 30 hex values of the image hexadecimal data. The number may not be accurate enough but the point remains exif data is stored at the top of the image at it should be kept untampered with to retain a proper and valid image format. The software appends data to the end of image files.
 
@@ -89,7 +91,7 @@ The program achieved its objective which is the Steganography process but the so
 
 <hr>
 
-I explored [Oni49][5]'s [stegoBlue][6] and created a [fork][7] to understand how it worked and see how I could derive a new implementation from it. Took a while but I later found how he used the [PIL (Python Imaging Library)][8] to list image data in RGB tuples. StegoBlue is a manipulation of the blue pixels in a pixel list. 
+I explored [Oni49][5]'s [stegoBlue][6] and created a [fork][7] to understand how it worked and see how I could derive a new implementation from it. Took a while but I later found how he used the [PIL (Python Imaging Library)][8] to list image data in RGB tuples. StegoBlue is a manipulation of the blue pixels in a pixel list.
 
 {{< highlight python >}}
 from PIL import Image
@@ -171,7 +173,7 @@ def extract(file, key, output = 'output.txt'):
 		f.write( binascii.unhexlify(mergehex) )
 	except IOError:
 		print 'Failed to locate file'
-	
+
 
 filename = raw_input("Enter the name of the file:")
 embed(filename, 'some awesome stuff', 'abcdefghijklmnop', 'output.png')
@@ -190,11 +192,15 @@ some awesome stuff
 
 with the cover image file as this
 
-{% image stegoBlackhat.png %}
+<figure>
+<img src="https://res.cloudinary.com/strich/image/upload/v1497699091/stegoBlackhat_rpktki.png" class="image" alt="Steganography input">
+</figure>
 
 The resulting output has had some major pixels tampered with
 
-{% image stegoOutput.png %}
+<figure>
+<img src="https://res.cloudinary.com/strich/image/upload/v1497700190/stegoOutput_ytlekg.png" class="image" alt="Steganography output">
+</figure>
 
 The distortion is from the middle to the bottom only because I splitted the image hex into two to leave the first half containing EXIF data untampered with. The other half whose LSB was modified now produces a malformed image output.
 
@@ -208,4 +214,4 @@ A steganography software is to modify the media file with no obvious changes but
 [6]: https://github.com/oni49/stegoBlue
 [7]: https://github.com/bl4ckdu5t/stegoBlue
 [8]: http://www.pythonware.com/products/pil/
-[9]: {% post_url 2014-12-02-symmetric-encryption-in-python %}
+[9]: /symmetric-encryption-in-python

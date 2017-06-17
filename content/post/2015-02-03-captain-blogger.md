@@ -8,7 +8,6 @@ url: /captain-blogger/
 
 Someone once told me to have a purpose for everything I do. I believe that even out of our subconscious, everything we do as humans is for a purpose. [Marla Gibbs][1] quotes that:
 <!--more-->
-{% image kirk2.jpg alt="Captain Kirk" class="head-image" %}
 
 > I truly believe that everything that we do and everyone that we meet is put in our path for a purpose. There are no accidents; we're all teachers - if we're willing to pay attention to the lessons we learn, trust our positive instincts and not be afraid to take risks or wait for some miracle to come knocking at our door.<br>
   ~ Marla Gibbs
@@ -28,8 +27,6 @@ It was until then I could take some time to reason that it was totally useless t
 About 8 months later, I became what you call a full-time software engineer and it has been a part of me to surf the web always and find ways I can improve myself as it is till date. Then I came across [Joerg Mueller][3]'s blog post on [Why all programmers should blog][4]. That gave me a 20% conviction to pick up my old blogging habits again. My skeptical nature didn't make me totally convinced with just that. It was until I started watching the Star Trek series again in 2014 and I noticed captain Kirk had his log where he logged his experiences I realized how important (b)logs are. If you saw Star Trek then this sounds familiar
 
 > Captain's log, stardate 41153.7. Our destination is planet Deneb IV
-
-{% image james_kirk.jpg alt="James Kirk"  width="300" %}
 
 James Kirk kept log of his experiences and destinations as a Captain of the Enterprise. Now I'm a captain of my own software development adventure and I think it is essential that I keep logs as well. Blog was coined from WebLog. Our technology age provides the internet for us to share our logs with everyone and that's just what most blogs are about.
 

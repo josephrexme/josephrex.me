@@ -10,14 +10,10 @@ tags:
   - jekyll
 ---
 
-<figure>
-{% image jekyll_assets.jpg class="image" alt="jekyll assets" %}
-</figure>
-
 I've always enjoyed all the experience with sprockets and the whole of the assets pipeline including how it allows me use compass just by having it in my Gemfile. On my quest for seeking ways to use compass properly with my jekyll blog, I came across [a blog][1] suggesting a hacky way of using compass with jekyll. The blog post had referenced this [gist][2] which referenced [another gist][3]. I followed this for a bit till I hit a stumbling block. The method was fine from the start. I had to use the following plugin:
 <!--more-->
 
-{% gist parkr/2874934 %}
+{{< gist parkr 2874934 >}}
 
 ### What is wrong with this technique?
 Since we want to write our custom CSS with this, this will mostly define the site layout, considering that the main.css in the css/ folder uses the `_layout.scss`, `_base.scss`, and `_syntax-highlighting.scss`. We wouldn't be taking it out of the HTML but instead, we will add an extra stylesheet to define most of our layouts. At this point, the `_layout.scss` could have been scraped. This will cause for an extra HTTP request. One of my reasons for leaving WordPress was the fact that I couldn't manage all my CSS files and make them single, or rather, it was a pain for me to achieve.
@@ -33,30 +29,24 @@ app.css becomes something like `app-623b9d195371e35e001b7443cacf426c.css`. As we
 #### assets tag extensions on liquid
 You have the following tags at your disposal to extend liquid tags and reference.
 {{< highlight html >}}
-{% raw %}
 <!-- Liquid tag -->
 {% stylesheet app.css %}
 <!-- Generated HTML -->
 <link rel="stylesheet" href="/assets/app-623b9d195371e35e001b7443cacf426c.css">
-{% endraw %}
 {{< / highlight >}}
 
 {{< highlight html >}}
-{% raw %}
 <!-- Liquid tag -->
 {% image cat.jpg %}
 <!-- Generated HTML -->
 <img src="/assets/cat-623b9d195371e35e001b7443cacf426c.jpg">
-{% endraw %}
 {{< / highlight >}}
 
 {{< highlight html >}}
-{% raw %}
 <!-- Liquid tag -->
 {% javascript app.js %}
 <!-- Generated HTML -->
 <script src="/assets/app-623b9d195371e35e001b7443cacf426c.js"></script>
-{% endraw %}
 {{< / highlight >}}
 
 not only are those tags available to you, but you can also call `{% asset_path cat.jpg %}` which fetches the path of the image like `/assets/cat-623b9d195371e35e001b7443cacf426c.jpg` in places you may need it.

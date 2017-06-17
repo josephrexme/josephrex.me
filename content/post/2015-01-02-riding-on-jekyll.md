@@ -12,7 +12,6 @@ tags:
 
 It's a new year and I'm to begin with new things. I started josephrex.me blog in 2014 and it has revived my old blogging habits. I have been on Wordpress which is nice considering how I get comments plugged into my blog posts without any third-party integration, the awesome jetpack services, the performance plugins, and most of all the easy WYSIWYG editor where I write with ease. I had a feel of version 4.0.1 before leaving and they had added the distraction-free writing feature. All of this is good but it was too much in a way.
 <!--more-->
-{% image "http://images.ostrich-dev.com/jekyll-logo.png" alt="jekyll logo" class="head-image" %}
 
 The need for one or two plugins to do their jobs required extra one or more CSS files to be included. At a point, I couldn't keep track of the assets being loaded. May not seem like something that matters much but it does in that it makes me stay balanced with pagespeed. Besides pagespeed, it is a good user experience to let my weblog load faster for the viewers.
 
@@ -31,8 +30,6 @@ All those things are what makes Jekyll awesome for me. I may be missing some thi
 I've been programming in Ruby lately and I find it interesting to use something that is from the Rubyist community even if it doesn't really require me to write Ruby code. Migrating from WordPress to Ruby took me just one day. And it was with the aid of an awesome [wordpress-to-jekyll-converter][2] tool. Next challenge I had was having my domain josephrex.me point to bl4ckdu5t.github.io where the blog actually lives on github.
 
 I created a CNAME file in the root of my github repository containing the domain name ```josephrex.me``` and had to create an A record with my domain registrar (godaddy) using [a guide from github help][3]. Godaddy provided me with an interface like below to set my new A records pointing to the github IP
-
-<img src="http://i.imgur.com/83bjuIx.png" alt="godaddy modal">
 
 Having a TTL of one hour, it took me a while to be able to see a change when a friend on a separate DNS provider that had never visited josephrex.me already could already see the change and tell me all the images in your blog posts are missing. Then I waited a little longer to see that myself. Jekyll doesn't have a fancy image uploader like WordPress does so I had to retrieve all my images from my Wordpress (the converter helped with that). And they are in a wp-contents folder in my jekyll blog to keep the images pointing at a right location.
 

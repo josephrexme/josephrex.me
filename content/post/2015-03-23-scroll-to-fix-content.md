@@ -9,7 +9,6 @@ url: /scroll-to-fix-content/
 Late last year, [Chris Coyier][1] addressed this on [CSS-Tricks][2] with illustrating images including GIF. In his solution to the problem, he had used [magic numbers][3] which he confirmed made his soluton not re-usable. He also wrote it in jQuery which may be nice considering that a lot of people use jQuery as it works on legacy browsers.
 
 <!--more-->
-{% image scrollfixcontent.png alt="Scroll-then-fix" class="head-image" %}
 
 The first issue I'll address here is that jQuery may be used by majority of web developers but not everyone does. To produce code that works in less time, I use jQuery to handle a lot of my freelance projects just to get the job done so fast. In this cases, performance is my least priority. I'm usually not trying to meet any performance budget even though I still take things like concatenation and minification very seriously. I maintain my blog here and I try my best possible to keep good performance. In total, I'm only having to use JavaScript to achieve about 6 things on my blog and I saw no need to load the whole jQuery library just to achieve those. I have chosen to go with vanilla JavaScript.
 
@@ -28,7 +27,7 @@ Now to avoid the use of magic numbers, I suggest the element that gets fixed is 
 {{< highlight javascript >}}
 /* Selecting the DOM element that'll be fixed */
 var wrap = document.getElementById('js-wrap');
-/* Get the top property which must have been set in 
+/* Get the top property which must have been set in
 the CSS and remove whatever units it has with parseInt */
 fixPoint = parseInt( getComputedStyle(wrap).getPropertyValue('top') );
 {{< / highlight >}}

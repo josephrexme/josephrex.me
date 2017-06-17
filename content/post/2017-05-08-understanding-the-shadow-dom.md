@@ -13,7 +13,7 @@ which to many appear only as simplification of process and better <abbr title="D
 <!--more-->
 
 <figure class="figure--fullwidth">
-{% image https://res.cloudinary.com/strich/image/upload/v1494252872/shadow-dom_owxzlx.jpg class="image" alt="Shadow DOM banner" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1494252872/shadow-dom_owxzlx.jpg" class="image" alt="Shadow DOM banner">
 </figure>
 
 [Modularity is confirmed an attribute of well written programs][1] and one of the goals for
@@ -29,7 +29,7 @@ A lot of us believe the [problem with CSS is that all its classes (and ids if yo
 
 If you happen to be using Sass nesting without a style lint to prompt for errors it wouldn't be long before you have this in your codebase:
 
-{{< highlight scss >}}
+```scss
 .block{
   &--myModifier{}
   &.i-like-messy-code{}
@@ -47,7 +47,7 @@ If you happen to be using Sass nesting without a style lint to prompt for errors
     }
   }
 }
-{{< / highlight >}}
+```
 
 I couldn't control myself so I made that a little worse than it should look but the point is human are prone to errors and there are times single underscores would be used, single hyphens would be used when trying to follow something like BEM.
 
@@ -64,7 +64,7 @@ shadow.innerHTML = '<span>This should appear!</span><style>span{ color: red}</st
 If you work with React, this is the `ReactDOM.render()` of shadow DOM.
 
 <figure class="figure--fullwidth">
-  {% image http://res.cloudinary.com/strich/image/upload/v1494275896/screenshot-shadow-dom_ay4top.png alt="Shadow DOM insertion" class="image" %}
+  <img src="http://res.cloudinary.com/strich/image/upload/v1494275896/screenshot-shadow-dom_ay4top.png" alt="Shadow DOM insertion" class="image">
   <figcaption>Shadow DOM on chrome 60</figcaption>
 </figure>
 
