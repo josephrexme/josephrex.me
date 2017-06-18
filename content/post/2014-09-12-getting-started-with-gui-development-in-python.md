@@ -219,7 +219,7 @@ I started by creating a new Main Window from the QtDesigner templates
 
 Next things will be to set the width, height, and geometry (location of the window by XY axis on screen). Also, we have to take note of the objectName because it is the way we call our objects in the program. This is done in the property edior
 
-<figure>
+<figure class="figure--fullwidth">
 <img src="https://res.cloudinary.com/strich/image/upload/v1497718072/snapshot10_rtxwwg.png" alt="Snapshot 10" class="image">
 </figure>
 
@@ -227,7 +227,7 @@ You can see my objectName is MainWindow and I have chosen to use a window of siz
 
 I could create my signal and slots right away from the designer like so:
 
-<figure>
+<figure class="figure--fullwidth">
 <img src="https://res.cloudinary.com/strich/image/upload/v1497718067/snapshot11_ci2vyo.png" alt="Snapshot 11" class="image">
 </figure>
 
