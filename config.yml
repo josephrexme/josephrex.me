@@ -22,6 +22,7 @@ params:
   enableRSS: true
   themeBuilder: true
   favicon: favicon.png # A file located in the static directory
+  logo: logo.png # Also located in static directory for logo
 
 social:
   facebook: https://facebook.com/josephrexme
@@ -33,4 +34,4 @@ social:
   stackoverflow: http://stackoverflow.com/users/2649933/joseph-rex?tab=profile
   pinterest: https://pinterest.com/josephrexme
   instagram: https://instagram.com/josephrexme
-  linkedin: https://www.linkedin.com/josephrexme
+  linkedin: https://www.linkedin.com/in/josephrexme
