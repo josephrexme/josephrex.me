@@ -10,6 +10,7 @@ tags:
 
 Have you found yourself telling someone it's not about the money? I guess that's something common with anyone passionate about what they do. Some years back I'd do anything I could do to get my hands on code even if all I'd get for it is a [cheap gift][1].
 <!--more-->
+
 Like so many people I was just interested in ways I could get better at what I do. But soon I realized I was making a big mistake. Why? you may ask. There's bills, rents, and food that needs to be taken care of and all of these have to be considered in the decisions we make. Sometimes our need for money/rewards may be beyond the mentioned.
 
 What was my big mistake? It's not what you assumed. My mistake wasn't in believing *it's not about the money* but it was that I wasn't doing anything towards fixing the money issues. Some people that are so-called *business-minded* will make you believe it is dumb to say it's not about the money. They'd give suggestions like you should start a company so you can buy yourself a Ferrari in 6 months and all sorts of similar things.
