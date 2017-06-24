@@ -41,6 +41,8 @@ Eye tracking and mouse tracking are the next steps. I have no idea how at the mo
 
 This blog uses [Barba.js][5] and it comes with a prefetch feature. There are other great solutions out there. You can see from the demo of [trial-js][6] how it monitors mouse interaction. [Callum Macrae][7] also wrote a brilliant one called [futurelink][8] that goes with a detailed [blog post and video demos][9].
 
+Futurelink even does better than prefetching on hover state. It studies the mouse navigation to detect the acceleration/decelaration towards a link hence it can start prefetching before the user hovers upon the link.
+
 With an understanding of [behavioral economics][10], we could predict more behavior change or foresee expected actions in users and take away inconveniences of product usability.
 
 [1]: https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/

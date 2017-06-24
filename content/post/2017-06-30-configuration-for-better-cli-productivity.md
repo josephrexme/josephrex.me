@@ -1,6 +1,6 @@
 ---
 date: 2017-06-21T04:18:30-05:00
-title: Configurations to improve productivity on the CLI
+title: Configurations for better CLI productivity
 url: /cli-productivity-configurations/
 draft: true
 tags:
