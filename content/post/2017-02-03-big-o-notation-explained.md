@@ -55,15 +55,15 @@ Also worth considering is that while O(c<sup>n</sup>) may look a lot like O(n<su
 
 Consider the JavaScript function here:
 
-{{< highlight javascript >}}
+```javascript
 const getCube = (n) => n ** 3
-{{< / highlight >}}
+```
 
 No matter what input (n) is passed to the getCube function it performs one simple function which is to find the cube root. However with a function like this:
 
-{{< highlight javascript >}}
+```javascript
 const getPowerofThree = (n) => 3 ** n
-{{< / highlight >}}
+```
 
 For the first example, we will always have `n * n * n` but with the second it could be `n * n * n * n * n ...... * n(1000th)` which would consume more computational time.
 
@@ -82,30 +82,31 @@ With space (Memory consumption) and Time (CPU time to run/execute) being often t
 If you are on macOS you'd notice that the activity monitor basically watches for these things in programs.
 
 <figure>
-{% image activity-monitor-macos.png alt="activity monitor macOS" class="image image--wide" %}
+<img src="https://res.cloudinary.com/strich/image/upload/v1498818330/activity-monitor-macos_cbgxqk.jpg" alt="activity monitor macOS" class="image image--wide">
 <figcaption>A macOS activity monitor</figcaption>
 </figure>
 
 ### Examples of the listed common notations
 **O(1)** as the slowest growing function can be found in simple cases like checking conditions.
-{{< highlight javascript >}}
+
+```javascript
 const input = true;
 const isTrue = (bool) => bool === true;
 bool(input);
-{{< / highlight >}}
+```
 
 Another example is the use of a dictionary/Hashmap to return a value based on its key as input:
 
-{{< highlight javascript >}}
+```javascript
 const getHex = (color) => {
   colorDictionary = {blue: '#00f', red: '#f00', green: '#0f0'}
   return colorDictionary[color];
 };
-{{< / highlight >}}
+```
 
 I could rewrite the getHex() function in an uglier code structure using massive ifs.
 
-{{< highlight javascript >}}
+```javascript
 const getHex = (color) => {
   let hex;
   if(color == 'blue'){
@@ -116,7 +117,7 @@ const getHex = (color) => {
     hex = '#0f0';
   }
 };
-{{< / highlight >}}
+```
 
 but note here that the operation remains a constant and the only difference is the brevity and neatness that comes with having it written as a Hashmap.
 
@@ -124,21 +125,21 @@ but note here that the operation remains a constant and the only difference is t
 
 Looking at a simple FizzBuzz solution where n = 100:
 
-{{< highlight javascript >}}
+```javascript
 const fizzBuzz = (n) => {
   for(let i = 0; i <= n; i++){
     let f = i % 3 == 0, b = i % 5 == 0;
     console.log(f ? b ? 'FizzBuzz' : 'Fizz' : b ? 'Buzz' : i);
   }
 }
-{{< / highlight >}}
+```
 
 A great way to think about the complexity of function is to consider how the time required to compute a function scales with larger inputs. In a order O(n) for example, the time for computation continually scales based on the input. We had 100 as the input (n) above. To write the same function for a input f(200), the time will increase linearly with the input growth.
 
 ### Sequence of statements
 In a function with condition blocks of different statement complexity, the total time is found by adding the times for all statements.
 
-{{< highlight javascript >}}
+```javascript
 function getHex(color){
   const colors = [['blue', '#00f'], ['red', '#f00'], ['green', '#0f0']];
   let hex;
@@ -151,7 +152,7 @@ function getHex(color){
   }
   return hex;
 }
-{{< / highlight >}}
+```
 
 ```
 Total time = time(first statement) + time(second statement) + .... + time(nth statement)
@@ -161,7 +162,7 @@ As the first block is O(1) and the second O(n) we get **O(1) + O(n)** which sums
 
 **O(n<sup>2</sup>)** unlike the linear complexity, takes twice the time to compute with a given input (n). We see this in nested loops. For a given O(n):
 
-{{< highlight javascript >}}
+```javascript
 const loop = (n) => {
   for(let i = 0; i < n; i++){
     console.log(i);
@@ -179,7 +180,7 @@ const loop = (n) => {
     }
   }
 }
-{{< / highlight >}}
+```
 
 which makes statements in the inner loop execute x * y times. The example nested loop above will execute 3 * 2 = 6 times. Hence a quadratic order O(n<sup>2</sup>).
 
@@ -187,7 +188,7 @@ with a deeper loop inception we get a faster growing polynomial notation O(n<sup
 
 **O(log(n))** logarithmic order is not common in simple programs but an example of it is a binary search. Here's a simple example in JavaScript
 
-{{< highlight javascript >}}
+```javascript
 const a = [1, 2, 4, 6, 1, 100, 0, 10000, 3];
 
 a.sort(function (a, b) {
@@ -214,7 +215,7 @@ const binarySearch = (arr, i) => {
 
 }
 binarySearch(a, 100);
-{{< / highlight >}}
+```
 
 [Binary Search Example Source][6]
 [Visual binary search operation][11]
