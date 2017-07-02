@@ -168,11 +168,11 @@ const loop = (n) => {
     console.log(i);
   }
 }
-{{< / highlight >}}
+```
 
 when an inner loop is provided, for every loop of x there's y number of loops.
 
-{{< highlight javascript >}}
+```javascript
 const loop = (n) => {
   for(let x = 1; x <= n; x++){
     for(let y = 1; y <= (n - 1); y++){
