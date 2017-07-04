@@ -10,9 +10,10 @@ tags:
   - ctags
   - hammerspoon
   - zsh
+  - say
 ---
 
 About 2 years ago I loved nothing more than Sublime Text as my development environment. I even paid the $75 to purchase its license and I tweaked the heck out of it. With emmet, some decent plugins, and some nifty snippets I considered my workflow a very productive one.
 
-The
+The people are amazing
 
