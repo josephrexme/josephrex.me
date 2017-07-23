@@ -11,7 +11,16 @@ googleAnalytics: UA-56161232-2
 disqusShortname: josephrexme
 disablePathToLower: true
 pygmentsstyle: paraiso-dark
-rssuri: feed.xml
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: feed
 
 params:
   name: Joseph Rex

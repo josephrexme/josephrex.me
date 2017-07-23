@@ -1,6 +1,7 @@
 ---
 author: Joseph Rex
-title:
+title: {{ replace .TranslationBaseName "-" " " | title }}
+date: {{ .Date }}
 url:
 draft: true
 tags:
