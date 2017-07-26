@@ -41,7 +41,7 @@ Some examples of 30 day challenges like this that I find fascinating are [thirty
 
 The other kind of challenge I relish has less rush and offers a chance for accuracy but doesn't enforce that. I was privileged to find [creative coding club][7] and it's been so great for me. It's one challenge at a time which spans the period of a month. Sometimes I end up doing nothing at all but I still learn while trying to do something and when I can, I put in my effort and making something I'd be proud of. I also recently discovered [loopdeloop][8] which I might explore in the future to stretch my muscles on animation.
 
-I'm love 3D and since I signed up for [sketchfab][9] and [artstation][10], I've been itching to put some character models on them. Hopefully I'd find a 3D challenge soon or I might just make one for myself like I personally have a track for learning web animations at the moment.
+I love 3D and since I signed up for [sketchfab][9] and [artstation][10], I've been itching to put some character models on them. Hopefully I'd find a 3D challenge soon or I might just make one for myself like I personally have a track for learning web animations at the moment.
 
 I might still get around doing katas but I don't have so many hours in a day to give at this time of my life. I still have to give some of my time to [reading books I cherish][11]. I hope this helps anyone looking to stay fit at creative work.
 
