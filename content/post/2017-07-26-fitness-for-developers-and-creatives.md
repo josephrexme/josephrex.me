@@ -19,7 +19,7 @@ and as a fan of his works I hastily replied without much thought.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Warm ups would be code katas (cardios) and side projects (weight lifting)</p>&mdash; Joseph Rex (@josephrexme) <a href="https://twitter.com/josephrexme/status/884501159129624577">July 10, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-It didn't end there for me. I started thinking through my reply and asking if that myself if that really feels like workout for me. I joined [exercism][1] and I've not been so consistent. I really do want to give more time to it and maybe [codewars][2] as well but here's the reason I can't do that now.
+It didn't end there for me. I started thinking through my reply and asking myself if that really feels like workout for me. I joined [exercism][1] and I've not been so consistent. I really do want to give more time to it and maybe [codewars][2] as well but here's the reason I can't do that now.
 
 I've been developing software for 5 years and I've mostly made things I can't make reference to. After realization I started trying to improve that. Putting more on dribbble, making more contributions to open source, putting more demos out to codepen. I consider myself a creative technologist so these are the things I need to do to prove I'm what I am.
 
