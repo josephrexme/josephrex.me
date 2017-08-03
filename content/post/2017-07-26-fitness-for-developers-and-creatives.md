@@ -37,7 +37,7 @@ The answer to that was challenges. I'd recently started [#ThirtyLogos][3] and it
 
 Challenges that target 100 days also feel like too much to do. How do I stay on a challenge for 100 days and not get interrupted? Not like I can't focus but things could come up in my life that'd require me to put it aside. Then that'd really hurt my brain to know I started something I couldn't finish. For this, I'm totally digging challenges that are centered around 30 days. It's the best thing ever. Yeah do one thing for 30 days and you'd see yourself get better at it. If you're still at it by day 18 you could already see the differences from day 1. And you're over halfway done so you know it's going to end and you can tell yourself let's put in a little more effort to see this done.
 
-Some examples of 30 day challenges like this that I find fascinating are [thirtylogos.com][4], [thirtyui.com][5], [javascript30][6]. But they aren't the only kind of challenges I engage in for my creative fitness. While most of them may suggest you go at your own pace rather than really trying to make something every single day, you don't want to have so many pending else you might just give up on trying. That makes this challenges about speed and consistency.
+Some examples of 30 day challenges like this that I find fascinating are [thirtylogos.com][4], [thirtyui.com][5], [javascript30][6], [dailycssimages][12]. But they aren't the only kind of challenges I engage in for my creative fitness. While most of them may suggest you go at your own pace rather than really trying to make something every single day, you don't want to have so many pending else you might just give up on trying. That makes this challenges about speed and consistency.
 
 The other kind of challenge I relish has less rush and offers a chance for accuracy but doesn't enforce that. I was privileged to find [creative coding club][7] and it's been so great for me. It's one challenge at a time which spans the period of a month. Sometimes I end up doing nothing at all but I still learn while trying to do something and when I can, I put in my effort and making something I'd be proud of. I also recently discovered [loopdeloop][8] which I might explore in the future to stretch my muscles on animation.
 
@@ -56,3 +56,4 @@ I might still get around doing katas but I don't have so many hours in a day to 
 [9]: https://sketchfab.com
 [10]: https://www.artstation.com
 [11]: /reading-list
+[12]: http://dailycssimages.com/
