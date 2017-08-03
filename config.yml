@@ -32,6 +32,8 @@ params:
   themeBuilder: true
   favicon: favicon.png # A file located in the static directory
   logo: logo.png # Also located in static directory for logo
+  banner: https://res.cloudinary.com/strich/image/upload/v1501762952/banner_zblgpl.png # Used for opengraph
+  themeColor: #b30950
 
 social:
   facebook: https://facebook.com/josephrexme

@@ -8,7 +8,7 @@ date: 2014-04-04T00:00:00Z
 
 I am <span itemprop="name">Joseph Rex</span> (aka <span itemprop="nickname">silverdust</span>). I write software, articles, and I design. I work with Ruby and JavaScript. Recently been exploring animations/motion graphics especially on the web and a little outside the web. I've always loved building interfaces so [I have old projects with interfaces that aren't web based][7] and I reviewed a [GUI book][19] for [packt pub][20].
 
-<span itemprop="url">[strich.io][5]</span> is my portfolio website, I have some front-end experiments on [codepen][8], my designs are on [dribbble][9], and my OSS contributions on [Github][10]. I sporadically smash my rants on [twitter][11], I used to write on security for [Infosec Institute][13] and now I write for [X-Team][14].
+I have some front-end experiments on [codepen][8], my designs are on [dribbble][9], and my OSS contributions on [Github][10]. I sporadically smash my rants on [twitter][11], I used to write on security for [Infosec Institute][13] and now I write for [X-Team][14].
 
 I also play basketball and root for the [bucks][1].
 
