@@ -1,12 +1,12 @@
 ---
 author: Joseph Rex
 title: The power of reduced browser tabs
-date: 2017-08-07T18:37:23-05:00
+date: 2017-08-08T09:39:25-05:00
 url: /the-power-of-reduced-browser-tabs/
-draft: true
 tags:
   - opinions
 ---
+
 A developer with many browser tabs open is a cliche. It feels inevitable to have opened tabs for articles, demos, or tools, especially in the web industry where everything is always changing and there's usually new things to learn about.
 <!--more-->
 
