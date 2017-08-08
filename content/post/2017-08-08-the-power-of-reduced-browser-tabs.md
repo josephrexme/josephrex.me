@@ -43,7 +43,7 @@ The first way to organize your bookmarks is by deciding what doesn't go in there
 
 As shown in the figure I have groups for my bookmarks and while any browser can do this, I love the aesthetic with Safari. There are however some content that wouldn't go in those bookmarks because my brain works fine to an extent. An example is this [article about JavaScript delete][8] I was recently reading. Everything in its title makes it rememberable enough for me if I ever need to reference it. A simple web search would get me to it. I also found a really interesting post on imgur recently and I could have it bookmarked to imgur by adding it to my capacious favorites. There are other systems like this that have built-in bookmarks even if they don't call it that.
 
-By using these techniques you can unclutter your primary bookmarks and have it keep the things that matter most. Those you'd always remember to go back to if you have to.
+By using these techniques you can declutter your primary bookmarks and have it keep the things that matter most. Those you'd always remember to go back to if you have to.
 
 ### The power of saying NO
 Saying **NO** this time [not to humans][3] but to articles. Evaluate an article and determine if it's worth your reading time. Skim for information if all you need is a bit of information from it and close it. <span class="highlight">Maybe this article also wasn't worth your time and you just wasted minutes of your life reading it</span> and maybe not. You're not mandated to read everything you open or see, so have some discipline around that and you'd have a happier browser life.
