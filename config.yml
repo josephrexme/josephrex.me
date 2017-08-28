@@ -11,6 +11,7 @@ googleAnalytics: UA-56161232-2
 disqusShortname: josephrexme
 disablePathToLower: true
 pygmentsstyle: paraiso-dark
+RSSLink: feed.xml
 
 outputs:
   home:
