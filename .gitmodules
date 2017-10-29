@@ -2,3 +2,6 @@
 	path = themes/windener
 	url = https://github.com/josephrexme/windener
 	branch = master
+[submodule "themes/connoisseur"]
+	path = themes/connoisseur
+	url = https://github.com/josephrexme/connoisseur
