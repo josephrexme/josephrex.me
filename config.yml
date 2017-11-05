@@ -3,7 +3,7 @@ baseurl: https://josephrex.me/
 themesDir: ./themes/
 languageCode: en-us
 metaDataFormat: yaml
-title: Joseph Rex's blog - Exploring Software, Food recipes, and Design
+title: Joseph Rex's website - Portfolio, Resume, Designs, and Publications
 theme: connoisseur
 # Enter your tracking code to enable Google Analytics
 googleAnalytics: UA-56161232-2
@@ -26,8 +26,8 @@ outputFormats:
 
 params:
   name: Joseph Rex
-  description: Ramblings on design, code, fitness and food by Joseph Rex
-  bio: Design, Code, Fitness and Food
+  description: Articles, Designs, Animations, and Projects by Joseph Rex
+  bio: creative technologist and AI enthusiast
   email: joseph\*\*at\*\*strichio
   profile: https://josephrex.me/about-me
   enableRSS: true
