@@ -11,6 +11,7 @@ tags:
 
 This is one of the posts I hesitate to write about because I feel there's too many blog authors that have already written on it. The concept of lazy loading is majorly for performance reasons and it is welcomed on various aspects of technology. However its use in this case is majorly for aesthetics purpose as it doesn't improve performance in any way. I decided to write this after seeing that many solutions to this are written in jQuery.
 <!--more-->
+
 With much we can do using JavaScript these days and browser compatibility with recent browsers including IE9+, the purpose of jQuery is being served by our [vanillaJS][1]. If so, why waste an additional [242.55 Kb (minified 82.27Kb)][2] on HTTP request making your [users suffer][3] long page loads? There are [so many][4] [interesting][5] [write-ups][6] [on why jQuery][7] [is not needed][8] [anymore][9] so I wouldn't need to dive into that here.
 
 To achieve this we need:

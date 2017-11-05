@@ -10,11 +10,11 @@ url: /big-o-notation-explained/
 ---
 
 The big O notation (also asymptotic notation) helps determine how a function may decline or scale with a larger set of inputs (n). According to [Wikipedia][1],
+<!--more-->
 
 > It is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity
 > <cite>Wikipedia</cite>
 
-<!--more-->
 Its role in helping decide how a program/function can scale is why it's important for software writers to have a proper understanding of it. Unfortunately, people ignore the basics of computer science as soon as they understand the syntax of a language they program in. Even worse, developers do not think of future failure possibilities of code they've written as long as it works in the moment they need it. Most people have abused the term MVP (Minimum Viable Product) to describe the [big ball of mud][2] they write.
 
 The big O is derived from the word "Order" which is the rate of growth of a function in computer science and there's also a little o (another landau's symbol) which has its applications in math.

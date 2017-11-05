@@ -1,5 +1,5 @@
 ---
-type: page
+type: portfolio
 title: Home
 description: Something here
 ---

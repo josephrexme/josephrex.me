@@ -11,9 +11,9 @@ tags:
 ---
 
 I started writing Sass not too long ago and it has been one of the best experiences I've had. Sass (Syntatically Awesome Stylesheet) is just as awesome as the name sounds.
+<!--more-->
 
 Sass is a CSS predecessor that gives smart designers a lot more flexibility with the styling. New features are being added to Sass and with contributions of the Google team, it's getting even faster than you can imagine. This [talk by Chris Eppstein][1] reveals the work in progress.
-<!--more-->
 
 Some of the common things that can be done with Sass are
 

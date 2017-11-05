@@ -13,6 +13,7 @@ tags:
 
 Last month (December 2014), I started developing a new GUI steganography software after building a [simple steganography tool][1] for my [post at Infosec Institue][2]. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
 <!--more-->
+
 <figure class="figure--fullwidth">
 <img src="https://res.cloudinary.com/strich/image/upload/v1497699088/failed-stego_ljqwy6.jpg" class="image" alt="stego girl">
 </figure>
@@ -24,64 +25,64 @@ From my analysis as done on the infosec [article][2], most JPEG file formats hav
 {{< highlight python >}}
 import sys, re, binascii, string
 def gethex(image):
-	f = open(image, 'rb')
-	data = f.read()
-	f.close()
-	hexcode = binascii.hexlify(data)
-	return hexcode
+  f = open(image, 'rb')
+  data = f.read()
+  f.close()
+  hexcode = binascii.hexlify(data)
+  return hexcode
 {{< / highlight >}}
 
 Every steganography tool performs two main functions which are **embed** and **extract**. Before file is embeded, it checks to see if there is any extra data after the usual JPEG or PNG tail hex values
 
 {{< highlight python >}}
 def extradatacheck(data, type):
-	if type == 'png':
-		pattern = r'(?<=426082)(.*)'
-	elif type == 'jpg':
-		pattern == r'(?<=FFD9)(.*)'
-	match = re.search(pattern, data)
-	if match:
-		return match.group(0)
-	else:
-		false
+  if type == 'png':
+    pattern = r'(?<=426082)(.*)'
+  elif type == 'jpg':
+    pattern == r'(?<=FFD9)(.*)'
+  match = re.search(pattern, data)
+  if match:
+    return match.group(0)
+  else:
+    false
 {{< / highlight >}}
 
 The embed function
 
 {{< highlight python >}}
 def embed(embedFile, coverFile, stegFile):
-	filetype = coverFile[-3:]
-	stegtype = stegFile[-3:]
-	if filetype != 'png' and filetype != 'jpg':
-		print 'Invalid format'
-	elif filetype != stegtype:
-		print 'Output file has to be in the same format as cover image (%s)' % string.swapcase(filetype)
-	else:
-		data = open(embedFile, 'r').read()
-		info = gethex(coverFile)
-		if extradatacheck(info, filetype):
-			print 'File already contains embedded data'
-		else:
-			info += data.encode('hex')
-			f = open(stegFile, 'w')
-			f.write(binascii.unhexlify(info))
-			f.close()
-			print 'Storing data to', stegFile
+  filetype = coverFile[-3:]
+  stegtype = stegFile[-3:]
+  if filetype != 'png' and filetype != 'jpg':
+    print 'Invalid format'
+  elif filetype != stegtype:
+    print 'Output file has to be in the same format as cover image (%s)' % string.swapcase(filetype)
+  else:
+    data = open(embedFile, 'r').read()
+    info = gethex(coverFile)
+    if extradatacheck(info, filetype):
+      print 'File already contains embedded data'
+    else:
+      info += data.encode('hex')
+      f = open(stegFile, 'w')
+      f.write(binascii.unhexlify(info))
+      f.close()
+      print 'Storing data to', stegFile
 {{< / highlight >}}
 
 The function ends up converting the manipulated hex back to ASCII and writes to the new output file. The extract function performs the same check for appended data after regular tails and converts found data to ASCII if found
 
 {{< highlight python >}}
 def extract(stegFile, outFile):
-	filetype = stegFile[-3:]
-	data = gethex(stegFile)
-	if extradatacheck(data, filetype):
-		store = open(outFile, 'w')
-		store.write( binascii.unhexlify(extradatacheck(data, filetype)) )
-		store.close()
-		print 'Extracted data stored to', outFile
-	else:
-		print 'File has no embedded data in it'
+  filetype = stegFile[-3:]
+  data = gethex(stegFile)
+  if extradatacheck(data, filetype):
+    store = open(outFile, 'w')
+    store.write( binascii.unhexlify(extradatacheck(data, filetype)) )
+    store.close()
+    print 'Extracted data stored to', outFile
+  else:
+    print 'File has no embedded data in it'
 {{< / highlight >}}
 
 The program achieved its objective which is the Steganography process but the sophistication level was 10%. Not good enough I thought. Oh! It wasn't just me, [Daniel Lerch][4] thought the same too
@@ -115,64 +116,64 @@ from Crypto.Cipher import AES
 from Crypto import Random
 
 def embed(file, text, key, output = 'output.jpg'):
-	#==== Using GPG  ====
-	gpg = gnupg.GPG()
-	cipher = gpg.encrypt(text, recipients=None, symmetric='AES256', passphrase=key, armor=True)
-	ctext = hashlib.md5( str(cipher) ).hexdigest()
-	#==== Using AES ====
-	#iv = Random.new().read(AES.block_size)
-	#cipher = AES.new(key, AES.MODE_CFB, iv)
-	#ctext = hashlib.md5( iv + cipher.encrypt(text) ).hexdigest()
+  #==== Using GPG  ====
+  gpg = gnupg.GPG()
+  cipher = gpg.encrypt(text, recipients=None, symmetric='AES256', passphrase=key, armor=True)
+  ctext = hashlib.md5( str(cipher) ).hexdigest()
+  #==== Using AES ====
+  #iv = Random.new().read(AES.block_size)
+  #cipher = AES.new(key, AES.MODE_CFB, iv)
+  #ctext = hashlib.md5( iv + cipher.encrypt(text) ).hexdigest()
 
-	ctexthex = binascii.hexlify( ctext )
-	ctextbin = bin( int(ctexthex, 16) )[2:]
-	print len(ctextbin)
-	try:
-		f = open(file, 'r')
-		filebin = f.read()
-		hexdata = binascii.hexlify(filebin)
-		# tuples of each byte in hex
-		bytesTuple = zip(hexdata[::2], hexdata[1::2])
-		# list of every byte in hexadecimal
-		bytes = [''.join(tuple) for tuple in bytesTuple]
-		# split bytes into two keeping first segment untouched to avoid metadata tampering
-		byteDivisor = len(bytes) / 2
-		byteSegment1, byteSegment2 = bytes[:byteDivisor], bytes[byteDivisor:]
-		print 'Segment 2 length: '+ str(len(byteSegment2))
-		for i in range( len(ctextbin) ):
-			# modifying the LSB
-			binary = bin(int( byteSegment2[i], 16) )[:-1] + ctextbin[i]
-			hexback = hex(int(binary, 2))[2:] if len(hex(int(binary, 2))[2:]) == 2 else '0' + hex(int(binary, 2))[2:]
-			byteSegment2[i] = hexback
-		# rejoin both byte segments
-		bytes = byteSegment1 + byteSegment2
-		# converting bytes list back to string
-		mergehex = ''
-		for byte in bytes:
-			mergehex += byte
-		rawbin = binascii.unhexlify(mergehex)
-		outdata = open(output, 'w')
-		outdata.write(rawbin)
-	except IOError:
-		print "Failed to locate file"
+  ctexthex = binascii.hexlify( ctext )
+  ctextbin = bin( int(ctexthex, 16) )[2:]
+  print len(ctextbin)
+  try:
+    f = open(file, 'r')
+    filebin = f.read()
+    hexdata = binascii.hexlify(filebin)
+    # tuples of each byte in hex
+    bytesTuple = zip(hexdata[::2], hexdata[1::2])
+    # list of every byte in hexadecimal
+    bytes = [''.join(tuple) for tuple in bytesTuple]
+    # split bytes into two keeping first segment untouched to avoid metadata tampering
+    byteDivisor = len(bytes) / 2
+    byteSegment1, byteSegment2 = bytes[:byteDivisor], bytes[byteDivisor:]
+    print 'Segment 2 length: '+ str(len(byteSegment2))
+    for i in range( len(ctextbin) ):
+      # modifying the LSB
+      binary = bin(int( byteSegment2[i], 16) )[:-1] + ctextbin[i]
+      hexback = hex(int(binary, 2))[2:] if len(hex(int(binary, 2))[2:]) == 2 else '0' + hex(int(binary, 2))[2:]
+      byteSegment2[i] = hexback
+    # rejoin both byte segments
+    bytes = byteSegment1 + byteSegment2
+    # converting bytes list back to string
+    mergehex = ''
+    for byte in bytes:
+      mergehex += byte
+    rawbin = binascii.unhexlify(mergehex)
+    outdata = open(output, 'w')
+    outdata.write(rawbin)
+  except IOError:
+    print "Failed to locate file"
 
 def extract(file, key, output = 'output.txt'):
-	try:
-		f = open(file, 'r')
-		filebin = f.read()
-		hexdata = binascii.hexlify(filebin)
-		bytesTuple = zip(hexdata[::2], hexdata[1::2])
-		bytes = [''.join(tuple) for tuple in bytesTuple]
-		byteDivisor = len(bytes) / 2
-		byteSegment1, byteSegment2 = bytes[:byteDivisor], bytes[byteDivisor:]
-		dataBytes = byteSegment2[:32] # md5 data occupied 32 chars
-		mergehex = ''
-		for byte in dataBytes:
-			mergehex += byte
-		f = open(output, 'w')
-		f.write( binascii.unhexlify(mergehex) )
-	except IOError:
-		print 'Failed to locate file'
+  try:
+    f = open(file, 'r')
+    filebin = f.read()
+    hexdata = binascii.hexlify(filebin)
+    bytesTuple = zip(hexdata[::2], hexdata[1::2])
+    bytes = [''.join(tuple) for tuple in bytesTuple]
+    byteDivisor = len(bytes) / 2
+    byteSegment1, byteSegment2 = bytes[:byteDivisor], bytes[byteDivisor:]
+    dataBytes = byteSegment2[:32] # md5 data occupied 32 chars
+    mergehex = ''
+    for byte in dataBytes:
+      mergehex += byte
+    f = open(output, 'w')
+    f.write( binascii.unhexlify(mergehex) )
+  except IOError:
+    print 'Failed to locate file'
 
 
 filename = raw_input("Enter the name of the file:")

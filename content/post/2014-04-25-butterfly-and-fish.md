@@ -9,12 +9,12 @@ tags:
   - unix
 ---
 
-I recently stumbled upon butterfly on <http://paradoxxxzero.github.io/2014/02/28/butterfly.html> and it is a really awesome web browser shell execution program written in python. It's not like it's the first of it's kind. There are others like:
+I recently stumbled upon butterfly on [here](http://paradoxxxzero.github.io/2014/02/28/butterfly.html) and it is a really awesome web browser shell execution program written in python. It's not like it's the first of it's kind. There are others like:
+<!--more-->
 
 [ajaxterm][2] and [anyterm][3]
 
 They are also good but development has stopped on them and I don't think they are better than butterfly. Ajaxterm was adapted from anyterm and there have been no new commits since 2011.
-<!--more-->
 
 Why should you use butterfly?
 
