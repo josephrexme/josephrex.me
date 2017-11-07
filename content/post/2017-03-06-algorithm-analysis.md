@@ -1,6 +1,7 @@
 ---
 author: Joseph Rex
 comments: true
+math: true
 date: 2017-03-06T00:00:00Z
 tags:
   - algorithms
