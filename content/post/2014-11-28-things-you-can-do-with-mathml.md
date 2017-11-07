@@ -1,6 +1,7 @@
 ---
 author: Joseph Rex
 comments: true
+math: true
 date: 2014-11-28T00:00:00Z
 title: Things you can do with MathML
 url: /things-you-can-do-with-mathml/
