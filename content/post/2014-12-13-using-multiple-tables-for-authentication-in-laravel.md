@@ -12,6 +12,7 @@ tags:
 ---
 
 Laravel provides a good authentication handler with the Auth class. To authenticate a user attempting to log in, we use the attempt method like so:
+<!--more-->
 
 {{< highlight php >}}
 <?php
@@ -23,7 +24,6 @@ if (Auth::attempt(array('email' => $email, 'password' => $password)))
 {{< / highlight >}}
 
 That's just as it is <a href="http://laravel.com/docs/4.2/security#authenticating-users" target="_blank">in the docs</a>. But this checks against the users table which is fine because most apps have a users table for authentication. I've never had a need to build something requiring more tables for authentication but I had someone requesting for a solution to this and I was really interested in getting this to work.
-<!--more-->
 
 If you don't already have a <a title="Create a helpers file" href="http://laravel-recipes.com/recipes/50/creating-a-helpers-file" target="_blank">helpers file</a>, create one. I made this neat little facade-style function for you to replace with Auth::attempt.
 
