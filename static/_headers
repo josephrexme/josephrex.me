@@ -1,0 +1,8 @@
+/*
+  Link: </css/app.css>; rel=preload; as=stylesheet
+
+/design
+  Link </img/darthvader.jpg>; rel=preload; as=image
+  Link </img/deadbeat.jpg>; rel=preload; as=image
+  Link </img/fast.jpg>; rel=preload; as=image
+  Link </img/sparked.jpg>; rel=preload; as=image
