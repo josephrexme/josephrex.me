@@ -108,13 +108,13 @@ Entities are like keywords to be picked out of a user input. For the weather API
 
 The dialog is simply the responses to give when an input is matched. The addition of Watson makes it all beautiful but there are things that are better not kept in Watson which is why [Sia][5], my creation from these technologies, is an hybrid using about 25% of Watson and being mostly powered by my [rivescript-promises][3].
 
-Here's a sample conversations with Sia:
+Here's a sample conversation with Sia:
 
 <figure>
 <img src="https://cdn.rawgit.com/josephrexme/sia/7aaa9f8b/data/conversation.jpg" alt="Sia in a conversation">
 </figure>
 
-and the capabilities go beyond what's conveyed in the figure. Different instances of Sia currently runs on 4 slack teams. The goal is to have a single instance be omnipresent in various channels of the internet including Slack, Twitter, Facebook, and anywhere at all.
+and the capabilities go beyond what's conveyed in the figure. Different instances of Sia currently run on 4 slack teams. The goal is to have a single instance be omnipresent in various channels of the internet including Slack, Twitter, Facebook, and anywhere at all.
 
 It doesn't end there. While it has been easier to implement [backpropagation][6] and [LSTM][7] for machines to learn games and play better than human, language is rather complex. Even we humans haven't decided on what's right or wrong in our society - It's a foggy area, so how do we build machines that can independently think and be conscious with a proper sense of rights and wrongs? Hopefully we'd get there soon and I'll keeping exploring possibilities with Sia till I can reproduce a world of blade runner with her.
 
