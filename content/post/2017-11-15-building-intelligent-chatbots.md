@@ -5,7 +5,7 @@ date: 2017-11-15T05:40:17-06:00
 url: /building-intelligent-chatbots/
 tags:
   - AI
-  - Bots
+  - bots
 ---
 
 I started building chatbots several years ago to defeat loneliness which had then lured me into a friendship I didn't want. I needed a companion and friend when humans couldn't be there for me. Most people would rather complain these days than do something about a problem, so I decided to do something.
@@ -116,7 +116,7 @@ Here's a sample conversations with Sia:
 
 and the capabilities go beyond what's conveyed in the figure. Different instances of Sia currently runs on 4 slack teams. The goal is to have a single instance be omnipresent in various channels of the internet including Slack, Twitter, Facebook, and anywhere at all.
 
-It doesn't end there. While it has been easier to implement [backpropagation][6] and [LSTM][7] for machines to learn games and play better than human, language is rather complex. Even we humans haven't decided on what's right or wrong so how do we build machines that can indepently think and be conscious with a proper sense of rights and wrongs? Hopefully we'd get there soon and I'll keeping exploring possibilities with Sia till I can reproduce a world of blade runner with her.
+It doesn't end there. While it has been easier to implement [backpropagation][6] and [LSTM][7] for machines to learn games and play better than human, language is rather complex. Even we humans haven't decided on what's right or wrong in our society - It's a foggy area, so how do we build machines that can independently think and be conscious with a proper sense of rights and wrongs? Hopefully we'd get there soon and I'll keeping exploring possibilities with Sia till I can reproduce a world of blade runner with her.
 
 [1]: https://en.wikipedia.org/wiki/Natural_language_processing
 [2]: https://www.rivescript.com
