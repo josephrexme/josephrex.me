@@ -23,7 +23,7 @@ In a [recent article I talked about container queries][3] and how [eqcss][4] is 
 
 For some other possible houdini extensions in the wild there's [hitch][7] that lets you create your own custom selectors, [glitter][8] which goes a step further from CSS custom properties (or CSS variables) to let you define operations on properties. Some of these things are already achievable with preprocessors but here's how glitter may handle style extension:
 
-{{< highlight scss >}}
+```scss
 .pod{
   color: blue; /* #00f */
   --color-filter: inverse(); /* Produces #f00 red */
@@ -32,15 +32,15 @@ For some other possible houdini extensions in the wild there's [hitch][7] that l
   color: papayawhip;
   --color-filter: darken(10%);
 }
-{{< / highlight >}}
+```
 
 and if you hate deriving rgb() values of hex colors when you want to add translucency with an alpha channel you can simply do that like Sass already does:
 
-{{< highlight scss >}}
+```scss
 .pod{
   color: rgba(midnightblue, .5);
 }
-{{< / highlight >}}
+```
 
 With these and more in the [current spec][9] it's obvious that houdini is worth looking forward to and passing on ideas to.
 

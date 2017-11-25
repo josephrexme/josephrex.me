@@ -55,11 +55,11 @@ Well [good news everyone][8], CSS-modules solves this problem and even though it
 
 The shadow DOM tackles this problem exactly and more. It offers a way to encapsulate components as part of [web components][9]. Here's an example
 
-{{< highlight javascript >}}
+```javascript
 const parent = document.querySelector('.root');
 const shadow = parent.attachShadow({mode: 'open'});
 shadow.innerHTML = '<span>This should appear!</span><style>span{ color: red}</style>';
-{{< / highlight >}}
+```
 
 If you work with React, this is the `ReactDOM.render()` of shadow DOM.
 
@@ -68,10 +68,11 @@ If you work with React, this is the `ReactDOM.render()` of shadow DOM.
   <figcaption>Shadow DOM on chrome 60</figcaption>
 </figure>
 
-As shown in the figure above, the shadow root can take its own style that applies to that particular component only. Not messing with the rest of the DOM. Best part is the shadow node also doesn't take the styles of whatever parent elements it has since it is an external and detached DOM from the regular DOM. To make it take its parent styles you'd have to explicitly tell it to:
-{{< highlight javascript >}}
+As shown in the figure above, the shadow root can take its own style that applies to that particular component only. Not messing with the rest of the DOM. Best part is the shadow node also doesn't take the styles of whatever parent elements it has since it is an external and detached DOM from the regular DOM. To make it take its parent styles you'd have to explicitly tell it to
+
+```javascript
 shadow.applyAuthorStyles = true;
-{{< / highlight >}}
+```
 
 If you've ever looked through the DOM when using 3rd party libraries like modals, datepickers, and whatever cool stuff you use on your websites, you'd notice some massive additions into the DOM by them. These library authors are very much aware of the CSS cascading problems so they try to increase specificity of whatever they add. In most situations, direct inline elements are added but imagine there's a library author that decides to add classes and pass a `<style>` tag with the DOM insertions. The library has a class `.pod{ color: red !important }` and in your code you've been trying a `.pod{ color: papayawhip }` that doesn't seem to be working. This is the kind of clash that happens when you have everyone peeing in the DOM. ShadowDOM gives every library author their own bathroom.
 

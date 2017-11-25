@@ -67,7 +67,7 @@ This module syntax is meant to just act like the ampersand (`&`) concatenation. 
 
 The biggest concern with this scoping for `@extend` and when you think of it, it is no concern at all. Or I could be missing something and be totally wrong but the way I think of this is that `@extend` only works in the same file/module/partial and if that's the case, extend operation is performed across the classes before the concatenation happens so if
 
-{{< highlight scss >}}
+```scss
 @module 'my-namespace';
 
 .foo{
@@ -77,24 +77,24 @@ The biggest concern with this scoping for `@extend` and when you think of it, it
   @extend .foo;
   background: white;
 }
-{{< / highlight >}}
+```
 
 we get the resulting CSS:
 
-{{< highlight css >}}
+```css
 .my-namespace__foo, .my--namespace__bar{
   color: tomato;
 }
 .my-namespace__bar{
   background: white;
 }
-{{< / highlight >}}
+```
 
 <hr>
 
 But Chris mentioned that the module system to be expected in Sass version 4 is heavily inspired by [dart][11]'s module system and its initial design phase is complete which means all of this may never actually come true. From Chris' statement from the [Sass team AMA][10] I derived that modules would act somewhat like mixins when imported. So here's what dart syntax looks like:
 
-{{< highlight dart >}}
+```dart
 import 'package:angular2/angular2.dart';
 import 'hero.dart';
 @Component(
@@ -114,24 +114,24 @@ class HeroDetailComponent {
   @Input()
   Hero hero;
 }
-{{< / highlight >}}
+```
 
 With a library prefixed with `package:` in the import statement and for a local module within the file system the prefix is not required. That's like we already have in SCSS now except we don't have to specify extension.
 
 It also have the following syntax for importing modules:
 
-{{< highlight dart >}}
+```dart
 // import entire module with a namespace prefix
 import 'first.dart' as myModule;
 // import only foo from module
 import 'first.dart' show foo;
 // import everything except foo
 import 'first.dart' hide foo;
-{{< / highlight >}}
+```
 
 This is definitely great and better than the earlier suggested `import 'file' 'myNamespace'` but how does it get used when imported? Since they are meant to work like mixins my thought is they should be in the following format instead of an automatic concatenation:
 
-{{< highlight scss >}}
+```scss
 import 'components' show button;
 
 @include button{
@@ -139,7 +139,7 @@ import 'components' show button;
     background: skyblue;
   }
 }
-{{< / highlight >}}
+```
 
 compiling to the following CSS `.button__primary{ background: skyblue }`. But these are all speculations and not even standard ones at that so I'm glad this is being worked on for version 4 and I look forward to it because now is the time Sass really needs to join the league of making CSS more maintainable.
 
