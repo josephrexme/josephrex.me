@@ -1,7 +1,7 @@
 ---
 title: Reading List
 author: Joseph Rex
-type: page
+type: life
 permalink: /reading-list/
 ---
 Here's a list of books I've read and will be reading:
