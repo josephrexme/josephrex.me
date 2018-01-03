@@ -10,17 +10,18 @@ Here's a list of books I've read and will be reading:
 - Pride and Prejudice - Jane Austen
 - Treasure Island - Robert Louis Stevenson
 - [Kon-Tiki][7] - Thor Heyerdahl
-- <del>Nice girls don't get rich</del>
+- <del>Nice girls don't get rich - Lois P. Frankel</del>
+- Bossy Pants - Tina Fey
 
 <hr>
 
 - <del>The Design of Everyday Things - Don Norman</del>
 - <del>RiceTea - Julien McArdle</del>
-- <del>CSS Secrets - Lea Verou</del>
 - Ghost in the wires - Kevin Mitnick
 - Art of Intrustion - Kevin Mitnick
+- Don't shoot the dog - Karen Pryor
 - <del>Art of Deception - Kevin Mitnick</del>
-- 1984 - George Orwell
+- <del>1984 - George Orwell</del>
 
 <hr>
 
@@ -42,6 +43,8 @@ Here's a list of books I've read and will be reading:
 - [Practical Object Oriented Design Ruby (POODR)][2]
 - [99 bottles of OOP][14]
 - <del>[You don't know JS][5] - Kyle Simpsons</del>
+- <del>CSS Secrets - Lea Verou</del>
+- SVG Animations - Sarah Drasner
 - <del>Rails 4 in action - Ryan Biggs et al</del>
 
 [1]:http://mislav.uniqpath.com/poignant-guide/
