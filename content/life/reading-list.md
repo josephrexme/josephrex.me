@@ -6,33 +6,43 @@ permalink: /reading-list/
 ---
 Here's a list of books I've read and will be reading:
 
-- The Design of Everyday Things - Don Norman
-- RiceTea - Julien McArdle
-- CSS Secrets - Lea Verou
-- [Why's poignant guide to Ruby][1]
-- [Practical Object Oriented Design Ruby (POODR)][2]
-- [99 bottles of OOP][14]
-- Rails 4 in action - Ryan Biggs et al
-- Ghost in the wires - Kevin Mitnick
-- Art of Intrustion - Kevin Mitnick
-- Art of Deception - Kevin Mitnick
-- Clean Code - Robert C. Morris
-- The Clean Coder - Robert C. Morris
-- Computer Intelligence - Andries P. Engelbrecht
-- Concepts of Programming Languages - Robert W. Sebesta
-- [Computer Science - An Interdisciplinary approach][10] - Robert Sedgewick, Kevin Wayne
-- [Algorithms][11] [4th Edition][12] - Robert Sedgewick, Kevin Wayne
 - Embodiment of Grace - Grace Festus
 - Pride and Prejudice - Jane Austen
 - Treasure Island - Robert Louis Stevenson
-- Aesop's Fables
+- [Kon-Tiki][7] - Thor Heyerdahl
+- <del>Nice girls don't get rich</del>
+
+<hr>
+
+- <del>The Design of Everyday Things - Don Norman</del>
+- <del>RiceTea - Julien McArdle</del>
+- <del>CSS Secrets - Lea Verou</del>
+- Ghost in the wires - Kevin Mitnick
+- Art of Intrustion - Kevin Mitnick
+- <del>Art of Deception - Kevin Mitnick</del>
+- 1984 - George Orwell
+
+<hr>
+
 - [Growing Gills - How to find creative focus when you're drowning in your daily life][13]
 - Personal Kanban - Jim Benson
 - [So Good They Can't Ignore You][3] - Cal Newport
 - [Soft Skills][4] - John Sonmez
-- [You don't know JS][5] - Kyle Simpsons
-- [The Imposter's Handbook][6] - Rob Conery
-- [Kon-Tiki][7] - Thor Heyerdahl
+- <del>[The Imposter's Handbook][6] - Rob Conery</del>
+
+<hr>
+
+- [Computer Science - An Interdisciplinary approach][10] - Robert Sedgewick, Kevin Wayne
+- [Algorithms][11] [4th Edition][12] - Robert Sedgewick, Kevin Wayne
+- Clean Code - Robert C. Morris
+- The Clean Coder - Robert C. Morris
+- Computer Intelligence - Andries P. Engelbrecht
+- Concepts of Programming Languages - Robert W. Sebesta
+- [Why's poignant guide to Ruby][1]
+- [Practical Object Oriented Design Ruby (POODR)][2]
+- [99 bottles of OOP][14]
+- <del>[You don't know JS][5] - Kyle Simpsons</del>
+- <del>Rails 4 in action - Ryan Biggs et al</del>
 
 [1]:http://mislav.uniqpath.com/poignant-guide/
 [2]:http://www.poodr.com
