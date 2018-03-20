@@ -5,7 +5,9 @@ date: 2017-12-27T12:48:42-06:00
 url: /v8-garbage-collection/
 draft: true
 tags:
-  - uncategorized
+  - javascript
+  - v8
+  - compilers
 ---
 
 In my last post on immutability, I explained how the mutation of string variable values isn't an actual mutation but a reassignment of a new value in the string. Because JavaScript Numbers and Strings are immutable, we can't actually mutate their values like we can with Arrays and Objects.
