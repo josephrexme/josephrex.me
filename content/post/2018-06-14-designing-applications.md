@@ -53,10 +53,13 @@ image in practice.
 When placing little or no focus on design/usability, we risk losing our users to
 competitors offering a better experience. A little focus on security means your users
 aren't safe and while they might hop on your application at its early stage, they would
-eventually leave if their data keeps getting compromised. With little focus on functionality, why do you even call that an app? You only have a prototype of what might
-some day become an application.
+eventually leave if their data keeps getting compromised. With little focus on functionality,
+why do you even call that an app? You only have a prototype of what mightsome day become an
+application.
 
-To build products with the balanced application triangle, we need some process in place. For design consistency, a simple styleguide is needed. The styleguide defines the look of things across the application. It should rules on typography, component sizing, and colors.
+To build products with the balanced application triangle, we need some process in place.
+For design consistency, a simple styleguide is needed. The styleguide defines the look of
+things across the application. It should rules on typography, component sizing, and colors.
 
 Here's an example of a simple styleguide:
 
@@ -65,7 +68,7 @@ Here's an example of a simple styleguide:
 <figcaption>Styleguide template. Available in PSD <a href="https://www.dropbox.com/s/nt47frcvxxz74zw/Styleguide%20template.psd?dl=0">here</a></figcaption>
 </figure>
 
-I never thought color consistency would be a problem on a porject until a recent project
+I never thought color consistency would be a problem on a project until a recent project
 I worked on where the designer gave different colors for the same component for each of
 the mockups. Sticking to the typography rules in the styleguide during development also
 guides the developer in the way they write their CSS, preventing unneccessary heading
