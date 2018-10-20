@@ -41,8 +41,8 @@ As I grew older, the ways I had fun changed but I still tried to have fun and I 
 that over dedication and focus in anything. I knew what success was and I wanted to
 achieve it but I just wasn't acting towards it. So I question my perception at the
 time. Did I really have a perception of life? or did I just have a definition of
-life and success and I just lived freely like a bird with a shortsighted view? There were girls in school who
-liked cool guys and the ones who liked smart guys. I seem to have mostly attracted
+life and success and I just lived freely like a myopic bird? There were girls in school
+who liked cool guys and the ones who liked smart guys. I seem to have mostly attracted
 the former but the ones I was really interested in were the latter. However, my
 actions didn't put me in their category. That still didn't change me.
 
@@ -52,9 +52,11 @@ what triggered this part of me. It was just my point of self realization.
 
 That was my definition of the phrase in this title and I really wanted to write
 about it 3 years ago but I resiled. After relating the mind drafted article with my
-real life encounters over the years, I realized that we do not have a single point of realization in our lives, we just have big and small ones. After learning how to
+real life encounters over the years, I realized that we do not have a single point of
+realization in our lives, we just have big and small ones. After learning how to
 treat myself to be successful in life, I still needed to learn how to treat people
-around me. I needed to learn how to show love to people. I had lived freely for so long with cynical opinions and about 2 years ago I experienced another point of
+around me. I needed to learn how to show love to people. I had lived freely for so
+long with cynical opinions and about 2 years ago I experienced another point of
 realization that made me learn to speak respectfully to all kind of humans and
 appreciate everyone for who they are. Who knows what I'm yet to realize now? I look
 forward to my next point of realization.
