@@ -41,10 +41,10 @@ As I grew older, the ways I had fun changed but I still tried to have fun and I 
 that over dedication and focus in anything. I knew what success was and I wanted to
 achieve it but I just wasn't acting towards it. So I question my perception at the
 time. Did I really have a perception of life? or did I just have a definition of
-life and success and I just lived freely like a myopic bird? There were girls in school
-who liked cool guys and the ones who liked smart guys. I seem to have mostly attracted
-the former but the ones I was really interested in were the latter. However, my
-actions didn't put me in their category. That still didn't change me.
+life and success and regardlessly lived freely like a myopic bird? There were girls
+in school who liked cool guys and the ones who liked smart guys. I seem to have
+mostly attracted the former but the ones I was really interested in were the latter.
+However, my actions didn't put me in their category. That still didn't change me.
 
 I had a turning point suddenly after my high school/secondary education. I was just
 ready to do things right for no reason or with no incentive at all. I can't tell
