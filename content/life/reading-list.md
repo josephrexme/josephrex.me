@@ -12,8 +12,8 @@ Here's a list of books I've read and will be reading:
 - [Kon-Tiki][7] - Thor Heyerdahl
 - <del>Nice girls don't get rich - Lois P. Frankel</del>
 - Bossy Pants - Tina Fey
-- We're going to need more wine - Gabrielle Union
-- The last black unicorn - Tiffany Haddish
+- <del>We're going to need more wine - Gabrielle Union</del>
+- <del>The last black unicorn - Tiffany Haddish</del>
 
 <hr>
 
