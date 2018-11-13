@@ -12,6 +12,7 @@ Here's a list of books I've read and will be reading:
 - [Kon-Tiki][7] - Thor Heyerdahl
 - <del>Nice girls don't get rich - Lois P. Frankel</del>
 - Bossy Pants - Tina Fey
+- So you want to talk about race - Ijeoma Oluo
 - <del>We're going to need more wine - Gabrielle Union</del>
 - <del>The last black unicorn - Tiffany Haddish</del>
 
