@@ -15,6 +15,7 @@ Here's a list of books I've read and will be reading:
 - So you want to talk about race - Ijeoma Oluo
 - <del>We're going to need more wine - Gabrielle Union</del>
 - <del>The last black unicorn - Tiffany Haddish</del>
+- Becoming - Michelle Obama
 
 <hr>
 
