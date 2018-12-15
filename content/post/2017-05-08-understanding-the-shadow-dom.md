@@ -64,7 +64,7 @@ shadow.innerHTML = '<span>This should appear!</span><style>span{ color: red}</st
 If you work with React, this is the `ReactDOM.render()` of shadow DOM.
 
 <figure class="figure--fullwidth">
-  <img src="http://res.cloudinary.com/strich/image/upload/v1494275896/screenshot-shadow-dom_ay4top.png" alt="Shadow DOM insertion" class="image">
+  <img src="https://res.cloudinary.com/strich/image/upload/v1494275896/screenshot-shadow-dom_ay4top.png" alt="Shadow DOM insertion" class="image">
   <figcaption>Shadow DOM on chrome 60</figcaption>
 </figure>
 

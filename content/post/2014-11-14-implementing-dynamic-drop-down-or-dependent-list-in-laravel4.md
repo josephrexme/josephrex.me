@@ -181,9 +181,9 @@ So this is really similar to the former procedural version but I took away all t
 
 ### Method 2
 
-For this method, I already made a <a title="JS Fiddle direct link" href="http://jsfiddle.net/bl4ckdu5t/npkf9hn6/" target="_blank">JSfiddle</a> to implement with static HTML. This method is meant to use JSON data to feed DB contents to jQuery in order to dynamically change subcategories based on the selected categories.
+For this method, I already made a <a title="JS Fiddle direct link" href="https://jsfiddle.net/bl4ckdu5t/npkf9hn6/" target="_blank">JSfiddle</a> to implement with static HTML. This method is meant to use JSON data to feed DB contents to jQuery in order to dynamically change subcategories based on the selected categories.
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/bl4ckdu5t/npkf9hn6/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="https://jsfiddle.net/bl4ckdu5t/npkf9hn6/embedded/result,js,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Notice I put values of data-load in single quotes because it is expected to contain JSON data which has double quotes. To make our data more dynamic, let's make the data-load JSON get fetched from the database. Let's make a controller with this contents
 
