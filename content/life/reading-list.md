@@ -19,6 +19,7 @@ Here's a list of books I've read and will be reading:
 
 <hr>
 
+- Open Source Intelligence Techniques - Michael Bazzell
 - <del>The Design of Everyday Things - Don Norman</del>
 - <del>RiceTea - Julien McArdle</del>
 - Ghost in the wires - Kevin Mitnick
