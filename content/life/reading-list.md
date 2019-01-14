@@ -16,6 +16,7 @@ Here's a list of books I've read and will be reading:
 - <del>We're going to need more wine - Gabrielle Union</del>
 - <del>The last black unicorn - Tiffany Haddish</del>
 - Becoming - Michelle Obama
+- Factfulness - Hans Rosling
 
 <hr>
 
@@ -35,9 +36,11 @@ Here's a list of books I've read and will be reading:
 - [So Good They Can't Ignore You][3] - Cal Newport
 - [Soft Skills][4] - John Sonmez
 - <del>[The Imposter's Handbook][6] - Rob Conery</del>
+- The 21-day financial fast - Michelle Singletary
 
 <hr>
 
+- Cracking the coding interview - Gayle Mcdowell
 - [Computer Science - An Interdisciplinary approach][10] - Robert Sedgewick, Kevin Wayne
 - [Algorithms][11] [4th Edition][12] - Robert Sedgewick, Kevin Wayne
 - Clean Code - Robert C. Morris
