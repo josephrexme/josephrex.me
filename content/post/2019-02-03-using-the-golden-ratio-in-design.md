@@ -22,7 +22,7 @@ At first glance, it might seem odd that aesthetic is being defined by a math for
 <figcaption>Sheldon Cooper with golden spiral t-shirts</figcaption>
 </figure>
 
-First, what is the golden ratio? mathematically, it is the representation two of quantities with the same ratio as the ratio of their sum to the larger of both quantites.
+First, what is the golden ratio? mathematically, it is the representation of two quantities with the same ratio as the ratio of their sum to the larger of both quantites.
 
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
