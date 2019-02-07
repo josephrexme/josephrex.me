@@ -58,7 +58,7 @@ Since we're here to talk about design and aesthetics, let's start with the least
 <iframe width="640" height="360" src="https://www.youtube.com/embed/kKWV-uU_SoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-while research still shows that beauty is not solely based on phi, we can try to recreate a face in the wrong proportions or an off-ratio and we will end up with something ugly. Something that a malformed person might look like after an accident. But there are people who aren't considered attractive and yet haven't been malformed in any form of accident. In most cases, their faces might still be in the precise golden ratio, but they might not be sculpted well enough to fit the [marquardt beauty pentagon][3]. My girlfriend is gorgeous so I decided to place the pentagon mask on her.
+while research still shows that beauty is not solely based on phi, we can try to recreate a face in the wrong proportions or an off-ratio and we will end up with something ugly. Something that a malformed person might look like after an accident. But there are people who aren't considered attractive and yet haven't been malformed in any form of accident. In most cases, their faces might still be in the precise golden ratio, but they might not be sculpted well enough to fit other beauty metrics. The [marquardt beauty pentagon][3] is an example of one of such metrics and here is my girlfriend placed behind the pentagon mask. It fits nicely because she's gorgeous.
 
 <figure>
   <div class="figure--multiple">
@@ -72,7 +72,7 @@ while research still shows that beauty is not solely based on phi, we can try to
 </figure>
 
 
-While you may argue that beauty is in the eye of the beholder, I can counter that argument by saying we all have various retina definitions that makes the pattern more prominent in some people than others and it may not be the same for everyone. It is also noteworthy that a face that is considered beautiful might not be perfectly symmetrical. These research results are things you might choose whether or not to believe in. As simple as human beauty analysis can be, it can also get really complex.
+While you may argue that beauty is in the eye of the beholder, I can counter that argument by saying we all have various retina definitions that makes the pattern more prominent when we observe some people, more than when we observe others. But if you would insist there is no logic or principle attached to beauty, that's fine too. It is worth noting that a beautiful face might not be perfectly symmetrical. As simple as human beauty analysis can be, it can also get really complex so I will move on to plants.
 
 <figure class="figure--edgeleft">
   <img src="https://res.cloudinary.com/strich/image/upload/v1549210799/flower_spiral_tx2uv0.jpg" alt="Leaves in golden spiral" class="image">
