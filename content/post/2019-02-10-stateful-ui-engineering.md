@@ -12,7 +12,7 @@ tags:
 There is a common misconception in the web industry that frontend development is easy and has little or no use for algorithms and complex software concepts. This might be the most inaccurate perception for anyone to have. Building user interfaces is infact, exhaustive and can be more complex than backend sometimes.
 <!--more-->
 
-Graphical User Interfaces have always been fascinating to me and after observing communities around them and building them for various platforms, I can confirmingly say that it could be the most sophisticated part of building software. For a short background on my past and recent experiences building GUIs, I have built python desktop GUIs with libraries like Qt, GTK, which I've [blogged about here][1], and I've built themes on KDE Linux that never were shared publicly. As of this writing date, I've been building web frontend for 8 years.
+Graphical User Interfaces have always been fascinating to me, and after observing communities around them and building them for various platforms, I can confirmingly say that it could be the most sophisticated part of building software. For a short background on my past and recent experiences building GUIs, I have built python desktop GUIs with libraries like Qt, GTK, which I've [blogged about here][1], and I've built themes on KDE Linux that never were shared publicly. As of this writing date, I've been building web frontend for 8 years.
 
 In the past 5 years, frontend web development has experienced an upsurge of libraries and frameworks that try to tackle how we address UI engineering. As the web scales, we are gradually getting faced with the challenges of building interfaces beyond the simplicity of declarative HTML and CSS. Some are repulsive to these changes and some of us are open to exploring how they may improve how we build software. This caused huge debates recently that I would not like to be a part of. But as a developer, my mantra has always been to explore new technologies and see how they fit into my workflow, then decide if I should drop them or adopt them; not bash them unreasonably.
 
@@ -54,7 +54,7 @@ If you ever drove any of these or had a ride in them, you know you can't just ge
     "start": { "HANDBRAKE_DOWN": "movable" },
     "movable": { "GEAR": "drive" },
     "drive": { "BRAKE": "rest" },
-    "rest": { "HANDBRAKE_UP": "end" },
+    "rest": { "HANDBRAKE_UP": "end", "GEAR": "drive" },
     "end": { "IGNITION_OFF": "idle" }
   }
 }
