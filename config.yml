@@ -10,7 +10,7 @@ googleAnalytics: UA-56161232-2
 # Disable comments by leaving disqusShortname empty
 disqusShortname: josephrexme
 disablePathToLower: true
-pygmentsstyle: paraiso-dark
+pygmentsstyle: native
 RSSLink: feed.xml
 paginate: 4
 
