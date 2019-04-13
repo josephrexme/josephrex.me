@@ -58,7 +58,7 @@ Since we're here to talk about design and aesthetics, let's start with the least
 <iframe width="640" height="360" src="https://www.youtube.com/embed/kKWV-uU_SoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
-while research still shows that beauty is not solely based on phi, we can try to recreate a face in the wrong proportions or an off-ratio and we will end up with something ugly. Something that a malformed person might look like after an accident. But there are people who aren't considered attractive and yet haven't been malformed in any form of accident. In most cases, their faces might still be in the precise golden ratio, but they might not be sculpted well enough to fit other beauty metrics. The [marquardt beauty pentagon][3] is an example of one of such metrics and here is my girlfriend placed behind the pentagon mask. It fits nicely because she's gorgeous.
+while research still shows that beauty is not solely based on phi, we can try to recreate a face in the wrong proportions or an off-ratio and we will end up with something ugly. Something that a malformed person might look like after an accident. But there are people who aren't considered attractive and yet haven't been malformed in any form of accident. In most cases, their faces might still be in the precise golden ratio, but they might not be sculpted well enough to fit other beauty metrics. The [marquardt beauty pentagon][3] is an example of one of such metrics and here is my wife placed behind the pentagon mask. It fits nicely because she's gorgeous.
 
 <figure>
   <div class="figure--multiple">
