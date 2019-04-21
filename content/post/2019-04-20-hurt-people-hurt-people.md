@@ -27,7 +27,7 @@ and found that she had gone through a divorce. She had been hurt by a man and I 
 sorry about that. But that does not give her a right to go on social media judging
 other ladies. A lot of ladies get in shape before wedding ceremonies to have wedding
 photos that they are proud of. Their need is beyond anyone else's on that and I know
-this as my wife and I prepare for our white wedding. Second, when did doing something
+this as my wife and I prepare for our white wedding. Also, when did doing something
 for your partner become a wrong thing to do? I would do whatever my wife wants and she
 tries to do things for me as well to make our union a great one.
 
