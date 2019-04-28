@@ -4,7 +4,8 @@ author: Joseph Rex
 type: life
 permalink: /reading-list/
 ---
-Here's a list of books I've read and will be reading:
+Here's a list of books I've read and will be reading. The read ones are crossed.
+For more details on my reading journey, [follow me on goodreads][15]
 
 - Embodiment of Grace - Grace Festus
 - Pride and Prejudice - Jane Austen
@@ -36,7 +37,7 @@ Here's a list of books I've read and will be reading:
 - [So Good They Can't Ignore You][3] - Cal Newport
 - [Soft Skills][4] - John Sonmez
 - <del>[The Imposter's Handbook][6] - Rob Conery</del>
-- The 21-day financial fast - Michelle Singletary
+- <del>The 21-day financial fast - Michelle Singletary</del>
 
 <hr>
 
@@ -67,3 +68,4 @@ Here's a list of books I've read and will be reading:
 [12]:http://algs4.cs.princeton.edu/home/
 [13]:https://www.amazon.com/dp/B07284HSHQ/
 [14]:https://www.sandimetz.com/99bottles
+[15]:https://www.goodreads.com/user/show/22575742-joseph-rex
