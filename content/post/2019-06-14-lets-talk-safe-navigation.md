@@ -51,7 +51,7 @@ if(a && a.b && a.b.c) {
   // use a.b.c here
 }
 ```
-But as much as JavaScript is bloated with WTFs, there's some nice parts to it (I can't name many). JavaScript handles immediate property dereferencing in a much safer way than many other languages. When trying to access an object property, we will always get a value provided the datatype we are hitting is a hashmap object i.e `{}` or `new Object()`.
+But as much as JavaScript is bloated with WTFs, there's some nice parts to it (I can't name many). JavaScript handles immediate property dereferencing in a much safer way than many other languages. When trying to access an object property we will always get a value, provided the datatype we are hitting is a hashmap object i.e `{}` or `new Object()`.
 
 We run into problems when we try to access properties that are nested more than 1 level deep. This is because JavaScript will always return a value for object properties and it will return `undefined` for non existing object properties.
 

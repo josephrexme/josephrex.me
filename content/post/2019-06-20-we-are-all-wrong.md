@@ -7,3 +7,4 @@ draft: true
 tags:
   - uncategorized
 ---
+We hate being wrong as humans
