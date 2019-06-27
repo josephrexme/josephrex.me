@@ -53,7 +53,7 @@ realizing. Unfortunately, a lot of these people fail to admit how they are wrong
 even when they are being told. This is also because we associate being wrong
 with being a loser and that's an inaccurate association. Learning in life that it
 takes several fails to get a win, it's only more evident that acceptance of
-our wrongs is equivalent to taking step to win. By being wrong we aren't losers, we
+our wrongs is equivalent to taking a step to win. By being wrong we aren't losers, we
 are losers when we fail to stop being wrong at the expense of the emotions of
 everyone else around us.
 
@@ -73,7 +73,7 @@ Although, there are cases where the conclusion is that neither of the parties wi
 compromise to the perceptions of the other, we may also disagree in peace.
 
 [Psychoanalysis][3] teaches that we are all wrong and we've always been wrong from birth.
-The **Id** is dominant in us as infants, and it mental takes growth to build a **Super-ego**
+The **Id** is dominant in us as infants, and it takes mental growth to build a **Super-ego**
 that will balance out our wrong notions with moral and right actions. Babies bite,
 babies have tantrums, and as they grow older, they learn these things are wrong and do
 away with them. But we all know growth is physically stunted for some humans. Unfortunately,
