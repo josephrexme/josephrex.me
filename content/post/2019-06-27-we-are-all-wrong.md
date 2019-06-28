@@ -72,6 +72,8 @@ each other or choose to reach valuable conclusions where we both learn from each
 Although, there are cases where the conclusion is that neither of the parties will
 compromise to the perceptions of the other, we may also disagree in peace.
 
+<hr>
+
 [Psychoanalysis][3] teaches that we are all wrong and we've always been wrong from birth.
 The **Id** is dominant in us as infants, and it takes mental growth to build a **Super-ego**
 that will balance out our wrong notions with moral and right actions. Babies bite,
