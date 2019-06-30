@@ -38,7 +38,7 @@ view how other opinions may weigh against their opinions. I've always said
 **change is hard** as I've also heard a lot of other people say and agree to
 that fact. If we find it hard to change very little things like our choice
 of music or choice of food, how much more our overall perspective on delicate
-matters.
+matters?
 
 A smart friend of mine gave an interesting talk at a conference on community
 disagreement in our software industry:
@@ -53,9 +53,9 @@ realizing. Unfortunately, a lot of these people fail to admit how they are wrong
 even when they are being told. This is also because we associate being wrong
 with being a loser and that's an inaccurate association. Learning in life that it
 takes several fails to get a win, it's only more evident that acceptance of
-our wrongs is equivalent to taking a step to win. By being wrong we aren't losers, we
+our wrongs is equivalent to taking a step to win. <mark>By being wrong we aren't losers, we
 are losers when we fail to stop being wrong at the expense of the emotions of
-everyone else around us.
+everyone else around us</mark>.
 
 Biblical history teaches that it takes penitence for a sinner to transition
 into a saint. And as someone who chooses to learn through history rather than
