@@ -17,7 +17,9 @@ In the penultimate episode of The Big Bang Theory's season finale,
 the vanity card had this:
 
 <figure>
+  <a href="https://res.cloudinary.com/strich/image/upload/v1561655459/Screenshot_2019-05-17_14.47.48_gnmcor.jpg" target="_blank">
   <img src="https://res.cloudinary.com/strich/image/upload/v1561655459/Screenshot_2019-05-17_14.47.48_gnmcor.jpg" alt="Vanity card from the big bant theory" loading="lazy">
+  </a>
   <figcaption>Vanity card from the big bang theory</figcaption>
 </figure>
 
