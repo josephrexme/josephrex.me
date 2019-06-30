@@ -57,7 +57,7 @@ our wrongs is equivalent to taking a step to win. <mark>By being wrong we aren't
 are losers when we fail to stop being wrong at the expense of the emotions of
 everyone else around us</mark>.
 
-Biblical history teaches that it takes penitence for a sinner to transition
+We learn from biblical history that it takes penitence for a sinner to transition
 into a saint. And as someone who chooses to learn through history rather than
 re-making mistakes that have repeatedly led to bad outcomes, I choose to accept that
 I am wrong when I realize I am. I also choose to suppress my confirmation bias.
