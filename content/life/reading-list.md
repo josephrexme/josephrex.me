@@ -44,8 +44,8 @@ For more details on my reading journey, [follow me on goodreads][15]
 - Cracking the coding interview - Gayle Mcdowell
 - [Computer Science - An Interdisciplinary approach][10] - Robert Sedgewick, Kevin Wayne
 - [Algorithms][11] [4th Edition][12] - Robert Sedgewick, Kevin Wayne
-- Clean Code - Robert C. Morris
-- The Clean Coder - Robert C. Morris
+- Clean Code - Robert C. Martin
+- The Clean Coder - Robert C. Martin
 - Computer Intelligence - Andries P. Engelbrecht
 - Concepts of Programming Languages - Robert W. Sebesta
 - [Why's poignant guide to Ruby][1]
