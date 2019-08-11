@@ -41,6 +41,8 @@ For more details on my reading journey, [follow me on goodreads][15]
 <hr>
 
 ##### [ Dump ]
+- [Shape Up - Stop running in cycles and ship work that matters][17]
+- [Resilient Web Design][18]
 - Embodiment of Grace - Grace Festus
 - Pride and Prejudice - Jane Austen
 - Treasure Island - Robert Louis Stevenson
@@ -76,3 +78,5 @@ For more details on my reading journey, [follow me on goodreads][15]
 [14]:https://www.sandimetz.com/99bottles
 [15]:https://www.goodreads.com/user/show/22575742-joseph-rex
 [16]:https://www.goodreads.com/review/show/2801800510
+[17]:https://basecamp.com/shapeup
+[18]:https://resilientwebdesign.com/introduction/
