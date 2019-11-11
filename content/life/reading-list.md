@@ -35,8 +35,6 @@ For more details on my reading journey, [follow me on goodreads][15]
 - Cracking the coding interview - Gayle Mcdowell
 - CSS Secrets - Lea Verou
 - SVG Animations - Sarah Drasner
-- Clean Code - Robert C. Martin
-- The Clean Coder - Robert C. Martin
 
 <hr>
 
@@ -61,13 +59,11 @@ For more details on my reading journey, [follow me on goodreads][15]
 - [Growing Gills - How to find creative focus when you're drowning in your daily life][13]
 - Personal Kanban - Jim Benson
 - [So Good They Can't Ignore You][3] - Cal Newport
-- [Soft Skills][4] - John Sonmez
 
 
 [1]:http://mislav.uniqpath.com/poignant-guide/
 [2]:http://www.poodr.com
 [3]:https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124
-[4]:https://www.amazon.com/Soft-Skills-software-developers-manual/dp/1617292397
 [5]:https://github.com/getify/You-Dont-Know-JS
 [6]:https://bigmachine.io/products/the-imposters-handbook/
 [7]:https://www.amazon.com/Kon-Tiki-Across-Pacific-Thor-Heyerdahl/dp/0671726528
