@@ -3,7 +3,7 @@
 
 /design
   Link: </css/app.css>; rel=preload; as=stylesheet
-  Link: </img/darthvader.jpg>; rel=preload; as=image
-  Link: </img/deadbeat.jpg>; rel=preload; as=image
-  Link: </img/fast.jpg>; rel=preload; as=image
-  Link: </img/sparked.jpg>; rel=preload; as=image
+  Link: </img/exhibit-a.jpg>; rel=preload; as=image
+  Link: </img/exhibit-b.jpg>; rel=preload; as=image
+  Link: </img/exhibit-c.jpg>; rel=preload; as=image
+  Link: </img/exhibit-d.jpg>; rel=preload; as=image
