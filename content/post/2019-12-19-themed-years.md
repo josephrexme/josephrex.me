@@ -16,10 +16,11 @@ different things work for different people. However, I've found themes to be a l
 effective for me in the sense that I get to feel accomplished no matter how much achievement
 was gained within the theme.
 
-For example, my entire year 2019 was themed "pursuing happiness". I don't what the definition
-of happiness is for you, but I got an internship when I was desperate for one, I got married
+For example, my entire year 2019 was themed "pursuing happiness". I don't know what the definition
+of happiness is for you, but I got a job when I was desperate for one, I got married
 to the most amazing woman in the world, I got my green card shortly after application with
-no hassle (which most people would consider odd), and soon I'm getting my dream job 🤞.
+no hassle (which most people would consider odd), and soon I believe I will be getting an offer
+from one of the companies I applied to for a new role ✌🏾.
 I'm more happy now than I've ever been in my life. While I'm aware there's still a lot to be
 achieved, my theme for the year was fulfilled and I found happiness based on my perception of it.
 
