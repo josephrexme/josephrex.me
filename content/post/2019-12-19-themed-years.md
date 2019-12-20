@@ -6,7 +6,7 @@ url: /themed-years/
 tags:
   - life
 ---
-In 2013 I got a journal with themed section and it felt so much like it was all shaped around
+In 2013 I got a journal with themed sections and it felt so much like it was all shaped around
 my life. I don't have it anymore now but I loved the idea behind theming fragments of my life.
 <!--more-->
 
