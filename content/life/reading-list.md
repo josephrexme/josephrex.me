@@ -7,9 +7,16 @@ permalink: /reading-list/
 Here's a list of books I've read and will be reading. The read ones are crossed.
 For more details on my reading journey, [follow me on goodreads][15]
 
-##### [ 2019 ]
-- Rich dad, poor dad
+##### [ 2020 ]
+- Art direction on the web - Andy Clarke
+- [Refactoring UI][19]
+- Intelligent Investor
 - Becoming - Michelle Obama
+- [So Good They Can't Ignore You][3] - Cal Newport
+- It doesn't have to be crazy at work - Jason Fried
+
+##### [ 2019 ]
+- <del>Rich dad, poor dad</del>
 - <del>The 21-day financial fast - Michelle Singletary</del> { [My review][16] }
 - <del>We're going to need more wine - Gabrielle Union</del>
 - <del>The last black unicorn - Tiffany Haddish</del>
@@ -58,7 +65,6 @@ For more details on my reading journey, [follow me on goodreads][15]
 - 1984 - George Orwell
 - [Growing Gills - How to find creative focus when you're drowning in your daily life][13]
 - Personal Kanban - Jim Benson
-- [So Good They Can't Ignore You][3] - Cal Newport
 
 
 [1]:http://mislav.uniqpath.com/poignant-guide/
@@ -76,3 +82,4 @@ For more details on my reading journey, [follow me on goodreads][15]
 [16]:https://www.goodreads.com/review/show/2801800510
 [17]:https://basecamp.com/shapeup
 [18]:https://resilientwebdesign.com/introduction/
+[19]:https://refactoringui.com/
