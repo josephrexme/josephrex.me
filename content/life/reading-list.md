@@ -10,10 +10,13 @@ For more details on my reading journey, [follow me on goodreads][15]
 ##### [ 2020 ]
 - Art direction on the web - Andy Clarke
 - [Refactoring UI][19]
+- [Resilient Web Design][20] - Jeremy Keith
 - Intelligent Investor
 - Becoming - Michelle Obama
 - [So Good They Can't Ignore You][3] - Cal Newport
 - It doesn't have to be crazy at work - Jason Fried
+- Essentialism - The Disciplined Pursuit of Less
+- Atomic Habits
 
 ##### [ 2019 ]
 - <del>Rich dad, poor dad</del>
@@ -83,3 +86,4 @@ For more details on my reading journey, [follow me on goodreads][15]
 [17]:https://basecamp.com/shapeup
 [18]:https://resilientwebdesign.com/introduction/
 [19]:https://refactoringui.com/
+[20]:https://resilientwebdesign.com
