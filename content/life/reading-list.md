@@ -5,7 +5,7 @@ type: life
 permalink: /reading-list/
 ---
 Here's a list of books I've read and will be reading. The read ones are crossed.
-For more details on my reading journey, [follow me on goodreads][15]
+For more details on my reading journey, [follow me on goodreads][15]. You can also [buy me a book][21]
 
 ##### [ 2020 ]
 - Art direction on the web - Andy Clarke
@@ -87,3 +87,4 @@ For more details on my reading journey, [follow me on goodreads][15]
 [18]:https://resilientwebdesign.com/introduction/
 [19]:https://refactoringui.com/
 [20]:https://resilientwebdesign.com
+[21]:https://read.gift/u/josephrexme
