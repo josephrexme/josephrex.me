@@ -47,7 +47,7 @@ Back to [Eric Elliot][5]'s article, [Lea Verou replied][6] saying:
 
 > University teaches you how to think, not 2016's trendiest frameworks or programming languages. Those are transient skills
 
-I couldn't agree more with [Lea][7]. I agree with her on a lot of things with a [few exceptions][8]. But I believe since she was just dropping a comment she couldn't elaborate enough and that's what I'll try to help with here.
+I couldn't agree more with [Lea][7]. But I believe since she was just dropping a comment she couldn't elaborate enough and that's what I'll try to help with here.
 
 ### I'm not convinced. What does college really have to offer?
 So many people who eventually go to college go with high expectations and graduate thinking they've acquired the right to fit in anywhere or get any job without any extra efforts.
@@ -82,5 +82,4 @@ If you seek any of those things listed then you should give college a try. If yo
 [5]:https://twitter.com/_ericelliott
 [6]:https://medium.com/@leaverou/youre-completely-missing-the-point-of-higher-education-274570eb5a02#.a26hn4yck
 [7]:https://twitter.com/leaverou
-[8]:http://pensieve.verou.me/post/40603145637/on-last-name-politics
 [9]:https://github.com/csswizardry/ama/issues/24

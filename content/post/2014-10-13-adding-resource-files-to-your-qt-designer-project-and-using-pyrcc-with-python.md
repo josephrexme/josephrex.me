@@ -2,7 +2,7 @@
 author: Joseph Rex
 comments: true
 date: 2014-10-13T00:00:00Z
-title: Adding Resource files to your Qt designer project and using pyrcc with python
+title: Using resources files with Qt designer
 url: /adding-resource-files-to-your-qt-designer-project-and-using-pyrcc-with-python/
 tags:
   - gui

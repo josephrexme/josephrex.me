@@ -27,9 +27,10 @@ outputFormats:
 params:
   name: Joseph Rex
   description: Articles, Designs, Animations, and Projects by Joseph Rex
-  bio: creative technologist and AI enthusiast
-  email: joseph\*\*at\*\*strichio
-  profile: https://josephrex.me/about-me
+  bio: a creative technologist and UI enthusiast
+  secondaryBio: CSS, JavaScript, Ruby, 3D, XR, Animation, Design, and Life
+  email: joseph\*\*at\*\*scade.xyz
+  profile: https://josephrex.me
   enableRSS: true
   themeBuilder: true
   favicon: favicon.png # A file located in the static directory
@@ -39,10 +40,10 @@ params:
 
 social:
   facebook: https://facebook.com/josephrexme
-  twitter : https://twitter.com/josephrexme
-  github  : https://github.com/josephrexme
+  twitter: https://twitter.com/josephrexme
+  github: https://github.com/josephrexme
   codepen: https://codepen.io/josephrexme
-  dribbble : https://dribbble.com/josephrexme
+  dribbble: https://dribbble.com/josephrexme
   behance: https://behance.net/josephrexme
   stackoverflow: http://stackoverflow.com/users/2649933/joseph-rex?tab=profile
   pinterest: https://pinterest.com/josephrexme

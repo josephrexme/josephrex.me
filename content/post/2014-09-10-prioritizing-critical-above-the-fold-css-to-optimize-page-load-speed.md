@@ -2,7 +2,7 @@
 author: Joseph Rex
 comments: true
 date: 2014-09-10T00:00:00Z
-title: Prioritizing Critical (Above the fold) CSS to optimize page load speed
+title: Prioritizing critical CSS for speed
 url: /prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/
 tags:
   - css
