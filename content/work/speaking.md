@@ -8,7 +8,7 @@ I have not had a lot of speaking events and I am looking to change that from thi
 
 ## Conferences and Meetups
 ##### [ 2020 ]
-- 5 Lakes Front - [Stealing and preserving your users attention][3] - Nov. 13th, 2020
+- ~~5 Lakes Front - [Stealing and preserving your users attention][3] - Nov. 13th, 2020~~ [Cancelled]
 - React Philadelphia - The state of user Interaction - Mar. 17th, 2020 - [Slides][1] & [Video][2]
 
 ##### [ 2019 ]
