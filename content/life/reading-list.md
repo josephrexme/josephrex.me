@@ -7,13 +7,15 @@ permalink: /reading-list/
 Here's a list of books I've read and will be reading. The read ones are crossed.
 For more details on my reading journey, [follow me on goodreads][15]. You can also [buy me a book][21]
 
+##### [ 2021 ]
+- [A promised land][31]
 ##### [ 2020 ]
 - Art direction on the web - Andy Clarke
 - [Refactoring UI][19]
 - [Resilient Web Design][20] - Jeremy Keith
 - Intelligent Investor
 - Becoming - Michelle Obama
-- [So Good They Can't Ignore You][3] - Cal Newport
+- [So Good They Can't Ignore You][32] - Cal Newport
 - It doesn't have to be crazy at work - Jason Fried
 - Essentialism - The Disciplined Pursuit of Less
 - Atomic Habits
@@ -54,32 +56,27 @@ For more details on my reading journey, [follow me on goodreads][15]. You can al
 - Embodiment of Grace - Grace Festus
 - Pride and Prejudice - Jane Austen
 - Treasure Island - Robert Louis Stevenson
-- [Kon-Tiki][7] - Thor Heyerdahl
+- [Kon-Tiki][33] - Thor Heyerdahl
 - Bossy Pants - Tina Fey
 - So you want to talk about race - Ijeoma Oluo
 - Factfulness - Hans Rosling
-- [Computer Science - An Interdisciplinary approach][10] - Robert Sedgewick, Kevin Wayne
-- [Algorithms][11] [4th Edition][12] - Robert Sedgewick, Kevin Wayne
+- [Computer Science - An Interdisciplinary approach][34] - Robert Sedgewick, Kevin Wayne
+- [Algorithms][35] [4th Edition][12] - Robert Sedgewick, Kevin Wayne
 - Computer Intelligence - Andries P. Engelbrecht
 - Concepts of Programming Languages - Robert W. Sebesta
 - [99 bottles of OOP][14]
 - Open Source Intelligence Techniques - Michael Bazzell
 - Don't shoot the dog - Karen Pryor
 - 1984 - George Orwell
-- [Growing Gills - How to find creative focus when you're drowning in your daily life][13]
+- [Growing Gills - How to find creative focus when you're drowning in your daily life][36]
 - Personal Kanban - Jim Benson
 
 
 [1]:http://mislav.uniqpath.com/poignant-guide/
 [2]:http://www.poodr.com
-[3]:https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124
 [5]:https://github.com/getify/You-Dont-Know-JS
 [6]:https://bigmachine.io/products/the-imposters-handbook/
-[7]:https://www.amazon.com/Kon-Tiki-Across-Pacific-Thor-Heyerdahl/dp/0671726528
-[10]:https://www.amazon.com/gp/product/0134076427/
-[11]:https://www.amazon.com/gp/product/032157351X/
 [12]:http://algs4.cs.princeton.edu/home/
-[13]:https://www.amazon.com/dp/B07284HSHQ/
 [14]:https://www.sandimetz.com/99bottles
 [15]:https://www.goodreads.com/user/show/22575742-joseph-rex
 [16]:https://www.goodreads.com/review/show/2801800510
@@ -88,3 +85,12 @@ For more details on my reading journey, [follow me on goodreads][15]. You can al
 [19]:https://refactoringui.com/
 [20]:https://resilientwebdesign.com
 [21]:https://read.gift/u/josephrexme
+
+
+<!-- Amazon Affiliate Links -->
+[31]: https://amzn.to/2LFcFtY
+[32]:https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124?tag=josephrexme-20&geniuslink=true
+[33]:https://www.amazon.com/Kon-Tiki-Across-Pacific-Thor-Heyerdahl/dp/0671726528?tag=josephrexme-20&geniuslink=true
+[34]:https://www.amazon.com/gp/product/0134076427?tag=josephrexme-20&geniuslink=true
+[35]:https://www.amazon.com/gp/product/032157351X?tag=josephrexme-20&geniuslink=true
+[36]:https://www.amazon.com/dp/B07284HSHQ?tag=josephrexme-20&geniuslink=true
