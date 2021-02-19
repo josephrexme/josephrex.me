@@ -42,7 +42,7 @@ Before the February paychecks
 </figcaption>
 </figure>
 
-To track these in a spreadsheet, you can use my [template here][4]
+To track these in a spreadsheet, you can use my [template here][4] (Disclaimer: this does not mirror my personal/family finance in any way).
 
 I would love to go into how I have been able to apply some of the knowledge from this app into creating the super helpful spreadsheet with great formulas that I just shared with you, but I will dive into that in a different post.
 
