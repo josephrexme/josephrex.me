@@ -2,6 +2,7 @@
 author: Joseph Rex
 title: Point of Realization
 date: 2018-10-20T12:28:54-05:00
+lastmod: 2021-02-27T14:20:30-05:00
 url: /point-of-realization
 tags:
   - opinions
@@ -18,6 +19,16 @@ realize your goals and directions in life as an individual, the point where you
 stop living in fantasies and decide to take life more seriously, a point where
 you do not just aspire success but are willing to take the right actions to
 acquire it.
+
+In this Joe Rogan's podcast with Naval Ravikant, Naval describes what I call point
+of realization as.
+
+> Every man has two lives, and the second starts when they realize they have just
+> one.
+
+<figure class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3-wJiblIWa0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 To give an example, I grew up with a Nigerian dad who told impeccable stories about
 his childhood academic success. This stories might have been true or absolute lies
