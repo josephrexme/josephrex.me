@@ -1,6 +1,7 @@
 ---
-title: "Architectural Overview Into Your Finances"
+title: A financial architecture
 date: 2021-02-26T12:34:46-06:00
+lastmod: 2021-02-26T12:34:46-05:00
 draft: true
 ---
 
