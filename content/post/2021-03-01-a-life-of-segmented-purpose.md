@@ -81,7 +81,7 @@ my clients.
 
 From that short story, here are some life niche I can extract: **Comic artist**,
 **OS GUI developer**, **Security professional**, **Designer**, **Frontend engineer**,
-**Backend engineer**, **writer**, **teacher**. In all these explorations, I never felt like I was
+**Backend engineer**, **Writer**, **Teacher**. In all these explorations, I never felt like I was
 switching from one thing to another and starting over. They all flowed into each other. After
 observing this, I decided it was up to me to prepare the water bodies I want to flow into as a waterfall so I started scheduling things to do at certain ages.
 
