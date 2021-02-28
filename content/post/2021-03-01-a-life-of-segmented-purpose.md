@@ -42,8 +42,8 @@ video I would really recommend you watch.
 </figure>
 
 A wrong interpretation of this movie will be concluding that we do not need purpose as it can only
-lead us to feeling lost and dissatisfied. Finding purpose is only really difficult when we focus
-on finding a singular source of satisfaction and happiness for our multi-phased life.
+lead us to feeling lost and dissatisfied in life. Finding purpose is only really difficult when
+we focus on finding a singular source of satisfaction and happiness for our multi-phased life.
 
 > Decentralization destroys monoliths
 
@@ -62,34 +62,39 @@ purpose. Here is a definition of cascade I like in this context:
 Just like waterfalls cascade into bigger bodies of water, we do not have to begin our life chasing
 after a big purpose. Be the tiny waterfall!
 
-It is 2021 and I am called a software engineer at work but here is how I got here: I got computer
-security certifications, loved every bit of security and prepared to be a licensed penetration
-tester. I loved Linux machines as they were where I spent the most of my time, but I once was into
-drawing comics in my school notes while in middle school. I think I wanted some association of art with what I did. As unrelated as comics is to managing a Linux machine, I got caught somewhere in
+It is 2021 and I am called a software engineer in my full time job, and an adjunct instructor in my
+part-time job, but here is how I got here: I got computer security certifications, loved every bit
+of security and prepared to be a licensed penetration tester, but I only went as far as being an
+instructor for various cohorts pursuing the same certification I had once acquired.
+I loved Linux machines as they were where I spent the most of my time as a security professional.
+I was once into drawing comics in my school notes while in middle school and memories of that made
+me think I wanted some association of art with what I did.
+As unrelated as drawing comics is to managing a Linux machine, I got caught somewhere in
 the middle and started trying to address the ugly user interface of my powerful Linux operating
 system. From trying to create my own fancier [KDE][3] desktop, to building GUI in Qt, GTK, and
 writing what is still my most viewed article on this blog about [building GUIs in Python][4].
 I thought it only made sense to be a backend software engineer with the things I already knew and
-liked when security was not working out for me in Nigeria. After a few years of trying to be a
-backend engineer, I had to freelance and find people to pay for design and frontend work. This
-led me to just learning those things myself to deliver myself as a full package to my clients.
+liked when security was not working out for me in Nigeria. After a few years of working as a
+backend engineer, I had to freelance and find people to pay for design and frontend work for my
+gigs. This led me into learning those skills to be able to deliver myself as a full package to
+my clients.
 
-From that short story, here are some life niche I can extract; **Comic artist**, **OS GUI developer**,
-**Security professional**, **Frontend engineer**, **Backend engineer**. In all these explorations,
-I never felt like I was switching from one thing to another and starting over. They flowed into each
-other. After observing that, I decided it was up to me to prepare the water bodies I want to flow
-into as a waterfall so I started scheduling things to do at certain ages.
+From that short story, here are some life niche I can extract: **Comic artist**,
+**OS GUI developer**, **Security professional**, **Designer**, **Frontend engineer**,
+**Backend engineer**, **writer**, **teacher**. In all these explorations, I never felt like I was
+switching from one thing to another and starting over. They all flowed into each other. After
+observing this, I decided it was up to me to prepare the water bodies I want to flow into as a waterfall so I started scheduling things to do at certain ages.
 
-Between 27 and 28 (my current age) get a little more into generative art and evolutionary algorithms.
-At 38, I will be getting into woodworking and sculpture, at 45 I will get into painting. At each of
-these breakpoints my goal is to do these more, and reduce my time on other things that I may still
-have to do either for work or for personal businesses. I can be a specialist painter at 46 and still
-work as a software engineer, but really just specializing in one medium of painting to be really
-good at.
+Between 25 and 30 (I am somewhere in between) I will get a little more into evolutionary art and
+more generative art. At 38, I will be getting into woodworking and sculpture, at 45 I will get
+into painting. At each of these breakpoints my goal is to do these more, and reduce my time on
+other things that I may still have to do either for work or for personal businesses. I can be a
+specialist painter at 46 and still work as a software engineer, while dialing down the time I 
+spend on software outside work and dialing up a very specific branch of painting.
 
 A common problem with being a generalist is that you only get to scratch the surface of everything
-in your horizon. To have the specialist kind of impact in a generalist job, you need to have once
-lived a specialist in at least one of your areas of generalization. As a full-stack
+in your horizon. To have the specialist kind of impact in a generalist job, you might need to
+have once lived a specialist in at least one of your areas of generalization. As a full-stack
 software engineer, I think the areas I have specialized in the past help me do a better work as a
 generalist. You might find me describing myself as a specialized generalist.
 
