@@ -91,16 +91,16 @@ Between 25 and 30 (I am somewhere in between) I will get a little more into evol
 more generative art. At 38, I will be getting into woodworking and sculpture, at 45 I will get
 into painting. At each of these breakpoints my goal is to do these more, and reduce my time on
 other things that I may still have to do either for work or for personal businesses. I can be a
-specialist painter at 46 and still work as a software engineer, while dialing down the time I 
+specialist painter at 46 and still work as a software engineer, while dialing down the time I
 spend on software outside work and dialing up a very specific branch of painting.
 
 We are met with the myth of purpose when we try to narrow down just one out of the things that
-define us to base our entire life upon. A better alternative to that will be to amplify
-specific life purposes across time periods.
+define us, and base our entire life on that one thing. A better alternative to that will be to amplify
+specific life purposes across different time periods of our life.
 
 The quandary of being a generalist is that you only get to scratch the surface of everything
-in your horizon. To have the specialist kind of impact in a generalist job, you might need to
-have once lived a specialist in at least one of your areas of generalization. As a full-stack
+in your horizon. To have the specialist kind of impact in a job that requires you to be generalist, you might need to
+have once lived as a specialist in at least one of your areas of generalization. As a full-stack
 software engineer, I think the areas I have specialized in the past help me do a better work as a
 generalist. You might find me describing myself as a specialized generalist.
 
@@ -109,6 +109,8 @@ do something a little different from what you do and outrightly replied that you
 capable without trying? Are you like Joe from the Soul movie that only talks about Jazz at the
 barber shop, that your barber wishes he could talk about something else with you, and you just
 care about the one thing you feel is your sole life purpose.
+
+You may subscribe below to get updates on new posts from me with more interesting gems.
 
 
 [^1]: Stagnation leads to the result of doing nothing about a [broken window][2].
