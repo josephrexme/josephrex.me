@@ -16,7 +16,7 @@ When I used procedural PHP for most of my projects, I found myself needing what 
 All examples here will rely on the DDL database schema here:
 <!--more-->
 
-{{< highlight mysql >}}
+{{< highlight sql >}}
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name` varchar(100) NOT NULL,

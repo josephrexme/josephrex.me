@@ -3,6 +3,7 @@ author: Joseph Rex
 comments: true
 math: true
 date: 2014-11-28T00:00:00Z
+lastmod: 2014-12-14T00:00:00Z
 title: Things you can do with MathML
 url: /things-you-can-do-with-mathml/
 tags:
@@ -141,7 +142,7 @@ For more on mathML, check out the <a href="https://developer.mozilla.org/en-US/d
 
 <div class="update">
   <h4>
-    Update - 14/12/2014
+    Update - 12/14/2014
   </h4>
 
   <p>

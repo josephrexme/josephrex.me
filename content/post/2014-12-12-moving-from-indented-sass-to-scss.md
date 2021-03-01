@@ -4,11 +4,12 @@ categories:
 - web
 comments: true
 date: 2014-12-12T00:00:00Z
+lastmod: 2021-02-28T11:00:00Z
 title: Moving from Indented Sass to Scss
 url: /moving-from-indented-sass-to-scss/
 ---
 
-As soon as I knew about pre-processors, I wanted to test them so bad then I stumbled upon <a href="http://sass-lang.com" target="_blank">Sass website</a>. Syntactically awesome they said? I totally love anything with awesome attached to it because I feel I'm awesome (especially around opposite genders :D).
+As soon as I knew about pre-processors, I wanted to test them so bad then I stumbled upon <a href="http://sass-lang.com" target="_blank">Sass website</a>. Syntactically awesome they said? I totally love anything with awesome attached to it because I feel awesome.
 
 I program in python and even though strict indentations may be a pain, that pain has become my honey. I fell in love with the indented Sass <a href="http://sassnotsass.com/" target="_blank">(not SASS)</a>. I love checking out <a href="https://twitter.com/thebabydino" target="_blank">Ana Tudor </a>and <a href="https://twitter.com/HugoGiraudel" target="_blank">Hugo Giraudel'</a>s works. A lot more awesome people like <a href="http://twitter.com/codingdesigner" target="_blank">Mason Wendell</a> who created <a href="http://github.com/Team-Sass/breakpoint" target="_blank">breakpoint </a>(a compass extension I can not do without). All these great people in the community have once used the indented Sass but now, they all write SCSS.
 <!--more-->
