@@ -14,8 +14,8 @@ ourselves through our entire lifetime by constraining the things we seek fulfill
 <!--more-->
 
 As of the date of this writing, my home page describes me as a **Creative Technologist**
-because it is the best umbrella term that describes me. A downside to that title is that
-it can make what I do seem unclear. But what's the alternative? it will be using a
+because it is the best umbrella term that describes me. A downside to that title is the
+vagueness in what I do. But what's the alternative? It will be using a
 term that curbs what I am supposedly capable of. Something like **Frontend Engineer**.
 There is absolutely nothing wrong with being a frontend engineer and I could have that
 title for work if it were the position I applied for at a company. Constraining titles
@@ -29,8 +29,9 @@ stagnation breeds boredom and deterioration[^1].
 Beyond the boundaries of work, I do not think we should hold the same titles we hold at
 work because work constraints do not apply to our life. I once valued being a specialist
 over a generalist so much, then I realized that although they may be antonyms of each
-other, it does not make them mutually exclusive. So how do one simultaneously be
-generalist while being a specialist? through distributed specialization.
+other, it does not make them mutually exclusive. So, how does one simultaneously be a
+generalist while being a specialist? Through **distributed specialization**.
+I [wrote on this 7 years ago][5] but it was less articulate.
 
 The thing with centralized specialization is that it creates this myth of purpose that
 people end up chasing throughout their lifetime and never feeling fulfilled about, as
@@ -60,7 +61,7 @@ purpose. Here is a definition of cascade I like in this context:
 > A process whereby something, typically information or knowledge, is successively passed on.
 
 Just like waterfalls cascade into bigger bodies of water, we do not have to begin our life chasing
-after a big purpose. Be the tiny waterfall!
+after a big purpose. Be the waterfall!
 
 It is 2021 and I am called a software engineer in my full time job, and an adjunct instructor in my
 part-time job, but here is how I got here: I got computer security certifications, loved every bit
@@ -77,13 +78,14 @@ I thought it only made sense to be a backend software engineer with the things I
 liked when security was not working out for me in Nigeria. After a few years of working as a
 backend engineer, I had to freelance and find people to pay for design and frontend work for my
 gigs. This led me into learning those skills to be able to deliver myself as a full package to
-my clients.
+my clients. I am also currently into playing basketball and cooking.
 
 From that short story, here are some life niche I can extract: **Comic artist**,
-**OS GUI developer**, **Security professional**, **Designer**, **Frontend engineer**,
+**OS GUI developer**, **Security professional**, **Designer**, **Chef**, **Frontend engineer**,
 **Backend engineer**, **Writer**, **Teacher**. In all these explorations, I never felt like I was
 switching from one thing to another and starting over. They all flowed into each other. After
-observing this, I decided it was up to me to prepare the water bodies I want to flow into as a waterfall so I started scheduling things to do at certain ages.
+observing this, I decided it was up to me to prepare the plunge pools I want to flow into as a
+waterfall. Then I started scheduling things to do at certain ages.
 
 Between 25 and 30 (I am somewhere in between) I will get a little more into evolutionary art and
 more generative art. At 38, I will be getting into woodworking and sculpture, at 45 I will get
@@ -92,7 +94,11 @@ other things that I may still have to do either for work or for personal busines
 specialist painter at 46 and still work as a software engineer, while dialing down the time I 
 spend on software outside work and dialing up a very specific branch of painting.
 
-A common problem with being a generalist is that you only get to scratch the surface of everything
+We are met with the myth of purpose when we try to narrow down just one out of the things that
+define us to base our entire life upon. A better alternative to that will be to amplify
+specific life purposes across time periods.
+
+The quandary of being a generalist is that you only get to scratch the surface of everything
 in your horizon. To have the specialist kind of impact in a generalist job, you might need to
 have once lived a specialist in at least one of your areas of generalization. As a full-stack
 software engineer, I think the areas I have specialized in the past help me do a better work as a
@@ -111,6 +117,7 @@ care about the one thing you feel is your sole life purpose.
 [2]: https://en.wikipedia.org/wiki/Broken_windows_theory
 [3]: https://kde.org
 [4]: /getting-started-with-gui-development-in-python/
+[5]: /im-an-x-programmer/
 
 
 <!-- https://convertkit.slack.com/archives/C0VFM08AK/p1603385931367700 -->
