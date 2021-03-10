@@ -1,7 +1,8 @@
 ---
 author: Joseph Rex
 title: Having a healthy email relationship
-date: 2021-03-05T10:28:22-06:00
+date: 2021-03-09T20:28:22-06:00
+lastmod: 2021-03-09T20:28:22-06:00
 url: /having-a-healthy-email-relationship/
 tags:
   - productivity
