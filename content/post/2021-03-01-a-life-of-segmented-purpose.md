@@ -7,6 +7,7 @@ url: /life-with-segmented-purpose/
 tags:
   - life
   - opinions
+  - career
 ---
 From the moment I hit my [point of realization][1], I frequently thought about ways to
 achieve quality of life through fulfillment in the things I do. We are likely to limit
@@ -39,7 +40,7 @@ seen in the Pixar movie - Soul. If you haven't seen the movie, here's a short ex
 video I would really recommend you watch.
 
 <figure class="video">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K5BqYgpxPoY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K5BqYgpxPoY?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
 A wrong interpretation of this movie will be concluding that we do not need purpose as it can only

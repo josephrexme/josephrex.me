@@ -40,8 +40,8 @@ params:
   themeBuilder: true
   favicon: favicon.png # A file located in the static directory
   logo: logo.png # Also located in static directory for logo
-  banner: https://res.cloudinary.com/strich/image/upload/v1614466088/JR_logo_-_alpha_rsnlqi.png # Used for opengraph
-  themeColor: #b30950
+  banner: https://res.cloudinary.com/strich/image/upload/v1615337400/JR-Logo_eigvmk.png # Used for opengraph
+  themeColor: #243d6f
   ckformid: 1526099
 
 social:
