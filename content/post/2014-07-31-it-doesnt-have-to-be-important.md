@@ -2,7 +2,7 @@
 author: Joseph Rex
 comments: true
 date: 2014-07-31T00:00:00Z
-title: It doesn't have to be important
+title: It does not have to be important
 url: /it-doesnt-have-to-be-important/
 tags:
   - css
