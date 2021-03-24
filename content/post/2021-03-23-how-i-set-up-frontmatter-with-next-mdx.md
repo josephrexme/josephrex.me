@@ -7,7 +7,7 @@ url: /frontmatter-with-nextjs-and-mdx/
 tags:
   - code
   - next.js
-  - ssr
+  - ssg
 ---
 As I began writing documentation for my project [ui-pack][1] I wanted full control of the
 medium to prevent limitations that may be met with existing documentation tools. A primary
