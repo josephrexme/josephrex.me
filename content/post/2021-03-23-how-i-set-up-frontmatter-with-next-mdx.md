@@ -1,6 +1,7 @@
 ---
 author: Joseph Rex
 title: How I set up frontmatter With Next.js and MDX
+description: A guide on how to use frontmatter with mdx.js and next.js by creating a remark plugin
 date: 2021-03-23T18:29:31-05:00
 lastmod: 2021-03-23T18:29:31-05:00
 url: /frontmatter-with-nextjs-and-mdx/
