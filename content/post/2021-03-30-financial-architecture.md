@@ -2,6 +2,7 @@
 title: Financial architecture
 date: 2021-03-30T12:34:46-06:00
 lastmod: 2021-03-30T12:34:46-05:00
+url: /financial-architecture/
 ---
 
 A lot of things that are built to withstand the test of time go through proper
