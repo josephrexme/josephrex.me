@@ -1,8 +1,10 @@
 ---
 title: Financial architecture
 date: 2021-03-30T12:34:46-06:00
-lastmod: 2021-03-30T12:34:46-05:00
+lastmod: 2021-04-03T12:34:46-05:00
 url: /financial-architecture/
+tags:
+  - finance
 ---
 
 A lot of things that are built to withstand the test of time go through proper
@@ -78,6 +80,11 @@ dials and satisfying them.
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BmAwa1nnB6w?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 
+If you are on something like the [FIRE][2] movement and/or will like to remain on a
+conservative budget, this sinking fund can also be where you save for bulk purchases,
+down payment for a house, car. To identify the purpose of all sinking fund you have
+at once, they can be split into buckets which we will discuss later in the article.
+
 <strong style="color:#912F40">Travel saving:</strong> This goes with sinking fund as a
 saving intended for something that makes you live the life you want in the present.
 Some may place travel saving as a budget within another account, but I prefer for it to
@@ -87,9 +94,34 @@ affecting all the other accounts with their own unique purpose.
 
 <strong style="color:#912F40">Tithe saving:</strong> This is pretty self explantory. I pay
 tithe as a christian. This can be skipped if you are not religious. It may be hard to
-find a church with principles that are inclined with yours if you are a christian. In such
+find a church with principles that align with yours if you are a christian. In such
 situations, I recommend to just find one church that at least seems decent enough to make
-good use of tithes you send in[^3].
+good use of tithes you send in[^3]. Keeping your tithe away from your other personal accounts
+helps to not have to think about that as your money.
+
+## Budgets - The frame
+There are various approaches to budgets and many tools for it. I've recommended [Debit & Credit][1]
+several times on this blog because it works just great with my lifestyle. I think YNAB is great
+because it can be used in many ways, but I'm not a fan of some of the popular ways I've seen it used.
+
+Budgets are like additional accounts that guide the structure of our finance. One of the popular
+approach to budgeting is **zero-sum budgeting** which I think can be great but not exactly my choice.
+If you love zero-sum budgeting, YNAB might be a great platform for you.
+
+There are 2 types of budgets I use and I like the flexibility of using them in most appropriate
+situations without locking myself into one. They are carryover and non-carryover budgets. If you
+are familiar with the differences between HSA and FSA, the carry-over budgets are like HSA
+accounts where you get to keep whatever is not used into the following year,
+and the non-carryover are like FSA accounts where you use it or lose it.
+
+As with my foundational architecture, I like to set myself up for sustainability.
+In this case, that means starting with budgetting techniques that aren't so rigid.
+
+In zero-sum budgeting, from my understanding, all budgets are with positive carryover,
+and for some, negative carryovers too.
+
+## Buckets - The interior
+_this article is still in progress_
 
 
 [^1]: Having multiple bank accounts does not in itself help you have a better financial structure, but it plays a part in the full architecture.
@@ -98,3 +130,6 @@ good use of tithes you send in[^3].
 you have medical conditions or are in high health risk.
 
 [^3]: I'm not an active member of the church I pay tithe to, but I see that they feed homeless and take care of people with offerings they get.
+
+[1]: https://debitandcredit.app/
+[2]: https://www.investopedia.com/terms/f/financial-independence-retire-early-fire.asp
