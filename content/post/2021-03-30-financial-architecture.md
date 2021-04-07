@@ -26,9 +26,9 @@ to have a sturdy impeccable software as we all know there's no such thing.
 
 Software architecture however can sustain workflows and communication within a team
 for a given period of time. This leads to why we need an architecture for our finances.
-For a lot of people, finances are a big variable as income and expense streams may appear or vanish for good
-or bad reasons. Our personal finance is usually a fluctuating asset, no matter what spectrum of wealth
-it is fluctuating on.
+For a lot of people, finances are a big variable as income and expense streams may appear
+or vanish for good or bad reasons. Our personal finance is usually a fluctuating asset,
+no matter what spectrum of wealth it is fluctuating on.
 
 Like a lot of financial resources would disclaim, the architecture I will be sharing may not apply
 to everyone as we have unique experiences and situations, but I hope this can be a template/guide to
@@ -36,10 +36,11 @@ someone else.
 
 ## Bank accounts - The foundation
 
-How many bank accounts is too many? You tell me. Besides business accounts, I have 8 accounts split across 3 different
-banking institutions. Admittedly, sticking to 1 or two different banks/credit unions should have
-been sufficient. I chose to use 3 for a comparable experience across banks I admire. You may be able to
-create as many accounts as you need within your banking institution. Here's a breakdown of my 8 accounts
+How many bank accounts is too many? You tell me. Besides business accounts, I have 8 accounts
+split across 3 different banking institutions. Admittedly, sticking to 1 or two different
+banks/credit unions should have been sufficient. I chose to use 3 for a comparable experience
+across banks I have interest in. You may be able to create as many accounts as you need within
+a single banking institution. Here's a breakdown of my 8 accounts
 
 <strong style="color:#912F40">Primary checking:</strong> We all have this account where our paychecks come into.
 For most, all expenses come out of this account too. This account used to be where every income and expense from various payees go through for me, and all I had besides this was a single savings account. Although, I am one for minimalism, I've found that it
@@ -121,8 +122,29 @@ In zero-sum budgeting, from my understanding, all budgets are with positive carr
 and for some, negative carryovers too.
 
 ## Buckets - The interior
-_this article is still in progress_
+Buckets are a breakdown of bank accounts into smaller chunks. Some banks like Ally offer this
+as a feature. If yours does not, you can use an app like Debit & Credit to create extra
+accounts that sum up to individual bank accounts.
 
+For the sinking fund account above, you may have the following buckets:
+
+- Playstation 5
+- House saving
+- New shoes
+
+The concept of buckets prevent you from simply buying things because you can when your money
+should be serving other more important purposes.
+
+My wife and I have equal carryover budgets each month that we call our splurge budgets. Because
+this is a carryover budget, we can accumulate it for larger individual purchases in the sinking
+fund adjacently to our shared buckets.
+
+## Conclusion
+A financial architecture makes it easier to have a sustainable routine with your money and
+makes it easier to stick to budgets. For a lot of people newly trying to get into budgetting,
+a lot of work goes into trying to have a budget and they eventually fall off the wagon.
+With an architecture, it is a lot more to set up upfront but more systems in place to prevent
+you from falling off with your finances.
 
 [^1]: Having multiple bank accounts does not in itself help you have a better financial structure, but it plays a part in the full architecture.
 
