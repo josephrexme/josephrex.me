@@ -93,12 +93,13 @@ be its own account. A lot of times, you may end up using a credit card for your 
 to get reward points, but this account's existence is to reimburse the credit card without
 affecting all the other accounts with their own unique purpose.
 
-<strong style="color:#912F40">Tithe saving:</strong> This is pretty self explantory. I pay
-tithe as a christian. This can be skipped if you are not religious. It may be hard to
-find a church with principles that align with yours if you are a christian. In such
+<strong style="color:#912F40">Tithe saving:</strong> I pay tithe as a christian but this is
+not something every christian let alone everyone worry about, this is for those who do.
+Find a church with principles that align with yours if you are a christian. In such
 situations, I recommend to just find one church that at least seems decent enough to make
 good use of tithes you send in[^3]. Keeping your tithe away from your other personal accounts
-helps to not have to think about that as your money.
+helps to not have to think about that as your money. The longer it stays in your personal account
+while you wait to pay it to the church, the more reluctant you may get about paying tithe.
 
 ## Budgets - The frame
 There are various approaches to budgets and many tools for it. I've recommended [Debit & Credit][1]
