@@ -70,8 +70,8 @@ adventures to be had, a dog to be taken care of[^2], meals to be cooked.
 
 Regardless of the many responsibilities life may put on our shoulders, I believe we can always do
 those extra things we want to do when we lower our expectations. I lower my creative expectation
-by starting little projects and knowing I may not complete them in an expected. But this does not
-matter as long as I make fractional contributions until I have a majestic piece.
+by starting little projects and knowing I may not complete them in an expected time.
+However, this does not matter as long as I make fractional contributions until I have a majestic piece.
 
 
 [1]: https://www.josephrex.me/life-with-segmented-purpose/
