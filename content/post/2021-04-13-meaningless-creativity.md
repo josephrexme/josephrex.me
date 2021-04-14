@@ -27,13 +27,13 @@ stuck on improving the skills valuable to make them better at their daily jobs.
 
 There's so much going on already at every stack of software engineering from deciding
 between React, Vue, Svelte, Web Components, to deciding what database to use, to what
-provisioning tool to use. I am one of such engineers and I am still figuring out the
+provisioning tool to use. I am one of such engineers still figuring out the
 best ways to stay on top of skills I need to be good enough at what I'm getting paid
-for, as well as getting better at skills I simply just want to learn for my artistic
-itch, but may be applicable for work some day.
+for, as well as the skills I simply just need to scratch my artistic itch, hoping they
+may be applicable for work some day.
 
 Various people have unique learning styles and one that I've found that works for me and
-I think works for a lot of people, is pragmatic (active) learning. Learning through experimentation.
+I think for a lot of other people, is pragmatic (active) learning. Learning through experimentation.
 I can only speak for myself but it is incredibly difficult to pick up a book to learn a skill
 without trying and failing at it first. This is why I resolved that the best way to learn
 these skills I desire is by making things even when they are meaningless.
