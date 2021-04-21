@@ -9,6 +9,8 @@ For more details on my reading journey, [follow me on goodreads][15]. You can al
 
 ##### [ 2021 ]
 - [A promised land][31]
+- [Mathematics for 3D Game Programming and Computer Graphics](https://amzn.to/3apTqxG)
+- [Foundation HTML5 Animation with JavaScript](https://amzn.to/3emGKJ4)
 ##### [ 2020 ]
 - Art direction on the web - Andy Clarke
 - [Refactoring UI][19]
