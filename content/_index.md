@@ -1,5 +1,5 @@
 ---
-type: portfolio
-title: Home
+type: post
+title: Articles
 description: Something here
 ---
