@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy"
   },
   "repository": {
     "type": "git",

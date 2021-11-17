@@ -1,0 +1,33 @@
+---
+pagination:
+  data: collections.posts
+  size: 4
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>{{ site.config.title }}</title>
+</head>
+<body>
+  <h1>{{ site.config.name }},<br>{{ site.config.bio }}</h1>
+  <ul>
+  {%- for post in pagination.items -%}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <p>{{ post.data.page.excerpt }}</p>
+    </li>
+  {%- endfor -%}
+  </ul>
+  <ol>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+  </ol>
+  <footer>
+  &copy; {% year %}
+  </footer>
+</body>
+</html>
