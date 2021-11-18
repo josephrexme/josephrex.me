@@ -11,7 +11,7 @@ tags:
 
 If you've been writing [jQuery,][1] you're probably fond of writing your code this way when submitting forms with ajax
 
-{{< highlight javascript >}}
+```js
 $('form').on('submit',function(e){
   e.preventDefault();
   var data = $(this).serialize();
@@ -26,12 +26,12 @@ $('form').on('submit',function(e){
     });
 
 });
-{{< / highlight >}}
+```
 
 and for those using older versions of jQuery or haven't realized the essence of promises, it should be something like this you have:
 <!--more-->
 
-{{< highlight javascript >}}
+```js
 $('form').on('submit',function(e){
   e.preventDefault();
   var data = $(this).serialize();
@@ -47,7 +47,7 @@ $('form').on('submit',function(e){
   });
 
 });
-{{< / highlight >}}
+```
 
 Either way you have it, a problem you will encounter when working with file inputs will be that your files do not get uploaded. This is because [XMLHttpRequests (XHR)][2]  was not supporting Form Data Objects with file inputs.
 
@@ -55,16 +55,16 @@ According to [the standards by mozilla][3] support has been added for XHR Level
 
 If you have the following HTML
 
-{{< highlight html >}}
+```html
 <form action="" id="compform">
 <input type="text" name="title">
 <input type="file" name="file">
 </form>
-{{< / highlight >}}
+```
 
 You can handle the file upload in ajax as shown here:
 
-{{< highlight javascript >}}
+```js
 $('form').on('submit',function(e){
     e.preventDefault();
     var data = new FormData($('#compform')[0]);
@@ -81,7 +81,7 @@ $('form').on('submit',function(e){
       });
 
   });
-{{< / highlight >}}
+```
 
 This was stated by the Mozilla Developer Network [here][4]
 

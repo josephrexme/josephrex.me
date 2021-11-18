@@ -20,7 +20,7 @@ The article really pointed out a lot of things I had thought I will have to impl
 
 From the beginning of my styles. I already had the following print.sass file predefined for me
 
-{{< highlight css >}}
+```scss
 /* Print Styles */
 @media print
   *
@@ -60,7 +60,7 @@ From the beginning of my styles. I already had the following print.sass file pre
     widows: 3
   h2, h3
     page-break-after: avoid
-{{< / highlight >}}
+```
 
 If you checked out the [Eric Mayer's][1] link on alistapart above, you'd find out most of what he explained here.
 

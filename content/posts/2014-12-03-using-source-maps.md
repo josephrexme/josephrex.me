@@ -18,8 +18,8 @@ Source maps is not just limited to CSS and its pre-processor. It also has its JS
 
 Since I use compass, I didn't want to have to go back to compiling sass manually when I have the awesome \`compass watch\`. So I did a little look up for how to use sass maps from within compass and I found <a href="https://chillco.com/blog/setting-sass-and-compass-source-maps" target="_blank">this article</a>. Sweet enough, all I have to do is append my config.rb with
 
-{{< highlight ruby >}}
+```rb
 sourcemaps = true
-{{< / highlight >}}
+```
 
 I believe other browsers will bring support for this in future. This remains one of the reasons I prefer chrome dev tools for my front-end debugging.

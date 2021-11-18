@@ -14,7 +14,7 @@ Recently I chose to move from vanilla CSS to the syntactically awesome styleshee
 <a href="http://sass-lang.com" target="_blank">Team-Sass</a> provided a style guide for SASS concerning how we can name our variables for colors. A basic variable naming should be as it is on <a href="http://sass-lang.com/styleguide/color/" target="_blank">http://sass-lang.com/styleguide/color/</a> where all the colors have their names as variables like so:
 <!--more-->
 
-{{< highlight css >}}
+```scss
 $hopbush: #c69
 $bouquet: #b37399
 $venus: #998099
@@ -27,7 +27,7 @@ $regent-grey: #808c99
 $pale-sky: #6b717f
 $midnight-blue: #036
 $light-green: #98cbad
-{{< / highlight >}}
+```
 
 <a href="http://webdesign.tutsplus.com/tutorials/quick-tip-name-your-sass-variables-modularly--webdesign-13364" target="_blank">This article</a> by <a href="http://tutsplus.com" target="_blank">tutsplus</a> teaches on how you can create better variable names.
 
@@ -35,9 +35,9 @@ One of SASS awesome features that I cherish besides the wonders of mixins, inher
 
 It's syntax is
 
-{{< highlight css >}}
+```scss
 rgba($color, $alpha)
-{{< / highlight >}}
+```
 
 This way, it's not limited to just rgb() values for the colors but it converts even hexadecimal colors to RGB for its RGB values
 

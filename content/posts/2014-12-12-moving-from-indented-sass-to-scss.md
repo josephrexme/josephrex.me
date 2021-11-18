@@ -22,11 +22,11 @@ One great advantage of SCSS is that it is so similar to CSS and a CSS document p
 
 The image shows my text editor while I was switching from Sass to SCSS but it didn't just happen as easy as it appears there. First I had to change all the files with .sass extension to .scss in my current project and I had that done with this little python script
 
-{{< highlight python >}}
+```py
 import os,glob
 for file in glob.glob("*.sass"):
   os.rename(file, file[:-4] + 'scss')
-{{< / highlight >}}
+```
 
 Just that little code did the trick for me but it had to be in the same directory as my sass files. Next step was using <a href="http://sass2scss.com" target="_blank">sass2scss.com</a> which was a good service for me converting my sass files neatly to scss.
 

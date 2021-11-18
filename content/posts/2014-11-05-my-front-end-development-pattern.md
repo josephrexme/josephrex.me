@@ -36,7 +36,7 @@ After this, I wear my developer suits :D and open sublime text editor, starting 
 
 Little but powerful. With <a href="http://emmet.io/" target="_blank">Emmet</a>, that produces the following HTML5 document for me:
 
-{{< highlight html >}}
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +47,7 @@ Little but powerful. With <a href="http://emmet.io/" target="_blank">Emmet</a>, 
   
 </body>
 </html>
-{{< / highlight >}}
+```
 
 really cool right! Emmet helps a long way more. You should <a href="http://emmet.io/" target="_blank">check it out</a>.
 
@@ -55,12 +55,12 @@ One thing emmet does in that start HTML:5 document I don't like is the upper cas
 
 I add my viewport meta tag
 
-{{< highlight html >}}
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{{< / highlight >}}
+```
 
 I download [modernizr][1] or just pick a local copy I already have and add it to my vendor sub folder inside my js folder. At this point I have a file structure in this form
-{{< highlight text >}}
+```
  ├── styles/
     │   └── vendor/
     │   └── style.css
@@ -71,13 +71,13 @@ I download [modernizr][1] or just pick a local copy I already have and add it t
     │   └── script.js
     │   └── plugins.js
     └── index.html
-{{< / highlight >}}
+```
 
 The separate JS files get concatenated in the end to avoid multiple HTTP requests.
 
 The<a href="http://html5boilerplate.com/" target="_blank"> HTML5 boilerplate</a> is not so spoken of like it was at 2011 but it's still very much useful. I start up my project by including it and it's awesome the way I have a prepared 404.html page, I include <a href="http://modernizr.com/" target="_blank">modernizr</a> in the head. I add up Google CDN jQuery with a local fallback, and a favicon.png file to my root directory. My HTML structure then becomes:
 
-{{< highlight html >}}
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,13 +107,13 @@ The<a href="http://html5boilerplate.com/" target="_blank"> HTML5 boilerplate</a>
   <script src="js/script.js"></script>
 </body>
 </html>
-{{< / highlight >}}
+```
 
 I added a google font to that because most times I do the google fonts since I can't afford other webfonts. I also converted boilerplate's stylesheet to a partial (_h5bp.sass) and imported it in my styles.sass file.
 
 Now the HTML is set up. The JS is fine as well. My main.js is where I write my javascript and plugins.js by HTML5 boilerplate has a nice fallback for browsers without console and also gives me space to initialize my third-party plugins.
 
-{{< highlight javascript >}}
+```js
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
@@ -144,19 +144,19 @@ $(document).ready(function(){
         controlNav: false
     });
 })
-{{< / highlight >}}
+```
 
 I just gave an example of flexslider being used in my project to show usage of plugins.
 
 I'll say my whole javascript is fine but <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">pagespeed</a> really matters to me and this makes me take minification very seriously. I minify my js with <a href="http://gruntjs.com" target="_blank">grunt</a> <a href="https://www.npmjs.org/package/grunt-contrib-uglify" target="_blank">uglify</a> after installing it with <a href="https://npmjs.org/" target="_blank">npm</a>.
 
-{{< highlight text >}}
+```
 npm install grunt-contrib-uglify --save-dev
-{{< / highlight >}}
+```
 
 After this step, all that needs to be done is to register the task in Gruntfile.js
 
-{{< highlight javascript >}}
+```js
 module.exports = function(grunt) {
 
   // Project configuration.
@@ -180,7 +180,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['uglify']);
 
 };
-{{< / highlight >}}
+```
 
 I had created a package.json file from the start of the project with `npm init`. Now everything seems fine with JS. I'll just have to change main.js to main.min.js at the end of my design.
 
@@ -194,7 +194,7 @@ I feel comfortable with indented sass maybe because I'm a python developer and I
 
 First, I make use of <a href="http://compass-style.org/reference/compass/" target="_blank">compass extensions</a>, they help and provide me with a lot of useful mixins in addition with the ones I created myself. Here are some of mine
 
-{{< highlight css >}}
+```scss
 =three-d($shadowcolor)
 	position: relative
 	box-shadow: 1px 1px $shadowcolor, 2px 2px $shadowcolor, 3px 3px $shadowcolor
@@ -251,7 +251,7 @@ First, I make use of <a href="http://compass-style.org/reference/compass/" targe
 	background-image: radial-gradient(center 0, circle farthest-corner, rgba(0,0,0,0.15), rgba(0,0,0,0))
 =gradient-light-radial
 	background-image: radial-gradient(center 0, circle farthest-corner, rgba(255,255,255,0.4), rgba(255,255,255,0))
-{{< / highlight >}}
+```
 
 Kitty Giraudel gave <a href="http://www.sitepoint.com/sass-mixins-kickstart-project/" target="_blank">some kick-start mixins here</a>. I also use <a href="http://breakpoint-sass.com/" target="_blank">breakpoints</a> for my responsive styling.
 
@@ -259,16 +259,16 @@ Kitty Giraudel gave <a href="http://www.sitepoint.com/sass-mixins-kickstart-proj
 
 with it you can write media queries like this
 
-{{< highlight css >}}
+```scss
 .fancy
    width: 500px
    +breakpoint(max-width 1200px)
         width: 200px
-{{< / highlight >}}
+```
 
 which is an equivalent of the following CSS
 
-{{< highlight css >}}
+```scss
 .fancy{
    width: 500px;
 }
@@ -277,35 +277,35 @@ which is an equivalent of the following CSS
       width: 200px;
     }
 }
-{{< / highlight >}}
+```
 
 The force is with me on this one.
 
 When there is need for grids, I call for <a href="http://susydocs.oddbird.net/en/latest/install/" target="_blank">susy</a>. Susy is way better than bootstrap grids in that I don't have to load some unnecessary classes I don't need. I call for grids just when I need them this way
 
-{{< highlight css >}}
+```scss
 .container
    +container(100%)
    >div
       +span(25%)
-{{< / highlight >}}
+```
 
 with a mark-up of this sort
 
-{{< highlight html >}}
+```html
 <div class="container">
   <div></div>
   <div></div>
   <div></div>
   <div></div>
 </div>
-{{< / highlight >}}
+```
 
 That's just 4 grids but we can go 12 just like bootstrap too. I like the idea that we can just call grids on demand rather than loading excess mark-up as with bootstrap.
 
 Finally, I will like my websites to have browser compatibility when using properties by some vendor browsers. <a href="http://css-tricks.com/autoprefixer/" target="_blank">Autoprefixer</a> comes to my rescue at this point. I just need to add it to require it in my config.rb with my breakpoints and susy. But I also have to do some things to make it work after CSS file is generated, since it is a post processor.
 
-{{< highlight ruby >}}
+```rb
 require 'compass/import-once/activate'
 require 'autoprefixer-rails'
 on_stylesheet_saved do |file|
@@ -324,7 +324,7 @@ images_dir = "images"
 javascripts_dir = "js"
 
 output_style = :compressed
-{{< / highlight >}}
+```
 
 I also set output_style to compressed in my config.rb to get a resulting minified CSS. Finally, I  had put a snippet of <a href="http://google.com/analytics" target="_blank">google analytics</a> at the bottom to help me monitor and maintain the website.
 

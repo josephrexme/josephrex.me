@@ -2,7 +2,7 @@
 title: Financial architecture
 date: 2021-03-30T12:34:46-06:00
 lastmod: 2021-04-03T12:34:46-05:00
-url: /financial-architecture/
+permalink: /financial-architecture/
 tags:
   - finance
 ---

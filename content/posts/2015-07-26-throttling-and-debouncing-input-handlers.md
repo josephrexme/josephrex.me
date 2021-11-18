@@ -28,14 +28,14 @@ With throttling or debouncing, the DOM changes can wait until after every pause 
 
 Here's a pseudocode of what happens
 
-{{< highlight text >}}
+```
 // Without a throttle/debounce
 Listener(EventScroll) ->
    print 'The quick brown fox'
 // With a throttle of every 900ms
 Listener(EventScroll, throttle(800s) ) ->
    print 'The quick brown fox'
-{{< / highlight >}}
+```
 
 If we hit 200 resize points scrolling from 2400px to 320px, the first case will print "The quick brown fox" 200 times but instead with a 900ms throttle which says only call this function once in 900ms, while the scrolling takes 3s from 2400px it will be
 <figure>
@@ -49,11 +49,11 @@ As a human with an understanding of cognitive science, I try to think of how oth
 
 About the first [jQuery throttle-debounce plugin][5] that found me before I even knew its use, it had been my option when it comes to debouncing my input handlers and it works just great but on my most recent I chose to give the [underscorejs][6] a try and I liked using it more with its _.debounce() callback which works just like below
 
-{{< highlight javascript >}}
+```js
 $(window).on('resize', _.debounce(function(){
 	console.log("The quick brown fox");
 }, 800));
-{{< / highlight >}}
+```
 
 Ben Alman mentions in the jquery plugin page that debouncing can be especially useful for rate limiting execution of handlers on events that will trigger AJAX requests and I chose debounce over throttle for this in my usecase.
 

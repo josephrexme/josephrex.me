@@ -32,7 +32,8 @@ run
 <pre class="lang:default decode:true ">~$: bundle install</pre>
 
 After which you should change your database.yml in config directory. It should look somewhat like this:
-{{< highlight yaml >}}
+
+```yaml
 default: &default
   adapter: postgresql
   pool: 5
@@ -58,7 +59,7 @@ production:
   database: production_db
   username: appname
   password:
-{{< / highlight >}}
+```
 
 The adapter has been changed from the default *sqlite3* to *postgresql*.
 

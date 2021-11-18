@@ -3,7 +3,8 @@ author: Joseph Rex
 title: Activate work in a single command
 date: 2021-06-09T09:04:19-05:00
 lastmod: 2021-06-09T09:04:19-05:00
-url: /activate-work-in-a-single-command/
+layout: post
+permalink: /activate-work-in-a-single-command/
 tags:
   - automation
   - code

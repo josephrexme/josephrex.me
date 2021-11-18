@@ -14,7 +14,7 @@ While working on a rails project recently, I had upgraded my version of rails fr
 
 The one thing about the uglifier update I was not pleased with initially was its [copyright comment preservation][2]. Uglifier started allowing comments that had a bang to remain unminified and this kept giving me a warning from my rule based metric that JavaScript is not minified because of some whitespaces sold off with the copyright comment lines.
 
-{{< highlight javascript >}}
+```js
 /*!
  * jQuery JavaScript Library v2.1.3
  * http://jquery.com/
@@ -28,37 +28,37 @@ The one thing about the uglifier update I was not pleased with initially was its
  *
  * Date: 2014-12-18T15:11Z
  */
-{{< / highlight >}}
+ ```
 
 I wanted nothing more than to get rid of this and my resort was to edit my production configuration from 
 
-{{< highlight ruby >}}
+```rb
 config.assets.js_compressor = :uglifier
-{{< / highlight >}}
+```
 
 to
 
-{{< highlight ruby >}}
+```rb
 config.assets.js_compressor = Uglifier.new(output: { comments: :none })
-{{< / highlight >}}
+```
 
 At this point, I'm including jquery2 with sprockets and [sizzlejs][3] with it.
 
-{{< highlight javascript >}}
+```js
 //= require jquery2
-{{< / highlight >}}
+```
 
 With a change in the production configuration, I got my JS file smoothly minified the way I want it and then I started writing this blog post to tell anyone else trying to get rid of it that this is how I've gone about it. Then I read [this tldr MIT license][4]  which was an eye opener for me. I've taken licenses and copyrights with lethargy for so long and this was a turn-around for me and I needed to get back the copyrighted JQuery in my app and at the same time keep most of it minified. Luckily there's a minified jquery2 that can be included with sprockets
 
-{{< highlight javascript >}}
+```js
 //= require jquery2.min
-{{< / highlight >}}
+```
 
 That has a single-line copyright with less white-space and it was my go.
 
-{{< highlight javascript >}}
+```js
 /*! jQuery v2.1.3 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
-{{< / highlight >}}
+```
 
 If you're privileged to use a software or product for free. For all its worth which may be inclusion of License and Copyrights, we'll be good software community citizens by keeping them.
 

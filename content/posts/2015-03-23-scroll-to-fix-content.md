@@ -7,7 +7,6 @@ url: /scroll-to-fix-content/
 ---
 
 Late last year, [Chris Coyier][1] addressed this on [CSS-Tricks][2] with illustrating images including GIF. In his solution to the problem, he had used [magic numbers][3] which he confirmed made his soluton not re-usable. He also wrote it in jQuery which may be nice considering that a lot of people use jQuery as it works on legacy browsers.
-
 <!--more-->
 
 The first issue I'll address here is that jQuery may be used by majority of web developers but not everyone does. To produce code that works in less time, I use jQuery to handle a lot of my freelance projects just to get the job done so fast. In this cases, performance is my least priority. I'm usually not trying to meet any performance budget even though I still take things like concatenation and minification very seriously. I maintain my blog here and I try my best possible to keep good performance. In total, I'm only having to use JavaScript to achieve about 6 things on my blog and I saw no need to load the whole jQuery library just to achieve those. I have chosen to go with vanilla JavaScript.
@@ -18,38 +17,38 @@ Considering a vanilla JavaScript solution without magic numbers, [Jessica][4] wr
 
 To listen on scroll event, we add a event listener with
 
-{{< highlight javascript >}}
+```js
 document.addEventListener("scroll", function(){});
-{{< / highlight >}}
+```
 
 Now to avoid the use of magic numbers, I suggest the element that gets fixed is already an absolutely positioned element with a `top` value determining its initial distance from the top of the window. That top value becomes the fix point where we make the element become sticky.
 
-{{< highlight javascript >}}
+```js
 /* Selecting the DOM element that'll be fixed */
 var wrap = document.getElementById('js-wrap');
 /* Get the top property which must have been set in
 the CSS and remove whatever units it has with parseInt */
 fixPoint = parseInt( getComputedStyle(wrap).getPropertyValue('top') );
-{{< / highlight >}}
+```
 
 Lastly, we want the element to get fixed when scrolled to. We do this by creating a condition to fix the content when the distance from the document top exceeds our acquired fixPoint.
 
-{{< highlight javascript >}}
-wrap.classList.toggle( "fixed", document.body.scrollTop > fixPoint );
-{{< / highlight >}}
+```js
+wrap.classList.toggle("fixed", document.body.scrollTop > fixPoint);
+```
 
 The whole code should now look like this:
 
-{{< highlight javascript >}}
+```js
 document.addEventListener("scroll", function(e) {
   fixPoint = parseInt( getComputedStyle(wrap).getPropertyValue('top') );
   wrap.classList.toggle( "fixed", document.body.scrollTop > fixPoint );
 });
-{{< / highlight >}}
+```
 
 Toggling a class `fixed` that gives the element a fixed position a new top value with a shorter distance from the window top as shown with the CSS code:
 
-{{< highlight css >}}
+```css
 .logo{
   position: absolute;
   top: 80px;
@@ -65,7 +64,7 @@ Toggling a class `fixed` that gives the element a fixed position a new top value
   z-index: 200;
   width: 30px;
 }
-{{< / highlight >}}
+```
 
 Here's a demo pen to show it in action
 

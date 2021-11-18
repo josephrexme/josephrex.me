@@ -21,9 +21,9 @@ The use of queues saves us by helping us provide a great user experience for our
 
 Beanstalkd is the driver that handles the task queuing and processing. To use beanstalkd, first you should go to app/config/queue.php and change the default driver to beanstalkd
 
-{{< highlight php >}}
+```php
 'default' => 'beanstalkd'
-{{< / highlight >}}
+```
 
 Then you need to install beanstalkd. On debian based distributions, it can be installed with apt-get:
 

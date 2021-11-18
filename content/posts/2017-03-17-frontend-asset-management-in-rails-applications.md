@@ -27,40 +27,40 @@ First you specify where bower should install its components. By default it insta
 
 `bower_components` directory within the root of your project but rails already make it possible to make a sprocket require of assets in `vendor/assets/javascripts` and `vendor/assets/stylesheets`. You may or may not be using these already but it's easier to think of the vendor directory as where vendor scripts/libraries go hence we'd tell bower to store components in there by creating a `.bowerrc` file in the root folder and adding this:
 
-{{< highlight json >}}
+```json
 {"directory": "vendor/assets/components"}
-{{< / highlight >}}
+```
 
 In my opinion, bower also has the best cli search of all registries so if you're not sure of a library name you can run a search to see what it's called by the most legitimate maintainer `bower search bootstrap`.
 
 Once found `bower install bootstrap` and your component would be stored at `vendor/assets/components/bootstrap`. Because of bower's flat dependency and also for the reason I mentioned earlier on easily debugging and making changes to frontend assets, you don't gitignore your bower components (this is just my opinion. If you have better reasons to gitignore it then do that). For rails to find these newly installed components and make them available as sprocket requires modify your application.rb located at `config/application.rb` with this assets path modification:
 
-{{< highlight ruby >}}
+```rb
 module YourApp
   class Application < Rails::Application
     ...
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
   end>
 end
-{{< / highlight >}}
+```
 
 Now you can go into your stylesheets manifest file (application.css) and do this:
 
-{{< highlight css >}}
+```css
 /*
  * Applicaiton.css
  *= require bootstrap/dist/css/bootstrap
  *
  */
-{{< / highlight >}}
+```
 
 for Javascript it'd be
 
-{{< highlight javascript >}}
+```js
 // Application.js
 //= require bootstrap/dist/js/bootstrap
 //
-{{< / highlight >}}
+```
 
 The final names here do not need their extensions .css and .js like every other sprocket require is always smart to determine the filetype by the parent filetype. To derive the path given to sprockets you simply have to look at the path from inside `vendor/assets/components` and your component name till its required asset file name.
 
@@ -68,7 +68,7 @@ If you've chosen to ignore your bower components directory earlier you should ma
 
 This way you can look at all the frontend assets easily in the bower.json file and they'd look like this:
 
-{{< highlight json >}}
+```json
 {
   "dependencies": {
     "bootstrap": "^3.3.7",
@@ -76,7 +76,7 @@ This way you can look at all the frontend assets easily in the bower.json file a
     "Snap.svg" "snap.svg#^0.4.1"
   }
 }
-{{< / highlight >}}
+```
 
 leaving your Gemfile free of frontend mess. This is espcially useful if you work with frontend developers that you would rather not have messing with things that affect/influence the backend process.
 

@@ -23,47 +23,48 @@ Loading SVG in HTML can be done through SVG sprites or embedded. The SVG `use` e
 
 We could just embed this parent SVG file somewhere in our HTML file but sometimes when it is really large, we like to maintain a neat mark-up by including it with JavaScript like below
 
-{{< highlight javascript >}}
+```js
 var url ='fonts/icons.svg';
 var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
 document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild);
-{{< / highlight >}}
+```
 
 Each group in the carrier SVG file looks like:
 
-{{< highlight html >}}
+```html
 <svg>
 	<g id="coolIcon">
 		<path d="M67, 18.0c ...." />
 	</g>
 </svg>
-{{< / highlight >}}
+```
 
 and they are used as shown:
 
-{{< highlight html >}}
+```html
 <svg viewBox="0 0 32 32">
 	<use xlink:href="#coolIcon"></use>
 </svg>
-{{< / highlight >}}
+```
 
 We can also achieve sprites the good o'l way with CSS by referencing the SVG file with url() and using `background-position`
-{{< highlight css >}}
+
+```css
 .icon{
 	background: url(icon.svg);
 	background-position: 0px -50px;
 }
-{{< / highlight >}}
+```
 
 Both spriting techniques still require a HTTP request for the SVG carrier (just one). Embedding SVG will increase the size of the HTML file but it can't be as much as the impact of data-uri. It's always just a difference of few bytes so it seems like the best way for me. Mostly, I stick with embedded SVG.
 
 If I'll need a circle then I'll just write
 
-{{< highlight html >}}
+```html
 <svg>
 	<circle cx="60" cy="60" r="50" stroke="black" stroke-width="2" fill="white"></circle>
 </svg>
-{{< / highlight >}}
+```
 
 <hr>
 
@@ -75,11 +76,12 @@ and then we begin shooting from a very close distance to the rim till we go furt
 
 Ok enough of illustrations outside the topic. First thing you should know is understanding how a SVG line works and here you go
 
-{{< highlight html >}}
+```html
 <svg>
 	<line x1="0" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
 </svg>
-{{< / highlight >}}
+```
+
 <figure>
 	<svg>
 		<line x1="0" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
@@ -92,13 +94,13 @@ X represents the horizontal flow while Y represents the vertical flow like the i
 
 Let's make something out of that. A **triangle**
 
-{{< highlight html >}}
+```html
 <svg>
 	<line x1="100" y1="0" x2="0" y2="100" stroke="black" />
 	<line x1="200" y1="100" x2="100" y2="0" stroke="black" />
 	<line x1="0" y1="100" x2="200" y2="100" stroke="black" />
 </svg>
-{{< / highlight >}}
+```
 
 <figure>
 	<svg>
@@ -110,11 +112,11 @@ Let's make something out of that. A **triangle**
 
 Circles are similar to lines. Since we can only advance from Triangles to Rectangles, and to other Polygons, I think here's the best place for cicles and ellipsis to fit in
 
-{{< highlight html >}}
+```html
 <svg>
 	<circle cx="70" cy="70" r="50" stroke="skyblue" fill="crimson" stroke-width="4" />
 </svg>
-{{< / highlight >}}
+```
 
 <figure>
 	<svg>
@@ -124,19 +126,19 @@ Circles are similar to lines. Since we can only advance from Triangles to Rectan
 
 We can also create circles with the ellipse tag
 
-{{< highlight html >}}
+```html
 <svg>
 	<ellipse cx="70" cy="70" rx="50" ry="50" fill="crimson" stroke-width="4" />
 </svg>
-{{< / highlight >}}
+```
 
 Creating an ellipse will only require having two different `rx` and `ry` values
 
-{{< highlight html >}}
+```html
 <svg>
 	<ellipse cx="70" cy="70" rx="40" ry="60" fill="crimson" />
 </svg>
-{{< / highlight >}}
+```
 
 <figure>
 	<svg>
@@ -148,11 +150,12 @@ So far, I introduced some more attributes for circles and ellipsis. The *cx* and
 
 Getting on with shapes, rectangle is a 4-angled shape and here's how to go about it
 
-{{< highlight html >}}
+```html
 <svg>
 	<rect width="400" height="200" fill="royalblue" />
 </svg>
-{{< / highlight >}}
+```
+
 <figure>
 	<svg>
 		<rect width="400" height="200" fill="royalblue" />
@@ -163,11 +166,11 @@ The rectangle `rect` uses height and width attributes to define its shape like r
 
 To produce a curvy rectangle the *x*, *y*, *rx* and *ry* values should also be set
 
-{{< highlight html >}}
+```html
 <svg>
 	<rect x="10" y="10" rx="40" ry="20" width="200" height="100" fill="salmon" />
 </svg>
-{{< / highlight >}}
+```
 
 <figure>
 	<svg>
@@ -177,11 +180,12 @@ To produce a curvy rectangle the *x*, *y*, *rx* and *ry* values should also be s
 
 With a little transform, we could make a **kite**
 
-{{< highlight html >}}
+```html
 <svg>
 	<rect x="50" y="10" width="100" height="100" fill="tomato" transform="rotate(-45,100,100)" />
 </svg>
-{{< / highlight >}}
+```
+
 <figure>
 	<svg>
 		<rect x="50" y="10" width="100" height="100" fill="tomato" transform="rotate(-45,100,100)" />
@@ -190,11 +194,11 @@ With a little transform, we could make a **kite**
 
 SVG also allows search engines index text in its graphics. To write such texts, we use the `text` element.
 
-{{< highlight html >}}
+```html
 <svg>
 	<text x="0" y="20" fill="black" style="font-weight:bold;font-size:15px;">Little Caesars have the best pizzas</text>
 </svg>
-{{< / highlight >}}
+```
 
 <figure>
 	<svg>
@@ -204,7 +208,7 @@ SVG also allows search engines index text in its graphics. To write such texts, 
 
 And right there, I introduced something seemingly new which was the use of CSS on `style` attributes. You can also use *classes* or *id* like you'll do with other HTML elements. An example of a style made for SVG may be as shown:
 
-{{< highlight css >}}
+```css
 .icon{
 	width: 32px;
 	height: 32px;
@@ -212,7 +216,7 @@ And right there, I introduced something seemingly new which was the use of CSS o
 	stroke: #aaa;
 	stroke-width: 2;
 }
-{{< / highlight >}}
+```
 
 You can also create Polygons and more complex shapes with SVG. The *polygon* element is really an interesting one to explore. For other complex shapes, we need to use `path` element to draw their co-ordinates. This will be done in the next article of my SVG series. If SVG is incapable of handling the kind of pixel based image you want, then you may also give HTML5 canvas a try.
 

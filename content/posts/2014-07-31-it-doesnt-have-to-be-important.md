@@ -16,19 +16,21 @@ I'm not impeccable and I wouldn't be dissing someone else' because of their faul
 Nested selectors increase specificity and they should be avoided when they can. In an instance where you have
 <!--more-->
 
-{{< highlight css >}} .header{...} {{< / highlight >}}
+```css
+ .header{...}
+ ``` 
 
 which contains a nav. If you wouldn't be using navs on any other part of your design, it will be unnecessary to have its selector named
 
-{{< highlight css >}}
+```css
 .header nav{...}
-{{< / highlight >}}
+```j
 
 when it will work just fine as
 
-{{< highlight css >}}
+```css
 nav{...}
-{{< / highlight >}}
+```
 
 I had to take that drift because the article is majorly about specificity. Specifically about the use of !important for specificity in CSS.
 
@@ -40,14 +42,16 @@ Based on <a href="http://csswizardry.com/2014/07/hacks-for-dealing-with-specific
   
 The first pen shows how the "bar" class overrides the "foo" class that sets a red color to the paragraph, and the in the second, "foo" has more power. We can add more specificity by chaining the same class as many times as we want it like:
 
-{{< highlight css >}}.foo.foo.foo.foo.foo{...} {{< / highlight >}}
+```css
+.foo.foo.foo.foo.foo{...}
+```
 
 Nice right? See we don't have to do it this way:
 
-{{< highlight css >}}
+```css
 .foo{color: red !important; }
 .bar{color: blue; }
-{{< / highlight >}}
+```
 
 ### Conclusion
 

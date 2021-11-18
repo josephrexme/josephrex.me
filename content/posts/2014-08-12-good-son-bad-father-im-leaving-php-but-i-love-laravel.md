@@ -16,24 +16,24 @@ PHP has a really shallow learning curve. It's easy for a 8 year old to pick it u
 
 However, there are still some things wrong about how it behaves in its OOP. For example when using namespaces, the following still seems wrong to me
 
-{{< highlight php >}}
+```php
 <?php
 namespace Joseph;
 
 $object = new \Rex\say_hello();
 
 ?>
-{{< / highlight >}}
+```
 
 I needed the preceding backward slash to bring me back to the global namespace. But when using the use statement,
 
-{{< highlight php >}}
+```php
 <?php
 namespace Joseph;
 
 use Rex\say_hello();
 ?>
-{{< / highlight >}}
+```
 
 Everything is wrong about this. I have friends that hate me for being a PHP developer but I chose to stick with it anyway.
 

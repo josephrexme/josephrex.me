@@ -24,7 +24,7 @@ AnimateCSS plays the role of using some transitions to **load in** the content t
 
 You can have various waypoints handling various animations per section of your web page. To do this in your script, it's as simple as:
 
-{{< highlight javascript >}}
+```js
 function ready(cb) {
   /in/.test(document.readyState) // in = loadINg
   	? setTimeout(ready.bind(null, cb), 9)
@@ -57,17 +57,17 @@ ready(function(){
     offset: '70%'
   });
 });
-{{< / highlight >}}
+```
 
 Notice how I used that tiny ready function? That's for those concerned about how they'll load it on documentReady like the jQuery `$(document).ready()`. Also I had set my offset to 70% because that works just fine for me. You can choose to go 100% like a lot of the jQuery implementations do. You can pick up one of the [animations for animate.css][11] and add their classes in place of the ones I used in the code above.
 
 Your HTML should look similar to this:
 
-{{< highlight html >}}
+```html
 <section class="animated waypoint" id="animation1">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 </section>
-{{< / highlight >}}
+```
 
 [1]: http://vanilla-js.com/
 [2]: https://mathiasbynens.be/demo/jquery-size

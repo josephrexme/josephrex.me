@@ -13,25 +13,26 @@ If you are a developer that keeps up with the community and best practices you w
 
 You may be complacent that your salted hash can escape dictionary attacks but what if your code leaks? or the intruder discovers how your salts are generated with their access to the database? Bcrypt to the rescue. For the rails community, since version 3 when [has_secure_password][2] was introduced, passwords storage have been handled in bcrypt. If however you are writing something custom in ruby then this is how it works:
 
-{{< highlight ruby >}}
+```rb
 require 'bcrypt'
 BCrypt::Password.create("secret")
-{{< / highlight >}}
+```
 
 A really good part to it is that it already handles salting for you and wouldn't require you to go through that extra process. PHP also does this nicely from version 5.5 with the *password_hash* function.
 
-{{< highlight php >}}
+```php
 password_hash($clearText, PASSWORD_DEFAULT, array('cost'=>10));
-{{< / highlight >}}
+```
 
 This requires that you also check if the password needs a hash upgrade on every login
-{{< highlight php >}}
+
+```php
 if(password_verify($clearText, $hash)){
 	if(password_needs_rehash($hash, $algo, $options)){
     $hash = password_hash($clearText, $algo, $options);
   }
 }
-{{< / highlight >}}
+```
 
 On lesser PHP versions it's best you just upgrade but if you are constrained by server restrictions then you can use Anthony Ferrara's (ircmaxell) [password compat library][3] with php >= 5.3.7
 
@@ -48,7 +49,7 @@ Legacy values appears as **True** and **False** boolean in the image but are sto
 
 The sample snippet below should make it clearer if you'd rather deal with less words
 
-{{< highlight php >}}
+```php
 <?php
 try{
 	$email = 'johndoe@gmail.com';
@@ -85,7 +86,7 @@ try{
 }catch(PDOException $e){
 	echo "The following error occurred: {$e}";
 }
-{{< / highlight >}}
+```
 
 Or just use a framework helper and avoid the excess lines of PHP code. I see no reason to explain the ruby method for this because life is just a lot easier with rails and similar ruby frameworks.
 <style>

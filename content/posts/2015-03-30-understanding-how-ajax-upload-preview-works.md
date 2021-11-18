@@ -13,24 +13,24 @@ There are some of these that are really important and one will only be re-invent
 
 To do this, there should be the user avatar image where they can click for upload when the page is in editable state. Also, we need a file upload form.
 
-{{< highlight html >}}
+```html
 <img src="profile.jpg" alt="My profile" class="avatar">
 <input type="file" id="uploadAvatar" style="visibility: hidden">
-{{< / highlight >}}
+```
 
 These two elements will be communicating with each other and that requires adding some JS hooks in class and id. The actual file upload form also has to be visuall hidden. You can use any approach you find suitable to achieve this. I've had cases where I used text-indent and some times, I use the hidden visibility and place the element absolutely in a place where it doesn't disturb the actual page.
 
 We want the user to click the avatar image for the file upload dialog to pop so we will have to trigger a click on the actual input form when the `.avatar` image is clicked.
 
-{{< highlight javascript >}}
+```js
 $('.avatar').click(function(){
     $('#uploadAvatar').trigger('click');
 });
-{{< / highlight >}}
+```
 
 The next challenge will be to have a way to display the images selected on the web page. To do this, we will use the JavaScript FileReader object to get the data-URI of the selected image and set it as a background of the upload area. We have to listen to the change event of the file upload input to grab image data when uploaded.
 
-{{< highlight javascript >}}
+```js
 $('#uploadAvatar').change(function(){
   if(this.files && this.files[0]){
     var reader = new FileReader();
@@ -44,7 +44,7 @@ $('#uploadAvatar').change(function(){
     reader.readAsDataURL(this.files[0]);
   }
 });
-{{< / highlight >}}
+```
 
 Notice my use of addRule there. That's not a built-in JavaScript function. I had used it because my upload preview is shown on a pseudo element on top of the actual image rather than as a replacement of the image. This is useful when you are using an image tag to load the actual image and setting a background wouldn't overwrite the displayed image.
 

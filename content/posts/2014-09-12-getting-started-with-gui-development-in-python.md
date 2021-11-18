@@ -33,7 +33,7 @@ I started out with Tkinter since it shipped with my python installation while I 
 
 After some reading, I decided to go with pyQt. I never tried pyGTK till date so I have less to say about it. I wrote my first pyQt4 program this way:
 
-{{< highlight python >}}
+```py
 # Code Example: Display a window in PyQt4
 # Python 2.6 with PyQt 4
 import sys
@@ -53,11 +53,11 @@ if __name__ == "__main__":
 
     exit_code = app.exec_()
     sys.exit(exit_code)
-{{< / highlight >}}
+```
 
 The comments explain what each part of the code does. This is just a blank window frame with no objects in it. After this, I found this code for creating shapes within a canvas in a frame
 
-{{< highlight python >}}
+```py
 # Code Example: Display a window with a button, icon and canvas in PyQt4
 # Python 2.7 with PyQt 4
 # This example build on the last one by adding a button, changing the
@@ -159,11 +159,11 @@ if __name__ == "__main__":
 
     exit_code = app.exec_()
     sys.exit(exit_code)
-{{< / highlight >}}
+```
 
 The button object here was sending signals to change the shapes in the canvas. This was my first experience working with signals and slots. It's like a simple jQuery where we have two objects in the DOM being selected.
 
-{{< highlight javascript >}}
+```js
 $('#signal').click(function(){
   $('.receiver').html('This is my slot');
 });
@@ -171,7 +171,7 @@ $('#signal').click(function(){
 document.getElementById('signal').onclick = function(){
  document.querySelectorAll('.receiver').innerHTML = 'This is my slot';
 }
-{{< / highlight >}}
+```
 
 That's my interpretation in jQuery of handling signals and slots as I have demonstrated them with their related class names.
 
@@ -185,7 +185,7 @@ I designed the UI for my KDE desktop to be dark because I love dark UI so it it 
 
 Qtdesigner produces user interface files in .ui extension. This ui files are in XML format. Here's a short sample of its output
 
-{{< highlight xml >}}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <author>Joseph Rex</author>
@@ -201,7 +201,7 @@ Qtdesigner produces user interface files in .ui extension. This ui files are in 
   </property>
  </widget>
 </ui>
-{{< / highlight >}}
+```
 
 We can work with these XML files directly to build our GUI but I wouldn't recommend that. It's best to turn this into a python code we can work with. Qtdesigner is built for C++ so C++ programmers can simply click Form > View Code to see the cpp code generated. For Python developers we use a UI compiler program (pyuic). I use pyuic4 so compiling a UI program is this way for me:
 
@@ -237,7 +237,7 @@ As you can see the signal/slot editor has the names of each object. and the view
 
 Now I have this generated python code:
 
-{{< highlight python >}}
+```py
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'example.ui'
@@ -286,11 +286,11 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton.setText(QtGui.QApplication.translate("MainWindow", "Display", None, QtGui.QApplication.UnicodeUTF8))
-{{< / highlight >}}
+```
 
 The name of the window object in the designer is "MainWindow" so the class name in the generated code is Ui_MainWindow based on that. Following the docs on using generated code, I imported this in my major program
 
-{{< highlight python >}}
+```py
 import sys
 from PyQt4 import QtGui, QtCore
 from ui_example import Ui_MainWindow
@@ -306,7 +306,7 @@ if __name__ == '__main__':
 	window = Main()
 	window.show()
 	sys.exit(app.exec_())
-{{< / highlight >}}
+```
 
 Now the signals. We have three objects on this frame. Let's rehash them but this time with the names we've given them in the program.
 
@@ -316,7 +316,7 @@ Now the signals. We have three objects on this frame. Let's rehash them but this
 
 You can see I've used default names to make things easier but you can make it different in your case. QPushButton sends a signal, QLabel receives it and picks the content of QTextEdit to display in itself as a slot. I'll amend my code to perform my function
 
-{{< highlight python >}}
+```py
 import sys
 from PyQt4 import QtGui, QtCore
 from ui_example import Ui_MainWindow
@@ -336,7 +336,7 @@ if __name__ == '__main__':
 	window = Main()
 	window.show()
 	sys.exit(app.exec_())
-{{< / highlight >}}
+```
 
 and voila! It works. See it in action after running "python example.py"
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang={{ site.config.language }} prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>{{ title or site.config.title }}</title>
+  <meta name="description" content="{{ page.excerpt or site.config.description }}">
+  <meta name="author" content="{{ site.config.author.name }}">
+  <meta property="site_name" content="{{ site.config.username }}">
+  <meta property="og:type" content="{% if layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ page.url | absURL }}">
+  <meta property="og:title" content="{{ title or site.config.title }}">
+  <meta property="og:image" content="{{ site.config.banner }}">
+  <meta property="og:description" content="{{ page.excerpt or site.config.description }}">
+  <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
+  <meta name="twitter:url" content="{{ page.url | absURL }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ site.config.username }}">
+  <meta name="twitter:creator" content="@{{ site.config.username }}">
+  <meta name="twitter:title" content="{{ title or site.config.title }}">
+  <meta name="twitter:img:src" content="{{ site.config.banner }}">
+  <meta name="color-scheme" content="light dark">
+  {% if layout == "post" %}
+  <meta name="twitter:label1" content="Author">
+  <meta name="twitter:data1" content="{{ site.config.name }}">
+  <meta name="twitter:label2" content="Published On">
+  <meta name="twitter:data2" content="{{ page.date | formatDate }}">
+  {% endif %}
+  {% if site.config.googleAnalytics %}
+  <link rel="preconnect" href="//www.google-analytics.com" as="script">
+  <link rel="preconnect" href="//stats.g.doubleclick.net" as="script">
+  {% endif %}
+  <link rel="canonical" href="{{ page.url | absURL }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ site.config.themeColor }}">
+  <meta name="theme-color" content="{{ site.config.themeColor }}">
+  <link rel="webmention" href="https://webmention.io/www.josephrex.me/webmention">
+  <link rel="pingback" href="https://webmention.io/www.josephrex.me/xmlrpc">
+  <script>
+  if(localStorage.getItem('theme')) {
+    document.documentElement.classList.add('theme-active');
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "{% if layout == 'post' %}Article{% else %}Website{% endif %}",
+    "description": "{{ site.config.description }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.config.name }} Blog",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.config.banner }}",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.config.name }}",
+      "url": "{{ site.config.url }}"
+    },
+    "sameAs": [
+      "{{ site.config.social.twitter }}",
+      "{{ site.config.social.linkedin }}",
+      "{{ site.config.social.dribbble }}",
+      "{{ site.config.social.codepen }}",
+      "{{ site.config.social.github }}"
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absURL }}"
+    }
+    {% if layout == "post" %}
+    ,"headline": "{{ title or site.config.title }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text={{ title | lower | slug }}",
+      "width": 800,
+      "height": 500
+    },
+    "datePublished": "{{ page.date | formatDate }}",
+    "dateModified": "{% modified_at %}"
+    {% endif %}
+  }
+  </script>
+</head>
+<body>
+ {{ content | safe }}
+ {% include "footer.html" %}
+</body>
+</html>

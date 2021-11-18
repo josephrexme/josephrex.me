@@ -18,18 +18,18 @@ Cohesion in software is a measure of function relationship within a module. Cohe
 
 To meet business needs, developers create business specific tests for <abbr title="Behavior Driven Development">BDD</abbr> which would then define the related methods per class with each following the <abbr title="Single Responsiblity Principle">SRP</abbr>. It's known that a method needs to have a single responsibilty if you follow SRP already hence you could have the following class:
 
-{{< highlight javascript >}}
+```js
 class Chat{
   connectSocket() {}
   printLog() {}
   kickBanUser() {}
   spamIPverification() {}
 }
-{{< / highlight >}}
+```
 
 While all these may be performing a single responsibility they are not related in any way. This is like adhesion in physics as described earlier where the class would be an adhesive substances that merges all sort of unrelated particles. This is also an example of low cohesion. It is about the relationship of responsibilities. Here's a cohesive version of the Chat class example:
 
-{{< highlight javascript >}}
+```js
 class Chat{
   pullChatThread() {}
   getOnlineStatus() {}
@@ -38,7 +38,7 @@ class Chat{
   sanitizeInputs {}
   updateChatThread() {}
 }
-{{< / highlight >}}
+```
 
 The method names explain what the methods here are doing and you can think of how they are related to each other in order to make the chat work. If you fire up a chat, you want to be able to see past messages and the `pullChatThread()` method helps with that after which you may want to know the online status of the user. The `pullChatThread()` method might be calling that method within itself to let you know if the user is active to have a conversation with. You decide to send a message which invokes the `sendMessage()` method that sanitize your inputs with `sanitizeInput()` and could also call the `addEmoji()` method if you are using an emoji. Finally the method sends this message to a socket server with you as the sender and your sanitized input. The socket server replies with your message and any message from the other party which you can then use `updateChatThread()` to update the chat thread. This is basically how most chat applications work. And all that happen in very little time.
 
@@ -48,17 +48,17 @@ In Chapter 10 of Uncle Bob's [clean code][2], he says by introducing instance va
 
 Now I'll introduce some instance variables to our chat class. In JavaScript you could add instance variables within the constructor as:
 
-{{< highlight javascript >}}
+```js
 class Chat{
   constructor() {
     this.currentUser = User.authenticated();
   }
 }
-{{< / highlight >}}
+```
 
 or you could use the stage-2 proposed ES syntax of instance variables with [babel class properties plugin][3] which I'd prefer to use:
 
-{{< highlight javascript >}}
+```js
 class Chat{
   currentUser = User.authenticated();
   recipient = Conversation.of(currentUser).last.recipient;
@@ -96,7 +96,7 @@ class Chat{
     return socketUpdate;
   }
 }
-{{< / highlight >}}
+```
 
 In this example you can see methods referencing methods and the instance variables for the current user and the recipient. The most cohesive method here is the `sendMessage()` as it makes use of `this.currentUser`, `this.recipient` and also the instance methods `this.addEmoji()` and `this.sanitizeInput()`. The least are the `getOnlineStatus()`, `sanitizeInput()` and `addEmoji()` which aren't referencing any other method directly. As a matter of fact those could become static methods instead of being instance method. There's a [eslint rule][4] to make sure such methods are made static.
 
@@ -121,29 +121,29 @@ In previous examples, a chat module was used in building a chat application. Mod
 
 We could improve this by making the user of the API to add the Socket class themselves when the Chat class gets constructed. Hence a [dependency injection][8].
 
-{{< highlight javascript >}}
+```js
 updateChatThread(...params){
   const message, sender, recipient, socket = params;
   return socket(sender, recipient, message);
 }
-{{< / highlight >}}
+```
 
 Because the `sendMessage()` method invokes `updateChatThread()`, it still needs the socket but we are trying to avoid depending on the Socket module directly in our Chat module so we could once again apply dependency injection.
 
-{{< highlight javascript >}}
+```js
 sendMessage(...params) {
   const inputText, socket = params;
   const newMessage = this.sanitizeInput(inputText);
   this.pullChatThread();
   this.updateChatThread(this.addEmoji(message), this.currentUser, this.recipient, socket);
 }
-{{< / highlight >}}
+```
 
 If `sendMessage()` gets called on instance its parameters would be like:
 
-{{< highlight javascript >}}
+```js
 myChatInstance.sendMessage('hello :)', Socket.retrieveWithNew);
-{{< / highlight >}}
+```
 
 We could further reduce the coupling of this by finding ways to take out the dependency of the Conversation class but I could also see reasons to keep that. It's great to write optimal code, reduce coupling and increase cohesion but we shouldn't put all the focus on this that we end up making our software inconvenient to maintain.
 

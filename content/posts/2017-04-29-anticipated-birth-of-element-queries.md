@@ -25,7 +25,7 @@ Media queries allow you make certain styles based on the size of the viewport `(
 
 What is an element scope? Like [scopes in JavaScript][3], [scoped styles][4] were implemented to limit a set of rules to an element and its children without the need for a class or any selector. But after a while they were removed from chrome and most of the other browser vendors never attempted to implement them. With its syntax,
 
-{{< highlight html >}}
+```html
 <section>
   <style scoped>
     h1,p{ color: tomato }
@@ -33,7 +33,7 @@ What is an element scope? Like [scopes in JavaScript][3], [scoped styles][4] wer
   <h1>Time to play a game</h1>
   <p>I left my game pads at the zoo.</p>
 </section>
-{{< / highlight >}}
+```
 
 every scoped style only applies to elements within the container element that has the style but this wasn't really solving any problem that can't already be handled with existing selectors. Container queries are to behave somewhat like this but with a combination of the media query behavior.
 
@@ -43,7 +43,7 @@ every scoped style only applies to elements within the container element that ha
 
 Up until now I've used container queries and element queries like they mean the exact same thing. To clarify I'll try to explain them better. If given a syntax like in the figure above:
 
-{{< highlight scss >}}
+```scss
 section{
   @container (min-width: 100px){
     h1{
@@ -51,35 +51,35 @@ section{
     }
   }
 }
-{{< / highlight >}}
+```
 
 our constraint will always have to contain the depending elements (i.e a parent element) which would leave us with half the solution of what we need constraint based layout. There is so much that can be done with this which we will get into later but as of now this just shows that a container query isn't the solution to constraint based layouts for the web, elements queries are.
 
 Another syntax that have been [proposed by the <abbr title="Responsive Issues Community Group">RICG</abbr>][8] for container queries is as below:
 
-{{< highlight scss >}}
+```scss
 section:media(min-width: 100px) h1{
   color: tomato;
 }
-{{< / highlight >}}
+```
 
 We could Sass that up with some nesting:
 
-{{< highlight scss >}}
+```scss
 section:media(min-width: 100px){
   h1{
     color: tomato;
   }
 }
-{{< / highlight >}}
+```
 
 as it shows, container queries would only ever be able to affect their descendants. Element queries on the other hand should affect just about anything. If we weren't targeting descendants only, that same syntax could look this way:
 
-{{< highlight scss >}}
+```scss
 section:media(min-width: 100px){
   body{ background: lime; }
 }
-{{< / highlight >}}
+```
 
 This means if I have a section greater than or equal to 100px make the body background lime. body doesn't have to be a child or descendant to section to be affected by its scope. It goes beyond container scoping as a great way to address element queries however the syntax could be very misleading. Anyone with normal experience in CSS would expect `section` to have a `body` descendant. How do we solve the syntax problem and achieve this right?
 
@@ -92,55 +92,55 @@ This means if I have a section greater than or equal to 100px make the body back
 
 More recently, [EQCSS (Element Queries CSS)][7] was born as a great speculative polyfill for element queries by [Tom Hodgins][11] and [Maxime Euzière][13]. It puts the at-rule into consideration for scoping elements like it is used with media queries and proposes the best syntax yet.
 
-{{< highlight scss >}}
+```scss
 @element section{
   body{
     background: lime;
   }
 }
-{{< / highlight >}}
+```
 
 Like media queries before being used for RWD (Responsive Web Design), we could target any media without specifying any dimensions
 
-{{< highlight css >}}
+```css
 @media screen{
   body{
     background: lime;
   }
 }
-{{< / highlight >}}
+```
 
 the eqcss snippet would change the background color provided there is one or more `section` element in the [CSSOM][9]. Then with media queries we get responsive design with conditions:
 
-{{< highlight css >}}
+```css
 @media screen and (min-width: 720px){
   body{
     background: lime;
   }
 }
-{{< / highlight >}}
+```
 
 which element queries offer as:
 
-{{< highlight scss >}}
+```scss
 @element .mod and (min-width: 100px){
   body{
     background: lime;
   }
 }
-{{< / highlight >}}
+```
 
 an element could be its own constraint which would help achieve better pluggable [atomic design][10].
 
 What happens when there is more than one element being used as constraint? Eqcss allows you to target current scope only with meta selectors
 
-{{< highlight scss >}}
+```scss
 @element input and (min-width: 100px){
   $this:focus{
     border: solid thin crimson;
   }
 }
-{{< / highlight >}}
+```
 
 This would only apply a border to the input that is focused and no other input. There are more meta selectors including with [demos here][12]. They include `$parent`, `$next`, `$prev`, and `$root`.
 
@@ -153,7 +153,7 @@ People have raised possible issues with container queries to be circularity of d
 <img src="https://res.cloudinary.com/strich/image/upload/v1497697683/container-qs-3_rldb7o.png" alt="Cyclic dependency of container query">
 </figure>
 
-{{< highlight scss >}}
+```scss
 .container{ float: left; }
 .child{ width: 200px; }
 .container:media(min-width: 150px){
@@ -161,13 +161,13 @@ People have raised possible issues with container queries to be circularity of d
     width: 100px;
   }
 }
-{{< / highlight >}}
+```
 
 Ausi recommended that the fix to this would be to use a syntax like this:
 
-{{< highlight scss >}}
+```scss
 .child:container(min-width: 150px){ width: 100px }
-{{< / highlight >}}
+```
 
 leaving the browser to make a decision of a reliable container after traversing the DOM to find ancestors. The container would then be the nearest ancestor with a fixed width or the document width when no ancestors are found.
 

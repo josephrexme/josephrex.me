@@ -23,7 +23,7 @@ To use PostCSS, you have to integrate it to your build process to have it post-p
 
 [Install gulp][5] and set up your gulpfile like I have mine below:
 
-{{< highlight javascript >}}
+```js
 var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
@@ -96,7 +96,7 @@ gulp.task('watch', function(){
 
 
 gulp.task('default', ['css', 'browser-sync', 'scripts', 'watch']);
-{{< / highlight >}}
+```
 
 You probably were using a task runner like this to use libsass for compiling your written Sass into CSS. Or you were using `compass watch` with the nice CSS3 features of compass and vendor prefix mixins. To emulate the watch feature in compass I have used the **watch** task and to make it even better I'm using **browser-sync** for live reload (no one wants to deal with reloading browsers anymore).
 
@@ -111,7 +111,7 @@ About compass plugins, there's way more plugins available for use with gulp and 
 
 **Partials:** If you were thinking of having underscore prefixed mixins, that's a ruby thing and we had to do that because Sass was born out of Ruby. The `@import` statement can be used to import files but it doesn't suppport [globbing imports][18]. To make the *@import* available the [postcss-import][16] plugin is needed and FYI it should be called before the other postcss dependent plugins (e.g postcss-simple-vars, postcss-mixins). Here's what my app.css look like as I import other modules into it
 
-{{< highlight css >}}
+```scss
 @import "partials/variables.css";
 @import "partials/mixins.css";
 @import "partials/h5bp.css";
@@ -119,13 +119,13 @@ About compass plugins, there's way more plugins available for use with gulp and 
 @import "partials/layout.css";
 @import "partials/print.css";
 @import "partials/helpers.css";
-{{< / highlight >}}
+```
 
 I like to separate variables, mixins, html5 boilerplate CSS, and others as shown above. The downside to this is that there's no syntax coloring for the variables and mixins as they aren't regular CSS. The Sass and Scss formats have syntax coloring on editors like Sublime Text and Atom when necessary packages are installed.
 
 **Mixins:** The mixin syntax with postcss is different from what you've been used to with Sass. It uses [postcss-mixins][19] and it's syntax is also pretty clear and easy:
 
-{{< highlight css >}}
+```scss
 @define-mixin icon $name {
   padding-left: 16px;
   &::after {
@@ -137,7 +137,8 @@ I like to separate variables, mixins, html5 boilerplate CSS, and others as shown
 .search {
   @mixin icon search;
 }
-{{< / highlight >}}
+```
+
 Also note that when using postcss-nested and postcss-simple-vars it must be set before them.
 
 **Minifying CSS:** From using compass I used to set an option to have compiled(minified) CSS output and I could also include Autoprefixer for postprocessing CSS to handle vendor prefixes within my *config.rb*. Autoprefixer is a derivative of the PostCSS project and now we can watch it do it's work with its mother project. To really handle css minification there are two options I consider which are [csswring][20] and [cssnano][21]. Csswring does its work properly but not as good as cssnano. Cssnano performs advanced compression to shrink CSS files and that makes it a [better option for optimisation][22].

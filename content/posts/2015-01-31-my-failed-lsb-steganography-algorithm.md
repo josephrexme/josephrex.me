@@ -22,7 +22,7 @@ Image exif data is stored in about the first 30 hex values of the image hexadeci
 
 From my analysis as done on the infosec [article][2], most JPEG file formats have a hexadecimal tail of `0xFFD9` and PNG images have `0x426082`. I couldn't play around with GIF or BMP as there was inconsistency with the hexadecimal structure of most of them I had examined. The tool had a little function to grab hexadecimal values with the [binascii][3] module:
 
-{{< highlight python >}}
+```py
 import sys, re, binascii, string
 def gethex(image):
   f = open(image, 'rb')
@@ -30,11 +30,11 @@ def gethex(image):
   f.close()
   hexcode = binascii.hexlify(data)
   return hexcode
-{{< / highlight >}}
+```
 
 Every steganography tool performs two main functions which are **embed** and **extract**. Before file is embeded, it checks to see if there is any extra data after the usual JPEG or PNG tail hex values
 
-{{< highlight python >}}
+```py
 def extradatacheck(data, type):
   if type == 'png':
     pattern = r'(?<=426082)(.*)'
@@ -45,11 +45,11 @@ def extradatacheck(data, type):
     return match.group(0)
   else:
     false
-{{< / highlight >}}
+```
 
 The embed function
 
-{{< highlight python >}}
+```py
 def embed(embedFile, coverFile, stegFile):
   filetype = coverFile[-3:]
   stegtype = stegFile[-3:]
@@ -68,11 +68,11 @@ def embed(embedFile, coverFile, stegFile):
       f.write(binascii.unhexlify(info))
       f.close()
       print 'Storing data to', stegFile
-{{< / highlight >}}
+```
 
 The function ends up converting the manipulated hex back to ASCII and writes to the new output file. The extract function performs the same check for appended data after regular tails and converts found data to ASCII if found
 
-{{< highlight python >}}
+```py
 def extract(stegFile, outFile):
   filetype = stegFile[-3:]
   data = gethex(stegFile)
@@ -83,7 +83,7 @@ def extract(stegFile, outFile):
     print 'Extracted data stored to', outFile
   else:
     print 'File has no embedded data in it'
-{{< / highlight >}}
+```
 
 The program achieved its objective which is the Steganography process but the sophistication level was 10%. Not good enough I thought. Oh! It wasn't just me, [Daniel Lerch][4] thought the same too
 
@@ -94,22 +94,22 @@ The program achieved its objective which is the Steganography process but the so
 
 I explored [Oni49][5]'s [stegoBlue][6] and created a [fork][7] to understand how it worked and see how I could derive a new implementation from it. Took a while but I later found how he used the [PIL (Python Imaging Library)][8] to list image data in RGB tuples. StegoBlue is a manipulation of the blue pixels in a pixel list.
 
-{{< highlight python >}}
+```py
 from PIL import Image
 img = Image.open('cool.bmp')
 pixelList = list(img.getdata())
-{{< / highlight >}}
+```
 
 The image data in RGB tuples were so much in the list but I managed to grab a few from the bottom to show what the data looked like.
 
-{{< highlight python >}}
+```py
 [(14, 16, 15), (14, 16, 15), (11, 15, 14), (13, 17, 16), (13, 17, 16), (13, 17, 16), (15, 16, 18), (14, 15, 17), (13, 13, 15), (15, 15, 17), (16, 16, 16), (17, 17, 17), (18, 20, 19), (15, 17, 16), (13, 17, 18), (14, 18, 19), (16, 20, 21), (17, 21, 22), (17, 21, 20), (15, 19, 18), (16, 18, 13), (18, 20, 15), (18, 23, 19), (18, 23, 19), (20, 24, 23), (22, 26, 25), (23, 27, 26), (24, 28, 27), (25, 29, 28), (23, 27, 26), (26, 30, 29), (26, 30, 29), (26, 28, 27), (27, 29, 28), (29, 29, 29), (33, 33, 33), (33, 31, 32), (31, 31, 31), (28, 30, 29), (27, 31, 30), (26, 28, 27), (27, 29, 28), (26, 28, 27), (27, 29, 28), (23, 29, 27), (24, 30, 28), (20, 31, 27), (19, 30, 26), (19, 31, 27), (19, 30, 26), (15, 24, 21), (14, 18, 17), (14, 18, 17), (18, 20, 19), (21, 21, 23), (19, 19, 21), (18, 16, 19), (17, 15, 18), (18, 16, 19), (17, 15, 18), (17, 15, 20), (17, 15, 20), (17, 15, 18), (17, 15, 18), (15, 13, 16), (15, 13, 16), (14, 14, 14), (13, 13, 13), (11, 11, 11), (12, 12, 12)]
-{{< / highlight >}}
+```
 
 That's just about 5% of the whole data from a 5M BMP image. I was digging his approach even though it breaks sometimes. I tried with JPGs and PNGs and it passed with some of the files that were tested.
 
 ###My New Algorithm
-{{< highlight python >}}
+```py
 #!/usr/bin/env python
 import binascii, os, base64, gnupg, hashlib
 from Crypto.Cipher import AES
@@ -179,7 +179,7 @@ def extract(file, key, output = 'output.txt'):
 filename = raw_input("Enter the name of the file:")
 embed(filename, 'some awesome stuff', 'abcdefghijklmnop', 'output.png')
 #extract(filename, 'abcdefghijklmnop')
-{{< / highlight >}}
+```
 
 What the heck is going on here? I know that's like bunch of crap but it seemed like a nice idea to me. Let me explain:
 
@@ -187,9 +187,9 @@ I built a GUI already with PyQt4 with hopes that the logic will work just as I'd
 
 When I wrote about [symmetric encryption in python][9], I mentioned how I had used AES from the Crypto module to try achieving a symmetric encryption. I might have not been at my best with that module but it didn't seem to work fine enough for me. I had resorted to the GPG module which stored the characters
 
-{{< highlight text >}}
+```
 some awesome stuff
-{{< / highlight >}}
+```
 
 with the cover image file as this
 

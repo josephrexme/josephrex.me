@@ -3,7 +3,7 @@ author: Joseph Rex
 title: Meaningless Creativity
 date: 2021-04-13T09:22:57-05:00
 lastmod: 2021-04-13T22:59:57-05:00
-url: /meaningless-creativity/
+permalink: /meaningless-creativity/
 tags:
   - creativity
   - art

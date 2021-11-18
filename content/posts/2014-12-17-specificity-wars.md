@@ -20,9 +20,9 @@ I just sounded like IDs were evil. What's more evil is the <span style="color: #
 
 Chained class naming bro! Chained class naming does it like a boss and then you don't have to worry about doing something wrong. When you have a class like *.box* that you need to specify more. You can do it by chaining this way.
 
-{{< highlight css >}}
+```css
 .box.box.box.box{ color: red; }
-{{< / highlight >}}
+```
 
 I had only gone on four chains. You could make this as long as you want. I recently had to go about 12 chains long to overrule an existing style on a wordpress child theme I worked on.
 
@@ -38,7 +38,7 @@ If you look through the stylesheet of the pen you will see I had a 30 chains cla
 
 <a href="http://twitter.com/csswizardry" target="_blank">Harry Roberts</a> described <a href="http://csswizardry.com/2014/10/the-specificity-graph/" target="_blank">how the specificity graph of your project should be</a>. He spoke of our helper classes that usually tend to carry !important. As much as I avoid the !important, I have it occurring once or twice in my helper classes. Before I ever put specificity to consideration, I've always imported my helpers at the bottom of the stylesheet. You can see that of a jekyll project I just worked on here:
 
-{{< highlight css >}}
+```scss
 @charset "utf-8";
 
 // Our variables
@@ -94,7 +94,7 @@ $nav-height: 	   30px;
         "syntax-highlighting",
         "helpers"
 ;
-{{< / highlight >}}
+```
 
 The reason for this as mentioned by Harry is for our specificity graph to be upward trending.
 

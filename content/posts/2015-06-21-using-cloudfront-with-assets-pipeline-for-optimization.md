@@ -19,38 +19,38 @@ Cloudfront fetches file from a origin like a S3 bucket where files are stored an
 
 Just as **buckets** are to S3, **distributions** are to cloudfront. Each distribution has an origin which could be the S3 bucket as I prefer but it could also be some other assets server of yours. If you don't already have a distribution, set up a new one and configure it to suit your needs. Most of the default configurations are ok but you can make minor changes like setting a custom domain rather than using the subdomains with random characters provided by cloudfront. You should have a subdomain like this:
 
-{{< highlight text >}}
+```
 http://whatever.cloudfront.net
-{{< / highlight >}}
+```
 
 Create an `assets` folder in your S3 bucket if you've chosen S3 bucket as origin then go to your `config/environments/production.rb` and add this line:
 
-{{< highlight ruby >}}
+```rb
 config.action_controller.asset_host = "http://whatever.cloudfront.net"
-{{< / highlight >}}
+```
 
 If you choose to only use cloudfront CDN for images, you can do this instead:
 
-{{< highlight ruby >}}
+```rb
 config.action_controller.asset_host = Proc.new { |source|
   if source =~ /\b(.png|.jpg|.gif)\b/i
     "http://whatever.cloudfront.net"
   end
 }
-{{< / highlight >}}
+```
 
 There's a big chance you already have that in your production config and you will only need to uncomment it. With that in place, calling ```image-url()```, ```asset_path```, ```image_path```, and ```asset_url``` will always append your cloudfront domain with your asset pipeline content hashed file like:
 
-{{< highlight text >}}
+```
 http://whatever.cloudfront.net/assets/logo-4c7b3d.png
-{{< / highlight >}}
+```
 
 If you're dropping files directly in your assets folder of the origin S3 bucket, you may encounter problems with the web page not finding the desired files. This is because the files in your bucket are without a hash suffix.
 
-The solution to this is to precompile your assets in the production environment before pushing changes to server and then uploading contents of ```public/assets``` into your assets folder on S3 Bucket.
+The solution to this is to precompile your assets in the production environment before pushing changes to server and then uploading contents of `public/assets` into your assets folder on S3 Bucket.
 
-{{< highlight text >}}
+```
 RAILS_ENV=production bundle exec rake:assets precompile
-{{< / highlight >}}
+```
 
 Following these steps carefully will get you up and running with CDNs plus assets cache that can be easily invalidated on file changes. Iterating this process of precompilation and uploading to S3 may be painful if you have to do it manually always. I suggest you write a custom script, maybe a Grunt plugin that makes the task a lot easier for you.

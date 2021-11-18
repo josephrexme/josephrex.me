@@ -13,31 +13,31 @@ tags:
 In the middle of a project I'm presently working on, I needed to make use of a Symmetric encryption based on the workflow of my software. A key is required by users to encrypt data and the same key will be needed to decrypt data. My first thoughts were on PyCrypto so I went ahead doing this
 <!--more-->
 
-{{< highlight python >}}
+```py
 from Crypto.Cipher import AES
 from Crypto import Random
 text = 'The quick brown fox jumped over the dog'
 iv = Random.new().read(AES.block_size)
 cipher = AES.new(key, AES.MODE_CFB, iv)
 ctext = iv + cipher.encrypt(text)
-{{< / highlight >}}
+```
 
 This was totally fine but when I tried decrypting the ctext data, I got something entirely different from what my input was.
 
-{{< highlight python >}}
+```py
 decrypted = cipher.decrypt(ctext)
-{{< / highlight >}}
+```
 
 Strange behaviour from MODE_CFB made me try MODE_CBC. Just the exact same way, I went ahead to just change to MODE_CBC
 
-{{< highlight python >}}
+```py
 from Crypto.Cipher import AES
 from Crypto import Random
 text = 'The quick brown fox jumped over the dog'
 iv = Random.new().read(AES.block_size)
 cipher = AES.new(key, AES.MODE_CBC, iv)
 ctext = iv + cipher.encrypt(text)
-{{< / highlight >}}
+```
 
 This mode just fails right away with a warning that the message must be a multiple of 16. I expect any length of message from the users of my program and this didn't seem like a good idea. While searching the web, I came across a solution that was nice but not what I wanted
 
@@ -45,7 +45,7 @@ This mode just fails right away with a warning that the message must be a multip
 
 I wrote my own little function for that
 
-{{< highlight python >}}
+```py
 def AEScrypt(action, string):
 	"""
 	Solution by codekoala (http://www.codekoala.com/posts/aes-encryption-python-using-pycrypto/)
@@ -62,25 +62,25 @@ def AEScrypt(action, string):
 	cipher = AES.new(secret)
 	result = EncodeAES(cipher, string) if action == 'encrypt' else DecodeAES(cipher, string)
 	return result
-{{< / highlight >}}
+```
 
 This seem like the best way to use PyCrypto AES encryption but it wasn't symmetric. It's not in a PKI format (no key is required to unlock the message).
 
 I still keep that function but it was of no use in my case. Finally I thought of the gnupg module and installed it for my python2
 
-{{< highlight sh >}}
+```sh
 sudo apt-get install python-gnupg
-{{< / highlight >}}
+```
 
 I was able to encrypt this way:
 
-{{< highlight python >}}
+```py
 import gnupg,base64
 gpg = gnupg.GPG()
 def encrypt(passphrase, message):
    cipher = gpg.encrypt(message, recipients=None, symmetric='AE256', passphrase=passphrase, armor=True)
    return base64.b64encode( str(cipher) )
-{{< / highlight >}}
+```
 
 I had to encode with base64 because I don't want my encrypted data to have the regular start and end of a GPG encrypted data i.e
 
@@ -92,10 +92,10 @@ I had to encode with base64 because I don't want my encrypted data to have the r
 
 To decrypt the encrypted data, I use this:
 
-{{< highlight python >}}
+```py
 def decrypt(cipher, passphrase):
    deciphered = str( gpg.decrypt( base64.b64decode(cipher), passphrase ) )
    return deciphered if deciphered is True else 'Incorrect passphrase'
-{{< / highlight >}}
+```
 
 When a wrong passphrase is used gpg.decrypt() returns an empty string \` \` which is False. If it is true we get our deciphered text.

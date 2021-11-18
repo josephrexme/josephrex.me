@@ -16,7 +16,7 @@ When I used procedural PHP for most of my projects, I found myself needing what 
 All examples here will rely on the DDL database schema here:
 <!--more-->
 
-{{< highlight sql >}}
+```sql
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category_name` varchar(100) NOT NULL,
@@ -42,13 +42,13 @@ INSERT INTO `subcategories` (`id`, `categoryID`, `subcategory_name`) VALUES
 (7, 3, 'Shirts'),
 (8, 3, 'Trousers'),
 (9, 3, 'Blouses');
-{{< / highlight >}}
+```
 
 For a clearer view, I have it here on SQL fiddle: <a title="SQL Fiddle DB Schema" href="http://sqlfiddle.com/#!2/58fcf/4/1" target="_blank">http://sqlfiddle.com/#!2/58fcf/4/1</a>
 
 ### Procedural code
 
-{{< highlight html >}}
+```html
 <form method="get">
 	<label for="category">Parent Category</label>
     <select name="parent_cat" id="parent_cat">
@@ -60,11 +60,11 @@ For a clearer view, I have it here on SQL fiddle: <a title="SQL Fiddle DB Schem
     <label>Sub Category</label>
     <select name="sub_cat" id="sub_cat"></select>
 </form>
-{{< / highlight >}}
+```
 
 The mark-up is a file named with the php extension with the body content as above. It uses the following jQuery snippet
 
-{{< highlight javascript >}}
+```js
 $(document).ready(function() {
 	$("#parent_cat").change(function() {
 		$(this).after('<div id="loader"><img src="img/loading.gif" alt="loading subcategory" /></div>');
@@ -76,11 +76,11 @@ $(document).ready(function() {
 		});
     });
 });
-{{< / highlight >}}
+```
 
 From the jQuery code above we try to send the present value of the category to a different PHP file that takes in GET parameters. It gets all the subcategories of the selected category and echo them to that page making it return those listed values to jQuery as sub categories
 
-{{< highlight php >}}
+```php
 <?php
 mysql_connect('localhost', 'root', '');
 mysql_select_db('dependent_list');
@@ -92,7 +92,7 @@ while($row = mysql_fetch_array($query)) {
 }
 
 ?>
-{{< / highlight >}}
+```
 
 Good solution right? Thanks to my friend but now I'm dealing with more advanced code.
 
@@ -104,51 +104,51 @@ I'll go through 3 ways we can achieve this in Laravel, starting with this.
 
 Create your route to display your drop down list
 
-{{< highlight php >}}
+```php
 Route::get('myroute','myController@firstMethod');
-{{< / highlight >}}
+```
 
 Define the firstmethod in the myController (these names can be whatever you wish) controller.
 
-{{< highlight php >}}
+```php
 <?php
 public function firstMethod(){
     $categories = DB::table('categories')->get();
     return View::make('myview',['categories' => $categories]);
 }
 ?>
-{{< / highlight >}}
+```
 
 Next we'll create a route for our sub-categories feeder view
 
-{{< highlight php >}}
+```php
 Route::get('loadsubcat/{id}','myController@secondMethod');
-{{< / highlight >}}
+```
 
 and a method
 
-{{< highlight php >}}
+```php
 <?php
 public function secondMethod($id){
     $subcategories = DB::table('subcategories')->where('categoryID', $id)->get();
     return View::make('thisview', ['subcategories' => $subcategories);
 }
 ?>
-{{< / highlight >}}
+```
 
 for the view of this method we will add the following
 
-{{< highlight html >}}
+```html
 {% raw %}
 @foreach($subcategories as $subcategory)
     <option value="{{ $subcategory->id }}">{{ $subcategory->subcategory_name }}</option>
 @endforeach
 {% endraw %}
-{{< / highlight >}}
+```
 
 Inside our first display view, we can add the following mark-up:
 
-{{< highlight html >}}
+```html
 {% raw %}
 {{ Form::open(['action'=>'myController@secondMethod']) }}
 	<label for="category">Parent Category</label>
@@ -162,11 +162,11 @@ Inside our first display view, we can add the following mark-up:
     <select name="sub_cat" id="sub_cat"></select>
 {{ Form::close() }}
 {% endraw %}
-{{< / highlight >}}
+```
 
 and finally the JS part
 
-{{< highlight javascript >}}
+```js
 $(document).ready(function() {
 	$("#parent_cat").change(function() {
 		$.get('loadsubcat/' + $(this).val(), function(data) {
@@ -175,7 +175,7 @@ $(document).ready(function() {
     });
 
 });
-{{< / highlight >}}
+```
 
 So this is really similar to the former procedural version but I took away all the unnecessary loader part.
 
@@ -187,7 +187,7 @@ For this method, I already made a <a title="JS Fiddle direct link" href="https:/
 
 Notice I put values of data-load in single quotes because it is expected to contain JSON data which has double quotes. To make our data more dynamic, let's make the data-load JSON get fetched from the database. Let's make a controller with this contents
 
-{{< highlight php >}}
+```php
 <?php
 // Controller
 $categories = DB::table('categories')->get();
@@ -200,11 +200,11 @@ $jsonified = json_encode($categories_pack);
 $data = ['categories' => $jsonified];
 return View::make('yourview',$data);
 ?>
-{{< / highlight >}}
+```
 
 Here's the part where we plug that into our view:
 
-{{< highlight html >}}
+```html
 {% raw %}
   <option selected disabled>- Categories -</option>
   <option>Bags</option>
@@ -217,7 +217,7 @@ Here's the part where we plug that into our view:
 </select>
 <div id="load" data-load='{{ $categories }}'></div>
 {% endraw %}
-{{< / highlight >}}
+```
 
 And with this we can get it to work like it did with the static HTML example above.
 
@@ -233,7 +233,7 @@ In order to use Eloquent with this. We will extend eloquent with a models for ea
 
 categories.php (<a href="http://laravel.com/docs/4.2/eloquent#one-to-many" target="_blank">One to Many Eloquent Method</a>)
 
-{{< highlight php >}}
+```php
 <?php
 class Category extends Eloquent {
    public function Categories(){
@@ -242,11 +242,11 @@ class Category extends Eloquent {
 }
 
 ?>
-{{< / highlight >}}
+```
 
 subcategories.php (Inverse Relation Eloquent)
 
-{{< highlight php >}}
+```php
 <?php
 class Subcategory extends Eloquent {
    public function subcategory(){
@@ -255,11 +255,11 @@ class Subcategory extends Eloquent {
 }
 
 ?>
-{{< / highlight >}}
+```
 
 Then a simple route with a callback function
 
-{{< highlight php >}}
+```php
 <?php
 Route::get('api/dropdown', function(){
    $input = Input::get('option');
@@ -268,11 +268,11 @@ Route::get('api/dropdown', function(){
    return Response::make($subcategory->get(['id','subcategory_name']));
 });
 ?>
-{{< / highlight >}}
+```
 
 The JS part
 
-{{< highlight javascript >}}
+```js
 $(document).ready(function($){
    $('#cat').change(function(){
      $.get($(this).data('url'),
@@ -286,11 +286,11 @@ $(document).ready(function($){
      });
    });
 });
-{{< / highlight >}}
+```
 
 and whew! The HTML
 
-{{< highlight html >}}
+```html
 {% raw %}
 {{ Form::open() }}
 <select id="cat" name="category" data-url="{{ url('api/dropdown')}}">
@@ -305,7 +305,7 @@ and whew! The HTML
 </select>
 {{ Form::close();}}
 {% endraw %}
-{{< / highlight >}}
+```
 
 I made some modifications to Mak's code and I believe it works better this way. Also, the Eloquent method are adjusted to fit the Laravel4.2 documentation.
 
