@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-06-26T00:00:00Z
 title: Specialist or Full Stack generalist
-url: /full-stack-or-generalist/
+permalink: /full-stack-or-generalist/
 ---
 
 As a full stack developer I've had critiques about how I can't be good enough at one thing if I do a lot of things. I totally agree to this and I'm not claiming to be a master of everything I do. Some will rather describe it as:

@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-10-25T00:00:00Z
 title: Migrating database password algorithm gracefully
-url: /migrating-database-password-algorithm-gracefully/
+permalink: /migrating-database-password-algorithm-gracefully/
 tags:
   - software
 ---

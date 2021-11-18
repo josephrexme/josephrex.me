@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2014-12-02T00:00:00Z
 title: Symmetric Encryption in Python
-url: /symmetric-encryption-in-python/
+permalink: /symmetric-encryption-in-python/
 tags:
   - cryptography
   - encryption

@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2014-08-01T00:00:00Z
 title: I am not a perfectionist
-url: /im-not-a-perfectionist/
+permalink: /im-not-a-perfectionist/
 tags:
   - opinions
 ---

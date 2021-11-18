@@ -3,11 +3,10 @@ author: Joseph Rex
 comments: true
 date: 2015-02-10T00:00:00Z
 title: Relative and Absolute Thinkers
-url: /relative-and-absolute-thinkers/
+permalink: /relative-and-absolute-thinkers/
 ---
 
 The way we think plays a great impact on how we live our lives and relate with people around us. This article may seem like it's going down the path of one of the internet articles on temperament. Temperament is involved whenever or wherever there is a talk on human thinking as it has to do with individual personalities based on Wikipedia. However, I promise this article is not totally going down that path. I've come across different types of temperament from different sources. I mostly think of this 5 as the major genuine temperament types
-
 <!--more-->
 
 * Melancholy

@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-08-31T00:00:00Z
 title: Revealing animations on scroll with pureJS
-url: /revealing-animations-on-scroll-with-purejs/
+permalink: /revealing-animations-on-scroll-with-purejs/
 tags:
   - animation
 ---

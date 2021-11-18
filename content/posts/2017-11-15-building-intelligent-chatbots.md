@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Building Intelligent Chatbots
 date: 2017-11-15T05:40:17-06:00
-url: /building-intelligent-chatbots/
+permalink: /building-intelligent-chatbots/
 tags:
   - AI
   - bots

@@ -5,7 +5,7 @@ date: 2017-05-08T00:00:00Z
 tags:
   - frontend
 title: Understanding the shadow dom
-url: /understanding-the-shadow-dom/
+permalink: /understanding-the-shadow-dom/
 ---
 
 For the decades programming have existed there have been abstractions over abstractions

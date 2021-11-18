@@ -4,7 +4,9 @@ layout: base
 <div>
   <h1>{{ title }}</h1>
   <p>Published at: <time datetime="{{ page.date | formatISO }}">{{ page.date | formatDate }}</time></p>
+  {% if lastmod %}
   <p>Last modified: <time datetime="{{ lastmod | formatISO }}">{{ lastmod | formatDate }}</time></p>
+  {% endif %}
   <article>
     {{ content | safe }}
   </article>

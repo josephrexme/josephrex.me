@@ -50,7 +50,7 @@
   {
     "@context": "http://schema.org",
     "@type": "{% if layout == 'post' %}Article{% else %}Website{% endif %}",
-    "description": "{{ site.config.description }}",
+    "description": "{{ page.excerpt or site.config.description }}",
     "publisher": {
       "@type": "Organization",
       "name": "{{ site.config.name }} Blog",
@@ -81,7 +81,7 @@
     ,"headline": "{{ title or site.config.title }}",
     "image": {
       "@type": "ImageObject",
-      "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text={{ title | lower | slug }}",
+      "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text={{ title | slug }}",
       "width": 800,
       "height": 500
     },

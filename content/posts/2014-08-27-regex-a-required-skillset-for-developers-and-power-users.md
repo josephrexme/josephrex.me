@@ -3,13 +3,15 @@ author: Joseph Rex
 comments: true
 date: 2014-08-27T00:00:00Z
 title: 'Regex: A required skillset for developers and power users'
-url: /regex-a-required-skillset-for-developers-and-power-users/
+permalink: /regex-a-required-skillset-for-developers-and-power-users/
 tags:
   - regex
 ---
 
-I care about information and I believe everything we do wraps around trying to find information, protecting it, and making use of it. There is Google, DuckDuckGo, and other search engines, there is grep for Unix-like system users, there are search panes on applications and websites. Sometimes these media of information gathering may not be good/aggressive enough to find the exact outputs you expect especially when looking through files. This is why we learn how to do our searching and pattern matching **like a boss**.
+I care about information and I believe everything we do wraps around trying to find information, protecting it, and making use of it. There is Google, DuckDuckGo, and other search engines, there is grep for Unix-like system users, there are search panes on applications and websites.
 <!--more-->
+
+Sometimes these media of information gathering may not be good/aggressive enough to find the exact outputs you expect especially when looking through files. This is why we learn how to do our searching and pattern matching **like a boss**.
 <hr>
 
 Regex (Regular expression) is a way to specify your search with deeper intensity. It is somewhat like wildcards. But, this is beyond very generic wildcards we use in simple instances. You may refer to this as wildcards on steroids.

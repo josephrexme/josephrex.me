@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-08-12T00:00:00Z
 title: First tale of my career as a freelancer
-url: /first-tale-of-my-career-freelancing/
+permalink: /first-tale-of-my-career-freelancing/
 ---
 
 I have always loved computers and when it was time to start building projects I made random projects to understand how programming works. Like many other starters I got web design jobs at ridiculously cheap prices but I really didn't care about the money. I was enthusiastic to put my knowledge to use and have websites on the internet that I'll proudly say were made by me.

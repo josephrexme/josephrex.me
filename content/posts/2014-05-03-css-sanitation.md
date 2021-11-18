@@ -2,13 +2,12 @@
 author: Joseph Rex
 date: 2014-05-03T00:00:00Z
 title: CSS Sanitation
-url: /css-sanitation/
+permalink: /css-sanitation/
 tags:
   - css
   - nodejs
   - web
 ---
-
 I do a lot of back-end web development but front-end calls me a lot because of my passion for creativity. I've had to consider CSS files on various projects I've worked on. Some as front-end designer, some as back-end.
 <!--more-->
 

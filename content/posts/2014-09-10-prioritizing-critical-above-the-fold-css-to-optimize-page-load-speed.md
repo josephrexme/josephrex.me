@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2014-09-10T00:00:00Z
 title: Prioritizing critical CSS for speed
-url: /prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/
+permalink: /prioritizing-critical-above-the-fold-css-to-optimize-page-load-speed/
 tags:
   - css
   - frontend
@@ -13,9 +13,9 @@ tags:
 ---
 
 I made <a href="http://slides.com/bl4ckdu5t/critical-css" target="_blank">a slide</a> on this about a month back and I've since intended to write about it here.
+<!--more-->
 
 Every developer that cares about user experience will always want to fix everything that makes a user think of not coming back to their website after first visit. I've found myself in such situations where I begin to think that whoever did this thing must have invested a lot of time making something that technically feels like nothing. We don't want our applications to be thought of this way.
-<!--more-->
 
 I design websites using technologies like <a href="http://sass-lang.com" target="_blank">Sass</a> and Javascript, and desktop applications with <a href="http://python.org" target="_blank">python</a> and <a href="http://qt-project.org" target="_blank">Qt</a> . Usually, on my desktop applications, all I have to care about when considering UX is where the objects are placed around the Window frames to give a good affordability and mapping based on the principles of design by Don Norman. I've not taken time to go through the <a href="http://www.gui-bloopers.com/" target="_blank">GUI Bloopers</a> book and for that reason I'll say I may be wrong on my GUI opinions even as I am capable of building them.
 

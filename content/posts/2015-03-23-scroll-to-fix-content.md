@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-03-23T00:00:00Z
 title: 'Sticky: Scroll to fix content'
-url: /scroll-to-fix-content/
+permalink: /scroll-to-fix-content/
 ---
 
 Late last year, [Chris Coyier][1] addressed this on [CSS-Tricks][2] with illustrating images including GIF. In his solution to the problem, he had used [magic numbers][3] which he confirmed made his soluton not re-usable. He also wrote it in jQuery which may be nice considering that a lot of people use jQuery as it works on legacy browsers.

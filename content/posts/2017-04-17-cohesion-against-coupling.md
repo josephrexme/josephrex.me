@@ -5,7 +5,7 @@ date: 2017-04-17T00:00:00Z
 tags:
   - software
 title: Cohesion against coupling
-url: /cohesion-against-coupling/
+permalink: /cohesion-against-coupling/
 ---
 
 Coupling and Cohesion are two major principles for structured design in software. It's commonly heard that high cohesion and low/loose coupling leads to good software design. Cohesion is an act of sticking together. In physics cohesion gets contrasted against adhesion as the sticking together of particles of the same substance where adhesion happens with dissimilar substances. With this in mind we know that any 2 things can be put together and we could assume a cohesive code.

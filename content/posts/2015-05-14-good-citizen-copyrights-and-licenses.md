@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-05-14T00:00:00Z
 title: 'Good Citizen: Copyrights and Licenses'
-url: /good-citizen-copyrights-and-licenses/
+permalink: /good-citizen-copyrights-and-licenses/
 ---
 
 A lot of us follow most legal laws to remain good citizens and mostly to stay out of trouble. The best people are those who follow these laws because they feel it's the right thing to do, and not just because they may get arrested for doing otherwise.

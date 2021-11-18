@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: We Are All Wrong
 date: 2019-06-27T12:14:57-05:00
-url: /we-are-all-wrong/
+permalink: /we-are-all-wrong/
 tags:
   - opinions
 ---

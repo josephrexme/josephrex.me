@@ -7,7 +7,7 @@ tags:
   - algorithms
   - mathML
 title: 'Algorithm Analysis: Best, Worst and Average Case'
-url: /algorithm-analysis/
+permalink: /algorithm-analysis/
 ---
 
 Algorithms are a sequence of decisions we make to solve a problem. Like every decision in life we can make great decisions and really terrible decisions. But it doesn't end there. Good decisions vary, they can come easy and can take a lot harder process to reach an expected outcome.

@@ -3,7 +3,7 @@ author: Joseph Rex
 title: "Using the Golden Ratio in Design"
 date: 2019-02-03T12:08:09-06:00
 math: true
-url: /using-the-golden-ratio-in-design
+permalink: /using-the-golden-ratio-in-design/
 tags:
   - design
   - art

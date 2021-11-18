@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Creative Fitness and Developer Fitness
 date: 2017-07-26T01:27:27-05:00
-url: /creative-fitness-and-developer-fitness/
+permalink: /creative-fitness-and-developer-fitness/
 tags:
   - fitness
   - lifestyle

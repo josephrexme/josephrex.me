@@ -6,7 +6,7 @@ tags:
   - algorithms
   - concepts
 title: The Big O notation explained
-url: /big-o-notation-explained/
+permalink: /big-o-notation-explained/
 ---
 
 The big O notation (also asymptotic notation) helps determine how a function may decline or scale with a larger set of inputs (n). According to [Wikipedia][1],

@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Repudiating undiagnosed disorders
 date: 2017-11-09T08:02:46-06:00
-url: /repudiating-undiagnosed-disorders/
+permalink: /repudiating-undiagnosed-disorders/
 tags:
   - opinions
 ---

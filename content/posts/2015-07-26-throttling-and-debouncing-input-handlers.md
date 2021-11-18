@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-07-26T00:00:00Z
 title: Throttling and debouncing input handlers
-url: /throttling-and-debouncing-input-handers/
+permalink: /throttling-and-debouncing-input-handers/
 ---
 
 2 years ago when JavaScript sounded a lot impossible to me and yet I had to perform a tasks in it for a project I was working on, I requested help on the *#jQuery* IRC channel and someone mentioned:

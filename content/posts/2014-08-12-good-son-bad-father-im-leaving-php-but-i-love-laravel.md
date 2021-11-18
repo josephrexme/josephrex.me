@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2014-08-12T00:00:00Z
 title: 'Good son, bad father: I''m leaving PHP but I love Laravel'
-url: /good-son-bad-father-im-leaving-php-but-i-love-laravel/
+permalink: /good-son-bad-father-im-leaving-php-but-i-love-laravel/
 tags:
   - frameworks
   - laravel
@@ -11,8 +11,10 @@ tags:
   - web
 ---
 
-PHP has a really shallow learning curve. It's easy for a 8 year old to pick it up and start messing around with it. This is good and I love it about Python as well. However, PHP has been known to have a lot of flaws, one of the major reasons being because it was not built as a functional programming language but rather, just a Hypertext pre-processor. It was meant to just automate the behaviour of HTML. Around 2005, OOP was introduced to PHP and it made PHP developers feel among the big boys of the web.
+PHP has a really shallow learning curve. It's easy for a 8 year old to pick it up and start messing around with it. This is good and I love it about Python as well. However, PHP has been known to have a lot of flaws, one of the major reasons being because it was not built as a functional programming language but rather, just a Hypertext pre-processor.
 <!--more-->
+
+It was meant to just automate the behaviour of HTML. Around 2005, OOP was introduced to PHP and it made PHP developers feel among the big boys of the web.
 
 However, there are still some things wrong about how it behaves in its OOP. For example when using namespaces, the following still seems wrong to me
 

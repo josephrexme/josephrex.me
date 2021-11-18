@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-03-30T00:00:00Z
 title: Understanding how ajax upload preview works
-url: /understanding-how-ajax-upload-preview-works/
+permalink: /understanding-how-ajax-upload-preview-works/
 ---
 
 From a very early stage of my development, I've been fascinated by ajax upload previews and [dropzone][1] upload areas. For a long time I guess I was too scared to try any of them but after some time, I started using some jQuery plugins that did the job fine. I could have been contended with that and just have that in my every project but every project aren't the same. I may use a bunch of plugins on a static website but on web applications where I'm so conscious about performance I prefer taking my time to write code that will help me do away with plugins or gems where I can.

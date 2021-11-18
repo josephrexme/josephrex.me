@@ -3,13 +3,12 @@ author: Joseph Rex
 comments: true
 date: 2014-05-03T00:00:00Z
 title: Oh Sass! How awesome is it gonna get
-url: /sass-awesomeness/
+permalink: /sass-awesomeness/
 tags:
   - css
   - sass
   - web
 ---
-
 I started writing Sass not too long ago and it has been one of the best experiences I've had. Sass (Syntatically Awesome Stylesheet) is just as awesome as the name sounds.
 <!--more-->
 

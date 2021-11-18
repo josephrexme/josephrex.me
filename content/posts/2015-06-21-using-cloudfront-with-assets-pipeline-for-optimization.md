@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-06-21T00:00:00Z
 title: Using Rails assets pipeline with Cloudfront CDN
-url: /rails-assets-pipeline-with-cloudfront-cdn/
+permalink: /rails-assets-pipeline-with-cloudfront-cdn/
 ---
 
 Performance is an essential thing in every application that should be considered not only from the front-end but also the back-end. CDNs have been a great way to serve and deliver assets on web pages in this advent of HTTP1. It may not be the same with HTTP2.0 but at this, majority of the web is on HTTP1 and it will be that way for years to come. Cloudfront is an Amazon web service that delivers content from nearby locations and it works greatly when combined with the powers of the rails assets pipeline.

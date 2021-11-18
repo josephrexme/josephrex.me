@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: The power of reduced browser tabs
 date: 2017-08-08T09:39:25-05:00
-url: /the-power-of-reduced-browser-tabs/
+permalink: /the-power-of-reduced-browser-tabs/
 tags:
   - opinions
 ---

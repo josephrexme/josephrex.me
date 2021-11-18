@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Themed Years
 date: 2019-12-19T22:55:38-06:00
-url: /themed-years/
+permalink: /themed-years/
 tags:
   - life
 ---

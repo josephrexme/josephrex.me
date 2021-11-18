@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-01-31T00:00:00Z
 title: My failed LSB steganography algorithm
-url: /my-failed-lsb-steganography/
+permalink: /my-failed-lsb-steganography/
 tags:
   - experiment
   - steganography

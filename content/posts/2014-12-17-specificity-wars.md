@@ -1,11 +1,9 @@
 ---
 author: Joseph Rex
-categories:
-- web
 comments: true
 date: 2014-12-17T00:00:00Z
 title: Specificity wars
-url: /specificity-wars/
+permalink: /specificity-wars/
 tags:
   - css
   - performance

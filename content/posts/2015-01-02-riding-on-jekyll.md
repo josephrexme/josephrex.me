@@ -1,11 +1,9 @@
 ---
 author: Joseph Rex
-categores:
-- web
 comments: true
 date: 2015-01-02T00:00:00Z
 title: Riding on jekyll
-url: /riding-on-jekyll/
+permalink: /riding-on-jekyll/
 tags:
   - jekyll
 ---

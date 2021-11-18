@@ -2,16 +2,18 @@
 author: Joseph Rex
 title: Hurt People Hurt People
 date: 2019-04-20T15:20:54-05:00
-url: /hurt-people-hurt-people/
+permalink: /hurt-people-hurt-people/
 tags:
   - opinions
 ---
 My wife and I just went to see the movie [Little][1] - the new movie by Marsai Martin.
 It was a good movie and the narrative was about a lady who had been treated unfairly
-by peers at a young age. In an attempt to defend herself from being hurt in the future,
+by peers at a young age.
+<!--more-->
+
+In an attempt to defend herself from being hurt in the future,
 she worked hard to achieve success and "hurt people before they could hurt her" by
 being so mean to everyone who worked with and for her.
-<!--more -->
 
 Being magically turned into a child made the protagonist realize that she had been
 hurting a lot of other people in a quest to defend herself.

@@ -3,16 +3,16 @@ author: Joseph Rex
 comments: true
 date: 2014-11-24T00:00:00Z
 title: Styling for print media
-url: /styling-for-print-media/
+permalink: /styling-for-print-media/
 tags:
   - css
   - frontend
 ---
 
 The @media is mostly known these days for its use with responsive design in a conditional structure. However, it has been for a very long time. It has been used to separate visual CSS from paged CSS. The different media consists screen, print, projector, audio (formerly aural).
+<!--more-->
 
 I needed to do a print design in one of my recent projects and I knew I could just make a stylesheet link with a media="print". I've also been privy that I can use  @media print{} to wrap it but that wasn't all it took. I never really knew there was more to it but I took the search to see how it's been done by the leaders of the industry. Not too long after, I stumbled upon the following alistapart article by Eric Meyer from 2002.
-<!--more-->
 
 <a href="http://alistapart.com/article/goingtoprint" target="_blank">http://alistapart.com/article/goingtoprint</a>
 

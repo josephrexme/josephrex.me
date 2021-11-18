@@ -3,13 +3,14 @@ author: Joseph Rex
 comments: true
 date: 2014-06-18T00:00:00Z
 title: Sending files over Ajax requests with jQuery
-url: /sending-files-over-ajax-requests-with-jquery/
+permalink: /sending-files-over-ajax-requests-with-jquery/
 tags:
   - javascript
   - jquery
 ---
 
 If you've been writing [jQuery,][1] you're probably fond of writing your code this way when submitting forms with ajax
+<!--more-->
 
 ```js
 $('form').on('submit',function(e){
@@ -29,7 +30,6 @@ $('form').on('submit',function(e){
 ```
 
 and for those using older versions of jQuery or haven't realized the essence of promises, it should be something like this you have:
-<!--more-->
 
 ```js
 $('form').on('submit',function(e){

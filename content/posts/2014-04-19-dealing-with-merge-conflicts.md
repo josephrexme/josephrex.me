@@ -3,11 +3,10 @@ author: Joseph Rex
 comments: true
 date: 2014-04-19T00:00:00Z
 title: Dealing with merge conflicts
-url: /dealing-with-merge-conflicts/
+permalink: /dealing-with-merge-conflicts/
 tags:
   - git
 ---
-
 Recently, I started using git and mercury for version control. I've never really used any other version control system before these two. For most of my recent projects, I've chosen to make more use of git. Git is a really awesome version control system as I've heard from a lot of Pros coming from other version control system like Subversion (SVN).
 <!--more-->
 

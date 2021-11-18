@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-12-21T00:00:00Z
 title: Quality against speed in development
-url: /quality-against-speed-in-development/
+permalink: /quality-against-speed-in-development/
 ---
 
 It is common for humans to expect things to arrive almost as soon as they find the need for them. It starts from kids wanting their parents to get them their favorite toy from a toy store. A parent that tells the child we'll have to come back next year for this toy will make the child unhappy at that moment.

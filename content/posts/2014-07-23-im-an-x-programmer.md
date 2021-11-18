@@ -3,15 +3,15 @@ author: Joseph Rex
 comments: true
 date: 2014-07-23T00:00:00Z
 title: I'm an 'X' programmer
-url: /im-an-x-programmer/
+permalink: /im-an-x-programmer/
 tags:
   - opinions
 ---
 
 All things programming is a part of hackery to me. I love to hack stuffs and that's what has pulled me into the planet of development and engineering. From my observation, some people miss the point on what programming is about.
+<!--more-->
 
 Some see it as a tag to their beings like "Jake the Java Programmer". What's that? It doesn't look reasonable to me. Not because I'm not a Java programmer but because it just isn't right.
-<!--more-->
 
 Well, Someone could call me a Python programmer because I love writing stuffs in Python or a PHP programmer because PHP is what they see me do most often. However, I wouldn't tag myself with any of those because my objective as a programmer is not just to get lauded with a programming language but to create solutions.
 

@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Stateful UI Engineering
 date: 2019-02-10T23:42:46-06:00
-url: /stateful-ui-engineering/
+permalink: /stateful-ui-engineering/
 tags:
   - gui
   - frontend

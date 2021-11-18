@@ -3,12 +3,11 @@ author: Joseph Rex
 comments: true
 date: 2014-04-25T00:00:00Z
 title: Butterfly and Fish
-url: /butterfly-and-fish/
+permalink: /butterfly-and-fish/
 tags:
   - shell
   - unix
 ---
-
 I recently stumbled upon butterfly on [here](http://paradoxxxzero.github.io/2014/02/28/butterfly.html) and it is a really awesome web browser shell execution program written in python. It's not like it's the first of it's kind. There are others like:
 <!--more-->
 

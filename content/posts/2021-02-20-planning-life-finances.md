@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Planning life finances
 date: 2021-02-18T23:25:59-06:00
-url: /planning-life-finances/
+permalink: /planning-life-finances/
 tags:
   - finance
 ---

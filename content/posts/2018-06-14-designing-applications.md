@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Designing Applications
 date: 2018-06-14T12:51:26-05:00
-url: /designing-applications
+permalink: /designing-applications/
 tags:
   - design
   - frontend

@@ -3,7 +3,7 @@ author: Joseph Rex
 title: Point of Realization
 date: 2018-10-20T12:28:54-05:00
 lastmod: 2021-02-27T14:20:30-05:00
-url: /point-of-realization
+permalink: /point-of-realization/
 tags:
   - opinions
   - life

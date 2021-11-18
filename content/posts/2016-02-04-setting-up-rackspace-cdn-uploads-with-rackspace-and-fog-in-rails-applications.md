@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2016-02-04T00:00:00Z
 title: Setting up uploads with paperclip and fog in rails applications
-url: /setting-up-uploads-with-paperclip-and-fog-in-rails-applications/
+permalink: /setting-up-uploads-with-paperclip-and-fog-in-rails-applications/
 tags:
   - rails
 ---

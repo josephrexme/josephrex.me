@@ -23,6 +23,6 @@ module.exports = {
     keybase: 'https://keybase.io/josephrexme',
     patreon: 'https://patreon.com/josephrexme',
   },
-  ckFormId: 1526099,
+  convertkitFormId: 1526099,
   googleAnalytics: 'UA-56161232-2'
 }

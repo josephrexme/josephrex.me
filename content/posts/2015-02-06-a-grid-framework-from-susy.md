@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-02-06T00:00:00Z
 title: A grid framework from Susy Part 1
-url: /a-grid-framework-from-susy/
+permalink: /a-grid-framework-from-susy/
 ---
 
 [Susy][1] is a great grid framework and something I really love about it is the idea of grid on demand rather than having to use frameworks just as Chris Coyier quoted:

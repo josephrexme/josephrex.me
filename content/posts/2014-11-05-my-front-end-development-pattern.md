@@ -5,7 +5,7 @@ categories:
 comments: true
 date: 2014-11-05T00:00:00Z
 title: My Front-end development pattern
-url: /my-front-end-development-pattern/
+permalink: /my-front-end-development-pattern/
 tags:
   - frontend
   - frameworks

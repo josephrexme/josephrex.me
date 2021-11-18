@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-12-12T00:00:00Z
 title: What "It's not about the money" really means
-url: /what-its-not-about-the-money-really-means/
+permalink: /what-its-not-about-the-money-really-means/
 tags:
   - opinions
 ---

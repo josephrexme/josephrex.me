@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2014-10-13T00:00:00Z
 title: Using resources files with Qt designer
-url: /adding-resource-files-to-your-qt-designer-project-and-using-pyrcc-with-python/
+permalink: /adding-resource-files-to-your-qt-designer-project-and-using-pyrcc-with-python/
 tags:
   - gui
   - pyqt
@@ -11,8 +11,9 @@ tags:
 ---
 
 I've planned writing on this for long but I've just been so busy. When I started building GUI programs with Qt designer, this was a big challenge for me for a while but somehow I figured it out on my own.
-When creating a GUI project in Qt designer, you need images on some parts of your interface. Qt designer allows you add images that have been included in your resource files. My first pain was "How the heck do I add images to this resource file and where the heck is it?".
 <!--more-->
+
+When creating a GUI project in Qt designer, you need images on some parts of your interface. Qt designer allows you add images that have been included in your resource files. My first pain was "How the heck do I add images to this resource file and where the heck is it?".
 
 Well I said I figured it out on my own but yet I got the little internet aid. I found out from a search that I needed to have a **app.qrc** file for my resource files. This was all the information I got.
 

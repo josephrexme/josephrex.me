@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2014-09-12T00:00:00Z
 title: Getting started with GUI development in Python
-url: /getting-started-with-gui-development-in-python/
+permalink: /getting-started-with-gui-development-in-python/
 tags:
   - gui
   - python

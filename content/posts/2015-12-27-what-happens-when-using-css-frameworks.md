@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-12-27T00:00:00Z
 title: What happens when using CSS frameworks
-url: /what-happens-when-using-css-frameworks/
+permalink: /what-happens-when-using-css-frameworks/
 tags:
   - css
   - frontend

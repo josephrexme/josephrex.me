@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-08-09T00:00:00Z
 title: Moving to PostCSS
-url: /moving-to-postcss/
+permalink: /moving-to-postcss/
 ---
 
 At some point as a developer you've thought of leveling up by leaving spaghetti CSS to write in preprocessors. There are 3 popular CSS preprocessors LESS, Sass, Stylus, and there may be others I've never heard of. What makes CSS hard is its lack of logic. These preprocessors made our workflow easier by introducing logic to us like iterating things that regular CSS coders will spend ours rewriting, use of partials, use of mixins and variables.

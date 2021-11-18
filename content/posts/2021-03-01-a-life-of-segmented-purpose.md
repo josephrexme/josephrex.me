@@ -3,7 +3,7 @@ author: Joseph Rex
 title: A life with segmented purpose
 date: 2021-02-27T22:32:54-06:00
 lastmod: 2021-02-27T22:32:54-06:00
-url: /life-with-segmented-purpose/
+permalink: /life-with-segmented-purpose/
 tags:
   - life
   - opinions

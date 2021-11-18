@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Lets Talk Safe Navigation
 date: 2019-06-14T20:52:17-05:00
-url: /lets-talk-safe-navigation
+permalink: /safe-navigation/
 tags:
   - javascript
   - ruby

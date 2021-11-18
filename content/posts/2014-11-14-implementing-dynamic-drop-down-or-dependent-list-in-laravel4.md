@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2014-11-14T00:00:00Z
 title: Implementing dynamic drop down / dependent list in laravel4
-url: /implementing-dynamic-drop-down-or-dependent-list-in-laravel4/
+permalink: /implementing-dynamic-drop-down-or-dependent-list-in-laravel4/
 tags:
   - javascript
   - jquery
@@ -12,9 +12,9 @@ tags:
 ---
 
 When I used procedural PHP for most of my projects, I found myself needing what I referred to as a dependent list. These days I hear it being referred to as dynamic drop down more often. After looking around, a friend gave this solution to me.
+<!--more-->
 
 All examples here will rely on the DDL database schema here:
-<!--more-->
 
 ```sql
 CREATE TABLE IF NOT EXISTS `categories` (

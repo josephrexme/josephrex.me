@@ -6,7 +6,7 @@ tags:
   - rails
   - frontend
 title: Frontend asset management in rails applications
-url: /frontend-asset-management-in-rails-applications/
+permalink: /frontend-asset-management-in-rails-applications/
 ---
 
 In rails planet it's easy to assume that asset management is at its best with the assets pipeline it provides which includes sprockets for simple requires. Sprockets is great but could be better with a properly structured application.

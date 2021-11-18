@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-03-06T00:00:00Z
 title: Exploring SVG for absolute beginners
-url: /exploring-svg-for-absolute-beginners/
+permalink: /exploring-svg-for-absolute-beginners/
 tags:
   - svg
 ---

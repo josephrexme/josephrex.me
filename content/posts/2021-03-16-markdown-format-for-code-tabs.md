@@ -3,7 +3,7 @@ author: Joseph Rex
 title: Markdown format for code tabs
 date: 2021-03-16T09:03:39-05:00
 lastmod: 2021-03-16T09:03:39-05:00
-url: /markdown-format-for-code-tabs/
+permalink: /markdown-format-for-code-tabs/
 tags:
   - software
   - code

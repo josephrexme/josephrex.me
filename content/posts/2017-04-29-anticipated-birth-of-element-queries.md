@@ -7,7 +7,7 @@ tags:
   - css
   - gui
 title: Anticipated birth of element queries
-url: /anticipated-birth-of-element-queries/
+permalink: /anticipated-birth-of-element-queries/
 ---
 
 There have been [so many][8] [talks][16] [on][17] [constraint-based][18] [layouts][19] [or][20] [container/element][21] [queries][22] [lately][23] and that's because without them responsive styling with [media queries will remain an unpleasant hack][1].

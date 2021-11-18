@@ -2,7 +2,7 @@
 author: Joseph Rex
 title: Immutability
 date: 2017-12-25T06:42:56-06:00
-url: /immutability/
+permalink: /immutability/
 tags:
   - functional programming
   - javascript

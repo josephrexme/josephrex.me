@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2015-02-03T00:00:00Z
 title: Captain Blogger
-url: /captain-blogger/
+permalink: /captain-blogger/
 ---
 
 Someone once told me to have a purpose for everything I do. I believe that even out of our subconscious, everything we do as humans is for a purpose. [Marla Gibbs][1] quotes that:
