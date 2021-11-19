@@ -36,7 +36,7 @@ power where I need to kill my work servers and I just couldn't go on punishing m
 down each of all those servers and starting them over each morning. That's when I came up with
 the script below:
 
-```
+```text
 if [ "$TERM_PROGRAM" = tmux ]; then
   echo "Exiting ck tmux session"
   # Stop rails servers (ck and fk) and put down docker
@@ -67,7 +67,7 @@ necessary servers. I saved it as `ck-tmux` where `ck` there means **convertkit**
 where I work. It is included with [my dotfiles](https://github.com/josephrexme/dotfiles)
 and aliased to run from any directory I call it.
 
-```
+```text
 alias cktmux='~/ck-tmux.sh'
 ```
 

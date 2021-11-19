@@ -86,10 +86,6 @@ This means if I have a section greater than or equal to 100px make the body back
 ### Solutions to constraint based layouts
 [Cassowary][5] constraint satisfaction algorithm, a known layout solution used in Apple development was used as an early implementation of CCSS (Constrained Cascading Style Sheet) after which more solutions like [GSS (Grid Style Sheets)][6] have tried to adapt the concept behind it.
 
-<figure>
-<img src="https://www.smashingmagazine.com/wp-content/uploads/2016/07/eqcss-logo-opt.png" class="image image--wide" alt="EQCSS Logo">
-</figure>
-
 More recently, [EQCSS (Element Queries CSS)][7] was born as a great speculative polyfill for element queries by [Tom Hodgins][11] and [Maxime Euzière][13]. It puts the at-rule into consideration for scoping elements like it is used with media queries and proposes the best syntax yet.
 
 ```scss

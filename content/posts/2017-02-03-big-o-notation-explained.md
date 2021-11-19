@@ -154,7 +154,7 @@ function getHex(color){
 }
 ```
 
-```
+```text
 Total time = time(first statement) + time(second statement) + .... + time(nth statement)
 ```
 

@@ -15,11 +15,9 @@ The golden ratio is a math formula that exists in nature and have been adopted i
 At first glance, it might seem odd that aesthetic is being defined by a math formula. And as a developer, when I got a aware of the concept through my design explorations, I failed to believe or accept it was practicable. I had thought people just pasted the golden spiral on designs to make a meaning out of nothing. That might be the case for you now but I'll try to work you through my journey of comprehending the concept.
 
 <figure>
-<div class="figure--multiple">
-  <div><img src="https://res.cloudinary.com/strich/image/upload/v1549197756/sheldon-golden-ratio-2_ru3iod.jpg" alt="Sheldon Cooper on golden spiral shirt Season 12" class="image"></div>
-  <div><img src="https://res.cloudinary.com/strich/image/upload/v1549197756/sheldon-golden-ratio_qffh9b.jpg" alt="Another photo of Sheldon Cooper from Season 12 with golden spiral t-shirt" class="image"></div>
-</div>
-<figcaption>Sheldon Cooper with golden spiral t-shirts</figcaption>
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549197756/sheldon-golden-ratio-2_ru3iod.jpg" alt="Sheldon Cooper on yellow golden spiral shirt">
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549197756/sheldon-golden-ratio_qffh9b.jpg" alt="Sheldon Cooper on purple golden spiral shirt">
+  <figcaption>Sheldon Cooper with golden spiral t-shirts</figcaption>
 </figure>
 
 First, what is the golden ratio? mathematically, it is the representation of two quantities with the same ratio as the ratio of their sum to the larger of both quantites.
@@ -61,21 +59,15 @@ Since we're here to talk about design and aesthetics, let's start with the least
 while research still shows that beauty is not solely based on phi, we can try to recreate a face in the wrong proportions or an off-ratio and we will end up with something ugly. Something that a malformed person might look like after an accident. But there are people who aren't considered attractive and yet haven't been malformed in any form of accident. In most cases, their faces might still be in the precise golden ratio, but they might not be sculpted well enough to fit other beauty metrics. The [marquardt beauty pentagon][3] is an example of one of such metrics and here is my wife placed behind the pentagon mask. It fits nicely because she's gorgeous.
 
 <figure>
-  <div class="figure--multiple">
-    <div>
-      <img src="https://res.cloudinary.com/strich/image/upload/v1549204052/mandy-marquardt_ukko2q.jpg" alt="Mandy with marquardt mask" class="image">
-    </div>
-    <div>
-      <img src="https://res.cloudinary.com/strich/image/upload/v1549204052/mandy-marquardt-plain_ty6zxi.jpg" alt="Mandy without marquardt mask" class="image">
-    </div>
-  </div>
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549204052/mandy-marquardt_ukko2q.jpg" alt="Mandy with marquardt mask">
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549204052/mandy-marquardt-plain_ty6zxi.jpg" alt="Mandy without marquardt mask">
 </figure>
 
 
 While you may argue that beauty is in the eye of the beholder, I can counter that argument by saying we all have various retina definitions that makes the pattern more prominent when we observe some people, more than when we observe others. But if you would insist there is no logic or principle attached to beauty, that's fine too. It is worth noting that a beautiful face might not be perfectly symmetrical. As simple as human beauty analysis can be, it can also get really complex so I will move on to plants.
 
 <figure class="figure--edgeleft">
-  <img src="https://res.cloudinary.com/strich/image/upload/v1549210799/flower_spiral_tx2uv0.jpg" alt="Leaves in golden spiral" class="image">
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549210799/flower_spiral_tx2uv0.jpg" alt="Leaves in golden spiral">
   <figcaption>Golden spiral on plant</figcaption>
 </figure>
 
@@ -83,17 +75,11 @@ Plants have been known to have a physical/aesthetic illustration of the fibonacc
 
 The spiral on the leaves shows the ascending sequence of fibonacci. In numerals that is **1, 1, 2, 3, 5, 8, 13, 21, ...**, where every 2 preceding numbers make up the next number. You might even apply [pascal's triangle][4] in analyzing the beauty of a subject.
 
-Logo designers achieve precision with their logos with the use golden circles. To derive that, the golden spiral is made to pan a golden rectangle with smaller rectangles making up the fibonacci series. This can also be achieved with triangles as shown:
+Logo designers achieve precision with their logos with the use of golden circles. To derive that, the golden spiral is made to pan a golden rectangle with smaller rectangles making up the fibonacci series. This can also be achieved with triangles as shown:
 
 <figure>
-  <div class="figure--multiple">
-    <div>
-      <img src="https://res.cloudinary.com/strich/image/upload/v1549213995/golden-spiral_nicumf.png" alt="golden spiral" class="image">
-    </div>
-    <div>
-      <img src="https://res.cloudinary.com/strich/image/upload/v1549213995/golden-triangle_kqqe1k.png" alt="Triangular golden spiral" class="image">
-    </div>
-  </div>
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549213995/golden-spiral_nicumf.png" style="transform: rotate(90deg) translateY(60px);transform-origin: bottom" alt="golden spiral">
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549213995/golden-triangle_kqqe1k.png" alt="Triangular golden spiral" class="image">
 </figure>
 
 The video below shows the derivation of stunning logos through the circles derived from the spirals.
@@ -105,20 +91,10 @@ The video below shows the derivation of stunning logos through the circles deriv
 I love logos and designing them have gradually become a part of what I do along with software development. Here are some logos in the wild with good use of the golden ratio:
 
 <figure>
-  <div class="figure--multiple">
-    <div>
-      <img src="https://res.cloudinary.com/strich/image/upload/v1549215437/logo-3_ibnbnm.jpg" class="image" alt="Logo Example 1">
-    </div>
-    <div>
-      <img src="https://res.cloudinary.com/strich/image/upload/v1549215436/logo-1_jxxhwr.jpg" class="image" alt="Logo Example 2">
-    </div>
-    <div>
-      <img src="https://res.cloudinary.com/strich/image/upload/v1549215437/logo-2_zytral.jpg" class="image" alt="Logo Example 3">
-    </div>
-    <div>
-      <img src="https://res.cloudinary.com/strich/image/upload/v1549215436/logo-4_cadsvg.jpg" class="image" alt="Logo Example 4">
-    </div>
-  </div>
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549215437/logo-3_ibnbnm.jpg" width="600" alt="Logo Example 1">
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549215436/logo-1_jxxhwr.jpg" width="600" alt="Logo Example 2">
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549215437/logo-2_zytral.jpg" width="600" alt="Logo Example 3">
+  <img src="https://res.cloudinary.com/strich/image/upload/v1549215436/logo-4_cadsvg.jpg" width="600" alt="Logo Example 4">
 </figure>
 
 If you choose to apply the golden ratio to logos you make, you shouldn't bother about the detail from the start. It is always fine to make a simple sketch and then try to derive the circles on it. When making animal logos or logos from other existing objects, it is a little more straigth-forward to just begin deriving circles from the original images.

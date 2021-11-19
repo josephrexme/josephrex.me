@@ -28,8 +28,58 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+:root{
+  --text-color: #222;
+  --bg-color: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root{
+    --text-color: #eee;
+    --bg-color: #222;
+  }
+}
 a{
   text-decoration: none;
+}
+input{
+  font-family: inherit;
+}
+blockquote{
+  position: relative;
+  margin: 2rem 1rem;
+  padding: 2rem 4rem;
+  background: rgb(var(--bg-color)/.05);
+  border-left: solid thick #444;
+  font-weight: 300;
+}
+blockquote::before{
+  content: '“';
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  font-size: 8rem;
+  color: var(--text-color);
+}
+cite{
+  display: block;
+}
+cite::before{
+  content: '— ';
+}
+hr{
+  margin: 4rem auto;
+  padding: 0;
+  border: 0;
+  color: var(--text-color);
+  text-align: center;
+  overflow: inherit;
+}
+hr::after{
+  content: '✯ ✯ ✯';
+  display: inline-block;
+  position: relative;
+  top: -1rem;
+  font-size: 2rem;
 }
 h1,h2,h3,h4,h5,h6 {
   line-height: 1.3;
@@ -44,6 +94,8 @@ h2,h3,h4,h5,h6 {
 h2,h3,h4,h5,h6,p {
   margin: 1.5rem 0 1rem;
 }
+
+/* Article */
 article p {
   margin: 0;
 }
@@ -51,13 +103,89 @@ article p + p {
   margin: 3rem 0 0
 }
 article h2,h3,h4,h5,h6 {
-  margin: 4rem 0 0;
+  margin: 4rem 0 1rem;
+}
+article h2 {
+  font-size: 2.6rem;
+}
+@media (min-width: 640px) {
+  article h2 {
+    font-size: 3.6rem;
+  }
+}
+article h3 {
+  font-size: 2.4rem;
+}
+@media (min-width: 640px) {
+  article h3 {
+    font-size: 3rem;
+  }
+}
+article h4 {
+  font-size: 2.2rem;
+}
+@media (min-width: 640px) {
+  article h4 {
+    font-size: 2.4rem;
+  }
+}
+article h5 {
+  font-size: 2rem;
+}
+article h6 {
+  font-size: 1.8rem;
 }
 article pre, pre[class*='language-'] {
   margin: 4rem 0;
 }
 article a{
-  color: #4a87ff;
+  color: #b64f44;
+}
+article math{
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+}
+article figure {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgb(200 200 200/.08);
+  text-align: center;
+}
+article > img {
+  margin: 2rem auto;
+}
+article figcaption{
+  padding-block-start: 1rem;
+  grid-row-start: 2;
+}
+article video{
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+article .video{
+  position: relative;
+  width: calc(100% + 30px);
+  height: 0;
+  margin-block: 2rem;
+  margin-inline-start: -15px;
+  padding-block-end: 56.25%;
+  padding-block-start: 30px;
+  background: none;
+  overflow: hidden;
+}
+article .video :where(iframe, object, embed){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 /* Padding */

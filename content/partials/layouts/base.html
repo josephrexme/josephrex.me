@@ -97,7 +97,7 @@
   }
   </script>
 </head>
-<body style="--dark-bg:#222;--bg:#fff;--dark-cl:#eee;--cl:#222">
+<body style="--bg:var(--bg-color);--cl:var(--text-color)">
   {% include "header.html" %}
   {{ content | safe }}
   {% include "footer.html" %}
