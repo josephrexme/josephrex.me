@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if site.config.googleAnalytics %}
+  <link rel="preconnect" href="//www.google-analytics.com" crossorigin>
+  <link rel="preconnect" href="//stats.g.doubleclick.net" crossorigin>
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//stats.g.doubleclick.net">
+  {% endif %}
+  {% if layout == "post" %}
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {% endif %}
   <link rel="stylesheet" href="/css/main.css">
   <title>{{ title or site.config.title }}</title>
   <meta name="description" content="{{ page.excerpt or site.config.description }}">
@@ -27,10 +37,6 @@
   <meta name="twitter:data1" content="{{ site.config.name }}">
   <meta name="twitter:label2" content="Published On">
   <meta name="twitter:data2" content="{{ page.date | formatDate }}">
-  {% endif %}
-  {% if site.config.googleAnalytics %}
-  <link rel="preconnect" href="//www.google-analytics.com" as="script">
-  <link rel="preconnect" href="//stats.g.doubleclick.net" as="script">
   {% endif %}
   <link rel="canonical" href="{{ page.url | absURL }}">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -91,8 +97,13 @@
   }
   </script>
 </head>
-<body>
- {{ content | safe }}
- {% include "footer.html" %}
+<body style="--dark-bg:#222;--bg:#fff;--dark-cl:#eee;--cl:#222">
+  {% include "header.html" %}
+  {{ content | safe }}
+  {% include "footer.html" %}
+  {% if layout == "post" %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer" data-manual></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {% endif %}
 </body>
 </html>

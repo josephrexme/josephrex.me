@@ -2,6 +2,7 @@
 author: Joseph Rex
 title: Stateful UI Engineering
 date: 2019-02-10T23:42:46-06:00
+lastmod: 2021-11-19T04:19:46-06:00
 permalink: /stateful-ui-engineering/
 tags:
   - gui
@@ -46,7 +47,7 @@ The trigger is the input that the machine receives to change its state. There ca
 
 If you ever drove any of these or had a ride in them, you know you can't just get in the car and drive when the handbrake is up. The handbrake has to be pushed down before the car moves. A JSON representation of this would be:
 
-```js
+``` js
 {
   "initial": "idle",
   "states": {

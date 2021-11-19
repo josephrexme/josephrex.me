@@ -68,7 +68,7 @@ This seem like the best way to use PyCrypto AES encryption but it wasn't symmetr
 
 I still keep that function but it was of no use in my case. Finally I thought of the gnupg module and installed it for my python2
 
-```sh
+```
 sudo apt-get install python-gnupg
 ```
 

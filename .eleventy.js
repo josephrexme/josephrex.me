@@ -1,10 +1,16 @@
 const fs = require('fs')
 const { DateTime } = require("luxon")
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 
 const formatDate = dateObj => {
   return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
 }
 const formatISO = dateObj => DateTime.fromJSDate(dateObj).toISO()
+const pluralize = (word, count, inclusive) => {
+  const final = count === 1 ? word : `${word}s`
+  if(!inclusive) return final
+  return `${count} ${final}`
+}
 
 module.exports = config => {
   config.setFrontMatterParsingOptions({
@@ -14,11 +20,21 @@ module.exports = config => {
   /* PassThrough */
   config.addPassthroughCopy({ 'static': '.' })
 
+  /* Plugins */
+  config.addPlugin(syntaxHighlight)
+
   /* Filters */
   config.addFilter('absURL', value => `https://josephrex.me${value}`)
   config.addFilter("formatDate", formatDate)
   config.addFilter("formatISO", formatISO)
   config.addFilter('lower', value => value.toLowerCase())
+  config.addFilter('readingTime', value => {
+    const withoutTags = value.replace(/(<([^>]+)>)/gi, '')
+    const speed = 250
+    const count = withoutTags.match(/[\u0400-\u04FF]+|\S+(?=\s)/g)?.length || 0
+    const total = Math.ceil(count / speed)
+    return pluralize('minute', total, true)
+  })
 
   /* Shortcodes */
   config.addShortcode("year", () => `${new Date().getFullYear()}`)
