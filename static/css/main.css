@@ -154,7 +154,7 @@ article figure {
   width: fit-content;
   margin: 2rem auto;
   padding: 1rem;
-  background: rgb(200 200 200/.08);
+  background: rgb(100 100 100/.06);
   text-align: center;
 }
 article > img {
@@ -163,6 +163,8 @@ article > img {
 article figcaption{
   padding-block-start: 1rem;
   grid-row-start: 2;
+  font-size: 1.6rem;
+  opacity: .6;
 }
 article video{
   aspect-ratio: 16/9;

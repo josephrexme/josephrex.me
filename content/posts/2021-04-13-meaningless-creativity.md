@@ -9,8 +9,8 @@ tags:
   - art
 ---
 In places where I can, I introduce myself as a creative technologist because it describes
-all I do [better than any job title can][1]. But beyond that, beyond being creative with
-technology, the term describes the intersectionality of [STEAM][2]
+all I do [better than any job title can](https://www.josephrex.me/life-with-segmented-purpose/). But beyond that, beyond being creative with
+technology, the term describes the intersectionality of [STEAM](https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics)
 (Science, Technology, Engineering, Art, and Math) with Art at the forefront.
 <!--more-->
 
