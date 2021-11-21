@@ -1,9 +1,7 @@
 ---
 layout: base
 ---
-<div style="--px:6rem;">
-  {% include "header.html" %}
-</div>
+{% include "header.html" %}
 <div style="--w:var(--container);--mx:auto">
   <h1 style="--txt_al:center;--font_sz:3.8rem;--md-font_sz:8rem">{{ title }}</h1>
   <div style="--font_sz:1.6rem;--txt_al:center;--d:flex;--flex_dir:column;gap:1rem">
@@ -31,6 +29,4 @@ layout: base
     {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
   </ul>
 </div>
-<div style="--px:6rem;">
-  {% include "footer.html" %}
-</div>
+{% include "footer.html" %}
