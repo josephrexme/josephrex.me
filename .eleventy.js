@@ -4,6 +4,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const markdownIt = require("markdown-it")
 const markdownItAnchor = require("markdown-it-anchor")
+const { default: axios } = require('axios')
 
 const formatDate = dateObj => {
   return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
@@ -69,6 +70,16 @@ module.exports = config => {
     const time = this.page?.inputPath ? fs.statSync(this.page.inputPath).birthtime : undefined
     return formatted ? formatDate(time) : formatISO(time)
   })
+  config.addAsyncShortcode("webmentions", async (urlPath) => {
+    try {
+      const res = await axios(`https://webmention.io/api/mentions.jf2?target=https://www.josephrex.me${urlPath}&wm-property=like-of`)
+      const likes = res.data.children.length
+      return pluralize('twitter like', likes, true)
+    } catch (error) {
+      console.log({ error })
+      return 'Could not get likes'
+    }
+  })
 
   /* Layout Aliases */
   config.addLayoutAlias("base", "layouts/base.html")
@@ -82,6 +93,17 @@ module.exports = config => {
   })
   config.addCollection("cases", collectionApi => {
     return collectionApi.getFilteredByGlob("content/cases/*.md")
+  })
+  // all tags ordered from highest usage to lowest
+  config.addCollection('tags', collectionApi => {
+    const lengthOf = tag => collectionApi.getFilteredByTag(tag).length
+    const tags = collectionApi
+      .getAll()
+      .reduce((tags, item) => tags.concat(item.data.tags), [])
+      .filter(Boolean)
+      .filter(tag => !['posts', 'cases'].includes(tag))
+      .sort((a, b) => lengthOf(b) - lengthOf(a))
+    return Array.from(new Set(tags))
   })
 
   /* Libraries */

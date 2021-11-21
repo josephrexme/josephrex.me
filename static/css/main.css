@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+*:where(:not(iframe, canvas, img, svg, video, mark, sup, strong, em, s, abbr, ul, ol, dl, details):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
 /* For images to not be able to exceed their container */
 img {
   max-width: 100%;
@@ -34,7 +39,7 @@ body {
   --bg-color: #fff;
   --link-color: #b64f44;
   --site-width: 800px;
-  --container: min(94%, var(--site-width));
+  --container: min(90%, var(--site-width));
 }
 @media (prefers-color-scheme: dark) {
   :root{
@@ -45,6 +50,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 input {
   font-family: inherit;
@@ -75,7 +81,7 @@ hr {
   margin: 4rem auto;
   padding: 0;
   border: 0;
-  color: var(--text-color);
+  color: currentColor;
   text-align: center;
   overflow: inherit;
 }
@@ -83,7 +89,7 @@ hr::after {
   content: '✯ ✯ ✯';
   display: inline-block;
   position: relative;
-  top: -1rem;
+  top: 0;
   font-size: 2rem;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -96,18 +102,12 @@ h1 {
 h2,h3,h4,h5,h6 {
   font-weight: 500;
 }
-h2,h3,h4,h5,h6,p {
-  margin: 1.5rem 0 1rem;
-}
 
 /* Article */
-article p {
-  margin: 0;
-}
 article p + p {
   margin: 3rem 0 0
 }
-article h2,h3,h4,h5,h6 {
+article :where(h2,h3,h4,h5,h6) {
   margin: 4rem 0 1rem;
 }
 article h2 {
@@ -140,7 +140,7 @@ article h5 {
 article h6 {
   font-size: 1.8rem;
 }
-article pre, pre[class*='language-'] {
+article :where(pre, pre[class*='language-']) {
   margin: 4rem 0;
 }
 article a {
@@ -178,14 +178,13 @@ article video {
 article .video {
   position: relative;
   height: 0;
-  width: 100%;
-  margin-block: 2rem;
+  width: 90%;
   padding-block-end: 56.25%;
   padding-block-start: 30px;
   background: none;
   overflow: hidden;
 }
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
   article .video {
     width: calc(100% + 30px);
     margin-inline-start: -15px;
@@ -198,6 +197,11 @@ article .video :where(iframe, object, embed) {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+article .footnotes-list{
+  display: grid;
+  font-size: 1.4rem;
+  gap: 2rem;
 }
 
 /*-- Anchors --*/
@@ -324,10 +328,10 @@ article .video :where(iframe, object, embed) {
 
 /* Colors */
 [style*='--bg:'] {
-  background: var(--bg)
+  background: var(--bg);
 }
 [style*='--cl:'] {
-  color: var(--cl)
+  color: var(--cl);
 }
 
 /* Position */
@@ -357,13 +361,22 @@ article .video :where(iframe, object, embed) {
 [style*='--d:'] {
   display: var(--d)
 }
+[style*='--roundness:'] {
+  border-radius: var(--roundness);
+}
 
 /* Layout */
 [style*='--justify_content:'] {
   justify-content: var(--justify_content);
 }
+[style*='--align_items:'] {
+  align-items: var(--align_items);
+}
 [style*='--flex_dir:'] {
   flex-direction: var(--flex_dir);
+}
+[style*='--flex_wrap:'] {
+  flex-wrap: var(--flex_wrap);
 }
 [style*='--gap:'] {
   gap: var(--gap);
@@ -390,6 +403,13 @@ article .video :where(iframe, object, embed) {
 }
 
 /*-- Hover --*/
+/* Colors */
+[style*='--hover-bg:']:hover {
+  background: var(--hover-bg);
+}
+[style*='--hover-cl:']:hover {
+  color: var(--hover-cl);
+}
 /* Transforms */
 [style*='--hover-opacity:']:hover {
   opacity: var(--hover-opacity);

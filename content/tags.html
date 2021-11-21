@@ -1,0 +1,28 @@
+---
+layout: base
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+{% include "header.html" %}
+<div style="--w:var(--container);--mx:auto">
+  <h1 style="--txt_al:center;--font_sz:3.8rem;--md-font_sz:6rem">Articles tagged “{{ tag }}”</h1>
+  {% set taglist = collections[ tag ] %}
+  <div style="--mt:8rem">
+    <ol>
+    {% for post in taglist | reverse %}
+      <li><a href="{{ post.url | url }}" style="--cl:var(--link-color)" class="anchor-lines">{{ post.data.title }}</a></li>
+    {% endfor %}
+    </ol>
+    <h2 style="--mt:4rem;--mb:1rem;--font_sz:3rem">All tags</h2>
+    <div style="--d:flex;--flex_wrap:wrap;--gap:.02rem 2rem;">
+      {% for tagName in collections.tags %}
+        <a href="/tags/{{ tagName }}" style="--cl:var(--link-color)" class="anchor-lines">{{ tagName }} ({{ collections[ tagName ] | length }})</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% include "footer.html" %}
+

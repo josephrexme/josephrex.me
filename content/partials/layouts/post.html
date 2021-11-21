@@ -24,9 +24,35 @@ layout: base
   </article>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+  <div style="--font_sz:1.6rem;--my:4rem;--d:flex;--justify_content:space-between;--align_items:center">
+    <div style="--d:flex;--flex_wrap:wrap;--gap:1rem">
+      {%- for tag in tags -%}
+        <a href="/tags/{{ tag }}" style="--bg:rgb(100 100 100/.08);--py:.5rem;--px:1.5rem;--roundness:.5rem;--hover-bg:rgb(100 100 100/.2)">{{ tag }}</a>
+      {%- endfor -%}
+    </div>
+    <div style="--txt_al:right;--d:flex;--flex_wrap:wrap;--flex_dir:column;--md-flex_dir:row;--gap: 1rem 2rem">
+      <a href="https://facebook.com/sharer/sharer.php?u={{url}}" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" style="--cl:var(--link-color)" class="anchor-lines">Share on Facebook</a>
+      <a href="https://twitter.com/intent/tweet/?text={{title}}&url={{url}}&via=josephrexme" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" data-show-count="false" style="--cl:var(--link-color)" class="anchor-lines">Share on Twitter</a>
+    </div>
+  </div>
+  <div style="--txt_al:center;--opacity:.6;">
+    {% webmentions page.url %}
+  </div>
+  <div style="--my:4rem;--d:flex;--justify_content:space-between;--align_items:center">
+    <div style="--d:grid;--gap:1rem;">
+      {%- if previousPost %}
+        <h5>Newer post</h5>
+        <p><a href="{{ previousPost.url | url }}" style="--cl:var(--link-color)" class="anchor-lines">{{ previousPost.data.title }}</a></p>
+      {% endif %}
+    </div>
+    <div style="--d:grid;--gap:1rem;--txt_al:right">
+      {%- if nextPost %}
+        <h5>Older post</h5>
+        <p><a href="{{ nextPost.url | url }}" style="--cl:var(--link-color)" class="anchor-lines">{{ nextPost.data.title }}</a></p>
+      {% endif %}
+    </div>
+  </div>
   <ul>
-    {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-    {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
   </ul>
 </div>
 {% include "footer.html" %}

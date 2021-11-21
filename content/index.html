@@ -7,11 +7,11 @@ pagination:
 <div style="--d:grid;--mx-grid_template_cols:repeat(2,1fr);--gap:2rem;">
 {%- for post in pagination.items -%}
   <section style="--position:relative;--p:5rem;--d:grid;--gap:2rem;--group:active">
-    <h3 style="--my:0;--opacity:.7;--font_sz:2rem"><a href="{{ post.url }}" class="anchor-lines">{{ post.data.title }}</a></h3>
+    <h3 style="--opacity:.7;--font_sz:2rem"><a href="{{ post.url }}" class="anchor-lines">{{ post.data.title }}</a></h3>
     <article>
       {{ post.data.page.excerpt | markdownify | safe }}
     </article>
-    <p style="--my:0"><a href="{{ post.url }}" style="--font_sz:1.6rem;--opacity:.7" class="anchor-lines">Read more ››</a></p>
+    <p><a href="{{ post.url }}" style="--font_sz:1.6rem;--opacity:.7" class="anchor-lines">Read more ››</a></p>
     <div style="--position:absolute;--inset:0;--bg:rgb(100 100 100/.06);--group-hover-transform:scale(1.02);--transform-o:center;--transition:transform .3s cubic-bezier(.5,0,.5,1);--z:-1"></div>
   </section>
 {%- endfor -%}
