@@ -1,19 +1,26 @@
 ---
 layout: base
 ---
-<div style="--w:min(94%, 800px);--mx:auto">
-  <h1 style="--text_al:center;--font_sz:4.5rem;--md-font_sz:8rem">{{ title }}</h1>
-  <p style="--text_al:center">
-    <strong>Published: </strong>
-    <time datetime="{{ page.date | formatISO }}">{{ page.date | formatDate }}</time>
-  </p>
-  {% if lastmod %}
-  <p style="--text_al:center">
-    <strong>Last updated: </strong>
-    <time datetime="{{ lastmod | formatISO }}">{{ lastmod | formatDate }}</time>
-  </p>
-  {% endif %}
-  <p style="--text_al:center"><strong>Estimated reading time: </strong> {{ content | readingTime }}</p>
+<div style="--px:6rem;">
+  {% include "header.html" %}
+</div>
+<div style="--w:var(--container);--mx:auto">
+  <h1 style="--txt_al:center;--font_sz:3.8rem;--md-font_sz:8rem">{{ title }}</h1>
+  <div style="--font_sz:1.6rem;--txt_al:center;--d:flex;--flex_dir:column;gap:1rem">
+    <p style="--m:0">
+      <strong>Published: </strong>
+      <time datetime="{{ page.date | formatISO }}">{{ page.date | formatDate }}</time>
+    </p>
+    <p style="--m:0">
+      <strong>Last updated: </strong>
+      {% if lastmod %}
+      <time datetime="{{ lastmod | formatISO }}">{{ lastmod | formatDate }}</time>
+      {% else %}
+      <time datetime="{% modified_at {formatted: false} %}">{% modified_at %}</time>
+      {% endif %}
+    </p>
+    <p style="--m:0"><strong>Estimated reading time: </strong> {{ content | readingTime }}</p>
+  </div>
   <article style="--mt:8rem;--mb:2rem">
     {{ content | safe }}
   </article>
@@ -23,4 +30,7 @@ layout: base
     {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
     {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
   </ul>
+</div>
+<div style="--px:6rem;">
+  {% include "footer.html" %}
 </div>

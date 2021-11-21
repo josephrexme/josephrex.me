@@ -9,7 +9,7 @@ tags:
   - code
   - web
 ---
-For a while I've been working on [ui-pack][1] which is intended to be a
+For a while I've been working on [ui-pack](https://ui-pack.js.org/docs/intro/principles) which is intended to be a
 home for those UI components that aren't used frequently enough to make
 it to most component libraries or are often implemented with very little
 research.

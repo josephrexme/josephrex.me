@@ -1,8 +1,30 @@
 ---
 layout: base
 ---
-<h1>{{ site.config.name }},<br>{{ site.config.bio }}</h1>
-<p>{{ site.config.topics }}</p>
-<main>
-  {{ content | safe }}
-</main>
+<div style="--px:6rem">
+  {% include "header.html" %}
+  <div style="--pb:8rem;--pt:4rem">
+    <h1 style="--font_sz:3.8rem;--md-font_sz:4.8rem;">I am {{ site.config.name }},<br>{{ site.config.bio }}</h1>
+    <p style="--md-font_sz:2rem">{{ site.config.about | markdownify | safe }}</p>
+  </div>
+  <div style="--d:grid;--lg-grid_template_cols: 1fr 3fr;--gap:4rem;--lg-gap:0">
+    <nav aria-label="Secondary navigation" style="--d:flex;--flex_dir:column;--gap:1.5rem">
+      <h2 style="--my:0">
+        <a href="/" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if page.url != '/' %}--opacity:.4;{% endif %}" class="anchor-lines">Articles</a>
+      </h2>
+      <h2 style="--my:0">
+        <a href="/case-studies" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if page.url != '/case-studies/' %}--opacity:.4;{% endif %}" class="anchor-lines">Case Studies</a>
+      </h2>
+      <h2 style="--my:0">
+        <a href="/experiments" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if page.url != '/experiments/' %}--opacity:.4;{% endif %}" class="anchor-lines">Experiments</a>
+      </h2>
+      <h2 style="--my:0">
+        <a href="/projects" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if page.url != '/projects/' %}--opacity:.4;{% endif %}" class="anchor-lines">Projects</a>
+      </h2>
+    </nav>
+    <main>
+      {{ content | safe }}
+    </main>
+  </div>
+  {% include "footer.html" %}
+</div>

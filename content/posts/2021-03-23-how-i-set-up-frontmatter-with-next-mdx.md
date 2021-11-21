@@ -10,7 +10,7 @@ tags:
   - next.js
   - ssg
 ---
-As I began writing documentation for my project [ui-pack][1] I wanted full control of the
+As I began writing documentation for my project [ui-pack](https://ui-pack.js.org/docs/intro/principles) I wanted full control of the
 medium to prevent limitations that may be met with existing documentation tools. A primary
 goal of the project is to be so comprehensive to its users.
 <!--more-->
