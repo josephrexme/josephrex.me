@@ -6,7 +6,7 @@ title: 'Sticky: Scroll to fix content'
 permalink: /scroll-to-fix-content/
 ---
 
-Late last year, [Chris Coyier][1] addressed this on [CSS-Tricks][2] with illustrating images including GIF. In his solution to the problem, he had used [magic numbers][3] which he confirmed made his soluton not re-usable. He also wrote it in jQuery which may be nice considering that a lot of people use jQuery as it works on legacy browsers.
+Late last year, [Chris Coyier](https://twitter.com/chriscoyier) addressed this on [CSS-Tricks](https://css-tricks.com/scroll-fix-content/) with illustrating images including GIF. In his solution to the problem, he had used [magic numbers](http://css-tricks.com/magic-numbers-in-css/) which he confirmed made his soluton not re-usable. He also wrote it in jQuery which may be nice considering that a lot of people use jQuery as it works on legacy browsers.
 <!--more-->
 
 The first issue I'll address here is that jQuery may be used by majority of web developers but not everyone does. To produce code that works in less time, I use jQuery to handle a lot of my freelance projects just to get the job done so fast. In this cases, performance is my least priority. I'm usually not trying to meet any performance budget even though I still take things like concatenation and minification very seriously. I maintain my blog here and I try my best possible to keep good performance. In total, I'm only having to use JavaScript to achieve about 6 things on my blog and I saw no need to load the whole jQuery library just to achieve those. I have chosen to go with vanilla JavaScript.

@@ -8,7 +8,7 @@ tags:
   - javascript
 ---
 
-I started a [series on functional programming][1] on the [X-Team blog][2] with a goal to make the perplexing functional paradigm in JavaScript fathomable. [Immutability][3] plays a vital role in creating pure functions for functional programming and it was only covered in brief.
+I started a [series on functional programming](https://x-team.com/blog/functional-programming-primer/) on the [X-Team blog](https://x-team.com/blog/author/joseph) with a goal to make the perplexing functional paradigm in JavaScript fathomable. [Immutability](https://en.wikipedia.org/wiki/Immutable_object) plays a vital role in creating pure functions for functional programming and it was only covered in brief.
 <!--more-->
 
 After bringing up the topic of immutability in a slack conversation, the first response I got was this:

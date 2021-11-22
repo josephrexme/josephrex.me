@@ -10,7 +10,7 @@ title: Anticipated birth of element queries
 permalink: /anticipated-birth-of-element-queries/
 ---
 
-There have been [so many][8] [talks][16] [on][17] [constraint-based][18] [layouts][19] [or][20] [container/element][21] [queries][22] [lately][23] and that's because without them responsive styling with [media queries will remain an unpleasant hack][1].
+There have been [so many](https://alistapart.com/article/container-queries-once-more-unto-the-breach) [talks](https://au.si/css-container-queries) [on](http://www.xanthir.com/b4PR0) [constraint-based](http://www.xanthir.com/b4VG0) [layouts](https://ethanmarcotte.com/wrote/on-container-queries/) [or](https://ethanmarcotte.com/wrote/a-bit-more-on-container-queries/) [container/element](https://www.smashingmagazine.com/2013/06/media-queries-are-not-the-answer-element-query-polyfill/) [queries](http://codepen.io/tomhodgins/post/what-the-heck-are-element-queries-container-queries) [lately](http://kittygiraudel.com/2014/04/22/why-element-queries-matter/) and that's because without them responsive styling with [media queries will remain an unpleasant hack](http://ianstormtaylor.com/media-queries-are-a-hack/).
 <!--more-->
 
 What does any of all that mean? Constraints based layouts puts child layouts or components to the scope of their parents such that changes made are relative to the parent/container size.
@@ -169,9 +169,9 @@ leaving the browser to make a decision of a reliable container after traversing 
 
 How does EQCSS handle this? As said earlier, EQCSS does not use container queries but element queries hence there's no such thing as scoping child elements within their parents. It simply picks an element and gives it a condition to be met. What this means is, when the problem above is addressed with eqcss, the child element would just always base on its on min-width since  the scoped element relies on it. It does cause a few self-referencing issue but CSS already has self referencing issues. This video explains:
 
-<div class="video">
+<figure class="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QfM_JwSDdjo" frameborder="0" allowfullscreen></iframe>
-</div>
+</figure>
 
 Here's eqcss addressing the problem above. As of the time of testing it only behaves weird in Chrome Canary (Chrome 60) and that's not surprising as we see [with the growth of Chrome things get weird like it did with will-change][26].
 

@@ -6,7 +6,7 @@ permalink: /repudiating-undiagnosed-disorders/
 tags:
   - opinions
 ---
-After reading Rachel Smith's article - [I haven't experienced imposter syndrome, and maybe you haven't either][1], I found myself guilty of making false diagnosis on myself. It became the norm for every developer to say they have imposter syndrome and it got me wondering, is this an added bonus to the profession? Or is it just another way to prove [developer humility][2] ?
+After reading Rachel Smith's article - [I haven't experienced imposter syndrome, and maybe you haven't either](https://rachsmith.com/2017/i-dont-have-imposter-syndrome), I found myself guilty of making false diagnosis on myself. It became the norm for every developer to say they have imposter syndrome and it got me wondering, is this an added bonus to the profession? Or is it just another way to prove [developer humility](https://medium.com/javascript-scene/junior-developer-for-life-is-for-suckers-921f7de0e7ce)?
 <!--more-->
 
 Whatever it was, I soon succumbed to it and I believed it so well that I had to buy an [imposter's handbook][3] - which I don't regret buying anyway. But it didn't just end with imposter syndrome for me. I grew up as a normal child, not the smartest, and not dumb either. What I didn't grow up as was a child with obsessive compulsive disorder (OCD) or Attention Deficit Hyperactivity Disorder (ADHD).

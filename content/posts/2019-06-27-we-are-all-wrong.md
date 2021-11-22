@@ -8,7 +8,7 @@ tags:
 ---
 We hate being wrong as humans and that often clouds our judgement
 in different situations. Even when we are certainly wrong but
-have held on to a belief for so long, we let [confirmation bias][1]
+have held on to a belief for so long, we let [confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias)
 impede our acknowledgement of the truth that we are wrong.
 <!--more-->
 

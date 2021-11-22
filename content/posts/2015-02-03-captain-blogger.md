@@ -6,7 +6,7 @@ title: Captain Blogger
 permalink: /captain-blogger/
 ---
 
-Someone once told me to have a purpose for everything I do. I believe that even out of our subconscious, everything we do as humans is for a purpose. [Marla Gibbs][1] quotes that:
+Someone once told me to have a purpose for everything I do. I believe that even out of our subconscious, everything we do as humans is for a purpose. [Marla Gibbs](http://www.brainyquote.com/quotes/authors/m/marla_gibbs.html) quotes that:
 <!--more-->
 
 > I truly believe that everything that we do and everyone that we meet is put in our path for a purpose. There are no accidents; we're all teachers - if we're willing to pay attention to the lessons we learn, trust our positive instincts and not be afraid to take risks or wait for some miracle to come knocking at our door.<br>

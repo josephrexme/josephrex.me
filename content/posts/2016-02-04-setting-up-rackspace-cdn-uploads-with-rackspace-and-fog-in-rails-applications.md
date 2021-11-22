@@ -8,7 +8,7 @@ tags:
   - rails
 ---
 
-Paperclip is a great gem and one of the most used gem for handling file attachment in rails applications. [Carrierwave][6] is another good choice. This article describes how to use it with the fog gem (a gem that helps you connect with almost any cloud service).
+Paperclip is a great gem and one of the most used gem for handling file attachment in rails applications. [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) is another good choice. This article describes how to use it with the fog gem (a gem that helps you connect with almost any cloud service).
 This article will use a Car model to handle scenarios of car image uploads.
 Start by adding the necessary gems to your Gemfile
 <!--more-->

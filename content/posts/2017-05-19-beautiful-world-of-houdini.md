@@ -9,7 +9,7 @@ title: Beautiful world of houdini
 permalink: /{{ title | slug }}/
 ---
 
-Besides the beautiful name, houdini would be a great addition to web technologies when eventually implemented by browsers. Before going into what it is exactly, you can think of it as the [babel][1] of CSS. Each time I come across the name Houdini, I imagine Agent Phil Coulson saying _"tahiti, it's a magical place"_.
+Besides the beautiful name, houdini would be a great addition to web technologies when eventually implemented by browsers. Before going into what it is exactly, you can think of it as the [babel](https://babeljs.io) of CSS. Each time I come across the name Houdini, I imagine Agent Phil Coulson saying _"tahiti, it's a magical place"_.
 <!--more-->
 
 <figure class="figure--fullwidth">

@@ -6,7 +6,7 @@ permalink: /hurt-people-hurt-people/
 tags:
   - opinions
 ---
-My wife and I just went to see the movie [Little][1] - the new movie by Marsai Martin.
+My wife and I just went to see the movie [Little](https://www.imdb.com/title/tt8085790/?ref_=nv_sr_1?ref_=nv_sr_1) - the new movie by Marsai Martin.
 It was a good movie and the narrative was about a lady who had been treated unfairly
 by peers at a young age.
 <!--more-->
@@ -54,5 +54,3 @@ In all situations, the majority groups need to have more empathy on the minoriti
 be kind to every human. Minority groups should also be empathetic and only address those
 who have proven to be insensitive and insouciant about our feelings.
 
-
-[1]: https://www.imdb.com/title/tt8085790/?ref_=nv_sr_1?ref_=nv_sr_1

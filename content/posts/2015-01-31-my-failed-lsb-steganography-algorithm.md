@@ -11,7 +11,7 @@ tags:
   - security
 ---
 
-Last month (December 2014), I started developing a new GUI steganography software after building a [simple steganography tool][1] for my [post at Infosec Institue][2]. The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
+Last month (December 2014), I started developing a new GUI steganography software after building a [simple steganography tool](https://github.com/josephrexme/stegman) for my [post at Infosec Institue](http://resources.infosecinstitute.com/steganalysis-x-ray-vision-hidden-data/). The simple tool (stegman) used a really simple approach that can be thought of and implemented by anyone in few minutes.
 <!--more-->
 
 <figure class="figure--fullwidth">
@@ -207,7 +207,7 @@ The distortion is from the middle to the bottom only because I splitted the imag
 
 A steganography software is to modify the media file with no obvious changes but I have a modification with a way too obvious change. I've had to put this aside for a while to get on with other work. If you have any suggestions to this algorithm, I'll appreciate them
 
-[1]: https://github.com/bl4ckdu5t/stegman
+[1]: https://github.com/josephrexme/stegman
 [2]: http://resources.infosecinstitute.com/steganalysis-x-ray-vision-hidden-data/
 [3]: https://docs.python.org/2/library/binascii.html
 [4]: https://twitter.com/Daniel_Lerch

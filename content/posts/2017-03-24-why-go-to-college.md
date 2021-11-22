@@ -8,7 +8,6 @@ tags:
 title: Why go to college
 permalink: /why-go-to-college/
 ---
-
 We are in an era where knowledge has become so accessible that we question the need for higher education which was once known as the touchstone for professional excellence. Having so much data at our fingertips and knowing how to apply them is a great advantage of living in this century.
 <!--more-->
 

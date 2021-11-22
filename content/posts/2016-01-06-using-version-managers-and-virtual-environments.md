@@ -9,7 +9,7 @@ tags:
 ---
 
 It's a new year and 2015 was a blast for me. I successfully ticked every item on my list for 2015 and I had even more that I hadn't expected from the start of the year.
-In July, I got an email from [PacktPub][1] about reviewing a book on building GUIs with Python. The opportunity was influenced by [the article I'd written][2] on the subject and I'm glad I did. The book was completed and published in December and I got really excited to see that I'm a part of something that'll impact the lives of people around the world. It is available on [Amazon][3] and [PacktPub][4] and I urge you to grab a copy as there's so much to learn from it.
+In July, I got an email from [PacktPub](http://packtpub.com) about reviewing a book on building GUIs with Python. The opportunity was influenced by [the article I'd written](/getting-started-with-gui-development-in-python/) on the subject and I'm glad I did. The book was completed and published in December and I got really excited to see that I'm a part of something that'll impact the lives of people around the world. It is available on [Amazon](http://www.amazon.com/gp/product/1785283758?keywords=python%20gui%20programming%20cookbook&qid=1451209838&ref_=sr_1_1&s=books&sr=1-1) and [PacktPub](https://www.packtpub.com/application-development/python-gui-programming-cookbook) and I urge you to grab a copy as there's so much to learn from it.
 <!--more-->
 
 I had to let that out to share my excitement, and happy new years by the way. One of the things that impacted my productivity last year was using version managers which made working with various tools a lot easier.

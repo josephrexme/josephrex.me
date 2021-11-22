@@ -9,7 +9,7 @@ tags:
   - opinions
   - career
 ---
-From the moment I hit my [point of realization][1], I frequently thought about ways to
+From the moment I hit my [point of realization](/point-of-realization), I frequently thought about ways to
 achieve quality of life through fulfillment in the things I do. We are likely to limit
 ourselves through our entire lifetime by constraining the things we seek fulfillment in.
 <!--more-->
