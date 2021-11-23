@@ -378,6 +378,27 @@ article .footnotes-list{
 [style*='--d:'] {
   display: var(--d)
 }
+[style*='--border:'] {
+  border: var(--border);
+}
+[style*='--border_x:'] {
+  border-inline: var(--border_x);
+}
+[style*='--border_y:'] {
+  border-block: var(--border_y);
+}
+[style*='--border_t:'] {
+  border-block-start: var(--border_t);
+}
+[style*='--border_b:'] {
+  border-block-end: var(--border_b);
+}
+[style*='--border_r:'] {
+  border-inline-end: var(--border_r);
+}
+[style*='--border_l:'] {
+  border-inline-start: var(--border_l);
+}
 [style*='--roundness:'] {
   border-radius: var(--roundness);
 }
@@ -388,6 +409,12 @@ article .footnotes-list{
 }
 [style*='--align_items:'] {
   align-items: var(--align_items);
+}
+[style*='--align_content:'] {
+  align-items: var(--align_content);
+}
+[style*='--place_content:'] {
+  align-items: var(--place_content);
 }
 [style*='--flex_dir:'] {
   flex-direction: var(--flex_dir);
@@ -417,6 +444,12 @@ article .footnotes-list{
 }
 [style*='--transition:'] {
   transition: var(--transition);
+}
+
+
+/* MISC */
+[style*='--cursor:'] {
+  cursor: var(--cursor);
 }
 
 /*-- Hover --*/

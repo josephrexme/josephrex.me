@@ -13,7 +13,7 @@
         var dh = document.body.scrollHeight;
         var wh = window.innerHeight;
         var pos = window.scrollY;
-        var footerHeight = 345;
+        var footerHeight = 525;
         var perc = pos / (dh - footerHeight - wh) * 100;
         indicator.style.setProperty('--scale', (perc / 100));
       })

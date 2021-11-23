@@ -1,10 +1,29 @@
-<footer style="--d:flex;--justify_content:space-between;--p:6rem;--font_sz:1.4rem">
-<div>
-&copy; 2014 - {% year %} {{ site.config.name }}. Powered by <a href="https://11ty.dev" style="--cl:var(--link-color)" class="anchor-lines">Eleventy</a> and hosted on <a href="https://netlify.com" style="--cl:var(--link-color)" class="anchor-lines">Netlify</a>
-</div>
-<div>
-  {%- for social, link in site.config.social %}
-  <a href="{{ link }}" style="--cl:var(--link-color)" class="anchor-lines">{{ social | capitalize }}</a>
-  {%- endfor %}
-</div>
+<footer style="--d:flex;--justify_content:space-between;--align_items:flex-end;--py:8rem;--px:6rem;--font_sz:1.4rem" class="with-anchor-lines">
+  <div style="--d:flex;--flex_dir:column;--gap:1rem">
+    <div>
+      <h5 style="--font_sz:1.8rem;--font_wt:bold;--mb:.5rem;">Subscribe to my newsletter</h5>
+      <p>For syndication feed, <a href="https://www.josephrex.me/feed.xml" style="--cl:var(--link-color)">follow this link</a></p>
+    </div>
+    <!-- For Newsletter -->
+    <div>
+      <form action="https://app.convertkit.com/forms/{{ site.config.convertkitFormId }}/subscriptions" method="post"
+        target="_blank" data-uid="624a8f5da4" data-format="inline" data-version="5" data-sv-form="{{ site.config.convertkitFormId }}" style="--d:flex;--flex_dir:column;--gap:1rem" novalidate>
+        <label for="EMAIL">Enter your email address to get latest updates in your inbox</label>
+        <div style="--d:grid;--grid_template_cols:20rem 9rem;">
+          <input type="email" name="email_address" id="EMAIL" placeholder="e.g janet@nasa.gov" style="--border:solid thin var(--text-color);--px:1rem;--py:.5rem;">
+          <button type="submit" style="--border:solid thin var(--text-color);--border_l:0;--p:1rem;--txt_al:center;--cursor:pointer;--hover-bg:var(--text-color);--hover-cl:var(--bg-color);--transition:all .2s linear;">Subscribe</button>
+        </div>
+      </form>
+    </div>
+    <p>
+    &copy; 2014 - {% year %} {{ site.config.name }}. Powered by <a href="https://11ty.dev" style="--cl:var(--link-color)">Eleventy</a> and hosted on <a href="https://netlify.com" style="--cl:var(--link-color)" class="anchor-lines">Netlify</a>
+    </p>
+  </div>
+  <div style="--d:grid;--grid_template_cols:repeat(3,1fr);--gap:.6rem 2rem;--align_content:end;">
+    {%- for social, link in site.config.social %}
+    <div>
+      <a href="{{ link }}" style="--cl:var(--link-color)" rel="me">{{ social | capitalize }}</a>
+    </div>
+    {%- endfor %}
+  </div>
 </footer>
