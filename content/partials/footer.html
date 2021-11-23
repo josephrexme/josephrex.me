@@ -1,3 +1,10 @@
-<footer style="--p:6rem;--font_sz:1.4rem">
+<footer style="--d:flex;--justify_content:space-between;--p:6rem;--font_sz:1.4rem">
+<div>
 &copy; 2014 - {% year %} {{ site.config.name }}. Powered by <a href="https://11ty.dev" style="--cl:var(--link-color)" class="anchor-lines">Eleventy</a> and hosted on <a href="https://netlify.com" style="--cl:var(--link-color)" class="anchor-lines">Netlify</a>
+</div>
+<div>
+  {%- for social, link in site.config.social %}
+  <a href="{{ link }}" style="--cl:var(--link-color)" class="anchor-lines">{{ social | capitalize }}</a>
+  {%- endfor %}
+</div>
 </footer>

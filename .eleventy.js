@@ -5,6 +5,8 @@ const pluginRss = require("@11ty/eleventy-plugin-rss")
 const markdownIt = require("markdown-it")
 const markdownItAnchor = require("markdown-it-anchor")
 const { default: axios } = require('axios')
+const CleanCSS = require("clean-css")
+const { minify } = require("terser")
 
 const formatDate = dateObj => {
   return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
@@ -57,6 +59,17 @@ module.exports = config => {
   })
   config.addFilter('markdownify', value => {
     return markdownIt({ html: true }).render(value)
+  })
+  config.addFilter('cssmin', code => {
+    return new CleanCSS({}).minify(code).styles
+  })
+  config.addNunjucksAsyncFilter('jsmin', async (code, callback) => {
+    try {
+      const minified = await minify(code)
+      callback(null, minified.code)
+    } catch (error) {
+      callback(null, code)
+    }
   })
 
   /* Shortcodes */

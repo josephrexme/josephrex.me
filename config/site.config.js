@@ -4,7 +4,7 @@ module.exports = {
   title: "Joseph Rex's website - Portfolio, Resume, Designs, and Publications",
   bio: 'voyaging the boundaries of interfaces and interactions',
   topics: 'CSS, JavaScript, Ruby, 3D, XR, Animation, Design, and Finance',
-  about: 'Joseph is a **software engineer** at **ConvertKit**, a **creative technologist** that loves combining art and engineering, and dad to an over-demanding australian shepherd named Glitch.',
+  about: 'Joseph is a **software engineer** at [**ConvertKit**](https://convertkit.com), a **creative technologist** that loves combining art and engineering, and dad to an over-demanding australian shepherd named Glitch.',
   url: 'https://joephrex.me',
   language: 'en-us',
   description: 'Articles, designs, experiments, and projects by Joseph Rex',
