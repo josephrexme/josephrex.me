@@ -1,5 +1,5 @@
 # Site settings
-baseurl: https://www.josephrex.me/
+baseurl: https://v4.josephrex.me/
 themesDir: ./themes/
 languageCode: en-us
 metaDataFormat: yaml
