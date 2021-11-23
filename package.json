@@ -1,0 +1,21 @@
+{
+  "name": "josephrex.me",
+  "version": "4.0.0",
+  "description": "",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephrexme/josephrex.me.git"
+  },
+  "author": "Joseph Rex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephrexme/josephrex.me/issues"
+  },
+  "homepage": "https://github.com/josephrexme/josephrex.me#readme"
+}
