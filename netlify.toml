@@ -1,0 +1,12 @@
+[build]
+  publish="public"
+  command="npm run debug"
+
+[[redirects]]
+  from="/feed/"
+  to="/feed.xml"
+  status=200
+
+[[redirects]]
+  from="https://v3.josephrex.me"
+  to="https://web.archive.org/web/20171016214924/https://josephrex.me/"

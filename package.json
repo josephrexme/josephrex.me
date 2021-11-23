@@ -5,16 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy",
-    "debug": "DEBUG=Eleventy* npm run build"
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/josephrexme/josephrex.me.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Joseph Rex",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/josephrexme/josephrex.me/issues"
   },
@@ -30,6 +30,5 @@
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-footnote": "^3.0.3",
     "terser": "^5.10.0"
-  },
-  "dependencies": {}
+  }
 }
