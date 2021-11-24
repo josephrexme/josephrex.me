@@ -445,6 +445,9 @@ article .footnotes-list{
 [style*='--transition:'] {
   transition: var(--transition);
 }
+[style*='--will_change:'] {
+  will-change: var(--will_change);
+}
 
 
 /* MISC */

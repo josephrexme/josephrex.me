@@ -1,6 +1,6 @@
 {
-    "name": "Joseph Rex blog",
-    "short_name": "JR blog",
+    "name": "josephrex.me",
+    "short_name": "josephrex.me",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -8,12 +8,12 @@
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-256x256.png",
-            "sizes": "256x256",
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#b64f44",
+    "background_color": "#b64f44",
     "display": "standalone"
 }

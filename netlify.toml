@@ -3,10 +3,17 @@
   command="npm run debug"
 
 [[redirects]]
-  from="/feed/"
-  to="/feed.xml"
-  status=200
+  from = "/feed/"
+  to = "/feed.xml"
+  status = 200
 
 [[redirects]]
-  from="https://v3.josephrex.me"
-  to="https://web.archive.org/web/20171016214924/https://josephrex.me/"
+  from = "/uses/"
+  to = "https://kit.co/josephrexme/home-office"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'none'"
+    X-XSS-Protection = "1; mode=block"
