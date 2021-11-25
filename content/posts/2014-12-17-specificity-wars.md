@@ -106,6 +106,6 @@ This graph is great and it has worked fine in giving me a graph of bigger projec
 
 <a href="https://github.com/katiefenn/parker" target="_blank">Parker</a> is a command-line npm package that analyzes CSS and also shows elements with highest specificity.
 
-### Conclusion
+## Conclusion
 
 Avoid ID selectors, avoid !important, start with selectors like `*`, `html`, and other element selectors that aren't too specific, then move on to class selectors. If there is a need for class chaining or !important in your helpers, they should be at the bottom. If there is no need for them, the helpers partial of your project should still be at the bottom if you want it overruling other styles by precedence.

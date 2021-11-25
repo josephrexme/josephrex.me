@@ -22,7 +22,7 @@ For a properly maintained project, you consider seperation of concern; something
 
 To solve this, you use bower directly and save yourself the extra layer rails-assets offers.
 
-### Configuring rails for bower sprocket requires
+## Configuring rails for bower sprocket requires
 First you specify where bower should install its components. By default it installs them in the
 
 `bower_components` directory within the root of your project but rails already make it possible to make a sprocket require of assets in `vendor/assets/javascripts` and `vendor/assets/stylesheets`. You may or may not be using these already but it's easier to think of the vendor directory as where vendor scripts/libraries go hence we'd tell bower to store components in there by creating a `.bowerrc` file in the root folder and adding this:

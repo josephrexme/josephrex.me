@@ -19,7 +19,7 @@ In the past 5 years, frontend web development has experienced an upsurge of libr
 
 Stateful UI engineering is essentially [automata-based programming][2] and it can be applied to various forms of programming and engineering. It has been adopted more in electronics and other industries that involve programming hardware and software, but its usage is relatively new in web development. If you've used modern JavaScript frameworks, you probably would have used the term **state** in the context of your component states or perhaps your application state. The use of state in automata-based programming is not too far off that context but it is a little more strict and refined. It is the application of finite automata (a.k.a Finite State Machines) in modeling a software/hardware.
 
-### Finite State Machines
+## Finite State Machines
 Finite state machines is a model with some mathematical origin we don't necessarily need to know. A finite state machine comprises of a list of states and an initial state that is inclusive in the list. Each of these states can accept inputs to tell them what state to change into. Let's start with the basic example of traffic lights which have 3 states - **Red**, **Green**, and **Yellow**. Each of these states have a defined state that they can transition into i.e **Red** goes to **Green**, **Green** goes to **Yellow**, and **Yellow** goes to **Red**.
 
 <figure>
@@ -63,7 +63,7 @@ If you ever drove any of these or had a ride in them, you know you can't just ge
 
 We can explore many more examples like its application in bathroom faucets, stopwatch, but it will be nice to have a visual represantation of these state flow we have so far and that's where statecharts come in.
 
-### StateCharts
+## StateCharts
 State charts are visual charts of finite state machines as you might have inferred from the name. Traditionally, we learn to use flowcharts to illustrate the top-down approach of an algorithm but [wikipedia distinguishes statechart from flowchart][5] with the image:
 
 <figure>

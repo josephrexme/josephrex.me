@@ -22,7 +22,7 @@ Ruby has more minor releases and when building rails applications or other ruby 
 
 With the popularity of node on the web today, almost every JavaScript framework relies on it. I was working on an ember project where version 0.12 was used and I had version 5.1 installed. At first I thought I'd just update all it's npm modules to work with 5.1. It was a hectic task but I went on with it anyway. At first it seemed like success but I hit a block not too long within the project and I learned about nvm. Nvm has since made it easy for me to manage packages for 0.12, 5.1, and 5.3. I also have a io.js 3.3 among my nvm versions making it easy to just juggle on my desired environment per project.
 
-### Why you should use them
+## Why you should use them
 In a [recent post](/quality-against-speed-in-development/) I discussed the 5s on productive maintenance and while explaining **seiton** which means tidiness I quoted
 
 > A place for everything and everything in its place <br>
@@ -30,7 +30,7 @@ In a [recent post](/quality-against-speed-in-development/) I discussed the 5s on
 
 The primary goal of virtual environments are to be able to create any environment for different projects with ease and the ultimate goal is tidiness. This is the same with version managers
 
-### Setting up NVM, Rbenv, and VirtualEnv
+## Setting up NVM, Rbenv, and VirtualEnv
 To set up nvm you need to have a version of node and npm running on the system to install it globally after which all npm packages will be installed on nvm versions. For a global install of nvm
 
 ```

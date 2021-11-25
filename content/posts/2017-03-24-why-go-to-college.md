@@ -29,7 +29,7 @@ Some good points were made in that article but firing so much shots at universit
 
 I'd beeline to what purpose means to clarify that point
 
-### What is purpose?
+## What is purpose?
 Purpose is a person's sense of resolve or determination according to the Apple dictionary but Merriam-Webster define it as
 
 > The action for which a person or thing is specially fitted or used or for which a thing exists
@@ -48,7 +48,7 @@ Back to [Eric Elliot][5]'s article, [Lea Verou replied][6] saying:
 
 I couldn't agree more with [Lea][7]. But I believe since she was just dropping a comment she couldn't elaborate enough and that's what I'll try to help with here.
 
-### I'm not convinced. What does college really have to offer?
+## I'm not convinced. What does college really have to offer?
 So many people who eventually go to college go with high expectations and graduate thinking they've acquired the right to fit in anywhere or get any job without any extra efforts.
 
 There's the case I heard of from a friend's organization where they had to let go of the 3 masters degree holders they had because they weren't fitting into the company culture and were never submissive to learning. They thought their degree was everything

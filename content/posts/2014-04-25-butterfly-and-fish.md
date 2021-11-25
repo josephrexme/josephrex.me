@@ -47,7 +47,7 @@ One more awesome feature is that you can specify your shell to be used in butter
 butterfly.server.py --shell=/usr/bin/fish
 ```
 
-#### What's Fish?
+## What's Fish?
 
 [Fish][1] is a user-friendly shell  with awesome features. I've been using it for a while now and it's even a lot more awesome inside butterfly.
 

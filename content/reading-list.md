@@ -6,11 +6,12 @@ permalink: /reading-list/
 Here's a list of books I've read and will be reading. The read ones are crossed.
 For more details on my reading journey, [follow me on goodreads][15]. You can also [buy me a book][21]
 
-##### [ 2021 ]
-- [A promised land][31]
+## [ 2021 ]
+- [Think Again - Adam Grant](https://amz.run/55mm)
+- [A promised land](https://amzn.to/2LFcFtY)
 - [Mathematics for 3D Game Programming and Computer Graphics](https://amzn.to/3apTqxG)
 - [Foundation HTML5 Animation with JavaScript](https://amzn.to/3emGKJ4)
-##### [ 2020 ]
+## [ 2020 ]
 - Art direction on the web - Andy Clarke
 - [Refactoring UI][19]
 - [Resilient Web Design][20] - Jeremy Keith
@@ -21,37 +22,37 @@ For more details on my reading journey, [follow me on goodreads][15]. You can al
 - Essentialism - The Disciplined Pursuit of Less
 - Atomic Habits
 
-##### [ 2019 ]
+## [ 2019 ]
 - <del>Rich dad, poor dad</del>
 - <del>The 21-day financial fast - Michelle Singletary</del> { [My review][16] }
 - <del>We're going to need more wine - Gabrielle Union</del>
 - <del>The last black unicorn - Tiffany Haddish</del>
 
-##### [ 2016 ]
+## [ 2016 ]
 - [Why's poignant guide to Ruby][1]
 - [Practical Object Oriented Design Ruby (POODR)][2]
 - <del>Nice girls don't get rich - Lois P. Frankel</del>
 - <del>[The Imposter's Handbook][6] - Rob Conery</del>
 
-##### [ 2015 ]
+## [ 2015 ]
 - <del>[You don't know JS][5] - Kyle Simpsons</del>
 - <del>Rails 4 in action - Ryan Biggs et al</del>
 
-##### [ 2014 ]
+## [ 2014 ]
 - <del>The Design of Everyday Things - Don Norman</del>
 - RiceTea - Julien McArdle
 - Art of Deception - Kevin Mitnick
 - Art of Intrustion - Kevin Mitnick
 - Ghost in the wires - Kevin Mitnick
 
-##### [ Recurring ]
+## [ Recurring ]
 - Cracking the coding interview - Gayle Mcdowell
 - CSS Secrets - Lea Verou
 - SVG Animations - Sarah Drasner
 
 <hr>
 
-##### [ Dump ]
+## [ Dump ]
 - [Shape Up - Stop running in cycles and ship work that matters][17]
 - [Resilient Web Design][18]
 - Embodiment of Grace - Grace Festus

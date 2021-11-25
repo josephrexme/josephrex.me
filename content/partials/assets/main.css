@@ -41,11 +41,17 @@ body {
   --site-width: 800px;
   --container: min(90%, var(--site-width));
 }
+:focus{
+  --link-color: #b70303;
+}
 @media (prefers-color-scheme: dark) {
   :root{
     --text-color: #eee;
     --bg-color: #222;
-    --link-color: #F15747;
+    --link-color: #ff877a;
+  }
+  :focus{
+    --link-color: #ff5050;
   }
 }
 a {

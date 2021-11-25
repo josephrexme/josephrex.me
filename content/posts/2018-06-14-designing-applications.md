@@ -9,19 +9,20 @@ tags:
 ---
 A good number of applications get into development phase and then to production
 with no proper design or architecture. My context of application would remain
-in the scope of web apps for most part of this article. The
-common reason for this is because there's no designer on the team or the sole
+in the scope of web apps for most part of this article.
+<!--more-->
+
+The common reason for this is because there's no designer on the team or the sole
 designer working on the product lacks design skills. You can't really blame
 a single developer working on a project because we were not all born to be
 unicorns 🦄.
-<!--more-->
 
 However, on teams I'd recommend having a designer or client-side developer with
 a good eye for design and some design skill. A team without a designer can use a
 good CSS framework as [living styleguide][1]. More about CSS frameworks and
 living styleguides in a bit.
 
-### Why does application design matter?
+## Why does application design matter?
 We generally take 3 things into consideration for every software product we build
 and it's more than just software these days. They are:
 

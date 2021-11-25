@@ -16,7 +16,7 @@ Sass is a CSS predecessor that gives smart designers a lot more flexibility with
 
 Some of the common things that can be done with Sass are
 
-#### VARIABLES
+## VARIABLES
 
 ```scss
 $color: #ff0000;
@@ -24,7 +24,7 @@ $color: #ff0000;
     color: $color
 ```
 
-#### MIXINS
+## MIXINS
 
 ```scss
 =border-radius($radius)
@@ -40,7 +40,7 @@ $color: #ff0000;
 
 And that's a sweet way to defeat repetition of vendor prefixes.
 
-#### Extend (Inheritance)
+## Extend (Inheritance)
 
 ```scss
 .message
@@ -55,7 +55,7 @@ And that's a sweet way to defeat repetition of vendor prefixes.
 
 For most of the new features, Sass3 (SCSS) is used.
 
-#### @each loop
+## @each loop
 
 ```scss
 @each $alert in success, warning, error{

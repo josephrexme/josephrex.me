@@ -11,7 +11,7 @@ pagination:
     <article>
       {{ post.data.page.excerpt | markdownify | safe }}
     </article>
-    <p><a href="{{ post.url }}" style="--font_sz:1.6rem;--opacity:.7" class="anchor-lines">Read more ››</a></p>
+    <p aria-hidden="true"><a href="{{ post.url }}" style="--font_sz:1.6rem;--opacity:.7" class="anchor-lines" tabindex="-1">Continue reading ››</a></p>
     <div style="--position:absolute;--inset:0;--bg:rgb(100 100 100/.06);--transform:skewY(-3deg);--group-hover-transform:skewY(-3deg) scale(1.02);--transform-o:center;--transition:transform .3s cubic-bezier(.5,0,.5,1);--z:-1;--will_change:transform"></div>
   </section>
 {%- endfor -%}

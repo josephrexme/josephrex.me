@@ -68,7 +68,7 @@ prefixing links with a parentheses containing their link reference seems like a 
 
 They also avoided page breaks inside certain elements. This really set the pace for me to go on and add my other print styles.
 
-### Debugging
+## Debugging
 
 At a point I had to inspect element and know where a padding was coming from. Meanwhile, all I had was my chrome print preview. Not too long after, I discovered the emulation feature in my chromium.
 

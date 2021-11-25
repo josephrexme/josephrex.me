@@ -83,7 +83,7 @@ section:media(min-width: 100px){
 
 This means if I have a section greater than or equal to 100px make the body background lime. body doesn't have to be a child or descendant to section to be affected by its scope. It goes beyond container scoping as a great way to address element queries however the syntax could be very misleading. Anyone with normal experience in CSS would expect `section` to have a `body` descendant. How do we solve the syntax problem and achieve this right?
 
-### Solutions to constraint based layouts
+## Solutions to constraint based layouts
 [Cassowary][5] constraint satisfaction algorithm, a known layout solution used in Apple development was used as an early implementation of CCSS (Constrained Cascading Style Sheet) after which more solutions like [GSS (Grid Style Sheets)][6] have tried to adapt the concept behind it.
 
 More recently, [EQCSS (Element Queries CSS)][7] was born as a great speculative polyfill for element queries by [Tom Hodgins][11] and [Maxime Euzière][13]. It puts the at-rule into consideration for scoping elements like it is used with media queries and proposes the best syntax yet.
@@ -142,7 +142,7 @@ This would only apply a border to the input that is focused and no other input. 
 
 EQCSS allows more conditions for the scoped element including `min-aspect-ratio`, `orientation`, `min-scroll-y`, `min-lines`, `min-characters`, `min-children`, and more.
 
-### Container queries and cyclic dependency problem
+## Container queries and cyclic dependency problem
 People have raised possible issues with container queries to be circularity of dependent containers or recursion. Basing an element on the container of a container of a container may lead to a O(N<sup>2</sup>) [complexity][14]. Here's what the recursion looks like from an [example][16] by [Martin Auswöger][15]
 
 <figure>
@@ -183,7 +183,7 @@ and a demonstation of it when resized:
 
 <hr>
 
-### Resources
+## Resources
 - [Brad Frost's list of element/container queries post and tools][24]
 - [EQCSS demos][25]
 - [2014 state of element queries][18]

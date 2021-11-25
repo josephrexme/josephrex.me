@@ -100,7 +100,7 @@ gulp.task('default', ['css', 'browser-sync', 'scripts', 'watch']);
 
 You probably were using a task runner like this to use libsass for compiling your written Sass into CSS. Or you were using `compass watch` with the nice CSS3 features of compass and vendor prefix mixins. To emulate the watch feature in compass I have used the **watch** task and to make it even better I'm using **browser-sync** for live reload (no one wants to deal with reloading browsers anymore).
 
-### I'm not convinced. Why should I leave Sass?
+## I'm not convinced. Why should I leave Sass?
 If you like holy wars you'll try to start throwing points on why PostCSS can't do what CSS does and your points will include the use of mixins, partials, variables, compass plugins, Sass nested statements, loops,
 
 About compass plugins, there's way more plugins available for use with gulp and they are what will be used to fill in for those expected Sassy features.

@@ -108,7 +108,7 @@ The image data in RGB tuples were so much in the list but I managed to grab a fe
 
 That's just about 5% of the whole data from a 5M BMP image. I was digging his approach even though it breaks sometimes. I tried with JPGs and PNGs and it passed with some of the files that were tested.
 
-###My New Algorithm
+## My New Algorithm
 ```py
 #!/usr/bin/env python
 import binascii, os, base64, gnupg, hashlib

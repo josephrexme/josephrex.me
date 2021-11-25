@@ -99,7 +99,7 @@ I love logos and designing them have gradually become a part of what I do along 
 
 If you choose to apply the golden ratio to logos you make, you shouldn't bother about the detail from the start. It is always fine to make a simple sketch and then try to derive the circles on it. When making animal logos or logos from other existing objects, it is a little more straigth-forward to just begin deriving circles from the original images.
 
-### Rule of thirds
+## Rule of thirds
 The golden ratio extends to fields of photography and film-making. It obviously should since it is evident in us and the things around us and these fields are centered around capturing live physical events or simulating them. The rule of thirds is a guideline in cropping or positioning cameras against the subject for aesthetic results. Here is a good video on composition and cinematography that explains this in detail
 
 <figure class="video">

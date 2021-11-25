@@ -19,7 +19,7 @@ Thanks to sherafff on the IRC. He got my first required binary done for me from 
 
 After sherafff made the first binary for me, I found there were still a lot of program bugs that I had to fix. After fixing this in the source, I needed my binary to be updated again but then I wasn't seeing sherafff active. He was on like most IRC users but was always away.
 
-### Taking my decision on what binary builder to use
+## Taking my decision on what binary builder to use
 
 I'd always thought of py2exe but it seemed like too much headache for me as a starter. Sherafff had used PyInstaller and said it was cool so I tried reading the docs carefully and I was able to make use of it. My preferred way of running pyinstaller on windows is
 

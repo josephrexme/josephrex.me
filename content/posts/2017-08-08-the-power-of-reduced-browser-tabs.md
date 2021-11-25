@@ -27,7 +27,7 @@ I came up with 2 things:
 
 <hr>
 
-### Organization
+## Organization
 In a [previous post][4], I talked about the [5s methodology][5] for productivity. **Seiri** is one of those 5 Japanese words and it means organization. **Seiton** means tidiness. **Shatsuke** means self-discipline. When you combine those 3, you have yourself Benjamin Franklin's [quote][6]:
 
 > A place for everything, everything in its place
@@ -45,7 +45,7 @@ As shown in the figure I have groups for my bookmarks and while any browser can 
 
 By using these techniques you can declutter your primary bookmarks and have it keep the things that matter most. Those you'd always remember to go back to if you have to.
 
-### The power of saying NO
+## The power of saying NO
 Saying **NO** this time [not to humans][3] but to articles. Evaluate an article and determine if it's worth your reading time. Skim for information if all you need is a bit of information from it and close it. <mark>Maybe this article also wasn't worth your time and you just wasted minutes of your life reading it</mark> and maybe not. You're not mandated to read everything you open or see, so have some discipline around that and you'd have a happier browser life.
 
 A good limit to set for open browser tabs is 10. No browser keeps more than 10 tabs open for up to 24 hours with me now.

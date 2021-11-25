@@ -67,11 +67,11 @@ This is not about criticizing PHP. Besides, I'm just a 21st century programmer. 
 
 In <a href="http://readwrite.com/2014/08/11/why-learn-php#comment-1538686844" target="_blank">my comment</a> to <a href="http://readwrite.com/2014/08/11/why-learn-php" target="_blank">this post</a> on "why learn PHP", I was soliciting for Laravel as a PHP framework because Laravel is the only reason why I still have some hopes in PHP.
 
-###Conclusion
+## Conclusion
 
 I don't at all hate PHP as I've said earlier, it's not like something you should not do. It's just something you may not get satisfied with if you like to get the best results. Simply because I'm seeking to do more projects I'll be happy with myself about, I'll be dropping PHP after my current project. Well, I can't leave it totally. I will still be contributing to the open source Laravel packages I've forked and I will have to touch it sporadically.
 
-###References
+## References
 
   * <a href="http://blog.ircmaxell.com/2012/04/php-sucks-but-i-like-it.html" target="_blank">http://blog.ircmaxell.com/2012/04/php-sucks-but-i-like-it.html</a>
   * <a href="http://www.phpclasses.org/blog/post/230-Hack-Language-is-All-that-PHP-Should-Have-Been.html" target="_blank">http://www.phpclasses.org/blog/post/230-Hack-Language-is-All-that-PHP-Should-Have-Been.html</a>

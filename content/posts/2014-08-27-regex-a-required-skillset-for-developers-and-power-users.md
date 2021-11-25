@@ -37,14 +37,14 @@ There are tokens to be passed into regulation expressions parser to get outputs
 
 My examples are probably not the best you will get to see and I can't mention all the token types here as I will be turning this blog post into a regex dictionary. If you need to find more of them, I think the bottom right pane at [regex101][1] is enough to feed you with all you want.
 
-#### Summary:
+## Summary:
 
 Regular expressions are very necessary and I think every institution should consider it a as compulsory course for every computer science student and departments that do a lot of computing.  
 If you will like to see a graphical illustration of what happens while you use regular expressions, try out [regexper][2]. It produces neat graphical illustration of what roles the patterns play.
 
 [Regexr][3] also does something similar to what regex101 provides. It's your call to pick what's best for you.
 
-#### References:
+## References:
 
   * [regex101][1]
   * [regexper][2]

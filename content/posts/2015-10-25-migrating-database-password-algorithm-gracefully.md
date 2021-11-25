@@ -36,7 +36,7 @@ if(password_verify($clearText, $hash)){
 
 On lesser PHP versions it's best you just upgrade but if you are constrained by server restrictions then you can use Anthony Ferrara's (ircmaxell) [password compat library][3] with php >= 5.3.7
 
-#### The problem
+## The problem
 After so much awareness on how you can improve your database password storage you realize your company already has a large userbase. Even if less, you don't want to make the users have to reset passwords they didn't forget.
 
 After asking around and spending some time to think of best solutions I got to a conclusion that resulted in this:

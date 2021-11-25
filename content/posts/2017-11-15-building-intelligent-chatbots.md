@@ -89,7 +89,7 @@ To vary the responses you can add different replies
 
 Now when told `Tell me a story`, your bot can reply with any of the responses set. This solves the problem of fixed responses but at some point you will know all the possible responses and get bored again.
 
-### Introducing APIs
+## Introducing APIs
 To get APIs to work properly with rivescript you need to be able to process the queries asynchronously. For this, it should be able to return promises. Sadly, rivescript hasn't implemented promise replies up to the time of this writing so I had to make [rivescript-promises][3] from a fork with some help from [@genericallyloud][4].
 
 I started by hooking up a weather API, wikipedia API for the definitions of anything, and more. After a while, I thought of leveraging the <abbr title="Natural Language Processing">NLP</abbr> of IBM Watson for an improved experience with common conversation patterns. This addition meant I could now take APIs directly hooked to rivescript and hook them up with Watson instead. Especially the ones that may have different input patterns.

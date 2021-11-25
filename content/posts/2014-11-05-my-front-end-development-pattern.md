@@ -184,7 +184,7 @@ module.exports = function(grunt) {
 
 I had created a package.json file from the start of the project with `npm init`. Now everything seems fine with JS. I'll just have to change main.js to main.min.js at the end of my design.
 
-### **The CSS**
+## **The CSS**
 
 I write Sass (indented). For those that agree with my steps from the beginning and got here to say :
 

@@ -46,7 +46,7 @@ INSERT INTO `subcategories` (`id`, `categoryID`, `subcategory_name`) VALUES
 
 For a clearer view, I have it here on SQL fiddle: <a title="SQL Fiddle DB Schema" href="http://sqlfiddle.com/#!2/58fcf/4/1" target="_blank">http://sqlfiddle.com/#!2/58fcf/4/1</a>
 
-### Procedural code
+## Procedural code
 
 ```html
 <form method="get">
@@ -100,7 +100,7 @@ By using laravel, we mostly use request URIs rather than $_GET requests. I could
 
 I'll go through 3 ways we can achieve this in Laravel, starting with this.
 
-### Method 1
+## Method 1
 
 Create your route to display your drop down list
 
@@ -179,7 +179,7 @@ $(document).ready(function() {
 
 So this is really similar to the former procedural version but I took away all the unnecessary loader part.
 
-### Method 2
+## Method 2
 
 For this method, I already made a <a title="JS Fiddle direct link" href="https://jsfiddle.net/bl4ckdu5t/npkf9hn6/" target="_blank">JSfiddle</a> to implement with static HTML. This method is meant to use JSON data to feed DB contents to jQuery in order to dynamically change subcategories based on the selected categories.
 
@@ -221,7 +221,7 @@ Here's the part where we plug that into our view:
 
 And with this we can get it to work like it did with the static HTML example above.
 
-### Method 3
+## Method 3
 
 In this method, I will simplify <a href="https://twitter.com/msurguy" target="_blank">Maksim Surguy's</a> solution from this <a href="https://gist.github.com/msurguy/5138788" target="_blank">github gist</a>. Mak used two tables (makers and models) to describe car makers and models. Rather than twisting the flow, I'll keep to my categories and subcategories tables.
 

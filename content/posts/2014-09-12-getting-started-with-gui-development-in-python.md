@@ -344,6 +344,6 @@ and voila! It works. See it in action after running "python example.py"
 <img src="https://res.cloudinary.com/strich/image/upload/v1497718065/snapshot12_thdp76.png" alt="Snapshot 12" class="image">
 </figure>
 
-### Conclusion:
+## Conclusion:
 
 Building GUI programs may be a challenge but as the world evolves, it is very necessary. You should also not directly use generated code from pyuic because you may want to make changes to the UI at any point. Each compilation with pyuic will make you lose your changes you've made on the generated code. I've chosen Qt as my best module for building GUI. You may choose something else that works for you but from what I hear, Tkinter has a lot of downsides so it's not recommended.

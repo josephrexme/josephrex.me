@@ -21,10 +21,10 @@ To read more on them, I recommend [this article][1]. I have a melancholy/sanguin
 
 Relative and Absolute thinkers may fall under any of the temperaments listed so this makes this topic a different perspective of the human thinking.
 
-### Relative Thinkers
+## Relative Thinkers
 Relative thinkers are common. A lot of people I come across daily are relative thinkers but they are totally unaware of it. A relative thinker is someone who lives based on things he has been brought up with. He/She keeps and believes in the principles giving to them without a second thought. There is hardly any form of skeptism with a relative thinker. Their thoughts are relative to the things they've heard. In the long run, some of them end up being so gullible.
 
-### Absolute Thinkers
+## Absolute Thinkers
 Absolute thinkers are mostly scientists by nature even if their field of nature has nothing to do with science. They believe every thing that has not been proven should be taken hypothetically rather than theoratically. They are the most skeptical people. Some absolute thinkers just doubt things without trying to see if there are ways those things can be possible, while others are the curious trying to decipher things and understand why exactly things work the way they do in order to have a reason for believing in the things they believe in.
 
 A good instance is a religious point of view. Anyone in any religion is born to hear things like:

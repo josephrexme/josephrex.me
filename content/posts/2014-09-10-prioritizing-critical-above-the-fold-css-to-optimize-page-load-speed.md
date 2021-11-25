@@ -31,7 +31,7 @@ I wouldn't like to repeat everything I've already said in my slide so I'll just 
 
 
 
-### Conclusion:
+## Conclusion:
 
 This is just one step to optimizing page load speed. There are other steps that may be required. As you have seen from my example that this didn't just give me a 100% speed because it wasn't everything that had to be done. Don't ignore this as these little things matter. In the slide, I wrote briefly about the Compass extension: jacket. I will talk fully about how I achieved the separation of my critical CSS from the non-critical CSS with this in a future article.
 

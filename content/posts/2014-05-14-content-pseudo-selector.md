@@ -46,7 +46,7 @@ To have just **jumped over** styled, we have to specify an end for the selection
 p:[20:30]{color: red; }
 ```
 
-#### Handling possible drawbacks
+## Handling possible drawbacks
 
 If a user has a the following
 

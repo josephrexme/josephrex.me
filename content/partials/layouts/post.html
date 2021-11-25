@@ -20,7 +20,7 @@ layout: base
     </p>
     <p style="--m:0"><strong>Estimated reading time: </strong> {{ content | readingTime }}</p>
   </div>
-  <article style="--mt:8rem;--mb:2rem">
+  <article style="--mt:8rem;--mb:2rem" class="with-anchor-lines">
     {{ content | safe }}
   </article>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}

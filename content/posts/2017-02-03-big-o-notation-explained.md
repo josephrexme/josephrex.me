@@ -86,7 +86,7 @@ If you are on macOS you'd notice that the activity monitor basically watches for
 <figcaption>A macOS activity monitor</figcaption>
 </figure>
 
-### Examples of the listed common notations
+## Examples of the listed common notations
 **O(1)** as the slowest growing function can be found in simple cases like checking conditions.
 
 ```javascript
@@ -136,7 +136,7 @@ const fizzBuzz = (n) => {
 
 A great way to think about the complexity of function is to consider how the time required to compute a function scales with larger inputs. In a order O(n) for example, the time for computation continually scales based on the input. We had 100 as the input (n) above. To write the same function for a input f(200), the time will increase linearly with the input growth.
 
-### Sequence of statements
+## Sequence of statements
 In a function with condition blocks of different statement complexity, the total time is found by adding the times for all statements.
 
 ```javascript

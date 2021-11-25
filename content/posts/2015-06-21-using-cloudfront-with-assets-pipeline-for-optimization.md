@@ -11,11 +11,11 @@ Performance is an essential thing in every application that should be considered
 
 I've come across websites serving assets with S3 and I only see it as a technology misuse. S3 is meant for storing files and I had initially only used it just for storing user uploads in applications. Serving static assets from S3 wouldn't make requests any faster than they will be if you weren't using a different subdomain for static assets.
 
-### What makes cloudfront different from S3
+## What makes cloudfront different from S3
 
 Cloudfront fetches file from a origin like a S3 bucket where files are stored and distributes it to different edge locations. When users request for assets, the assets are served from the nearest edge location making request time a lot faster.
 
-### Setting up Cloudfront
+## Setting up Cloudfront
 
 Just as **buckets** are to S3, **distributions** are to cloudfront. Each distribution has an origin which could be the S3 bucket as I prefer but it could also be some other assets server of yours. If you don't already have a distribution, set up a new one and configure it to suit your needs. Most of the default configurations are ok but you can make minor changes like setting a custom domain rather than using the subdomains with random characters provided by cloudfront. You should have a subdomain like this:
 

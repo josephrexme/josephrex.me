@@ -36,7 +36,7 @@ same old habits. Like our health, fitness, and finances, email is somewhat inevi
 our lives and we can either despise it and let it keep control or take back control by
 learning to work with it. Here are the steps
 
-### Step 1: An inventory of your emails
+## Step 1: An inventory of your emails
 I found that I felt more confident about my home finances when I knew everything that
 came in and came out of it monthly so well that I started paying a separate bank account
 monthly to handle all payments, while being confident that no penny will ever leave our
@@ -50,7 +50,7 @@ it so quickly and unsubscribe from it or mark it as a spam. This sounds impossib
 when you first think about it, and it gets even harder depending on your current email
 situation.
 
-### Step 2: Choose your client
+## Step 2: Choose your client
 Google Inbox was a great email client for a lot of people. You have to discover what
 constitutes a great client for you. Have you ever gone email client hunting? or do you
 just stick with the default client that comes with your email provider without knowing
@@ -69,7 +69,7 @@ I also love Spark for having the ability to snooze, pin, delegate and a lot of o
 features the Readdle team keeps adding. They describe some of the features in more detail
 on this blog on [inbox zero][3] which brings us to the third step.
 
-### Step 3: Inbox zero wisely
+## Step 3: Inbox zero wisely
 Inbox zero often gets a bad wrap for being a productivity placebo. The claims against it
 address how it might encourage looking at your email more times than you blink in a day.
 

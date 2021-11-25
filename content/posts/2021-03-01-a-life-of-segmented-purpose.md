@@ -54,7 +54,7 @@ mighty entity, into seeing possibilities that might have been otherwise unnotice
 purpose might seem like having no purpose at all and that's good because it lowers your expectations,
 which leads to lowered disappointments.
 
-### Distributing your purpose
+## Distributing your purpose
 We have established that distributing your purpose can help shatter the myth of purpose while
 retaining purpose. I do this by having segments for each purpose, and allowing for a cascade among
 purpose. Here is a definition of cascade I like in this context:
