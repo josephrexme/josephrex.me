@@ -58,7 +58,7 @@ component which formats them and processes them for render.
 
 <hr>
 
-### Steps
+## Steps
 The first step is to create a `frontmatter.js` plugin file that we will edit later. If you don't
 already have a `next.config.js` file, create one
 

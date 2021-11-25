@@ -45,6 +45,7 @@ body {
   :root{
     --text-color: #eee;
     --bg-color: #222;
+    --link-color: #F15747;
   }
 }
 a {

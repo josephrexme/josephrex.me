@@ -1,13 +1,12 @@
 const fs = require('fs')
-const { DateTime } = require("luxon")
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
-const pluginRss = require("@11ty/eleventy-plugin-rss")
-const markdownIt = require("markdown-it")
-const markdownItAnchor = require("markdown-it-anchor")
+const { DateTime } = require('luxon')
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const pluginRss = require('@11ty/eleventy-plugin-rss')
+const markdownIt = require('markdown-it')
 const { default: axios } = require('axios')
-const CleanCSS = require("clean-css")
-const { minify } = require("terser")
-const htmlmin = require("html-minifier")
+const CleanCSS = require('clean-css')
+const { minify } = require('terser')
+const htmlmin = require('html-minifier')
 
 const formatDate = dateObj => {
   return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
@@ -20,11 +19,7 @@ const pluralize = (word, count, inclusive) => {
 }
 const markdownOptions = { html: true, linkify: true }
 const markdownLib = markdownIt(markdownOptions)
-.use(markdownItAnchor, {
-  permalink: markdownItAnchor.permalink.linkInsideHeader({
-    class: "heading-anchor",
-    ariaHidden: true
-  }),
+.use(require('markdown-it-anchor'), {
   level: [1, 2, 3],
   slugify: (s) =>
     s
