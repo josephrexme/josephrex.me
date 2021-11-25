@@ -431,6 +431,9 @@ article .footnotes-list{
 [style*='--grid_template_rows:'] {
   grid-template-rows: var(--grid_template_rows);
 }
+[style*='--order:'] {
+  order: var(--order);
+}
 
 /* Transforms */
 [style*='--opacity:'] {
@@ -493,6 +496,59 @@ article .footnotes-list{
   }
 }
 @media (min-width: 768px) {
+  /* Padding */
+  [style*='--md-p:'] {
+    padding: var(--md-p)
+  }
+  [style*='--md-py:'] {
+    padding-block: var(--md-py)
+  }
+  [style*='--md-px:'] {
+    padding-inline: var(--md-px)
+  }
+  [style*='--md-pt:'] {
+    padding-block-start: var(--md-pt)
+  }
+  [style*='--md-pb:'] {
+    padding-block-end: var(--md-pb)
+  }
+  [style*='--md-pl:'] {
+    padding-inline-start: var(--md-pl)
+  }
+  [style*='--md-pr:'] {
+    padding-inline-end: var(--md-pr)
+  }
+
+  /* Margin */
+  [style*='--md-m:'] {
+    margin: var(--md-m)
+  }
+  [style*='--md-my:'] {
+    margin-block: var(--md-my)
+  }
+  [style*='--md-mx:'] {
+    margin-inline: var(--md-mx)
+  }
+  [style*='--md-mt:'] {
+    margin-block-start: var(--md-mt)
+  }
+  [style*='--md-mb:'] {
+    margin-block-end: var(--md-mb)
+  }
+  [style*='--md-ml:'] {
+    margin-inline-start: var(--md-ml)
+  }
+  [style*='--md-mr:'] {
+    margin-inline-end: var(--md-mr)
+  }
+
+  /* Dimensions */
+  [style*='--md-w:'] {
+    width: var(--md-w)
+  }
+  [style*='--md-h:'] {
+    height: var(--md-h)
+  }
   /* Text */
   [style*='--md-txt_al:'] {
     text-align: var(--md-txt_al)
@@ -510,8 +566,20 @@ article .footnotes-list{
   [style*='--md-justify_content:'] {
     justify-content: var(--md-justify_content);
   }
+  [style*='--md-align_items:'] {
+    align-items: var(--md-align_items);
+  }
+  [style*='--md-align_content:'] {
+    align-items: var(--md-align_content);
+  }
+  [style*='--md-place_content:'] {
+    align-items: var(--md-place_content);
+  }
   [style*='--md-flex_dir:'] {
     flex-direction: var(--md-flex_dir);
+  }
+  [style*='--md-flex_wrap:'] {
+    flex-wrap: var(--md-flex_wrap);
   }
   [style*='--md-gap:'] {
     gap: var(--md-gap);
@@ -522,8 +590,64 @@ article .footnotes-list{
   [style*='--md-grid_template_rows:'] {
     grid-template-rows: var(--md-grid_template_rows);
   }
+  [style*='--md-order:'] {
+    order: var(--md-order);
+  }
 }
 @media (min-width: 960px) {
+  /* Padding */
+  [style*='--mx-p:'] {
+    padding: var(--mx-p)
+  }
+  [style*='--mx-py:'] {
+    padding-block: var(--mx-py)
+  }
+  [style*='--mx-px:'] {
+    padding-inline: var(--mx-px)
+  }
+  [style*='--mx-pt:'] {
+    padding-block-start: var(--mx-pt)
+  }
+  [style*='--mx-pb:'] {
+    padding-block-end: var(--mx-pb)
+  }
+  [style*='--mx-pl:'] {
+    padding-inline-start: var(--mx-pl)
+  }
+  [style*='--mx-pr:'] {
+    padding-inline-end: var(--mx-pr)
+  }
+
+  /* Margin */
+  [style*='--mx-m:'] {
+    margin: var(--mx-m)
+  }
+  [style*='--mx-my:'] {
+    margin-block: var(--mx-my)
+  }
+  [style*='--mx-mx:'] {
+    margin-inline: var(--mx-mx)
+  }
+  [style*='--mx-mt:'] {
+    margin-block-start: var(--mx-mt)
+  }
+  [style*='--mx-mb:'] {
+    margin-block-end: var(--mx-mb)
+  }
+  [style*='--mx-ml:'] {
+    margin-inline-start: var(--mx-ml)
+  }
+  [style*='--mx-mr:'] {
+    margin-inline-end: var(--mx-mr)
+  }
+
+  /* Dimensions */
+  [style*='--mx-w:'] {
+    width: var(--mx-w)
+  }
+  [style*='--mx-h:'] {
+    height: var(--mx-h)
+  }
   /* Text */
   [style*='--mx-txt_al:'] {
     text-align: var(--mx-txt_al)
@@ -541,8 +665,20 @@ article .footnotes-list{
   [style*='--mx-justify_content:'] {
     justify-content: var(--mx-justify_content);
   }
+  [style*='--mx-align_items:'] {
+    align-items: var(--mx-align_items);
+  }
+  [style*='--mx-align_content:'] {
+    align-items: var(--mx-align_content);
+  }
+  [style*='--mx-place_content:'] {
+    align-items: var(--mx-place_content);
+  }
   [style*='--mx-flex_dir:'] {
     flex-direction: var(--mx-flex_dir);
+  }
+  [style*='--mx-flex_wrap:'] {
+    flex-wrap: var(--mx-flex_wrap);
   }
   [style*='--mx-gap:'] {
     gap: var(--mx-gap);
@@ -552,6 +688,9 @@ article .footnotes-list{
   }
   [style*='--mx-grid_template_rows:'] {
     grid-template-rows: var(--mx-grid_template_rows);
+  }
+  [style*='--mx-order:'] {
+    order: var(--mx-order);
   }
 }
 @media (min-width: 1024px) {

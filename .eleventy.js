@@ -7,6 +7,7 @@ const markdownItAnchor = require("markdown-it-anchor")
 const { default: axios } = require('axios')
 const CleanCSS = require("clean-css")
 const { minify } = require("terser")
+const htmlmin = require("html-minifier")
 
 const formatDate = dateObj => {
   return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
@@ -121,6 +122,19 @@ module.exports = config => {
 
   /* Libraries */
   config.setLibrary("md", markdownLib)
+
+  /* Transforms */
+  config.addTransform('htmlmin', function (content, outputPath) {
+    if(outputPath?.endsWith(".html")) {
+      return htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      })
+    }
+
+    return content
+  })
 
   /* TODO */
   // Track issue on passthroughCopy (css,js) transforms: https://github.com/11ty/eleventy/issues/344

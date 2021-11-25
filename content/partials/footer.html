@@ -1,4 +1,4 @@
-<footer style="--d:flex;--justify_content:space-between;--align_items:flex-end;--py:8rem;--px:6rem;--font_sz:1.4rem" class="with-anchor-lines">
+<footer style="--d:flex;--gap:4rem;--flex_dir:column;--mx-flex_dir:row;--mx-justify_content:space-between;--mx-align_items:flex-end;--py:8rem;--px:2rem;--mx-px:6rem;--font_sz:1.4rem;--txt_al:center;--mx-txt_al:left;" class="with-anchor-lines">
   <div style="--d:flex;--flex_dir:column;--gap:1rem">
     <div>
       <h5 style="--font_sz:1.8rem;--font_wt:bold;--mb:.5rem;">Subscribe to my newsletter</h5>
@@ -9,8 +9,8 @@
       <form action="https://app.convertkit.com/forms/{{ site.config.convertkitFormId }}/subscriptions" method="post"
         target="_blank" data-uid="624a8f5da4" data-format="inline" data-version="5" data-sv-form="{{ site.config.convertkitFormId }}" style="--d:flex;--flex_dir:column;--gap:1rem" novalidate>
         <label for="EMAIL">Enter your email address to get latest updates in your inbox</label>
-        <div style="--d:grid;--grid_template_cols:20rem 9rem;">
-          <input type="email" name="email_address" id="EMAIL" placeholder="e.g janet@nasa.gov" style="--border:solid thin var(--text-color);--px:1rem;--py:.5rem;">
+        <div style="--d:grid;--grid_template_cols:3fr 1fr;--w:min(100%, 30rem);--mx:auto;--mx-mx:0;">
+          <input type="email" name="email_address" id="EMAIL" placeholder="e.g janet@nasa.gov" style="--border:solid thin var(--text-color);--px:1rem;--py:.5rem;--txt_al:left;">
           <button type="submit" style="--border:solid thin var(--text-color);--border_l:0;--p:1rem;--txt_al:center;--cursor:pointer;--hover-bg:var(--text-color);--hover-cl:var(--bg-color);--transition:all .2s linear;">Subscribe</button>
         </div>
       </form>

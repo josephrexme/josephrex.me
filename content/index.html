@@ -16,12 +16,8 @@ pagination:
   </section>
 {%- endfor -%}
 </div>
-<div style="--d:grid;--grid_template_cols:repeat(2,1fr);--mt:8rem">
-  <div style="--d:flex;--flex_dir:column;--gap:.8rem;">
-    <a href="https://x-team.com/blog/author/joseph" class="anchor-dash"><span style="--opacity:.7">Articles on X-Team</span></a>
-    <a href="http://resources.infosecinstitute.com/author/joseph-rex" class="anchor-dash"><span style="--opacity:.7">Articles on Infosec Institute</span></a>
-  </div>
-  <div style="--d:flex;--gap:2rem;--justify_content:flex-end">
+<div style="--d:flex;--mt:8rem;--flex_dir:column;--md-flex_dir:row;--md-justify_content:space-between;--gap:2rem;">
+  <div style="--d:flex;--gap:2rem;--justify_content:flex-end;--md-order:1;">
     {% if pagination.href.previous %}
     <a href="{{ pagination.href.previous }}" title="Previous page" style="--d:grid;place-content:center;--w:5rem;--h:5rem;--roundness:50%;--bg:rgb(100 100 100/.07);--hover-bg:rgb(100 100 100/.2)">
       <span style="--transform:scale(2) translateY(-0.1rem)">&lsaquo;</span>
@@ -40,5 +36,9 @@ pagination:
       <span style="--transform:scale(2) translateY(-0.1rem)">&rsaquo;</span>
     </button>
     {% endif %}
+  </div>
+  <div style="--d:flex;--flex_dir:column;--gap:.8rem;--md-order:0">
+    <a href="https://x-team.com/blog/author/joseph" class="anchor-dash"><span style="--opacity:.7">Articles on X-Team</span></a>
+    <a href="http://resources.infosecinstitute.com/author/joseph-rex" class="anchor-dash"><span style="--opacity:.7">Articles on Infosec Institute</span></a>
   </div>
 </div>
