@@ -12,8 +12,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% if site.config.googleAnalytics %}
   {% if not site.config.environment.isDev %}
-  <link rel="preconnect" href="//www.googletagmanager.com" crossorigin>
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="preconnect" href="//www.googletagmanager.com" crossorigin>
+  <link rel="preconnect" href="//www.google-analytics.com" crossorigin>
   {% endif %}
   {% endif %}
   {% if layout == "post" %}
