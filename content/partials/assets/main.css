@@ -192,6 +192,9 @@ article figure {
   background: rgb(100 100 100/.06);
   text-align: center;
 }
+article figure img {
+  display: block;
+}
 article > img {
   margin: 2rem auto;
 }

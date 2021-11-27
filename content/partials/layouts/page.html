@@ -1,0 +1,11 @@
+---
+layout: base
+---
+{% include "header.html" %}
+<div style="--w:var(--container);--mx:auto">
+  <h1 style="--font_sz:3.8rem;--md-font_sz:8rem">{{ title }}</h1>
+  <article>
+    {{ content | safe }}
+  </article>
+</div>
+{% include "footer.html" %}

@@ -96,14 +96,14 @@ module.exports = config => {
   config.addLayoutAlias("base", "layouts/base.html")
   config.addLayoutAlias("list", "layouts/list.html")
   config.addLayoutAlias("post", "layouts/post.html")
-  config.addLayoutAlias("case", "layouts/case.html")
+  config.addLayoutAlias("page", "layouts/page.html")
 
   /* Collections */
   config.addCollection("posts", collectionApi => {
     return collectionApi.getFilteredByGlob("content/posts/*.md").reverse()
   })
   config.addCollection("cases", collectionApi => {
-    return collectionApi.getFilteredByGlob("content/cases/*.md")
+    return collectionApi.getFilteredByGlob("content/cases/*.md").reverse()
   })
   // all tags ordered from highest usage to lowest
   config.addCollection('tags', collectionApi => {
