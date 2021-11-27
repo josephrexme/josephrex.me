@@ -6,9 +6,11 @@ pagination:
 ---
 <div style="--d:grid;--mx-grid_template_cols:repeat(2,1fr);--gap:2rem;">
   {%- for case in pagination.items -%}
-  <div>
+  <div class="with-anchor-lines">
     <h3><a href="{{ case.url }}">{{ case.data.title }}</a></h3>
+    <article>
     {{ case.data.page.excerpt | markdownify | safe }}
+    </article>
   </div>
   {% endfor %}
 </div>
