@@ -11,10 +11,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% if site.config.googleAnalytics %}
-  <link rel="preconnect" href="//www.google-analytics.com" crossorigin>
-  <link rel="preconnect" href="//stats.g.doubleclick.net" crossorigin>
-  <link rel="dns-prefetch" href="//www.google-analytics.com">
-  <link rel="dns-prefetch" href="//stats.g.doubleclick.net">
+  {% if not site.config.environment.isDev %}
+  <link rel="preconnect" href="//www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  {% endif %}
   {% endif %}
   {% if layout == "post" %}
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
