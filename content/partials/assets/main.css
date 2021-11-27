@@ -97,6 +97,10 @@ blockquote::before {
 cite {
   display: block;
 }
+ul, ol {
+  display: grid;
+  gap: 1.5rem;
+}
 cite::before {
   content: '— ';
 }
