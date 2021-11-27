@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "start": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "start:beta": "ELEVENTY_ENV=development npx @11ty/eleventy@beta --serve",
     "build": "eleventy",
     "debug": "DEBUG=Eleventy* eleventy"
   },

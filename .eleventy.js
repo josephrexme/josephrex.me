@@ -8,6 +8,8 @@ const CleanCSS = require('clean-css')
 const { minify } = require('terser')
 const htmlmin = require('html-minifier')
 
+const siteConfig = require('./config/site.config')
+
 const formatDate = dateObj => {
   return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
 }
@@ -43,7 +45,7 @@ module.exports = config => {
   config.addPlugin(pluginRss)
 
   /* Filters */
-  config.addFilter('absURL', value => `https://josephrex.me${value}`)
+  config.addFilter('absURL', value => `${siteConfig.url}${value}`)
   config.addFilter("formatDate", formatDate)
   config.addFilter("formatISO", formatISO)
   config.addFilter('readingTime', value => {
