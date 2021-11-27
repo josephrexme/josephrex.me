@@ -19,7 +19,7 @@
     &copy; 2014 - {% year %} {{ site.config.name }}. Powered by <a href="https://11ty.dev" style="--cl:var(--link-color)">Eleventy</a> and hosted on <a href="https://netlify.com" style="--cl:var(--link-color)" class="anchor-lines">Netlify</a>
     </p>
   </div>
-  <div style="--d:grid;--grid_template_cols:repeat(3,1fr);--gap:.6rem 2rem;--align_content:end;">
+  <div style="--d:grid;--grid_template_cols:repeat(3,1fr);--gap:2rem;--align_content:end;">
     {%- for social, link in site.config.social %}
     <div>
       <a href="{{ link }}" style="--cl:var(--link-color)" rel="me">{{ social | capitalize }}</a>
