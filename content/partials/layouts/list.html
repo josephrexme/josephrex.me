@@ -38,8 +38,10 @@ if(['/','/case-studies/','/projects/', '/experiments/'].includes(referrerPath)) 
     document.scrollingElement.scrollTop = top
   }
 }
-window.addEventListener('beforeunload', () => {
-  sessionStorage.setItem('scroll-position', document.scrollingElement.scrollTop - 1)
+window.addEventListener('visibilitychange', () => {
+  if(document.visibilityState === 'hidden') {
+    sessionStorage.setItem('scroll-position', document.scrollingElement.scrollTop - 1)
+  }
 })
 </script>
 {% include "footer.html" %}
