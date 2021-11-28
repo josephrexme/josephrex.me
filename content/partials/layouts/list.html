@@ -29,4 +29,17 @@ layout: base
     </main>
   </div>
 </div>
+<!-- Make navigation of list pages feel like SPA by retaining scroll position -->
+<script>
+const referrerPath = document.referrer ? (new URL(document.referrer)).pathname : ''
+if(['/','/case-studies/','/projects/', '/experiments/'].includes(referrerPath)) {
+  const top = sessionStorage.getItem('scroll-position')
+  if(top) {
+    document.scrollingElement.scrollTop = top
+  }
+}
+window.addEventListener('beforeunload', () => {
+  sessionStorage.setItem('scroll-position', document.scrollingElement.scrollTop - 1)
+})
+</script>
 {% include "footer.html" %}
