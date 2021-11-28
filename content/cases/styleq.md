@@ -2,6 +2,7 @@
 author: Joseph Rex
 title: StyleQ
 date: 2021-11-27T10:50:19-06:00
+website: https://bookstyleq.com
 ---
 
 <figure>

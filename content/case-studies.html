@@ -4,14 +4,42 @@ pagination:
   data: collections.cases
   size: 6
 ---
-<div style="--d:grid;--mx-grid_template_cols:repeat(2,1fr);--gap:2rem;">
+<div style="--d:grid;--mx-grid_template_cols:repeat(2,1fr);--gap:3rem;">
   {%- for case in pagination.items -%}
-  <div class="with-anchor-lines">
-    <h3><a href="{{ case.url }}">{{ case.data.title }}</a></h3>
+  <section style="--position:relative;--p:5rem;--d:flex;--flex_dir:column;--gap:2rem;--group:active" class="with-anchor-lines">
+    <h3 style="--opacity:.7;--font_sz:2rem"><a href="{{ case.url }}">{{ case.data.title }}</a></h3>
     <article>
-    {{ case.data.page.excerpt | markdownify | safe }}
+      {{ case.data.page.excerpt | markdownify | safe }}
     </article>
-  </div>
+    <p aria-hidden="true"><a href="{{ post.url }}" style="--font_sz:1.6rem;--opacity:.7" tabindex="-1">Continue reading ››</a></p>
+    <div style="--position:absolute;--inset:0;--bg:rgb(100 100 100/.06);--transform:skewY(-3deg);--group-hover-transform:skewY(-3deg) scale(1.02);--transform-o:center;--transition:transform .3s cubic-bezier(.5,0,.5,1);--z:-1;--will_change:transform"></div>
+  </section>
   {% endfor %}
+</div>
+<div style="--d:flex;--mt:8rem;--flex_dir:column;--md-flex_dir:row;--md-justify_content:space-between;--gap:2rem;">
+  <div style="--d:flex;--gap:2rem;--justify_content:flex-end;--md-order:1;">
+    {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" title="Previous page" style="--d:grid;place-content:center;--w:5rem;--h:5rem;--roundness:50%;--bg:rgb(100 100 100/.07);--hover-bg:rgb(100 100 100/.2)">
+      <span style="--transform:scale(2) translateY(-0.1rem)">&lsaquo;</span>
+    </a>
+    {% else %}
+    <button disabled title="Previous page" style="--d:grid;place-content:center;--w:5rem;--h:5rem;--roundness:50%;--bg:rgb(100 100 100/.07);--opacity:.5;">
+      <span style="--transform:scale(2) translateY(-0.1rem)">&lsaquo;</span>
+    </button>
+    {% endif %}
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" title="Next page" style="--d:grid;place-content:center;--w:5rem;--h:5rem;--roundness:50%;--bg:rgb(100 100 100/.07);--hover-bg:rgb(100 100 100/.2)">
+      <span style="--transform:scale(2) translateY(-0.1rem)">&rsaquo;</span>
+    </a>
+    {% else %}
+    <button disabled title="Next page" style="--d:grid;place-content:center;--w:5rem;--h:5rem;--roundness:50%;--bg:rgb(100 100 100/.07);--opacity:.5;">
+      <span style="--transform:scale(2) translateY(-0.1rem)">&rsaquo;</span>
+    </button>
+    {% endif %}
+  </div>
+  <div style="--d:flex;--flex_dir:column;--gap:.8rem;--md-order:0">
+    <a href="https://dribbble.com/josephrexme" class="anchor-dash"><span style="--opacity:.7">Designs on dribbble</span></a>
+    <a href="https://behance.net/josephrexme" class="anchor-dash"><span style="--opacity:.7">Case studies on behance</span></a>
+  </div>
 </div>
 
