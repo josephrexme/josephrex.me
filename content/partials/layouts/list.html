@@ -12,16 +12,16 @@ layout: base
   <div style="--d:grid;--lg-grid_template_cols: 1fr 3fr;--gap:4rem;--lg-gap:0">
     <nav aria-label="Secondary navigation" style="--d:flex;--flex_dir:column;--gap:1.5rem" class="with-anchor-lines">
       <h2>
-        <a href="/" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if page.url != '/' %}--opacity:.4;{% endif %}">Articles</a>
+        <a href="/" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if current != 'articles' %}--opacity:.4;{% endif %}">Articles</a>
       </h2>
       <h2>
-        <a href="/case-studies" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if page.url != '/case-studies/' %}--opacity:.4;{% endif %}">Case Studies</a>
+        <a href="/case-studies" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if current != 'case-studies' %}--opacity:.4;{% endif %}">Case Studies</a>
       </h2>
       <h2>
-        <a href="/experiments" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if page.url != '/experiments/' %}--opacity:.4;{% endif %}">Experiments</a>
+        <a href="/experiments" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if current != 'experiments' %}--opacity:.4;{% endif %}">Experiments</a>
       </h2>
       <h2>
-        <a href="/projects" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if page.url != '/projects/' %}--opacity:.4;{% endif %}">Projects</a>
+        <a href="/projects" style="--font_sz:2.8rem;--font_wt:500;--hover-opacity:1;{% if current != 'projects' %}--opacity:.4;{% endif %}">Projects</a>
       </h2>
     </nav>
     <main>
@@ -32,7 +32,8 @@ layout: base
 <!-- Make navigation of list pages feel like SPA by retaining scroll position -->
 <script>
 const referrerPath = document.referrer ? (new URL(document.referrer)).pathname : ''
-if(['/','/case-studies/','/projects/', '/experiments/'].includes(referrerPath)) {
+const listPages = ['/','/case-studies/','/projects/', '/experiments/']
+if(listPages.includes(referrerPath) && listPages.includes(document.location.pathname)) {
   const top = sessionStorage.getItem('scroll-position')
   if(top) {
     document.scrollingElement.scrollTop = top
