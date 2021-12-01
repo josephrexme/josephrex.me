@@ -13,6 +13,7 @@
 /* For images to not be able to exceed their container */
 img {
   max-width: 100%;
+  height: auto;
 }
 
 /* removes spacing between cells in tables */
@@ -195,7 +196,8 @@ article figure {
 article figure img {
   display: block;
 }
-article > img {
+article > picture, article > img {
+  display: block;
   margin: 2rem auto;
 }
 article figcaption {

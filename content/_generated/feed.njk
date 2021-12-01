@@ -20,7 +20,7 @@
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <summary>{{ post.data.page.excerpt | markdownify }}</summary>
+    <summary>{{ post.data.page.excerpt }}</summary>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
   {%- endfor %}

@@ -6,7 +6,7 @@ website: http://socius.education
 ---
 
 <figure>
-<img src="https://res.cloudinary.com/strich/image/upload/v1638053716/socius-banner_oahdin.jpg" alt="socius banner">
+{% image "socius-banner_oahdin", { alt: "socius banner", width: 800, height: 319 } %}
 </figure>
 
 Socius is a startup based in Milwaukee and aimed at solving the nation's financial inequality
@@ -19,7 +19,7 @@ knowledge gap on finance.
 [socius.education](http://socius.education) was created as a minimal landing page to pitch the goal of
 Socius to potential investors and parties of interest.
 
-![socius.education screenshot](https://res.cloudinary.com/strich/image/upload/v1638072650/socius.education_silx5c.jpg)
+{% image "socius.education_silx5c", { alt: "socius.education screenshot", width: 800, height: 1810 } %}
 
 For this website, a lot of things were kept simple with mostly just HTML and CSS. **Mapbox** was used for the map in
 the contact area.

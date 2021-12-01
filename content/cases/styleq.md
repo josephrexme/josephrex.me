@@ -6,7 +6,7 @@ website: https://bookstyleq.com
 ---
 
 <figure>
-<img src="https://res.cloudinary.com/strich/image/upload/v1638040913/styleq_vbcwq9.jpg" alt="styleq banner">
+{% image "styleq_vbcwq9", { alt: "styleq banner", width: 800, height: 319 } %}
 </figure>
 
 StyleQ is a startup based in Milwaukee. Its goal is to bridge the gap between professional
@@ -18,7 +18,7 @@ them a location to meet with their customers.
 ## Marketing site
 The marketing website [bookstyleq.com](https://bookstyleq.com) was initially designed in **Affinity Designer**.
 
-![Screenshot of bookstyleq.com](https://res.cloudinary.com/strich/image/upload/v1638043380/bookstyleq.com_wupgnq.jpg)
+{% image "bookstyleq.com_wupgnq", { alt: "screenshot of bookstyleq.com", width: 800, height: 2663 } %}
 
 The website was built using **Next.js**, **Styled Components**, and a few set of related technologies to get
 a website out in a short time.
@@ -32,6 +32,6 @@ The styleQ blog was created using **Gatsby.js** and **Contentful** headless CMS.
 color schemes for visitors to use what is most convenient for them.
 
 <figure>
-<img src="https://res.cloudinary.com/strich/image/upload/v1638051771/blog.bookstyleq-light_wjzz9x.jpg">
-<img src="https://res.cloudinary.com/strich/image/upload/v1638051771/blog.styleq.com_lh9shq.jpg">
+{% image "blog.bookstyleq-light_wjzz9x", { alt: "light mode of styleq blog", width: 800, height: 519 } %}
+{% image "blog.styleq.com_lh9shq", { alt: "dark mode of styleq blog", width: 800, height: 519 } %}
 </figure>

@@ -6,7 +6,7 @@ website: https://tellear.com
 ---
 
 <figure>
-<img src="https://res.cloudinary.com/strich/image/upload/v1638063423/tellear-banner_kiesil.jpg" alt="tellear banner">
+{% image "tellear-banner_kiesil", { alt: "tellear banner", width: 800, height: 319 } %}
 </figure>
 
 Tellear is a startup based in California. It had a very early idea to create an audio-based social network
@@ -15,13 +15,13 @@ from its inception.
 <!--more-->
 
 ## Login page
-![tellear login page](https://res.cloudinary.com/strich/image/upload/v1638075218/tellear_fp9yov.jpg)
+{% image "tellear_fp9yov", { alt: "tellear login page", width: 800, height: 523 } %}
 
 ## Feed
-![tellear feed](https://res.cloudinary.com/strich/image/upload/v1638075409/tellear-feed_rtpv0a.jpg)
+{% image "tellear-feed_rtpv0a", { alt: "tellear feed", width: 800, height: 538 } %}
 
 ## Recording a post
-![tellear recording interface](https://res.cloudinary.com/strich/image/upload/v1638075595/tellear-record_shtxgx.jpg)
+{% image "tellear-record_shtxgx", { alt: "tellear recording interface", width: 800, height: 546 } %}
 
 ## Comments in audio
-![tellear comments](https://res.cloudinary.com/strich/image/upload/v1638075760/tellear-comments_s80ioj.jpg)
+{% image "tellear-comments_s80ioj", { alt: "tellear comments", width: 800, height: 570 } %}
