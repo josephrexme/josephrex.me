@@ -46,11 +46,9 @@ module.exports = function(config) {
     return lib.pluralize('minute', total, true)
   })
   config.addFilter('markdownify', value => {
-    const md = markdownIt({ html: true })
+    return markdownIt({ html: true })
       // Change image shortcode in excerpts to HTML
       .render(value.replace(/\{%[\w\s]+"(.*?)".+({.*}?).+%\}/, lib.image('$1')))
-      
-    return md
   })
   config.addFilter('cssmin', code => {
     return new CleanCSS({}).minify(code).styles
