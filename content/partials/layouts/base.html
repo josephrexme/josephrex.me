@@ -1,6 +1,9 @@
 {% set css %}
   {% include "assets/main.css" %}
 {% endset %}
+{% set wasp_css %}
+  {% include "assets/wasp.css" %}
+{% endset %}
 {% set js %}
   {% include "assets/main.js" %}
 {% endset %}
@@ -23,6 +26,7 @@
   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   {% endif %}
   <style>{{ css | cssmin | safe }}</style>
+  <style>{{ wasp_css | cssmin | safe }}</style>
   <title>{{ title or site.config.title }}</title>
   <meta name="description" content="{{ page.excerpt or site.config.description }}">
   <meta name="author" content="{{ site.config.author.name }}">
