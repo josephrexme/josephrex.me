@@ -6,7 +6,7 @@ website: https://tellear.com
 ---
 
 <figure>
-{% image "tellear-banner_kiesil", { alt: "tellear banner", width: 800, height: 319 } %}
+{% image "tellear-banner_kiesil", { alt: "tellear banner", width: 780, height: 311 } %}
 </figure>
 
 Tellear is a startup based in California. It had a very early idea to create an audio-based social network

@@ -6,7 +6,7 @@ website: http://socius.education
 ---
 
 <figure>
-{% image "socius-banner_oahdin", { alt: "socius banner", width: 800, height: 319 } %}
+{% image "socius-banner_oahdin", { alt: "socius banner", width: 780, height: 311 } %}
 </figure>
 
 Socius is a startup based in Milwaukee and aimed at solving the nation's financial inequality

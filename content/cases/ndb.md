@@ -5,7 +5,7 @@ date: 2018-01-27T19:53:00-06:00
 ---
 
 <figure>
-{% image "ndb_rd7tnc", { alt: "ndb banner", width: 800, height: 319 } %}
+{% image "ndb_rd7tnc", { alt: "ndb banner", width: 780, height: 311 } %}
 </figure>
 
 NDB was a personal design exploration of what a nollywood DB would like in serving the Nigerian

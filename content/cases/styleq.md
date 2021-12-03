@@ -6,11 +6,11 @@ website: https://bookstyleq.com
 ---
 
 <figure>
-{% image "styleq_vbcwq9", { alt: "styleq banner", width: 800, height: 319 } %}
+{% image "styleq_vbcwq9", { alt: "styleq banner", width: 780, height: 311 } %}
 </figure>
 
 StyleQ is a startup based in Milwaukee. Its goal is to bridge the gap between professional
-stylists and their customers by helping the customer search for expeerienced stylists. For
+stylists and their customers by helping the customer search for experienced stylists. For
 stylists without a shop or designated location to cater to customers, styleQ aims at providing
 them a location to meet with their customers.
 <!--more-->
