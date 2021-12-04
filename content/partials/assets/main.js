@@ -7,14 +7,14 @@
   }
   ready(function(){
     // Progressive reading indicator
-    var indicator = document.querySelector('.scroll-progress');
+    const indicator = document.querySelector('.scroll-progress');
     if(indicator){
       document.addEventListener('scroll', function(e) {
-        var dh = document.body.scrollHeight;
-        var wh = window.innerHeight;
-        var pos = window.scrollY;
-        var footerHeight = 525;
-        var perc = pos / (dh - footerHeight - wh) * 100;
+        const dh = document.body.scrollHeight;
+        const wh = window.innerHeight;
+        const pos = window.scrollY;
+        const footerHeight = 525;
+        const perc = pos / (dh - footerHeight - wh) * 100;
         indicator.style.setProperty('--scale', (perc / 100));
       })
     }
