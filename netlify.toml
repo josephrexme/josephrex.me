@@ -15,7 +15,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "frame-ancestors 'none'"
+    Content-Security-Policy = "frame-ancestors 'none'; object-src 'none'; base-uri 'none'; script-src 'unsafe-inline' https:;"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
