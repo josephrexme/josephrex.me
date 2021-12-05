@@ -48,7 +48,7 @@ module.exports = function(config) {
   config.addFilter('markdownify', value => {
     return markdownIt({ html: true })
       // Change image shortcode in excerpts to HTML
-      .render(value.replace(/\{%[\w\s]+"(.*?)".+({.*}?).+%\}/, lib.image('$1')))
+      .render(value?.replace(/\{%[\w\s]+"(.*?)".+({.*}?).+%\}/, lib.image('$1')) || '')
   })
   config.addFilter('cssmin', code => {
     return new CleanCSS({}).minify(code).styles

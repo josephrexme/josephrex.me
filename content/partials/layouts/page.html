@@ -5,7 +5,7 @@ layout: base
 <div style="--w:var(--container);--mx:auto">
   <h1 style="--font_sz:3.8rem;--md-font_sz:8rem">{{ title }}</h1>
   {% if not dateless %}
-  <time datetime="{{ page.date | formatISO }}" style="font-style:italic">{{ page.date | formatDate }}</time>
+  <time datetime="{{ page.date | formatISO }}" style="--font_st:italic">{{ page.date | formatDate }}</time>
   {% endif %}
   <article style="--mt:8rem;--mb:2rem" class="with-anchor-lines">
     {{ content | safe }}

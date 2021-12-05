@@ -63,6 +63,9 @@
 [style*='--font_wt:'] {
   font-weight: var(--font_wt)
 }
+[style*='--font_st:'] {
+  font-style: var(--font_st)
+}
 
 /* Colors */
 [style*='--bg:'] {

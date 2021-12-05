@@ -17,7 +17,7 @@ single tab to all tasks for one job.
 
 Here is what my tmux tab usually look like:
 
-![Tmux pane structure](https://res.cloudinary.com/strich/image/upload/v1623250087/tmux-structure_cct6yw.jpg)
+{% image 'tmux-structure_cct6yw', { alt: 'Tmux pane structure', width: 800, height: 468 } %}
 
 Until a few days ago, I would start my week after a weekend away
 from work with the following actions: Run tmux, split vertically 50/50,
@@ -36,7 +36,7 @@ power where I need to kill my work servers and I just couldn't go on punishing m
 down each of all those servers and starting them over each morning. That's when I came up with
 the script below:
 
-```text
+```bash
 if [ "$TERM_PROGRAM" = tmux ]; then
   echo "Exiting ck tmux session"
   # Stop rails servers (ck and fk) and put down docker
@@ -67,7 +67,7 @@ necessary servers. I saved it as `ck-tmux` where `ck` there means **convertkit**
 where I work. It is included with [my dotfiles](https://github.com/josephrexme/dotfiles)
 and aliased to run from any directory I call it.
 
-```text
+```bash
 alias cktmux='~/ck-tmux.sh'
 ```
 
@@ -78,11 +78,11 @@ and exits the tmux session.
 See it in action
 
 <figure>
-<img src="https://res.cloudinary.com/strich/image/upload/v1623251273/a5fc204c1029b94c8fd8b5aec0fa0145_hsfyfb.gif" alt="starting ck tmux" class="image">
+{% image 'a5fc204c1029b94c8fd8b5aec0fa0145_hsfyfb', {alt: 'console of ck tmux starting up', width: 562, height: 1000, format: 'gif'} %}
 <figcaption>Starting work</figcaption>
 </figure>
 
 <figure>
-<img src="https://res.cloudinary.com/strich/image/upload/v1623251292/5a2e75c590ad9c25a1a00af4fdb72872_yxh4mr.gif" alt="stopping ck tmux" class="image">
+{% image '5a2e75c590ad9c25a1a00af4fdb72872_yxh4mr', {alt: 'console of ck tmux ending', width: 568, height: 1000, format: 'gif'} %}
 <figcaption>Stopping work</figcaption>
 </figure>

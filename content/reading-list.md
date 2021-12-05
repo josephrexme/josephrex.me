@@ -4,8 +4,8 @@ title: Reading list
 dateless: true
 permalink: /reading-list/
 ---
-Here's a list of books I've read and will be reading. The read ones are crossed.
-For more details on my reading journey, [follow me on goodreads][15]. You can also [buy me a book][21]
+Here's a list of books I've picked up and will recommend. For more details on my reading journey,
+[follow me on goodreads][15]. You can also [buy me a book][21]
 
 ## [ 2021 ]
 - [Think Again - Adam Grant](https://amz.run/55mm)
