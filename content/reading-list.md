@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Reading list
+dateless: true
 permalink: /reading-list/
 ---
 Here's a list of books I've read and will be reading. The read ones are crossed.

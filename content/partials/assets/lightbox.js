@@ -25,7 +25,7 @@ function lightbox(selector = "img", config) {
   const wrapper = document.createElement('div')
   const backdrop = document.createElement('div')
   const dialog = document.createElement('div')
-  wrapper.style.cssText = 'position:fixed;inset:0;overflow:auto'
+  wrapper.style.cssText = 'position:fixed;inset:0;overflow-y:auto;overflow-x:hidden'
   backdrop.style.cssText = `position:absolute;inset:0;background:${options.backdropBg};opacity:0;transition: opacity .2s linear`
   dialog.setAttribute('role', 'dialog')
   backdrop.style.setProperty('cursor', 'zoom-out')

@@ -100,6 +100,9 @@ module.exports = function(config) {
   config.addCollection("cases", collectionApi => {
     return collectionApi.getFilteredByGlob("content/cases/*.md").reverse()
   })
+  config.addCollection("experiments", collectionApi => {
+    return collectionApi.getFilteredByGlob("content/experiments/*.md").reverse()
+  })
   // all tags ordered from highest usage to lowest
   config.addCollection('tags', collectionApi => {
     const lengthOf = tag => collectionApi.getFilteredByTag(tag).length
@@ -107,7 +110,7 @@ module.exports = function(config) {
       .getAll()
       .reduce((tags, item) => tags.concat(item.data.tags), [])
       .filter(Boolean)
-      .filter(tag => !['posts', 'cases'].includes(tag))
+      .filter(tag => !['posts', 'cases', 'experiments'].includes(tag))
       .sort((a, b) => lengthOf(b) - lengthOf(a))
     return Array.from(new Set(tags))
   })
