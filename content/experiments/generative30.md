@@ -20,6 +20,8 @@ As I am relatively new to generative art, my mind is not as imaginative as I'd h
 so I'm beginning by following tutorials at https://generativeartistry.com/ until I start
 building up ideas of my own.
 
+[Follow my generative art collection on Codepen](https://codepen.io/collection/eJMmNg)
+
 ## Day 1 - Tiled lines
 
 <iframe height="400" style="width: 100%;" scrolling="no" title="Tiled Lines" src="https://codepen.io/josephrexme/embed/preview/vYeLedb?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
