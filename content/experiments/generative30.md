@@ -32,8 +32,16 @@ building up ideas of my own.
 
 ## Day 2 - Joy division
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="Joy Division" src="https://codepen.io/josephrexme/embed/preview/wvrGpZY?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" class="codepen">
+<iframe height="450" style="width: 100%;" scrolling="no" title="Joy Division" src="https://codepen.io/josephrexme/embed/preview/wvrGpZY?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/josephrexme/pen/wvrGpZY">
   Joy Division</a> by Joseph Rex (<a href="https://codepen.io/josephrexme">@josephrexme</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+## Day 3 - Cubic disarray
+
+<iframe height="450" style="width: 100%;" scrolling="no" title="Cubic disarray" src="https://codepen.io/josephrexme/embed/preview/KKXzBRX?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/josephrexme/pen/KKXzBRX">
+  Cubic disarray</a> by Joseph Rex (<a href="https://codepen.io/josephrexme">@josephrexme</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
