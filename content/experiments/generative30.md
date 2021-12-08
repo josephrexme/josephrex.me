@@ -24,7 +24,7 @@ building up ideas of my own.
 
 ## Day 1 - Tiled lines
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Tiled Lines" src="https://codepen.io/josephrexme/embed/preview/vYeLedb?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="450" style="width: 100%;" scrolling="no" title="Tiled Lines" src="https://codepen.io/josephrexme/embed/preview/vYeLedb?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/josephrexme/pen/vYeLedb">
   Tiled Lines</a> by Joseph Rex (<a href="https://codepen.io/josephrexme">@josephrexme</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -32,7 +32,7 @@ building up ideas of my own.
 
 ## Day 2 - Joy division
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Joy Division" src="https://codepen.io/josephrexme/embed/preview/wvrGpZY?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="450" style="width: 100%;" scrolling="no" title="Joy Division" src="https://codepen.io/josephrexme/embed/preview/wvrGpZY?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true" class="codepen">
   See the Pen <a href="https://codepen.io/josephrexme/pen/wvrGpZY">
   Joy Division</a> by Joseph Rex (<a href="https://codepen.io/josephrexme">@josephrexme</a>)
   on <a href="https://codepen.io">CodePen</a>.

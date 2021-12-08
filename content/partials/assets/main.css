@@ -186,8 +186,6 @@ article figure {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  width: -moz-fit-content;
-  width: fit-content;
   margin: 2rem auto;
   padding: 1rem;
   background: rgb(100 100 100/.06);
@@ -195,10 +193,14 @@ article figure {
 }
 article figure img {
   display: block;
+  width: 100%;
 }
 article > picture, article > img {
   display: block;
   margin: 2rem auto;
+}
+article > picture img{
+  width: 100%;
 }
 article figcaption {
   padding-block-start: 1rem;
@@ -206,32 +208,11 @@ article figcaption {
   font-size: 1.6rem;
   opacity: .6;
 }
-article video {
+article :where(iframe, video){
   aspect-ratio: 16/9;
   width: 100%;
-}
-article .video {
-  position: relative;
-  height: 0;
-  width: 90%;
-  padding-block-end: 56.25%;
-  padding-block-start: 30px;
-  background: none;
-  overflow: hidden;
-}
-@media (min-width: 1024px) {
-  article .video {
-    width: calc(100% + 30px);
-    margin-inline-start: -15px;
-  }
-}
-article .video :where(iframe, object, embed) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  height: auto;
+  border-radius: .5rem;
 }
 article .footnotes-list{
   display: grid;

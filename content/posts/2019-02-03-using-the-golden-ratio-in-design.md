@@ -78,8 +78,8 @@ The spiral on the leaves shows the ascending sequence of fibonacci. In numerals 
 Logo designers achieve precision with their logos with the use of golden circles. To derive that, the golden spiral is made to pan a golden rectangle with smaller rectangles making up the fibonacci series. This can also be achieved with triangles as shown:
 
 <figure>
-  <img src="https://res.cloudinary.com/strich/image/upload/v1549213995/golden-spiral_nicumf.png" style="transform: rotate(90deg) translateY(60px);transform-origin: bottom" alt="golden spiral">
-  <img src="https://res.cloudinary.com/strich/image/upload/v1549213995/golden-triangle_kqqe1k.png" alt="Triangular golden spiral" class="image">
+  {% image "golden-spiral_nicumf", {alt: "golden spiral", format: "png", angle: 90} %}
+  {% image "golden-triangle_kqqe1k", {alt: "triangular golden spiral", format: "png"} %}
 </figure>
 
 The video below shows the derivation of stunning logos through the circles derived from the spirals.
