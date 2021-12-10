@@ -1,6 +1,9 @@
 [build]
-  publish="public"
-  command="npm run debug"
+  publish = "public"
+  command = "npm run debug"
+
+[functions]
+  directory = "serverless"
 
 [[redirects]]
   from = "/feed/"
