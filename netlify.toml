@@ -1,5 +1,6 @@
 [build]
   publish = "public"
+  command = "cp ./libx86/* node_modules/canvas/build/Release"
   command = "npm run debug"
 
 [functions]
