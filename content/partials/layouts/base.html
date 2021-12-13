@@ -38,7 +38,7 @@
   <meta property="og:type" content="{% if layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ page.url | absURL }}">
   <meta property="og:title" content="{{ title or site.config.title }}">
-  <meta property="og:image" content="/.netlify/functions/opengraph?text={{ title | slug }}&layout={{layout}}">
+  <meta property="og:image" content="/.netlify/functions/opengraph?text={{ title or "" | slug }}&layout={{layout}}">
   <meta property="og:description" content="{{ page_description }}">
   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
   <meta name="twitter:url" content="{{ page.url | absURL }}">
@@ -46,7 +46,7 @@
   <meta name="twitter:site" content="@{{ site.config.username }}">
   <meta name="twitter:creator" content="@{{ site.config.username }}">
   <meta name="twitter:title" content="{{ title or site.config.title }}">
-  <meta name="twitter:img:src" content="/.netlify/functions/opengraph?text={{ title | slug }}&layout={{layout}}">
+  <meta name="twitter:img:src" content="/.netlify/functions/opengraph?text={{ title or "" | slug }}&layout={{layout}}">
   <meta name="color-scheme" content="light dark">
   {% if layout == "post" %}
   <meta name="twitter:label1" content="Author">
@@ -79,7 +79,7 @@
       "name": "{{ site.config.name }} Blog",
       "logo": {
         "@type": "ImageObject",
-        "url": "/.netlify/functions/opengraph?text={{ title | slug }}&layout={{layout}}",
+        "url": "{{ site.config.banner }}",
         "width": 600,
         "height": 60
       }
@@ -104,7 +104,7 @@
     ,"headline": "{{ title or site.config.title }}",
     "image": {
       "@type": "ImageObject",
-      "url": "/.netlify/functions/opengraph?text={{ title | slug }}&layout={{layout}}",
+      "url": "/.netlify/functions/opengraph?text={{ title or "" | slug }}&layout={{layout}}",
       "width": 800,
       "height": 500
     },
