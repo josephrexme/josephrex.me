@@ -7,11 +7,42 @@ permalink: /reading-list/
 Here's a list of books I've picked up and will recommend. For more details on my reading journey,
 [follow me on goodreads][15]. You can also [buy me a book][21]
 
+## [ 2022 ]
+
+<details>
+<summary>The midnight library - Matt Haig</summary>
+
+[Get it on amazon](https://amz.run/58wQ)
+
+</details>
+
 ## [ 2021 ]
-- [Think Again - Adam Grant](https://amz.run/55mm)
-- [A promised land](https://amzn.to/2LFcFtY)
-- [Mathematics for 3D Game Programming and Computer Graphics](https://amzn.to/3apTqxG)
-- [Foundation HTML5 Animation with JavaScript](https://amzn.to/3emGKJ4)
+
+<details>
+<summary>Think again - Adam Grant</summary>
+
+[Get it on amazon](https://amz.run/55mm)
+
+</details>
+<details>
+<summary>A promised land</summary>
+
+[Get it on amazon](https://amzn.to/2LFcFtY)
+
+</details>
+<details>
+<summary>Mathematics for 3D Game Programming and Computer Graphics</summary>
+
+[Get it on amazon](https://amzn.to/3apTqxG)
+
+</details>
+<details>
+<summary>Foundation HTML5 Animation with JavaScript</summary>
+
+[Get it on amazon](https://amzn.to/3emGKJ4)
+
+</details>
+
 ## [ 2020 ]
 - Art direction on the web - Andy Clarke
 - [Refactoring UI][19]
@@ -24,10 +55,24 @@ Here's a list of books I've picked up and will recommend. For more details on my
 - Atomic Habits
 
 ## [ 2019 ]
-- <del>Rich dad, poor dad</del>
-- <del>The 21-day financial fast - Michelle Singletary</del> { [My review][16] }
-- <del>We're going to need more wine - Gabrielle Union</del>
-- <del>The last black unicorn - Tiffany Haddish</del>
+<details>
+<summary>Rich dad, poor dad</summary>
+
+</details>
+<details>
+<summary>The 21-day financial fast - Michelle Singletary</summary>
+
+[Read my review on goodreads][16]
+
+</details>
+<details>
+<summary>We're going to need more wine - Gabrielle Union</summary>
+
+</details>
+<details>
+<summary>The last black unicorn - Tiffany Haddish</summary>
+
+</details>
 
 ## [ 2016 ]
 - [Why's poignant guide to Ruby][1]

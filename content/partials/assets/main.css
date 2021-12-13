@@ -5,9 +5,33 @@
   box-sizing: border-box;
 }
 
-*:where(:not(iframe, canvas, img, svg, video, mark, sup, strong, em, s, abbr, ul, ol, dl, details):not(svg *, symbol *)) {
+*:where(:not(iframe, canvas, img, svg, video, mark, sup, strong, em, s, abbr, ul, ol, dl):not(svg *, symbol *)) {
   all: unset;
   display: revert;
+}
+
+details {
+  padding: 1rem 2rem;
+  list-style-type: none;
+  background: rgb(182 79 68/.1);
+  border-radius: .4rem;
+}
+
+details + details {
+  margin-block-start: 1rem;
+}
+
+summary{
+  cursor: pointer;
+}
+
+[open] summary {
+  margin-block-end: 1rem;
+}
+
+summary::before {
+  content: '≡';
+  margin-inline-end: 2rem;
 }
 
 /* For images to not be able to exceed their container */

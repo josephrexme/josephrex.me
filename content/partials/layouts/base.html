@@ -10,6 +10,7 @@
 {% set lightbox %}
   {% include "assets/lightbox.js" %}
 {% endset %}
+{% set page_description = page.excerpt | plaintext if page.excerpt else site.config.description %}
 <!DOCTYPE html>
 <html lang={{ site.config.language }} prefix="og: http://ogp.me/ns#">
 <head>
@@ -31,21 +32,21 @@
   <style>{{ css | cssmin | safe }}</style>
   <style>{{ wasp_css | cssmin | safe }}</style>
   <title>{{ title or site.config.title }}</title>
-  <meta name="description" content="{{ page.excerpt or site.config.description }}">
+  <meta name="description" content="{{ page_description }}">
   <meta name="author" content="{{ site.config.author.name }}">
   <meta property="site_name" content="{{ site.config.username }}">
   <meta property="og:type" content="{% if layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ page.url | absURL }}">
   <meta property="og:title" content="{{ title or site.config.title }}">
-  <meta property="og:image" content="{{ site.config.banner }}">
-  <meta property="og:description" content="{{ page.excerpt or site.config.description }}">
+  <meta property="og:image" content="/.netlify/functions/opengraph?text={{ title | slug }}&layout={{layout}}">
+  <meta property="og:description" content="{{ page_description }}">
   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
   <meta name="twitter:url" content="{{ page.url | absURL }}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@{{ site.config.username }}">
   <meta name="twitter:creator" content="@{{ site.config.username }}">
   <meta name="twitter:title" content="{{ title or site.config.title }}">
-  <meta name="twitter:img:src" content="{{ site.config.banner }}">
+  <meta name="twitter:img:src" content="/.netlify/functions/opengraph?text={{ title | slug }}&layout={{layout}}">
   <meta name="color-scheme" content="light dark">
   {% if layout == "post" %}
   <meta name="twitter:label1" content="Author">
@@ -72,13 +73,13 @@
   {
     "@context": "http://schema.org",
     "@type": "{% if layout == 'post' %}Article{% else %}Website{% endif %}",
-    "description": "{{ page.excerpt or site.config.description }}",
+    "description": "{{ page_description }}",
     "publisher": {
       "@type": "Organization",
       "name": "{{ site.config.name }} Blog",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ site.config.banner }}",
+        "url": "/.netlify/functions/opengraph?text={{ title | slug }}&layout={{layout}}",
         "width": 600,
         "height": 60
       }
@@ -103,7 +104,7 @@
     ,"headline": "{{ title or site.config.title }}",
     "image": {
       "@type": "ImageObject",
-      "url": "https://dummyimage.com/800x500/011a38/ffffff.jpg&text={{ title | slug }}",
+      "url": "/.netlify/functions/opengraph?text={{ title | slug }}&layout={{layout}}",
       "width": 800,
       "height": 500
     },

@@ -6,6 +6,7 @@ const { default: axios } = require('axios')
 const CleanCSS = require('clean-css')
 const { minify } = require('terser')
 const htmlmin = require('html-minifier')
+const stripMarkdown = require('remove-markdown')
 const lib = require('./lib')
 
 const siteConfig = require('./config/site.config')
@@ -49,6 +50,9 @@ module.exports = function(config) {
     return markdownIt({ html: true })
       // Change image shortcode in excerpts to HTML
       .render(value?.replace(/\{%[\w\s]+"(.*?)".+({.*}?).+%\}/, lib.image('$1')) || '')
+  })
+  config.addFilter('plaintext', value => {
+    return stripMarkdown(value)
   })
   config.addFilter('cssmin', code => {
     return new CleanCSS({}).minify(code).styles
