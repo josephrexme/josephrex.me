@@ -1,4 +1,4 @@
-const { createCanvas } = require('canvas')
+const { createCanvas, registerFont } = require('canvas')
 
 function getLines(ctx, text, maxWidth) {
   var words = text.split(" ");
@@ -14,8 +14,9 @@ function getLines(ctx, text, maxWidth) {
 }
 
 function write(text, ctx, x, y) {
+  registerFont('OpenSans-VariableFont.ttf', { family: 'Open Sans' })
   const maxWidth = 520
-  ctx.font = "600 24px system-ui"
+  ctx.font = "600 24px Open Sans"
   ctx.fillStyle = "#ffffff"
   ctx.textBaseline = "middle"
 
