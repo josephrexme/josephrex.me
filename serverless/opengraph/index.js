@@ -14,7 +14,7 @@ function getLines(ctx, text, maxWidth) {
 }
 
 function write(text, ctx, x, y) {
-  registerFont(`${process.env.OPENGRAPH_FN_PATH || '.'}/OpenSans-Regular.ttf`, { family: 'Open Sans' })
+  registerFont('serverless/opengraph/OpenSans-Regular.ttf', { family: 'Open Sans' })
   const maxWidth = 520
   ctx.font = "600 24px Open Sans"
   ctx.fillStyle = "#ffffff"
