@@ -15,7 +15,7 @@ function getLines(ctx, text, maxWidth) {
 
 function write(text, ctx, x, y) {
   const maxWidth = 520
-  ctx.font = "600 24px Open Sans"
+  ctx.font = "600 24px system-ui"
   ctx.fillStyle = "#ffffff"
   ctx.textBaseline = "middle"
 

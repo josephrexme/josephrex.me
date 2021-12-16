@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "14.4.0"
+    "node": "14.16.0"
   },
   "scripts": {
     "start": "npm run start:beta",
     "start:beta": "ELEVENTY_ENV=development npx @11ty/eleventy@beta --serve",
     "start:legacy": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "start:functions": "netlify functions:serve --functions serverless --port 7000",
     "build": "eleventy",
     "debug": "DEBUG=Eleventy* eleventy"
   },
