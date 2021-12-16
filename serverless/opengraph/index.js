@@ -14,7 +14,7 @@ function getLines(ctx, text, maxWidth) {
 }
 
 function write(text, ctx, x, y) {
-  registerFont('OpenSans-Regular.ttf', { family: 'Open Sans' })
+  registerFont('./OpenSans-Regular.ttf', { family: 'Open Sans' })
   const maxWidth = 520
   ctx.font = "600 24px Open Sans"
   ctx.fillStyle = "#ffffff"
