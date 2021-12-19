@@ -164,6 +164,12 @@
 [style*='--grid_template_rows:'] {
   grid-template-rows: var(--grid_template_rows);
 }
+[style*='--grid_col_end:'] {
+  grid-column-end: var(--grid_col_end);
+}
+[style*='--grid_col_start:'] {
+  grid-column-start: var(--grid_col_start);
+}
 [style*='--order:'] {
   order: var(--order);
 }
@@ -202,6 +208,14 @@
 }
 [style*='--aspect_ratio:'] {
   aspect-ratio: var(--aspect_ratio);
+}
+[style*='--object_fit:'] {
+  -o-object-fit: var(--object_fit);
+  object-fit: var(--object_fit);
+}
+[style*='--object_position:'] {
+  -o-object-position: var(--object_position);
+  object-position: var(--object_position);
 }
 
 /*-- Hover --*/
