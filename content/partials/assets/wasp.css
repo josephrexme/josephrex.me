@@ -66,6 +66,12 @@
 [style*='--font_st:'] {
   font-style: var(--font_st)
 }
+[style*='--word_break:'] {
+  word-break: var(--word_break);
+}
+[style*='--white_space:'] {
+  white-space: var(--white_space);
+}
 
 /* Colors */
 [style*='--bg:'] {
@@ -125,6 +131,9 @@
 }
 [style*='--roundness:'] {
   border-radius: var(--roundness);
+}
+[style*='--shadow:'] {
+  box-shadow: var(--shadow);
 }
 
 /* Layout */
@@ -186,6 +195,13 @@
 }
 [style*='--filter:'] {
   filter: var(--filter);
+}
+[style*='--backdrop_filter:'] {
+  -webkit-backdrop-filter: var(--backdrop_filter);
+  backdrop-filter: var(--backdrop_filter);
+}
+[style*='--aspect_ratio:'] {
+  aspect-ratio: var(--aspect_ratio);
 }
 
 /*-- Hover --*/

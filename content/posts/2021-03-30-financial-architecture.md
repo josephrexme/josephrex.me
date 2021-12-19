@@ -20,9 +20,7 @@ In software, architecture is made for sustainability rather than appreciation. A
 who have gotten to architect some software workflows, I don't think the goal was ever
 to have a sturdy impeccable software as we all know there's no such thing.
 
-<div class="u-middle-block" style="max-width: 550px">
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">2/ Most people don&#39;t think about it this way, but when you build custom software, you are effectively buying a rapidly depreciating asset that&#39;s going to have to constantly be repaired.</p>&mdash; Taylor Pearson (@TaylorPearsonMe) <a href="https://twitter.com/TaylorPearsonMe/status/1377011520547270661?ref_src=twsrc%5Etfw">March 30, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+{% twitter "1377011520547270661" %}
 
 Software architecture however can sustain workflows and communication within a team
 for a given period of time. This leads to why we need an architecture for our finances.

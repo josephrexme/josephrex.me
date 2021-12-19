@@ -1,8 +1,11 @@
+require('dotenv').config()
+
 const ENV = {
   current: process.env.ELEVENTY_ENV,
   isDev: process.env.ELEVENTY_ENV === "development",
   isProd: process.env.ELEVENTY_ENV === "production",
 }
+
 module.exports = {
   name: 'Joseph Rex',
   username: 'josephrexme',

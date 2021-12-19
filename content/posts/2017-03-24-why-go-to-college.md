@@ -15,7 +15,7 @@ However with all that much data defying gravity around us some of us fail to uti
 
 Everyone in life is constantly learning but there's a measure of how much we learn as individuals which become a metric to how much we can achieve. Programming being a simple skill to pick up falsely leads people to [believing mastery of software engineering is just as easy][1].
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Simple != Easy<br><br>Simplicity and ease are uncorrelated, or maybe even negatively correlated.</p>&mdash; Computer Science (@CompSciFact) <a href="https://twitter.com/CompSciFact/status/840031018165948417">March 10, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% twitter "840031018165948417" %}
 
 If you work as a software engineer soon you'd realize [programming is hard][2] and you may either decide to doggedly be at your best with it and pick up all it takes remain relevant or you could just put up a smokescreen to mask your slackness. While trying to find a place you fit in, you get faced with interviews that are worthily intense or just totally off-putting and the only way you feel you can fill the knowledge gap is by going back to college if you've never had a college degree or didn't study computer science. Even if you aren't applying to positions yet, you could have a passion for computers or whatever your interests are that makes you believe it's worth going to college for.
 

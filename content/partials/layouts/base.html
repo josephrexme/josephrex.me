@@ -11,6 +11,9 @@
   {% include "assets/lightbox.js" %}
 {% endset %}
 {% set page_description = page.excerpt | plaintext if page.excerpt else site.config.description %}
+{% set title_slug = title | slugify if title else "" %}
+{% set og_image_url = "/.netlify/functions/opengraph?text="+title_slug+"&layout="+layout %}
+{% set og_image = og_image_url | absURL %}
 <!DOCTYPE html>
 <html lang={{ site.config.language }} prefix="og: http://ogp.me/ns#">
 <head>
@@ -38,7 +41,7 @@
   <meta property="og:type" content="{% if layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ page.url | absURL }}">
   <meta property="og:title" content="{{ title or site.config.title }}">
-  <meta property="og:image" content="/.netlify/functions/opengraph?text={{ title or "" | slug }}&layout={{layout}}">
+  <meta property="og:image" content="{{ og_image }}">
   <meta property="og:description" content="{{ page_description }}">
   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
   <meta name="twitter:url" content="{{ page.url | absURL }}">
@@ -46,7 +49,7 @@
   <meta name="twitter:site" content="@{{ site.config.username }}">
   <meta name="twitter:creator" content="@{{ site.config.username }}">
   <meta name="twitter:title" content="{{ title or site.config.title }}">
-  <meta name="twitter:img:src" content="/.netlify/functions/opengraph?text={{ title or "" | slug }}&layout={{layout}}">
+  <meta name="twitter:img:src" content="{{ og_image }}">
   <meta name="color-scheme" content="light dark">
   {% if layout == "post" %}
   <meta name="twitter:label1" content="Author">
@@ -104,7 +107,7 @@
     ,"headline": "{{ title or site.config.title }}",
     "image": {
       "@type": "ImageObject",
-      "url": "/.netlify/functions/opengraph?text={{ title or "" | slug }}&layout={{layout}}",
+      "url": "{{ og_image }}",
       "width": 800,
       "height": 500
     },
@@ -137,7 +140,7 @@
   {% endif %}
   {% if layout == "post" or layout == "page" %}
   <script>{{ lightbox | jsmin | safe }}</script>
-  <script>lightbox('img', {backdropBg: 'var(--bg-color)'});</script>
+  <script>lightbox('img:not(.no-zoom)', {backdropBg: 'var(--bg-color)'});</script>
   {% endif %}
   {% if not site.config.environment.isDev %}
   <!-- Global site tag (gtag.js) - Google Analytics -->

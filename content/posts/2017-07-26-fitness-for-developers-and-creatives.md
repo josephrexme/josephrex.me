@@ -13,11 +13,11 @@ I've been into physical fitness and I'm supposed to be writing about that on thi
 
 A while back David DeSandro tweeted this:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Do programmers practice or do warm ups? I feel like prototyping takes same level of concentration as writing production code</p>&mdash; Dave DeSandro (@desandro) <a href="https://twitter.com/desandro/status/884500750348554240">July 10, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+{% twitter "884500750348554240" %}
 
 and as a fan of his works I hastily replied without much thought.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Warm ups would be code katas (cardios) and side projects (weight lifting)</p>&mdash; Joseph Rex (@josephrexme) <a href="https://twitter.com/josephrexme/status/884501159129624577">July 10, 2017</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% twitter "884501159129624577" %}
 
 It didn't end there for me. I started thinking through my reply and asking myself if that really feels like workout for me. I joined [exercism][1] and I've not been so consistent. I really do want to give more time to it and maybe [codewars][2] as well but here's the reason I can't do that now.
 

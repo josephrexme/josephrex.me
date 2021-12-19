@@ -87,8 +87,7 @@ def extract(stegFile, outFile):
 
 The program achieved its objective which is the Steganography process but the sophistication level was 10%. Not good enough I thought. Oh! It wasn't just me, [Daniel Lerch][4] thought the same too
 
-<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/joerex101">@joerex101</a> Sorry but I&#39;m looking for something more sophisticated :)</p>&mdash; Daniel Lerch (@Daniel_Lerch) <a href="https://twitter.com/Daniel_Lerch/status/542777726491324416">December 10, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% twitter "542777726491324416" %}
 
 <hr>
 

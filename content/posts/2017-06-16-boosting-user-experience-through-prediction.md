@@ -2,7 +2,7 @@
 author: Joseph Rex
 date: 2017-06-16T22:47:37-05:00
 title: Boosting user experience through prediction
-permalink: /{{ title | slug }}/
+permalink: /{{ title | slugify }}/
 tags:
   - UX
   - performance

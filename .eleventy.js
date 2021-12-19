@@ -47,7 +47,7 @@ module.exports = function(config) {
     return lib.pluralize('minute', total, true)
   })
   config.addFilter('markdownify', value => {
-    return markdownIt({ html: true })
+    return markdownIt({ html: true, linkify: true })
       // Change image shortcode in excerpts to HTML
       .render(value?.replace(/\{%[\w\s]+"(.*?)".+({.*}?).+%\}/, lib.image('$1')) || '')
   })
@@ -83,12 +83,15 @@ module.exports = function(config) {
       const likes = res.data.children.length
       return lib.pluralize('twitter like', likes, true)
     } catch (error) {
-      console.log({ error })
+      console.error(error)
       return 'Could not get likes'
     }
   })
   config.addShortcode("image", (url, { alt, ...attrs}) => {
     return lib.image(url, { alt, ...attrs })
+  })
+  config.addAsyncShortcode("twitter", async id => {
+    return await lib.twitter(id)
   })
 
   /* Layout Aliases */

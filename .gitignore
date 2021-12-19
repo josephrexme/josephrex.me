@@ -3,4 +3,5 @@
 node_modules
 .*.sw[nop]
 *.code-workspace
+.env
 public

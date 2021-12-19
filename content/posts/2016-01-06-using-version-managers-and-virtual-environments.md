@@ -3,7 +3,7 @@ author: Joseph Rex
 comments: true
 date: 2016-01-06T00:00:00Z
 title: Using version managers and virtual environments
-permalink: /{{ title | slug }}/
+permalink: /{{ title | slugify }}/
 tags:
   - software
 ---
