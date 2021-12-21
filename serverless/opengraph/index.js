@@ -1,4 +1,4 @@
-const { createCanvas, registerFont } = require('canvas')
+const { createCanvas, registerFont, loadImage } = require('canvas')
 
 function getLines(ctx, text, maxWidth) {
   var words = text.split(" ");
@@ -13,36 +13,61 @@ function getLines(ctx, text, maxWidth) {
   }, []);
 }
 
-function write(text, ctx, x, y) {
-  registerFont('serverless/opengraph/OpenSans-Regular.ttf', { family: 'Open Sans' })
-  const maxWidth = 520
-  ctx.font = "600 24px Open Sans"
+function write(text, ctx, x, y, maxWidth) {
+  ctx.font = "600 32px Open Sans"
   ctx.fillStyle = "#ffffff"
   ctx.textBaseline = "middle"
+  const lineHeight = 50
 
   // wrap each line when max width is reached
   const lines = getLines(ctx, text, maxWidth)
   lines.forEach((line, index) => {
-    ctx.fillText(line, x, y + index * 30, maxWidth)
+    ctx.fillText(line, x, y + index * lineHeight, maxWidth)
   })
 }
 
 const capitalize = str => `${str.charAt(0).toUpperCase()}${str.slice(1)}`
+const perc = (percentage, value) => percentage / 100 * value
 
-const createImage = ({ text = '' }) => {
-  const [width, height] = [600, 300]
+const simple = async (img) => {
+  const [width, height] = [100, 100]
   const canvas = createCanvas(width, height)
   const ctx = canvas.getContext("2d")
+  ctx.fillStyle = "#b64f44"
+  ctx.fillRect(0, 0, width, height)
+  const size = 70
+  ctx.drawImage(img, (width / 2) - (size / 2), (height / 2) - (size / 2), size, size)
+  return canvas.toBuffer("image/jpeg", { quality: 0.80 })
+}
+
+const descriptive = async (text, img) => {
+  const [width, height] = [1200, 600]
+  const canvas = createCanvas(width, height)
+  const ctx = canvas.getContext("2d")
+  const imageSize = 80
   ctx.fillStyle = "#252525"
   ctx.fillRect(0, 0, width, height)
-  write(capitalize(text.replace(/-/g, ' ')), ctx, 40, 200)
-  const buffer = canvas.toBuffer("image/jpeg", { quality: 0.80 })
-  return buffer
+  const padding = 40
+  const maxWidth = width - padding * 2
+  ctx.drawImage(img, padding, padding, imageSize, imageSize)
+  ctx.font = "bold 24px Open Sans"
+  ctx.fillStyle = "#b64f44"
+  ctx.fillText('www.josephrex.me', perc(78, width), padding + imageSize / 2)
+  write(capitalize(text.replace(/-/g, ' ')), ctx, padding, perc(70, height), maxWidth)
+  return canvas.toBuffer("image/jpeg", { quality: 0.80 })
+}
+
+const createImage = async ({ text = '', layout }) => {
+  registerFont('serverless/opengraph/OpenSans-Regular.ttf', { family: 'Open Sans' })
+  const img = await loadImage('https://res.cloudinary.com/strich/image/upload/v1639051030/JR-CodePen_yspcue.svg')
+
+  if(layout === 'list') return await simple(img)
+  return await descriptive(text, img)
 }
 
 exports.handler = async function(event) {
   const { queryStringParameters } = event
-  const image = createImage(queryStringParameters)
+  const image = await createImage(queryStringParameters)
   return {
     isBase64Encoded: true,
     statusCode: 200,
