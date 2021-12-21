@@ -5,7 +5,7 @@ dateless: true
 permalink: /reading-list/
 ---
 Here's a list of books I've picked up and will recommend. For more details on my reading journey,
-[follow me on goodreads][15]. You can also [buy me a book](https://read.gift/u/josephrexme)
+[follow me on goodreads](https://goodreads.com/josephrexme). You can also [buy me a book](https://read.gift/u/josephrexme)
 
 ## [ 2022 ]
 
@@ -212,7 +212,6 @@ to take advantage of it.
 
 [12]:http://algs4.cs.princeton.edu/home/
 [14]:https://www.sandimetz.com/99bottles
-[15]:https://www.goodreads.com/user/show/22575742-joseph-rex
 [16]:https://www.goodreads.com/review/show/2801800510
 [17]:https://basecamp.com/shapeup
 

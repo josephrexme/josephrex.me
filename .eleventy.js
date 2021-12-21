@@ -101,14 +101,18 @@ module.exports = function(config) {
   config.addLayoutAlias("page", "layouts/page.html")
 
   /* Collections */
+  const published = item => {
+    if(process.env.ELEVENTY_ENV === 'development') return true
+    return !item.data.draft
+  }
   config.addCollection("posts", collectionApi => {
-    return collectionApi.getFilteredByGlob("content/posts/*.md").reverse()
+    return collectionApi.getFilteredByGlob("content/posts/*.md").reverse().filter(published)
   })
   config.addCollection("cases", collectionApi => {
-    return collectionApi.getFilteredByGlob("content/cases/*.md").reverse()
+    return collectionApi.getFilteredByGlob("content/cases/*.md").reverse().filter(published)
   })
   config.addCollection("experiments", collectionApi => {
-    return collectionApi.getFilteredByGlob("content/experiments/*.md").reverse()
+    return collectionApi.getFilteredByGlob("content/experiments/*.md").reverse().filter(published)
   })
   // all tags ordered from highest usage to lowest
   config.addCollection('tags', collectionApi => {
