@@ -14,7 +14,7 @@ function getLines(ctx, text, maxWidth) {
 }
 
 function write(text, ctx, x, y, maxWidth) {
-  ctx.font = "600 32px Open Sans"
+  ctx.font = "600 36px Open Sans"
   ctx.fillStyle = "#ffffff"
   ctx.textBaseline = "middle"
   const lineHeight = 50
@@ -41,18 +41,40 @@ const simple = async (img) => {
 }
 
 const descriptive = async (text, img) => {
-  const [width, height] = [1200, 600]
+  const [width, height] = [1200, 630]
   const canvas = createCanvas(width, height)
   const ctx = canvas.getContext("2d")
-  const imageSize = 80
+  const imageSize = 160
   ctx.fillStyle = "#252525"
   ctx.fillRect(0, 0, width, height)
   const padding = 40
   const maxWidth = width - padding * 2
   ctx.drawImage(img, padding, padding, imageSize, imageSize)
-  ctx.font = "bold 24px Open Sans"
+  ctx.save()
+  ctx.shadowColor = 'black'
+  ctx.shadowBlur = 8
+  ctx.shadowOffsetX = 15
+  ctx.shadowOffsetY = 10
+  ctx.font = "bold 28px Open Sans"
   ctx.fillStyle = "#b64f44"
-  ctx.fillText('www.josephrex.me', perc(78, width), padding + imageSize / 2)
+  const website = 'www.josephrex.me'
+  ctx.fillText(website, width - ctx.measureText(website).width - padding, padding + imageSize / 2)
+  ctx.restore()
+  ctx.beginPath()
+  ctx.moveTo(0, perc(50, height))
+  ctx.bezierCurveTo(perc(20, width), perc(30, height), perc(60, width), perc(80, height), width, perc(40, height))
+  ctx.lineTo(width, height)
+  ctx.lineTo(0, height)
+  ctx.closePath()
+  ctx.fillStyle = "#b64f44"
+  ctx.fill()
+  ctx.beginPath()
+  ctx.moveTo(0, perc(50, height))
+  ctx.bezierCurveTo(perc(20, width), perc(30, height), perc(60, width), perc(70, height), width, perc(40, height))
+  ctx.bezierCurveTo(perc(80, width), perc(78, height), perc(18, width), perc(40, height), 0, perc(50, height))
+  ctx.closePath()
+  ctx.fillStyle = "#72332D"
+  ctx.fill()
   write(capitalize(text.replace(/-/g, ' ')), ctx, padding, perc(70, height), maxWidth)
   return canvas.toBuffer("image/jpeg", { quality: 0.80 })
 }
