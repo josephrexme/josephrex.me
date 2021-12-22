@@ -14,10 +14,10 @@ function getLines(ctx, text, maxWidth) {
 }
 
 function write(text, ctx, x, y, maxWidth) {
-  ctx.font = "600 36px Open Sans"
+  ctx.font = "600 46px Open Sans"
   ctx.fillStyle = "#ffffff"
   ctx.textBaseline = "middle"
-  const lineHeight = 50
+  const lineHeight = 55
 
   // wrap each line when max width is reached
   const lines = getLines(ctx, text, maxWidth)
@@ -55,7 +55,7 @@ const descriptive = async (text, img) => {
   ctx.shadowBlur = 8
   ctx.shadowOffsetX = 15
   ctx.shadowOffsetY = 10
-  ctx.font = "bold 28px Open Sans"
+  ctx.font = "bold 32px Open Sans"
   ctx.fillStyle = "#b64f44"
   const website = 'www.josephrex.me'
   ctx.fillText(website, width - ctx.measureText(website).width - padding, padding + imageSize / 2)
