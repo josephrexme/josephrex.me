@@ -1,5 +1,5 @@
 exports.handler = async function() {
-  // hidding email from bots
+  // hiding email from bots
   const names = { first: 'joseph', last: 'rex', middle: 't' }
   const provider = 'gmail.com'
   const constructedEmail = `${Object.values(names).join('.')}@${provider}`
