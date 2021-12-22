@@ -30,12 +30,12 @@ const capitalize = str => `${str.charAt(0).toUpperCase()}${str.slice(1)}`
 const perc = (percentage, value) => percentage / 100 * value
 
 const simple = async (img) => {
-  const [width, height] = [100, 100]
+  const [width, height] = [200, 200]
   const canvas = createCanvas(width, height)
   const ctx = canvas.getContext("2d")
   ctx.fillStyle = "#b64f44"
   ctx.fillRect(0, 0, width, height)
-  const size = 70
+  const size = 120
   ctx.drawImage(img, (width / 2) - (size / 2), (height / 2) - (size / 2), size, size)
   return canvas.toBuffer("image/jpeg", { quality: 0.80 })
 }
