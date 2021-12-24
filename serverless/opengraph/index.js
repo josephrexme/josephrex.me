@@ -95,7 +95,7 @@ exports.handler = async function(event) {
     statusCode: 200,
     headers: {
       'Content-Type': 'image/jpeg',
-      'Cache-control': `public, max-age=${60 * 60 * 24 * 1}` // 1 day cache
+      'Cache-control': `public, max-age=${30}`
     },
     body: Buffer.from(image).toString('base64')
   }
