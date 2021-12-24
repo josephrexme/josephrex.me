@@ -35,6 +35,10 @@ summary::before {
   margin-inline-end: 2rem;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 /* For images to not be able to exceed their container */
 img {
   max-width: 100%;
@@ -159,6 +163,9 @@ h2,h3,h4,h5,h6 {
 /* Article */
 article p + p {
   margin: 3rem 0 0
+}
+article p {
+  word-wrap: break-word;
 }
 article :where(h2,h3,h4,h5,h6) {
   margin: 4rem 0 1rem;
