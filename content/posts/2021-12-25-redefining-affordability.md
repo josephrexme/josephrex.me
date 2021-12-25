@@ -1,5 +1,4 @@
 ---
-draft: true
 author: Joseph Rex
 date: 2021-12-25T01:00:00-05:00
 lastmod: 2021-12-25T01:00:00-05:00
