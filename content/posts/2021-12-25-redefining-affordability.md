@@ -17,8 +17,8 @@ that for myself. I don't disagree with this but my money habit does.
 
 I think of affordability in categories of **GROSS** and **NET**. My gross affordability involves things I can
 afford with an opportunity cost[^1]. It can be foggy to see what we forgo by making a decision to make an expense
-so this can be an unclear decision to make. In my case, I think of the next home or investment I want to buy, if the
-expense puts me in a liability that puts me behind my other financial goals.
+so this can be an unclear decision to make. In my case, I think of the next home or investment I want to buy, or if the
+expense puts me in a liability that sets me behind on my other financial goals.
 
 Net affordability includes things I can afford with no consequences and no opportunity cost.
 These are usually things that I have a planned an expense for or have an existing budget on.
@@ -64,7 +64,7 @@ and things I refuse to accumulate my splurge budget on.
 
 All that said, if you are not a millionaire and will like to gift me a $3000 drone for Christmas, you are
 very welcome to! Ignore everything I said as these rules simply apply to my family. If you do own millions,
-you are welcome to gift me too and I would really appreciate it.
+you are welcome to gift me too and I will really appreciate it.
 
 Merry Christmas 🎅🏾!
 
