@@ -5,7 +5,7 @@ title: Hide mailto email links with Netlify functions
 permalink: /hide-mailto-links-with-netlify-functions/
 tags:
   - netlify
-  - email
+  - tutorial
 ---
 The web is plagued with crawlers in search of anything in the form of an email address.
 They scrape personal websites, public repositories on github, and anywhere indexable.
