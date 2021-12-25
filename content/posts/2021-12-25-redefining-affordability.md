@@ -51,7 +51,7 @@ a little more to get the comfort of being away from other people that may easily
 You may consider it our joined money dial.
 
 There's a chance someone who would buy that drone would not be able to afford a first class ticket.
-This is because they only factored their gross affordability in their purchase decision.
+This is likely because they only factored their gross affordability in their purchase decision.
 
 There are some things I consider unaffordable to me that you might find ridiculous. Here's a few:
 
