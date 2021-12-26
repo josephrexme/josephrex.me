@@ -10,13 +10,30 @@ Here's a list of books I've picked up and will recommend. For more details on my
 ## [ 2022 ]
 
 <details>
-<summary>The midnight library - Matt Haig</summary>
+<summary>Atomic Habits - James Clear</summary>
 
-[Get it on amazon](https://amz.run/58wQ)
+</details>
+
+<details>
+<summary>21 lessons for the 21st century - Yuval Noah Harari </summary>
 
 </details>
 
 ## [ 2021 ]
+
+<details>
+<summary>The midnight library - Matt Haig</summary>
+
+[Get it on amazon](https://amz.run/58wQ)
+
+A fictional book on the life of Nora Reed -- A lady
+who got an opportunity to explore lives that she 
+could have lived through a library with a book of
+regrets that let's her experience all the "what ifs"
+she could have taken in her life while she's in a
+moment between life and death.
+
+</details>
 
 <details>
 <summary>Think again - Adam Grant</summary>
@@ -62,10 +79,6 @@ Here's a list of books I've picked up and will recommend. For more details on my
 </details>
 <details>
 <summary>It doesn't have to be crazy at work - Jason Fried</summary>
-
-</details>
-<details>
-<summary>Atomic Habits - James Clear</summary>
 
 </details>
 <details>
