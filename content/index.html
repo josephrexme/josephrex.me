@@ -5,7 +5,7 @@ pagination:
   data: collections.posts
   size: 6
 ---
-<div style="--d:grid;--mx-grid_template_cols:repeat(2,1fr);--gap:3rem;">
+<div style="--d:grid;--mx-grid_template_cols:repeat(2,1fr);--mx-grid_template_rows:masonry;--gap:3rem;">
 {%- for post in pagination.items -%}
   <section style="--position:relative;--p:5rem;--d:flex;--flex_dir:column;--gap:2rem;--group:active" class="with-anchor-lines">
     <h3 style="--opacity:.7;--font_sz:2rem"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>

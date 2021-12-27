@@ -41,8 +41,8 @@ summary::-webkit-details-marker {
 
 /* For images to not be able to exceed their container */
 img {
-  max-width: 100%;
-  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 /* removes spacing between cells in tables */
@@ -54,7 +54,7 @@ table {
 Site Styles begin here
 **/
 html {
-  width: 100%;
+  inline-size: 100%;
   font-size: 62.5%;
 }
 body {
@@ -211,7 +211,7 @@ article a:where(:hover, :focus) {
 }
 article math {
   display: block;
-  width: fit-content;
+  inline-size: fit-content;
   margin: 2rem auto;
 }
 article figure {
@@ -225,14 +225,14 @@ article figure {
 }
 article figure img {
   display: block;
-  width: 100%;
+  inline-size: 100%;
 }
 article > picture, article > img {
   display: block;
   margin: 2rem auto;
 }
 article > picture img{
-  width: 100%;
+  inline-size: 100%;
 }
 article figcaption {
   padding-block-start: 1rem;
@@ -242,8 +242,8 @@ article figcaption {
 }
 article :where(iframe, video){
   aspect-ratio: 16/9;
-  width: 100%;
-  height: auto;
+  inline-size: 100%;
+  block-size: auto;
   border-radius: .5rem;
 }
 article .footnotes-list{
@@ -259,10 +259,10 @@ article .footnotes-list{
   top: 0;
   left: 0;
   z-index: 1100;
-  width: 100%;
-  height: .5rem;
+  inline-size: 100%;
+  block-size: .5rem;
   background: var(--text-color);
-  box-shadow: 0 0 .4rem rgb(0 3px 4px/.05);
+  box-shadow: 0 0 .4rem rgb(0 0 0/.05);
   transform: scaleX(var(--scale));
   transform-origin: left;
   transition: transform .2s linear;
@@ -306,7 +306,7 @@ article .footnotes-list{
   top: -.5ch;
   display: inline-block;
   opacity: .4;
-  width: 4rem;
+  inline-size: 4rem;
   border-bottom: solid thin currentColor;
   transform: scaleX(.7);
   transform-origin: left;

@@ -47,10 +47,10 @@
 
 /* Dimensions */
 [style*='--w:'] {
-  width: var(--w)
+  inline-size: var(--w)
 }
 [style*='--h:'] {
-  height: var(--h)
+  block-size: var(--h)
 }
 
 /* Text */
@@ -315,10 +315,10 @@
 
   /* Dimensions */
   [style*='--md-w:'] {
-    width: var(--md-w)
+    inline-size: var(--md-w)
   }
   [style*='--md-h:'] {
-    height: var(--md-h)
+    block-size: var(--md-h)
   }
   /* Text */
   [style*='--md-txt_al:'] {
@@ -414,10 +414,10 @@
 
   /* Dimensions */
   [style*='--mx-w:'] {
-    width: var(--mx-w)
+    inline-size: var(--mx-w)
   }
   [style*='--mx-h:'] {
-    height: var(--mx-h)
+    block-size: var(--mx-h)
   }
   /* Text */
   [style*='--mx-txt_al:'] {
