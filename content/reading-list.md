@@ -26,6 +26,8 @@ Here's a list of books I've picked up and will recommend. For more details on my
 
 [Get it on amazon](https://amz.run/58wQ)
 
+[See my review on Goodreads](https://www.goodreads.com/review/show/4416674982)
+
 A fictional book on the life of Nora Reed -- A lady
 who got an opportunity to explore lives that she 
 could have lived through a library with a book of
