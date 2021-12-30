@@ -35,12 +35,14 @@
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-footnote": "^3.0.3",
     "outdent": "^0.8.0",
+    "puppeteer": "^13.0.1",
     "remove-markdown": "^0.3.0",
     "terser": "^5.10.0"
   },
   "dependencies": {
     "canvas": "^2.8.0",
+    "chrome-aws-lambda": "^10.1.0",
     "dotenv": "^10.0.0",
-    "puppeteer": "^13.0.1"
+    "puppeteer-core": "^13.0.1"
   }
 }
