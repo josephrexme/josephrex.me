@@ -2,7 +2,6 @@ const fs = require('fs')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const markdownIt = require('markdown-it')
-const { default: axios } = require('axios')
 const CleanCSS = require('clean-css')
 const { minify } = require('terser')
 const htmlmin = require('html-minifier')
@@ -78,14 +77,7 @@ module.exports = function(config) {
     return formatted ? lib.formatDate(time) : lib.formatISO(time)
   })
   config.addAsyncShortcode("webmentions", async (urlPath) => {
-    try {
-      const res = await axios(`https://webmention.io/api/mentions.jf2?target=https://www.josephrex.me${urlPath}&wm-property=like-of`)
-      const likes = res.data.children.length
-      return lib.pluralize('twitter like', likes, true)
-    } catch (error) {
-      console.error(error)
-      return 'Could not get likes'
-    }
+    return await lib.webmentions(urlPath)
   })
   config.addShortcode("image", (url, { alt, ...attrs}) => {
     return lib.image(url, { alt, ...attrs })

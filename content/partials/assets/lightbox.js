@@ -50,7 +50,6 @@ function lightbox(selector = "img", config) {
       dialog.style.width = `min(90%, ${px(width)}`
       dialog.style.height = px(height)
       dialog.style.left = px(destination.left)
-      console.log({ height, wh: window.innerHeight })
       dialog.style.top = px(destination.top)
       dialog.style.transition = 'transform .4s cubic-bezier(.5, 0, .5, 1)'
       const multiplier = {

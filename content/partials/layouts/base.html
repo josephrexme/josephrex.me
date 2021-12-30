@@ -141,7 +141,7 @@
   {% endif %}
   {% if layout != "list" %}
   <script>{{ lightbox | jsmin | safe }}</script>
-  <script>lightbox('img:not(.no-zoom)', {backdropBg: 'var(--bg-color)'});</script>
+  <script>lightbox('img:not(.no-zoom, [data-replies] img)', {backdropBg: 'var(--bg-color)'});</script>
   {% endif %}
   {% if not site.config.environment.isDev %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
