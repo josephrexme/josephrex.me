@@ -23,9 +23,7 @@ The marketing website [bookstyleq.com](https://bookstyleq.com) was initially des
 The website was built using **Next.js**, **Styled Components**, and a few set of related technologies to get
 a website out in a short time.
 
-<figure class="video">
-<iframe src="https://www.youtube-nocookie.com/embed/OOuSQiyL2EU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'OOuSQiyL2EU', 'bookstyleq.com' %}
 
 ## Blog
 The styleQ blog was created using **Gatsby.js** and **Contentful** headless CMS. It offers variations of light and dark

@@ -75,9 +75,7 @@ for the little things you want and not need. The things that make you happy, lik
 playstation 5, some new gadgets, makeup. I love Ramit Sethi's approach to knowing our money
 dials and satisfying them.
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BmAwa1nnB6w?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'BmAwa1nnB6w', 'I Will Teach You to Be Rich | Ramit Sethi | Talks at Google' %}
 
 If you are on something like the [FIRE][2] movement and/or will like to remain on a
 conservative budget, this sinking fund can also be where you save for bulk purchases,

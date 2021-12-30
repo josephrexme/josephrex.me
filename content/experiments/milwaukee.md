@@ -17,9 +17,7 @@ have lived but I was shooting for something a little more modern and landed at t
 
 {% image '49933920_391818328060375_5642777912430134632_n_hd8r5t', {alt: 'channel shifted photo of downtown milwaukee', width: 720, height: 720} %}
 
-<figure>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FgXPP7codCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'FgXPP7codCQ', 'Channel shifting + smoke animation of MKE at Milwaukee downtown area' %}
 
 ## Logo for MKE JAVA meetup
 

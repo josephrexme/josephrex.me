@@ -24,24 +24,12 @@ building up ideas of my own.
 
 ## Day 1 - Tiled lines
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="Tiled Lines" src="https://codepen.io/josephrexme/embed/preview/vYeLedb?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/josephrexme/pen/vYeLedb">
-  Tiled Lines</a> by Joseph Rex (<a href="https://codepen.io/josephrexme">@josephrexme</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+{% codepen 'vYeLedb', 'Tiled Lines' %}
 
 ## Day 2 - Joy division
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="Joy Division" src="https://codepen.io/josephrexme/embed/preview/wvrGpZY?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/josephrexme/pen/wvrGpZY">
-  Joy Division</a> by Joseph Rex (<a href="https://codepen.io/josephrexme">@josephrexme</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+{% codepen 'wvrGpZY', 'Joy Division' %}
 
 ## Day 3 - Cubic disarray
 
-<iframe height="450" style="width: 100%;" scrolling="no" title="Cubic disarray" src="https://codepen.io/josephrexme/embed/preview/KKXzBRX?default-tab=result&theme-id=39976" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/josephrexme/pen/KKXzBRX">
-  Cubic disarray</a> by Joseph Rex (<a href="https://codepen.io/josephrexme">@josephrexme</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+{% codepen 'KKXzBRX', 'Cubic disarray' %}

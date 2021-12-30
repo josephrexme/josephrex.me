@@ -17,7 +17,7 @@ I've seen different front-end developers start their projects. In most cases for
 
 You speak of user experience? You've killed it even before starting your project at all. If you fall in that category I described above. Then you need a change henceforth if you are not allergic to advancements.
 
-I think those frameworks are good but <a href="http://marketblog.envato.com/guest/thought-css-frameworks/" target="_blank">it shouldn't be your steps for every single project you do</a>. That's just lame! I also understand you find some of these things easier and faster to use but to be a good developer, you need to come out of your comfort zone.
+I think those frameworks are good but <a href="http://marketblog.envato.com/guest/thought-css-frameworks/" target="_blank">it shouldn't be your steps for every single project you do</a>. That's just lame! I also understand you find some of these things easier and faster to use but to be a good developer, you need to come out of your comfort zone.
 
 I'm probably not doing it the best way it may be done but I have a conviction that I'm doing it right.
 

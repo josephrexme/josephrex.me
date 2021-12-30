@@ -43,9 +43,7 @@ matters?
 A smart friend of mine gave an interesting talk at a conference on community
 disagreement in our software industry:
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7-C0KGA7xb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube '7-C0KGA7xb4', "Why Can't We All Just Get Along? by Chidinma Kalu | JSConf EU 2019" %}
 
 and the crux of the talk about getting along is that we have people with a great
 lack of empathy who constantly make decisions that hurt other people without

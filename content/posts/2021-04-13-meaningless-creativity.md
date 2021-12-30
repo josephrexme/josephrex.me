@@ -41,16 +41,12 @@ these skills I desire is by making things even when they are meaningless.
 Steve Gardner (whose work I follow closely) talks about building meaningless things in his
 video here.
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q1qSxmfMIcI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'q1qSxmfMIcI', 'Steve Gardner - Make More Pointless Things' %}
 
 This along with Simone Giertz's "Why you should make useless things" are big motivations
 for the kinds of projects I work on
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c0bsKc4tiuY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'c0bsKc4tiuY', 'Why you should make useless things | Simone Giertz' %}
 
 I am by no means at a point where I've made enough pointless/useless/meaningless things as I
 would want and as such, I am behind on the skills I aim to polish from doing that.

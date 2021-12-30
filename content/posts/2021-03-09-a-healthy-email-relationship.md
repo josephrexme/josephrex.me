@@ -19,9 +19,7 @@ that didn't require a lot of effort that power users would typically apply for a
 enhanced email experience. Inbox did a lot of things I can't try to start naming without
 leaving something out, so I'll let this video help with that.
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VCo3zZ0P4vU?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'VCo3zZ0P4vU', 'Meet Inbox by Gmail' %}
 
 With Inbox, people felt like they were able to take back control. It's the same feeling
 you get when you figure out financial budgets and plans that work just right for you, or

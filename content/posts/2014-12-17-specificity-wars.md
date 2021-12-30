@@ -28,9 +28,7 @@ The class chaining should always be used in place of !important.
 
 I made this pen to create a specificity war.
 
-<p data-height="268" data-theme-id="0" data-slug-hash="PwzPpo" data-default-tab="result" data-user="bl4ckdu5t" class='codepen'>See the Pen <a href='http://codepen.io/bl4ckdu5t/pen/PwzPpo/'>A specificity test</a> by Joseph Rex (<a href='http://codepen.io/bl4ckdu5t'>@bl4ckdu5t</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
+{% codepen 'PwzPpo', 'A specificity test' %}
 
 If you look through the stylesheet of the pen you will see I had a 30 chains class selector, an id selector, and a class selector with !important. Well, I know, !important overrules our chained class naming but when we are on a specificity fight with normal class and id selectors, the class chaining will be king. So for no reason should we still use the !important over class chaining except we already have it used in the rules we are overruling. Then the order of precedence will be our win point.
 

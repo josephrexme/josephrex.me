@@ -52,9 +52,7 @@ The golden ratio is represented with <span>&phi;</span> (phi) which can also be 
 
 Since we're here to talk about design and aesthetics, let's start with the least technical - Natural Beauty. I mentioned earlier that patterns of the golden ratio can be found in human beauty and in the natural things around us. Studies of attractiveness have backed up the theory of the existence of golden ratio in the facial construct of humans. Here is a video that illustrates that
 
-<figure class="video">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/kKWV-uU_SoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'kKWV-uU_SoI', 'Facial Beauty Analysis and the Golden Ratio (Phi, 1.618), featuring Florence Colgate and PhiMatrix' %}
 
 while research still shows that beauty is not solely based on phi, we can try to recreate a face in the wrong proportions or an off-ratio and we will end up with something ugly. Something that a malformed person might look like after an accident. But there are people who aren't considered attractive and yet haven't been malformed in any form of accident. In most cases, their faces might still be in the precise golden ratio, but they might not be sculpted well enough to fit other beauty metrics. The [marquardt beauty pentagon][3] is an example of one of such metrics and here is my wife placed behind the pentagon mask. It fits nicely because she's gorgeous.
 
@@ -84,9 +82,7 @@ Logo designers achieve precision with their logos with the use of golden circles
 
 The video below shows the derivation of stunning logos through the circles derived from the spirals.
 
-<figure class="video">
-  <iframe width="1364" height="776" src="https://www.youtube.com/embed/vct4pM4Bk70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'vct4pM4Bk70', 'How to design a logo with golden Ratio | Adobe Illustrator Tutorial' %}
 
 I love logos and designing them have gradually become a part of what I do along with software development. Here are some logos in the wild with good use of the golden ratio:
 
@@ -102,9 +98,7 @@ If you choose to apply the golden ratio to logos you make, you shouldn't bother 
 ## Rule of thirds
 The golden ratio extends to fields of photography and film-making. It obviously should since it is evident in us and the things around us and these fields are centered around capturing live physical events or simulating them. The rule of thirds is a guideline in cropping or positioning cameras against the subject for aesthetic results. Here is a good video on composition and cinematography that explains this in detail
 
-<figure class="video">
-  <iframe width="1364" height="776" src="https://www.youtube.com/embed/cIvGRytmRaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'cIvGRytmRaw', 'Mastering Composition + Cinematography with Will Smith' %}
 
 <hr>
 

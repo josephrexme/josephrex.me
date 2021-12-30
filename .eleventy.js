@@ -79,8 +79,14 @@ module.exports = function(config) {
   config.addAsyncShortcode("webmentions", async (urlPath) => {
     return await lib.webmentions(urlPath)
   })
-  config.addShortcode("image", (url, { alt, ...attrs}) => {
-    return lib.image(url, { alt, ...attrs })
+  config.addShortcode("image", (url, attributes) => {
+    return lib.image(url, attributes)
+  })
+  config.addShortcode("codepen", (id, title)  => {
+    return lib.codepen(id, title)
+  })
+  config.addShortcode("youtube", (id, title)  => {
+    return lib.youtube(id, title)
   })
   config.addAsyncShortcode("twitter", async id => {
     return await lib.twitter(id)

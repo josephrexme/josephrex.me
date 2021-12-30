@@ -48,10 +48,7 @@ $('#uploadAvatar').change(function(){
 
 Notice my use of addRule there. That's not a built-in JavaScript function. I had used it because my upload preview is shown on a pseudo element on top of the actual image rather than as a replacement of the image. This is useful when you are using an image tag to load the actual image and setting a background wouldn't overwrite the displayed image.
 
-There's no regular way to add styles to pseudo elements with JavaScript so I used this [neat little function][2] by [Yannick Albert][3]. This is a working demo of this:
-
-<p data-height="268" data-theme-id="0" data-slug-hash="yyWrxO" data-default-tab="result" data-user="bl4ckdu5t" class='codepen'>See the Pen <a href='http://codepen.io/josephrexme/pen/yyWrxO/'>yyWrxO</a> by Joseph Rex (<a href='http://codepen.io/josephrexme'>@josephrexme</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+There's no regular way to add styles to pseudo elements with JavaScript so I used this [neat little function][2] by [Yannick Albert][3].
 
 
 [1]: http://www.dropzonejs.com/

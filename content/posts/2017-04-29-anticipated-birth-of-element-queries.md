@@ -169,9 +169,7 @@ leaving the browser to make a decision of a reliable container after traversing 
 
 How does EQCSS handle this? As said earlier, EQCSS does not use container queries but element queries hence there's no such thing as scoping child elements within their parents. It simply picks an element and gives it a condition to be met. What this means is, when the problem above is addressed with eqcss, the child element would just always base on its on min-width since  the scoped element relies on it. It does cause a few self-referencing issue but CSS already has self referencing issues. This video explains:
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QfM_JwSDdjo" frameborder="0" allowfullscreen></iframe>
-</figure>
+{% youtube 'QfM_JwSDdjo', 'Does Circularity (Self Reference) Pose a Problem for Element Queries?' %}
 
 Here's eqcss addressing the problem above. As of the time of testing it only behaves weird in Chrome Canary (Chrome 60) and that's not surprising as we see [with the growth of Chrome things get weird like it did with will-change][26].
 

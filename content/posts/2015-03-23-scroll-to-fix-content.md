@@ -66,13 +66,6 @@ Toggling a class `fixed` that gives the element a fixed position a new top value
 }
 ```
 
-Here's a demo pen to show it in action
-
-<p data-height="268" data-theme-id="0" data-slug-hash="myLbNw" data-default-tab="result" data-user="bl4ckdu5t" class='codepen'>See the Pen <a href='http://codepen.io/bl4ckdu5t/pen/myLbNw/'>Scroll Fix content</a> by Joseph Rex (<a href='http://codepen.io/bl4ckdu5t'>@bl4ckdu5t</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-My home page has the perfect demo for it.
-
 [1]: https://twitter.com/chriscoyier
 [2]: https://css-tricks.com/scroll-fix-content/
 [3]: http://css-tricks.com/magic-numbers-in-css/

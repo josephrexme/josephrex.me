@@ -39,9 +39,7 @@ people end up chasing throughout their lifetime and never feeling fulfilled abou
 seen in the Pixar movie - Soul. If you haven't seen the movie, here's a short explainer
 video I would really recommend you watch.
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K5BqYgpxPoY?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'K5BqYgpxPoY', "Pixar's Soul: Find Your Life Purpose in 8 Minutes" %}
 
 A wrong interpretation of this movie will be concluding that we do not need purpose as it can only
 lead us to feeling lost and dissatisfied in life. Finding purpose is only really difficult when

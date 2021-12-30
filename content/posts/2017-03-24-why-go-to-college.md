@@ -36,9 +36,7 @@ Purpose is a person's sense of resolve or determination according to the Apple d
 
 Now you may think if you have passion you have a purpose but I urge you to see this video
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VZEThJNvnUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube 'VZEThJNvnUA', 'Episode 4 | Advice From The Most Successful People On The Planet | IGNORE Social Media |' %}
 
 At a point in the video purpose is defined as whatever you're trying to accomplish with an understanding of why it's important and a tenacity to never give up on it. And passion is what you like, what feels good, what you find that you want to do but not necessarily need to do. Passion is considered to be dangerous because it is admiration when you really need aspiration.
 

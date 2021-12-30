@@ -26,9 +26,7 @@ of realization as.
 > Every man has two lives, and the second starts when they realize they have just
 > one.
 
-<figure class="video">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3-wJiblIWa0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</figure>
+{% youtube '3-wJiblIWa0', 'Every Man Has Two Lives - Naval Ravikant' %}
 
 To give an example, I grew up with a Nigerian dad who told impeccable stories about
 his childhood academic success. This stories might have been true or absolute lies
