@@ -1,20 +1,24 @@
+require('dotenv').config()
 const chromium = require('chrome-aws-lambda')
+const puppeteer = require('puppeteer-core')
 
 const createPDF = async ({ url = 'https://resume.josephrex.me' }) => {
-  const envOptions = process.env.ELEVENTY_ENV === 'production' ? {
-    executablePath: await chromium.executablePath,
-  } : {}
-  const browser = await chromium.puppeteer.launch({
-    args: chromium.args,
-    defaultViewport: chromium.defaultViewport,
-    headless: chromium.headless,
-    ...envOptions
-  })
-  const page = await browser.newPage()
-  await page.goto(url)
-  const pdf = await page.pdf({ format: 'A4' })
-  await browser.close()
-  return pdf
+  try {
+    const browser = await puppeteer.launch({
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      executablePath: process.env.CHROME_EXEC_PATH || await chromium.executablePath,
+      headless: chromium.headless,
+    })
+    const page = await browser.newPage()
+    await page.goto(url)
+    const pdf = await page.pdf({ format: 'A4' })
+    await browser.close()
+    return pdf
+  } catch (error) {
+    console.error(error)
+    return [0]
+  }
 }
 
 exports.handler = async function(event) {
