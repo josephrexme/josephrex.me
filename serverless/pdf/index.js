@@ -2,13 +2,12 @@ require('dotenv').config()
 const chromium = require('chrome-aws-lambda')
 
 const createPDF = async ({ url = 'https://resume.josephrex.me' }) => {
-  const execPath = await chromium.executablePath
   let browser
   try {
     browser = await chromium.puppeteer.launch({
       args: chromium.args,
       defaultViewport: chromium.defaultViewport,
-      executablePath: process.env.CHROME_EXEC_PATH || execPath,
+      executablePath: process.env.CHROME_EXEC_PATH || await chromium.executablePath,
       headless: chromium.headless,
       ignoreHTTPSErrors: true,
     })
