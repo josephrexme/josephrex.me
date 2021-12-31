@@ -20,7 +20,7 @@ const createPDF = async ({ url = 'https://resume.josephrex.me' }) => {
     console.error(error)
     return [0]
   } finally {
-    await browser.close()
+    if(browser) await browser.close()
   }
 }
 
