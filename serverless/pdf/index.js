@@ -1,23 +1,26 @@
 require('dotenv').config()
 const chromium = require('chrome-aws-lambda')
-const puppeteer = require('puppeteer-core')
 
 const createPDF = async ({ url = 'https://resume.josephrex.me' }) => {
+  const execPath = await chromium.executablePath
+  let browser
   try {
-    const browser = await puppeteer.launch({
+    browser = await chromium.puppeteer.launch({
       args: chromium.args,
       defaultViewport: chromium.defaultViewport,
-      executablePath: process.env.CHROME_EXEC_PATH || await chromium.executablePath,
+      executablePath: process.env.CHROME_EXEC_PATH || execPath,
       headless: chromium.headless,
+      ignoreHTTPSErrors: true,
     })
     const page = await browser.newPage()
     await page.goto(url)
     const pdf = await page.pdf({ format: 'A4' })
-    await browser.close()
     return pdf
   } catch (error) {
     console.error(error)
     return [0]
+  } finally {
+    await browser.close()
   }
 }
 
