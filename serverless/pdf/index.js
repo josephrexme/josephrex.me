@@ -5,7 +5,12 @@ const createPDF = async ({ url = 'https://resume.josephrex.me' }) => {
   let browser
   try {
     browser = await chromium.puppeteer.launch({
-      args: chromium.args,
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--single-process'
+      ],
       defaultViewport: chromium.defaultViewport,
       executablePath: process.env.CHROME_EXEC_PATH || await chromium.executablePath,
       headless: chromium.headless,
