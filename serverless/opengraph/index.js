@@ -83,7 +83,7 @@ const createImage = async ({ text = '', layout }) => {
   registerFont('serverless/opengraph/OpenSans-Regular.ttf', { family: 'Open Sans' })
   const img = await loadImage('https://res.cloudinary.com/strich/image/upload/v1639051030/JR-CodePen_yspcue.svg')
 
-  if(layout === 'list') return await simple(img)
+  if(layout === 'list' || layout === 'base') return await simple(img)
   return await descriptive(text, img)
 }
 

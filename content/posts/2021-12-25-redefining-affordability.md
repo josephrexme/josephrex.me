@@ -1,7 +1,7 @@
 ---
 author: Joseph Rex
 date: 2021-12-25T01:00:00-05:00
-lastmod: 2021-12-25T01:00:00-05:00
+lastmod: 2022-01-02T11:15:00-05:00
 title: Redefining affordability
 permalink: /redefining-affordability/
 tags:
@@ -41,8 +41,8 @@ and it's up to us to either use it all up or let it roll over to subsequent mont
 purchases. Technically, I could make the purchase of a $3000 drone a net affordability if I just let my
 splurge budget roll over till it reaches the cost of sale. Our splurge budgets are determined by our net
 worth at any given time so it will take us being millionaires for the number of rollovers it takes to get
-the drone to not be dreadfully long, and this explains my perception that it takes being a millionaire to buy
-a $3000 drone -- we're not there yet.
+the drone to not be dreadfully long. This explains my perception that it takes being a millionaire to buy
+a $3000 drone[^2] -- we're not there yet.
 
 Our net affordability doesn't just tie around our budgets. We are currently planning a flight together and
 we plan to be on first class because we can afford it (net). This is a net affordability because we have a
@@ -57,7 +57,7 @@ There are some things I consider unaffordable to me that you might find ridiculo
 
 - I can't afford to pay for more than one domain name (I only own josephrex.me)
 - I can't afford to own more than 7 pairs of shoes
-- I can't afford HBO or AppleTV because I already pay Netflix, Hulu, and Disney+[^2]
+- I can't afford HBO or AppleTV because I already pay Netflix, Hulu, and Disney+[^3]
 
 These are simply not things I am willing to put over the more important goals we have as a couple,
 and things I refuse to accumulate my splurge budget on.
@@ -69,4 +69,5 @@ you are welcome to gift me too and I will really appreciate it.
 Merry Christmas 🎅🏾!
 
 [^1]: Opportunity cost is what must be forgone to get something else. [See examples](https://examples.yourdictionary.com/opportunity-cost-examples.html)
-[^2]: I would pause another subscription for AppleTV when a new episode of Ted Lasso is up.
+[^2]: I might reconsider if I would do it with a slightly lesser net worth than a million in the future but I doubt that.
+[^3]: I would pause another subscription for AppleTV when a new episode of Ted Lasso is up.
