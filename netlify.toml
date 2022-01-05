@@ -3,7 +3,11 @@
   command = "cp ./libx86/* node_modules/canvas/build/Release && npm run debug"
 
 [functions]
+  node_bundler = "esbuild"
   directory = "serverless"
+
+[functions.pdf]
+  external_node_modules = ["chrome-aws-lambda"]
 
 [[redirects]]
   from = "/feed/"
