@@ -8,7 +8,7 @@ permalink: /tags/{{ tag }}/
 ---
 {% include "header.html" %}
 <div style="--w:var(--container);--mx:auto">
-  <h1 style="--txt_al:center;--font_sz:3.8rem;--md-font_sz:6rem">Articles tagged “{{ tag }}”</h1>
+  <h1 style="--font_sz:3.8rem;--md-font_sz:6rem">Articles tagged “{{ tag }}”</h1>
   {% set taglist = collections[ tag ] %}
   <div style="--mt:8rem">
     <ol>
