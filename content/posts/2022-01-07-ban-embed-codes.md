@@ -1,8 +1,8 @@
 ---
 author: Joseph Rex
 title: Ban embed codes
-date: 2022-01-09T09:04:19-05:00
-lastmod: 2022-01-09T09:04:19-05:00
+date: 2022-01-06T23:50:19-05:00
+lastmod: 2022-01-06T23:50:19-05:00
 permalink: /ban-embed-codes/
 tags:
   - opinions
