@@ -170,6 +170,9 @@
 [style*='--grid_col_start:'] {
   grid-column-start: var(--grid_col_start);
 }
+[style*='--grid_area:'] {
+  grid-area: var(--grid_area);
+}
 [style*='--order:'] {
   order: var(--order);
 }

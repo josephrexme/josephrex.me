@@ -46,7 +46,7 @@
   <meta property="og:description" content="{{ page_description }}">
   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
   <meta name="twitter:url" content="{{ page.url | absURL }}">
-  <meta name="twitter:card" content="{% if layout == 'list' %}summary{% else %}summary_large_image{% endif %}">
+  <meta name="twitter:card" content="{% if layout == 'list' or layout == 'base' %}summary{% else %}summary_large_image{% endif %}">
   <meta name="twitter:site" content="@{{ site.config.username }}">
   <meta name="twitter:creator" content="@{{ site.config.username }}">
   <meta name="twitter:title" content="{{ title or site.config.title }}">
@@ -139,7 +139,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer" async defer></script>
   <script>{{ js | jsmin | safe }}</script>
   {% endif %}
-  {% if layout != "list" %}
+  {% if layout != "list" and layout != "base" %}
   <script>{{ lightbox | jsmin | safe }}</script>
   <script>lightbox('img:not(.no-zoom, [data-replies] img)', {backdropBg: 'var(--bg-color)'});</script>
   {% endif %}

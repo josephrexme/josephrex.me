@@ -1,13 +1,13 @@
 /* Preferred box-sizing value */
+*:where(:not(iframe, canvas, img, svg, video, mark, sup, strong, em, s, abbr, ul, ol, dl):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-*:where(:not(iframe, canvas, img, svg, video, mark, sup, strong, em, s, abbr, ul, ol, dl):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
 }
 
 details {
