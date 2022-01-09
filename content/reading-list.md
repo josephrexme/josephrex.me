@@ -10,12 +10,34 @@ Here's a list of books I've picked up and will recommend. For more details on my
 ## [ 2022 ]
 
 <details>
-<summary>Atomic Habits - James Clear</summary>
+<summary>21 lessons for the 21st century - Yuval Noah Harari </summary>
+
+[Get it on amazon](https://amz.run/5D8g)
 
 </details>
 
 <details>
-<summary>21 lessons for the 21st century - Yuval Noah Harari </summary>
+<summary>Atomic Habits - James Clear</summary>
+
+[Get it on amazon](https://amz.run/5D8e)
+
+[Read my review on goodreads](https://www.goodreads.com/review/show/4444979809)
+
+**Genres:** Nonfiction, psychology
+
+The book explores the science of habits. How to start good habits and lose bad ones.
+The author described how habits are formed through systems we create to change our
+behaviors. Rather than simply setting goals, having systems will lead us to our goals
+and beyond. Some concepts I learned about through the book are:
+
+- Habit stacking
+- Principle of least action
+- Ulysses pact
+- Goldilocks rule
+- Aggregation of marginal changes
+- Plateau of latent potential
+- Temptation bundling - making sure to do things we like only as an incentive to things
+we need to do.
 
 </details>
 
@@ -26,7 +48,9 @@ Here's a list of books I've picked up and will recommend. For more details on my
 
 [Get it on amazon](https://amz.run/58wQ)
 
-[See my review on Goodreads](https://www.goodreads.com/review/show/4416674982)
+[Read my review on Goodreads](https://www.goodreads.com/review/show/4416674982)
+
+**Genres:** Fiction, Fantasy, Contemporary
 
 A fictional book on the life of Nora Reed -- A lady
 who got an opportunity to explore lives that she 
@@ -47,18 +71,6 @@ moment between life and death.
 <summary>A promised land - Barack Obama</summary>
 
 [Get it on amazon](https://amzn.to/2LFcFtY)
-
-</details>
-<details>
-<summary>Mathematics for 3D Game Programming and Computer Graphics</summary>
-
-[Get it on amazon](https://amzn.to/3apTqxG)
-
-</details>
-<details>
-<summary>Foundation HTML5 Animation with JavaScript</summary>
-
-[Get it on amazon](https://amzn.to/3emGKJ4)
 
 </details>
 
@@ -107,7 +119,7 @@ moment between life and death.
 <details>
 <summary>The 21-day financial fast - Michelle Singletary</summary>
 
-[Read my review on goodreads][16]
+[Read my review on goodreads](https://www.goodreads.com/review/show/2801800510)
 
 </details>
 <details>
@@ -174,6 +186,10 @@ to take advantage of it.
 <details>
 <summary>RiceTea - Julien McArdle</summary>
 
+[Read my review on goodreads](https://www.goodreads.com/review/show/2037579165)
+
+**Genres:** Fiction, Computer Hacking
+
 </details>
 <details>
 <summary>Art of Deception - Kevin Mitnick</summary>
@@ -189,6 +205,18 @@ to take advantage of it.
 </details>
 
 ## [ Recurring ]
+<details>
+<summary>Mathematics for 3D Game Programming and Computer Graphics</summary>
+
+[Get it on amazon](https://amzn.to/3apTqxG)
+
+</details>
+<details>
+<summary>Foundation HTML5 Animation with JavaScript</summary>
+
+[Get it on amazon](https://amzn.to/3emGKJ4)
+
+</details>
 <details>
 <summary>Cracking the coding interview - Gayle Mcdowell</summary>
 
@@ -227,7 +255,6 @@ to take advantage of it.
 
 [12]:http://algs4.cs.princeton.edu/home/
 [14]:https://www.sandimetz.com/99bottles
-[16]:https://www.goodreads.com/review/show/2801800510
 [17]:https://basecamp.com/shapeup
 
 

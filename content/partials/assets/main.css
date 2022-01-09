@@ -39,6 +39,10 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+details > p + p{
+  margin-block-start: 1rem;
+}
+
 /* For images to not be able to exceed their container */
 img {
   max-inline-size: 100%;
@@ -161,7 +165,7 @@ h2,h3,h4,h5,h6 {
 }
 
 /* Article */
-article p + p {
+article > p + p {
   margin: 3rem 0 0
 }
 article p {
