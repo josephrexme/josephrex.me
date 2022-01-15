@@ -4,6 +4,7 @@ const chromium = require('chrome-aws-lambda')
 const createPDF = async ({ url = 'https://resume.josephrex.me' }) => {
   let browser
   try {
+    console.log('before launch')
     browser = await chromium.puppeteer.launch({
       args: chromium.args,
       defaultViewport: chromium.defaultViewport,
@@ -11,9 +12,14 @@ const createPDF = async ({ url = 'https://resume.josephrex.me' }) => {
       headless: chromium.headless,
       ignoreHTTPSErrors: true,
     })
+    console.log('after launch')
     const page = await browser.newPage()
+    console.log('after new page')
     await page.goto(url)
-    const pdf = await page.pdf({ format: 'A4' })
+    console.log('after goto url')
+    // const pdf = await page.pdf({ format: 'A4' })
+    const pdf = await page.screenshot()
+    console.log('after screenshot')
     return pdf
   } catch (error) {
     console.error(error)
@@ -30,7 +36,8 @@ exports.handler = async function(event) {
     isBase64Encoded: true,
     statusCode: 200,
     headers: {
-      'Content-Type': 'application/pdf',
+      // 'Content-Type': 'application/pdf',
+      'Content-Type': 'image/png',
       'Cache-control': `public, max-age=${30}`
     },
     body: Buffer.from(pdf).toString('base64')
