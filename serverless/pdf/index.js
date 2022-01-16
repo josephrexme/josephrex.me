@@ -3,12 +3,14 @@ const chromium = require('chrome-aws-lambda')
 
 const createPDF = async ({ url = 'https://resume.josephrex.me' }) => {
   let browser
+  const executablePath = process.env.CHROME_EXEC_PATH || await chromium.executablePath
   try {
     console.log('before launch')
+    console.log({ args: chromium.args, executablePath, viewport: chromium.defaultViewport, headless: chromium.headless })
     browser = await chromium.puppeteer.launch({
       args: chromium.args,
       defaultViewport: chromium.defaultViewport,
-      executablePath: process.env.CHROME_EXEC_PATH || await chromium.executablePath,
+      executablePath,
       headless: chromium.headless,
       ignoreHTTPSErrors: true,
     })
