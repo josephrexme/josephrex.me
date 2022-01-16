@@ -5,9 +5,6 @@
 [functions]
   directory = "serverless"
 
-[functions.pdf]
-  external_node_modules = ["chrome-aws-lambda"]
-
 [[redirects]]
   from = "/feed/"
   to = "/feed.xml"
