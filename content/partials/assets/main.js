@@ -3,19 +3,20 @@
   function ready(cb) {
     /in/.test(document.readyState) // in = loadINg
       ? setTimeout(ready.bind(null, cb), 9)
-      : cb();
+      : cb()
   }
   ready(function(){
     // Progressive reading indicator
-    const indicator = document.querySelector('.scroll-progress');
+    const indicator = document.querySelector('.scroll-progress')
+    const suggestions = document.querySelector('#post-suggestions')
     if(indicator){
       document.addEventListener('scroll', function(e) {
-        const dh = document.body.scrollHeight;
-        const wh = window.innerHeight;
-        const pos = window.scrollY;
-        const footerHeight = 525;
-        const perc = pos / (dh - footerHeight - wh) * 100;
-        indicator.style.setProperty('--scale', (perc / 100));
+        const dh = document.body.scrollHeight
+        const wh = window.innerHeight
+        const pos = window.scrollY
+        const footerHeight = suggestions ? dh - suggestions.offsetTop : 525
+        const perc = pos / (dh - footerHeight - wh) * 100
+        indicator.style.setProperty('--scale', (perc / 100))
       })
     }
   });

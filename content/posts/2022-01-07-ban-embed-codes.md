@@ -57,7 +57,7 @@ to ConvertKit from Mailchimp with one of the reasons being that he can now have 
 
 Besides twitter, 2 other websites I find that I frequently want to embed are CodePen and YouTube. They both offer iframe alternatives. Codepen's [script embed](https://blog.codepen.io/documentation/embedded-pens/) offers some options like [prefill embeds](https://blog.codepen.io/documentation/prefill-embeds/) which may make it an option for some. I decided that the
 iframe can be sufficient for my needs by having it preconfigured the way I like it. When using YouTube's iframe, be sure to use
-the one without cookies to track your users -- youtube-nocookie.com.
+the one without cookies to track your users --- youtube-nocookie.com.
 
 One of the many woes of embed scripts is the unpredictability you get with them. Here's the same tweet as above in 2 browsers
 

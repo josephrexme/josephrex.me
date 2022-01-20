@@ -190,6 +190,10 @@ to take advantage of it.
 
 **Genres:** Fiction, Computer Hacking
 
+Unfortunately, this book disappeared from the face of earth but it was one of my
+favorite books at a time when I was fascinated with computer hacking and phreaking.
+The book is a lot similar to the 1994 movie -- Hackers.
+
 </details>
 <details>
 <summary>Art of Deception - Kevin Mitnick</summary>

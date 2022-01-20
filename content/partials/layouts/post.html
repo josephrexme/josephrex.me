@@ -36,10 +36,7 @@ layout: base
       <a href="https://twitter.com/intent/tweet/?text={{title}}&url={{permalink|absURL}}&via=josephrexme" target="_blank" rel="noreferrer" style="--cl:var(--link-color)">Share on Twitter</a>
     </div>
   </div>
-  <div>
-    {% webmentions page.url %}
-  </div>
-  <div style="--my:4rem;--d:flex;--justify_content:space-between;--align_items:center">
+  <div style="--my:4rem;--d:flex;--justify_content:space-between;--align_items:center" id="post-suggestions">
     <div style="--d:grid;--gap:1rem;">
       {%- if previousPost %}
         <h3>Newer post</h3>
@@ -53,7 +50,8 @@ layout: base
       {% endif %}
     </div>
   </div>
-  <ul>
-  </ul>
+  <div>
+    {% webmentions page.url %}
+  </div>
 </div>
 {% include "footer.html" %}

@@ -10,7 +10,7 @@ const lib = require('./lib')
 
 const siteConfig = require('./config/site.config')
 
-const markdownLib = markdownIt({ html: true, linkify: true })
+const markdownLib = markdownIt({ html: true, linkify: true, typographer: true  })
 .use(require('markdown-it-anchor'), {
   level: [1, 2, 3],
   slugify: (s) =>
@@ -46,7 +46,7 @@ module.exports = function(config) {
     return lib.pluralize('minute', total, true)
   })
   config.addFilter('markdownify', value => {
-    return markdownIt({ html: true, linkify: true })
+    return markdownIt({ html: true, linkify: true, typographer: true })
       // Change image shortcode in excerpts to HTML
       .render(value?.replace(/\{%[\w\s]+"(.*?)".+({.*}?).+%\}/, lib.image('$1')) || '')
   })
