@@ -10,9 +10,19 @@ Here's a list of books I've picked up and will recommend. For more details on my
 ## [ 2022 ]
 
 <details>
+<summary>Dune - Frank Herbert</summary>
+
+[Listen on audible](https://www.audible.com/pd/Dune-Audiobook/B002V1OF70)
+
+</details>
+
+<details>
 <summary>21 lessons for the 21st century - Yuval Noah Harari </summary>
 
 [Get it on amazon](https://amz.run/5D8g)
+[Read my review on goodreads](https://www.goodreads.com/review/show/3194920438)
+
+**Genres:** Nonfiction, History, Philosophy
 
 </details>
 
