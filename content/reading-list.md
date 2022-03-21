@@ -10,6 +10,13 @@ Here's a list of books I've picked up and will recommend. For more details on my
 ## [ 2022 ]
 
 <details>
+<summary>The Psychology of Money - Housel Morgan</summary>
+
+[Listen on audible](https://www.audible.com/pd/The-Psychology-of-Money-Audiobook/B08D9TXF3H)
+
+</details>
+
+<details>
 <summary>Dune - Frank Herbert</summary>
 
 [Listen on audible](https://www.audible.com/pd/Dune-Audiobook/B002V1OF70)

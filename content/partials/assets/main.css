@@ -138,6 +138,12 @@ ul, ol {
 cite::before {
   content: '— ';
 }
+code {
+  padding: 2px 5px;
+  font-family: monospace;
+  background: #777777;
+  mix-blend-mode: hard-light;
+}
 hr {
   margin: 4rem auto;
   padding: 0;

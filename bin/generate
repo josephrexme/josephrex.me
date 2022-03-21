@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+new() {
+  name=$(sed 's/ /-/g' <<< "$(date '+%F')-$1" | awk '{print tolower($0)}')
+  link=$(sed 's/ /-/g' <<< "$1" | awk '{print tolower($0)}')
+  echo "Creating content/posts/${name}.md"
+  touch "content/posts/${name}.md"
+  echo -e "---\nauthor: Joseph Rex\ntitle: $1\ndate: $(date '+%Y-%m-%dT%H:%M:%S%z')\nlastmod: $(date '+%Y-%m-%dT%H:%M:%S%z')\npermalink: /${link}/\n---" >> "content/posts/${name}.md"
+}
+
+"$@"
+

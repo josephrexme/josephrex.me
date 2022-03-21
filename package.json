@@ -10,7 +10,8 @@
     "start": "eleventy --serve",
     "start:functions": "netlify functions:serve --functions serverless --port 7000",
     "build": "eleventy",
-    "debug": "DEBUG=Eleventy* eleventy"
+    "debug": "DEBUG=Eleventy* eleventy",
+    "generate": "./bin/generate"
   },
   "repository": {
     "type": "git",

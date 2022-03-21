@@ -1,6 +1,6 @@
 ---
 author: Joseph Rex
-title: Ban embed codes
+title: Ban embed scripts
 date: 2022-01-06T23:50:19-05:00
 lastmod: 2022-01-06T23:50:19-05:00
 permalink: /ban-embed-codes/
