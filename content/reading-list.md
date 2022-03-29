@@ -14,6 +14,8 @@ Here's a list of books I've picked up and will recommend. For more details on my
 
 [Listen on audible](https://www.audible.com/pd/The-Psychology-of-Money-Audiobook/B08D9TXF3H)
 
+[Read my review on goodreads](https://www.goodreads.com/review/show/4460276627)
+
 </details>
 
 <details>
