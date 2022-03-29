@@ -16,6 +16,8 @@ Here's a list of books I've picked up and will recommend. For more details on my
 
 [Read my review on goodreads](https://www.goodreads.com/review/show/4460276627)
 
+**Genres:** Nonfiction, Economics, Finance, Psychology
+
 </details>
 
 <details>
