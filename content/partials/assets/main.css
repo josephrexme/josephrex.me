@@ -249,6 +249,7 @@ article figcaption {
   grid-row-start: 2;
   font-size: 1.6rem;
   opacity: .6;
+  text-align: left;
 }
 article :where(iframe, video){
   aspect-ratio: 16/9;

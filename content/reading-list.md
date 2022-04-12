@@ -10,6 +10,17 @@ Here's a list of books I've picked up and will recommend. For more details on my
 ## [ 2022 ]
 
 <details>
+<summary>So good they can't ignore you - Cal Newport</summary>
+
+[Get it on Amazon](https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124?tag=josephrexme-20&geniuslink=true)
+
+[Listen on audible](https://www.audible.com/pd/So-Good-They-Cant-Ignore-You-Audiobook/B00995OX28)
+
+**Genres:** Nonfiction, Self Help, Business
+
+</details>
+
+<details>
 <summary>The Psychology of Money - Housel Morgan</summary>
 
 [Listen on audible](https://www.audible.com/pd/The-Psychology-of-Money-Audiobook/B08D9TXF3H)
@@ -24,6 +35,10 @@ Here's a list of books I've picked up and will recommend. For more details on my
 <summary>Dune - Frank Herbert</summary>
 
 [Listen on audible](https://www.audible.com/pd/Dune-Audiobook/B002V1OF70)
+
+[Read my review on goodreads](https://www.goodreads.com/review/show/4488271733)
+
+**Genres:** Science Fiction, Fantasy
 
 </details>
 
@@ -126,11 +141,6 @@ moment between life and death.
 <summary>Resilient web design - Jeremy Keith</summary>
 
 [Read here](https://resilientwebdesign.com)
-</details>
-<details>
-<summary>So good they can't ignore you - Cal Newport</summary>
-
-[Get it on Amazon](https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124?tag=josephrexme-20&geniuslink=true)
 </details>
 
 ## [ 2019 ]
