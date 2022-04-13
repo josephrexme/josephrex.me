@@ -1,13 +1,14 @@
 ---
 author: Joseph Rex
-title: Journey to my first home purchase
+title: Journey to my first home
 date: 2022-04-18T15:22:25-05:00
 lastmod: 2022-04-18T15:22:25-05:00
-permalink: /journey-to-my-first-home-purchase/
+permalink: /journey-to-my-first-home/
 draft: true
 tags:
   - family
   - finances
+  - real-estate
 ---
 As I hit publish on this, my wife and I just closed the deal on the purchase
 of our first home. We both do our best to make well planned decisions in most cases,
@@ -37,31 +38,36 @@ years or less. This is contrary to popular advice to leverage 30-year fixed loan
 and we had come to this conclusion because it is what best fits into our bigger
 financial plan. I would choose a 30-year fixed for an investment property but
 for our residential property, I like the idea of transitioning from equity to
-ownership much faster.
+full ownership much faster while also paying a lot less on interest.
 
-We started by looking at really cheap homes. The problem with that while searching
-within a zip code that has very low crime rate and other beautiful homes is that
-a lot of our results were properties in really bad shape for fixer-upper. I had thought
-the condition of the houses made for less competition but I had no idea these
-were gold mine to cash investors. They ate them up as they got listed. Another
-problem with these kind of homes was that my wife was not as excited about them as
-I was. She had a very valid concern which is that with our lease ending in June,
+We started by looking at relatively cheaper homes. The problem with that while searching
+within a zip code that has very low crime rate, good school district, and other
+beautiful homes is that a lot of our results were properties in really bad shape for
+fixer-upper. I had thought the condition of the houses made for less competition but
+I had no idea these were gold mine to cash investors. They ate them up as they got
+listed. Another thing with these kind of homes was that my wife was not as excited about
+them as I was. She had a very valid concern which is that with our lease ending in June,
 closing on one of these even as early as in April will mean we have to spend a lot more
-money upfront to get it ready to move in. While I like the idea of spending money
+money upfront to get it ready for move in. While I like the idea of spending money
 upfront and having less mortgage, my plan there was not practical enough. It would be
 a big struggle.
 
 Our next step was to increase the amount on our pre-approval letter. A little detail
-I almost skipped is that the hunt for fixer-uppers homes also meant putting aside
-our preferred lender with a better perks for lenders offering renovation loans.
+I almost skipped is that the hunt for fixer-upper homes also meant putting aside
+our preferred lender with better perks for lenders offering renovation loans. We were
+able to lock a 15-year fixed with mortgage we can afford at 3.375% rate. Going 30-year
+would make us end up paying up to 47% more of the purchase price at 4.25% rate.
+The only reason why I would want that option is if we were buying a multi-family where
+our mortgage payment is split with the tenants or 100% on rent from tenants. But we didn't
+want that either. We want this to be a home that will be occupied just by us.
 
 With the change in direction, the biggest obstacles were not the cash buyers anymore
 but it was still a competitive market (and still is at the time of writing). Viewing
 homes can be fun but it gets tiring really quickly if you are serious about buying.
-We put in a couple offers here and there and were not getting accepted. Then we found
+We put in a couple offers on different homes without getting accepted. Then we found
 a house we really loved. It was the first home to spark joy in both of our eyes. It
-was move-in ready and had a lot of nice things but the sellers had requested that we
-waive inspection. We were going to do this because of how much we wanted it.
+was move-in ready and had a lot of nice things, but the sellers had requested that we
+waive inspection contingency. We were going to do this because of how much we wanted it.
 
 Despite putting about $25,000 above listing price and agreeing to purchase other
 things the seller wanted to sell with the house, we still didn't get our offer accepted.
@@ -106,11 +112,11 @@ property purchase I am involved in.
 
 ## Deciding to buy a house
 
-I had described our decision to buy a house as impulsive in the beginning of this post because
-we never knew we would be looking to buy a house in January 2022. As occupants of a duplex,
-our relationship with our last neighbors were great and we liked the idea of only having to
-worry about rent and a few bills. Unlike with apartments, certain housekeeping duties fall
-on the occupants of multi-family housing. Things like snow shoveling, lawn mowing,
+I had described our decision to buy a house as impulsive in the beginning of this post
+because we never knew we would be looking to buy a house in January 2022. As occupants of a
+duplex, our relationship with our last neighbors were great and we liked the idea of only
+having to worry about rent and a few bills. Unlike with apartments, certain housekeeping duties
+fall on the occupants of multi-family housing. Things like snow shoveling, lawn mowing,
 taking out the trash to the curb. These things can be really easy things to get done if
 everyone in all units play their parts and respect the efforts of each other.
 That was the case for us until a recent neighbor.
@@ -120,15 +126,15 @@ hardly contribute when we can own a home and do it for just ourselves?_
 
 Things in our unit are beginning to fall apart as our landlord like many others chose to
 opt for cheapness over durability. We knew we were due to move and we were considering renting
-a single-family property. The cost of rent for most good single-family properties
-exceeds mortgage we could be paying on a $400,000 house so we knew it was time to start
-considering home ownership. Thanks to our savings and a big tax return this year, we
-were instantly ready to get into the housing market.
+a single-family property. The cost of rent for most good single-family properties in the
+neighborhoods we wanted was just too high that it didn't make much sense to die on the hill of
+renting. Thanks to our savings and a big tax return this year, we were instantly ready to get
+into the housing market.
 
 Today, I think back to living in a house in Nigeria where the bathroom was so bad that I'd
 rather go to a restaurant like I needed to buy a meal when I had to go for number 2.
 This may not even be relatable to the poorest class of people in the US. In Nigeria we called
-these kind of apartments FACE-ME-I-SLAP-YOU where up to 10 units share a single bathroom.
+these kind of apartments FACE-ME-I-SLAP-YOU where up to 10 units share a single bathroom[^1].
 
 Luckily, my first place of residence in the US was in a nice neighborhood, with an awesome
 landlord. I had met my him through Facebook while I was in Nigeria planning my travel. Being
@@ -139,3 +145,6 @@ when summer heat was unbearable.
 It feels unreal to think all that journey led here so I'm grateful for every one that has played
 a role in that. Now I guess I'm a homeowner? Can't wait to turn this home into another art medium
 through remodeling and decorations.
+
+[^1]: You are probably trying to picture what this looks like if you've never lived in Nigeria. I'm
+sure it is worse than your mental picture.
