@@ -1,10 +1,9 @@
 ---
 author: Joseph Rex
 title: Journey to my first home
-date: 2022-04-18T15:22:25-05:00
-lastmod: 2022-04-18T15:22:25-05:00
+date: 2022-04-18T08:30:25-05:00
+lastmod: 2022-04-18T08:30:25-05:00
 permalink: /journey-to-my-first-home/
-draft: true
 tags:
   - family
   - finances
@@ -147,4 +146,5 @@ a role in that. Now I guess I'm a homeowner? Can't wait to turn this home into a
 through remodeling and decorations.
 
 [^1]: You are probably trying to picture what this looks like if you've never lived in Nigeria. I'm
-sure it is worse than your mental picture.
+sure it is worse than your mental picture. That is why I had to prioritize moving my parents out of
+there before thinking about buying a home for myself.
