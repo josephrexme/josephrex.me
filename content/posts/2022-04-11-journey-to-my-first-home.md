@@ -54,11 +54,12 @@ a big struggle.
 Our next step was to increase the amount on our pre-approval letter. A little detail
 I almost skipped is that the hunt for fixer-upper homes also meant putting aside
 our preferred lender with better perks for lenders offering renovation loans. We were
-able to lock a 15-year fixed with mortgage we can afford at 3.375% rate. Going 30-year
-would make us end up paying up to 47% more of the purchase price at 4.25% rate.
-The only reason why I would want that option is if we were buying a multi-family where
-our mortgage payment is split with the tenants or 100% on rent from tenants. But we didn't
-want that either. We want this to be a home that will be occupied just by us.
+eventually able to lock a 15-year fixed with mortgage we can afford at 3.375% rate using
+the lender we preferred. Going 30-year would make us end up paying up to 47% more of the
+purchase price at 4.25% rate. The only reason why I would want that option is if we were
+buying a multi-family where our mortgage payment is split with the tenants or 100% on
+rent from tenants. But we didn't want that either.
+We want this to be a home that will be occupied just by us.
 
 With the change in direction, the biggest obstacles were not the cash buyers anymore
 but it was still a competitive market (and still is at the time of writing). Viewing
@@ -79,7 +80,7 @@ escalation clause.
 
 ## Using an escalation clause
 
-An escalation clause gives a buyer room for counter offer in a market that is set not
+An escalation clause gives a buyer room for counter offer in a market that is not
 set up for counter offers by default. It does so by allowing the buyer to make offer
 with 3 prices.
 
@@ -100,7 +101,7 @@ of $2000 that places your offer over that highest offer as $122,000.
 
 The maximum amount is the highest amount you are willing to go up to. Using the same example
 of the $100,000 listed property, you could decide to set your maximum to $150,000 which means
-it is the highest amount you are willing to pay. If for any reason, someone offers more than
+it is the highest amount you are willing to pay. If for any reason someone offers more than
 that, they are free to have the property.
 
 <hr>
@@ -112,10 +113,10 @@ property purchase I am involved in.
 ## Deciding to buy a house
 
 I had described our decision to buy a house as impulsive in the beginning of this post
-because we never knew we would be looking to buy a house in January 2022. As occupants of a
-duplex, our relationship with our last neighbors were great and we liked the idea of only
-having to worry about rent and a few bills. Unlike with apartments, certain housekeeping duties
-fall on the occupants of multi-family housing. Things like snow shoveling, lawn mowing,
+because we never knew we would be looking to buy a house as of January 2022. As occupants of a
+duplex, our relationship with our last couple neighbors have been great and we liked the idea of
+only having to worry about rent and a few bills. Unlike with apartments, certain housekeeping
+duties fall on the occupants of multi-family housing. Things like snow shoveling, lawn mowing,
 taking out the trash to the curb. These things can be really easy things to get done if
 everyone in all units play their parts and respect the efforts of each other.
 That was the case for us until a recent neighbor.
@@ -125,10 +126,10 @@ hardly contribute when we can own a home and do it for just ourselves?_
 
 Things in our unit are beginning to fall apart as our landlord like many others chose to
 opt for cheapness over durability. We knew we were due to move and we were considering renting
-a single-family property. The cost of rent for most good single-family properties in the
+a single-family property but the cost of rent for most good single-family properties in the
 neighborhoods we wanted was just too high that it didn't make much sense to die on the hill of
 renting. Thanks to our savings and a big tax return this year, we were instantly ready to get
-into the housing market.
+into the housing market as we decided to buy.
 
 Today, I think back to living in a house in Nigeria where the bathroom was so bad that I'd
 rather go to a restaurant like I needed to buy a meal when I had to go for number 2.
@@ -136,13 +137,13 @@ This may not even be relatable to the poorest class of people in the US. In Nige
 these kind of apartments FACE-ME-I-SLAP-YOU where up to 10 units share a single bathroom[^1].
 
 Luckily, my first place of residence in the US was in a nice neighborhood, with an awesome
-landlord. I had met my him through Facebook while I was in Nigeria planning my travel. Being
+landlord. I had met him through Facebook while I was in Nigeria planning my travel. Being
 in a country with no family and having a landlord that was willing to discount my rent in exchange
-for me watering the plants and taking the trash to the curb. He also gave me a used air conditioner
-when summer heat was unbearable.
+for me watering the plants and taking the trash to the curb was such a gift.
+He also gave me a used air conditioner for free when summer heat was unbearable.
 
-It feels unreal to think all that journey led here so I'm grateful for every one that has played
-a role in that. Now I guess I'm a homeowner? Can't wait to turn this home into another art medium
+It feels unreal to think all that journey led here so I'm grateful for everyone that has played
+a role in that. Now I guess I'm a homeowner? I can't wait to turn this home into another art medium
 through remodeling and decorations.
 
 [^1]: You are probably trying to picture what this looks like if you've never lived in Nigeria. I'm
