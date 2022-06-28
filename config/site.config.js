@@ -31,5 +31,5 @@ module.exports = {
     patreon: 'https://patreon.com/josephrexme',
   },
   convertkitFormId: 1526099,
-  googleAnalytics: 'UA-56161232-2'
+  googleAnalytics: 'G-L8K189Y8HL'
 }
