@@ -35,6 +35,7 @@
   <style>{{ css | cssmin | safe }}</style>
   <style>{{ wasp_css | cssmin | safe }}</style>
   <title>{{ title or site.config.title }}</title>
+  <meta name="generator" content="{{ eleventy.generator }}">
   <meta name="description" content="{{ page_description }}">
   <meta name="author" content="{{ site.config.author.name }}">
   <meta property="site_name" content="{{ site.config.username }}">
