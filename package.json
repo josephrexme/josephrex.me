@@ -37,7 +37,7 @@
     "markdown-it-footnote": "^3.0.3",
     "outdent": "^0.8.0",
     "remove-markdown": "^0.3.0",
-    "terser": "^5.10.0"
+    "terser": "^5.14.2"
   },
   "dependencies": {
     "canvas": "^2.8.0",
