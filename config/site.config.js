@@ -12,7 +12,7 @@ module.exports = {
   title: "Joseph Rex's website - Portfolio, Resume, Designs, and Publications",
   bio: 'voyaging the boundaries of interfaces and interactions',
   topics: 'CSS, JavaScript, Ruby, 3D, XR, Animation, Design, and Finance',
-  about: 'Joseph is a **software engineer** at [**ConvertKit**](https://convertkit.com), a **creative technologist** that loves combining art and engineering, and dad to an over-demanding australian shepherd named Glitch.',
+  about: 'Joseph is a **software engineer** at [**Kit**](https://kit.com), a **creative technologist** that loves combining art and engineering, and dad to an over-demanding australian shepherd named Glitch.',
   environment: ENV,
   url: ENV.isDev ? 'http://localhost:8080' : 'https://www.josephrex.me',
   language: 'en-us',
