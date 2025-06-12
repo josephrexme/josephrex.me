@@ -10,18 +10,18 @@
 {% set lightbox %}
   {% include "assets/lightbox.js" %}
 {% endset %}
-{% set page_description = page.excerpt | plaintext if page.excerpt else site.config.description %}
+{% set page_description = page.excerpt | plaintext if page.excerpt else site.description %}
 {% set title_slug = title | slugify if title else "" %}
 {% set og_image_url = "/.netlify/functions/opengraph?text="+title_slug+"&layout="+layout %}
 {% set og_image = og_image_url | absURL %}
 <!DOCTYPE html>
-<html lang={{ site.config.language }} prefix="og: http://ogp.me/ns#">
+<html lang="{{ site.language }}" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if site.config.googleAnalytics %}
-  {% if not site.config.environment.isDev %}
+  {% if site.googleAnalytics %}
+  {% if not site.environment.isDev %}
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
   <link rel="dns-prefetch" href="//www.google-analytics.com">
   <link rel="preconnect" href="//www.googletagmanager.com" crossorigin>
@@ -34,28 +34,28 @@
   {% endif %}
   <style>{{ css | cssmin | safe }}</style>
   <style>{{ wasp_css | cssmin | safe }}</style>
-  <title>{{ title or site.config.title }}</title>
+  <title>{{ title or site.title }}</title>
   <meta name="generator" content="{{ eleventy.generator }}">
   <meta name="description" content="{{ page_description }}">
-  <meta name="author" content="{{ site.config.author.name }}">
-  <meta property="site_name" content="{{ site.config.username }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta property="site_name" content="{{ site.username }}">
   <meta property="og:type" content="{% if layout == 'list' %}website{% else %}article{% endif %}">
   <meta property="og:url" content="{{ page.url | absURL }}">
-  <meta property="og:title" content="{{ title or site.config.title }}">
+  <meta property="og:title" content="{{ title or site.title }}">
   <meta property="og:image" content="{{ og_image }}">
   <meta property="og:image:alt" content="{{ title if title else "Joseph Rex website" }}">
   <meta property="og:description" content="{{ page_description }}">
   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
   <meta name="twitter:url" content="{{ page.url | absURL }}">
   <meta name="twitter:card" content="{% if layout == 'list' or layout == 'base' %}summary{% else %}summary_large_image{% endif %}">
-  <meta name="twitter:site" content="@{{ site.config.username }}">
-  <meta name="twitter:creator" content="@{{ site.config.username }}">
-  <meta name="twitter:title" content="{{ title or site.config.title }}">
+  <meta name="twitter:site" content="@{{ site.username }}">
+  <meta name="twitter:creator" content="@{{ site.username }}">
+  <meta name="twitter:title" content="{{ title or site.title }}">
   <meta name="twitter:image" content="{{ og_image }}">
   <meta name="color-scheme" content="light dark">
   {% if layout == "post" %}
   <meta name="twitter:label1" content="Author">
-  <meta name="twitter:data1" content="{{ site.config.name }}">
+  <meta name="twitter:data1" content="{{ site.name }}">
   <meta name="twitter:label2" content="Published On">
   <meta name="twitter:data2" content="{{ page.date | formatDate }}">
   {% endif %}
@@ -64,9 +64,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ site.config.themeColor }}">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ site.themeColor }}">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="{{ site.config.themeColor }}">
+  <meta name="theme-color" content="{{ site.themeColor }}">
   <link rel="webmention" href="https://webmention.io/www.josephrex.me/webmention">
   <link rel="pingback" href="https://webmention.io/www.josephrex.me/xmlrpc">
   <script>
@@ -81,32 +81,32 @@
     "description": "{{ page_description }}",
     "publisher": {
       "@type": "Organization",
-      "name": "{{ site.config.name }} Blog",
+      "name": "{{ site.name }} Blog",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ site.config.banner }}",
+        "url": "{{ site.banner }}",
         "width": 600,
         "height": 60
       }
     },
     "author": {
       "@type": "Person",
-      "name": "{{ site.config.name }}",
-      "url": "{{ site.config.url }}"
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}"
     },
     "sameAs": [
-      "{{ site.config.social.twitter }}",
-      "{{ site.config.social.linkedin }}",
-      "{{ site.config.social.dribbble }}",
-      "{{ site.config.social.codepen }}",
-      "{{ site.config.social.github }}"
+      "{{ site.social.twitter }}",
+      "{{ site.social.linkedin }}",
+      "{{ site.social.dribbble }}",
+      "{{ site.social.codepen }}",
+      "{{ site.social.github }}"
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "{{ page.url | absURL }}"
     }
     {% if layout == "post" %}
-    ,"headline": "{{ title or site.config.title }}",
+    ,"headline": "{{ title or site.title }}",
     "image": {
       "@type": "ImageObject",
       "url": "{{ og_image }}",
@@ -144,15 +144,15 @@
   <script>{{ lightbox | jsmin | safe }}</script>
   <script>lightbox('img:not(.no-zoom, [data-replies] img)', {backdropBg: 'var(--bg-color)'});</script>
   {% endif %}
-  {% if not site.config.environment.isDev %}
+  {% if not site.environment.isDev %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.config.googleAnalytics }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalytics }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '{{ site.config.googleAnalytics }}');
+    gtag('config', '{{ site.googleAnalytics }}');
   </script>
   {% endif %}
 

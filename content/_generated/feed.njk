@@ -4,17 +4,17 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.config.title }}</title>
-  <subtitle>{{ site.config.bio }}</subtitle>
-  <link href="{{ [site.config.url, permalink] | join }}" rel="self"/>
-  <link href="{{ site.config.url }}"/>
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.bio }}</subtitle>
+  <link href="{{ [site.url, permalink] | join }}" rel="self"/>
+  <link href="{{ site.url }}"/>
   <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ site.config.url }}</id>
+  <id>{{ site.url }}</id>
   <author>
-    <name>{{ site.config.author.name }}</name>
+    <name>{{ site.author.name }}</name>
   </author>
   {%- for post in collections.posts %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.config.url) }}{% endset %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>

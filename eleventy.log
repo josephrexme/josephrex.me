@@ -1,0 +1,1263 @@
+[11ty] Writing ./public/feed.xml from ./content/_generated/feed.njk
+[11ty] Writing ./public/sitemap.xml from ./content/_generated/sitemap.njk
+[11ty] Problem writing Eleventy templates:
+[11ty] 1. Having trouble writing to "./public/404.html" from "./content/404.html" (via EleventyTemplateError)
+[11ty] 2. Transform `htmlmin` encountered an error when transforming ./content/404.html. (via EleventyTransformError)
+[11ty] 3. Parse Error: <html lang= prefix="og: http://ogp.me/ns#">
+[11ty] <head>
+[11ty]   <meta charset="UTF-8">
+[11ty]   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+[11ty]   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+[11ty]   
+[11ty]   
+[11ty]   <style>:where(:not(iframe,canvas,img,svg,video,mark,sup,strong,em,s,abbr,ul,ol,dl):not(svg *,symbol *)){all:unset;display:revert}*,::after,::before{box-sizing:border-box}details{padding:1rem 2rem;list-style-type:none;background:rgb(182 79 68/.1);border-radius:.4rem}details+details{margin-block-start:1rem}summary{font-weight:500;cursor:pointer}[open] summary{margin-block-end:1rem}summary::before{content:'≡';margin-inline-end:2rem}summary::-webkit-details-marker{display:none}details>p+p{margin-block-start:1rem}img{max-inline-size:100%;block-size:auto}table{border-collapse:collapse}html{inline-size:100%;font-size:62.5%}body{margin:0;font-family:system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:1.8rem;font-weight:400;line-height:1.5}:root{--site-width:800px;--container:min(90%, var(--site-width));--light-text-color:#222;--light-bg-color:#fff;--light-link-color:#b64f44;--light-active-link-color:#b70303;--dark-text-color:#eee;--dark-bg-color:#222;--dark-link-color:#ff877a;--dark-active-link-color:#ff5050;--text-color:var(--light-text-color);--bg-color:var(--light-bg-color);--link-color:var(--light-link-color);--active-link-color:var(--light-active-link-color)}.theme-active{--text-color:var(--dark-text-color);--bg-color:var(--dark-bg-color);--link-color:var(--dark-link-color);--active-link-color:var(--dark-active-link-color)}@media (prefers-color-scheme:dark){:root{--text-color:var(--dark-text-color);--bg-color:var(--dark-bg-color);--link-color:var(--dark-link-color);--active-link-color:var(--dark-active-link-color)}.theme-active{--text-color:var(--light-text-color);--bg-color:var(--light-bg-color);--link-color:var(--light-link-color);--active-link-color:var(--light-active-link-color)}}a{text-decoration:none;color:inherit;cursor:pointer}input{font-family:inherit}blockquote{position:relative;margin:2rem 1rem;padding:2rem 4rem;background:rgb(var(--bg-color)/.05);border-left:solid thick #444;font-weight:300}blockquote::before{content:'“';position:absolute;top:-2rem;left:1rem;font-size:8rem;color:var(--text-color)}cite{display:block}ol,ul{display:grid;gap:1.5rem}cite::before{content:'— '}code{padding:2px 5px;font-family:monospace;background:#777;mix-blend-mode:hard-light}hr{margin:4rem auto;padding:0;border:0;color:currentColor;text-align:center;overflow:inherit}hr::after{content:'✯ ✯ ✯';display:inline-block;position:relative;top:0;font-size:2rem}h1,h2,h3,h4,h5,h6{line-height:1.3}h1{font-weight:700;margin:1.5rem 0 2.5rem}h2,h3,h4,h5,h6{font-weight:500}article>p+p{margin:3rem 0 0}article p{word-wrap:break-word}article :where(h2,h3,h4,h5,h6){margin:4rem 0 1rem}article h2{font-size:2.6rem}@media (min-width:640px){article h2{font-size:3.6rem}}article h3{font-size:2.4rem}@media (min-width:640px){article h3{font-size:3rem}}article h4{font-size:2.2rem}@media (min-width:640px){article h4{font-size:2.4rem}}article h5{font-size:2rem}article h6{font-size:1.8rem}article :where(pre,pre[class*=language-]){margin:4rem 0}article a{color:var(--link-color)}article a:where(:hover,:focus){color:var(--active-link-color)}article math{display:block;inline-size:fit-content;margin:2rem auto}article figure{display:-ms-grid;display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));margin:2rem auto;padding:1rem;background:rgb(100 100 100/.06);text-align:center}article figure img{display:block;inline-size:100%}article>img,article>picture{display:block;margin:2rem auto}article>picture img{inline-size:100%}article figcaption{padding-block-start:1rem;grid-row-start:2;font-size:1.6rem;opacity:.6;text-align:left}article :where(iframe,video){aspect-ratio:16/9;inline-size:100%;block-size:auto;border-radius:.5rem}article .footnotes-list{display:grid;font-size:1.4rem;gap:2rem}.scroll-progress{--scale:0;position:fixed;top:0;left:0;z-index:1100;inline-size:100%;block-size:.5rem;background:var(--text-color);box-shadow:0 0 .4rem rgb(0 0 0/.05);transform:scaleX(var(--scale));transform-origin:left;transition:transform .2s linear;will-change:transform}.anchor-lines,.with-anchor-lines a{padding:.4rem 0 .4rem;background-image:linear-gradient(to bottom,transparent 20%,currentColor 21%);background-size:0 .3rem;background-position:0 100%;background-repeat:no-repeat;transition:background-size .3s cubic-bezier(.5,0,.5,1) .05s}.anchor-lines:where(:hover,:focus),.with-anchor-lines a:where(:hover,:focus){background-size:100% .3rem}.anchor-brackets::after,.anchor-brackets::before{display:inline-block;opacity:0;transition:transform .3s,opacity .2s}.anchor-brackets::before{content:'[';margin-right:1rem;transform:translate(2rem)}.anchor-brackets::after{content:']';margin-left:1rem;transform:translate(-2rem)}.anchor-brackets:where(:hover,:focus)::after,.anchor-brackets:where(:hover,:focus)::before{opacity:1;transform:translate(0)}.anchor-dash::before{content:'';position:relative;top:-.5ch;display:inline-block;opacity:.4;inline-size:4rem;border-bottom:solid thin currentColor;transform:scaleX(.7);transform-origin:left;transition:opacity .2s cubic-bezier(.5,0,.5,1) .05s,transform .3s cubic-bezier(.5,0,.5,1) .05s}.anchor-dash span{display:inline-block;margin-left:.5rem;transition:transform .3s cubic-bezier(.5,0,.5,1) .1s}.anchor-dash:where(:hover,:focus) span{transform:translateX(1rem)}.anchor-dash:where(:hover,:focus)::before{opacity:1;transform:scaleX(1)}</style>
+[11ty]   <style>[style*='--p:']{padding:var(--p)}[style*='--py:']{padding-block:var(--py)}[style*='--px:']{padding-inline:var(--px)}[style*='--pt:']{padding-block-start:var(--pt)}[style*='--pb:']{padding-block-end:var(--pb)}[style*='--pl:']{padding-inline-start:var(--pl)}[style*='--pr:']{padding-inline-end:var(--pr)}[style*='--m:']{margin:var(--m)}[style*='--my:']{margin-block:var(--my)}[style*='--mx:']{margin-inline:var(--mx)}[style*='--mt:']{margin-block-start:var(--mt)}[style*='--mb:']{margin-block-end:var(--mb)}[style*='--ml:']{margin-inline-start:var(--ml)}[style*='--mr:']{margin-inline-end:var(--mr)}[style*='--w:']{inline-size:var(--w)}[style*='--h:']{block-size:var(--h)}[style*='--txt_al:']{text-align:var(--txt_al)}[style*='--font_sz:']{font-size:var(--font_sz)}[style*='--font_wt:']{font-weight:var(--font_wt)}[style*='--font_st:']{font-style:var(--font_st)}[style*='--word_break:']{word-break:var(--word_break)}[style*='--white_space:']{white-space:var(--white_space)}[style*='--bg:']{background:var(--bg)}[style*='--cl:']{color:var(--cl)}[style*='--position:']{position:var(--position)}[style*='--inset:']{inset:var(--inset)}[style*='--left:']{left:var(--left)}[style*='--right:']{right:var(--right)}[style*='--top:']{top:var(--top)}[style*='--bottom:']{bottom:var(--bottom)}[style*='--z:']{z-index:var(--z)}[style*='--d:']{display:var(--d)}[style*='--border:']{border:var(--border)}[style*='--border_x:']{border-inline:var(--border_x)}[style*='--border_y:']{border-block:var(--border_y)}[style*='--border_t:']{border-block-start:var(--border_t)}[style*='--border_b:']{border-block-end:var(--border_b)}[style*='--border_r:']{border-inline-end:var(--border_r)}[style*='--border_l:']{border-inline-start:var(--border_l)}[style*='--roundness:']{border-radius:var(--roundness)}[style*='--shadow:']{box-shadow:var(--shadow)}[style*='--justify_content:']{justify-content:var(--justify_content)}[style*='--align_items:']{align-items:var(--align_items)}[style*='--align_content:']{align-content:var(--align_content)}[style*='--place_content:']{place-content:var(--place_content)}[style*='--flex_dir:']{flex-direction:var(--flex_dir)}[style*='--flex_wrap:']{flex-wrap:var(--flex_wrap)}[style*='--gap:']{gap:var(--gap)}[style*='--grid_template_cols:']{grid-template-columns:var(--grid_template_cols)}[style*='--grid_template_rows:']{grid-template-rows:var(--grid_template_rows)}[style*='--grid_col_end:']{grid-column-end:var(--grid_col_end)}[style*='--grid_col_start:']{grid-column-start:var(--grid_col_start)}[style*='--grid_area:']{grid-area:var(--grid_area)}[style*='--order:']{order:var(--order)}[style*='--opacity:']{opacity:var(--opacity)}[style*='--transform:']{transform:var(--transform)}[style*='--transform-o:']{transform-origin:var(--transform-o)}[style*='--transition:']{transition:var(--transition)}[style*='--will_change:']{will-change:var(--will_change)}[style*='--cursor:']{cursor:var(--cursor)}[style*='--fill:']{fill:var(--fill)}[style*='--filter:']{filter:var(--filter)}[style*='--backdrop_filter:']{-webkit-backdrop-filter:var(--backdrop_filter);backdrop-filter:var(--backdrop_filter)}[style*='--aspect_ratio:']{aspect-ratio:var(--aspect_ratio)}[style*='--object_fit:']{-o-object-fit:var(--object_fit);object-fit:var(--object_fit)}[style*='--object_position:']{-o-object-position:var(--object_position);object-position:var(--object_position)}[style*='--hover-bg:']:hover{background:var(--hover-bg)}[style*='--hover-cl:']:hover{color:var(--hover-cl)}[style*='--hover-opacity:']:hover{opacity:var(--hover-opacity)}[style*='--hover-transform:']:hover{transform:var(--hover-transform)}[style*='--group:active']:hover [style*='--group-hover-transform']{transform:var(--group-hover-transform)}@media(prefers-color-scheme:dark){[style*='--dark-bg:']{background:var(--dark-bg)}[style*='--dark-cl:']{color:var(--dark-cl)}}@media (min-width:640px){[style*='--sm-txt_al:']{text-align:var(--sm-txt_al)}[style*='--sm-font_sz:']{font-size:var(--sm-font_sz)}[style*='--sm-d:']{display:var(--sm-d)}}@media (min-width:768px){[style*='--md-p:']{padding:var(--md-p)}[style*='--md-py:']{padding-block:var(--md-py)}[style*='--md-px:']{padding-inline:var(--md-px)}[style*='--md-pt:']{padding-block-start:var(--md-pt)}[style*='--md-pb:']{padding-block-end:var(--md-pb)}[style*='--md-pl:']{padding-inline-start:var(--md-pl)}[style*='--md-pr:']{padding-inline-end:var(--md-pr)}[style*='--md-m:']{margin:var(--md-m)}[style*='--md-my:']{margin-block:var(--md-my)}[style*='--md-mx:']{margin-inline:var(--md-mx)}[style*='--md-mt:']{margin-block-start:var(--md-mt)}[style*='--md-mb:']{margin-block-end:var(--md-mb)}[style*='--md-ml:']{margin-inline-start:var(--md-ml)}[style*='--md-mr:']{margin-inline-end:var(--md-mr)}[style*='--md-w:']{inline-size:var(--md-w)}[style*='--md-h:']{block-size:var(--md-h)}[style*='--md-txt_al:']{text-align:var(--md-txt_al)}[style*='--md-font_sz:']{font-size:var(--md-font_sz)}[style*='--md-d:']{display:var(--md-d)}[style*='--md-justify_content:']{justify-content:var(--md-justify_content)}[style*='--md-align_items:']{align-items:var(--md-align_items)}[style*='--md-align_content:']{align-items:var(--md-align_content)}[style*='--md-place_content:']{align-items:var(--md-place_content)}[style*='--md-flex_dir:']{flex-direction:var(--md-flex_dir)}[style*='--md-flex_wrap:']{flex-wrap:var(--md-flex_wrap)}[style*='--md-gap:']{gap:var(--md-gap)}[style*='--md-grid_template_cols:']{grid-template-columns:var(--md-grid_template_cols)}[style*='--md-grid_template_rows:']{grid-template-rows:var(--md-grid_template_rows)}[style*='--md-order:']{order:var(--md-order)}}@media (min-width:960px){[style*='--mx-p:']{padding:var(--mx-p)}[style*='--mx-py:']{padding-block:var(--mx-py)}[style*='--mx-px:']{padding-inline:var(--mx-px)}[style*='--mx-pt:']{padding-block-start:var(--mx-pt)}[style*='--mx-pb:']{padding-block-end:var(--mx-pb)}[style*='--mx-pl:']{padding-inline-start:var(--mx-pl)}[style*='--mx-pr:']{padding-inline-end:var(--mx-pr)}[style*='--mx-m:']{margin:var(--mx-m)}[style*='--mx-my:']{margin-block:var(--mx-my)}[style*='--mx-mx:']{margin-inline:var(--mx-mx)}[style*='--mx-mt:']{margin-block-start:var(--mx-mt)}[style*='--mx-mb:']{margin-block-end:var(--mx-mb)}[style*='--mx-ml:']{margin-inline-start:var(--mx-ml)}[style*='--mx-mr:']{margin-inline-end:var(--mx-mr)}[style*='--mx-w:']{inline-size:var(--mx-w)}[style*='--mx-h:']{block-size:var(--mx-h)}[style*='--mx-txt_al:']{text-align:var(--mx-txt_al)}[style*='--mx-font_sz:']{font-size:var(--mx-font_sz)}[style*='--mx-d:']{display:var(--mx-d)}[style*='--mx-justify_content:']{justify-content:var(--mx-justify_content)}[style*='--mx-align_items:']{align-items:var(--mx-align_items)}[style*='--mx-align_content:']{align-items:var(--mx-align_content)}[style*='--mx-place_content:']{align-items:var(--mx-place_content)}[style*='--mx-flex_dir:']{flex-direction:var(--mx-flex_dir)}[style*='--mx-flex_wrap:']{flex-wrap:var(--mx-flex_wrap)}[style*='--mx-gap:']{gap:var(--mx-gap)}[style*='--mx-grid_template_cols:']{grid-template-columns:var(--mx-grid_template_cols)}[style*='--mx-grid_template_rows:']{grid-template-rows:var(--mx-grid_template_rows)}[style*='--mx-order:']{order:var(--mx-order)}}@media (min-width:1024px){[style*='--lg-txt_al:']{text-align:var(--lg-txt_al)}[style*='--lg-font_sz:']{font-size:var(--lg-font_sz)}[style*='--lg-d:']{display:var(--lg-d)}[style*='--lg-justify_content:']{justify-content:var(--lg-justify_content)}[style*='--lg-flex_dir:']{flex-direction:var(--lg-flex_dir)}[style*='--lg-gap:']{gap:var(--lg-gap)}[style*='--lg-grid_template_cols:']{grid-template-columns:var(--lg-grid_template_cols)}[style*='--lg-grid_template_rows:']{grid-template-rows:var(--lg-grid_template_rows)}}@media (min-width:1280px){[style*='--xl-txt_al:']{text-align:var(--xl-txt_al)}[style*='--xl-font_sz:']{font-size:var(--xl-font_sz)}[style*='--xl-d:']{display:var(--xl-d)}}@media(prefers-color-scheme:dark){[style*='--dark-bg:']{background:var(--dark-bg)}[style*='--dark-cl:']{color:var(--dark-cl)}}</style>
+[11ty]   <title>Oops! Not Found</title>
+[11ty]   <meta name="generator" content="Eleventy v3.1.1">
+[11ty]   <meta name="description" content="">
+[11ty]   <meta name="author" content="">
+[11ty]   <meta property="site_name" content="">
+[11ty]   <meta property="og:type" content="article">
+[11ty]   <meta property="og:url" content="https://www.josephrex.me/404.html">
+[11ty]   <meta property="og:title" content="Oops! Not Found">
+[11ty]   <meta property="og:image" content="https://www.josephrex.me/.netlify/functions/opengraph?text=oops-not-found&amp;layout=base">
+[11ty]   <meta property="og:image:alt" content="Oops! Not Found">
+[11ty]   <meta property="og:description" content="">
+[11ty]   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
+[11ty]   <meta name="twitter:url" content="https://www.josephrex.me/404.html">
+[11ty]   <meta name="twitter:card" content="summary">
+[11ty]   <meta name="twitter:site" content="@">
+[11ty]   <meta name="twitter:creator" content="@">
+[11ty]   <meta name="twitter:title" content="Oops! Not Found">
+[11ty]   <meta name="twitter:image" content="https://www.josephrex.me/.netlify/functions/opengraph?text=oops-not-found&amp;layout=base">
+[11ty]   <meta name="color-scheme" content="light dark">
+[11ty]   
+[11ty]   <link rel="canonical" href="https://www.josephrex.me/404.html">
+[11ty]   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+[11ty]   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+[11ty]   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+[11ty]   <link rel="manifest" href="/site.webmanifest">
+[11ty]   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+[11ty]   <meta name="msapplication-TileColor" content="#da532c">
+[11ty]   <meta name="theme-color" content="">
+[11ty]   <link rel="webmention" href="https://webmention.io/www.josephrex.me/webmention">
+[11ty]   <link rel="pingback" href="https://webmention.io/www.josephrex.me/xmlrpc">
+[11ty]   <script>
+[11ty]   if(localStorage.getItem('theme')) {
+[11ty]     document.documentElement.classList.add('theme-active');
+[11ty]   }
+[11ty]   </script>
+[11ty]   <script type="application/ld+json">
+[11ty]   {
+[11ty]     "@context": "http://schema.org",
+[11ty]     "@type": "Article",
+[11ty]     "description": "",
+[11ty]     "publisher": {
+[11ty]       "@type": "Organization",
+[11ty]       "name": " Blog",
+[11ty]       "logo": {
+[11ty]         "@type": "ImageObject",
+[11ty]         "url": "",
+[11ty]         "width": 600,
+[11ty]         "height": 60
+[11ty]       }
+[11ty]     },
+[11ty]     "author": {
+[11ty]       "@type": "Person",
+[11ty]       "name": "",
+[11ty]       "url": ""
+[11ty]     },
+[11ty]     "sameAs": [
+[11ty]       "",
+[11ty]       "",
+[11ty]       "",
+[11ty]       "",
+[11ty]       ""
+[11ty]     ],
+[11ty]     "mainEntityOfPage": {
+[11ty]       "@type": "WebPage",
+[11ty]       "@id": "https://www.josephrex.me/404.html"
+[11ty]     }
+[11ty]     
+[11ty]   }
+[11ty]   </script>
+[11ty] </head>
+[11ty] <body style="--bg:var(--bg-color);--cl:var(--text-color)">
+[11ty]   <header style="--position:relative;--d:flex;--py:6rem;--px:2rem;--mx-px:6rem;--justify_content:space-between">
+[11ty]   <a href="/" aria-label="Home">
+[11ty]   <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 788 506" width="50">
+[11ty]     <path fill="none" d="M-.0002065-.0049836H787.665491V505.107258H-.0002065z"/>
+[11ty]     <g fill="none" style="--fill:var(--link-color);">
+[11ty]       <path d="M331.6312376 323.1137061H221.40306995v86.76413606S101.14753008 436.6345234 99.47022419 361.24325309c-1.7866954-81.83431417 67.74857279-76.178875 112.16071577-76.33566668 38.468646-.13856008 388.2963141 0 388.2963141 0 35.18696057.29170544 143.59196966-7.91980262 150.70228812-123.41692428C759.49009287 18.4456082 658.85173932 11.22589863 644.70402875 9.46837337c-35.80683449-4.44850792-204.88656108-1.97630434-204.88656108-1.97630434l.69280026 155.17270748h109.38951473l.32816854-64.01840458c-21.58619757 7.2452338 105.19625-27.13589832 104.39406022 44.10221584-.72926343 67.97465957-60.45593847 61.32012928-103.7741863 58.58174448-25.88885182-1.63719677-390.62995709.3865097-390.62995709.3865097-2.552422-1.96536538-159.74515467 1.31267448-157.265659 165.14174081 1.56791638 103.23455433 74.60364904 134.83354585 165.4698726 129.78339546 3.4640013-.19325485 163.20915598 0 163.20915598 0z"/>
+[11ty]       <path d="M550.2351731 323.1135197H440.00781126l-.19847032 173.52615726H550.845851zm-15.25168068 17.36239962h-79.40339458v138.73720135l79.12858952.00160392zM670.70796034 496.63992097h112.8048288l-55.2055909-202.40311116s-21.82938633 30.18938515-105.3541811 28.87876064c-1.29796352-1.83754225 47.7549432 173.52435052 47.7549432 173.52435052zm13.95732192-16.75798513 76.22585711-1.203907-41.82139573-155.56245839c.16856669-1.75583665-16.01383553 12.014058-75.01217695 18.24035815-1.07882681-1.67079613 40.60771557 138.52600724 40.60771557 138.52600724zM331.6296158 6.80684975v154.68494633H221.40709358V97.23247244l-98.52821756.44588888-.05921167-90.87151157zm-17.67468326 17.56770097-.66613128 117.96487456-75.50968115.8580955.60691961-65.51037875h-95.18275825l.02960584-53.04794503z"/>
+[11ty]     </g>
+[11ty]   </svg>
+[11ty]   </a>
+[11ty]   <nav aria-label="Primary navigation" style="--d:flex;--flex_dir:column;--gap:1rem;--txt_al:right;--md-flex_dir:row;--mt:-0.5rem;--md-mt:0;">
+[11ty]     <a href="https://resume.josephrex.me" rel="nofollow" style="--opacity:.7" class="anchor-brackets">Resume</a>
+[11ty]     <a href="/reading-list" style="--opacity:.7" class="anchor-brackets">Reading list</a>
+[11ty]     <a href="https://kit.co/josephrexme/home-office" style="--opacity:.7" class="anchor-brackets">Uses</a>
+[11ty]   </nav>
+[11ty]   <!-- Color scheme toggle -->
+[11ty]   <button style="--position:absolute;--top:0;--right:3rem;--w:4rem;--h:4rem;--bg:var(--link-color);--hover-bg:var(--active-link-color);--transition:background-color .3s cubic-bezier(.5,0,.5,1);--d:grid;--place_content: center;--cursor:pointer;" id="themeToggle" title="Change color scheme">
+[11ty]     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 4.233 4.233" style="--filter:invert(1);">
+[11ty]       <path fill="currentColor" d="M2.117.794a1.323 1.323 0 0 1 1.145.661 1.323 1.323 0 0 1 0 1.323 1.323 1.323 0 0 1-1.145.662V2.117zm0-.794A2.117 2.117 0 0 0 0 2.117a2.117 2.117 0 0 0 2.117 2.116 2.117 2.117 0 0 0 2.116-2.116A2.117 2.117 0 0 0 2.117 0zm0 .53a1.587 1.587 0 0 1 1.587 1.587 1.587 1.587 0 0 1-1.587 1.587A1.587 1.587 0 0 1 .529 2.117 1.587 1.587 0 0 1 2.117.529z">
+[11ty]       </path>
+[11ty]     </svg>
+[11ty]   </button>
+[11ty] </header>
+[11ty] 
+[11ty] <main class="four-oh-four">
+[11ty]   <canvas id="lost-canvas">
+[11ty]     <h1>404</h1>
+[11ty]   </canvas>
+[11ty]   <h1>THIS PAGE DOES NOT EXIST</h1>
+[11ty]   <div style="--opacity:.7">
+[11ty]     <p>Some adventures in life lead to a dead end. Sadly, this is one of those.</p>
+[11ty]     <p>
+[11ty]     You can hit me up <a href="https://twitter.com/josephrexme" style="--cl:var(--link-color)" class="anchor-lines">@josephrexme</a>
+[11ty]     or <a href="/.netlify/functions/mail" rel="nofollow" style="--cl:var(--link-color)" class="anchor-lines">send an email</a> if there is something you need me to find for you.
+[11ty]     </p>
+[11ty]       <p></p>
+[11ty]   </div>
+[11ty] </main>
+[11ty] 
+[11ty] <style>
+[11ty] .four-oh-four{
+[11ty]   margin: 12rem 0;
+[11ty]   text-align: center;
+[11ty] }
+[11ty] </style>
+[11ty] 
+[11ty] <script>
+[11ty] var canvas = document.getElementById('lost-canvas');
+[11ty] var context = canvas.getContext('2d');
+[11ty] 
+[11ty] var text = "404";
+[11ty] var xPosition = (canvas.width/2);
+[11ty] var yPosition = (canvas.height/2);
+[11ty] 
+[11ty] var imageObjShadow = new Image();
+[11ty] var imageObjWithShadow = new Image();
+[11ty] 
+[11ty] setInterval(glitch, 800);
+[11ty] 
+[11ty] 
+[11ty] function glitch(){
+[11ty] 
+[11ty]   imageObjShadow.onload = function() {
+[11ty]     context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]     var arr = lineShadowsHeight();
+[11ty]     var sy = 0;
+[11ty]     for (var i = 0; i < arr.length; i++)
+[11ty]       {
+[11ty]         context.drawImage(this, 0, sy, canvas.width, arr[i], getRandomInt(-2*offset(), 2*offset()), sy, canvas.width, arr[i]);
+[11ty]         sy = sy + arr[i];
+[11ty]       }
+[11ty]     drawText();
+[11ty]     imageDataWithShadow = canvas.toDataURL("image/png", 1.0);
+[11ty] 
+[11ty]     imageObjWithShadow.onload = function() {
+[11ty]       context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]       context.drawImage(this, 0, 0, canvas.width, canvas.height/3+5, 1, 0, canvas.width, canvas.height/3+5);
+[11ty]       context.drawImage(this, 0, canvas.height/3+5, canvas.width, canvas.height/3-5, 0, canvas.height/3+5, canvas.width, canvas.height/3-5);
+[11ty]       context.drawImage(this, 0, (canvas.height/3)*2, canvas.width, canvas.height/3, 0, (canvas.height/3)*2, canvas.width, canvas.height/3);
+[11ty]     }
+[11ty]     imageObjWithShadow.src = imageDataWithShadow;
+[11ty]   }
+[11ty]   imageObjShadow.src = imageDataShadows;
+[11ty] 
+[11ty]   setTimeout(function(){
+[11ty]     imageObjWithShadow.onload = function() {
+[11ty]         context.clearRect(0,(canvas.height/3)*2,canvas.width,canvas.height/3);
+[11ty]         var arr = lineShadowsHeight();
+[11ty]         var sy = 0;
+[11ty]         for (var i = 0; i < arr.length; i++)
+[11ty]         {
+[11ty]           context.drawImage(this, 0, sy, canvas.width, arr[i], getRandomInt(-2*offset(), 2*offset()), sy, canvas.width, arr[i]);
+[11ty]           sy = sy + arr[i];
+[11ty]         }
+[11ty] 
+[11ty]     }
+[11ty]     imageObjWithShadow.src = imageDataWithShadow;
+[11ty]   },80);
+[11ty] 
+[11ty] 
+[11ty]   setTimeout(function(){
+[11ty]     context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]     drawText();
+[11ty]   },timeBack());
+[11ty] }
+[11ty] 
+[11ty] function drawText(){
+[11ty]   const isDarkTheme = (!document.documentElement.classList.contains('theme-active') && matchMedia('(prefers-color-scheme: dark)').matches) || (document.documentElement.classList.contains('theme-active') && !matchMedia('(prefers-color-scheme: dark)').matches);
+[11ty]   context.font = "normal 150px Impact";
+[11ty]   context.fillStyle = isDarkTheme ? "#ffffff" : "#000000";
+[11ty]   context.textAlign = "center";
+[11ty]   context.textBaseline = "middle";
+[11ty]   context.fillText(text, xPosition, yPosition);
+[11ty] }
+[11ty] 
+[11ty] function getRandomInt(min, max)
+[11ty] {
+[11ty]   return Math.floor(Math.random() * (max - min + 1) + min);
+[11ty] }
+[11ty] 
+[11ty] var lineShadows = function (){
+[11ty]   return Math.floor(Math.random() * (7 - 4 + 1) + 4);
+[11ty] };
+[11ty] 
+[11ty] var offset = function()
+[11ty] {
+[11ty]   return Math.floor(Math.random() * (3 - 2 + 1) + 2)*0.8;
+[11ty] }
+[11ty] 
+[11ty] var timeBack = function (){
+[11ty]   var max = 300;
+[11ty]   var min = 80;
+[11ty]   return Math.floor(Math.random() * (max - min + 1) + min);
+[11ty] }
+[11ty] 
+[11ty] var lineShadowsHeight = function ()
+[11ty] {
+[11ty]   var h = canvas.height;
+[11ty]   var count =lineShadows();
+[11ty]   var arr = [];
+[11ty]   var s = 0;
+[11ty] 
+[11ty]   for (var i = 0; i < count; i++)
+[11ty]     {
+[11ty]        arr[i] = Math.floor(Math.random() * (h/(count-1)- 2 + 1) + 2);
+[11ty]        h = h -  arr[i];
+[11ty]        s = s + arr[i];
+[11ty]        arr[count] = canvas.height - s;
+[11ty]     }
+[11ty]     return arr;
+[11ty] }
+[11ty] 
+[11ty] function getShadowsImg(){
+[11ty]   context.save();
+[11ty]   context.font = "bold 150px Impact";
+[11ty]   context.textAlign = "center";
+[11ty]   context.textBaseline = "middle";
+[11ty]   context.globalCompositeOperation = "destination-over";
+[11ty]   context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]   context.fillStyle = "#a3004a";
+[11ty]   context.fillText(text, xPosition-2, yPosition);
+[11ty]   context.fillStyle = "#09c4de";
+[11ty]   context.fillText(text, xPosition+2, yPosition);
+[11ty]   context.restore();
+[11ty] 
+[11ty]   imageDataShadows = canvas.toDataURL("image/png", 1.0);
+[11ty] }
+[11ty] 
+[11ty] getShadowsImg();
+[11ty] context.clearRect(0,0,canvas.width,canvas.height);
+[11ty] drawText();
+[11ty] </script>
+[11ty] <footer style="--d:flex;--gap:4rem;--flex_dir:column;--mx-flex_dir:row;--mx-justify_content:space-between;--mx-align_items:flex-end;--py:8rem;--px:2rem;--mx-px:6rem;--font_sz:1.4rem;--txt_al:center;--mx-txt_al:left;" class="with-anchor-lines">
+[11ty]   <div style="--d:flex;--flex_dir:column;--gap:1rem">
+[11ty]     <div>
+[11ty]       <div style="--font_sz:1.8rem;--font_wt:bold;--mb:.5rem;">Subscribe to my newsletter</div>
+[11ty]       <p>For syndication feed, <a href="https://www.josephrex.me/feed.xml" style="--cl:var(--link-color)">follow this link</a></p>
+[11ty]     </div>
+[11ty]     <!-- For Newsletter -->
+[11ty]     <div>
+[11ty]       <form action="https://app.convertkit.com/forms//subscriptions" method="post"
+[11ty]         target="_blank" data-uid="624a8f5da4" data-format="inline" data-version="5" data-sv-form="" style="--d:flex;--flex_dir:column;--gap:1rem" novalidate>
+[11ty]         <label for="EMAIL">Enter your email address to get latest updates in your inbox</label>
+[11ty]         <div style="--d:grid;--grid_template_cols:3fr 1fr;--w:min(100%, 30rem);--mx:auto;--mx-mx:0;">
+[11ty]           <input type="email" name="email_address" id="EMAIL" placeholder="e.g janet@nasa.gov" style="--border:solid thin var(--text-color);--px:1rem;--py:.5rem;--txt_al:left;">
+[11ty]           <button type="submit" style="--border:solid thin var(--text-color);--border_l:0;--p:1rem;--txt_al:center;--cursor:pointer;--hover-bg:var(--text-color);--hover-cl:var(--bg-color);--transition:all .2s linear;">Subscribe</button>
+[11ty]         </div>
+[11ty]       </form>
+[11ty]     </div>
+[11ty]     <p>
+[11ty]     &copy; 2014 - 2025 . Powered by <a href="https://11ty.dev" style="--cl:var(--link-color)">Eleventy</a> and hosted on <a href="https://netlify.com" style="--cl:var(--link-color)" class="anchor-lines">Netlify</a>
+[11ty]     </p>
+[11ty]   </div>
+[11ty]   <div style="--d:grid;--grid_template_cols:repeat(3,1fr);--gap:2rem;--align_content:end;">
+[11ty]   </div>
+[11ty] </footer>
+[11ty] 
+[11ty] 
+[11ty]   <script>
+[11ty]     // Toggle Dark/Light Theme
+[11ty]     var themeSwitcher = document.getElementById('themeToggle');
+[11ty]     if(themeSwitcher) {
+[11ty]       themeSwitcher.addEventListener('click', function () {
+[11ty]         document.documentElement.classList.toggle('theme-active');
+[11ty]         if (localStorage.getItem('theme')) {
+[11ty]           localStorage.removeItem('theme');
+[11ty]         } else {
+[11ty]           localStorage.setItem('theme', 'active');
+[11ty]         }
+[11ty]       });
+[11ty]     }
+[11ty]   </script>
+[11ty]   
+[11ty]   
+[11ty]   
+[11ty]   <!-- Global site tag (gtag.js) - Google Analytics -->
+[11ty]   <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+[11ty]   <script>
+[11ty]     window.dataLayer = window.dataLayer || [];
+[11ty]     function gtag(){dataLayer.push(arguments);}
+[11ty]     gtag('js', new Date());
+[11ty] 
+[11ty]     gtag('config', '');
+[11ty]   </script>
+[11ty]   
+[11ty] 
+[11ty] </body>
+[11ty] </html>
+[11ty] 
+[11ty] Original error stack trace: Error: Parse Error: <html lang= prefix="og: http://ogp.me/ns#">
+[11ty] <head>
+[11ty]   <meta charset="UTF-8">
+[11ty]   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+[11ty]   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+[11ty]   
+[11ty]   
+[11ty]   <style>:where(:not(iframe,canvas,img,svg,video,mark,sup,strong,em,s,abbr,ul,ol,dl):not(svg *,symbol *)){all:unset;display:revert}*,::after,::before{box-sizing:border-box}details{padding:1rem 2rem;list-style-type:none;background:rgb(182 79 68/.1);border-radius:.4rem}details+details{margin-block-start:1rem}summary{font-weight:500;cursor:pointer}[open] summary{margin-block-end:1rem}summary::before{content:'≡';margin-inline-end:2rem}summary::-webkit-details-marker{display:none}details>p+p{margin-block-start:1rem}img{max-inline-size:100%;block-size:auto}table{border-collapse:collapse}html{inline-size:100%;font-size:62.5%}body{margin:0;font-family:system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:1.8rem;font-weight:400;line-height:1.5}:root{--site-width:800px;--container:min(90%, var(--site-width));--light-text-color:#222;--light-bg-color:#fff;--light-link-color:#b64f44;--light-active-link-color:#b70303;--dark-text-color:#eee;--dark-bg-color:#222;--dark-link-color:#ff877a;--dark-active-link-color:#ff5050;--text-color:var(--light-text-color);--bg-color:var(--light-bg-color);--link-color:var(--light-link-color);--active-link-color:var(--light-active-link-color)}.theme-active{--text-color:var(--dark-text-color);--bg-color:var(--dark-bg-color);--link-color:var(--dark-link-color);--active-link-color:var(--dark-active-link-color)}@media (prefers-color-scheme:dark){:root{--text-color:var(--dark-text-color);--bg-color:var(--dark-bg-color);--link-color:var(--dark-link-color);--active-link-color:var(--dark-active-link-color)}.theme-active{--text-color:var(--light-text-color);--bg-color:var(--light-bg-color);--link-color:var(--light-link-color);--active-link-color:var(--light-active-link-color)}}a{text-decoration:none;color:inherit;cursor:pointer}input{font-family:inherit}blockquote{position:relative;margin:2rem 1rem;padding:2rem 4rem;background:rgb(var(--bg-color)/.05);border-left:solid thick #444;font-weight:300}blockquote::before{content:'“';position:absolute;top:-2rem;left:1rem;font-size:8rem;color:var(--text-color)}cite{display:block}ol,ul{display:grid;gap:1.5rem}cite::before{content:'— '}code{padding:2px 5px;font-family:monospace;background:#777;mix-blend-mode:hard-light}hr{margin:4rem auto;padding:0;border:0;color:currentColor;text-align:center;overflow:inherit}hr::after{content:'✯ ✯ ✯';display:inline-block;position:relative;top:0;font-size:2rem}h1,h2,h3,h4,h5,h6{line-height:1.3}h1{font-weight:700;margin:1.5rem 0 2.5rem}h2,h3,h4,h5,h6{font-weight:500}article>p+p{margin:3rem 0 0}article p{word-wrap:break-word}article :where(h2,h3,h4,h5,h6){margin:4rem 0 1rem}article h2{font-size:2.6rem}@media (min-width:640px){article h2{font-size:3.6rem}}article h3{font-size:2.4rem}@media (min-width:640px){article h3{font-size:3rem}}article h4{font-size:2.2rem}@media (min-width:640px){article h4{font-size:2.4rem}}article h5{font-size:2rem}article h6{font-size:1.8rem}article :where(pre,pre[class*=language-]){margin:4rem 0}article a{color:var(--link-color)}article a:where(:hover,:focus){color:var(--active-link-color)}article math{display:block;inline-size:fit-content;margin:2rem auto}article figure{display:-ms-grid;display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));margin:2rem auto;padding:1rem;background:rgb(100 100 100/.06);text-align:center}article figure img{display:block;inline-size:100%}article>img,article>picture{display:block;margin:2rem auto}article>picture img{inline-size:100%}article figcaption{padding-block-start:1rem;grid-row-start:2;font-size:1.6rem;opacity:.6;text-align:left}article :where(iframe,video){aspect-ratio:16/9;inline-size:100%;block-size:auto;border-radius:.5rem}article .footnotes-list{display:grid;font-size:1.4rem;gap:2rem}.scroll-progress{--scale:0;position:fixed;top:0;left:0;z-index:1100;inline-size:100%;block-size:.5rem;background:var(--text-color);box-shadow:0 0 .4rem rgb(0 0 0/.05);transform:scaleX(var(--scale));transform-origin:left;transition:transform .2s linear;will-change:transform}.anchor-lines,.with-anchor-lines a{padding:.4rem 0 .4rem;background-image:linear-gradient(to bottom,transparent 20%,currentColor 21%);background-size:0 .3rem;background-position:0 100%;background-repeat:no-repeat;transition:background-size .3s cubic-bezier(.5,0,.5,1) .05s}.anchor-lines:where(:hover,:focus),.with-anchor-lines a:where(:hover,:focus){background-size:100% .3rem}.anchor-brackets::after,.anchor-brackets::before{display:inline-block;opacity:0;transition:transform .3s,opacity .2s}.anchor-brackets::before{content:'[';margin-right:1rem;transform:translate(2rem)}.anchor-brackets::after{content:']';margin-left:1rem;transform:translate(-2rem)}.anchor-brackets:where(:hover,:focus)::after,.anchor-brackets:where(:hover,:focus)::before{opacity:1;transform:translate(0)}.anchor-dash::before{content:'';position:relative;top:-.5ch;display:inline-block;opacity:.4;inline-size:4rem;border-bottom:solid thin currentColor;transform:scaleX(.7);transform-origin:left;transition:opacity .2s cubic-bezier(.5,0,.5,1) .05s,transform .3s cubic-bezier(.5,0,.5,1) .05s}.anchor-dash span{display:inline-block;margin-left:.5rem;transition:transform .3s cubic-bezier(.5,0,.5,1) .1s}.anchor-dash:where(:hover,:focus) span{transform:translateX(1rem)}.anchor-dash:where(:hover,:focus)::before{opacity:1;transform:scaleX(1)}</style>
+[11ty]   <style>[style*='--p:']{padding:var(--p)}[style*='--py:']{padding-block:var(--py)}[style*='--px:']{padding-inline:var(--px)}[style*='--pt:']{padding-block-start:var(--pt)}[style*='--pb:']{padding-block-end:var(--pb)}[style*='--pl:']{padding-inline-start:var(--pl)}[style*='--pr:']{padding-inline-end:var(--pr)}[style*='--m:']{margin:var(--m)}[style*='--my:']{margin-block:var(--my)}[style*='--mx:']{margin-inline:var(--mx)}[style*='--mt:']{margin-block-start:var(--mt)}[style*='--mb:']{margin-block-end:var(--mb)}[style*='--ml:']{margin-inline-start:var(--ml)}[style*='--mr:']{margin-inline-end:var(--mr)}[style*='--w:']{inline-size:var(--w)}[style*='--h:']{block-size:var(--h)}[style*='--txt_al:']{text-align:var(--txt_al)}[style*='--font_sz:']{font-size:var(--font_sz)}[style*='--font_wt:']{font-weight:var(--font_wt)}[style*='--font_st:']{font-style:var(--font_st)}[style*='--word_break:']{word-break:var(--word_break)}[style*='--white_space:']{white-space:var(--white_space)}[style*='--bg:']{background:var(--bg)}[style*='--cl:']{color:var(--cl)}[style*='--position:']{position:var(--position)}[style*='--inset:']{inset:var(--inset)}[style*='--left:']{left:var(--left)}[style*='--right:']{right:var(--right)}[style*='--top:']{top:var(--top)}[style*='--bottom:']{bottom:var(--bottom)}[style*='--z:']{z-index:var(--z)}[style*='--d:']{display:var(--d)}[style*='--border:']{border:var(--border)}[style*='--border_x:']{border-inline:var(--border_x)}[style*='--border_y:']{border-block:var(--border_y)}[style*='--border_t:']{border-block-start:var(--border_t)}[style*='--border_b:']{border-block-end:var(--border_b)}[style*='--border_r:']{border-inline-end:var(--border_r)}[style*='--border_l:']{border-inline-start:var(--border_l)}[style*='--roundness:']{border-radius:var(--roundness)}[style*='--shadow:']{box-shadow:var(--shadow)}[style*='--justify_content:']{justify-content:var(--justify_content)}[style*='--align_items:']{align-items:var(--align_items)}[style*='--align_content:']{align-content:var(--align_content)}[style*='--place_content:']{place-content:var(--place_content)}[style*='--flex_dir:']{flex-direction:var(--flex_dir)}[style*='--flex_wrap:']{flex-wrap:var(--flex_wrap)}[style*='--gap:']{gap:var(--gap)}[style*='--grid_template_cols:']{grid-template-columns:var(--grid_template_cols)}[style*='--grid_template_rows:']{grid-template-rows:var(--grid_template_rows)}[style*='--grid_col_end:']{grid-column-end:var(--grid_col_end)}[style*='--grid_col_start:']{grid-column-start:var(--grid_col_start)}[style*='--grid_area:']{grid-area:var(--grid_area)}[style*='--order:']{order:var(--order)}[style*='--opacity:']{opacity:var(--opacity)}[style*='--transform:']{transform:var(--transform)}[style*='--transform-o:']{transform-origin:var(--transform-o)}[style*='--transition:']{transition:var(--transition)}[style*='--will_change:']{will-change:var(--will_change)}[style*='--cursor:']{cursor:var(--cursor)}[style*='--fill:']{fill:var(--fill)}[style*='--filter:']{filter:var(--filter)}[style*='--backdrop_filter:']{-webkit-backdrop-filter:var(--backdrop_filter);backdrop-filter:var(--backdrop_filter)}[style*='--aspect_ratio:']{aspect-ratio:var(--aspect_ratio)}[style*='--object_fit:']{-o-object-fit:var(--object_fit);object-fit:var(--object_fit)}[style*='--object_position:']{-o-object-position:var(--object_position);object-position:var(--object_position)}[style*='--hover-bg:']:hover{background:var(--hover-bg)}[style*='--hover-cl:']:hover{color:var(--hover-cl)}[style*='--hover-opacity:']:hover{opacity:var(--hover-opacity)}[style*='--hover-transform:']:hover{transform:var(--hover-transform)}[style*='--group:active']:hover [style*='--group-hover-transform']{transform:var(--group-hover-transform)}@media(prefers-color-scheme:dark){[style*='--dark-bg:']{background:var(--dark-bg)}[style*='--dark-cl:']{color:var(--dark-cl)}}@media (min-width:640px){[style*='--sm-txt_al:']{text-align:var(--sm-txt_al)}[style*='--sm-font_sz:']{font-size:var(--sm-font_sz)}[style*='--sm-d:']{display:var(--sm-d)}}@media (min-width:768px){[style*='--md-p:']{padding:var(--md-p)}[style*='--md-py:']{padding-block:var(--md-py)}[style*='--md-px:']{padding-inline:var(--md-px)}[style*='--md-pt:']{padding-block-start:var(--md-pt)}[style*='--md-pb:']{padding-block-end:var(--md-pb)}[style*='--md-pl:']{padding-inline-start:var(--md-pl)}[style*='--md-pr:']{padding-inline-end:var(--md-pr)}[style*='--md-m:']{margin:var(--md-m)}[style*='--md-my:']{margin-block:var(--md-my)}[style*='--md-mx:']{margin-inline:var(--md-mx)}[style*='--md-mt:']{margin-block-start:var(--md-mt)}[style*='--md-mb:']{margin-block-end:var(--md-mb)}[style*='--md-ml:']{margin-inline-start:var(--md-ml)}[style*='--md-mr:']{margin-inline-end:var(--md-mr)}[style*='--md-w:']{inline-size:var(--md-w)}[style*='--md-h:']{block-size:var(--md-h)}[style*='--md-txt_al:']{text-align:var(--md-txt_al)}[style*='--md-font_sz:']{font-size:var(--md-font_sz)}[style*='--md-d:']{display:var(--md-d)}[style*='--md-justify_content:']{justify-content:var(--md-justify_content)}[style*='--md-align_items:']{align-items:var(--md-align_items)}[style*='--md-align_content:']{align-items:var(--md-align_content)}[style*='--md-place_content:']{align-items:var(--md-place_content)}[style*='--md-flex_dir:']{flex-direction:var(--md-flex_dir)}[style*='--md-flex_wrap:']{flex-wrap:var(--md-flex_wrap)}[style*='--md-gap:']{gap:var(--md-gap)}[style*='--md-grid_template_cols:']{grid-template-columns:var(--md-grid_template_cols)}[style*='--md-grid_template_rows:']{grid-template-rows:var(--md-grid_template_rows)}[style*='--md-order:']{order:var(--md-order)}}@media (min-width:960px){[style*='--mx-p:']{padding:var(--mx-p)}[style*='--mx-py:']{padding-block:var(--mx-py)}[style*='--mx-px:']{padding-inline:var(--mx-px)}[style*='--mx-pt:']{padding-block-start:var(--mx-pt)}[style*='--mx-pb:']{padding-block-end:var(--mx-pb)}[style*='--mx-pl:']{padding-inline-start:var(--mx-pl)}[style*='--mx-pr:']{padding-inline-end:var(--mx-pr)}[style*='--mx-m:']{margin:var(--mx-m)}[style*='--mx-my:']{margin-block:var(--mx-my)}[style*='--mx-mx:']{margin-inline:var(--mx-mx)}[style*='--mx-mt:']{margin-block-start:var(--mx-mt)}[style*='--mx-mb:']{margin-block-end:var(--mx-mb)}[style*='--mx-ml:']{margin-inline-start:var(--mx-ml)}[style*='--mx-mr:']{margin-inline-end:var(--mx-mr)}[style*='--mx-w:']{inline-size:var(--mx-w)}[style*='--mx-h:']{block-size:var(--mx-h)}[style*='--mx-txt_al:']{text-align:var(--mx-txt_al)}[style*='--mx-font_sz:']{font-size:var(--mx-font_sz)}[style*='--mx-d:']{display:var(--mx-d)}[style*='--mx-justify_content:']{justify-content:var(--mx-justify_content)}[style*='--mx-align_items:']{align-items:var(--mx-align_items)}[style*='--mx-align_content:']{align-items:var(--mx-align_content)}[style*='--mx-place_content:']{align-items:var(--mx-place_content)}[style*='--mx-flex_dir:']{flex-direction:var(--mx-flex_dir)}[style*='--mx-flex_wrap:']{flex-wrap:var(--mx-flex_wrap)}[style*='--mx-gap:']{gap:var(--mx-gap)}[style*='--mx-grid_template_cols:']{grid-template-columns:var(--mx-grid_template_cols)}[style*='--mx-grid_template_rows:']{grid-template-rows:var(--mx-grid_template_rows)}[style*='--mx-order:']{order:var(--mx-order)}}@media (min-width:1024px){[style*='--lg-txt_al:']{text-align:var(--lg-txt_al)}[style*='--lg-font_sz:']{font-size:var(--lg-font_sz)}[style*='--lg-d:']{display:var(--lg-d)}[style*='--lg-justify_content:']{justify-content:var(--lg-justify_content)}[style*='--lg-flex_dir:']{flex-direction:var(--lg-flex_dir)}[style*='--lg-gap:']{gap:var(--lg-gap)}[style*='--lg-grid_template_cols:']{grid-template-columns:var(--lg-grid_template_cols)}[style*='--lg-grid_template_rows:']{grid-template-rows:var(--lg-grid_template_rows)}}@media (min-width:1280px){[style*='--xl-txt_al:']{text-align:var(--xl-txt_al)}[style*='--xl-font_sz:']{font-size:var(--xl-font_sz)}[style*='--xl-d:']{display:var(--xl-d)}}@media(prefers-color-scheme:dark){[style*='--dark-bg:']{background:var(--dark-bg)}[style*='--dark-cl:']{color:var(--dark-cl)}}</style>
+[11ty]   <title>Oops! Not Found</title>
+[11ty]   <meta name="generator" content="Eleventy v3.1.1">
+[11ty]   <meta name="description" content="">
+[11ty]   <meta name="author" content="">
+[11ty]   <meta property="site_name" content="">
+[11ty]   <meta property="og:type" content="article">
+[11ty]   <meta property="og:url" content="https://www.josephrex.me/404.html">
+[11ty]   <meta property="og:title" content="Oops! Not Found">
+[11ty]   <meta property="og:image" content="https://www.josephrex.me/.netlify/functions/opengraph?text=oops-not-found&amp;layout=base">
+[11ty]   <meta property="og:image:alt" content="Oops! Not Found">
+[11ty]   <meta property="og:description" content="">
+[11ty]   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
+[11ty]   <meta name="twitter:url" content="https://www.josephrex.me/404.html">
+[11ty]   <meta name="twitter:card" content="summary">
+[11ty]   <meta name="twitter:site" content="@">
+[11ty]   <meta name="twitter:creator" content="@">
+[11ty]   <meta name="twitter:title" content="Oops! Not Found">
+[11ty]   <meta name="twitter:image" content="https://www.josephrex.me/.netlify/functions/opengraph?text=oops-not-found&amp;layout=base">
+[11ty]   <meta name="color-scheme" content="light dark">
+[11ty]   
+[11ty]   <link rel="canonical" href="https://www.josephrex.me/404.html">
+[11ty]   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+[11ty]   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+[11ty]   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+[11ty]   <link rel="manifest" href="/site.webmanifest">
+[11ty]   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+[11ty]   <meta name="msapplication-TileColor" content="#da532c">
+[11ty]   <meta name="theme-color" content="">
+[11ty]   <link rel="webmention" href="https://webmention.io/www.josephrex.me/webmention">
+[11ty]   <link rel="pingback" href="https://webmention.io/www.josephrex.me/xmlrpc">
+[11ty]   <script>
+[11ty]   if(localStorage.getItem('theme')) {
+[11ty]     document.documentElement.classList.add('theme-active');
+[11ty]   }
+[11ty]   </script>
+[11ty]   <script type="application/ld+json">
+[11ty]   {
+[11ty]     "@context": "http://schema.org",
+[11ty]     "@type": "Article",
+[11ty]     "description": "",
+[11ty]     "publisher": {
+[11ty]       "@type": "Organization",
+[11ty]       "name": " Blog",
+[11ty]       "logo": {
+[11ty]         "@type": "ImageObject",
+[11ty]         "url": "",
+[11ty]         "width": 600,
+[11ty]         "height": 60
+[11ty]       }
+[11ty]     },
+[11ty]     "author": {
+[11ty]       "@type": "Person",
+[11ty]       "name": "",
+[11ty]       "url": ""
+[11ty]     },
+[11ty]     "sameAs": [
+[11ty]       "",
+[11ty]       "",
+[11ty]       "",
+[11ty]       "",
+[11ty]       ""
+[11ty]     ],
+[11ty]     "mainEntityOfPage": {
+[11ty]       "@type": "WebPage",
+[11ty]       "@id": "https://www.josephrex.me/404.html"
+[11ty]     }
+[11ty]     
+[11ty]   }
+[11ty]   </script>
+[11ty] </head>
+[11ty] <body style="--bg:var(--bg-color);--cl:var(--text-color)">
+[11ty]   <header style="--position:relative;--d:flex;--py:6rem;--px:2rem;--mx-px:6rem;--justify_content:space-between">
+[11ty]   <a href="/" aria-label="Home">
+[11ty]   <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 788 506" width="50">
+[11ty]     <path fill="none" d="M-.0002065-.0049836H787.665491V505.107258H-.0002065z"/>
+[11ty]     <g fill="none" style="--fill:var(--link-color);">
+[11ty]       <path d="M331.6312376 323.1137061H221.40306995v86.76413606S101.14753008 436.6345234 99.47022419 361.24325309c-1.7866954-81.83431417 67.74857279-76.178875 112.16071577-76.33566668 38.468646-.13856008 388.2963141 0 388.2963141 0 35.18696057.29170544 143.59196966-7.91980262 150.70228812-123.41692428C759.49009287 18.4456082 658.85173932 11.22589863 644.70402875 9.46837337c-35.80683449-4.44850792-204.88656108-1.97630434-204.88656108-1.97630434l.69280026 155.17270748h109.38951473l.32816854-64.01840458c-21.58619757 7.2452338 105.19625-27.13589832 104.39406022 44.10221584-.72926343 67.97465957-60.45593847 61.32012928-103.7741863 58.58174448-25.88885182-1.63719677-390.62995709.3865097-390.62995709.3865097-2.552422-1.96536538-159.74515467 1.31267448-157.265659 165.14174081 1.56791638 103.23455433 74.60364904 134.83354585 165.4698726 129.78339546 3.4640013-.19325485 163.20915598 0 163.20915598 0z"/>
+[11ty]       <path d="M550.2351731 323.1135197H440.00781126l-.19847032 173.52615726H550.845851zm-15.25168068 17.36239962h-79.40339458v138.73720135l79.12858952.00160392zM670.70796034 496.63992097h112.8048288l-55.2055909-202.40311116s-21.82938633 30.18938515-105.3541811 28.87876064c-1.29796352-1.83754225 47.7549432 173.52435052 47.7549432 173.52435052zm13.95732192-16.75798513 76.22585711-1.203907-41.82139573-155.56245839c.16856669-1.75583665-16.01383553 12.014058-75.01217695 18.24035815-1.07882681-1.67079613 40.60771557 138.52600724 40.60771557 138.52600724zM331.6296158 6.80684975v154.68494633H221.40709358V97.23247244l-98.52821756.44588888-.05921167-90.87151157zm-17.67468326 17.56770097-.66613128 117.96487456-75.50968115.8580955.60691961-65.51037875h-95.18275825l.02960584-53.04794503z"/>
+[11ty]     </g>
+[11ty]   </svg>
+[11ty]   </a>
+[11ty]   <nav aria-label="Primary navigation" style="--d:flex;--flex_dir:column;--gap:1rem;--txt_al:right;--md-flex_dir:row;--mt:-0.5rem;--md-mt:0;">
+[11ty]     <a href="https://resume.josephrex.me" rel="nofollow" style="--opacity:.7" class="anchor-brackets">Resume</a>
+[11ty]     <a href="/reading-list" style="--opacity:.7" class="anchor-brackets">Reading list</a>
+[11ty]     <a href="https://kit.co/josephrexme/home-office" style="--opacity:.7" class="anchor-brackets">Uses</a>
+[11ty]   </nav>
+[11ty]   <!-- Color scheme toggle -->
+[11ty]   <button style="--position:absolute;--top:0;--right:3rem;--w:4rem;--h:4rem;--bg:var(--link-color);--hover-bg:var(--active-link-color);--transition:background-color .3s cubic-bezier(.5,0,.5,1);--d:grid;--place_content: center;--cursor:pointer;" id="themeToggle" title="Change color scheme">
+[11ty]     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 4.233 4.233" style="--filter:invert(1);">
+[11ty]       <path fill="currentColor" d="M2.117.794a1.323 1.323 0 0 1 1.145.661 1.323 1.323 0 0 1 0 1.323 1.323 1.323 0 0 1-1.145.662V2.117zm0-.794A2.117 2.117 0 0 0 0 2.117a2.117 2.117 0 0 0 2.117 2.116 2.117 2.117 0 0 0 2.116-2.116A2.117 2.117 0 0 0 2.117 0zm0 .53a1.587 1.587 0 0 1 1.587 1.587 1.587 1.587 0 0 1-1.587 1.587A1.587 1.587 0 0 1 .529 2.117 1.587 1.587 0 0 1 2.117.529z">
+[11ty]       </path>
+[11ty]     </svg>
+[11ty]   </button>
+[11ty] </header>
+[11ty] 
+[11ty] <main class="four-oh-four">
+[11ty]   <canvas id="lost-canvas">
+[11ty]     <h1>404</h1>
+[11ty]   </canvas>
+[11ty]   <h1>THIS PAGE DOES NOT EXIST</h1>
+[11ty]   <div style="--opacity:.7">
+[11ty]     <p>Some adventures in life lead to a dead end. Sadly, this is one of those.</p>
+[11ty]     <p>
+[11ty]     You can hit me up <a href="https://twitter.com/josephrexme" style="--cl:var(--link-color)" class="anchor-lines">@josephrexme</a>
+[11ty]     or <a href="/.netlify/functions/mail" rel="nofollow" style="--cl:var(--link-color)" class="anchor-lines">send an email</a> if there is something you need me to find for you.
+[11ty]     </p>
+[11ty]       <p></p>
+[11ty]   </div>
+[11ty] </main>
+[11ty] 
+[11ty] <style>
+[11ty] .four-oh-four{
+[11ty]   margin: 12rem 0;
+[11ty]   text-align: center;
+[11ty] }
+[11ty] </style>
+[11ty] 
+[11ty] <script>
+[11ty] var canvas = document.getElementById('lost-canvas');
+[11ty] var context = canvas.getContext('2d');
+[11ty] 
+[11ty] var text = "404";
+[11ty] var xPosition = (canvas.width/2);
+[11ty] var yPosition = (canvas.height/2);
+[11ty] 
+[11ty] var imageObjShadow = new Image();
+[11ty] var imageObjWithShadow = new Image();
+[11ty] 
+[11ty] setInterval(glitch, 800);
+[11ty] 
+[11ty] 
+[11ty] function glitch(){
+[11ty] 
+[11ty]   imageObjShadow.onload = function() {
+[11ty]     context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]     var arr = lineShadowsHeight();
+[11ty]     var sy = 0;
+[11ty]     for (var i = 0; i < arr.length; i++)
+[11ty]       {
+[11ty]         context.drawImage(this, 0, sy, canvas.width, arr[i], getRandomInt(-2*offset(), 2*offset()), sy, canvas.width, arr[i]);
+[11ty]         sy = sy + arr[i];
+[11ty]       }
+[11ty]     drawText();
+[11ty]     imageDataWithShadow = canvas.toDataURL("image/png", 1.0);
+[11ty] 
+[11ty]     imageObjWithShadow.onload = function() {
+[11ty]       context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]       context.drawImage(this, 0, 0, canvas.width, canvas.height/3+5, 1, 0, canvas.width, canvas.height/3+5);
+[11ty]       context.drawImage(this, 0, canvas.height/3+5, canvas.width, canvas.height/3-5, 0, canvas.height/3+5, canvas.width, canvas.height/3-5);
+[11ty]       context.drawImage(this, 0, (canvas.height/3)*2, canvas.width, canvas.height/3, 0, (canvas.height/3)*2, canvas.width, canvas.height/3);
+[11ty]     }
+[11ty]     imageObjWithShadow.src = imageDataWithShadow;
+[11ty]   }
+[11ty]   imageObjShadow.src = imageDataShadows;
+[11ty] 
+[11ty]   setTimeout(function(){
+[11ty]     imageObjWithShadow.onload = function() {
+[11ty]         context.clearRect(0,(canvas.height/3)*2,canvas.width,canvas.height/3);
+[11ty]         var arr = lineShadowsHeight();
+[11ty]         var sy = 0;
+[11ty]         for (var i = 0; i < arr.length; i++)
+[11ty]         {
+[11ty]           context.drawImage(this, 0, sy, canvas.width, arr[i], getRandomInt(-2*offset(), 2*offset()), sy, canvas.width, arr[i]);
+[11ty]           sy = sy + arr[i];
+[11ty]         }
+[11ty] 
+[11ty]     }
+[11ty]     imageObjWithShadow.src = imageDataWithShadow;
+[11ty]   },80);
+[11ty] 
+[11ty] 
+[11ty]   setTimeout(function(){
+[11ty]     context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]     drawText();
+[11ty]   },timeBack());
+[11ty] }
+[11ty] 
+[11ty] function drawText(){
+[11ty]   const isDarkTheme = (!document.documentElement.classList.contains('theme-active') && matchMedia('(prefers-color-scheme: dark)').matches) || (document.documentElement.classList.contains('theme-active') && !matchMedia('(prefers-color-scheme: dark)').matches);
+[11ty]   context.font = "normal 150px Impact";
+[11ty]   context.fillStyle = isDarkTheme ? "#ffffff" : "#000000";
+[11ty]   context.textAlign = "center";
+[11ty]   context.textBaseline = "middle";
+[11ty]   context.fillText(text, xPosition, yPosition);
+[11ty] }
+[11ty] 
+[11ty] function getRandomInt(min, max)
+[11ty] {
+[11ty]   return Math.floor(Math.random() * (max - min + 1) + min);
+[11ty] }
+[11ty] 
+[11ty] var lineShadows = function (){
+[11ty]   return Math.floor(Math.random() * (7 - 4 + 1) + 4);
+[11ty] };
+[11ty] 
+[11ty] var offset = function()
+[11ty] {
+[11ty]   return Math.floor(Math.random() * (3 - 2 + 1) + 2)*0.8;
+[11ty] }
+[11ty] 
+[11ty] var timeBack = function (){
+[11ty]   var max = 300;
+[11ty]   var min = 80;
+[11ty]   return Math.floor(Math.random() * (max - min + 1) + min);
+[11ty] }
+[11ty] 
+[11ty] var lineShadowsHeight = function ()
+[11ty] {
+[11ty]   var h = canvas.height;
+[11ty]   var count =lineShadows();
+[11ty]   var arr = [];
+[11ty]   var s = 0;
+[11ty] 
+[11ty]   for (var i = 0; i < count; i++)
+[11ty]     {
+[11ty]        arr[i] = Math.floor(Math.random() * (h/(count-1)- 2 + 1) + 2);
+[11ty]        h = h -  arr[i];
+[11ty]        s = s + arr[i];
+[11ty]        arr[count] = canvas.height - s;
+[11ty]     }
+[11ty]     return arr;
+[11ty] }
+[11ty] 
+[11ty] function getShadowsImg(){
+[11ty]   context.save();
+[11ty]   context.font = "bold 150px Impact";
+[11ty]   context.textAlign = "center";
+[11ty]   context.textBaseline = "middle";
+[11ty]   context.globalCompositeOperation = "destination-over";
+[11ty]   context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]   context.fillStyle = "#a3004a";
+[11ty]   context.fillText(text, xPosition-2, yPosition);
+[11ty]   context.fillStyle = "#09c4de";
+[11ty]   context.fillText(text, xPosition+2, yPosition);
+[11ty]   context.restore();
+[11ty] 
+[11ty]   imageDataShadows = canvas.toDataURL("image/png", 1.0);
+[11ty] }
+[11ty] 
+[11ty] getShadowsImg();
+[11ty] context.clearRect(0,0,canvas.width,canvas.height);
+[11ty] drawText();
+[11ty] </script>
+[11ty] <footer style="--d:flex;--gap:4rem;--flex_dir:column;--mx-flex_dir:row;--mx-justify_content:space-between;--mx-align_items:flex-end;--py:8rem;--px:2rem;--mx-px:6rem;--font_sz:1.4rem;--txt_al:center;--mx-txt_al:left;" class="with-anchor-lines">
+[11ty]   <div style="--d:flex;--flex_dir:column;--gap:1rem">
+[11ty]     <div>
+[11ty]       <div style="--font_sz:1.8rem;--font_wt:bold;--mb:.5rem;">Subscribe to my newsletter</div>
+[11ty]       <p>For syndication feed, <a href="https://www.josephrex.me/feed.xml" style="--cl:var(--link-color)">follow this link</a></p>
+[11ty]     </div>
+[11ty]     <!-- For Newsletter -->
+[11ty]     <div>
+[11ty]       <form action="https://app.convertkit.com/forms//subscriptions" method="post"
+[11ty]         target="_blank" data-uid="624a8f5da4" data-format="inline" data-version="5" data-sv-form="" style="--d:flex;--flex_dir:column;--gap:1rem" novalidate>
+[11ty]         <label for="EMAIL">Enter your email address to get latest updates in your inbox</label>
+[11ty]         <div style="--d:grid;--grid_template_cols:3fr 1fr;--w:min(100%, 30rem);--mx:auto;--mx-mx:0;">
+[11ty]           <input type="email" name="email_address" id="EMAIL" placeholder="e.g janet@nasa.gov" style="--border:solid thin var(--text-color);--px:1rem;--py:.5rem;--txt_al:left;">
+[11ty]           <button type="submit" style="--border:solid thin var(--text-color);--border_l:0;--p:1rem;--txt_al:center;--cursor:pointer;--hover-bg:var(--text-color);--hover-cl:var(--bg-color);--transition:all .2s linear;">Subscribe</button>
+[11ty]         </div>
+[11ty]       </form>
+[11ty]     </div>
+[11ty]     <p>
+[11ty]     &copy; 2014 - 2025 . Powered by <a href="https://11ty.dev" style="--cl:var(--link-color)">Eleventy</a> and hosted on <a href="https://netlify.com" style="--cl:var(--link-color)" class="anchor-lines">Netlify</a>
+[11ty]     </p>
+[11ty]   </div>
+[11ty]   <div style="--d:grid;--grid_template_cols:repeat(3,1fr);--gap:2rem;--align_content:end;">
+[11ty]   </div>
+[11ty] </footer>
+[11ty] 
+[11ty] 
+[11ty]   <script>
+[11ty]     // Toggle Dark/Light Theme
+[11ty]     var themeSwitcher = document.getElementById('themeToggle');
+[11ty]     if(themeSwitcher) {
+[11ty]       themeSwitcher.addEventListener('click', function () {
+[11ty]         document.documentElement.classList.toggle('theme-active');
+[11ty]         if (localStorage.getItem('theme')) {
+[11ty]           localStorage.removeItem('theme');
+[11ty]         } else {
+[11ty]           localStorage.setItem('theme', 'active');
+[11ty]         }
+[11ty]       });
+[11ty]     }
+[11ty]   </script>
+[11ty]   
+[11ty]   
+[11ty]   
+[11ty]   <!-- Global site tag (gtag.js) - Google Analytics -->
+[11ty]   <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+[11ty]   <script>
+[11ty]     window.dataLayer = window.dataLayer || [];
+[11ty]     function gtag(){dataLayer.push(arguments);}
+[11ty]     gtag('js', new Date());
+[11ty] 
+[11ty]     gtag('config', '');
+[11ty]   </script>
+[11ty]   
+[11ty] 
+[11ty] </body>
+[11ty] </html>
+[11ty]     at new HTMLParser (/Users/silverdust/Projects/Me/josephrex.me/node_modules/html-minifier/src/htmlparser.js:244:13)
+[11ty]     at minify (/Users/silverdust/Projects/Me/josephrex.me/node_modules/html-minifier/src/htmlminifier.js:980:3)
+[11ty]     at exports.minify (/Users/silverdust/Projects/Me/josephrex.me/node_modules/html-minifier/src/htmlminifier.js:1341:16)
+[11ty]     at Object.<anonymous> (/Users/silverdust/Projects/Me/josephrex.me/eleventy.config.js:133:22)
+[11ty]     at Object.fn (file:///Users/silverdust/Projects/Me/josephrex.me/node_modules/@11ty/eleventy/src/Benchmark/BenchmarkGroup.js:37:23)
+[11ty]     at TransformsUtil.runAll (file:///Users/silverdust/Projects/Me/josephrex.me/node_modules/@11ty/eleventy/src/Util/TransformsUtil.js:37:30)
+[11ty]     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[11ty]     at async #renderPageEntryWithLayoutsAndTransforms (file:///Users/silverdust/Projects/Me/josephrex.me/node_modules/@11ty/eleventy/src/Template.js:929:13)
+[11ty]     at async Template.generateMapEntry (file:///Users/silverdust/Projects/Me/josephrex.me/node_modules/@11ty/eleventy/src/Template.js:961:15)
+[11ty]     at async Promise.all (index 0)
+[11ty] Copied 14 Wrote 2 files in 0.69 seconds (v3.1.1)
+[11ty] Eleventy Fatal Error (CLI):
+[11ty] 1. Having trouble writing to "./public/404.html" from "./content/404.html" (via EleventyTemplateError)
+[11ty] 2. Transform `htmlmin` encountered an error when transforming ./content/404.html. (via EleventyTransformError)
+[11ty] 3. Parse Error: <html lang= prefix="og: http://ogp.me/ns#">
+[11ty] <head>
+[11ty]   <meta charset="UTF-8">
+[11ty]   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+[11ty]   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+[11ty]   
+[11ty]   
+[11ty]   <style>:where(:not(iframe,canvas,img,svg,video,mark,sup,strong,em,s,abbr,ul,ol,dl):not(svg *,symbol *)){all:unset;display:revert}*,::after,::before{box-sizing:border-box}details{padding:1rem 2rem;list-style-type:none;background:rgb(182 79 68/.1);border-radius:.4rem}details+details{margin-block-start:1rem}summary{font-weight:500;cursor:pointer}[open] summary{margin-block-end:1rem}summary::before{content:'≡';margin-inline-end:2rem}summary::-webkit-details-marker{display:none}details>p+p{margin-block-start:1rem}img{max-inline-size:100%;block-size:auto}table{border-collapse:collapse}html{inline-size:100%;font-size:62.5%}body{margin:0;font-family:system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:1.8rem;font-weight:400;line-height:1.5}:root{--site-width:800px;--container:min(90%, var(--site-width));--light-text-color:#222;--light-bg-color:#fff;--light-link-color:#b64f44;--light-active-link-color:#b70303;--dark-text-color:#eee;--dark-bg-color:#222;--dark-link-color:#ff877a;--dark-active-link-color:#ff5050;--text-color:var(--light-text-color);--bg-color:var(--light-bg-color);--link-color:var(--light-link-color);--active-link-color:var(--light-active-link-color)}.theme-active{--text-color:var(--dark-text-color);--bg-color:var(--dark-bg-color);--link-color:var(--dark-link-color);--active-link-color:var(--dark-active-link-color)}@media (prefers-color-scheme:dark){:root{--text-color:var(--dark-text-color);--bg-color:var(--dark-bg-color);--link-color:var(--dark-link-color);--active-link-color:var(--dark-active-link-color)}.theme-active{--text-color:var(--light-text-color);--bg-color:var(--light-bg-color);--link-color:var(--light-link-color);--active-link-color:var(--light-active-link-color)}}a{text-decoration:none;color:inherit;cursor:pointer}input{font-family:inherit}blockquote{position:relative;margin:2rem 1rem;padding:2rem 4rem;background:rgb(var(--bg-color)/.05);border-left:solid thick #444;font-weight:300}blockquote::before{content:'“';position:absolute;top:-2rem;left:1rem;font-size:8rem;color:var(--text-color)}cite{display:block}ol,ul{display:grid;gap:1.5rem}cite::before{content:'— '}code{padding:2px 5px;font-family:monospace;background:#777;mix-blend-mode:hard-light}hr{margin:4rem auto;padding:0;border:0;color:currentColor;text-align:center;overflow:inherit}hr::after{content:'✯ ✯ ✯';display:inline-block;position:relative;top:0;font-size:2rem}h1,h2,h3,h4,h5,h6{line-height:1.3}h1{font-weight:700;margin:1.5rem 0 2.5rem}h2,h3,h4,h5,h6{font-weight:500}article>p+p{margin:3rem 0 0}article p{word-wrap:break-word}article :where(h2,h3,h4,h5,h6){margin:4rem 0 1rem}article h2{font-size:2.6rem}@media (min-width:640px){article h2{font-size:3.6rem}}article h3{font-size:2.4rem}@media (min-width:640px){article h3{font-size:3rem}}article h4{font-size:2.2rem}@media (min-width:640px){article h4{font-size:2.4rem}}article h5{font-size:2rem}article h6{font-size:1.8rem}article :where(pre,pre[class*=language-]){margin:4rem 0}article a{color:var(--link-color)}article a:where(:hover,:focus){color:var(--active-link-color)}article math{display:block;inline-size:fit-content;margin:2rem auto}article figure{display:-ms-grid;display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));margin:2rem auto;padding:1rem;background:rgb(100 100 100/.06);text-align:center}article figure img{display:block;inline-size:100%}article>img,article>picture{display:block;margin:2rem auto}article>picture img{inline-size:100%}article figcaption{padding-block-start:1rem;grid-row-start:2;font-size:1.6rem;opacity:.6;text-align:left}article :where(iframe,video){aspect-ratio:16/9;inline-size:100%;block-size:auto;border-radius:.5rem}article .footnotes-list{display:grid;font-size:1.4rem;gap:2rem}.scroll-progress{--scale:0;position:fixed;top:0;left:0;z-index:1100;inline-size:100%;block-size:.5rem;background:var(--text-color);box-shadow:0 0 .4rem rgb(0 0 0/.05);transform:scaleX(var(--scale));transform-origin:left;transition:transform .2s linear;will-change:transform}.anchor-lines,.with-anchor-lines a{padding:.4rem 0 .4rem;background-image:linear-gradient(to bottom,transparent 20%,currentColor 21%);background-size:0 .3rem;background-position:0 100%;background-repeat:no-repeat;transition:background-size .3s cubic-bezier(.5,0,.5,1) .05s}.anchor-lines:where(:hover,:focus),.with-anchor-lines a:where(:hover,:focus){background-size:100% .3rem}.anchor-brackets::after,.anchor-brackets::before{display:inline-block;opacity:0;transition:transform .3s,opacity .2s}.anchor-brackets::before{content:'[';margin-right:1rem;transform:translate(2rem)}.anchor-brackets::after{content:']';margin-left:1rem;transform:translate(-2rem)}.anchor-brackets:where(:hover,:focus)::after,.anchor-brackets:where(:hover,:focus)::before{opacity:1;transform:translate(0)}.anchor-dash::before{content:'';position:relative;top:-.5ch;display:inline-block;opacity:.4;inline-size:4rem;border-bottom:solid thin currentColor;transform:scaleX(.7);transform-origin:left;transition:opacity .2s cubic-bezier(.5,0,.5,1) .05s,transform .3s cubic-bezier(.5,0,.5,1) .05s}.anchor-dash span{display:inline-block;margin-left:.5rem;transition:transform .3s cubic-bezier(.5,0,.5,1) .1s}.anchor-dash:where(:hover,:focus) span{transform:translateX(1rem)}.anchor-dash:where(:hover,:focus)::before{opacity:1;transform:scaleX(1)}</style>
+[11ty]   <style>[style*='--p:']{padding:var(--p)}[style*='--py:']{padding-block:var(--py)}[style*='--px:']{padding-inline:var(--px)}[style*='--pt:']{padding-block-start:var(--pt)}[style*='--pb:']{padding-block-end:var(--pb)}[style*='--pl:']{padding-inline-start:var(--pl)}[style*='--pr:']{padding-inline-end:var(--pr)}[style*='--m:']{margin:var(--m)}[style*='--my:']{margin-block:var(--my)}[style*='--mx:']{margin-inline:var(--mx)}[style*='--mt:']{margin-block-start:var(--mt)}[style*='--mb:']{margin-block-end:var(--mb)}[style*='--ml:']{margin-inline-start:var(--ml)}[style*='--mr:']{margin-inline-end:var(--mr)}[style*='--w:']{inline-size:var(--w)}[style*='--h:']{block-size:var(--h)}[style*='--txt_al:']{text-align:var(--txt_al)}[style*='--font_sz:']{font-size:var(--font_sz)}[style*='--font_wt:']{font-weight:var(--font_wt)}[style*='--font_st:']{font-style:var(--font_st)}[style*='--word_break:']{word-break:var(--word_break)}[style*='--white_space:']{white-space:var(--white_space)}[style*='--bg:']{background:var(--bg)}[style*='--cl:']{color:var(--cl)}[style*='--position:']{position:var(--position)}[style*='--inset:']{inset:var(--inset)}[style*='--left:']{left:var(--left)}[style*='--right:']{right:var(--right)}[style*='--top:']{top:var(--top)}[style*='--bottom:']{bottom:var(--bottom)}[style*='--z:']{z-index:var(--z)}[style*='--d:']{display:var(--d)}[style*='--border:']{border:var(--border)}[style*='--border_x:']{border-inline:var(--border_x)}[style*='--border_y:']{border-block:var(--border_y)}[style*='--border_t:']{border-block-start:var(--border_t)}[style*='--border_b:']{border-block-end:var(--border_b)}[style*='--border_r:']{border-inline-end:var(--border_r)}[style*='--border_l:']{border-inline-start:var(--border_l)}[style*='--roundness:']{border-radius:var(--roundness)}[style*='--shadow:']{box-shadow:var(--shadow)}[style*='--justify_content:']{justify-content:var(--justify_content)}[style*='--align_items:']{align-items:var(--align_items)}[style*='--align_content:']{align-content:var(--align_content)}[style*='--place_content:']{place-content:var(--place_content)}[style*='--flex_dir:']{flex-direction:var(--flex_dir)}[style*='--flex_wrap:']{flex-wrap:var(--flex_wrap)}[style*='--gap:']{gap:var(--gap)}[style*='--grid_template_cols:']{grid-template-columns:var(--grid_template_cols)}[style*='--grid_template_rows:']{grid-template-rows:var(--grid_template_rows)}[style*='--grid_col_end:']{grid-column-end:var(--grid_col_end)}[style*='--grid_col_start:']{grid-column-start:var(--grid_col_start)}[style*='--grid_area:']{grid-area:var(--grid_area)}[style*='--order:']{order:var(--order)}[style*='--opacity:']{opacity:var(--opacity)}[style*='--transform:']{transform:var(--transform)}[style*='--transform-o:']{transform-origin:var(--transform-o)}[style*='--transition:']{transition:var(--transition)}[style*='--will_change:']{will-change:var(--will_change)}[style*='--cursor:']{cursor:var(--cursor)}[style*='--fill:']{fill:var(--fill)}[style*='--filter:']{filter:var(--filter)}[style*='--backdrop_filter:']{-webkit-backdrop-filter:var(--backdrop_filter);backdrop-filter:var(--backdrop_filter)}[style*='--aspect_ratio:']{aspect-ratio:var(--aspect_ratio)}[style*='--object_fit:']{-o-object-fit:var(--object_fit);object-fit:var(--object_fit)}[style*='--object_position:']{-o-object-position:var(--object_position);object-position:var(--object_position)}[style*='--hover-bg:']:hover{background:var(--hover-bg)}[style*='--hover-cl:']:hover{color:var(--hover-cl)}[style*='--hover-opacity:']:hover{opacity:var(--hover-opacity)}[style*='--hover-transform:']:hover{transform:var(--hover-transform)}[style*='--group:active']:hover [style*='--group-hover-transform']{transform:var(--group-hover-transform)}@media(prefers-color-scheme:dark){[style*='--dark-bg:']{background:var(--dark-bg)}[style*='--dark-cl:']{color:var(--dark-cl)}}@media (min-width:640px){[style*='--sm-txt_al:']{text-align:var(--sm-txt_al)}[style*='--sm-font_sz:']{font-size:var(--sm-font_sz)}[style*='--sm-d:']{display:var(--sm-d)}}@media (min-width:768px){[style*='--md-p:']{padding:var(--md-p)}[style*='--md-py:']{padding-block:var(--md-py)}[style*='--md-px:']{padding-inline:var(--md-px)}[style*='--md-pt:']{padding-block-start:var(--md-pt)}[style*='--md-pb:']{padding-block-end:var(--md-pb)}[style*='--md-pl:']{padding-inline-start:var(--md-pl)}[style*='--md-pr:']{padding-inline-end:var(--md-pr)}[style*='--md-m:']{margin:var(--md-m)}[style*='--md-my:']{margin-block:var(--md-my)}[style*='--md-mx:']{margin-inline:var(--md-mx)}[style*='--md-mt:']{margin-block-start:var(--md-mt)}[style*='--md-mb:']{margin-block-end:var(--md-mb)}[style*='--md-ml:']{margin-inline-start:var(--md-ml)}[style*='--md-mr:']{margin-inline-end:var(--md-mr)}[style*='--md-w:']{inline-size:var(--md-w)}[style*='--md-h:']{block-size:var(--md-h)}[style*='--md-txt_al:']{text-align:var(--md-txt_al)}[style*='--md-font_sz:']{font-size:var(--md-font_sz)}[style*='--md-d:']{display:var(--md-d)}[style*='--md-justify_content:']{justify-content:var(--md-justify_content)}[style*='--md-align_items:']{align-items:var(--md-align_items)}[style*='--md-align_content:']{align-items:var(--md-align_content)}[style*='--md-place_content:']{align-items:var(--md-place_content)}[style*='--md-flex_dir:']{flex-direction:var(--md-flex_dir)}[style*='--md-flex_wrap:']{flex-wrap:var(--md-flex_wrap)}[style*='--md-gap:']{gap:var(--md-gap)}[style*='--md-grid_template_cols:']{grid-template-columns:var(--md-grid_template_cols)}[style*='--md-grid_template_rows:']{grid-template-rows:var(--md-grid_template_rows)}[style*='--md-order:']{order:var(--md-order)}}@media (min-width:960px){[style*='--mx-p:']{padding:var(--mx-p)}[style*='--mx-py:']{padding-block:var(--mx-py)}[style*='--mx-px:']{padding-inline:var(--mx-px)}[style*='--mx-pt:']{padding-block-start:var(--mx-pt)}[style*='--mx-pb:']{padding-block-end:var(--mx-pb)}[style*='--mx-pl:']{padding-inline-start:var(--mx-pl)}[style*='--mx-pr:']{padding-inline-end:var(--mx-pr)}[style*='--mx-m:']{margin:var(--mx-m)}[style*='--mx-my:']{margin-block:var(--mx-my)}[style*='--mx-mx:']{margin-inline:var(--mx-mx)}[style*='--mx-mt:']{margin-block-start:var(--mx-mt)}[style*='--mx-mb:']{margin-block-end:var(--mx-mb)}[style*='--mx-ml:']{margin-inline-start:var(--mx-ml)}[style*='--mx-mr:']{margin-inline-end:var(--mx-mr)}[style*='--mx-w:']{inline-size:var(--mx-w)}[style*='--mx-h:']{block-size:var(--mx-h)}[style*='--mx-txt_al:']{text-align:var(--mx-txt_al)}[style*='--mx-font_sz:']{font-size:var(--mx-font_sz)}[style*='--mx-d:']{display:var(--mx-d)}[style*='--mx-justify_content:']{justify-content:var(--mx-justify_content)}[style*='--mx-align_items:']{align-items:var(--mx-align_items)}[style*='--mx-align_content:']{align-items:var(--mx-align_content)}[style*='--mx-place_content:']{align-items:var(--mx-place_content)}[style*='--mx-flex_dir:']{flex-direction:var(--mx-flex_dir)}[style*='--mx-flex_wrap:']{flex-wrap:var(--mx-flex_wrap)}[style*='--mx-gap:']{gap:var(--mx-gap)}[style*='--mx-grid_template_cols:']{grid-template-columns:var(--mx-grid_template_cols)}[style*='--mx-grid_template_rows:']{grid-template-rows:var(--mx-grid_template_rows)}[style*='--mx-order:']{order:var(--mx-order)}}@media (min-width:1024px){[style*='--lg-txt_al:']{text-align:var(--lg-txt_al)}[style*='--lg-font_sz:']{font-size:var(--lg-font_sz)}[style*='--lg-d:']{display:var(--lg-d)}[style*='--lg-justify_content:']{justify-content:var(--lg-justify_content)}[style*='--lg-flex_dir:']{flex-direction:var(--lg-flex_dir)}[style*='--lg-gap:']{gap:var(--lg-gap)}[style*='--lg-grid_template_cols:']{grid-template-columns:var(--lg-grid_template_cols)}[style*='--lg-grid_template_rows:']{grid-template-rows:var(--lg-grid_template_rows)}}@media (min-width:1280px){[style*='--xl-txt_al:']{text-align:var(--xl-txt_al)}[style*='--xl-font_sz:']{font-size:var(--xl-font_sz)}[style*='--xl-d:']{display:var(--xl-d)}}@media(prefers-color-scheme:dark){[style*='--dark-bg:']{background:var(--dark-bg)}[style*='--dark-cl:']{color:var(--dark-cl)}}</style>
+[11ty]   <title>Oops! Not Found</title>
+[11ty]   <meta name="generator" content="Eleventy v3.1.1">
+[11ty]   <meta name="description" content="">
+[11ty]   <meta name="author" content="">
+[11ty]   <meta property="site_name" content="">
+[11ty]   <meta property="og:type" content="article">
+[11ty]   <meta property="og:url" content="https://www.josephrex.me/404.html">
+[11ty]   <meta property="og:title" content="Oops! Not Found">
+[11ty]   <meta property="og:image" content="https://www.josephrex.me/.netlify/functions/opengraph?text=oops-not-found&amp;layout=base">
+[11ty]   <meta property="og:image:alt" content="Oops! Not Found">
+[11ty]   <meta property="og:description" content="">
+[11ty]   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
+[11ty]   <meta name="twitter:url" content="https://www.josephrex.me/404.html">
+[11ty]   <meta name="twitter:card" content="summary">
+[11ty]   <meta name="twitter:site" content="@">
+[11ty]   <meta name="twitter:creator" content="@">
+[11ty]   <meta name="twitter:title" content="Oops! Not Found">
+[11ty]   <meta name="twitter:image" content="https://www.josephrex.me/.netlify/functions/opengraph?text=oops-not-found&amp;layout=base">
+[11ty]   <meta name="color-scheme" content="light dark">
+[11ty]   
+[11ty]   <link rel="canonical" href="https://www.josephrex.me/404.html">
+[11ty]   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+[11ty]   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+[11ty]   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+[11ty]   <link rel="manifest" href="/site.webmanifest">
+[11ty]   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+[11ty]   <meta name="msapplication-TileColor" content="#da532c">
+[11ty]   <meta name="theme-color" content="">
+[11ty]   <link rel="webmention" href="https://webmention.io/www.josephrex.me/webmention">
+[11ty]   <link rel="pingback" href="https://webmention.io/www.josephrex.me/xmlrpc">
+[11ty]   <script>
+[11ty]   if(localStorage.getItem('theme')) {
+[11ty]     document.documentElement.classList.add('theme-active');
+[11ty]   }
+[11ty]   </script>
+[11ty]   <script type="application/ld+json">
+[11ty]   {
+[11ty]     "@context": "http://schema.org",
+[11ty]     "@type": "Article",
+[11ty]     "description": "",
+[11ty]     "publisher": {
+[11ty]       "@type": "Organization",
+[11ty]       "name": " Blog",
+[11ty]       "logo": {
+[11ty]         "@type": "ImageObject",
+[11ty]         "url": "",
+[11ty]         "width": 600,
+[11ty]         "height": 60
+[11ty]       }
+[11ty]     },
+[11ty]     "author": {
+[11ty]       "@type": "Person",
+[11ty]       "name": "",
+[11ty]       "url": ""
+[11ty]     },
+[11ty]     "sameAs": [
+[11ty]       "",
+[11ty]       "",
+[11ty]       "",
+[11ty]       "",
+[11ty]       ""
+[11ty]     ],
+[11ty]     "mainEntityOfPage": {
+[11ty]       "@type": "WebPage",
+[11ty]       "@id": "https://www.josephrex.me/404.html"
+[11ty]     }
+[11ty]     
+[11ty]   }
+[11ty]   </script>
+[11ty] </head>
+[11ty] <body style="--bg:var(--bg-color);--cl:var(--text-color)">
+[11ty]   <header style="--position:relative;--d:flex;--py:6rem;--px:2rem;--mx-px:6rem;--justify_content:space-between">
+[11ty]   <a href="/" aria-label="Home">
+[11ty]   <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 788 506" width="50">
+[11ty]     <path fill="none" d="M-.0002065-.0049836H787.665491V505.107258H-.0002065z"/>
+[11ty]     <g fill="none" style="--fill:var(--link-color);">
+[11ty]       <path d="M331.6312376 323.1137061H221.40306995v86.76413606S101.14753008 436.6345234 99.47022419 361.24325309c-1.7866954-81.83431417 67.74857279-76.178875 112.16071577-76.33566668 38.468646-.13856008 388.2963141 0 388.2963141 0 35.18696057.29170544 143.59196966-7.91980262 150.70228812-123.41692428C759.49009287 18.4456082 658.85173932 11.22589863 644.70402875 9.46837337c-35.80683449-4.44850792-204.88656108-1.97630434-204.88656108-1.97630434l.69280026 155.17270748h109.38951473l.32816854-64.01840458c-21.58619757 7.2452338 105.19625-27.13589832 104.39406022 44.10221584-.72926343 67.97465957-60.45593847 61.32012928-103.7741863 58.58174448-25.88885182-1.63719677-390.62995709.3865097-390.62995709.3865097-2.552422-1.96536538-159.74515467 1.31267448-157.265659 165.14174081 1.56791638 103.23455433 74.60364904 134.83354585 165.4698726 129.78339546 3.4640013-.19325485 163.20915598 0 163.20915598 0z"/>
+[11ty]       <path d="M550.2351731 323.1135197H440.00781126l-.19847032 173.52615726H550.845851zm-15.25168068 17.36239962h-79.40339458v138.73720135l79.12858952.00160392zM670.70796034 496.63992097h112.8048288l-55.2055909-202.40311116s-21.82938633 30.18938515-105.3541811 28.87876064c-1.29796352-1.83754225 47.7549432 173.52435052 47.7549432 173.52435052zm13.95732192-16.75798513 76.22585711-1.203907-41.82139573-155.56245839c.16856669-1.75583665-16.01383553 12.014058-75.01217695 18.24035815-1.07882681-1.67079613 40.60771557 138.52600724 40.60771557 138.52600724zM331.6296158 6.80684975v154.68494633H221.40709358V97.23247244l-98.52821756.44588888-.05921167-90.87151157zm-17.67468326 17.56770097-.66613128 117.96487456-75.50968115.8580955.60691961-65.51037875h-95.18275825l.02960584-53.04794503z"/>
+[11ty]     </g>
+[11ty]   </svg>
+[11ty]   </a>
+[11ty]   <nav aria-label="Primary navigation" style="--d:flex;--flex_dir:column;--gap:1rem;--txt_al:right;--md-flex_dir:row;--mt:-0.5rem;--md-mt:0;">
+[11ty]     <a href="https://resume.josephrex.me" rel="nofollow" style="--opacity:.7" class="anchor-brackets">Resume</a>
+[11ty]     <a href="/reading-list" style="--opacity:.7" class="anchor-brackets">Reading list</a>
+[11ty]     <a href="https://kit.co/josephrexme/home-office" style="--opacity:.7" class="anchor-brackets">Uses</a>
+[11ty]   </nav>
+[11ty]   <!-- Color scheme toggle -->
+[11ty]   <button style="--position:absolute;--top:0;--right:3rem;--w:4rem;--h:4rem;--bg:var(--link-color);--hover-bg:var(--active-link-color);--transition:background-color .3s cubic-bezier(.5,0,.5,1);--d:grid;--place_content: center;--cursor:pointer;" id="themeToggle" title="Change color scheme">
+[11ty]     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 4.233 4.233" style="--filter:invert(1);">
+[11ty]       <path fill="currentColor" d="M2.117.794a1.323 1.323 0 0 1 1.145.661 1.323 1.323 0 0 1 0 1.323 1.323 1.323 0 0 1-1.145.662V2.117zm0-.794A2.117 2.117 0 0 0 0 2.117a2.117 2.117 0 0 0 2.117 2.116 2.117 2.117 0 0 0 2.116-2.116A2.117 2.117 0 0 0 2.117 0zm0 .53a1.587 1.587 0 0 1 1.587 1.587 1.587 1.587 0 0 1-1.587 1.587A1.587 1.587 0 0 1 .529 2.117 1.587 1.587 0 0 1 2.117.529z">
+[11ty]       </path>
+[11ty]     </svg>
+[11ty]   </button>
+[11ty] </header>
+[11ty] 
+[11ty] <main class="four-oh-four">
+[11ty]   <canvas id="lost-canvas">
+[11ty]     <h1>404</h1>
+[11ty]   </canvas>
+[11ty]   <h1>THIS PAGE DOES NOT EXIST</h1>
+[11ty]   <div style="--opacity:.7">
+[11ty]     <p>Some adventures in life lead to a dead end. Sadly, this is one of those.</p>
+[11ty]     <p>
+[11ty]     You can hit me up <a href="https://twitter.com/josephrexme" style="--cl:var(--link-color)" class="anchor-lines">@josephrexme</a>
+[11ty]     or <a href="/.netlify/functions/mail" rel="nofollow" style="--cl:var(--link-color)" class="anchor-lines">send an email</a> if there is something you need me to find for you.
+[11ty]     </p>
+[11ty]       <p></p>
+[11ty]   </div>
+[11ty] </main>
+[11ty] 
+[11ty] <style>
+[11ty] .four-oh-four{
+[11ty]   margin: 12rem 0;
+[11ty]   text-align: center;
+[11ty] }
+[11ty] </style>
+[11ty] 
+[11ty] <script>
+[11ty] var canvas = document.getElementById('lost-canvas');
+[11ty] var context = canvas.getContext('2d');
+[11ty] 
+[11ty] var text = "404";
+[11ty] var xPosition = (canvas.width/2);
+[11ty] var yPosition = (canvas.height/2);
+[11ty] 
+[11ty] var imageObjShadow = new Image();
+[11ty] var imageObjWithShadow = new Image();
+[11ty] 
+[11ty] setInterval(glitch, 800);
+[11ty] 
+[11ty] 
+[11ty] function glitch(){
+[11ty] 
+[11ty]   imageObjShadow.onload = function() {
+[11ty]     context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]     var arr = lineShadowsHeight();
+[11ty]     var sy = 0;
+[11ty]     for (var i = 0; i < arr.length; i++)
+[11ty]       {
+[11ty]         context.drawImage(this, 0, sy, canvas.width, arr[i], getRandomInt(-2*offset(), 2*offset()), sy, canvas.width, arr[i]);
+[11ty]         sy = sy + arr[i];
+[11ty]       }
+[11ty]     drawText();
+[11ty]     imageDataWithShadow = canvas.toDataURL("image/png", 1.0);
+[11ty] 
+[11ty]     imageObjWithShadow.onload = function() {
+[11ty]       context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]       context.drawImage(this, 0, 0, canvas.width, canvas.height/3+5, 1, 0, canvas.width, canvas.height/3+5);
+[11ty]       context.drawImage(this, 0, canvas.height/3+5, canvas.width, canvas.height/3-5, 0, canvas.height/3+5, canvas.width, canvas.height/3-5);
+[11ty]       context.drawImage(this, 0, (canvas.height/3)*2, canvas.width, canvas.height/3, 0, (canvas.height/3)*2, canvas.width, canvas.height/3);
+[11ty]     }
+[11ty]     imageObjWithShadow.src = imageDataWithShadow;
+[11ty]   }
+[11ty]   imageObjShadow.src = imageDataShadows;
+[11ty] 
+[11ty]   setTimeout(function(){
+[11ty]     imageObjWithShadow.onload = function() {
+[11ty]         context.clearRect(0,(canvas.height/3)*2,canvas.width,canvas.height/3);
+[11ty]         var arr = lineShadowsHeight();
+[11ty]         var sy = 0;
+[11ty]         for (var i = 0; i < arr.length; i++)
+[11ty]         {
+[11ty]           context.drawImage(this, 0, sy, canvas.width, arr[i], getRandomInt(-2*offset(), 2*offset()), sy, canvas.width, arr[i]);
+[11ty]           sy = sy + arr[i];
+[11ty]         }
+[11ty] 
+[11ty]     }
+[11ty]     imageObjWithShadow.src = imageDataWithShadow;
+[11ty]   },80);
+[11ty] 
+[11ty] 
+[11ty]   setTimeout(function(){
+[11ty]     context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]     drawText();
+[11ty]   },timeBack());
+[11ty] }
+[11ty] 
+[11ty] function drawText(){
+[11ty]   const isDarkTheme = (!document.documentElement.classList.contains('theme-active') && matchMedia('(prefers-color-scheme: dark)').matches) || (document.documentElement.classList.contains('theme-active') && !matchMedia('(prefers-color-scheme: dark)').matches);
+[11ty]   context.font = "normal 150px Impact";
+[11ty]   context.fillStyle = isDarkTheme ? "#ffffff" : "#000000";
+[11ty]   context.textAlign = "center";
+[11ty]   context.textBaseline = "middle";
+[11ty]   context.fillText(text, xPosition, yPosition);
+[11ty] }
+[11ty] 
+[11ty] function getRandomInt(min, max)
+[11ty] {
+[11ty]   return Math.floor(Math.random() * (max - min + 1) + min);
+[11ty] }
+[11ty] 
+[11ty] var lineShadows = function (){
+[11ty]   return Math.floor(Math.random() * (7 - 4 + 1) + 4);
+[11ty] };
+[11ty] 
+[11ty] var offset = function()
+[11ty] {
+[11ty]   return Math.floor(Math.random() * (3 - 2 + 1) + 2)*0.8;
+[11ty] }
+[11ty] 
+[11ty] var timeBack = function (){
+[11ty]   var max = 300;
+[11ty]   var min = 80;
+[11ty]   return Math.floor(Math.random() * (max - min + 1) + min);
+[11ty] }
+[11ty] 
+[11ty] var lineShadowsHeight = function ()
+[11ty] {
+[11ty]   var h = canvas.height;
+[11ty]   var count =lineShadows();
+[11ty]   var arr = [];
+[11ty]   var s = 0;
+[11ty] 
+[11ty]   for (var i = 0; i < count; i++)
+[11ty]     {
+[11ty]        arr[i] = Math.floor(Math.random() * (h/(count-1)- 2 + 1) + 2);
+[11ty]        h = h -  arr[i];
+[11ty]        s = s + arr[i];
+[11ty]        arr[count] = canvas.height - s;
+[11ty]     }
+[11ty]     return arr;
+[11ty] }
+[11ty] 
+[11ty] function getShadowsImg(){
+[11ty]   context.save();
+[11ty]   context.font = "bold 150px Impact";
+[11ty]   context.textAlign = "center";
+[11ty]   context.textBaseline = "middle";
+[11ty]   context.globalCompositeOperation = "destination-over";
+[11ty]   context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]   context.fillStyle = "#a3004a";
+[11ty]   context.fillText(text, xPosition-2, yPosition);
+[11ty]   context.fillStyle = "#09c4de";
+[11ty]   context.fillText(text, xPosition+2, yPosition);
+[11ty]   context.restore();
+[11ty] 
+[11ty]   imageDataShadows = canvas.toDataURL("image/png", 1.0);
+[11ty] }
+[11ty] 
+[11ty] getShadowsImg();
+[11ty] context.clearRect(0,0,canvas.width,canvas.height);
+[11ty] drawText();
+[11ty] </script>
+[11ty] <footer style="--d:flex;--gap:4rem;--flex_dir:column;--mx-flex_dir:row;--mx-justify_content:space-between;--mx-align_items:flex-end;--py:8rem;--px:2rem;--mx-px:6rem;--font_sz:1.4rem;--txt_al:center;--mx-txt_al:left;" class="with-anchor-lines">
+[11ty]   <div style="--d:flex;--flex_dir:column;--gap:1rem">
+[11ty]     <div>
+[11ty]       <div style="--font_sz:1.8rem;--font_wt:bold;--mb:.5rem;">Subscribe to my newsletter</div>
+[11ty]       <p>For syndication feed, <a href="https://www.josephrex.me/feed.xml" style="--cl:var(--link-color)">follow this link</a></p>
+[11ty]     </div>
+[11ty]     <!-- For Newsletter -->
+[11ty]     <div>
+[11ty]       <form action="https://app.convertkit.com/forms//subscriptions" method="post"
+[11ty]         target="_blank" data-uid="624a8f5da4" data-format="inline" data-version="5" data-sv-form="" style="--d:flex;--flex_dir:column;--gap:1rem" novalidate>
+[11ty]         <label for="EMAIL">Enter your email address to get latest updates in your inbox</label>
+[11ty]         <div style="--d:grid;--grid_template_cols:3fr 1fr;--w:min(100%, 30rem);--mx:auto;--mx-mx:0;">
+[11ty]           <input type="email" name="email_address" id="EMAIL" placeholder="e.g janet@nasa.gov" style="--border:solid thin var(--text-color);--px:1rem;--py:.5rem;--txt_al:left;">
+[11ty]           <button type="submit" style="--border:solid thin var(--text-color);--border_l:0;--p:1rem;--txt_al:center;--cursor:pointer;--hover-bg:var(--text-color);--hover-cl:var(--bg-color);--transition:all .2s linear;">Subscribe</button>
+[11ty]         </div>
+[11ty]       </form>
+[11ty]     </div>
+[11ty]     <p>
+[11ty]     &copy; 2014 - 2025 . Powered by <a href="https://11ty.dev" style="--cl:var(--link-color)">Eleventy</a> and hosted on <a href="https://netlify.com" style="--cl:var(--link-color)" class="anchor-lines">Netlify</a>
+[11ty]     </p>
+[11ty]   </div>
+[11ty]   <div style="--d:grid;--grid_template_cols:repeat(3,1fr);--gap:2rem;--align_content:end;">
+[11ty]   </div>
+[11ty] </footer>
+[11ty] 
+[11ty] 
+[11ty]   <script>
+[11ty]     // Toggle Dark/Light Theme
+[11ty]     var themeSwitcher = document.getElementById('themeToggle');
+[11ty]     if(themeSwitcher) {
+[11ty]       themeSwitcher.addEventListener('click', function () {
+[11ty]         document.documentElement.classList.toggle('theme-active');
+[11ty]         if (localStorage.getItem('theme')) {
+[11ty]           localStorage.removeItem('theme');
+[11ty]         } else {
+[11ty]           localStorage.setItem('theme', 'active');
+[11ty]         }
+[11ty]       });
+[11ty]     }
+[11ty]   </script>
+[11ty]   
+[11ty]   
+[11ty]   
+[11ty]   <!-- Global site tag (gtag.js) - Google Analytics -->
+[11ty]   <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+[11ty]   <script>
+[11ty]     window.dataLayer = window.dataLayer || [];
+[11ty]     function gtag(){dataLayer.push(arguments);}
+[11ty]     gtag('js', new Date());
+[11ty] 
+[11ty]     gtag('config', '');
+[11ty]   </script>
+[11ty]   
+[11ty] 
+[11ty] </body>
+[11ty] </html>
+[11ty] 
+[11ty] Original error stack trace: Error: Parse Error: <html lang= prefix="og: http://ogp.me/ns#">
+[11ty] <head>
+[11ty]   <meta charset="UTF-8">
+[11ty]   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+[11ty]   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+[11ty]   
+[11ty]   
+[11ty]   <style>:where(:not(iframe,canvas,img,svg,video,mark,sup,strong,em,s,abbr,ul,ol,dl):not(svg *,symbol *)){all:unset;display:revert}*,::after,::before{box-sizing:border-box}details{padding:1rem 2rem;list-style-type:none;background:rgb(182 79 68/.1);border-radius:.4rem}details+details{margin-block-start:1rem}summary{font-weight:500;cursor:pointer}[open] summary{margin-block-end:1rem}summary::before{content:'≡';margin-inline-end:2rem}summary::-webkit-details-marker{display:none}details>p+p{margin-block-start:1rem}img{max-inline-size:100%;block-size:auto}table{border-collapse:collapse}html{inline-size:100%;font-size:62.5%}body{margin:0;font-family:system-ui,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:1.8rem;font-weight:400;line-height:1.5}:root{--site-width:800px;--container:min(90%, var(--site-width));--light-text-color:#222;--light-bg-color:#fff;--light-link-color:#b64f44;--light-active-link-color:#b70303;--dark-text-color:#eee;--dark-bg-color:#222;--dark-link-color:#ff877a;--dark-active-link-color:#ff5050;--text-color:var(--light-text-color);--bg-color:var(--light-bg-color);--link-color:var(--light-link-color);--active-link-color:var(--light-active-link-color)}.theme-active{--text-color:var(--dark-text-color);--bg-color:var(--dark-bg-color);--link-color:var(--dark-link-color);--active-link-color:var(--dark-active-link-color)}@media (prefers-color-scheme:dark){:root{--text-color:var(--dark-text-color);--bg-color:var(--dark-bg-color);--link-color:var(--dark-link-color);--active-link-color:var(--dark-active-link-color)}.theme-active{--text-color:var(--light-text-color);--bg-color:var(--light-bg-color);--link-color:var(--light-link-color);--active-link-color:var(--light-active-link-color)}}a{text-decoration:none;color:inherit;cursor:pointer}input{font-family:inherit}blockquote{position:relative;margin:2rem 1rem;padding:2rem 4rem;background:rgb(var(--bg-color)/.05);border-left:solid thick #444;font-weight:300}blockquote::before{content:'“';position:absolute;top:-2rem;left:1rem;font-size:8rem;color:var(--text-color)}cite{display:block}ol,ul{display:grid;gap:1.5rem}cite::before{content:'— '}code{padding:2px 5px;font-family:monospace;background:#777;mix-blend-mode:hard-light}hr{margin:4rem auto;padding:0;border:0;color:currentColor;text-align:center;overflow:inherit}hr::after{content:'✯ ✯ ✯';display:inline-block;position:relative;top:0;font-size:2rem}h1,h2,h3,h4,h5,h6{line-height:1.3}h1{font-weight:700;margin:1.5rem 0 2.5rem}h2,h3,h4,h5,h6{font-weight:500}article>p+p{margin:3rem 0 0}article p{word-wrap:break-word}article :where(h2,h3,h4,h5,h6){margin:4rem 0 1rem}article h2{font-size:2.6rem}@media (min-width:640px){article h2{font-size:3.6rem}}article h3{font-size:2.4rem}@media (min-width:640px){article h3{font-size:3rem}}article h4{font-size:2.2rem}@media (min-width:640px){article h4{font-size:2.4rem}}article h5{font-size:2rem}article h6{font-size:1.8rem}article :where(pre,pre[class*=language-]){margin:4rem 0}article a{color:var(--link-color)}article a:where(:hover,:focus){color:var(--active-link-color)}article math{display:block;inline-size:fit-content;margin:2rem auto}article figure{display:-ms-grid;display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));margin:2rem auto;padding:1rem;background:rgb(100 100 100/.06);text-align:center}article figure img{display:block;inline-size:100%}article>img,article>picture{display:block;margin:2rem auto}article>picture img{inline-size:100%}article figcaption{padding-block-start:1rem;grid-row-start:2;font-size:1.6rem;opacity:.6;text-align:left}article :where(iframe,video){aspect-ratio:16/9;inline-size:100%;block-size:auto;border-radius:.5rem}article .footnotes-list{display:grid;font-size:1.4rem;gap:2rem}.scroll-progress{--scale:0;position:fixed;top:0;left:0;z-index:1100;inline-size:100%;block-size:.5rem;background:var(--text-color);box-shadow:0 0 .4rem rgb(0 0 0/.05);transform:scaleX(var(--scale));transform-origin:left;transition:transform .2s linear;will-change:transform}.anchor-lines,.with-anchor-lines a{padding:.4rem 0 .4rem;background-image:linear-gradient(to bottom,transparent 20%,currentColor 21%);background-size:0 .3rem;background-position:0 100%;background-repeat:no-repeat;transition:background-size .3s cubic-bezier(.5,0,.5,1) .05s}.anchor-lines:where(:hover,:focus),.with-anchor-lines a:where(:hover,:focus){background-size:100% .3rem}.anchor-brackets::after,.anchor-brackets::before{display:inline-block;opacity:0;transition:transform .3s,opacity .2s}.anchor-brackets::before{content:'[';margin-right:1rem;transform:translate(2rem)}.anchor-brackets::after{content:']';margin-left:1rem;transform:translate(-2rem)}.anchor-brackets:where(:hover,:focus)::after,.anchor-brackets:where(:hover,:focus)::before{opacity:1;transform:translate(0)}.anchor-dash::before{content:'';position:relative;top:-.5ch;display:inline-block;opacity:.4;inline-size:4rem;border-bottom:solid thin currentColor;transform:scaleX(.7);transform-origin:left;transition:opacity .2s cubic-bezier(.5,0,.5,1) .05s,transform .3s cubic-bezier(.5,0,.5,1) .05s}.anchor-dash span{display:inline-block;margin-left:.5rem;transition:transform .3s cubic-bezier(.5,0,.5,1) .1s}.anchor-dash:where(:hover,:focus) span{transform:translateX(1rem)}.anchor-dash:where(:hover,:focus)::before{opacity:1;transform:scaleX(1)}</style>
+[11ty]   <style>[style*='--p:']{padding:var(--p)}[style*='--py:']{padding-block:var(--py)}[style*='--px:']{padding-inline:var(--px)}[style*='--pt:']{padding-block-start:var(--pt)}[style*='--pb:']{padding-block-end:var(--pb)}[style*='--pl:']{padding-inline-start:var(--pl)}[style*='--pr:']{padding-inline-end:var(--pr)}[style*='--m:']{margin:var(--m)}[style*='--my:']{margin-block:var(--my)}[style*='--mx:']{margin-inline:var(--mx)}[style*='--mt:']{margin-block-start:var(--mt)}[style*='--mb:']{margin-block-end:var(--mb)}[style*='--ml:']{margin-inline-start:var(--ml)}[style*='--mr:']{margin-inline-end:var(--mr)}[style*='--w:']{inline-size:var(--w)}[style*='--h:']{block-size:var(--h)}[style*='--txt_al:']{text-align:var(--txt_al)}[style*='--font_sz:']{font-size:var(--font_sz)}[style*='--font_wt:']{font-weight:var(--font_wt)}[style*='--font_st:']{font-style:var(--font_st)}[style*='--word_break:']{word-break:var(--word_break)}[style*='--white_space:']{white-space:var(--white_space)}[style*='--bg:']{background:var(--bg)}[style*='--cl:']{color:var(--cl)}[style*='--position:']{position:var(--position)}[style*='--inset:']{inset:var(--inset)}[style*='--left:']{left:var(--left)}[style*='--right:']{right:var(--right)}[style*='--top:']{top:var(--top)}[style*='--bottom:']{bottom:var(--bottom)}[style*='--z:']{z-index:var(--z)}[style*='--d:']{display:var(--d)}[style*='--border:']{border:var(--border)}[style*='--border_x:']{border-inline:var(--border_x)}[style*='--border_y:']{border-block:var(--border_y)}[style*='--border_t:']{border-block-start:var(--border_t)}[style*='--border_b:']{border-block-end:var(--border_b)}[style*='--border_r:']{border-inline-end:var(--border_r)}[style*='--border_l:']{border-inline-start:var(--border_l)}[style*='--roundness:']{border-radius:var(--roundness)}[style*='--shadow:']{box-shadow:var(--shadow)}[style*='--justify_content:']{justify-content:var(--justify_content)}[style*='--align_items:']{align-items:var(--align_items)}[style*='--align_content:']{align-content:var(--align_content)}[style*='--place_content:']{place-content:var(--place_content)}[style*='--flex_dir:']{flex-direction:var(--flex_dir)}[style*='--flex_wrap:']{flex-wrap:var(--flex_wrap)}[style*='--gap:']{gap:var(--gap)}[style*='--grid_template_cols:']{grid-template-columns:var(--grid_template_cols)}[style*='--grid_template_rows:']{grid-template-rows:var(--grid_template_rows)}[style*='--grid_col_end:']{grid-column-end:var(--grid_col_end)}[style*='--grid_col_start:']{grid-column-start:var(--grid_col_start)}[style*='--grid_area:']{grid-area:var(--grid_area)}[style*='--order:']{order:var(--order)}[style*='--opacity:']{opacity:var(--opacity)}[style*='--transform:']{transform:var(--transform)}[style*='--transform-o:']{transform-origin:var(--transform-o)}[style*='--transition:']{transition:var(--transition)}[style*='--will_change:']{will-change:var(--will_change)}[style*='--cursor:']{cursor:var(--cursor)}[style*='--fill:']{fill:var(--fill)}[style*='--filter:']{filter:var(--filter)}[style*='--backdrop_filter:']{-webkit-backdrop-filter:var(--backdrop_filter);backdrop-filter:var(--backdrop_filter)}[style*='--aspect_ratio:']{aspect-ratio:var(--aspect_ratio)}[style*='--object_fit:']{-o-object-fit:var(--object_fit);object-fit:var(--object_fit)}[style*='--object_position:']{-o-object-position:var(--object_position);object-position:var(--object_position)}[style*='--hover-bg:']:hover{background:var(--hover-bg)}[style*='--hover-cl:']:hover{color:var(--hover-cl)}[style*='--hover-opacity:']:hover{opacity:var(--hover-opacity)}[style*='--hover-transform:']:hover{transform:var(--hover-transform)}[style*='--group:active']:hover [style*='--group-hover-transform']{transform:var(--group-hover-transform)}@media(prefers-color-scheme:dark){[style*='--dark-bg:']{background:var(--dark-bg)}[style*='--dark-cl:']{color:var(--dark-cl)}}@media (min-width:640px){[style*='--sm-txt_al:']{text-align:var(--sm-txt_al)}[style*='--sm-font_sz:']{font-size:var(--sm-font_sz)}[style*='--sm-d:']{display:var(--sm-d)}}@media (min-width:768px){[style*='--md-p:']{padding:var(--md-p)}[style*='--md-py:']{padding-block:var(--md-py)}[style*='--md-px:']{padding-inline:var(--md-px)}[style*='--md-pt:']{padding-block-start:var(--md-pt)}[style*='--md-pb:']{padding-block-end:var(--md-pb)}[style*='--md-pl:']{padding-inline-start:var(--md-pl)}[style*='--md-pr:']{padding-inline-end:var(--md-pr)}[style*='--md-m:']{margin:var(--md-m)}[style*='--md-my:']{margin-block:var(--md-my)}[style*='--md-mx:']{margin-inline:var(--md-mx)}[style*='--md-mt:']{margin-block-start:var(--md-mt)}[style*='--md-mb:']{margin-block-end:var(--md-mb)}[style*='--md-ml:']{margin-inline-start:var(--md-ml)}[style*='--md-mr:']{margin-inline-end:var(--md-mr)}[style*='--md-w:']{inline-size:var(--md-w)}[style*='--md-h:']{block-size:var(--md-h)}[style*='--md-txt_al:']{text-align:var(--md-txt_al)}[style*='--md-font_sz:']{font-size:var(--md-font_sz)}[style*='--md-d:']{display:var(--md-d)}[style*='--md-justify_content:']{justify-content:var(--md-justify_content)}[style*='--md-align_items:']{align-items:var(--md-align_items)}[style*='--md-align_content:']{align-items:var(--md-align_content)}[style*='--md-place_content:']{align-items:var(--md-place_content)}[style*='--md-flex_dir:']{flex-direction:var(--md-flex_dir)}[style*='--md-flex_wrap:']{flex-wrap:var(--md-flex_wrap)}[style*='--md-gap:']{gap:var(--md-gap)}[style*='--md-grid_template_cols:']{grid-template-columns:var(--md-grid_template_cols)}[style*='--md-grid_template_rows:']{grid-template-rows:var(--md-grid_template_rows)}[style*='--md-order:']{order:var(--md-order)}}@media (min-width:960px){[style*='--mx-p:']{padding:var(--mx-p)}[style*='--mx-py:']{padding-block:var(--mx-py)}[style*='--mx-px:']{padding-inline:var(--mx-px)}[style*='--mx-pt:']{padding-block-start:var(--mx-pt)}[style*='--mx-pb:']{padding-block-end:var(--mx-pb)}[style*='--mx-pl:']{padding-inline-start:var(--mx-pl)}[style*='--mx-pr:']{padding-inline-end:var(--mx-pr)}[style*='--mx-m:']{margin:var(--mx-m)}[style*='--mx-my:']{margin-block:var(--mx-my)}[style*='--mx-mx:']{margin-inline:var(--mx-mx)}[style*='--mx-mt:']{margin-block-start:var(--mx-mt)}[style*='--mx-mb:']{margin-block-end:var(--mx-mb)}[style*='--mx-ml:']{margin-inline-start:var(--mx-ml)}[style*='--mx-mr:']{margin-inline-end:var(--mx-mr)}[style*='--mx-w:']{inline-size:var(--mx-w)}[style*='--mx-h:']{block-size:var(--mx-h)}[style*='--mx-txt_al:']{text-align:var(--mx-txt_al)}[style*='--mx-font_sz:']{font-size:var(--mx-font_sz)}[style*='--mx-d:']{display:var(--mx-d)}[style*='--mx-justify_content:']{justify-content:var(--mx-justify_content)}[style*='--mx-align_items:']{align-items:var(--mx-align_items)}[style*='--mx-align_content:']{align-items:var(--mx-align_content)}[style*='--mx-place_content:']{align-items:var(--mx-place_content)}[style*='--mx-flex_dir:']{flex-direction:var(--mx-flex_dir)}[style*='--mx-flex_wrap:']{flex-wrap:var(--mx-flex_wrap)}[style*='--mx-gap:']{gap:var(--mx-gap)}[style*='--mx-grid_template_cols:']{grid-template-columns:var(--mx-grid_template_cols)}[style*='--mx-grid_template_rows:']{grid-template-rows:var(--mx-grid_template_rows)}[style*='--mx-order:']{order:var(--mx-order)}}@media (min-width:1024px){[style*='--lg-txt_al:']{text-align:var(--lg-txt_al)}[style*='--lg-font_sz:']{font-size:var(--lg-font_sz)}[style*='--lg-d:']{display:var(--lg-d)}[style*='--lg-justify_content:']{justify-content:var(--lg-justify_content)}[style*='--lg-flex_dir:']{flex-direction:var(--lg-flex_dir)}[style*='--lg-gap:']{gap:var(--lg-gap)}[style*='--lg-grid_template_cols:']{grid-template-columns:var(--lg-grid_template_cols)}[style*='--lg-grid_template_rows:']{grid-template-rows:var(--lg-grid_template_rows)}}@media (min-width:1280px){[style*='--xl-txt_al:']{text-align:var(--xl-txt_al)}[style*='--xl-font_sz:']{font-size:var(--xl-font_sz)}[style*='--xl-d:']{display:var(--xl-d)}}@media(prefers-color-scheme:dark){[style*='--dark-bg:']{background:var(--dark-bg)}[style*='--dark-cl:']{color:var(--dark-cl)}}</style>
+[11ty]   <title>Oops! Not Found</title>
+[11ty]   <meta name="generator" content="Eleventy v3.1.1">
+[11ty]   <meta name="description" content="">
+[11ty]   <meta name="author" content="">
+[11ty]   <meta property="site_name" content="">
+[11ty]   <meta property="og:type" content="article">
+[11ty]   <meta property="og:url" content="https://www.josephrex.me/404.html">
+[11ty]   <meta property="og:title" content="Oops! Not Found">
+[11ty]   <meta property="og:image" content="https://www.josephrex.me/.netlify/functions/opengraph?text=oops-not-found&amp;layout=base">
+[11ty]   <meta property="og:image:alt" content="Oops! Not Found">
+[11ty]   <meta property="og:description" content="">
+[11ty]   <meta name="p:domain_verify" content="573587fd2211caf338169f0ea205345d"/>
+[11ty]   <meta name="twitter:url" content="https://www.josephrex.me/404.html">
+[11ty]   <meta name="twitter:card" content="summary">
+[11ty]   <meta name="twitter:site" content="@">
+[11ty]   <meta name="twitter:creator" content="@">
+[11ty]   <meta name="twitter:title" content="Oops! Not Found">
+[11ty]   <meta name="twitter:image" content="https://www.josephrex.me/.netlify/functions/opengraph?text=oops-not-found&amp;layout=base">
+[11ty]   <meta name="color-scheme" content="light dark">
+[11ty]   
+[11ty]   <link rel="canonical" href="https://www.josephrex.me/404.html">
+[11ty]   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+[11ty]   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+[11ty]   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+[11ty]   <link rel="manifest" href="/site.webmanifest">
+[11ty]   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+[11ty]   <meta name="msapplication-TileColor" content="#da532c">
+[11ty]   <meta name="theme-color" content="">
+[11ty]   <link rel="webmention" href="https://webmention.io/www.josephrex.me/webmention">
+[11ty]   <link rel="pingback" href="https://webmention.io/www.josephrex.me/xmlrpc">
+[11ty]   <script>
+[11ty]   if(localStorage.getItem('theme')) {
+[11ty]     document.documentElement.classList.add('theme-active');
+[11ty]   }
+[11ty]   </script>
+[11ty]   <script type="application/ld+json">
+[11ty]   {
+[11ty]     "@context": "http://schema.org",
+[11ty]     "@type": "Article",
+[11ty]     "description": "",
+[11ty]     "publisher": {
+[11ty]       "@type": "Organization",
+[11ty]       "name": " Blog",
+[11ty]       "logo": {
+[11ty]         "@type": "ImageObject",
+[11ty]         "url": "",
+[11ty]         "width": 600,
+[11ty]         "height": 60
+[11ty]       }
+[11ty]     },
+[11ty]     "author": {
+[11ty]       "@type": "Person",
+[11ty]       "name": "",
+[11ty]       "url": ""
+[11ty]     },
+[11ty]     "sameAs": [
+[11ty]       "",
+[11ty]       "",
+[11ty]       "",
+[11ty]       "",
+[11ty]       ""
+[11ty]     ],
+[11ty]     "mainEntityOfPage": {
+[11ty]       "@type": "WebPage",
+[11ty]       "@id": "https://www.josephrex.me/404.html"
+[11ty]     }
+[11ty]     
+[11ty]   }
+[11ty]   </script>
+[11ty] </head>
+[11ty] <body style="--bg:var(--bg-color);--cl:var(--text-color)">
+[11ty]   <header style="--position:relative;--d:flex;--py:6rem;--px:2rem;--mx-px:6rem;--justify_content:space-between">
+[11ty]   <a href="/" aria-label="Home">
+[11ty]   <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" viewBox="0 0 788 506" width="50">
+[11ty]     <path fill="none" d="M-.0002065-.0049836H787.665491V505.107258H-.0002065z"/>
+[11ty]     <g fill="none" style="--fill:var(--link-color);">
+[11ty]       <path d="M331.6312376 323.1137061H221.40306995v86.76413606S101.14753008 436.6345234 99.47022419 361.24325309c-1.7866954-81.83431417 67.74857279-76.178875 112.16071577-76.33566668 38.468646-.13856008 388.2963141 0 388.2963141 0 35.18696057.29170544 143.59196966-7.91980262 150.70228812-123.41692428C759.49009287 18.4456082 658.85173932 11.22589863 644.70402875 9.46837337c-35.80683449-4.44850792-204.88656108-1.97630434-204.88656108-1.97630434l.69280026 155.17270748h109.38951473l.32816854-64.01840458c-21.58619757 7.2452338 105.19625-27.13589832 104.39406022 44.10221584-.72926343 67.97465957-60.45593847 61.32012928-103.7741863 58.58174448-25.88885182-1.63719677-390.62995709.3865097-390.62995709.3865097-2.552422-1.96536538-159.74515467 1.31267448-157.265659 165.14174081 1.56791638 103.23455433 74.60364904 134.83354585 165.4698726 129.78339546 3.4640013-.19325485 163.20915598 0 163.20915598 0z"/>
+[11ty]       <path d="M550.2351731 323.1135197H440.00781126l-.19847032 173.52615726H550.845851zm-15.25168068 17.36239962h-79.40339458v138.73720135l79.12858952.00160392zM670.70796034 496.63992097h112.8048288l-55.2055909-202.40311116s-21.82938633 30.18938515-105.3541811 28.87876064c-1.29796352-1.83754225 47.7549432 173.52435052 47.7549432 173.52435052zm13.95732192-16.75798513 76.22585711-1.203907-41.82139573-155.56245839c.16856669-1.75583665-16.01383553 12.014058-75.01217695 18.24035815-1.07882681-1.67079613 40.60771557 138.52600724 40.60771557 138.52600724zM331.6296158 6.80684975v154.68494633H221.40709358V97.23247244l-98.52821756.44588888-.05921167-90.87151157zm-17.67468326 17.56770097-.66613128 117.96487456-75.50968115.8580955.60691961-65.51037875h-95.18275825l.02960584-53.04794503z"/>
+[11ty]     </g>
+[11ty]   </svg>
+[11ty]   </a>
+[11ty]   <nav aria-label="Primary navigation" style="--d:flex;--flex_dir:column;--gap:1rem;--txt_al:right;--md-flex_dir:row;--mt:-0.5rem;--md-mt:0;">
+[11ty]     <a href="https://resume.josephrex.me" rel="nofollow" style="--opacity:.7" class="anchor-brackets">Resume</a>
+[11ty]     <a href="/reading-list" style="--opacity:.7" class="anchor-brackets">Reading list</a>
+[11ty]     <a href="https://kit.co/josephrexme/home-office" style="--opacity:.7" class="anchor-brackets">Uses</a>
+[11ty]   </nav>
+[11ty]   <!-- Color scheme toggle -->
+[11ty]   <button style="--position:absolute;--top:0;--right:3rem;--w:4rem;--h:4rem;--bg:var(--link-color);--hover-bg:var(--active-link-color);--transition:background-color .3s cubic-bezier(.5,0,.5,1);--d:grid;--place_content: center;--cursor:pointer;" id="themeToggle" title="Change color scheme">
+[11ty]     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 4.233 4.233" style="--filter:invert(1);">
+[11ty]       <path fill="currentColor" d="M2.117.794a1.323 1.323 0 0 1 1.145.661 1.323 1.323 0 0 1 0 1.323 1.323 1.323 0 0 1-1.145.662V2.117zm0-.794A2.117 2.117 0 0 0 0 2.117a2.117 2.117 0 0 0 2.117 2.116 2.117 2.117 0 0 0 2.116-2.116A2.117 2.117 0 0 0 2.117 0zm0 .53a1.587 1.587 0 0 1 1.587 1.587 1.587 1.587 0 0 1-1.587 1.587A1.587 1.587 0 0 1 .529 2.117 1.587 1.587 0 0 1 2.117.529z">
+[11ty]       </path>
+[11ty]     </svg>
+[11ty]   </button>
+[11ty] </header>
+[11ty] 
+[11ty] <main class="four-oh-four">
+[11ty]   <canvas id="lost-canvas">
+[11ty]     <h1>404</h1>
+[11ty]   </canvas>
+[11ty]   <h1>THIS PAGE DOES NOT EXIST</h1>
+[11ty]   <div style="--opacity:.7">
+[11ty]     <p>Some adventures in life lead to a dead end. Sadly, this is one of those.</p>
+[11ty]     <p>
+[11ty]     You can hit me up <a href="https://twitter.com/josephrexme" style="--cl:var(--link-color)" class="anchor-lines">@josephrexme</a>
+[11ty]     or <a href="/.netlify/functions/mail" rel="nofollow" style="--cl:var(--link-color)" class="anchor-lines">send an email</a> if there is something you need me to find for you.
+[11ty]     </p>
+[11ty]       <p></p>
+[11ty]   </div>
+[11ty] </main>
+[11ty] 
+[11ty] <style>
+[11ty] .four-oh-four{
+[11ty]   margin: 12rem 0;
+[11ty]   text-align: center;
+[11ty] }
+[11ty] </style>
+[11ty] 
+[11ty] <script>
+[11ty] var canvas = document.getElementById('lost-canvas');
+[11ty] var context = canvas.getContext('2d');
+[11ty] 
+[11ty] var text = "404";
+[11ty] var xPosition = (canvas.width/2);
+[11ty] var yPosition = (canvas.height/2);
+[11ty] 
+[11ty] var imageObjShadow = new Image();
+[11ty] var imageObjWithShadow = new Image();
+[11ty] 
+[11ty] setInterval(glitch, 800);
+[11ty] 
+[11ty] 
+[11ty] function glitch(){
+[11ty] 
+[11ty]   imageObjShadow.onload = function() {
+[11ty]     context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]     var arr = lineShadowsHeight();
+[11ty]     var sy = 0;
+[11ty]     for (var i = 0; i < arr.length; i++)
+[11ty]       {
+[11ty]         context.drawImage(this, 0, sy, canvas.width, arr[i], getRandomInt(-2*offset(), 2*offset()), sy, canvas.width, arr[i]);
+[11ty]         sy = sy + arr[i];
+[11ty]       }
+[11ty]     drawText();
+[11ty]     imageDataWithShadow = canvas.toDataURL("image/png", 1.0);
+[11ty] 
+[11ty]     imageObjWithShadow.onload = function() {
+[11ty]       context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]       context.drawImage(this, 0, 0, canvas.width, canvas.height/3+5, 1, 0, canvas.width, canvas.height/3+5);
+[11ty]       context.drawImage(this, 0, canvas.height/3+5, canvas.width, canvas.height/3-5, 0, canvas.height/3+5, canvas.width, canvas.height/3-5);
+[11ty]       context.drawImage(this, 0, (canvas.height/3)*2, canvas.width, canvas.height/3, 0, (canvas.height/3)*2, canvas.width, canvas.height/3);
+[11ty]     }
+[11ty]     imageObjWithShadow.src = imageDataWithShadow;
+[11ty]   }
+[11ty]   imageObjShadow.src = imageDataShadows;
+[11ty] 
+[11ty]   setTimeout(function(){
+[11ty]     imageObjWithShadow.onload = function() {
+[11ty]         context.clearRect(0,(canvas.height/3)*2,canvas.width,canvas.height/3);
+[11ty]         var arr = lineShadowsHeight();
+[11ty]         var sy = 0;
+[11ty]         for (var i = 0; i < arr.length; i++)
+[11ty]         {
+[11ty]           context.drawImage(this, 0, sy, canvas.width, arr[i], getRandomInt(-2*offset(), 2*offset()), sy, canvas.width, arr[i]);
+[11ty]           sy = sy + arr[i];
+[11ty]         }
+[11ty] 
+[11ty]     }
+[11ty]     imageObjWithShadow.src = imageDataWithShadow;
+[11ty]   },80);
+[11ty] 
+[11ty] 
+[11ty]   setTimeout(function(){
+[11ty]     context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]     drawText();
+[11ty]   },timeBack());
+[11ty] }
+[11ty] 
+[11ty] function drawText(){
+[11ty]   const isDarkTheme = (!document.documentElement.classList.contains('theme-active') && matchMedia('(prefers-color-scheme: dark)').matches) || (document.documentElement.classList.contains('theme-active') && !matchMedia('(prefers-color-scheme: dark)').matches);
+[11ty]   context.font = "normal 150px Impact";
+[11ty]   context.fillStyle = isDarkTheme ? "#ffffff" : "#000000";
+[11ty]   context.textAlign = "center";
+[11ty]   context.textBaseline = "middle";
+[11ty]   context.fillText(text, xPosition, yPosition);
+[11ty] }
+[11ty] 
+[11ty] function getRandomInt(min, max)
+[11ty] {
+[11ty]   return Math.floor(Math.random() * (max - min + 1) + min);
+[11ty] }
+[11ty] 
+[11ty] var lineShadows = function (){
+[11ty]   return Math.floor(Math.random() * (7 - 4 + 1) + 4);
+[11ty] };
+[11ty] 
+[11ty] var offset = function()
+[11ty] {
+[11ty]   return Math.floor(Math.random() * (3 - 2 + 1) + 2)*0.8;
+[11ty] }
+[11ty] 
+[11ty] var timeBack = function (){
+[11ty]   var max = 300;
+[11ty]   var min = 80;
+[11ty]   return Math.floor(Math.random() * (max - min + 1) + min);
+[11ty] }
+[11ty] 
+[11ty] var lineShadowsHeight = function ()
+[11ty] {
+[11ty]   var h = canvas.height;
+[11ty]   var count =lineShadows();
+[11ty]   var arr = [];
+[11ty]   var s = 0;
+[11ty] 
+[11ty]   for (var i = 0; i < count; i++)
+[11ty]     {
+[11ty]        arr[i] = Math.floor(Math.random() * (h/(count-1)- 2 + 1) + 2);
+[11ty]        h = h -  arr[i];
+[11ty]        s = s + arr[i];
+[11ty]        arr[count] = canvas.height - s;
+[11ty]     }
+[11ty]     return arr;
+[11ty] }
+[11ty] 
+[11ty] function getShadowsImg(){
+[11ty]   context.save();
+[11ty]   context.font = "bold 150px Impact";
+[11ty]   context.textAlign = "center";
+[11ty]   context.textBaseline = "middle";
+[11ty]   context.globalCompositeOperation = "destination-over";
+[11ty]   context.clearRect(0,0,canvas.width,canvas.height);
+[11ty]   context.fillStyle = "#a3004a";
+[11ty]   context.fillText(text, xPosition-2, yPosition);
+[11ty]   context.fillStyle = "#09c4de";
+[11ty]   context.fillText(text, xPosition+2, yPosition);
+[11ty]   context.restore();
+[11ty] 
+[11ty]   imageDataShadows = canvas.toDataURL("image/png", 1.0);
+[11ty] }
+[11ty] 
+[11ty] getShadowsImg();
+[11ty] context.clearRect(0,0,canvas.width,canvas.height);
+[11ty] drawText();
+[11ty] </script>
+[11ty] <footer style="--d:flex;--gap:4rem;--flex_dir:column;--mx-flex_dir:row;--mx-justify_content:space-between;--mx-align_items:flex-end;--py:8rem;--px:2rem;--mx-px:6rem;--font_sz:1.4rem;--txt_al:center;--mx-txt_al:left;" class="with-anchor-lines">
+[11ty]   <div style="--d:flex;--flex_dir:column;--gap:1rem">
+[11ty]     <div>
+[11ty]       <div style="--font_sz:1.8rem;--font_wt:bold;--mb:.5rem;">Subscribe to my newsletter</div>
+[11ty]       <p>For syndication feed, <a href="https://www.josephrex.me/feed.xml" style="--cl:var(--link-color)">follow this link</a></p>
+[11ty]     </div>
+[11ty]     <!-- For Newsletter -->
+[11ty]     <div>
+[11ty]       <form action="https://app.convertkit.com/forms//subscriptions" method="post"
+[11ty]         target="_blank" data-uid="624a8f5da4" data-format="inline" data-version="5" data-sv-form="" style="--d:flex;--flex_dir:column;--gap:1rem" novalidate>
+[11ty]         <label for="EMAIL">Enter your email address to get latest updates in your inbox</label>
+[11ty]         <div style="--d:grid;--grid_template_cols:3fr 1fr;--w:min(100%, 30rem);--mx:auto;--mx-mx:0;">
+[11ty]           <input type="email" name="email_address" id="EMAIL" placeholder="e.g janet@nasa.gov" style="--border:solid thin var(--text-color);--px:1rem;--py:.5rem;--txt_al:left;">
+[11ty]           <button type="submit" style="--border:solid thin var(--text-color);--border_l:0;--p:1rem;--txt_al:center;--cursor:pointer;--hover-bg:var(--text-color);--hover-cl:var(--bg-color);--transition:all .2s linear;">Subscribe</button>
+[11ty]         </div>
+[11ty]       </form>
+[11ty]     </div>
+[11ty]     <p>
+[11ty]     &copy; 2014 - 2025 . Powered by <a href="https://11ty.dev" style="--cl:var(--link-color)">Eleventy</a> and hosted on <a href="https://netlify.com" style="--cl:var(--link-color)" class="anchor-lines">Netlify</a>
+[11ty]     </p>
+[11ty]   </div>
+[11ty]   <div style="--d:grid;--grid_template_cols:repeat(3,1fr);--gap:2rem;--align_content:end;">
+[11ty]   </div>
+[11ty] </footer>
+[11ty] 
+[11ty] 
+[11ty]   <script>
+[11ty]     // Toggle Dark/Light Theme
+[11ty]     var themeSwitcher = document.getElementById('themeToggle');
+[11ty]     if(themeSwitcher) {
+[11ty]       themeSwitcher.addEventListener('click', function () {
+[11ty]         document.documentElement.classList.toggle('theme-active');
+[11ty]         if (localStorage.getItem('theme')) {
+[11ty]           localStorage.removeItem('theme');
+[11ty]         } else {
+[11ty]           localStorage.setItem('theme', 'active');
+[11ty]         }
+[11ty]       });
+[11ty]     }
+[11ty]   </script>
+[11ty]   
+[11ty]   
+[11ty]   
+[11ty]   <!-- Global site tag (gtag.js) - Google Analytics -->
+[11ty]   <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+[11ty]   <script>
+[11ty]     window.dataLayer = window.dataLayer || [];
+[11ty]     function gtag(){dataLayer.push(arguments);}
+[11ty]     gtag('js', new Date());
+[11ty] 
+[11ty]     gtag('config', '');
+[11ty]   </script>
+[11ty]   
+[11ty] 
+[11ty] </body>
+[11ty] </html>
+[11ty]     at new HTMLParser (/Users/silverdust/Projects/Me/josephrex.me/node_modules/html-minifier/src/htmlparser.js:244:13)
+[11ty]     at minify (/Users/silverdust/Projects/Me/josephrex.me/node_modules/html-minifier/src/htmlminifier.js:980:3)
+[11ty]     at exports.minify (/Users/silverdust/Projects/Me/josephrex.me/node_modules/html-minifier/src/htmlminifier.js:1341:16)
+[11ty]     at Object.<anonymous> (/Users/silverdust/Projects/Me/josephrex.me/eleventy.config.js:133:22)
+[11ty]     at Object.fn (file:///Users/silverdust/Projects/Me/josephrex.me/node_modules/@11ty/eleventy/src/Benchmark/BenchmarkGroup.js:37:23)
+[11ty]     at TransformsUtil.runAll (file:///Users/silverdust/Projects/Me/josephrex.me/node_modules/@11ty/eleventy/src/Util/TransformsUtil.js:37:30)
+[11ty]     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[11ty]     at async #renderPageEntryWithLayoutsAndTransforms (file:///Users/silverdust/Projects/Me/josephrex.me/node_modules/@11ty/eleventy/src/Template.js:929:13)
+[11ty]     at async Template.generateMapEntry (file:///Users/silverdust/Projects/Me/josephrex.me/node_modules/@11ty/eleventy/src/Template.js:961:15)
+[11ty]     at async Promise.all (index 0)
