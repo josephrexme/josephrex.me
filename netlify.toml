@@ -1,6 +1,7 @@
 [build]
   publish = "public"
-  command = "cp ./libx86/* node_modules/canvas/build/Release && npm run debug"
+  # command = "cp ./libx86/* node_modules/canvas/build/Release && npm run debug"
+  command = "npm run build"
 
 [functions]
   directory = "serverless"
