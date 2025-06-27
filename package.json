@@ -35,5 +35,8 @@
     "outdent": "^0.8.0",
     "remove-markdown": "^0.3.0",
     "terser": "^5.10.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0"
   }
 }
